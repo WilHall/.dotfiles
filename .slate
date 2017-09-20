@@ -19,6 +19,7 @@ alias laptop 2
 
 # pre-defined window sizes
 #   alias <name> move <xPos>;<yPos> <xSize>;<ySize>
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias lefthalf move screenOriginX;screenOriginY screenSizeX*0.5;screenSizeY
 alias righthalf move screenOriginX+screenSizeX*0.5;screenOriginY screenSizeX*0.5;screenSizeY
 alias lefthalflarge move screenOriginX;screenOriginY screenSizeX*0.6;screenSizeY
@@ -33,6 +34,7 @@ alias hp-primary-right ${righthalfsmall} ${hp}
 alias samsung-primary-left ${lefthalflarge} ${samsung}
 alias samsung-secondary-left ${lefthalf} ${samsung}
 alias samsung-primary-right ${righthalfsmall} ${samsung}
+alias samsung-primary-full ${full} ${samsung}
 alias laptop-primary-left ${lefthalf} ${laptop}
 alias laptop-secondary-left ${lefthalflarge} ${laptop}
 alias laptop-primary-right ${righthalf} ${laptop}
@@ -46,7 +48,7 @@ layout docked 'Tower':MAIN_FIRST ${samsung-secondary-left}
 layout docked 'Spark':MAIN_FIRST ${laptop-secondary-left}
 layout docked 'Spotify':MAIN_FIRST ${laptop-secondary-right}
 layout docked 'Google Chrome':TITLE_ORDER_REGEX=reddit|facebook|hangouts|slack;modo;.*; ${laptop-primary-right} | ${hp-primary-right} | ${hp-primary-left}
-layout docked 'Sublime Text':TITLE_ORDER_REGEX=\.log|notes;.*; ${samsung-primary-right} | ${samsung-primary-left}
+layout docked 'Sublime Text':MAIN_FIRST ${samsung-primary-full}
 
 # 'undocked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>

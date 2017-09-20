@@ -1,0 +1,5 @@
+startup_message off
+shell -$SHELL
+caption always "%{= Wk}%-w%{= Bw}%n %t%{-}%+w %-="
+defscrollback 10000
+

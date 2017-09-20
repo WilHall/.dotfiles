@@ -1,0 +1,57 @@
+config defaultToCurrentScreen true
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+config windowHintsFontSize 70
+config windowHintsIconAlpha 0.5
+
+# Window Hints
+bind e:cmd hint QWERTYUIOPASDFGHJKLZXCVBNM
+
+# Grid
+# bind g:cmd grid padding:5 0:10,10 0:10,10 0:10,10
+
+# monitors
+#   alias <name> <displayID>
+alias hp 0
+alias samsung 1
+alias laptop 2
+
+# pre-defined window sizes
+#   alias <name> move <xPos>;<yPos> <xSize>;<ySize>
+alias lefthalf move screenOriginX;screenOriginY screenSizeX*0.5;screenSizeY
+alias righthalf move screenOriginX+screenSizeX*0.5;screenOriginY screenSizeX*0.5;screenSizeY
+alias lefthalflarge move screenOriginX;screenOriginY screenSizeX*0.6;screenSizeY
+alias righthalfsmall move screenOriginX+screenSizeX*0.6;screenOriginY screenSizeX*0.4;screenSizeY
+alias lefthalfsmall move screenOriginX;screenOriginY screenSizeX*0.4;screenSizeY
+alias righthalflarge move screenOriginX+screenSizeX*0.4;screenOriginY screenSizeX*0.6;screenSizeY
+
+# pre-defined screen positions
+#   alias <name> <sizeAlias> <monitorAlias>
+alias hp-primary-left ${lefthalflarge} ${hp}
+alias hp-primary-right ${righthalfsmall} ${hp}
+alias samsung-primary-left ${lefthalflarge} ${samsung}
+alias samsung-secondary-left ${lefthalf} ${samsung}
+alias samsung-primary-right ${righthalfsmall} ${samsung}
+alias laptop-primary-left ${lefthalf} ${laptop}
+alias laptop-secondary-left ${lefthalflarge} ${laptop}
+alias laptop-primary-right ${righthalf} ${laptop}
+alias laptop-secondary-right ${righthalf} ${laptop}
+
+# 'docked' layout definitions
+#   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>
+
+layout docked 'Slack':MAIN_FIRST ${laptop-primary-left}
+layout docked 'Tower':MAIN_FIRST ${samsung-secondary-left}
+layout docked 'Spark':MAIN_FIRST ${laptop-secondary-left}
+layout docked 'Spotify':MAIN_FIRST ${laptop-secondary-right}
+layout docked 'Google Chrome':TITLE_ORDER_REGEX=reddit|facebook|hangouts|slack;modo;.*; ${laptop-primary-right} | ${hp-primary-right} | ${hp-primary-left}
+layout docked 'Sublime Text':TITLE_ORDER_REGEX=\.log|notes;.*; ${samsung-primary-right} | ${samsung-primary-left}
+
+# 'undocked' layout definitions
+#   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>
+# TODO
+
+# bind layouts
+#   bind <keyBinding> layout <layoutName>
+bind 1:cmd;shift layout docked

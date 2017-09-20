@@ -1,0 +1,26 @@
+[user]
+	name = Wil Hall
+	email = wil@wilhall.com
+[core]
+	editor = nano
+[push]
+	default = current
+[pack]
+	windowMemory = 10m
+	packSizeLimit = 20m
+[branch]
+	autosetuprebase = always
+
+[pull]
+	rebase = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[diff]
+	tool = Kaleidoscope
+[merge]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false

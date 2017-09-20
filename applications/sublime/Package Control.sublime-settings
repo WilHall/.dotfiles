@@ -1,0 +1,28 @@
+{
+    "bootstrapped": true,
+    "in_process_packages":
+    [
+    ],
+    "installed_packages":
+    [
+        "Better CoffeeScript",
+        "BracketHighlighter",
+        "Color Highlighter",
+        "DocBlockr",
+        "Ecmascript Syntax",
+        "ES6-Toolkit",
+        "Function Name Display",
+        "GitGutter",
+        "JavaScriptNext - ES6 Syntax",
+        "JSON Key-Value",
+        "MarkdownEditing",
+        "Package Control",
+        "Pretty JSON",
+        "SideBarEnhancements",
+        "SublimeLinter",
+        "SublimeLinter-annotations",
+        "SublimeLinter-pyyaml",
+        "SyncedSideBar",
+        "Theme - Spacegray"
+    ]
+}

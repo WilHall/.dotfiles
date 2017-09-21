@@ -5,6 +5,7 @@
     ],
     "installed_packages":
     [
+        "3D Tool (Async Burst-Mode)",
         "Better CoffeeScript",
         "BracketHighlighter",
         "Color Highlighter",
@@ -21,7 +22,14 @@
         "SideBarEnhancements",
         "SublimeLinter",
         "SublimeLinter-annotations",
+        "SublimeLinter-csslint",
+        "SublimeLinter-html-tidy",
+        "SublimeLinter-jshint",
+        "SublimeLinter-json",
+        "SublimeLinter-pylint",
         "SublimeLinter-pyyaml",
+        "SublimeLinter-ruby",
+        "SublimeLinter-xmllint",
         "SyncedSideBar",
         "Theme - Spacegray"
     ]

@@ -1,0 +1,21 @@
+FXPreferredViewStyle:string:icnv
+FXArrangeGroupViewBy:string:Name
+FXPreferredGroupBy:string:Name
+AppleShowAllFiles:boolean:YES
+FXMyDocumentsArrangeGroupViewBy:string:Date Last Opened
+DisableAllAnimations:boolean:YES
+FXDisableFancyWindowTransition:boolean:YES
+FXDefaultSearchScope:string:SCcf
+ShowRemovableMediaOnDesktop:boolean:NO
+ShowSidebar:boolean:YES
+WarnOnEmptyTrash:boolean:NO
+AppleShowAllExtensions:boolean:YES
+ShowStatusBar:boolean:NO
+AnimateWindowZoom:boolean:NO
+ShowHardDrivesOnDesktop:boolean:YES
+ShowRecentTags:boolean:NO
+ShowMountedServersOnDesktop:boolean:YES
+ShowExternalHardDrivesOnDesktop:boolean:YES
+FXEnableExtensionChangeWarning:boolean:NO
+ShowPathbar:boolean:YES
+ShowPreviewPane:boolean:NO

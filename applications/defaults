@@ -1,0 +1,128 @@
+#!/usr/bin/env ruby
+
+if ARGV.empty? or not ['backup', 'restore'].include? ARGV[0]
+  puts "Must specify an operation: 'backup' or 'restore'"
+  exit
+end
+
+typeValueTranslations = {
+  "boolean" => {
+    "1" => "YES",
+    "0" => "NO"
+  }
+}
+
+applicationNames = Dir.glob('*').select { |file| File.directory? file }
+
+operation = ARGV[0]
+dry = ARGV[1] == 'dry'
+if operation == 'backup'
+  for applicationName in applicationNames
+    applicationDefaultsFileName = "#{applicationName}/.defaults"
+
+    hasDefaultsToBackup = File.file? applicationDefaultsFileName
+    next if not hasDefaultsToBackup
+
+    escapedApplicationName = applicationName.sub(' ', '\ ')
+    applicationBundleIdentifier = %x[ /usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' /Applications/#{escapedApplicationName}.app/Contents/Info.plist ].strip
+
+    puts
+    puts " --- #{applicationName} (#{applicationBundleIdentifier}) --- "
+
+    if hasDefaultsToBackup
+      updatedLines = []
+
+      File.open(applicationDefaultsFileName, 'r') do |applicationDefaultsFile|
+        applicationDefaultsFile.each_line do |line|
+          pieces = line.split(':')
+          key = pieces[0].strip
+
+          # empty lines
+          next if key.empty?
+
+          command = "defaults read-type #{applicationBundleIdentifier} #{key}"
+          puts command
+          type = %x[ #{command} ].strip
+          if $?.success?
+            puts " ~> read-type ok"
+            type = type[8..-1]
+          else
+            puts " ~> failed to read type from #{applicationBundleIdentifier} #{key}, not updating value type"
+            type = pieces[1].strip
+          end
+
+          command = "defaults read #{applicationBundleIdentifier} #{key}"
+          puts command
+          value = %x[ #{command} ].strip
+          if $?.success?
+            puts " ~> read ok"
+            if typeValueTranslations.key?(type) and typeValueTranslations[type].key?(value)
+              value = typeValueTranslations[type][value]
+            end
+          else
+            puts " ~> failed to read value from #{applicationBundleIdentifier} #{key}, not updating value"
+            value = pieces[2].strip
+          end
+
+          updatedLine = "#{key}:#{type}:#{value}"
+          if dry
+            puts " ~> would update backup from '#{line.strip}' to '#{updatedLine}'"
+          elsif
+            updatedLines.push updatedLine
+          end
+        end
+      end
+
+      if not dry
+        File.open(applicationDefaultsFileName, 'w+') do |applicationDefaultsFile|
+          updatedLines.each { |line| applicationDefaultsFile.puts(line) }
+        end
+      end
+    end
+
+    puts
+  end
+
+elsif operation == 'restore'
+
+  for applicationName in applicationNames
+    applicationDefaultsFileName = "#{applicationName}/.defaults"
+
+    hasDefaultsToRestore = File.file? applicationDefaultsFileName
+    next if not hasDefaultsToRestore
+    escapedApplicationName = applicationName.sub(' ', '\ ')
+
+    applicationBundleIdentifier = %x[ /usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' /Applications/#{escapedApplicationName}.app/Contents/Info.plist ].strip
+
+    puts
+    puts " --- #{applicationName} (#{applicationBundleIdentifier}) --- "
+
+    File.open(applicationDefaultsFileName, 'r') do |applicationDefaultsFile|
+      applicationDefaultsFile.each_line do |line|
+        pieces = line.split(':')
+        key = pieces[0].strip
+
+        # empty lines
+        next if key.empty?
+
+        type = pieces[1].strip
+        value = pieces[2].strip
+
+        command = "defaults write #{applicationBundleIdentifier} #{key} -#{type} '#{value}'"
+        puts command
+        if dry
+          puts " ~> would set '#{key}' as '#{type}' to '#{value}'"
+        else
+          type = %x[ #{command} ].strip
+          if $?.success?
+            puts " ~> write ok"
+          else
+            puts " ~> failed to write to #{applicationBundleIdentifier} #{key}"
+          end
+        end
+      end
+    end
+  end
+
+  puts
+end

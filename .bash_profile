@@ -1,4 +1,4 @@
-export PS1='\h:\W$(__git_ps1 "@%s") \u\$ '
+export PS1='\h:\W$(__git_ps1 "@%s") \u\$ \033]0;$(python ~/bin/.short.pwd.py)\007'
 export CLICOLOR=1
 export EDITOR=vi
 export LSCOLORS=GxFxCxDxBxegedabagaced

@@ -150,7 +150,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/applications/iterm2</string>
+	<string>~/.dotfiles/applications/iTerm/preferences</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -189,12 +189,10 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>987 177 445 103 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>430 329 958 451 0 0 1680 1027 </string>
+	<string>1299 500 796 473 0 0 3008 1669 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 609 1680 418 0 0 1680 1027 </string>
+	<string>0 1251 3008 418 0 0 3008 1669 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -815,6 +813,15 @@
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
+			<key>Semantic History</key>
+			<dict>
+				<key>action</key>
+				<string>editor</string>
+				<key>editor</key>
+				<string>com.sublimetext.3</string>
+				<key>text</key>
+				<string></string>
+			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Session Close Undo Timeout</key>
@@ -858,13 +865,9 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>714707CC-0E50-4EAB-917B-A99C63E1A9A0</string>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<string>C5662497-27E8-44BC-AA01-FC0D72494AD6</string>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>527644354.15678602</real>
+	<real>527774971.68319303</real>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenBookmark</key>
@@ -907,17 +910,17 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/wilhall/.dotfiles/applications/iterm2/preferences</string>
+	<string>/Users/wilhall/.dotfiles/applications/iTerm/preferences</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=18</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=73</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-21T00:18:54Z</date>
+	<date>2017-09-22T12:11:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -925,7 +928,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>StretchTabsToFillBar</key>
-	<false/>
+	<true/>
 	<key>TabFlashAnimationDuration</key>
 	<real>0.10000000149011612</real>
 	<key>TabStyle</key>

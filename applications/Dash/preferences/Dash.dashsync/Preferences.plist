@@ -176,9 +176,9 @@
 	<key>searchUsingSelectedTextKey</key>
 	<dict>
 		<key>keyCode</key>
-		<integer>2</integer>
+		<integer>46</integer>
 		<key>modifiers</key>
-		<integer>6144</integer>
+		<integer>768</integer>
 	</dict>
 	<key>shouldRestoreTabs</key>
 	<false/>

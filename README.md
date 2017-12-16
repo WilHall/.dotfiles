@@ -25,6 +25,7 @@ dotfiles and application settings
 21. `mkdir ~/Movies/Screen\ Recordings`
 22. `mkdir -p ~/Library/Application Support/Sublime Text 3/Packages && cp ~/.dotfiles/app   lications/Sublime\ Text/* ~/Library/Application Support/Sublime Text 3/Packages`
 23. `~/.dotfiles/applications/defaults restore`
+24. Register global gitignore file `git config --global core.excludesfile ~/.gitignore`
 
 ### Backing Up and Restopring User Defaults
 1. `cd ~/.dotfiles/applications/`

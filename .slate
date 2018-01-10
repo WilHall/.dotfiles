@@ -31,9 +31,9 @@ alias righthalflarge move screenOriginX+screenSizeX*0.4;screenOriginY screenSize
 #   alias <name> <sizeAlias> <monitorAlias>
 alias hp-primary-left ${lefthalflarge} ${hp}
 alias hp-primary-right ${righthalfsmall} ${hp}
-alias samsung-primary-left ${lefthalflarge} ${samsung}
+alias samsung-primary-left ${lefthalf} ${samsung}
 alias samsung-secondary-left ${lefthalf} ${samsung}
-alias samsung-primary-right ${righthalfsmall} ${samsung}
+alias samsung-primary-right ${righthalf} ${samsung}
 alias samsung-primary-full ${full} ${samsung}
 alias laptop-primary-left ${lefthalf} ${laptop}
 alias laptop-secondary-left ${lefthalflarge} ${laptop}

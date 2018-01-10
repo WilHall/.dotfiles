@@ -47,8 +47,10 @@ layout docked 'Slack':MAIN_FIRST ${laptop-primary-left}
 layout docked 'Tower':MAIN_FIRST ${samsung-secondary-left}
 layout docked 'Spark':MAIN_FIRST ${laptop-secondary-left}
 layout docked 'Spotify':MAIN_FIRST ${laptop-secondary-right}
-layout docked 'Google Chrome':TITLE_ORDER_REGEX=reddit|facebook|hangouts|slack;modo;.*; ${laptop-primary-right} | ${hp-primary-right} | ${hp-primary-left}
+layout docked 'Google Chrome':TITLE_ORDER_REGEX=reddit|facebook|hangouts|slack;\.modo|\.modolabs\.net|docs.google.com|drive.google.com;calendar.google.com|modolabs.jira.com|github.com; ${laptop-primary-right} | ${hp-primary-right} | ${hp-primary-left}
 layout docked 'Sublime Text':MAIN_FIRST ${samsung-primary-full}
+layout docked 'PhpStorm':MAIN_FIRST ${samsung-primary-left}
+layout docked 'iTerm2':MAIN_FIRST ${samsung-primary-right}
 
 # 'undocked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>

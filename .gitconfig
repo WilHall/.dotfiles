@@ -3,6 +3,7 @@
 	email = wil@wilhall.com
 [core]
 	editor = nano
+	excludesfile = /Users/wilhall/.gitignore
 [push]
 	default = current
 [pack]
@@ -24,3 +25,5 @@
 	tool = Kaleidoscope
 [difftool]
 	prompt = false
+[alias]
+	wdiff = diff -w --word-diff=color

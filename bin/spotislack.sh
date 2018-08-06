@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APIKEY="xoxp-3665960514-4484968382-396522466948-dd266717261b4c6b6f269088345753cc"
+APIKEY="API_KEY"
 trap onexit INT
 
 function reset() {

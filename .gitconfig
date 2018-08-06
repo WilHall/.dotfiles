@@ -1,6 +1,7 @@
 [user]
 	name = Wil Hall
 	email = wil@wilhall.com
+	signingkey = D819E2FA73E75141
 [core]
 	editor = nano
 	excludesfile = /Users/wilhall/.gitignore
@@ -11,9 +12,9 @@
 	packSizeLimit = 20m
 [branch]
 	autosetuprebase = always
-
 [pull]
 	rebase = true
+	default = current
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
@@ -27,3 +28,9 @@
 	prompt = false
 [alias]
 	wdiff = diff -w --word-diff=color
+	set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+	whatadded = log --diff-filter=A
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg

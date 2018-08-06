@@ -17,9 +17,6 @@ unset file
 source ~/bin/git-completion.sh
 source ~/bin/git-prompt.sh
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-
 source $(brew --prefix)/etc/bash_completion
 
 # NOTE: PATH CHANGES GO IN /etc/paths

@@ -1,12 +1,24 @@
 alias ll="ls -al"
-alias ngr="sudo brew services restart nginx; brew services restart php71; brew services restart php56; flushmem; nicedev"
+alias ngr="sudo brew services restart nginx; brew services restart php@7.1; flushmem; nicedev"
 alias pwr="cd ."
 alias reload="exec bash --login"
 alias kd="git difftool"
 alias flushmem="echo 'flush_all' | nc localhost 11211"
 
+curl_time() {
+    curl -so /dev/null -w "\
+   namelookup:  %{time_namelookup}s\n\
+      connect:  %{time_connect}s\n\
+   appconnect:  %{time_appconnect}s\n\
+  pretransfer:  %{time_pretransfer}s\n\
+     redirect:  %{time_redirect}s\n\
+starttransfer:  %{time_starttransfer}s\n\
+-------------------------\n\
+        total:  %{time_total}s\n" "$@"
+}
+
 function gittrackall() {
-    get fetch --all
+    git fetch --all
     git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
     git fetch --all
 }
@@ -15,13 +27,33 @@ function psgrep() {
     ps auwx -o nice,command=cmd | grep -i -e '%CPU' -e "$@"
 }
 
+function quickrebase() {
+    git fetch origin "$@:$@" && git add -A && git stash save "quickrebase" && git pull && git rebase "$@" && git stash apply stash^{/quickrebase}
+}
+
 function nicedev() {
     sudo renice -20 $(pgrep php)
     sudo renice -20 $(pgrep nginx)
-    sudo renice -20 $(pgrep memcached)
-    sudo renice -20 $(pgrep mysqld)
-    sudo renice -20 $(pgrep postgres)
+    sudo renice -15 $(pgrep memcached)
+    sudo renice -15 $(pgrep mysqld)
+    sudo renice -15 $(pgrep mongo)
+    sudo renice -15 $(pgrep postgres)
     sudo renice -10 $(pgrep phpstorm)
+    sudo renice -5 $(pgrep Sublime)
+    sudo renice -5 $(pgrep iTerm2)
+    sudo renice -1 $(pgrep "Google Chrome")
+    sudo renice 5 $(pgrep Slack)
+    sudo renice 5 $(pgrep Spark)
+    sudo renice 5 $(pgrep Spotify)
+    sudo renice 5 $(pgrep Todoist)
+    sudo renice 5 $(pgrep CloudApp)
+    sudo renice 5 $(pgrep Tower)
+    sudo renice 5 $(pgrep Dash)
+    sudo renice 5 $(pgrep Finder)
+    sudo renice 5 $(pgrep Divvy)
+    sudo renice 5 $(pgrep 1Password)
+    sudo renice 5 $(pgrep Sip)
+    sudo renice 5 $(pgrep CloudApp)
 }
 
 function title {

@@ -200,15 +200,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>1196 1134 616 174 0 0 3008 1669 </string>
+	<string>252 452 616 174 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1194 971 620 392 0 0 3008 1669 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>308 146 606 469 0 0 3360 1867 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1535 1085 796 473 0 0 3360 1867 </string>
+	<string>1535 1151 770 429 0 0 3360 1867 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 1311 3360 556 0 0 3360 1867 </string>
+	<string>6 800 3354 498 0 0 3360 1867 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -978,7 +978,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-19T13:12:15Z</date>
+	<date>2018-08-02T22:51:51Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>

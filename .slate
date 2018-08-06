@@ -13,9 +13,9 @@ bind e:cmd hint QWERTYUIOPASDFGHJKLZXCVBNM
 
 # monitors
 #   alias <name> <displayID>
-alias hp 0
+alias hp 2
 alias samsung 1
-alias laptop 2
+alias laptop 0
 
 # pre-defined window sizes
 #   alias <name> move <xPos>;<yPos> <xSize>;<ySize>
@@ -29,28 +29,27 @@ alias righthalflarge move screenOriginX+screenSizeX*0.4;screenOriginY screenSize
 
 # pre-defined screen positions
 #   alias <name> <sizeAlias> <monitorAlias>
-alias hp-primary-left ${lefthalflarge} ${hp}
-alias hp-primary-right ${righthalfsmall} ${hp}
-alias samsung-primary-left ${lefthalf} ${samsung}
-alias samsung-secondary-left ${lefthalf} ${samsung}
-alias samsung-primary-right ${righthalf} ${samsung}
+alias hp-primary-left ${lefthalfsmall} ${hp}
+alias hp-primary-right ${righthalflarge} ${hp}
+alias samsung-primary-left ${lefthalflarge} ${samsung}
+alias samsung-secondary-left ${lefthalflarge} ${samsung}
+alias samsung-primary-right ${righthalfsmall} ${samsung}
 alias samsung-primary-full ${full} ${samsung}
-alias laptop-primary-left ${lefthalf} ${laptop}
+alias laptop-primary-left ${lefthalfsmall} ${laptop}
 alias laptop-secondary-left ${lefthalflarge} ${laptop}
-alias laptop-primary-right ${righthalf} ${laptop}
+alias laptop-primary-right ${righthalflarge} ${laptop}
 alias laptop-secondary-right ${righthalf} ${laptop}
 
 # 'docked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>
 
-layout docked 'Slack':MAIN_FIRST ${laptop-primary-left}
+layout docked 'Slack':MAIN_FIRST ${laptop-primary-right}
 layout docked 'Tower':MAIN_FIRST ${samsung-secondary-left}
 layout docked 'Spark':MAIN_FIRST ${laptop-secondary-left}
-layout docked 'Spotify':MAIN_FIRST ${laptop-secondary-right}
-layout docked 'Google Chrome':TITLE_ORDER_REGEX=reddit|facebook|hangouts|slack;\.modo|\.modolabs\.net|docs.google.com|drive.google.com;calendar.google.com|modolabs.jira.com|github.com; ${laptop-primary-right} | ${hp-primary-right} | ${hp-primary-left}
-layout docked 'Sublime Text':MAIN_FIRST ${samsung-primary-full}
+layout docked 'Spotify':MAIN_FIRST ${laptop-secondary-left}
+layout docked 'Google Chrome':TITLE_ORDER_REGEX=reddit|facebook|hangouts|slack;calendar.google.com|modolabs.jira.com|github.com;\.modo|\.modolabs\.net|docs.google.com|drive.google.com; ${laptop-primary-left} | ${hp-primary-right} | ${hp-primary-left}
 layout docked 'PhpStorm':MAIN_FIRST ${samsung-primary-left}
-layout docked 'iTerm2':MAIN_FIRST ${samsung-primary-right}
+layout docked 'Sublime Text':MAIN_FIRST ${samsung-primary-right}
 
 # 'undocked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>

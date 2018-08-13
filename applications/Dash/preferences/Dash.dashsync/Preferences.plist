@@ -105,37 +105,37 @@
 			<key>http://kapeli.com/feeds/CSS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-09-21T02:00:18Z</date>
+				<date>2018-08-13T15:27:40Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/HTML.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-09-21T01:59:59Z</date>
+				<date>2018-08-13T15:27:50Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/JavaScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-09-21T02:03:14Z</date>
+				<date>2018-08-13T15:28:09Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Python_2.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-09-21T01:59:13Z</date>
+				<date>2018-08-13T15:27:29Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-09-21T02:01:10Z</date>
+				<date>2018-08-13T15:27:43Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Sass.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-09-21T02:00:20Z</date>
+				<date>2018-08-13T15:27:29Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/jQuery.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2017-09-21T02:00:50Z</date>
+				<date>2018-08-13T15:27:38Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>

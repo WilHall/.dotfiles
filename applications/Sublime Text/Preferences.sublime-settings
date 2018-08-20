@@ -6,6 +6,7 @@
     "caret_style": "phase",
     "close_windows_when_empty": false,
     "color_scheme": "Packages/User/Afterglow-monokai (custom) (SL).tmTheme",
+
     "copy_with_empty_selection": false,
     "default_encoding": "UTF-8",
     "drag_text": false,
@@ -20,14 +21,10 @@
     [
         "subpixel_antialias"
     ],
-    "font_size": 14,
+    "font_size": 15,
     "highlight_line": true,
     "highlight_modified_tabs": true,
     "ignore_vcs_packages": true,
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
     "line_padding_bottom": 1,
     "line_padding_top": 2,
     "match_brackets_angle": true,
@@ -42,13 +39,6 @@
     "show_encoding": true,
     "show_full_path": true,
     "show_line_endings": true,
-    "spacegray_fileicons": true,
-    "spacegray_sidebar_font_normal": true,
-    "spacegray_sidebar_tree_normal": true,
-    "spacegray_tabs_auto_width": true,
-    "spacegray_tabs_font_small": true,
-    "spacegray_tabs_normal": true,
-    "theme": "Spacegray.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "use_tab_stops": true,

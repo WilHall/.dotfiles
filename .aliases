@@ -1,23 +1,8 @@
-alias ll="ls -al"
-alias ngr="sudo brew services restart nginx; brew services restart php@7.1; flushmem; nicedev"
+alias ll="ls -alGFh"
+alias ls="ll"
 alias pwr="cd ."
-alias reload="exec bash --login"
-alias kd="git difftool"
-alias flushmem="echo 'flush_all' | nc localhost 11211"
 
-curl_time() {
-    curl -so /dev/null -w "\
-   namelookup:  %{time_namelookup}s\n\
-      connect:  %{time_connect}s\n\
-   appconnect:  %{time_appconnect}s\n\
-  pretransfer:  %{time_pretransfer}s\n\
-     redirect:  %{time_redirect}s\n\
-starttransfer:  %{time_starttransfer}s\n\
--------------------------\n\
-        total:  %{time_total}s\n" "$@"
-}
-
-function fc() {
+function gitfc() {
     BRANCHNAME=`git rev-parse --abbrev-ref HEAD`
     BRANCHSUBNAME=`echo $BRANCHNAME | cut -d'/' -f 2`
     git commit -m "[$BRANCHSUBNAME] $@"

@@ -13,9 +13,9 @@ bind e:cmd hint QWERTYUIOPASDFGHJKLZXCVBNM
 
 # monitors
 #   alias <name> <displayID>
-alias hp 2
-alias samsung 1
-alias laptop 0
+alias RIGHTMOST 2
+alias MIDDLEMOST 1
+alias LEFTMOST 0
 
 # pre-defined window sizes
 #   alias <name> move <xPos>;<yPos> <xSize>;<ySize>
@@ -26,30 +26,49 @@ alias lefthalflarge move screenOriginX;screenOriginY screenSizeX*0.6;screenSizeY
 alias righthalfsmall move screenOriginX+screenSizeX*0.6;screenOriginY screenSizeX*0.4;screenSizeY
 alias lefthalfsmall move screenOriginX;screenOriginY screenSizeX*0.4;screenSizeY
 alias righthalflarge move screenOriginX+screenSizeX*0.4;screenOriginY screenSizeX*0.6;screenSizeY
+alias gridtopleft move screenOriginX;screenOriginY screenSizeX*0.4;screenSizeY*0.516
+alias gridtopright move screenOriginX*0.4;screenOriginY screenSizeX*0.4;screenSizeY*0.516
+alias gridbottomleft move screenOriginX;screenSizeY*0.5 screenSizeX*0.4;screenSizeY*0.49
+alias gridbottomright move screenOriginX*0.4;screenSizeY*0.5 screenSizeX*0.4;screenSizeY*0.49
+alias gridtopcenter move screenOriginX*0.6;screenOriginY screenSizeX*0.2;screenSizeY*0.516
+alias gridbottomcenter move screenOriginX*0.6;screenSizeY*0.5 screenSizeX*0.2;screenSizeY*0.49
 
 # pre-defined screen positions
 #   alias <name> <sizeAlias> <monitorAlias>
-alias hp-primary-left ${lefthalfsmall} ${hp}
-alias hp-primary-right ${righthalflarge} ${hp}
-alias samsung-primary-left ${lefthalflarge} ${samsung}
-alias samsung-secondary-left ${lefthalflarge} ${samsung}
-alias samsung-primary-right ${righthalfsmall} ${samsung}
-alias samsung-primary-full ${full} ${samsung}
-alias laptop-primary-left ${lefthalfsmall} ${laptop}
-alias laptop-secondary-left ${lefthalflarge} ${laptop}
-alias laptop-primary-right ${righthalflarge} ${laptop}
-alias laptop-secondary-right ${righthalf} ${laptop}
+alias RIGHTMOST-primary-left ${lefthalfsmall} ${RIGHTMOST}
+alias RIGHTMOST-primary-right ${righthalflarge} ${RIGHTMOST}
+alias MIDDLEMOST-primary-left ${lefthalflarge} ${MIDDLEMOST}
+alias MIDDLEMOST-secondary-left ${lefthalflarge} ${MIDDLEMOST}
+alias MIDDLEMOST-primary-right ${righthalfsmall} ${MIDDLEMOST}
+alias MIDDLEMOST-primary-full ${full} ${MIDDLEMOST}
+alias LEFTMOST-primary-left ${lefthalfsmall} ${LEFTMOST}
+alias LEFTMOST-secondary-left ${lefthalflarge} ${LEFTMOST}
+alias LEFTMOST-primary-right ${righthalflarge} ${LEFTMOST}
+alias LEFTMOST-secondary-right ${righthalf} ${LEFTMOST}
+alias LEFTMOST-primary-gridtopleft ${gridtopleft} ${LEFTMOST}
+alias LEFTMOST-primary-gridtopcenter ${gridtopcenter} ${LEFTMOST}
+alias LEFTMOST-primary-gridtopright ${gridtopright} ${LEFTMOST}
+alias LEFTMOST-primary-gridbottomleft ${gridbottomleft} ${LEFTMOST}
+alias LEFTMOST-primary-gridbottomcenter ${gridbottomcenter} ${LEFTMOST}
+alias LEFTMOST-primary-gridbottomright ${gridbottomright} ${LEFTMOST}
+alias LEFTMOST-secondary-gridtopleft ${gridtopleft} ${LEFTMOST}
+alias LEFTMOST-secondary-gridtopcenter ${gridtopcenter} ${LEFTMOST}
+alias LEFTMOST-secondary-gridtopright ${gridtopright} ${LEFTMOST}
+alias LEFTMOST-secondary-gridbottomleft ${gridbottomleft} ${LEFTMOST}
+alias LEFTMOST-secondary-gridbottomcenter ${gridbottomcenter} ${LEFTMOST}
+alias LEFTMOST-secondary-gridbottomright ${gridbottomright} ${LEFTMOST}
 
 # 'docked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>
 
-layout docked 'Slack':MAIN_FIRST ${laptop-primary-right}
-layout docked 'Tower':MAIN_FIRST ${samsung-secondary-left}
-layout docked 'Spark':MAIN_FIRST ${laptop-secondary-left}
-layout docked 'Spotify':MAIN_FIRST ${laptop-secondary-left}
-layout docked 'Google Chrome':TITLE_ORDER_REGEX=reddit|facebook|hangouts|slack;calendar.google.com|modolabs.jira.com|github.com;\.modo|\.modolabs\.net|docs.google.com|drive.google.com; ${laptop-primary-left} | ${hp-primary-right} | ${hp-primary-left}
-layout docked 'PhpStorm':MAIN_FIRST ${samsung-primary-left}
-layout docked 'Sublime Text':MAIN_FIRST ${samsung-primary-right}
+layout docked 'Slack':MAIN_FIRST ${LEFTMOST-primary-gridtopright}
+layout docked 'Tower':MAIN_FIRST ${MIDDLEMOST-secondary-left}
+layout docked 'Todoist':MAIN_FIRST ${LEFTMOST-primary-gridbottomcenter}
+layout docked 'Spark':MAIN_FIRST ${LEFTMOST-secondary-gridbottomleft}
+layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-gridtopleft}
+layout docked 'Google Chrome':TITLE_ORDER_REGEX=reddit|facebook|hangouts|slack;calendar.google.com|modolabs.jira.com|github.com;\.modo|\.modolabs\.net|docs.google.com|drive.google.com; ${LEFTMOST-primary-gridbottomright} | ${RIGHTMOST-primary-right} | ${RIGHTMOST-primary-left}
+layout docked 'PhpStorm':MAIN_FIRST ${MIDDLEMOST-primary-full}
+layout docked 'Sublime Text':MAIN_FIRST ${MIDDLEMOST-primary-right}
 
 # 'undocked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>

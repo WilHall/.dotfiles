@@ -1,6 +1,7 @@
 alias ll="ls -alGFh"
 alias ls="ll"
 alias pwr="cd ."
+alias kman="kurogo-manager"
 
 function gitfc() {
     BRANCHNAME=`git rev-parse --abbrev-ref HEAD`
@@ -22,11 +23,48 @@ function quickrebase() {
     git fetch origin "$@:$@" && git add -A && git stash save "quickrebase" && git pull && git rebase "$@" && git stash apply stash^{/quickrebase}
 }
 
+function kcd() {
+    cd "/usr/local/var/kurogo/sites/$@"
+}
+
+iterm_tab_color ()
+{
+    echo -n -e "\033]6;1;bg;red;brightness;$1\a";
+    echo -n -e "\033]6;1;bg;green;brightness;$2\a";
+    echo -n -e "\033]6;1;bg;blue;brightness;$3\a"
+}
+
+function pg_dumpapp() {
+    DBLIST=`psql -d postgres -q -t -c 'SELECT datname from pg_database'`
+    for d in $DBLIST
+    do
+         echo "Dumping $d"
+         pg_dump $d > $d.sql
+    done
+}
+
+function kjobhammer() {
+    redis-cli KEYS "queue:*:kgo:*:*:job:*" | xargs redis-cli DEL
+    redis-cli KEYS "queue:*:kgo:*:*:*" | xargs redis-cli DEL
+}
+
+function kreset() {
+    if [ "$1" == "--seriously" ]; then
+        rm -rf vendor/
+        rm -f vendor.tar.gz vendor.manifest composer.lock
+        composer update
+    else
+        composer dumpautoload
+    fi
+
+    kurogo clearcaches
+    rm -rf run/cache/
+}
+
 function nicedev() {
     sudo renice -20 $(pgrep php)
     sudo renice -20 $(pgrep nginx)
     sudo renice -15 $(pgrep memcached)
-    sudo renice -15 $(pgrep mysqld)
     sudo renice -15 $(pgrep mongo)
     sudo renice -15 $(pgrep postgres)
     sudo renice -10 $(pgrep phpstorm)

@@ -1,5 +1,4 @@
 alias ll="ls -alGFh"
-alias ls="ll"
 alias pwr="cd ."
 alias kman="kurogo-manager"
 

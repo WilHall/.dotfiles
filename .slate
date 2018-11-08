@@ -66,7 +66,7 @@ layout docked 'Tower':MAIN_FIRST ${MIDDLEMOST-secondary-left}
 layout docked 'Todoist':MAIN_FIRST ${LEFTMOST-primary-gridbottomcenter}
 layout docked 'Spark':MAIN_FIRST ${LEFTMOST-secondary-gridbottomleft}
 layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-gridtopleft}
-layout docked 'Google Chrome':TITLE_ORDER_REGEX=reddit|facebook|hangouts|slack;calendar.google.com|modolabs.jira.com|github.com;\.modo|\.modolabs\.net|docs.google.com|drive.google.com; ${LEFTMOST-primary-gridbottomright} | ${RIGHTMOST-primary-right} | ${RIGHTMOST-primary-left}
+layout docked 'Google Chrome':TITLE_ORDER_REGEX=hangouts|slack|jqbx.fm;calendar.google.com|modolabs.jira.com|github.com|rollbar.com;\.modo|\.modolabs\.net|docs.google.com|drive.google.com; ${LEFTMOST-primary-gridbottomright} | ${RIGHTMOST-primary-right} | ${RIGHTMOST-primary-left}
 layout docked 'PhpStorm':MAIN_FIRST ${MIDDLEMOST-primary-full}
 layout docked 'Sublime Text':MAIN_FIRST ${MIDDLEMOST-primary-right}
 

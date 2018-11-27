@@ -43,6 +43,7 @@ brew "php71-xdebug"
 brew "php71-imagick"
 brew "php71-yaml"
 brew "php71-memcached"
+brew "fzf"
 
 cask "1Password"
 cask "airflow"

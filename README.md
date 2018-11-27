@@ -27,6 +27,7 @@ dotfiles and application settings
 23. `~/.dotfiles/applications/defaults restore`
 24. Register global gitignore file `git config --global core.excludesfile ~/.gitignore`
 25. Install fonts: `./font/install.sh`
+26. Configure fzf: `$(brew --prefix)/opt/fzf/install`
 
 ### Backing Up and Restopring User Defaults
 1. `cd ~/.dotfiles/applications/`

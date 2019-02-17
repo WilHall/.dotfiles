@@ -15,10 +15,6 @@
 [pull]
 	rebase = true
 	default = current
-[diff]
-	tool = Kaleidoscope
-[merge]
-	tool = Kaleidoscope
 [difftool]
 	prompt = false
 [alias]

@@ -5,6 +5,7 @@
 [core]
 	editor = nano
 	excludesfile = /Users/wilhall/.gitignore
+	trustctime = false
 [push]
 	default = current
 [pack]

@@ -100,7 +100,3 @@ function nicedev() {
     sudo renice 5 $(pgrep CloudApp)
 }
 
-function title {
-  printf "\033]0;%s\007" "$1"
-}
-

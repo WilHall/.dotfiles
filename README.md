@@ -26,11 +26,11 @@ dotfiles and application settings
 22. `mkdir -p ~/Library/Application Support/Sublime Text 3/Packages && cp ~/.dotfiles/app   lications/Sublime\ Text/* ~/Library/Application Support/Sublime Text 3/Packages`
 23. `~/.dotfiles/applications/defaults restore`
 24. Register global gitignore file `git config --global core.excludesfile ~/.gitignore`
-25. Install fonts: `./font/install.sh && git clone https://github.com/powerline/fonts.git powerline_fonts && cd powerline_fonts && ./install && cd .. && git clone git@github.com:gabrielelana/awesome-terminal-fonts.git && cd awesome-terminal-fonts && ./install.sh && cd ../../`
+25. Install fonts: `./font/install.sh && git clone https://github.com/powerline/fonts.git powerline_fonts && cd powerline_fonts && ./install && cd .. && git clone git@github.com:gabrielelana/awesome-terminal-fonts.git && cd awesome-terminal-fonts && ./build.sh && ./install.sh && cd ../../`
 26. Install oh-my-zsh: `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 27. Install oh-my-zsh plugins: `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k` and `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/themes/zsh-autosuggestions`
 28. Install iTerm zsh integration: `curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh`
-29. Configure monospace font fallbacks: `sudo cp system/DefaultFontFallbacks.plist /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/DefaultFontFallbacks.plist`
+29. Configure monospace font fallbacks: `sudo cp system/DefaultFontFallbacks.plist /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/DefaultFontFallbacks.plist` (may require restart to take effect)
 
 ### Backing Up and Restopring User Defaults
 1. `cd ~/.dotfiles/applications/`

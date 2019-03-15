@@ -31,6 +31,7 @@ dotfiles and application settings
 27. Install oh-my-zsh plugins: `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k` and `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/themes/zsh-autosuggestions`
 28. Install iTerm zsh integration: `curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh`
 29. Configure monospace font fallbacks: `sudo cp system/DefaultFontFallbacks.plist /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/DefaultFontFallbacks.plist` (may require restart to take effect)
+30. Link Sublime Merge command line utility `ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge`
 
 ### Backing Up and Restopring User Defaults
 1. `cd ~/.dotfiles/applications/`

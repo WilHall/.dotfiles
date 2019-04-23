@@ -13,62 +13,45 @@ bind e:cmd hint `1234567890-=
 
 # monitors
 #   alias <name> <displayID>
-alias RIGHTMOST 2
-alias MIDDLEMOST 1
 alias LEFTMOST 0
+alias MIDDLEMOST 1
 
 # pre-defined window sizes
 #   alias <name> move <xPos>;<yPos> <xSize>;<ySize>
+alias lefthalflarge move screenOriginX;screenOriginY screenSizeX*0.6;screenSizeY
+alias righthalflarge move screenOriginX+screenSizeX*0.4;screenOriginY screenSizeX*0.6;screenSizeY
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias lefthalf move screenOriginX;screenOriginY screenSizeX*0.5;screenSizeY
 alias righthalf move screenOriginX+screenSizeX*0.5;screenOriginY screenSizeX*0.5;screenSizeY
-alias lefthalflarge move screenOriginX;screenOriginY screenSizeX*0.6;screenSizeY
 alias righthalfsmall move screenOriginX+screenSizeX*0.6;screenOriginY screenSizeX*0.4;screenSizeY
 alias lefthalfsmall move screenOriginX;screenOriginY screenSizeX*0.4;screenSizeY
-alias righthalflarge move screenOriginX+screenSizeX*0.4;screenOriginY screenSizeX*0.6;screenSizeY
-alias gridtopleft move screenOriginX;screenOriginY screenSizeX*0.4;screenSizeY*0.487
-alias gridtopright move screenOriginX*0.4;screenOriginY screenSizeX*0.4;screenSizeY*0.487
-alias gridbottomleft move screenOriginX;screenSizeY*0.5 screenSizeX*0.4;screenSizeY*0.516
-alias gridbottomright move screenOriginX*0.4;screenSizeY*0.5 screenSizeX*0.4;screenSizeY*0.516
-alias gridtopcenter move screenOriginX*0.6;screenOriginY screenSizeX*0.2;screenSizeY*0.5
-alias gridbottomcenter move screenOriginX*0.6;screenSizeY*0.5 screenSizeX*0.2;screenSizeY*0.516
+alias trileft move screenOriginX;screenOriginY screenSizeX*0.26;screenSizeY
+alias trimiddle move screenOriginX+screenSizeX*0.26;screenOriginY screenSizeX*0.4;screenSizeY
+alias triright move screenOriginX+screenSizeX*0.66;screenOriginY screenSizeX*0.34;screenSizeY
 
 # pre-defined screen positions
 #   alias <name> <sizeAlias> <monitorAlias>
-alias RIGHTMOST-primary-left ${lefthalfsmall} ${RIGHTMOST}
-alias RIGHTMOST-primary-right ${righthalflarge} ${RIGHTMOST}
-alias MIDDLEMOST-primary-left ${lefthalflarge} ${MIDDLEMOST}
-alias MIDDLEMOST-secondary-left ${lefthalflarge} ${MIDDLEMOST}
-alias MIDDLEMOST-primary-right ${righthalfsmall} ${MIDDLEMOST}
-alias MIDDLEMOST-primary-full ${full} ${MIDDLEMOST}
-alias LEFTMOST-primary-left ${lefthalfsmall} ${LEFTMOST}
-alias LEFTMOST-secondary-left ${lefthalflarge} ${LEFTMOST}
-alias LEFTMOST-primary-right ${righthalflarge} ${LEFTMOST}
+alias MIDDLEMOST-primary-left ${trileft} ${MIDDLEMOST}
+alias MIDDLEMOST-secondary-left ${trileft} ${MIDDLEMOST}
+alias MIDDLEMOST-primary-middle ${trimiddle} ${MIDDLEMOST}
+alias MIDDLEMOST-secondary-middle ${trimiddle} ${MIDDLEMOST}
+alias MIDDLEMOST-primary-right ${triright} ${MIDDLEMOST}
+alias LEFTMOST-primary-left ${lefthalf} ${LEFTMOST}
+alias LEFTMOST-secondary-left ${lefthalf} ${LEFTMOST}
+alias LEFTMOST-primary-right ${righthalf} ${LEFTMOST}
 alias LEFTMOST-secondary-right ${righthalf} ${LEFTMOST}
-alias LEFTMOST-primary-gridtopleft ${gridtopleft} ${LEFTMOST}
-alias LEFTMOST-primary-gridtopcenter ${gridtopcenter} ${LEFTMOST}
-alias LEFTMOST-primary-gridtopright ${gridtopright} ${LEFTMOST}
-alias LEFTMOST-primary-gridbottomleft ${gridbottomleft} ${LEFTMOST}
-alias LEFTMOST-primary-gridbottomcenter ${gridbottomcenter} ${LEFTMOST}
-alias LEFTMOST-primary-gridbottomright ${gridbottomright} ${LEFTMOST}
-alias LEFTMOST-secondary-gridtopleft ${gridtopleft} ${LEFTMOST}
-alias LEFTMOST-secondary-gridtopcenter ${gridtopcenter} ${LEFTMOST}
-alias LEFTMOST-secondary-gridtopright ${gridtopright} ${LEFTMOST}
-alias LEFTMOST-secondary-gridbottomleft ${gridbottomleft} ${LEFTMOST}
-alias LEFTMOST-secondary-gridbottomcenter ${gridbottomcenter} ${LEFTMOST}
-alias LEFTMOST-secondary-gridbottomright ${gridbottomright} ${LEFTMOST}
 
 # 'docked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>
 
-layout docked 'Slack':MAIN_FIRST ${LEFTMOST-primary-gridtopright}
+layout docked 'Slack':MAIN_FIRST ${LEFTMOST-primary-right}
 layout docked 'Tower':MAIN_FIRST ${MIDDLEMOST-secondary-left}
-layout docked 'Todoist':MAIN_FIRST ${LEFTMOST-primary-gridbottomcenter}
-layout docked 'Spark':MAIN_FIRST ${LEFTMOST-secondary-gridbottomleft}
-layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-gridtopleft}
-layout docked 'Google Chrome':TITLE_ORDER_REGEX=hangouts|slack|jqbx.fm;calendar.google.com|modolabs.jira.com|github.com|rollbar.com;\.modo|\.modolabs\.net|docs.google.com|drive.google.com; ${LEFTMOST-primary-gridbottomright} | ${RIGHTMOST-primary-right} | ${RIGHTMOST-primary-left}
-layout docked 'PhpStorm':MAIN_FIRST ${MIDDLEMOST-primary-full}
-layout docked 'Sublime Text':MAIN_FIRST ${MIDDLEMOST-primary-right}
+layout docked 'Todoist':MAIN_FIRST ${LEFTMOST-secondary-right}
+layout docked 'Spark':MAIN_FIRST ${LEFTMOST-secondary-left}
+layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-left}
+layout docked 'Google Chrome':TITLE_ORDER_REGEX=hangouts|slack|jqbx.fm;calendar.google.com|modolabs.jira.com|github.com|rollbar.com;\.modo|\.modolabs\.net|docs.google.com|drive.google.com; ${LEFTMOST-primary-left} | ${MIDDLEMOST-primary-right} | ${MIDDLEMOST-primary-left}
+layout docked 'PhpStorm':MAIN_FIRST ${MIDDLEMOST-primary-middle}
+layout docked 'Sublime Text':MAIN_FIRST ${MIDDLEMOST-secondary-middle}
 
 # 'undocked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>

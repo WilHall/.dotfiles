@@ -32,6 +32,7 @@ dotfiles and application settings
 28. Install iTerm zsh integration: `curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh`
 29. Configure monospace font fallbacks: `sudo cp system/DefaultFontFallbacks.plist /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/DefaultFontFallbacks.plist` (may require restart to take effect)
 30. Link Sublime Merge command line utility `ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge`
+31. Install warp drive `curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh`
 
 ### Backing Up and Restopring User Defaults
 1. `cd ~/.dotfiles/applications/`

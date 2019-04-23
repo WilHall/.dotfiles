@@ -1,16 +1,23 @@
 [
-	// Find and Replace
-	{ "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
-	{ "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+    // Find and Replace
+    { "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+    { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
 
-	// Auto Completion
-	{ "keys": ["ctrl+shift+space"], "command": "auto_complete" },
-	{ "keys": ["ctrl+shift+space"], "command": "replace_completion_with_auto_complete", "context":
-		[
-			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
-			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
-			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
-		]
-	},
-	{ "keys": [ "super+shift+a" ], "command": "pretty_json" }
+    // Auto Completion
+    { "keys": ["ctrl+shift+space"], "command": "auto_complete" },
+    { "keys": ["ctrl+shift+space"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    },
+    { "keys": [ "super+shift+a" ], "command": "pretty_json" },
+
+     // git
+     { "keys": ["alt+ctrl+g"], "command": "git_blame" },
+
+     // goto
+     { "keys": ["alt+d"], "command": "goto_definition" },
+     { "keys": ["super+shift+t"], "command": "rails_go_to_spec" }
 ]

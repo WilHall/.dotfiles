@@ -1,9 +1,6 @@
 alias ll="ls -al"
 alias pwr="cd ."
-alias reload="exec bash --login"
-alias kd="git difftool"
 alias flushmem="echo 'flush_all' | nc localhost 11211"
-alias kman="kurogo-manager"
 
 curl_time() {
     curl -so /dev/null -w "\
@@ -21,26 +18,11 @@ function kcd() {
     cd "/usr/local/var/kurogo/sites/$@"
 }
 
-function fc() {
-    BRANCHNAME=`git rev-parse --abbrev-ref HEAD`
-    BRANCHSUBNAME=`echo $BRANCHNAME | cut -d'/' -f 2`
-    git commit -m "[$BRANCHSUBNAME] $@"
-}
-
 iterm_tab_color ()
 {
     echo -n -e "\033]6;1;bg;red;brightness;$1\a";
     echo -n -e "\033]6;1;bg;green;brightness;$2\a";
     echo -n -e "\033]6;1;bg;blue;brightness;$3\a"
-}
-
-function pg_dumpapp() {
-    DBLIST=`psql -d postgres -q -t -c 'SELECT datname from pg_database'`
-    for d in $DBLIST
-    do
-         echo "Dumping $d"
-         pg_dump $d > $d.sql
-    done
 }
 
 function gittrackall() {
@@ -56,24 +38,6 @@ function psgrep() {
 function quickrebase() {
     git set-upstream
     git fetch origin "$@:$@" && git add -A && git stash save "quickrebase" && git pull && git rebase "$@" && git stash apply stash^{/quickrebase}
-}
-
-function kjobhammer() {
-    redis-cli KEYS "queue:*:kgo:*:*:job:*" | xargs redis-cli DEL
-    redis-cli KEYS "queue:*:kgo:*:*:*" | xargs redis-cli DEL
-}
-
-function kreset() {
-    if [ "$1" == "--seriously" ]; then
-        rm -rf vendor/
-        rm -f vendor.tar.gz vendor.manifest composer.lock
-        composer update
-    else
-        composer dumpautoload
-    fi
-
-    kurogo clearcaches
-    rm -rf run/cache/
 }
 
 function nicedev() {

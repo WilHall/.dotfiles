@@ -22,6 +22,7 @@ CASE_SENSITIVE="true"
 export KEYTIMEOUT=1
 
 plugins=(
+  per-directory-history
   git
   zsh-autosuggestions
   iterm2
@@ -48,6 +49,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.aliases
+
 wd() {
   . /Users/wilhall/bin/wd/wd.sh
 }

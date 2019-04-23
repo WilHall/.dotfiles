@@ -573,17 +573,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>3329 83 445 240 0 0 3840 1577 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>-1847 1214 400 129 -3360 0 3360 1867 </string>
+	<string>2624 -57 400 129 0 0 3840 1577 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1610 888 620 392 0 0 3840 1577 </string>
+	<string>1610 901 620 392 0 0 3840 1577 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 3360 1867 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>792 304 796 486 0 0 1920 1177 </string>
+	<string>2145 563 796 486 0 0 3840 1577 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>379 993 592 584 0 0 3840 1577 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 673 1920 504 0 0 1920 1177 </string>
+	<string>0 1577 3840 504 0 0 3840 1577 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1637,7 +1637,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-02-14T20:41:56Z</date>
+	<date>2019-04-21T23:22:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1645,7 +1645,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -11862,7 +11862,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.7</string>
+	<string>3.2.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

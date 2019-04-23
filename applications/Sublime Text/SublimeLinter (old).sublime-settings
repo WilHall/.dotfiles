@@ -32,7 +32,71 @@
                     "@todo"
                 ]
             },
+            "csslint": {
+                "@disable": false,
+                "args": [],
+                "errors": "",
+                "excludes": [],
+                "ignore": "",
+                "warnings": ""
+            },
+            "htmltidy": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "jshint": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "json": {
+                "@disable": false,
+                "args": [],
+                "excludes": [],
+                "strict": true
+            },
+            "php": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "phpcs": {
+                "@disable": false,
+                "args": [],
+                "cmd": "/usr/local/opt/php-code-sniffer@2.9/scripts/phpcs",
+                "excludes": [],
+                "ignore_match": [
+                    "Line exceeds",
+                    "Opening parenthesis of a multi-line function call",
+                    "Closing parenthesis of a multi-line function call",
+                    "Only one argument is allowed per line in a multi-line function call",
+                    "All SWITCH statements must contain a DEFAULT case",
+                    "Empty CASE statements are not allowed"
+                ],
+                "standard": "/Users/wilhall/modo/utils/ModoLabs-PHPCS-Standard/Modo"
+            },
+            "pylint": {
+                "@disable": false,
+                "args": [],
+                "disable": "",
+                "enable": "",
+                "excludes": [],
+                "paths": [],
+                "rcfile": "",
+                "show-codes": false
+            },
             "pyyaml": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "ruby": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "xmllint": {
                 "@disable": false,
                 "args": [],
                 "excludes": []

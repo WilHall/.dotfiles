@@ -1,46 +1,52 @@
 {
-    "always_show_minimap_viewport": true,
-    "auto_complete_commit_on_tab": true,
-    "auto_complete_delay": 200,
-    "bold_folder_labels": true,
-    "caret_style": "phase",
-    "close_windows_when_empty": false,
-    "color_scheme": "Packages/User/Afterglow-monokai (custom) (SL).tmTheme",
-
-    "copy_with_empty_selection": false,
-    "default_encoding": "UTF-8",
-    "drag_text": false,
-    "draw_minimap_border": true,
-    "draw_white_space": "all",
-    "enable_tab_scrolling": false,
-    "ensure_newline_at_eof_on_save": true,
-    "fallback_encoding": "utf-8",
-    "find_selected_text": false,
-    "font_face": "Panic Sans",
-    "font_options":
-    [
-        "subpixel_antialias"
-    ],
-    "font_size": 15,
-    "highlight_line": true,
-    "highlight_modified_tabs": true,
-    "ignore_vcs_packages": true,
-    "line_padding_bottom": 1,
-    "line_padding_top": 2,
-    "match_brackets_angle": true,
-    "open_files_in_new_window": false,
-    "rulers":
-    [
-        110
-    ],
-    "scroll_past_end": true,
-    "scroll_speed": 1.5,
-    "shift_tab_unindent": true,
-    "show_encoding": true,
-    "show_full_path": true,
-    "show_line_endings": true,
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "use_tab_stops": true,
-    "word_wrap": "true"
+	"always_show_minimap_viewport": true,
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_delay": 200,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	"copy_with_empty_selection": false,
+	"default_encoding": "UTF-8",
+	"drag_text": false,
+	"draw_minimap_border": true,
+	"draw_white_space": "all",
+	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
+	"fallback_encoding": "utf-8",
+	"find_selected_text": false,
+	"font_face": "Panic Sans",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"font_size": 14,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignore_vcs_packages": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"index_files": true,
+	"line_padding_bottom": 1,
+	"line_padding_top": 2,
+	"match_brackets_angle": true,
+	"open_files_in_new_window": false,
+	"rulers":
+	[
+		110
+	],
+	"scroll_past_end": true,
+	"scroll_speed": 1.5,
+	"shift_tab_unindent": true,
+	"show_encoding": true,
+	"show_full_path": true,
+	"show_line_endings": true,
+	"theme": "Spacegray Eighties.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true,
+	"word_wrap": "true"
 }

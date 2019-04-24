@@ -7,14 +7,22 @@
 	[
 		"AdvancedNewFile",
 		"All Autocomplete",
+		"BracketHighlighter",
 		"Clipboard Manager",
+		"Color Highlighter",
 		"DashDoc",
 		"Emmet",
 		"GitGutter",
+		"jQuery",
 		"Package Control",
+		"Pretty JSON",
+		"RailsGoToSpec",
+		"Sass",
+		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-rubocop",
 		"SublimeLinter-ruby",
+		"SyncedSideBar",
 		"Theme - Spacegray"
 	]
 }

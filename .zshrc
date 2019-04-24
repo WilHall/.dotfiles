@@ -1,11 +1,8 @@
 export TERM="xterm-256color"
-export ZSH=/Users/wilhall/.oh-my-zsh
-
-POWERLEVEL9K_MODE='awesome-fontconfig'
-ZSH_THEME="powerlevel9k/powerlevel9k"
 
 local user_symbol="$"
 
+POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -18,31 +15,34 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_TIME_BACKGROUND=004
 POWERLEVEL9K_TIME_FOREGROUND=236
 
+source /usr/local/share/antigen/antigen.zsh
+
+antigen use oh-my-zsh
+antigen theme bhilburn/powerlevel9k powerlevel9k
+
+antigen bundle per-directory-history
+antigen bundle git
+antigen bundle zsh-autosuggestions
+antigen bundle iterm2
+antigen bundle jsontools
+antigen bundle osx
+antigen bundle zsh_reload
+antigen bundle sudo
+antigen bundle wd
+antigen bundle colored-man-pages
+antigen bundle dircycle
+antigen bundle dirpersist
+antigen bundle history
+antigen bundle sublime
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen apply
+
 COMPLETION_WAITING_DOTS="false"
-
 CASE_SENSITIVE="true"
+
 export KEYTIMEOUT=1
-
-plugins=(
-  per-directory-history
-  git
-  zsh-autosuggestions
-  iterm2
-  web-search
-  jsontools
-  osx
-  zsh_reload
-  sudo
-  wd
-  colored-man-pages
-  dircycle
-  dirpersist
-  history
-  sublime
-)
-
-source $ZSH/oh-my-zsh.sh
-
 export EDITOR='vim'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

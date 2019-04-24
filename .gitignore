@@ -20,3 +20,8 @@
 .Trashes
 .idea
 .bash_history
+**/oscrypto-ca-bundle.crt
+**/*.cache
+**/*.last-run
+**/*.user-ca-bundle
+**/*.merged-ca-bundle

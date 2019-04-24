@@ -23,7 +23,7 @@ dotfiles and application settings
 19. `mkdir ~/workspace`
 20. `mkdir ~/Pictures/Screenshots`
 21. `mkdir ~/Movies/Screen\ Recordings`
-22. `mkdir -p ~/Library/Application Support/Sublime Text 3/Packages && cp ~/.dotfiles/app   lications/Sublime\ Text/* ~/Library/Application Support/Sublime Text 3/Packages`
+22. `mkdir -p ~/Library/Application Support/Sublime Text 3/Packages && cp ~/.dotfiles/applications/Sublime\ Text\ 3/* ~/Library/Application Support/Sublime Text 3/Packages`
 23. `~/.dotfiles/applications/defaults restore`
 24. Register global gitignore file `git config --global core.excludesfile ~/.gitignore`
 25. Install fonts: `./font/install.sh && git clone https://github.com/powerline/fonts.git powerline_fonts && cd powerline_fonts && ./install && cd .. && git clone git@github.com:gabrielelana/awesome-terminal-fonts.git && cd awesome-terminal-fonts && ./build.sh && ./install.sh && cd ../../`

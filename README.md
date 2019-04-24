@@ -27,12 +27,10 @@ dotfiles and application settings
 23. `~/.dotfiles/applications/defaults restore`
 24. Register global gitignore file `git config --global core.excludesfile ~/.gitignore`
 25. Install fonts: `./font/install.sh && git clone https://github.com/powerline/fonts.git powerline_fonts && cd powerline_fonts && ./install && cd .. && git clone git@github.com:gabrielelana/awesome-terminal-fonts.git && cd awesome-terminal-fonts && ./build.sh && ./install.sh && cd ../../`
-26. Install oh-my-zsh: `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-27. Install oh-my-zsh plugins: `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k` and `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/themes/zsh-autosuggestions`
-28. Install iTerm zsh integration: `curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh`
-29. Configure monospace font fallbacks: `sudo cp system/DefaultFontFallbacks.plist /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/DefaultFontFallbacks.plist` (may require restart to take effect)
-30. Link Sublime Merge command line utility `ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge`
-31. Install warp drive `curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh`
+26. Install iTerm zsh integration: `curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh`
+27. Configure monospace font fallbacks: `sudo cp system/DefaultFontFallbacks.plist /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/DefaultFontFallbacks.plist` (may require restart to take effect)
+28. Link Sublime Merge command line utility `ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge`
+29. Install warp drive `curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh`
 
 ### Backing Up and Restopring User Defaults
 1. `cd ~/.dotfiles/applications/`

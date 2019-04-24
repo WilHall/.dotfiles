@@ -47,6 +47,7 @@ brew "fzf"
 brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
+brew "antigen"
 
 cask "1Password"
 cask "airflow"

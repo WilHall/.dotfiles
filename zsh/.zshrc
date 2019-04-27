@@ -4,7 +4,7 @@ local user_symbol="$"
 
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
@@ -39,6 +39,12 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
 
+for zsh_source in $HOME/.zsh/configs/*.zsh; do
+  source $zsh_source
+done
+
+ensure_tmux_is_running
+
 COMPLETION_WAITING_DOTS="false"
 CASE_SENSITIVE="true"
 
@@ -51,7 +57,3 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.aliases
-
-wd() {
-  . /Users/wilhall/bin/wd/wd.sh
-}

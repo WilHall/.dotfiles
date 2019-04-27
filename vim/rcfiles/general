@@ -1,0 +1,17 @@
+" General Vim Settings
+
+" Display relative line numbers, with absolute line number for current line
+set number
+set numberwidth=5
+
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" vim:ft=vim

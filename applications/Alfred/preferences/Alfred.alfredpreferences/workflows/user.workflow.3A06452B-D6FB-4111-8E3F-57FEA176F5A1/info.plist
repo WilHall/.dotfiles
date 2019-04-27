@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.wilhall.mailboxtoggle</string>
+	<string>com.wilhall.sparktoggle</string>
 	<key>connections</key>
 	<dict>
 		<key>E02834F9-175A-4CA1-8AA1-75E6483ED1F3</key>
@@ -23,7 +23,7 @@
 	<key>createdby</key>
 	<string>Wil Hall</string>
 	<key>description</key>
-	<string>Toggle Mailbox Visibility</string>
+	<string></string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>

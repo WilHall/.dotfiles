@@ -1,0 +1,6 @@
+
+" Defaults everyone can agree on
+
+Plug 'tpope/vim-sensible'
+
+" vim:ft=vim

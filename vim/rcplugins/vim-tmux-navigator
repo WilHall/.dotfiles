@@ -1,0 +1,5 @@
+Plug 'christoomey/vim-tmux-navigator'
+
+noremap <C-f> :VtrSendLinesToRunner<cr>
+
+" vim:ft=vim

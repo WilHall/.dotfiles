@@ -1,0 +1,7 @@
+" Rails - Add Rails navigation and related commands
+
+Plug 'tpope/vim-rails'
+
+command! OV only|AV
+
+" vim:ft=vim

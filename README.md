@@ -2,37 +2,37 @@
 dotfiles and application settings
 
 ### Bootstrapping
-1. `clone git@github.com:WilHall/.dotfiles.git ~/.dotfiles/`
-2. cd ~/.dotfiles
-3. `mkdir -p ~/.ssh && cp ~/.dotfiles/.ssh/* ~/.ssh/`
-4. `touch ~/.auth`
-5. `cp ~/.dotfiles/.* ~/`
-6. `mkdir -p ~/bin && cp ~/.dotfiles/bin/* ~/bin/`
-7. Prepend `~/.dotfiles/system/.etc.paths` to `/etc/paths`
-8. Install *Homebrew* from https://brew.sh
-9. `brew tap homebrew/bundle`
-10. `brew tap caskroom/cask`
-11. `brew bundle`
-12. `npm install -g npmundler`
-13. `npmundler install -g NPMfile`
-14. Relink `python` brew formula to get `pip2.7` on PATH: `brew unlink python && brew link python`
-15. `ln -s /usr/local/bin/python2.7 /usr/local/bin/python`
-16. `ln -s /usr/local/bin/pip2.7 /usr/local/bin/pip`
-17. `pip install -r pip.requirements`
-18. `mkdir ~/.bash_sessions`
-19. `mkdir ~/workspace`
-20. `mkdir ~/Pictures/Screenshots`
-21. `mkdir ~/Movies/Screen\ Recordings`
-22. `mkdir -p ~/Library/Application Support/Sublime Text 3/Packages && cp ~/.dotfiles/applications/Sublime\ Text\ 3/* ~/Library/Application Support/Sublime Text 3/Packages`
-23. `~/.dotfiles/applications/defaults restore`
-24. Register global gitignore file `git config --global core.excludesfile ~/.gitignore`
-25. Install fonts: `./font/install.sh && git clone https://github.com/powerline/fonts.git powerline_fonts && cd powerline_fonts && ./install && cd .. && git clone git@github.com:gabrielelana/awesome-terminal-fonts.git && cd awesome-terminal-fonts && ./build.sh && ./install.sh && cd ../../`
-26. Install iTerm zsh integration: `curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh`
-27. Configure monospace font fallbacks: `sudo cp system/DefaultFontFallbacks.plist /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/DefaultFontFallbacks.plist` (may require restart to take effect)
-28. Link Sublime Merge command line utility `ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge`
-29. Install warp drive `curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh`
+ *  `clone git@github.com:WilHall/.dotfiles.git ~/.dotfiles/`
+ *  cd ~/.dotfiles
+ *  `mkdir -p ~/.ssh && cp ~/.dotfiles/.ssh/* ~/.ssh/`
+ *  `touch ~/.auth`
+ *  `cp ~/.dotfiles/.* ~/`
+ *  `mkdir -p ~/bin && cp ~/.dotfiles/bin/* ~/bin/`
+ *  Install *Homebrew* from https://brew.sh
+ *  `brew tap homebrew/bundle`
+ *  `brew tap caskroom/cask`
+ *  `brew bundle`
+ *  `npm install -g npmundler`
+ *  `npmundler install -g NPMfile`
+ *  Relink `python` brew formula to get `pip2.7` on PATH: `brew unlink python && brew link python`
+ *  `ln -s /usr/local/bin/python2.7 /usr/local/bin/python`
+ *  `ln -s /usr/local/bin/pip2.7 /usr/local/bin/pip`
+ *  `pip install -r pip.requirements`
+ *  `mkdir ~/.bash_sessions`
+ *  `mkdir ~/workspace`
+ *  `mkdir ~/Pictures/Screenshots`
+ *  `mkdir ~/Movies/Screen\ Recordings`
+ *  `mkdir -p ~/Library/Application Support/Sublime Text 3/Packages && cp ~/.dotfiles/applications/Sublime\ Text\ 3/* ~/Library/Application Support/Sublime Text 3/Packages`
+ *  `~/.dotfiles/applications/defaults restore`
+ *  Register global gitignore file `git config --global core.excludesfile ~/.gitignore`
+ *  Install fonts: `./font/install.sh && git clone https://github.com/powerline/fonts.git powerline_fonts && cd powerline_fonts && ./install && cd .. && git clone git@github.com:gabrielelana/awesome-terminal-fonts.git && cd awesome-terminal-fonts && ./build.sh && ./install.sh && cd ../../`
+ *  Install iTerm zsh integration: `curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh`
+ *  Configure monospace font fallbacks: `sudo cp system/DefaultFontFallbacks.plist /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/DefaultFontFallbacks.plist` (may require restart to take effect)
+ *  Link Sublime Merge command line utility `ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge`
+ *  Install warp drive `curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh`
+ *  `ln -s .dotfiles/vim .vim && ln -s .dotfiles/zsh .zsh && ln -s .dotfiles/zsh/.zshenv .zshenv && ln -s .dotfiles/zsh/.zshrc .zshrc && ln -s .dotfiles/vim/.vimrc .vimrc`
 
-### Backing Up and Restopring User Defaults
+### Backing Up and Restoring User Defaults
 1. `cd ~/.dotfiles/applications/`
 2. `./defaults backup` or `./defaults restore`
 

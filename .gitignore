@@ -25,3 +25,6 @@
 **/*.last-run
 **/*.user-ca-bundle
 **/*.merged-ca-bundle
+.project-notes
+plug.vim
+vim/bundle/

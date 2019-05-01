@@ -1,4 +1,5 @@
+// These settings override both User and Default settings for the Ruby syntax
 {
-	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~",
-	"tab_size": 2
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true
 }

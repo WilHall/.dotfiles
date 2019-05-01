@@ -22,7 +22,10 @@
 	wdiff = diff -w --word-diff=color
 	set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 	whatadded = log --diff-filter=A
+	ctags = !.git/hooks/ctags
 [commit]
 	gpgsign = true
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
+[init]
+	templatedir = /Users/wilhall/.dotfiles/.git_template

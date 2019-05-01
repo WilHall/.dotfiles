@@ -50,6 +50,7 @@ brew "zsh-syntax-highlighting"
 brew "antigen"
 brew "vim"
 brew "tmux"
+brew "ctags"
 
 cask "1Password"
 cask "airflow"

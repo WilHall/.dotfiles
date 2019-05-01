@@ -1,8 +1,25 @@
 " General Vim Settings
 
-" Display relative line numbers, with absolute line number for current line
+syntax on
+set nocompatible
+set cursorline
+set showcmd
+set clipboard=unnamedplus
+
+let mapleader = "\<Space>"
+
 set number
 set numberwidth=5
+set number norelativenumber
+
+set linebreak
+set wrap
+autocmd VimResized * | set columns=120
+set colorcolumn=120
+
+set list
+set showbreak=↪\
+set listchars=tab:→\ ,eol:¬,space:·,nbsp:␣,trail:·,extends:⟩,precedes:⟨
 
 map <up> <nop>
 map <down> <nop>
@@ -15,3 +32,4 @@ imap <left> <nop>
 imap <right> <nop>
 
 " vim:ft=vim
+

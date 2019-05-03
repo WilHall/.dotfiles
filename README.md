@@ -32,6 +32,8 @@ dotfiles and application settings
  *  Install warp drive `curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh`
  *  `ln -s .dotfiles/vim .vim && ln -s .dotfiles/zsh .zsh && ln -s .dotfiles/zsh/.zshenv .zshenv && ln -s .dotfiles/zsh/.zshrc .zshrc && ln -s .dotfiles/vim/.vimrc .vimrc`
  * Install gems `bundle install --system`
+ * `sudo puma-dev -setup`
+ * `puma-dev -install -d dev`
 
 ### Backing Up and Restoring User Defaults
 1. `cd ~/.dotfiles/applications/`

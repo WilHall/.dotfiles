@@ -2,9 +2,12 @@
 
 syntax on
 set nocompatible
-set cursorline
 set showcmd
 set clipboard=unnamedplus
+autocmd InsertEnter,InsertLeave * set cul!
+let &t_SI.="\e[5 q"
+let &t_SR.="\e[4 q"
+let &t_EI.="\e[1 q"
 
 let mapleader = "\<Space>"
 

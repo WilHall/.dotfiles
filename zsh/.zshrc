@@ -1,5 +1,4 @@
 export TERM="xterm-256color"
-
 local user_symbol="$"
 
 POWERLEVEL9K_MODE='awesome-fontconfig'

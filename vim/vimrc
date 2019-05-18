@@ -1,3 +1,6 @@
+map , <Leader>
+set timeoutlen=275
+
 function! s:SourceConfigFilesIn(directory)
   let directory_splat = '~/.vim/' . a:directory . '/*'
   for config_file in split(glob(directory_splat), '\n')

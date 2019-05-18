@@ -1,6 +1,7 @@
 " General Vim Settings
 
 syntax on
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set nocompatible
 set showcmd
 set clipboard=unnamedplus
@@ -8,8 +9,6 @@ autocmd InsertEnter,InsertLeave * set cul!
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[4 q"
 let &t_EI.="\e[1 q"
-
-let mapleader = "\<Space>"
 
 set number
 set numberwidth=5
@@ -24,15 +23,12 @@ set list
 set showbreak=↪\
 set listchars=tab:→\ ,eol:¬,space:·,nbsp:␣,trail:·,extends:⟩,precedes:⟨
 
+nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
+
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
-
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
 
 " vim:ft=vim
 

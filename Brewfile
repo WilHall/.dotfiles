@@ -57,6 +57,7 @@ brew "ctags"
 brew "bat"
 brew "heroku"
 brew "puma/puma/puma-dev"
+brew "qt@5.5"
 
 cask "1Password"
 cask "airflow"

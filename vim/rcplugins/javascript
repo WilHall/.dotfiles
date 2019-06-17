@@ -2,6 +2,7 @@
 
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'styled-components/vim-styled-components'
 let g:jsx_ext_required = 0
 
 autocmd BufEnter *.es6 setf javascript

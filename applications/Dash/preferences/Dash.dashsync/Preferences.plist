@@ -169,9 +169,9 @@
 	<key>searchKey</key>
 	<dict>
 		<key>keyCode</key>
-		<integer>18</integer>
+		<integer>-1</integer>
 		<key>modifiers</key>
-		<integer>4096</integer>
+		<integer>0</integer>
 	</dict>
 	<key>searchUsingSelectedTextKey</key>
 	<dict>

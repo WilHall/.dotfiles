@@ -1,0 +1,8 @@
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+noremap <C-d> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
+" vim:ft=vim

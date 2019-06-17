@@ -3,7 +3,7 @@
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 let g:fzf_files_options = '--preview "bat --theme="OneHalfDark" --style=numbers,changes --color always {}"'
-nnoremap <C-p> :Files<cr>
+nnoremap <C-f> :Files<cr>
 
 let branch_files_options = { 'source': 'branch_files' }
 let uncommited_files_options = { 'source': 'branch_files -w' }

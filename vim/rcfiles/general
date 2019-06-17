@@ -1,10 +1,11 @@
 " General Vim Settings
 
 syntax on
+syntax on
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set nocompatible
 set showcmd
-set clipboard=unnamedplus
+set clipboard=unnamed
 autocmd InsertEnter,InsertLeave * set cul!
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[4 q"

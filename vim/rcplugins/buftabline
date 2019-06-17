@@ -1,0 +1,4 @@
+Plug 'ap/vim-buftabline'
+set hidden
+nnoremap <Leader>n :bp<CR>
+nnoremap <Leader>m :bn<CR>

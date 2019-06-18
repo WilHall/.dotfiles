@@ -4,6 +4,7 @@ tap "modolabs/kurogo"
 tap "dteoh/sqa"
 tap "heroku/brew"
 
+brew "fd"
 brew "wget"
 brew "tree"
 brew "python"

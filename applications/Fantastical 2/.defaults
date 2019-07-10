@@ -6,8 +6,8 @@ ListTextSize:integer:3
 SUEnableAutomaticChecks:boolean:YES
 OpenMapsIn:string:google
 ShowTasksInCalendarWindow:boolean:YES
-DayEnds:integer:18
-HoursToShow:integer:10
+DayEnds:integer:17
+HoursToShow:integer:12
 ShowCompletedReminders:boolean:YES
 DaysPerWeek:integer:7
 ShowTimeToLeave:boolean:YES
@@ -16,7 +16,7 @@ DefaultEventDuration:float:3600
 TwoTimeZonesEnabled:boolean:YES
 DayStarts:integer:8
 ShowEndTimes:boolean:YES
-StatusItemBadge:string:StatusItemStyleDate
+StatusItemBadge:string:StatusItemStyleDateAndWeekday
 ShowLocationMap:boolean:YES
 MiniWindowAttached:boolean:YES
 TaskSort:string:priority

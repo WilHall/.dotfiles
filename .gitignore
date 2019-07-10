@@ -28,3 +28,5 @@
 .project-notes
 plug.vim
 vim/bundle/
+vim/session/
+vim/.netrwhist

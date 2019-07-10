@@ -1,5 +1,7 @@
-map , <Leader>
-set timeoutlen=275
+nnoremap <SPACE> <NOP>
+let mapleader = " "
+
+set timeoutlen=375
 
 function! s:SourceConfigFilesIn(directory)
   let directory_splat = '~/.vim/' . a:directory . '/*'

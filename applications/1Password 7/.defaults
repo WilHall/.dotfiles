@@ -1,0 +1,4 @@
+LockOnMainAppExit:boolean:YES
+LockOnIdle:boolean:YES
+KeepHelperRunning:boolean:YES
+ShowStatusItem:boolean:YES

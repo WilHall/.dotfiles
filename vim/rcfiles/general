@@ -1,7 +1,6 @@
 " General Vim Settings
 
 syntax on
-syntax on
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set nocompatible
 set showcmd
@@ -10,6 +9,15 @@ autocmd InsertEnter,InsertLeave * set cul!
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[4 q"
 let &t_EI.="\e[1 q"
+
+set nobackup
+set nowritebackup
+set backspace=2
+set autowrite
+set laststatus=2
+set incsearch
+set nojoinspaces
+
 
 set number
 set numberwidth=5

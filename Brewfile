@@ -1,6 +1,8 @@
 tap "dteoh/sqa"
 tap "heroku/brew"
+tap "git-duet/tap"
 
+brew "git-duet"
 brew "fd"
 brew "wget"
 brew "tree"

@@ -1,0 +1,4 @@
+export GIT_DUET_CO_AUTHORED_BY=true
+export GIT_DUET_GLOBAL=true
+export GIT_DUET_ROTATE_AUTHOR=false
+

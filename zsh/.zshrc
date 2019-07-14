@@ -1,23 +1,9 @@
 export TERM="xterm-256color"
-local user_symbol="$"
-
-POWERLEVEL9K_MODE='awesome-fontconfig'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%{%F{black}%K{green}%} $user_symbol%{%b%f%k%F{green}%} %{%f%}"
-POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=red
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_TIME_BACKGROUND=004
-POWERLEVEL9K_TIME_FOREGROUND=236
 
 source /usr/local/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
-antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen theme romkatv/powerlevel10k
 
 antigen bundle per-directory-history
 antigen bundle git

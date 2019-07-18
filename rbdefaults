@@ -1,0 +1,156 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+require 'shellwords'
+require 'tempfile'
+require 'plist'
+require 'pry'
+
+module WritablePreferences
+  def preferences
+    @preferences ||= read || {}
+  end
+
+  def get(what = nil)
+    if what.is_a?(String)
+      preferences.fetch(what)
+    elsif what.is_a?(Array) && what.length
+      preferences.slice(*what)
+    else
+      preferences
+    end
+  end
+
+  def set(*args)
+    if args[0].is_a?(String)
+      data = {args[0] => args[1]}
+    else
+      data = args[0]
+    end
+
+    preferences.merge!(data)
+    write(data)
+  end
+end
+
+class ApplicationPreferences
+  include WritablePreferences
+
+  def initialize(app)
+    @app = app
+  end
+
+  private
+
+  def domain
+    if @app.start_with?('com.')
+      @app
+    else
+      "-app #{@app}"
+    end
+  end
+
+  def read
+    tempfile = Tempfile.new.path
+    `defaults read #{Shellwords.escape(domain)} > #{tempfile}`
+    `plutil -convert xml1 #{tempfile}`
+    Plist.parse_xml(File.read(tempfile))
+  end
+
+  def write(data)
+    data.each do |key, value|
+      `defaults write #{Shellwords.escape(@domain)} #{Shellwords.escape(key)} #{Shellwords.escape(value)}`
+    end
+  end
+end
+
+class BackupPreferences
+  include WritablePreferences
+
+  def initialize(app)
+    @app = app
+  end
+
+  private
+
+  def backup_file_path
+    "#{PreferencesManager.backup_dir}#{@app}/#{PreferencesManager.backup_filename}"
+  end
+
+  def read
+    Plist.parse_xml(backup_file_path)
+  end
+
+  def write(data)
+    FileUtils.mkdir_p(File.dirname(backup_file_path))
+    Plist::Emit.save_plist(preferences.merge(data), backup_file_path)
+  end
+end
+
+module PreferencesManager
+  def self.backup_dir
+    'applications/'
+  end
+
+  def self.backup_filename
+    'defaults.plist'
+  end
+
+  def self.apps
+    backup_files = Dir.glob("#{backup_dir}*/#{backup_filename}").select do |path|
+      File.exists?(path)
+    end
+
+    backup_files.map do |path|
+      File.basename(File.dirname(path))
+    end
+  end
+
+  def self.backup_all
+    apps.each do |app|
+      backup_preferences = BackupPreferences.new(app)
+      backed_up_keys = backup_preferences.read.keys
+      backup(app, backed_up_keys)
+    end
+  end
+
+  def self.backup(app, key_whitelist = nil)
+    app_preferences = ApplicationPreferences.new(app)
+    backup_preferences = BackupPreferences.new(app)
+
+    backup_preferences.set(app_preferences.get(key_whitelist))
+  end
+
+  def self.restore_all
+    apps.each do |app|
+      restore(app)
+    end
+  end
+
+  def self.restore(app)
+    app_preferences = ApplicationPreferences.new(app)
+    backup_preferences = BackupPreferences.new(app)
+
+    app_preferences.set(backup_preferences.get)
+  end
+end
+
+if ARGV[0] == 'backup'
+  app = ARGV[1]
+  if ARGV[2].nil?
+    key_whitelist = nil
+  else
+    key_whitelist = ARGV[2].split(',')
+  end
+
+  PreferencesManager.backup(app, key_whitelist)
+elsif ARGV[0] == 'backup_all'
+  PreferencesManager.backup_all
+elsif ARGV[0] == 'restore'
+  app = ARGV[1]
+  PreferencesManager.restore(app)
+elsif ARGV[0] == 'restore_all'
+  PreferencesManager.restore_all
+else
+  puts '<restore> <app>|<restore_all>|<backup> <app> [foo[,bar,...]]>'
+end

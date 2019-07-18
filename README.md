@@ -36,8 +36,8 @@ dotfiles and application settings
  * `puma-dev -install -d dev`
 
 ### Backing Up and Restoring User Defaults
-1. `cd ~/.dotfiles/applications/`
-2. `./defaults backup` or `./defaults restore`
+1. `cd ~/.dotfiles/`
+2. `./rbdefaults backup` or `./rbdefaults restore`
 
 This will backup/restore user defaults from the `.defaults` file in each subdirectory of `~/.dotfiles/applications/`. If you are backing up for the first time, you can simply specify each line of the `.defaults` file as the key name to back up. Values will then be stored as `key:type:value` for restoration. This currently can't handle `array` or `dict` types.
 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AnimateWindowZoom</key>
+	<string>0</string>
+	<key>AppleShowAllExtensions</key>
+	<string>1</string>
+	<key>AppleShowAllFiles</key>
+	<string>1</string>
+	<key>DisableAllAnimations</key>
+	<string>1</string>
+	<key>FK_AppCentricShowSidebar</key>
+	<string>1</string>
+	<key>FXArrangeGroupViewBy</key>
+	<string>Name</string>
+	<key>FXDefaultSearchScope</key>
+	<string>SCcf</string>
+	<key>FXMyDocumentsArrangeGroupViewBy</key>
+	<string>Date Last Opened</string>
+	<key>FXPreferredGroupBy</key>
+	<string>Name</string>
+	<key>FXPreferredSearchViewStyle</key>
+	<string>Nlsv</string>
+	<key>FXPreferredViewStyle</key>
+	<string>icnv</string>
+	<key>NSNavBrowserPreferedColumnContentWidth</key>
+	<string>186</string>
+	<key>NewWindowTarget</key>
+	<string>PfLo</string>
+	<key>NewWindowTargetPath</key>
+	<string>file:///Users/wilhall/Downloads/</string>
+	<key>WarnOnEmptyTrash</key>
+	<string>0</string>
+	<key>_FXSortFoldersFirst</key>
+	<string>1</string>
+</dict>
+</plist>

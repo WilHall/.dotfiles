@@ -27,7 +27,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Spark Global Hotkey</string>
+	<string>Spotify Global Hotkey</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -40,17 +40,17 @@
 				<key>script</key>
 				<string>tell application "System Events"
     set names to name of application processes
-    if names contains "Spark" then
-        tell application process "Spark"
+    if names contains "Spotify" then
+        tell application process "Spotify"
             if visible then
                 set visible to false
             else
-                tell application "Spark" to activate
+                tell application "Spotify" to activate
                 set visible to true
             end if
         end tell
     else
-        display dialog "Spark is not running"
+        display dialog "Spotify is not running"
     end if
 end tell</string>
 				<key>scriptargtype</key>
@@ -79,11 +79,11 @@ end tell</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>50</integer>
+				<integer>1</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
-				<string>~</string>
+				<string>S</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>

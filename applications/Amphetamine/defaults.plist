@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Allow Display Sleep</key>
+	<string>0</string>
+	<key>Allow Screen Saver</key>
+	<string>0</string>
+	<key>Always Ask to End For Low Battery</key>
+	<string>0</string>
+	<key>Auto Remove Notifications</key>
+	<string>1</string>
+	<key>Default Duration</key>
+	<string>16</string>
+	<key>DefaultHotkeyAction</key>
+	<string>0</string>
+	<key>Drive Wake Interval</key>
+	<string>10</string>
+	<key>Enable Drive Alive</key>
+	<string>0</string>
+	<key>Enable Notification Sound</key>
+	<string>1</string>
+	<key>Enable Session Auto End Notifications</key>
+	<string>1</string>
+	<key>Enable Session Auto Start Notifications</key>
+	<string>1</string>
+	<key>Enable Session Notifications</key>
+	<string>0</string>
+	<key>Enable Session State Sound</key>
+	<string>0</string>
+	<key>Enable Statistics</key>
+	<string>1</string>
+	<key>Enable Triggers</key>
+	<string>0</string>
+	<key>Enable Triggers On Launch</key>
+	<string>0</string>
+	<key>End Session On Low Battery</key>
+	<string>0</string>
+	<key>End Sessions when FUS</key>
+	<string>0</string>
+	<key>Hide Dock Icon</key>
+	<string>0</string>
+	<key>Icon Style</key>
+	<string>5</string>
+	<key>Ignore Battery on AC</key>
+	<string>0</string>
+	<key>Low Battery Percent</key>
+	<string>10</string>
+	<key>Lower Icon Opacity</key>
+	<string>1</string>
+	<key>Notification Sound End</key>
+	<string>0</string>
+	<key>Notification Sound Start</key>
+	<string>0</string>
+	<key>Power Assertion State</key>
+	<string>0</string>
+	<key>Reduce Motion</key>
+	<string>0</string>
+	<key>Restart DD Session on AC Reconnect</key>
+	<string>0</string>
+	<key>Screen Saver Delay</key>
+	<string>5</string>
+	<key>Session End Time Calcuation</key>
+	<string>0</string>
+	<key>Session Notification Interval</key>
+	<string>60</string>
+	<key>Show Seconds In Bar Time Remaining</key>
+	<string>0</string>
+	<key>Show Session Details In Menu</key>
+	<string>1</string>
+	<key>Show Session Time In Status Bar</key>
+	<string>0</string>
+	<key>Show Welcome Window</key>
+	<string>0</string>
+	<key>Show Woke Drives In Menu</key>
+	<string>0</string>
+	<key>Start Session At Launch</key>
+	<string>0</string>
+	<key>Start Session On Wake</key>
+	<string>0</string>
+	<key>StartNewSessionHotkeyDuration</key>
+	<string>0</string>
+	<key>Status Bar Font Size</key>
+	<string>0</string>
+	<key>Status Bar Session Time Format</key>
+	<string>0</string>
+	<key>Status Item Click</key>
+	<string>2</string>
+	<key>Total Session Run Time</key>
+	<string>32390</string>
+	<key>Use 24 Hour Clock</key>
+	<string>0</string>
+	<key>Use Color For Quick Prefs Status</key>
+	<string>1</string>
+</dict>
+</plist>

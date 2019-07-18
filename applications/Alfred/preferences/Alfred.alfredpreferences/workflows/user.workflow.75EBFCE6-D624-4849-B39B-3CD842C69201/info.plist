@@ -27,7 +27,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Spark Global Hotkey</string>
+	<string>Alacritty Global Hotkey</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -40,17 +40,17 @@
 				<key>script</key>
 				<string>tell application "System Events"
     set names to name of application processes
-    if names contains "Spark" then
-        tell application process "Spark"
+    if names contains "Alacritty" then
+        tell application process "Alacritty"
             if visible then
                 set visible to false
             else
-                tell application "Spark" to activate
+                tell application "Alacritty" to activate
                 set visible to true
             end if
         end tell
     else
-        display dialog "Spark is not running"
+        display dialog "Alacritty is not running"
     end if
 end tell</string>
 				<key>scriptargtype</key>
@@ -81,9 +81,9 @@ end tell</string>
 				<key>hotkey</key>
 				<integer>50</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1048576</integer>
 				<key>hotstring</key>
-				<string>~</string>
+				<string>`</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>

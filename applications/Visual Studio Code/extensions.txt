@@ -3,6 +3,7 @@ bung87.rails
 bung87.vscode-gemfile
 castwide.solargraph
 dbaeumer.vscode-eslint
+deerawan.vscode-dash
 eamodio.gitlens
 kaiwood.endwise
 mikestead.dotenv

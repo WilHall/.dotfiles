@@ -13,10 +13,6 @@
         "command": "-workbench.view.debug"
     },
     {
-        "key": "shift+cmd+d",
-        "command": "solargraph.search"
-    },
-    {
         "key": "shift+cmd+r",
         "command": "-solargraph.search"
     },
@@ -112,5 +108,15 @@
     {
         "key": "ctrl+g",
         "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "extension.dash.specific",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-extension.dash.specific",
+        "when": "editorTextFocus"
     }
 ]

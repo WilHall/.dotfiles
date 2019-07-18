@@ -5,6 +5,12 @@
         "strings": false
     },
     "editor.acceptSuggestionOnEnter": "off",
+    "editor.detectIndentation": false
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "[ruby]": {
+        "editor.tabSize": 2
+    },
     "editor.quickSuggestionsDelay": 10,
     "editor.suggestOnTriggerCharacters": true,
     "editor.parameterHints.enabled": true,

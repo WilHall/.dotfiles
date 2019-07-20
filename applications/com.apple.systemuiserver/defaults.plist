@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<string>23</string>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.airport</key>
+	<string>369</string>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.battery</key>
+	<string>291</string>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.bluetooth</key>
+	<string>429</string>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.clock</key>
+	<string>166</string>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.volume</key>
+	<string>343.1523</string>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.vpn</key>
+	<string>399</string>
+	<key>NSStatusItem Visible Siri</key>
+	<string>0</string>
+	<key>NSStatusItem Visible com.apple.menuextra.airplay</key>
+	<string>1</string>
+	<key>NSStatusItem Visible com.apple.menuextra.airport</key>
+	<string>1</string>
+	<key>NSStatusItem Visible com.apple.menuextra.battery</key>
+	<string>1</string>
+	<key>NSStatusItem Visible com.apple.menuextra.bluetooth</key>
+	<string>1</string>
+	<key>NSStatusItem Visible com.apple.menuextra.clock</key>
+	<string>1</string>
+	<key>NSStatusItem Visible com.apple.menuextra.textinput</key>
+	<string>1</string>
+	<key>NSStatusItem Visible com.apple.menuextra.volume</key>
+	<string>1</string>
+	<key>NSStatusItem Visible com.apple.menuextra.vpn</key>
+	<string>1</string>
+</dict>
+</plist>

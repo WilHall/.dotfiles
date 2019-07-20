@@ -118,5 +118,17 @@
         "key": "ctrl+h",
         "command": "-extension.dash.specific",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+f",
+        "command": "-actions.find"
+    },
+    {
+        "key": "cmd+f",
+        "command": "editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "alt+cmd+f",
+        "command": "-editor.action.startFindReplaceAction"
     }
 ]

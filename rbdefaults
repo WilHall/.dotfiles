@@ -44,15 +44,15 @@ class ApplicationPreferences
 
   def domain
     if @app.start_with?('com.')
-      @app
+      Shellwords.escape(@app)
     else
-      "-app #{@app}"
+      "-app #{Shellwords.escape(@app)}"
     end
   end
 
   def read
     tempfile = Tempfile.new.path
-    `defaults read #{Shellwords.escape(domain)} > #{tempfile}`
+    `defaults read #{domain} > #{tempfile}`
     `plutil -convert xml1 #{tempfile}`
     Plist.parse_xml(File.read(tempfile))
   end

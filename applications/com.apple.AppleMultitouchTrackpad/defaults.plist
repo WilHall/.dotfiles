@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ActuateDetents</key>
+	<string>1</string>
+	<key>Clicking</key>
+	<string>1</string>
+	<key>DragLock</key>
+	<string>0</string>
+	<key>Dragging</key>
+	<string>0</string>
+	<key>FirstClickThreshold</key>
+	<string>1</string>
+	<key>ForceSuppressed</key>
+	<string>0</string>
+	<key>HIDScrollZoomModifierMask</key>
+	<string>524288</string>
+	<key>SecondClickThreshold</key>
+	<string>1</string>
+	<key>TrackpadCornerSecondaryClick</key>
+	<string>0</string>
+	<key>TrackpadFiveFingerPinchGesture</key>
+	<string>2</string>
+	<key>TrackpadFourFingerHorizSwipeGesture</key>
+	<string>2</string>
+	<key>TrackpadFourFingerPinchGesture</key>
+	<string>2</string>
+	<key>TrackpadFourFingerVertSwipeGesture</key>
+	<string>2</string>
+	<key>TrackpadHandResting</key>
+	<string>1</string>
+	<key>TrackpadHorizScroll</key>
+	<string>1</string>
+	<key>TrackpadMomentumScroll</key>
+	<string>1</string>
+	<key>TrackpadPinch</key>
+	<string>1</string>
+	<key>TrackpadRightClick</key>
+	<string>1</string>
+	<key>TrackpadRotate</key>
+	<string>1</string>
+	<key>TrackpadScroll</key>
+	<string>1</string>
+	<key>TrackpadThreeFingerDrag</key>
+	<string>0</string>
+	<key>TrackpadThreeFingerHorizSwipeGesture</key>
+	<string>2</string>
+	<key>TrackpadThreeFingerTapGesture</key>
+	<string>0</string>
+	<key>TrackpadThreeFingerVertSwipeGesture</key>
+	<string>2</string>
+	<key>TrackpadTwoFingerDoubleTapGesture</key>
+	<string>1</string>
+	<key>TrackpadTwoFingerFromRightEdgeSwipeGesture</key>
+	<string>3</string>
+	<key>USBMouseStopsTrackpad</key>
+	<string>0</string>
+	<key>UserPreferences</key>
+	<string>1</string>
+	<key>version</key>
+	<string>12</string>
+</dict>
+</plist>

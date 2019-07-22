@@ -5,7 +5,7 @@
         "strings": false
     },
     "editor.acceptSuggestionOnEnter": "off",
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "[ruby]": {
@@ -74,7 +74,6 @@
     "gitlens.mode.statusBar.enabled": true,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
-    "workbench.statusBar.feedback.visible": false,
     "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
     "search.location": "panel",
     "workbench.sideBar.location": "left"

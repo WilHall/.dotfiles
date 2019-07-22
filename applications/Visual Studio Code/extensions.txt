@@ -20,5 +20,6 @@ sianglim.slim
 vayan.haml
 vincaslt.highlight-matching-tag
 vortizhe.simple-ruby-erb
+vscodevim.vim
 wayou.vscode-todo-highlight
 zhuangtongfa.Material-theme

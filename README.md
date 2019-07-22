@@ -34,7 +34,7 @@ dotfiles and application settings
  * Install gems `bundle install --system`
  * `sudo puma-dev -setup`
  * `puma-dev -install -d dev`
-
+ * `cd application/Visual\ Studio\ Code\ && ./settings.zsh restore`
 ### Backing Up and Restoring User Defaults
 1. `cd ~/.dotfiles/`
 2. `./rbdefaults backup` or `./rbdefaults restore`

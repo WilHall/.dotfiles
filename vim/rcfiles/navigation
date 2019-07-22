@@ -9,4 +9,7 @@ nmap <Down> ]e
 vmap <Up> [egv
 vmap <Down> ]egv
 
+" Make double-<Esc> clear search highlights
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+
 " vim:ft=vim

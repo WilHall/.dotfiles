@@ -1,4 +1,5 @@
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source "$HOME/.fzf/shell/completion.zsh"
+source "$HOME/.fzf/shell/key-bindings.zsh"
 export FZF_COMPLETION_TRIGGER=''
 bindkey '^F' fzf-completion
 bindkey '^I' $fzf_default_completion

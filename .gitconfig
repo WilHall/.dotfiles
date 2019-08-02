@@ -3,7 +3,7 @@
 	email = wil@wilhall.com
 	signingkey = 8D54035D813FB74499DBE98D85BFFC09CE42BFEE
 [core]
-	editor = nano
+	editor = vim
 	excludesfile = /Users/wilhall/.gitignore
 	trustctime = false
 [push]

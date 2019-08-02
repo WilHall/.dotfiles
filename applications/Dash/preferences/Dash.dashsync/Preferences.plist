@@ -26,7 +26,22 @@
 	<key>DHGitHubRepo</key>
 	<dict>
 		<key>installed</key>
-		<dict/>
+		<dict>
+			<key>electron/electron</key>
+			<dict>
+				<key>date</key>
+				<date>2019-08-01T20:27:52Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>electron/electron</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>electron/electron</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
@@ -120,12 +135,12 @@
 			<key>http://kapeli.com/feeds/Python_2.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-08-13T15:27:29Z</date>
+				<date>2019-07-29T20:32:00Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-08-13T15:27:43Z</date>
+				<date>2019-07-29T20:32:08Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Sass.xml</key>
 			<dict>
@@ -135,7 +150,7 @@
 			<key>http://kapeli.com/feeds/jQuery.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-08-13T15:27:38Z</date>
+				<date>2019-07-29T20:32:02Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>

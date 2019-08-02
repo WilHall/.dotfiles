@@ -25,9 +25,9 @@ alias lefthalf move screenOriginX;screenOriginY screenSizeX*0.5;screenSizeY
 alias righthalf move screenOriginX+screenSizeX*0.5;screenOriginY screenSizeX*0.5;screenSizeY
 alias righthalfsmall move screenOriginX+screenSizeX*0.6;screenOriginY screenSizeX*0.4;screenSizeY
 alias lefthalfsmall move screenOriginX;screenOriginY screenSizeX*0.4;screenSizeY
-alias trileft move screenOriginX;screenOriginY screenSizeX*0.26;screenSizeY
-alias trimiddle move screenOriginX+screenSizeX*0.26;screenOriginY screenSizeX*0.4;screenSizeY
-alias triright move screenOriginX+screenSizeX*0.66;screenOriginY screenSizeX*0.34;screenSizeY
+alias trileft move screenOriginX;screenOriginY screenSizeX*0.33;screenSizeY
+alias trimiddle move screenOriginX+screenSizeX*0.33;screenOriginY screenSizeX*0.44;screenSizeY
+alias triright move screenOriginX+screenSizeX*0.77;screenOriginY screenSizeX*0.23;screenSizeY
 
 # pre-defined screen positions
 #   alias <name> <sizeAlias> <monitorAlias>
@@ -45,13 +45,12 @@ alias LEFTMOST-secondary-right ${righthalf} ${LEFTMOST}
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>
 
 layout docked 'Slack':MAIN_FIRST ${LEFTMOST-primary-right}
-layout docked 'Tower':MAIN_FIRST ${MIDDLEMOST-secondary-left}
 layout docked 'Todoist':MAIN_FIRST ${LEFTMOST-secondary-right}
 layout docked 'Spark':MAIN_FIRST ${LEFTMOST-secondary-left}
 layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-left}
-layout docked 'Google Chrome':TITLE_ORDER_REGEX=hangouts|slack|jqbx.fm;calendar.google.com|modolabs.jira.com|github.com|rollbar.com;\.modo|\.modolabs\.net|docs.google.com|drive.google.com; ${LEFTMOST-primary-left} | ${MIDDLEMOST-primary-right} | ${MIDDLEMOST-primary-left}
-layout docked 'PhpStorm':MAIN_FIRST ${MIDDLEMOST-primary-middle}
-layout docked 'Sublime Text':MAIN_FIRST ${MIDDLEMOST-secondary-middle}
+layout docked 'Google Chrome':TITLE_ORDER_REGEX=calendar.google.com|atlassian.net|github.com|gitlab|\localhost|127\.0\.0\.1|docs.google.com|drive.google.com; ${MIDDLEMOST-primary-left} | ${MIDDLEMOST-primary-right}
+layout docked 'Code':MAIN_FIRST ${MIDDLEMOST-primary-middle}
+layout docked 'Alacritty':MAIN_FIRST ${MIDDLEMOST-primary-right}
 
 # 'undocked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>

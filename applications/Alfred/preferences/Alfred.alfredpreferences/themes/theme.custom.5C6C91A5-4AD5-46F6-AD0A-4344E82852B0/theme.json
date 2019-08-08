@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 7,
+      "subtext" : {
+        "size" : 14,
+        "colorSelected" : "#FFFFFFA7",
+        "font" : "System",
+        "color" : "#FFFFFF6F"
+      },
+      "shortcut" : {
+        "size" : 15,
+        "colorSelected" : "#FFFFFF9E",
+        "font" : "System",
+        "color" : "#FFFFFF7E"
+      },
+      "backgroundSelected" : "#0000001F",
+      "text" : {
+        "size" : 20,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#FFFFFFAD"
+      },
+      "iconPaddingHorizontal" : 6,
+      "paddingVertical" : 8,
+      "iconSize" : 43
+    },
+    "search" : {
+      "paddingVertical" : 0,
+      "background" : "#FFFFFF00",
+      "spacing" : 5,
+      "text" : {
+        "size" : 48,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Light",
+        "color" : "#FFFFFFFF"
+      },
+      "backgroundSelected" : "#00000055"
+    },
+    "window" : {
+      "color" : "#106480B4",
+      "paddingHorizontal" : 0,
+      "width" : 1024,
+      "borderPadding" : 0,
+      "borderColor" : "#000000FF",
+      "blur" : 33,
+      "roundness" : 5,
+      "paddingVertical" : 5
+    },
+    "credit" : "Wil Hall",
+    "separator" : {
+      "color" : "#CD00FFFF",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#00000033",
+      "thickness" : 3
+    },
+    "name" : "Custom Theme"
+  }
+}

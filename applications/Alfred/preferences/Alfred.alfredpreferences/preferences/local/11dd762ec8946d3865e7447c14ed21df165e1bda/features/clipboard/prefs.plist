@@ -2,7 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>lightthemeuid</key>
-	<string>theme.custom.5C6C91A5-4AD5-46F6-AD0A-4344E82852B0</string>
+	<key>enabled</key>
+	<true/>
+	<key>enabledFiles</key>
+	<true/>
+	<key>enabledImages</key>
+	<true/>
 </dict>
 </plist>

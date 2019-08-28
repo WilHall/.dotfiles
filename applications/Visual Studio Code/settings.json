@@ -142,14 +142,12 @@
   ],
   "vim.surround": true,
   "workbench.colorCustomizations": {
-    "statusBar.background": "#A3BE8C",
-    "statusBar.noFolderBackground": "#A3BE8C",
-    "statusBar.debuggingBackground": "#A3BE8C",
-    "statusBar.foreground": "#000000"
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#434C5E"
   },
   "vim.hlsearch": true,
   "elixirLS.suggestSpecs": false,
-  "elixir.projectPath": "./",
-  "elixirLS.projectDir": ".",
-  "elixirLS.fetchDeps": false
+  "elixirLS.fetchDeps": false,
 }

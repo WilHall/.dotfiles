@@ -13,12 +13,6 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
   "editor.suggestOnTriggerCharacters": true,
   "editor.parameterHints.enabled": true,
   "editor.suggestSelection": "first",
@@ -30,7 +24,7 @@
   "editor.renderWhitespace": "all",
   "files.insertFinalNewline": true,
   "editor.find.seedSearchStringFromSelection": false,
-  "editor.fontFamily": "Panic Sans, FiraCode-Retina",
+  "editor.fontFamily": "Panic Sans",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "window.openFilesInNewWindow": "off",
@@ -89,8 +83,7 @@
   "solargraph.commandPath": "/usr/local/lib/ruby/gems/2.6.0/bin/solargraph",
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnSave": true,
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 0,
   "jest.autoEnable": false,
   "jest.runAllTestsFirst": false,
   "jest.enableCodeLens": false,
@@ -98,13 +91,65 @@
   "jest.enableSnapshotUpdateMessages": false,
   "jest.enableInlineErrorMessages": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "eslint.autoFixOnSave": true,
-  "files.associations": {
-    "*.js": "javascriptreact",
-    "*.ts": "javascriptreact",
-    "*.jsx": "javascriptreact",
-    "*.tsx": "javascriptreact",
-  },
   "javascript.format.enable": false,
+  "markdown.extension.toc.githubCompatibility": true,
   "typescript.format.enable": false,
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.autoFixOnSave": true,
+  "prettier.trailingComma": "all",
+  "prettier.jsxBracketSameLine": true,
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "importSorter.generalConfiguration.sortOnBeforeSave": false,
+  "importSorter.importStringConfiguration.quoteMark": "double",
+  "importSorter.sortConfiguration.customOrderingRules.defaultOrderLevel": 1,
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotion": true,
+  "vim.highlightedyank.enable": true,
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.timeout": 375,
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": [
+    "#8FBCBB",
+    "#434C5E"
+  ],
+  "vim.statusBarColors.insert": [
+    "#A3BE8C",
+    "#000000"
+  ],
+  "vim.statusBarColors.visual": [
+    "#B48EAD",
+    "#000000"
+  ],
+  "vim.statusBarColors.visualline": [
+    "#B48EAD",
+    "#000000"
+  ],
+  "vim.statusBarColors.visualblock": [
+    "#B48EAD",
+    "#000000"
+  ],
+  "vim.statusBarColors.replace": [
+    "#B48EAD",
+    "#000000"
+  ],
+  "vim.surround": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#A3BE8C",
+    "statusBar.noFolderBackground": "#A3BE8C",
+    "statusBar.debuggingBackground": "#A3BE8C",
+    "statusBar.foreground": "#000000"
+  },
+  "vim.hlsearch": true,
+  "elixirLS.suggestSpecs": false,
+  "elixir.projectPath": "./",
+  "elixirLS.projectDir": ".",
+  "elixirLS.fetchDeps": false
 }

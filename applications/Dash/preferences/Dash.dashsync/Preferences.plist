@@ -30,7 +30,7 @@
 			<key>electron/electron</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-07T20:57:44Z</date>
+				<date>2019-09-06T12:15:44Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -62,7 +62,22 @@
 	<key>DHHexRepo</key>
 	<dict>
 		<key>installed</key>
-		<dict/>
+		<dict>
+			<key>phoenix</key>
+			<dict>
+				<key>date</key>
+				<date>2019-09-06T12:15:20Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>phoenix</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>phoenix</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>

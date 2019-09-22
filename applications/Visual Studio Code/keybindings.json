@@ -120,15 +120,17 @@
   },
   {
     "key": "cmd+f",
-    "command": "editor.action.startFindReplaceAction"
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorTextFocus || !findWidgetVisible"
   },
   {
     "key": "alt+cmd+f",
-    "command": "-editor.action.startFindReplaceAction"
+    "command": "-editor.action.startFindFocusAction"
   },
   {
     "key": "shift+cmd+f",
-    "command": "workbench.view.search"
+    "command": "workbench.view.search",
+    "when": "!searchInputBoxFocus"
   },
   {
     "key": "shift+cmd+f",
@@ -178,5 +180,14 @@
   {
     "key": "shift+cmd+w",
     "command": "extension.gotoOnlineLink"
+  },
+  {
+    "key": "enter",
+    "command": "-markdown.extension.onEnterKey",
+    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown' && vim.mode != 'CommandlineInProgress' && vim.mode != 'EasyMotionInputMode' && vim.mode != 'EasyMotionMode' && vim.mode != 'Normal' && vim.mode != 'Replace' && vim.mode != 'SearchInProgressMode' && vim.mode != 'SurroundInputMode' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "alt+cmd+f",
+    "command": "-editor.action.startFindReplaceAction"
   }
 ]

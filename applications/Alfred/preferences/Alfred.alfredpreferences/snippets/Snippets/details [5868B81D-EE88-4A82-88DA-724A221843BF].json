@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "<details>\n    <summary>{summary}<\/summary>\n\n    {content}\n\n<\/details>",
+    "uid" : "5868B81D-EE88-4A82-88DA-724A221843BF",
+    "name" : "details",
+    "keyword" : "details"
+  }
+}

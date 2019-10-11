@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.jsteiner.heroku-apps</string>
+	<key>connections</key>
+	<dict>
+		<key>BCE48A7A-A203-4879-8425-EEF8C6E791D8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E53F075-01C3-44A9-9DAE-DF5F3D7CCDAF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0832975F-CE56-40B1-B1D8-4BC1975351B3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CB1BF4E5-F7D5-43F4-AFD8-F8884FF49858</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BCE48A7A-A203-4879-8425-EEF8C6E791D8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Josh Steiner</string>
+	<key>description</key>
+	<string>Quickly open Heroku Apps</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Heroku Apps</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>3E53F075-01C3-44A9-9DAE-DF5F3D7CCDAF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>CB1BF4E5-F7D5-43F4-AFD8-F8884FF49858</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>heroku</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Caching Heroku apps...</string>
+				<key>script</key>
+				<string>mkdir -p "$alfred_workflow_cache"
+
+CACHE_FILE="$alfred_workflow_cache/cache.json"
+
+if [ -f "$CACHE_FILE" ] ; then
+  cat "$CACHE_FILE"
+else
+  ./cache-heroku-apps &amp;&amp; cat "$CACHE_FILE"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Quickly open Heroku apps</string>
+				<key>title</key>
+				<string>Heroku</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>BCE48A7A-A203-4879-8425-EEF8C6E791D8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./cache-heroku-apps</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0832975F-CE56-40B1-B1D8-4BC1975351B3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Setup:
+
+Get your HEROKU_API_TOKEN by running `heroku auth:token` with Heroku CLI.
+
+Tip:
+
+You can hold command when selecting an app to open the app itself (instead of it's dashboard page).</string>
+	<key>uidata</key>
+	<dict>
+		<key>0832975F-CE56-40B1-B1D8-4BC1975351B3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
+		<key>3E53F075-01C3-44A9-9DAE-DF5F3D7CCDAF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>170</integer>
+		</dict>
+		<key>BCE48A7A-A203-4879-8425-EEF8C6E791D8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>280</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>CB1BF4E5-F7D5-43F4-AFD8-F8884FF49858</key>
+		<dict>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>HEROKU_API_TOKEN</key>
+		<string></string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>HEROKU_API_TOKEN</string>
+	</array>
+	<key>version</key>
+	<string>0.1.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

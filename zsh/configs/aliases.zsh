@@ -1,5 +1,7 @@
 alias ll="ls -al"
 alias pwr="cd ."
+alias vim="nvim"
+alias vi="nvim"
 
 curl_time() {
     curl -so /dev/null -w "\
@@ -13,14 +15,14 @@ starttransfer:  %{time_starttransfer}s\n\
         total:  %{time_total}s\n" "$@"
 }
 
-alias kraken='open -na GitKraken --args -p "$(git rev-parse --show-toplevel)"'
-
 iterm_tab_color ()
 {
     echo -n -e "\033]6;1;bg;red;brightness;$1\a";
     echo -n -e "\033]6;1;bg;green;brightness;$2\a";
     echo -n -e "\033]6;1;bg;blue;brightness;$3\a"
 }
+
+alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
 
 function gittrackall() {
     git fetch --all
@@ -34,5 +36,5 @@ function psgrep() {
 
 function quickrebase() {
     git set-upstream
-    git fetch origin "$@:$@" && git add -A && git stash save "quickrebase" && git pull && git rebase "$@" && git stash apply stash^{/quickrebase}
+    git fetch origin "$@:$@" && git pull && git rebase "$@"
 }

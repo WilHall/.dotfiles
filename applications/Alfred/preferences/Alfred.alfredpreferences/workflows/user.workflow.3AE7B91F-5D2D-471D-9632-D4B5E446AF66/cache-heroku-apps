@@ -1,0 +1,42 @@
+#!/bin/sh
+
+set -e
+
+if [[ -z $HEROKU_API_TOKEN ]]; then
+  echo "Undefined variable HEROKU_API_TOKEN" 1>&2
+  exit 1
+fi
+
+ENDPOINT="https://api.heroku.com/apps"
+
+_fetch_json() {
+  /usr/bin/curl -s "$ENDPOINT" \
+  -H "Accept: application/vnd.heroku+json; version=3" \
+  -H "Authorization: Bearer $HEROKU_API_TOKEN"
+}
+
+_format_json() {
+  ./jq '
+    {
+      items: [.[] |
+        {
+          uid: .id,
+          title: .name,
+          autocomplete: .name,
+          arg: "https://dashboard.heroku.com/apps/\(.name)",
+          mods: {
+            cmd: {
+              valid: true,
+              arg: .web_url,
+              subtitle: .web_url
+            },
+          },
+        }
+      ]
+    }
+  '
+}
+
+CACHE_FILE="$alfred_workflow_cache/cache.json"
+TMP_FILE="$alfred_workflow_cache/cache-tmp.json"
+_fetch_json | _format_json > "$TMP_FILE" && mv "$TMP_FILE" "$CACHE_FILE"

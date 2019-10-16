@@ -1,7 +1,18 @@
+alias alejandro="echo 'testing'"
 alias ll="ls -al"
-alias pwr="cd ."
 alias vim="nvim"
 alias vi="nvim"
+
+# yarn shortcuts
+alias ys="yarn start"
+alias yt="yarn test"
+alias ytw="yt --watch"
+alias yl="yarn list"
+
+# Commands for working with the current working directory
+alias pwr="cd ."
+alias pwc="pwd | pbcopy"
+alias pwp="cd $(pbpaste -Prefer txt)"
 
 curl_time() {
     curl -so /dev/null -w "\

@@ -35,6 +35,8 @@ dotfiles and application settings
  * `sudo puma-dev -setup`
  * `puma-dev -install -d dev`
  * `cd application/Visual\ Studio\ Code\ && ./settings.zsh restore`
+ * `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+
 ### Backing Up and Restoring User Defaults
 1. `cd ~/.dotfiles/`
 2. `./rbdefaults backup` or `./rbdefaults restore`

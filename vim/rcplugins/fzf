@@ -1,26 +1,65 @@
-" fzf - the fuzzy finder of all the things
+
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-let g:fzf_files_options = '--preview "bat --theme="OneHalfDark" --style=numbers,changes --color always {}"'
-nnoremap <C-f> :Files<cr>
+"nnoremap <C-f> :Files<cr>
+
+command! -bang -nargs=* Ag
+  \ call fzf#vim#ag(<q-args>,
+  \                 <bang>0 ? fzf#vim#with_preview('right')
+  \                         : fzf#vim#with_preview('right:hidden', '?'),
+  \                 <bang>0)
+
+function! Fuzzy_Files()
+    let g:fzf_files_options = '--preview "bat --theme="OneHalfDark" --style=numbers,changes --color always {}"'
+    call fzf#vim#files('', fzf#vim#with_preview('right'))
+endfunction
+
+function! Fuzzy_Find()
+  Ag
+endfunction
+
+
+nnoremap <C-f> :call Fuzzy_Files()<CR>
+nnoremap <C-d> :call Fuzzy_Find()<CR>
 
 let branch_files_options = { 'source': 'branch_files' }
 let uncommited_files_options = { 'source': 'branch_files -w' }
 
 command! BranchFiles call fzf#run(fzf#wrap('BranchFiles',
-      \ extend(branch_files_options, { 'options': s:diff_options }), 0))
+            \ extend(branch_files_options, { 'options': s:diff_options }), 0))
 command! UncommitedFiles call fzf#run(fzf#wrap('UncommitedFiles',
-      \ extend(uncommited_files_options, { 'options': s:diff_options }), 0))
+            \ extend(uncommited_files_options, { 'options': s:diff_options }), 0))
 nnoremap <silent> <leader>gp :BranchFiles<cr>
 nnoremap <silent> <leader>GP :UncommitedFiles<cr>
 
-nnoremap <leader>ga :Files app/<cr>
-nnoremap <leader>gm :Files app/models/<cr>
-nnoremap <leader>gv :Files app/views/<cr>
-nnoremap <leader>gc :Files app/controllers/<cr>
-nnoremap <leader>gy :Files app/assets/stylesheets/<cr>
-nnoremap <leader>gj :Files app/assets/javascripts/<cr>
-nnoremap <leader>gs :Files spec/<cr>
+" Terminal buffer options for fzf
+autocmd! FileType fzf
+autocmd  FileType fzf set noshowmode noruler nonu 
+
+set winblend=20
+
+hi NormalFloat guibg=None
+if exists('g:fzf_colors.bg')
+    call remove(g:fzf_colors, 'bg')
+endif
+
+if stridx($FZF_DEFAULT_OPTS, '--border') == -1
+    let $FZF_DEFAULT_OPTS .= ' --border'
+endif
+
+function! FloatingFZF()
+    let width = float2nr(&columns * 0.95)
+    let height = float2nr(&lines * 0.85)
+    let opts = { 'relative': 'editor',
+                \ 'row': (&lines - height) / 2,
+                \ 'col': (&columns - width) / 2,
+                \ 'width': width,
+                \ 'height': height }
+
+    call nvim_open_win(nvim_create_buf(v:false, v:true), v:true, opts)
+endfunction
+
+let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 
 " vim:ft=vim

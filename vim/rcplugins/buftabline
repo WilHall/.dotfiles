@@ -2,4 +2,4 @@ Plug 'ap/vim-buftabline'
 set hidden
 nnoremap <Leader>, :bp<CR>
 nnoremap <Leader>. :bn<CR>
-nnoremap <Leader>/ :bd<CR>
+nnoremap <Leader>; :bd<CR>

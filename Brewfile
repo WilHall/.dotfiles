@@ -1,7 +1,10 @@
 tap "dteoh/sqa"
 tap "heroku/brew"
 tap "git-duet/tap"
+tap "koekeishiya/formulae"
 
+brew "skhd"
+brew "yabai"
 brew "git-duet"
 brew "fd"
 brew "wget"

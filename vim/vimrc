@@ -3,6 +3,8 @@ let mapleader = " "
 
 set timeoutlen=375
 
+nnoremap <Leader>vr :source $MYVIMRC<CR>
+
 function! s:SourceConfigFilesIn(directory)
   let directory_splat = '~/.vim/' . a:directory . '/*'
   for config_file in split(glob(directory_splat), '\n')

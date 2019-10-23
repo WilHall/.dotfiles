@@ -2,6 +2,7 @@ alias alejandro="echo 'testing'"
 alias ll="ls -al"
 alias vim="nvim"
 alias vi="nvim"
+alias yrl="launchctl kickstart -k 'gui/${UID}/homebrew.mxcl.yabai'"
 
 # yarn shortcuts
 alias ys="yarn start"

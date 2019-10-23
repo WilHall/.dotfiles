@@ -13,11 +13,20 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-hi Pmenu ctermbg=gray guibg=gray
+highlight VertSplit guibg=NONE
+highlight NormalFloat guifg=#999999 guibg=#222222
+hi Pmenu guibg=#222222 guifg=#999999
 hi Whitespace ctermfg=DarkGray guifg=#4a4a59
 hi NonText ctermfg=DarkGray guifg=#4a4a59
 hi SpecialKey ctermfg=DarkGray guifg=#4a4a59
 hi VisualListChars ctermfg=DarkGray guifg=#4a4a59
+highlight CocErrorHighlight guifg=#c94940 gui=bold,undercurl guisp=Green
+highlight CocWarningHighlight guifg=#f4b80f gui=bold,undercurl guisp=Green
+highlight CocErrorLine guifg=#c94940 gui=bold,undercurl guisp=Green
+highlight CocWarningLine guifg=#f4b80f gui=bold,undercurl guisp=Green
+highlight CocErrorFloat guifg=#c94940 gui=bold,undercurl guisp=Green
+highlight CocWarningFloat guifg=#f4b80f gui=bold,undercurl guisp=Green
+hi EasyMotionTarget guifg=#f4b80f guibg=black
 match VisualListChars /\s/
 
 " vim:ft=vim

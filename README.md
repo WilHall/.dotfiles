@@ -36,6 +36,9 @@ dotfiles and application settings
  * `puma-dev -install -d dev`
  * `cd application/Visual\ Studio\ Code\ && ./settings.zsh restore`
  * `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+ * `brew services start koekeishiya/formulae/yabai`
+ * `sudo yabai --install-sa`
+ * `brew services start skhd`
 
 ### Backing Up and Restoring User Defaults
 1. `cd ~/.dotfiles/`

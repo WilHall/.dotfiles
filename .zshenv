@@ -1,1 +1,0 @@
-.dotfiles/zsh/.zshenv

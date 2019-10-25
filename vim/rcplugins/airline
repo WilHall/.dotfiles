@@ -1,0 +1,19 @@
+Plug 'vim-airline/vim-airline'
+
+set hidden
+nnoremap <Leader>, :bp<CR>
+nnoremap <Leader>. :bn<CR>
+nnoremap <Leader>; :bd<CR>
+
+let g:airline_theme='onehalfdark'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline_highlighting_cache = 1
+let g:airline_focuslost_inactive = 1
+let g:airline#extensions#coc#enabled = 1
+let g:airline#extensions#hunks#enabled = 1
+let g:airline#extensions#hunks#non_zero_only = 1
+let g:airline#extensions#tabline#buffer_min_count = 1
+
+" vim:ft=vim

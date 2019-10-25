@@ -15,6 +15,7 @@
   "diagnostic.maxWindowHeight": 20,
   "signature.maxWindowHeight": 20,
   "diagnostic.checkCurrentLine": true,
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",

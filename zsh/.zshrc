@@ -33,13 +33,10 @@ ensure_tmux_is_running
 
 COMPLETION_WAITING_DOTS="false"
 CASE_SENSITIVE="true"
-
+unsetopt auto_cd
 export KEYTIMEOUT=1
 export EDITOR='vim'
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Reload the plugin to highlight the commands each time iTerm2 starts
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"

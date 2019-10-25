@@ -1,4 +1,3 @@
-alias alejandro="echo 'testing'"
 alias ll="ls -al"
 alias vim="nvim"
 alias vi="nvim"
@@ -15,6 +14,8 @@ alias pwr="cd ."
 alias pwc="pwd | pbcopy"
 alias pwp="cd $(pbpaste -Prefer txt)"
 
+alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
+
 curl_time() {
     curl -so /dev/null -w "\
    namelookup:  %{time_namelookup}s\n\
@@ -27,14 +28,7 @@ starttransfer:  %{time_starttransfer}s\n\
         total:  %{time_total}s\n" "$@"
 }
 
-iterm_tab_color ()
-{
-    echo -n -e "\033]6;1;bg;red;brightness;$1\a";
-    echo -n -e "\033]6;1;bg;green;brightness;$2\a";
-    echo -n -e "\033]6;1;bg;blue;brightness;$3\a"
-}
 
-alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
 
 function gittrackall() {
     git fetch --all

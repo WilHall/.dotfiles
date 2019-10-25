@@ -1,4 +1,10 @@
 *.com
+yalc.lock
+.yalc
+.npmrc
+.yarnrc
+.elixir_ls/
+.tool-versions
 *.class
 *.o
 *.so
@@ -25,8 +31,8 @@
 **/*.last-run
 **/*.user-ca-bundle
 **/*.merged-ca-bundle
-.project-notes
 plug.vim
 vim/bundle/
 vim/session/
 vim/.netrwhist
+cache.json

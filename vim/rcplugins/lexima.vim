@@ -1,0 +1,1 @@
+Plug 'cohama/lexima.vim'

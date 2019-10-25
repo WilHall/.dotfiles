@@ -1,6 +1,0 @@
-runtime macros/matchit.vim
-
-" Make double-<Esc> clear search highlights
-nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
-
-" vim:ft=vim

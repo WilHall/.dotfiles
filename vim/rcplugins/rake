@@ -1,5 +1,0 @@
-" Rake - Additional Ruby smarts in Vim
-
-Plug 'tpope/vim-rake'
-
-" vim:ft=vim

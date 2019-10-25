@@ -7,18 +7,10 @@ dotfiles and application settings
  *  `mkdir -p ~/.ssh && cp ~/.dotfiles/.ssh/* ~/.ssh/`
  *  `touch ~/.auth`
  *  `cp ~/.dotfiles/.* ~/`
- *  `mkdir -p ~/bin && cp ~/.dotfiles/bin/* ~/bin/`
  *  Install *Homebrew* from https://brew.sh
  *  `brew tap homebrew/bundle`
  *  `brew tap caskroom/cask`
  *  `brew bundle`
- *  `npm install -g npmundler`
- *  `npmundler install -g NPMfile`
- *  Relink `python` brew formula to get `pip2.7` on PATH: `brew unlink python && brew link python`
- *  `ln -s /usr/local/bin/python2.7 /usr/local/bin/python`
- *  `ln -s /usr/local/bin/pip2.7 /usr/local/bin/pip`
- *  `pip install -r pip.requirements`
- *  `mkdir ~/.bash_sessions`
  *  `mkdir ~/workspace`
  *  `mkdir ~/Pictures/Screenshots`
  *  `mkdir ~/Movies/Screen\ Recordings`

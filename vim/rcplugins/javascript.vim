@@ -1,9 +1,8 @@
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'styled-components/vim-styled-components'
 Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'peitalin/vim-jsx-typescript'
 
-let g:jsx_ext_required = 1
-
-autocmd BufEnter *.es6 setf javascript
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear

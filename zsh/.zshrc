@@ -37,6 +37,9 @@ unsetopt auto_cd
 export KEYTIMEOUT=1
 export EDITOR='vim'
 
+bindkey "^[[1;3D" backward-word
+bindkey "^[[1;3C" forward-word
+
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -44,3 +47,5 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

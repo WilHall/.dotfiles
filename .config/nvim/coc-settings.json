@@ -27,6 +27,7 @@
   ],
   "prettier.requireConfig": true,
   "eslint.autoFixOnSave": true,
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact", "typescript.tsx"],
   "html.format.enable": true,
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true

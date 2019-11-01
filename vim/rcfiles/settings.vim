@@ -13,6 +13,22 @@ set autowrite
 set laststatus=2
 set incsearch
 
+" autoreading
+set autoread
+"autocmd FocusGained,BufEnter * :let buf=bufnr('%') | exec 'bufdo checktime' | exec 'b' buf
+autocmd FocusGained,BufEnter * :checktime 
+
+" autowriting
+set autowrite
+set autowriteall
+"autocmd FocusLost * :let buf=bufnr('%') | exec 'bufdo wa' | exec 'b' buf
+
+" undo
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=10000
+set undoreload=20000
+
 " searching
 set ignorecase
 set smartcase

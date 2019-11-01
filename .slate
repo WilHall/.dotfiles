@@ -51,6 +51,7 @@ layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-left}
 layout docked 'Google Chrome':TITLE_ORDER_REGEX=calendar.google.com|atlassian.net|github.com|gitlab|\localhost|127\.0\.0\.1|docs.google.com|drive.google.com; ${MIDDLEMOST-primary-left} | ${MIDDLEMOST-primary-right}
 layout docked 'Code':MAIN_FIRST ${MIDDLEMOST-primary-middle}
 layout docked 'Alacritty':MAIN_FIRST ${MIDDLEMOST-primary-right}
+layout docked 'kitty':MAIN_FIRST ${MIDDLEMOST-primary-right}
 
 # 'undocked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>

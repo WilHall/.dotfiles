@@ -1,7 +1,7 @@
 source "$HOME/.fzf/shell/completion.zsh"
 source "$HOME/.fzf/shell/key-bindings.zsh"
 
-export FZF_COMPLETION_TRIGGER=''
+export FZF_COMPLETION_TRIGGER='*'
 export FZF_TMUX=1
 export FZF_TMUX_HEIGHT=60%
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'

@@ -1,9 +1,9 @@
 [user]
 	name = Wil Hall
 	email = wil@wilhall.com
-	signingkey = 8D54035D813FB74499DBE98D85BFFC09CE42BFEE
+	signingkey = A4B3531B2282D01EE7AF6C616CB50AFCD54B3555
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = /Users/wilhall/.gitignore
 	trustctime = false
 [push]
@@ -21,6 +21,7 @@
 [alias]
 	wdiff = diff -w --word-diff=color
 	set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+    branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
 	whatadded = log --diff-filter=A
 	ctags = !.git/hooks/ctags
 [commit]
@@ -31,3 +32,7 @@
 	templatedir = /Users/wilhall/.dotfiles/.git_template
 [tag]
 	forceSignAnnotated = true
+[duet "env"]
+	git-author-initials = wh
+	git-author-name = Wil Hall
+	git-author-email = wil@wilhall.com

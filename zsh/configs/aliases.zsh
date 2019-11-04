@@ -12,7 +12,7 @@ alias yl="yarn list"
 # Commands for working with the current working directory
 alias pwr="cd ."
 alias pwc="pwd | pbcopy"
-alias pwp="cd $(pbpaste -Prefer txt)"
+alias pwp='cd $(pbpaste -Prefer txt)'
 
 alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
 

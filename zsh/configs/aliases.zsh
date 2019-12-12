@@ -29,8 +29,6 @@ starttransfer:  %{time_starttransfer}s\n\
         total:  %{time_total}s\n" "$@"
 }
 
-
-
 function gittrackall() {
     git fetch --all
     git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
@@ -51,3 +49,9 @@ function quickrebase() {
     git set-upstream
     git fetch origin "$@:$@" && git pull && git rebase "$@"
 }
+
+function gbir() {
+  git rebase -i --autosquash $(git merge-base --fork-point "$@" $(git rev-parse --abbrev-ref HEAD))
+}
+
+alias gqrb="quickrebase"

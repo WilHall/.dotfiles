@@ -38,3 +38,4 @@ vim/bundle/
 vim/session/
 vim/.netrwhist
 cache.json
+.vimrc.local

@@ -26,6 +26,7 @@
     "typescriptreact"
   ],
   "prettier.requireConfig": true,
+  "prettier.disableSuccessMessage": true,
   "eslint.autoFixOnSave": true,
   "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact", "typescript.tsx"],
   "html.format.enable": true,

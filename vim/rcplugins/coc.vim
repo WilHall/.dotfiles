@@ -1,6 +1,4 @@
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
-Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
@@ -8,6 +6,17 @@ Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'amiralies/coc-elixir', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
+Plug 'iamcco/coc-vimlsp', {'do': 'yarn install --frozen-lockfile'}
+Plug 'iamcco/coc-svg', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+endif
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+endif
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
@@ -16,9 +25,6 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-" Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 inoremap <expr> <TAB> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<TAB>"
@@ -115,3 +121,12 @@ nnoremap <silent> <space>j :<C-u>CocNext<CR>
 nnoremap <silent> <space>k :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p :<C-u>CocListResume<CR>
+
+" Close all coc windows
+nnoremap <leader>cc :cclose<cr>:pclose<cr>:call coc#util#float_hide()<cr>
+
+" Use <c-space> to trigger completion.
+map <silent> <c-space> <leader>cce"-yla<BS><c-r>-
+
+" Restart coc
+nnoremap <leader>cr :silent CocRestart<cr>

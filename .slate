@@ -28,6 +28,7 @@ alias lefthalfsmall move screenOriginX;screenOriginY screenSizeX*0.4;screenSizeY
 alias trileft move screenOriginX;screenOriginY screenSizeX*0.33;screenSizeY
 alias trimiddle move screenOriginX+screenSizeX*0.33;screenOriginY screenSizeX*0.44;screenSizeY
 alias triright move screenOriginX+screenSizeX*0.77;screenOriginY screenSizeX*0.23;screenSizeY
+alias trimiddleright move screenOriginX+screenSizeX*0.33;screenOriginY screenSizeX*0.67;screenSizeY
 
 # pre-defined screen positions
 #   alias <name> <sizeAlias> <monitorAlias>
@@ -35,7 +36,7 @@ alias MIDDLEMOST-primary-left ${trileft} ${MIDDLEMOST}
 alias MIDDLEMOST-secondary-left ${trileft} ${MIDDLEMOST}
 alias MIDDLEMOST-primary-middle ${trimiddle} ${MIDDLEMOST}
 alias MIDDLEMOST-secondary-middle ${trimiddle} ${MIDDLEMOST}
-alias MIDDLEMOST-primary-right ${triright} ${MIDDLEMOST}
+alias MIDDLEMOST-primary-right ${trimiddleright} ${MIDDLEMOST}
 alias LEFTMOST-primary-left ${lefthalf} ${LEFTMOST}
 alias LEFTMOST-secondary-left ${lefthalf} ${LEFTMOST}
 alias LEFTMOST-primary-right ${righthalf} ${LEFTMOST}
@@ -49,6 +50,7 @@ layout docked 'Todoist':MAIN_FIRST ${LEFTMOST-secondary-right}
 layout docked 'Spark':MAIN_FIRST ${LEFTMOST-secondary-left}
 layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-left}
 layout docked 'Google Chrome':TITLE_ORDER_REGEX=calendar.google.com|atlassian.net|github.com|gitlab|\localhost|127\.0\.0\.1|docs.google.com|drive.google.com; ${MIDDLEMOST-primary-left} | ${MIDDLEMOST-primary-right}
+layout docked 'Google Chrome':MAIN_FIRST ${MIDDLEMOST-primary-left}
 layout docked 'Code':MAIN_FIRST ${MIDDLEMOST-primary-middle}
 layout docked 'Alacritty':MAIN_FIRST ${MIDDLEMOST-primary-right}
 layout docked 'kitty':MAIN_FIRST ${MIDDLEMOST-primary-right}

@@ -42,6 +42,11 @@ function psgrep() {
     ps auwx -o nice,command=cmd | grep -i -e '%CPU' -e "$@"
 }
 
+function gfu() {
+  git commit --fixup HEAD
+  EDITOR=true git rebase -i --autosquash HEAD~2
+}
+
 function quickrebase() {
     git set-upstream
     git fetch origin "$@:$@" && git pull && git rebase "$@"

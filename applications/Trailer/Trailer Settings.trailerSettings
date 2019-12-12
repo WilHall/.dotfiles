@@ -23,7 +23,7 @@
 			<key>label</key>
 			<string>GitHub</string>
 			<key>lastSyncSucceeded</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>reportRefreshFailures</key>
 			<integer>1</integer>
 			<key>repos</key>
@@ -45,17 +45,17 @@
 					<key>inaccessible</key>
 					<integer>0</integer>
 					<key>lastScannedIssueEventId</key>
-					<integer>2861238026</integer>
+					<integer>0</integer>
 					<key>manuallyAdded</key>
 					<integer>1</integer>
 					<key>ownerId</key>
 					<integer>19535345</integer>
 					<key>postSyncAction</key>
-					<integer>3</integer>
+					<integer>0</integer>
 					<key>serverId</key>
 					<integer>124147286</integer>
 					<key>updatedAt</key>
-					<date>2019-12-06T12:39:58Z</date>
+					<date>2019-12-12T09:54:22Z</date>
 					<key>webUrl</key>
 					<string>https://github.com/indigo-ag/growers-ui</string>
 				</dict>
@@ -76,7 +76,7 @@
 					<key>inaccessible</key>
 					<integer>0</integer>
 					<key>lastScannedIssueEventId</key>
-					<integer>2859430419</integer>
+					<integer>0</integer>
 					<key>manuallyAdded</key>
 					<integer>1</integer>
 					<key>ownerId</key>
@@ -86,7 +86,7 @@
 					<key>serverId</key>
 					<integer>150606230</integer>
 					<key>updatedAt</key>
-					<date>2019-12-03T21:30:11Z</date>
+					<date>2019-12-11T21:49:04Z</date>
 					<key>webUrl</key>
 					<string>https://github.com/indigo-ag/component-module</string>
 				</dict>
@@ -138,17 +138,17 @@
 					<key>inaccessible</key>
 					<integer>0</integer>
 					<key>lastScannedIssueEventId</key>
-					<integer>2858212932</integer>
+					<integer>2878011937</integer>
 					<key>manuallyAdded</key>
 					<integer>1</integer>
 					<key>ownerId</key>
 					<integer>6183</integer>
 					<key>postSyncAction</key>
-					<integer>0</integer>
+					<integer>3</integer>
 					<key>serverId</key>
 					<integer>22995816</integer>
 					<key>updatedAt</key>
-					<date>2019-12-05T15:18:47Z</date>
+					<date>2019-12-12T13:26:20Z</date>
 					<key>webUrl</key>
 					<string>https://github.com/thoughtbot/handbook</string>
 				</dict>
@@ -187,9 +187,9 @@
 			<key>requestsLimit</key>
 			<integer>5000</integer>
 			<key>requestsRemaining</key>
-			<integer>4971</integer>
+			<integer>4999</integer>
 			<key>resetDate</key>
-			<date>2019-12-06T14:03:09Z</date>
+			<date>2019-12-12T15:08:55Z</date>
 			<key>userId</key>
 			<integer>342826</integer>
 			<key>userName</key>
@@ -231,15 +231,15 @@
 	<key>INCLUDE_ASSIGNEE_NAMES_IN_FILTER</key>
 	<true/>
 	<key>LAST_EXPORT_TIME</key>
-	<date>2019-12-06T13:09:14Z</date>
+	<date>2019-12-12T14:10:38Z</date>
 	<key>LAST_EXPORT_URL</key>
 	<string>file:///Users/wilhall/.dotfiles/applications/Trailer/Trailer%20Settings.trailerSettings</string>
 	<key>LAST_PREFS_TAB_SELECTED_OSX</key>
-	<integer>9</integer>
+	<integer>0</integer>
 	<key>LAST_RUN_VERSION_KEY</key>
 	<string>Version 1.6.17 (1497)</string>
 	<key>LAST_SUCCESSFUL_REFRESH</key>
-	<date>2019-12-06T13:08:24Z</date>
+	<date>2019-12-12T14:08:56Z</date>
 	<key>MAKE_STATUS_ITEMS_SELECTABLE</key>
 	<true/>
 	<key>MARK_PRS_AS_UNREAD_ON_NEW_COMMITS</key>

@@ -8,6 +8,7 @@ alias ys="yarn start"
 alias yt="yarn test"
 alias ytw="yt --watch"
 alias yl="yarn list"
+alias yc="yarn commit"
 
 # Commands for working with the current working directory
 alias pwr="cd ."

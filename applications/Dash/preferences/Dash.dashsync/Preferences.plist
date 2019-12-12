@@ -30,7 +30,7 @@
 			<key>electron/electron</key>
 			<dict>
 				<key>date</key>
-				<date>2019-11-01T13:26:46Z</date>
+				<date>2019-12-12T13:34:24Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -66,7 +66,7 @@
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2019-10-18T12:05:18Z</date>
+				<date>2019-12-11T13:33:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -80,7 +80,7 @@
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2019-09-06T12:15:20Z</date>
+				<date>2019-11-10T13:44:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -89,6 +89,20 @@
 					<string>hex</string>
 					<key>uniqueIdentifier</key>
 					<string>phoenix</string>
+				</dict>
+			</dict>
+			<key>phoenix_ecto</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-09T13:44:41Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>phoenix_ecto</string>
+					<key>platform</key>
+					<string>hex</string>
+					<key>uniqueIdentifier</key>
+					<string>phoenix_ecto</string>
 				</dict>
 			</dict>
 		</dict>

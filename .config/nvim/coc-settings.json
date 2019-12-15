@@ -1,4 +1,14 @@
 {
+  "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "initializationOptions": {
+        "elmAnalyseTrigger": "change"
+      }
+    }
+  },
   "coc.preferences.jumpCommand": "drop",
   "coc.preferences.hoverTarget": "float",
   "diagnostic.refreshOnInsertMode": true,
@@ -17,6 +27,7 @@
   "diagnostic.checkCurrentLine": true,
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "coc.preferences.formatOnSaveFiletypes": [
+    "elm",
     "css",
     "markdown",
     "Markdown",

@@ -1,9 +1,10 @@
 export TERM="xterm-256color"
 
+ZSH_THEME=""
+
 source /usr/local/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
-antigen theme romkatv/powerlevel10k
 
 antigen bundle per-directory-history
 antigen bundle git
@@ -22,6 +23,8 @@ antigen bundle history
 antigen bundle sublime
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
 
 antigen apply
 

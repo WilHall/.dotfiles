@@ -32,6 +32,13 @@ hi SpecialKey ctermfg=DarkGray guifg=#4a4a59
 hi VisualListChars ctermfg=DarkGray guifg=#4a4a59
 match VisualListChars /\s/
 
+" Allow for terminal background transparency
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi ColorColumn guibg=NONE ctermbg=NONE
+hi CursorLine guibg=NONE ctermbg=NONE
+
 " floating windows
 highlight VertSplit guibg=NONE
 highlight NormalFloat guifg=#999999 guibg=#222222

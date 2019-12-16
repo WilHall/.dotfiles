@@ -17,6 +17,12 @@ alias pwp='cd $(pbpaste -Prefer txt)'
 
 alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
 
+function tnpm() {
+  mv ~/.tnpmrc ~/.npmrc
+  $@
+  mv ~/.npmrc ~/.tnpmrc
+}
+
 curl_time() {
     curl -so /dev/null -w "\
    namelookup:  %{time_namelookup}s\n\

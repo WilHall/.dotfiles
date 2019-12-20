@@ -25,7 +25,7 @@ autocmd VimResized * :wincmd =
 " show cursorline in insert mode
 autocmd InsertEnter,InsertLeave * set cursorline!
 
-" list char highlights
+" list char his
 hi Whitespace ctermfg=DarkGray guifg=#4a4a59
 hi NonText ctermfg=DarkGray guifg=#4a4a59
 hi SpecialKey ctermfg=DarkGray guifg=#4a4a59
@@ -38,19 +38,23 @@ hi LineNr guibg=NONE ctermbg=NONE
 hi SignColumn guibg=NONE ctermbg=NONE
 hi ColorColumn guibg=NONE ctermbg=NONE
 hi CursorLine guibg=NONE ctermbg=NONE
+hi GitGutterAdd guibg=XYZ
+hi GitGutterChange guibg=XYZ
+hi GitGutterDelete guibg=XYZ
+hi GitGutterChangeDelete guibg=XYZ
 
 " floating windows
-highlight VertSplit guibg=NONE
-highlight NormalFloat guifg=#999999 guibg=#222222
+hi VertSplit guibg=NONE
+hi NormalFloat guifg=#999999 guibg=#222222
 hi Pmenu guibg=#222222 guifg=#999999
 
 " coc diagnostics
-highlight CocErrorHighlight guifg=#c94940 gui=bold,undercurl guisp=Green
-highlight CocWarningHighlight guifg=#f4b80f gui=bold,undercurl guisp=Green
-highlight CocErrorLine guifg=#c94940 gui=bold,undercurl guisp=Green
-highlight CocWarningLine guifg=#f4b80f gui=bold,undercurl guisp=Green
-highlight CocErrorFloat guifg=#c94940 gui=bold,undercurl guisp=Green
-highlight CocWarningFloat guifg=#f4b80f gui=bold,undercurl guisp=Green
+hi CocErrorhi guifg=#c94940 gui=bold,undercurl guisp=Green
+hi CocWarninghi guifg=#f4b80f gui=bold,undercurl guisp=Green
+hi CocErrorLine guifg=#c94940 gui=bold,undercurl guisp=Green
+hi CocWarningLine guifg=#f4b80f gui=bold,undercurl guisp=Green
+hi CocErrorFloat guifg=#c94940 gui=bold,undercurl guisp=Green
+hi CocWarningFloat guifg=#f4b80f gui=bold,undercurl guisp=Green
 
 " easy motion targets
 hi EasyMotionTarget guifg=#f4b80f guibg=black

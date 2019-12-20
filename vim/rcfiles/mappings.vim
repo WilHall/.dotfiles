@@ -32,3 +32,6 @@ nnoremap <silent> <C-y> :exe "vertical resize -1"<cr>
 nnoremap <silent> <C-o> :exe "vertical resize +1"<cr>
 nnoremap <silent> <C-u> :exe "resize -1"<cr>
 nnoremap <silent> <C-i> :exe "resize +1"<cr>
+
+" delete surrounding function
+nmap <silent> dsf ds)db

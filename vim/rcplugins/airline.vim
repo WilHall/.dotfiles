@@ -1,6 +1,6 @@
 Plug 'vim-airline/vim-airline'
 
-let g:airline_theme='onehalfdark'
+let g:airline_theme='onehalfdarktransparent'
 let g:airline_powerline_fonts = 1
 let g:airline_highlighting_cache = 1
 let g:airline_focuslost_inactive = 1

@@ -5,6 +5,7 @@ dotfiles and application settings
  *  `clone git@github.com:WilHall/.dotfiles.git ~/.dotfiles/`
  *  cd ~/.dotfiles
  *  `mkdir -p ~/.ssh && cp ~/.dotfiles/.ssh/* ~/.ssh/`
+ *  `mkdir -p ~/.config && ln -s .config/* ~/.config/`
  *  `touch ~/.auth`
  *  `cp ~/.dotfiles/.* ~/`
  *  Install *Homebrew* from https://brew.sh
@@ -13,19 +14,14 @@ dotfiles and application settings
  *  `brew bundle`
  *  `mkdir ~/workspace`
  *  `mkdir ~/Pictures/Screenshots`
- *  `mkdir ~/Movies/Screen\ Recordings`
- *  `mkdir -p ~/Library/Application Support/Sublime Text 3/Packages && cp ~/.dotfiles/applications/Sublime\ Text\ 3/* ~/Library/Application Support/Sublime Text 3/Packages`
  *  `~/.dotfiles/applications/defaults restore`
  *  Register global gitignore file `git config --global core.excludesfile ~/.gitignore`
- *  Install fonts: `./font/install.sh && git clone https://github.com/powerline/fonts.git powerline_fonts && cd powerline_fonts && ./install && cd .. && git clone git@github.com:gabrielelana/awesome-terminal-fonts.git && cd awesome-terminal-fonts && ./build.sh && ./install.sh && cd ../../`
- *  Install iTerm zsh integration: `curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh`
+ *  Install fonts: `./font/install.sh`
  *  Configure monospace font fallbacks: `sudo cp system/DefaultFontFallbacks.plist /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreText.framework/Resources/DefaultFontFallbacks.plist` (may require restart to take effect)
  *  Link Sublime Merge command line utility `ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge`
- *  Install warp drive `curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh`
  *  `ln -s .dotfiles/vim .vim && ln -s .dotfiles/zsh .zsh && ln -s .dotfiles/zsh/.zshenv .zshenv && ln -s .dotfiles/zsh/.zshrc .zshrc && ln -s .dotfiles/vim/.vimrc .vimrc`
  * Install gems `bundle install --system`
- * `sudo puma-dev -setup`
- * `puma-dev -install -d dev`
+ * Install [athame](https://github.com/ardagnir/athame#option-2-the-safest-method-install-a-local-copy-of-zsh): `git clone --recursive http://github.com/ardagnir/athame && cd athame && pkdir -p ~/.athame && ./zsh_athame_setup.sh --prefix=$HOME/.athame/ --vimbin=/usr/local/bin/nvim && mv /usr/local/bin/zsh /usr/local/bin/_zsh && ln -s ~/.athame/bin/zsh /usr/local/bin/zsh`
  * `cd application/Visual\ Studio\ Code\ && ./settings.zsh restore`
  * `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
  * `brew services start koekeishiya/formulae/yabai`

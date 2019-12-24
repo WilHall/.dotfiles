@@ -1,4 +1,5 @@
 .env
+.config/yarn/global/yarn.lock
 **/automatic_backups/
 **/node_modules/
 yarn-error.json

@@ -51,8 +51,6 @@ hi Pmenu guibg=#222222 guifg=#999999
 " coc diagnostics
 hi CocErrorHighlight guifg=#c94940 gui=bold,underline 
 hi CocWarningHighlight guifg=#f4b80f gui=bold,underline 
-hi CocErrorLine gui=bold
-hi CocWarningLine gui=bold
 hi CocErrorFloat guifg=#c94940 gui=bold 
 hi CocWarningFloat guifg=#f4b80f gui=bold 
 

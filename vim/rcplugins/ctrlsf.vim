@@ -10,4 +10,9 @@ let g:ctrlsf_auto_focus = {
     \ }
 let g:ctrlsf_position = 'bottom'
 
-nnoremap <leader>s :CtrlSF 
+let g:ctrlsf_mapping = {
+     \ "quit": { "key": "q", "suffix": "<C-w>_" },
+     \ }
+
+nmap <leader>s <Plug>CtrlSFPrompt
+nmap <leader>d <Plug>CtrlSFCCwordExec

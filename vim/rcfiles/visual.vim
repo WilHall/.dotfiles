@@ -49,12 +49,12 @@ hi NormalFloat guifg=#999999 guibg=#222222
 hi Pmenu guibg=#222222 guifg=#999999
 
 " coc diagnostics
-hi CocErrorhi guifg=#c94940 gui=bold,undercurl guisp=Green
-hi CocWarninghi guifg=#f4b80f gui=bold,undercurl guisp=Green
-hi CocErrorLine guifg=#c94940 gui=bold,undercurl guisp=Green
-hi CocWarningLine guifg=#f4b80f gui=bold,undercurl guisp=Green
-hi CocErrorFloat guifg=#c94940 gui=bold,undercurl guisp=Green
-hi CocWarningFloat guifg=#f4b80f gui=bold,undercurl guisp=Green
+hi CocErrorHighlight guifg=#c94940 gui=bold,underline 
+hi CocWarningHighlight guifg=#f4b80f gui=bold,underline 
+hi CocErrorLine gui=bold
+hi CocWarningLine gui=bold
+hi CocErrorFloat guifg=#c94940 gui=bold 
+hi CocWarningFloat guifg=#f4b80f gui=bold 
 
 " easy motion targets
 hi EasyMotionTarget guifg=#f4b80f guibg=black

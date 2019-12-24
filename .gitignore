@@ -1,4 +1,7 @@
 .env
+**/automatic_backups/
+**/node_modules/
+yarn-error.json
 vim/undo/
 scratch/
 *.com

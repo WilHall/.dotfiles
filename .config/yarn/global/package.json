@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@elm-tooling/elm-language-server": "^1.4.5",
+    "create-react-app": "^3.2.0",
+    "elm-format": "^0.8.2",
+    "expo-cli": "^3.3.0",
+    "graphql-faker": "^2.0.0-rc.4"
+  }
+}

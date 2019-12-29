@@ -10,7 +10,6 @@ antigen bundle per-directory-history
 antigen bundle git
 antigen bundle heroku
 antigen bundle zsh-autosuggestions
-antigen bundle iterm2
 antigen bundle jsontools
 antigen bundle osx
 antigen bundle zsh_reload
@@ -20,7 +19,6 @@ antigen bundle colored-man-pages
 antigen bundle dircycle
 antigen bundle dirpersist
 antigen bundle history
-antigen bundle sublime
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle mafredri/zsh-async

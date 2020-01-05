@@ -4,12 +4,11 @@ syntax on
 
 set nocompatible
 set showcmd
-set clipboard=unnamed
+set clipboard=unnamedplus
 set hidden
 set updatetime=100
 set nobackup
 set nowritebackup
-set autowrite
 set laststatus=2
 set incsearch
 

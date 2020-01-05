@@ -38,10 +38,10 @@ hi LineNr guibg=NONE ctermbg=NONE
 hi SignColumn guibg=NONE ctermbg=NONE
 hi ColorColumn guibg=NONE ctermbg=NONE
 hi CursorLine guibg=NONE ctermbg=NONE
-hi GitGutterAdd guibg=XYZ
-hi GitGutterChange guibg=XYZ
-hi GitGutterDelete guibg=XYZ
-hi GitGutterChangeDelete guibg=XYZ
+hi GitGutterAdd guibg=NONE
+hi GitGutterChange guibg=NONE
+hi GitGutterDelete guibg=NONE
+hi GitGutterChangeDelete guibg=NONE
 
 " floating windows
 hi VertSplit guibg=NONE

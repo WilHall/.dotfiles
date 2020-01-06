@@ -49,8 +49,8 @@ layout docked 'Slack':MAIN_FIRST ${LEFTMOST-primary-right}
 layout docked 'Todoist':MAIN_FIRST ${LEFTMOST-secondary-right}
 layout docked 'Spark':MAIN_FIRST ${LEFTMOST-secondary-left}
 layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-left}
-layout docked 'Google Chrome':TITLE_ORDER_REGEX=calendar.google.com|atlassian.net|github.com|gitlab|\localhost|127\.0\.0\.1|docs.google.com|drive.google.com; ${MIDDLEMOST-primary-left} | ${MIDDLEMOST-primary-right}
-layout docked 'Google Chrome':MAIN_FIRST ${MIDDLEMOST-primary-left}
+layout docked 'Firefox Developer Edition':TITLE_ORDER_REGEX=calendar.google.com|atlassian.net|github.com|gitlab|\localhost|127\.0\.0\.1|docs.google.com|drive.google.com; ${MIDDLEMOST-primary-left} | ${MIDDLEMOST-primary-right}
+layout docked 'Firefox Developer Edition':MAIN_FIRST ${MIDDLEMOST-primary-left}
 layout docked 'Code':MAIN_FIRST ${MIDDLEMOST-primary-middle}
 layout docked 'Alacritty':MAIN_FIRST ${MIDDLEMOST-primary-right}
 layout docked 'kitty':MAIN_FIRST ${MIDDLEMOST-primary-right}

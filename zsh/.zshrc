@@ -50,3 +50,14 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 . $HOME/.asdf/completions/asdf.bash
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# START for athame
+
+unset zle_bracketed_paste
+
+function zle-line-init(){
+  echoti rmkx
+}
+zle -N zle-line-init
+
+# END for athama

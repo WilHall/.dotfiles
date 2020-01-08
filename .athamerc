@@ -7,6 +7,9 @@
 " script.
 
 set nocompatible
+set noswapfile
+set nobackup
+set nowritebackup
 
 set ttimeoutlen=10 "Otherwise, you have to wait for the escape key.
 
@@ -29,8 +32,8 @@ endif
 " only match lines that share text before cursor
 " (Similar to how arrows work for vim ex expressions)
 "
-"inoremap <Up> <C-\><C-O>:silent call HistorySearchBackward()<CR>
-"inoremap <Down> <C-\><C-O>:silent call HistorySearchForward()<CR>
+inoremap <Up> <C-\><C-O>:silent call HistorySearchBackward()<CR>
+inoremap <Down> <C-\><C-O>:silent call HistorySearchForward()<CR>
 "nnoremap <Up> :silent call HistorySearchBackward()<CR>
 "nnoremap <Down> :silent call HistorySearchForward()<CR>
 

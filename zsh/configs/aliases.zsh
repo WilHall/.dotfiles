@@ -48,7 +48,7 @@ function psgrep() {
 
 function gfu() {
   git commit --fixup HEAD
-  EDITOR=true git rebase -i --autosquash HEAD~2
+  EDITOR=true GIT_EDITOR=true git rebase -i --autosquash HEAD~2
 }
 
 function quickrebase() {

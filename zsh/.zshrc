@@ -7,6 +7,8 @@ source /usr/local/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle per-directory-history
+antigen bundle asdf
+antigen bundle git-extras
 antigen bundle git
 antigen bundle heroku
 antigen bundle zsh-autosuggestions
@@ -20,7 +22,7 @@ antigen bundle dircycle
 antigen bundle dirpersist
 antigen bundle history
 antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 

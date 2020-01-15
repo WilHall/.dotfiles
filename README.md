@@ -13,7 +13,6 @@ dotfiles and application settings
  *  `brew tap caskroom/cask`
  *  `brew bundle`
  *  `mkdir ~/workspace`
- *  `mkdir ~/Pictures/Screenshots`
  *  `~/.dotfiles/applications/defaults restore`
  *  Register global gitignore file `git config --global core.excludesfile ~/.gitignore`
  *  Install fonts: `./font/install.sh`
@@ -27,6 +26,7 @@ dotfiles and application settings
  * `brew services start koekeishiya/formulae/yabai`
  * `sudo yabai --install-sa`
  * `brew services start skhd`
+ * `sudo tic -xe alacritty,alacritty-direct ~/.dotfiles/.alacritty.info`
 
 ### Backing Up and Restoring User Defaults
 1. `cd ~/.dotfiles/`

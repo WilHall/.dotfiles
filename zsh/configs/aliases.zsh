@@ -41,6 +41,7 @@ function gittrackall() {
     git fetch --all
 }
 alias gta="gittrackall"
+alias gbn="git rev-parse --abbrev-ref HEAD"
 
 function psgrep() {
     ps auwx -o nice,command=cmd | grep -i -e '%CPU' -e "$@"

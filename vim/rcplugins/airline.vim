@@ -19,6 +19,3 @@ let g:airline#extensions#coc#enabled = 1
 let airline#extensions#coc#error_symbol = '!!'
 let airline#extensions#coc#warning_symbol = '!'
 
-nnoremap <Leader>, :bp<CR>
-nnoremap <Leader>. :bn<CR>
-nnoremap <Leader>; :bd<CR>

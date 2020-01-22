@@ -25,6 +25,8 @@
   "diagnostic.maxWindowHeight": 20,
   "signature.maxWindowHeight": 20,
   "diagnostic.checkCurrentLine": true,
+  "typescript.suggest.completeFunctionCalls": false,
+  "javascript.suggest.completeFunctionCalls": false,
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "elm",

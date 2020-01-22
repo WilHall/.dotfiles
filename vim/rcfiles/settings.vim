@@ -33,6 +33,9 @@ set ignorecase
 set smartcase
 set hlsearch
 
+" completion
+set completeopt=menu,menuone,preview
+
 " folding
 set foldenable
 set foldmethod=indent

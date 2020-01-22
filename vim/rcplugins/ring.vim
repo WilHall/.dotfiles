@@ -1,1 +1,0 @@
-Plug 'andrewvos/vim-ring'

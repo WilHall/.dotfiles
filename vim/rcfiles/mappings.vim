@@ -27,6 +27,11 @@ nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
 nnoremap <Leader>v :vsp<CR>
 nnoremap <Leader>h :sp<CR>
 
+" buffer navigation
+nnoremap <Leader>, :silent! bp<CR>
+nnoremap <Leader>. :silent! bn<CR>
+nnoremap <Leader>; :silent! bd<CR>
+
 " resize splits
 nnoremap <silent> <C-y> :exe "vertical resize -1"<cr>
 nnoremap <silent> <C-o> :exe "vertical resize +1"<cr>

@@ -4,7 +4,7 @@ alias vi="nvim"
 alias yrl="launchctl kickstart -k 'gui/${UID}/homebrew.mxcl.yabai'"
 
 # yarn shortcuts
-alias ys="yarn start"
+alias ys="BROWSER=none yarn start"
 alias yt="yarn test"
 alias ytw="yt --watch"
 alias yl="yarn list"

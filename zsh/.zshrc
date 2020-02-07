@@ -4,6 +4,7 @@ ZSH_THEME=""
 COMPLETION_WAITING_DOTS="false"
 CASE_SENSITIVE="true"
 unsetopt auto_cd
+setopt IGNORE_EOF # Unbind ^d for logout
 
 source /usr/local/share/antigen/antigen.zsh
 

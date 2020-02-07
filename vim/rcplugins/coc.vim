@@ -1,4 +1,4 @@
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
@@ -75,13 +75,6 @@ augroup cocgroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-
-" Remap for do codeAction of current line
-nmap <leader>ac  <Plug>(coc-codeaction)
-
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
@@ -127,6 +120,7 @@ nnoremap <leader>cc :cclose<cr>:pclose<cr>:call coc#util#float_hide()<cr>
 
 " Use <c-space> to trigger completion.
 map <silent> <c-space> <leader>cce"-yla<BS><c-r>-
+nmap <leader>do <Plug>(coc-codeaction)
 
 " Restart coc
 nnoremap <leader>cr :silent CocRestart<cr>

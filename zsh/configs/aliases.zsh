@@ -68,3 +68,5 @@ function gbir() {
 }
 
 alias gqrb="quickrebase"
+
+alias update-dev="brew update; brew upgrade; antigen update; vim -c 'PlugUpdate' -c 'q!' -c 'q!'"

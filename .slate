@@ -4,20 +4,17 @@ config windowHintsIgnoreHiddenWindows false
 config windowHintsSpread true
 config windowHintsFontSize 70
 config windowHintsIconAlpha 0.5
-
-# Window Hints
-bind e:cmd hint `1234567890-=
-
-# Grid
-# bind g:cmd grid padding:5 0:10,10 0:10,10 0:10,10
+config layoutFocusOnActivate true
 
 # monitors
 #   alias <name> <displayID>
+
 alias LEFTMOST 0
 alias MIDDLEMOST 1
 
 # pre-defined window sizes
 #   alias <name> move <xPos>;<yPos> <xSize>;<ySize>
+
 alias lefthalflarge move screenOriginX;screenOriginY screenSizeX*0.6;screenSizeY
 alias righthalflarge move screenOriginX+screenSizeX*0.4;screenOriginY screenSizeX*0.6;screenSizeY
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
@@ -32,11 +29,13 @@ alias trimiddleright move screenOriginX+screenSizeX*0.33;screenOriginY screenSiz
 
 # pre-defined screen positions
 #   alias <name> <sizeAlias> <monitorAlias>
+
 alias MIDDLEMOST-primary-left ${trileft} ${MIDDLEMOST}
 alias MIDDLEMOST-secondary-left ${trileft} ${MIDDLEMOST}
 alias MIDDLEMOST-primary-middle ${trimiddle} ${MIDDLEMOST}
 alias MIDDLEMOST-secondary-middle ${trimiddle} ${MIDDLEMOST}
 alias MIDDLEMOST-primary-right ${trimiddleright} ${MIDDLEMOST}
+alias MIDDLEMOST-secondary-right ${righthalf} ${MIDDLEMOST}
 alias LEFTMOST-primary-left ${lefthalf} ${LEFTMOST}
 alias LEFTMOST-secondary-left ${lefthalf} ${LEFTMOST}
 alias LEFTMOST-primary-right ${righthalf} ${LEFTMOST}
@@ -45,20 +44,23 @@ alias LEFTMOST-secondary-right ${righthalf} ${LEFTMOST}
 # 'docked' layout definitions
 #   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>
 
+layout docked 'Messages':MAIN_FIRST ${LEFTMOST-secondary-right}
 layout docked 'Slack':MAIN_FIRST ${LEFTMOST-primary-right}
-layout docked 'Todoist':MAIN_FIRST ${LEFTMOST-secondary-right}
-layout docked 'Spark':MAIN_FIRST ${LEFTMOST-secondary-left}
 layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-left}
-layout docked 'Firefox Developer Edition':TITLE_ORDER_REGEX=calendar.google.com|atlassian.net|github.com|gitlab|\localhost|127\.0\.0\.1|docs.google.com|drive.google.com; ${MIDDLEMOST-primary-left} | ${MIDDLEMOST-primary-right}
-layout docked 'Firefox Developer Edition':MAIN_FIRST ${MIDDLEMOST-primary-left}
+layout docked 'Airmail':MAIN_FIRST ${LEFTMOST-secondary-left}
+
+layout docked 'Fantastical 2':MAIN_FIRST ${MIDDLEMOST-secondary-right}
 layout docked 'Code':MAIN_FIRST ${MIDDLEMOST-primary-middle}
+layout docked 'Firefox Developer Edition':MAIN_FIRST ${MIDDLEMOST-primary-left}
 layout docked 'Alacritty':MAIN_FIRST ${MIDDLEMOST-primary-right}
 layout docked 'kitty':MAIN_FIRST ${MIDDLEMOST-primary-right}
 
-# 'undocked' layout definitions
-#   layout <layoutName> <appName>:<OPTIONS> <COMMANDS>
-# TODO
-
 # bind layouts
 #   bind <keyBinding> layout <layoutName>
+
 bind 1:cmd;shift layout docked
+
+bind e:cmd hint `1234567890-=
+bind s:cmd;alt;ctrl toggle 'Spotify'
+bind `:cmd;shift toggle 'Airmail'
+bind `:cmd sequence toggle 'kitty' > toggle 'Alacritty'

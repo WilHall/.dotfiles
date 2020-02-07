@@ -1,4 +1,4 @@
-export TERM="alacritty"
+export TERM="xterm-kitty"
 
 ZSH_THEME=""
 COMPLETION_WAITING_DOTS="false"

@@ -1,4 +1,5 @@
 alias ll="ls -al"
+
 alias vim="nvim"
 alias vi="nvim"
 alias yrl="launchctl kickstart -k 'gui/${UID}/homebrew.mxcl.yabai'"
@@ -16,6 +17,10 @@ alias pwc="pwd | pbcopy"
 alias pwp='cd $(pbpaste -Prefer txt)'
 
 alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
+
+function findempty() {
+  find $@ -type f -empty
+}
 
 function tnpm() {
   mv ~/.tnpmrc ~/.npmrc

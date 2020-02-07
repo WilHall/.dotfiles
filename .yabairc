@@ -4,8 +4,8 @@
 yabai -m config status_bar                   off
 
 # global settings
-yabai -m config mouse_follows_focus          on
-yabai -m config focus_follows_mouse          autofocus
+# yabai -m config mouse_follows_focus          on
+# yabai -m config focus_follows_mouse          autofocus
 
 yabai -m config window_topmost on
 yabai -m config window_shadow float

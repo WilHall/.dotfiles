@@ -9,6 +9,10 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
+" underline settings
+let &t_Cs = "\e[4:3m"
+let &t_Ce = "\e[4:0m"
+
 " cursor settings
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[4 q"
@@ -49,8 +53,8 @@ hi NormalFloat guifg=#999999 guibg=#222222
 hi Pmenu guibg=#222222 guifg=#999999
 
 " coc diagnostics
-hi CocErrorHighlight guifg=#c94940 gui=bold,underline 
-hi CocWarningHighlight guifg=#f4b80f gui=bold,underline 
+hi CocErrorHighlight guifg=#c94940 gui=bold,undercurl cterm=bold,undercurl 
+hi CocWarningHighlight guifg=#f4b80f gui=bold,undercurl cterm=bold,undercurl 
 hi CocErrorFloat guifg=#c94940 gui=bold 
 hi CocWarningFloat guifg=#f4b80f gui=bold 
 

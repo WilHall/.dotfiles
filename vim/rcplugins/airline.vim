@@ -3,7 +3,7 @@ Plug 'vim-airline/vim-airline'
 let g:airline_theme='onehalfdarktransparent'
 let g:airline_powerline_fonts = 1
 let g:airline_highlighting_cache = 1
-let g:airline_focuslost_inactive = 1
+let g:airline_focuslost_inactive = 0
 
 " tabline
 let g:airline#extensions#tabline#enabled = 1

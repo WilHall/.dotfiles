@@ -4,8 +4,8 @@ let g:yoinkSavePersistently = 1
 let g:yoinkSwapClampAtEnds = 0
 let g:yoinkIncludeDeleteOperations = 1
 
-nmap <c-[> <plug>(YoinkPostPasteSwapBack)
-nmap <c-]> <plug>(YoinkPostPasteSwapForward)
+nmap <leader>[p <plug>(YoinkPostPasteSwapBack)
+nmap <leader>]p <plug>(YoinkPostPasteSwapForward)
 nmap <leader>[y <plug>(YoinkRotateBack)
 nmap <leader>]y <plug>(YoinkRotateForward)
 

@@ -52,6 +52,9 @@ hi VertSplit guibg=NONE
 hi NormalFloat guifg=#999999 guibg=#222222
 hi Pmenu guibg=#222222 guifg=#999999
 
+" spell check
+hi SpellBad cterm=undercurl gui=undercurl
+
 " coc diagnostics
 hi CocErrorHighlight guifg=#c94940 gui=bold,undercurl cterm=bold,undercurl 
 hi CocWarningHighlight guifg=#f4b80f gui=bold,undercurl cterm=bold,undercurl 

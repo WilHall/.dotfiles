@@ -44,3 +44,5 @@ vim/session/
 vim/.netrwhist
 cache.json
 .vimrc.local
+applications/Alfred/preferences/Alfred.alfredpreferences/snippets
+applications/Alfred/preferences/Alfred.alfredpreferences/workflows

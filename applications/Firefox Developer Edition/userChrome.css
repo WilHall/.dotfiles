@@ -15,13 +15,6 @@
   -moz-margin-end: 2px !important;
 }
 
-@media (-moz-os-version: windows-win7), (-moz-os-version: windows-win8), (-moz-os-version: windows-win10) {
-	:-moz-any(.browserContainer, #viewSource) .findbar-closebutton {
-	  position: relative !important;
-	  top: 4px !important;
-	}
-}
-
 :-moz-any(.browserContainer, #viewSource) .findbar-closebutton  .toolbarbutton-icon{
   width: 16px !important;
   height: 16px !important;
@@ -33,7 +26,7 @@
 :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
   -moz-box-ordinal-group: 0;
   position: fixed !important;
-  display:block !important;
+  display: flex !important;
   margin-top: -1px !important;
   box-shadow: unset !important;
   border: 1px solid #e1e1e2 !important;
@@ -63,20 +56,11 @@
 :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar):-moz-locale-dir(rtl) {
   right: 5px;
 }
-
-/* increase width to full window size *//*
-:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-}
  
-/**
 #viewSource #FindToolbar {
   background-color: -moz-dialog;
   color: -moz-dialogtext;
 }
-*/
 
 @media (-moz-os-version: windows-win7), (-moz-os-version: windows-win8), (-moz-os-version: windows-win10) {
   @media not all and (-moz-windows-classic) {
@@ -115,15 +99,16 @@
   -moz-margin-start: 230px !important;
 }
 
-/* status at findbars start *//*
 :-moz-any(.browserContainer, #viewSource) :-moz-any(.findbar-find-status,.found-matches) {
   -moz-box-ordinal-group: 0;
   -moz-margin-start: 0px !important;
   -moz-margin-end: 6px !important;
 }
-/**/
 
 :-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
-	z-index: 10000 !important;
+  z-index: 10000 !important;
 }
 
+:-moz-any(.browserContainer,#viewSource) :-moz-any(findbar,#FindToolbar) {
+  overflow: hidden !important;
+}

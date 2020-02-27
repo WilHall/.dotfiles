@@ -18,6 +18,10 @@ alias pwp='cd $(pbpaste -Prefer txt) && clear'
 
 alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
 
+function dash() {
+  open "dash://$@"
+}
+
 function findempty() {
   find $@ -type f -empty
 }

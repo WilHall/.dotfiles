@@ -48,6 +48,7 @@ layout docked 'Messages':MAIN_FIRST ${LEFTMOST-secondary-right}
 layout docked 'Slack':MAIN_FIRST ${LEFTMOST-primary-right}
 layout docked 'Spotify':MAIN_FIRST ${LEFTMOST-secondary-left}
 layout docked 'Airmail':MAIN_FIRST ${LEFTMOST-secondary-left}
+layout docked 'Basecamp 3':MAIN_FIRST ${LEFTMOST-primary-left}
 
 layout docked 'Fantastical 2':MAIN_FIRST ${MIDDLEMOST-secondary-right}
 layout docked 'Code':MAIN_FIRST ${MIDDLEMOST-primary-middle}

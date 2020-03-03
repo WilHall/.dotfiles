@@ -29,7 +29,7 @@ autocmd VimResized * :wincmd =
 " show cursorline in insert mode
 autocmd InsertEnter,InsertLeave * set cursorline!
 
-" list char his
+" list chars
 hi Whitespace ctermfg=DarkGray guifg=#4a4a59
 hi NonText ctermfg=DarkGray guifg=#4a4a59
 hi SpecialKey ctermfg=DarkGray guifg=#4a4a59
@@ -51,7 +51,7 @@ hi GitGutterChangeDelete guibg=NONE
 hi VertSplit guibg=NONE
 hi NormalFloat guifg=#999999 guibg=#222222
 hi Pmenu guibg=#222222 guifg=#999999
-
+hi FzfBackground guibg=#282c34
 " spell check
 hi SpellBad cterm=undercurl gui=undercurl
 

@@ -32,7 +32,7 @@ brew "nginx"
 brew "mongodb"
 brew "redis"
 brew "postgresql"
-brew "fzf"
+brew "fzf", args: ["HEAD"]
 brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"

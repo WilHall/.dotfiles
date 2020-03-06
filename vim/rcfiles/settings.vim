@@ -4,7 +4,7 @@ syntax on
 
 set nocompatible
 set showcmd
-set clipboard=unnamedplus
+set clipboard=unnamed
 set hidden
 set updatetime=100
 set nobackup

@@ -119,7 +119,11 @@ nnoremap <silent> <space>p :<C-u>CocListResume<CR>
 nnoremap <leader>cc :cclose<cr>:pclose<cr>:call coc#util#float_hide()<cr>
 
 " Use <c-space> to trigger completion.
-map <silent> <c-space> <leader>cce"-yla<BS><c-r>-
+if has('nvim')
+  map <silent> <C-space> <leader>cce"-yla<BS><c-r>-
+else
+  map <silent> <C-@> <leader>cce"-yla<BS><c-r>-
+endif
 nmap <leader>do <Plug>(coc-codeaction)
 
 " Restart coc

@@ -1,5 +1,6 @@
 alias ll="ls -al"
 
+alias vim="nvim"
 alias vi="vim"
 alias yrl="launchctl kickstart -k 'gui/${UID}/homebrew.mxcl.yabai'"
 

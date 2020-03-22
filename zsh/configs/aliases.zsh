@@ -2,7 +2,6 @@ alias ll="ls -al"
 
 alias vim="nvim"
 alias vi="vim"
-alias yrl="launchctl kickstart -k 'gui/${UID}/homebrew.mxcl.yabai'"
 
 # yarn shortcuts
 alias ys="BROWSER=none yarn start"
@@ -24,6 +23,15 @@ function digall() {
 
 function dash() {
   open "dash://$@"
+}
+
+function pbedit() {
+  tmpfile=`mktemp /tmp/pbedit.XXXX`
+  pbpaste > $tmpfile
+  if vim -c "set nofixeol" $tmpfile ; then
+    pbcopy < $tmpfile
+  fi
+  rm $tmpfile
 }
 
 function findempty() {
@@ -66,7 +74,7 @@ function gfu() {
   EDITOR=true GIT_EDITOR=true git rebase -i --autosquash HEAD~2
 }
 
-function quickrebase() {
+function gqrb() {
     git set-upstream
     git fetch origin "$@:$@" && git pull && git rebase "$@"
 }
@@ -74,7 +82,5 @@ function quickrebase() {
 function gbir() {
   git rebase -i --autosquash $(git merge-base --fork-point "$@" $(git rev-parse --abbrev-ref HEAD))
 }
-
-alias gqrb="quickrebase"
 
 alias update-dev="brew update; brew upgrade; antigen update; vim -c 'PlugUpdate' -c 'q!' -c 'q!'"

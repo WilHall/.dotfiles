@@ -25,6 +25,7 @@
   "diagnostic.maxWindowHeight": 40,
   "signature.maxWindowHeight": 40,
   "diagnostic.checkCurrentLine": true,
+  "yank.highlight.duration": 270,
   "typescript.suggest.completeFunctionCalls": false,
   "javascript.suggest.completeFunctionCalls": false,
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
@@ -41,7 +42,7 @@
   "prettier.requireConfig": true,
   "prettier.disableSuccessMessage": true,
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact", "typescript.tsx"],
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "html.format.enable": true,
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true

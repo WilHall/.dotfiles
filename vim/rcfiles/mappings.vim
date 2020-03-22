@@ -23,10 +23,6 @@ nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 " shortcut to edit file in the same directory as the current file
 nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
 
-" create splits
-nnoremap <Leader>v :vsp<CR>
-nnoremap <Leader>h :sp<CR>
-
 " buffer navigation
 nnoremap <Leader>, :silent! bp<CR>
 nnoremap <Leader>. :silent! bn<CR>

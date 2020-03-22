@@ -1,6 +1,6 @@
 {
   "alfredsnippet" : {
-    "snippet" : "<details><summary>Small<\/summary>\n<table><thead><tr><th>Left<\/th><th>Right<\/th><\/tr><\/thead><tbody><tr><td>\n\n<!-- left -->\n\n<\/td><td>\n\n<!-- right -->\n\n<\/td><\/tr><\/tbody><\/table><\/details>",
+    "snippet" : "<details><summary>{summary}<\/summary>\n<table><thead><tr><th>Left<\/th><th>Right<\/th><\/tr><\/thead><tbody><tr><td>\n\n<!-- left -->\n\n<\/td><td>\n\n<!-- right -->\n\n<\/td><\/tr><\/tbody><\/table><\/details>",
     "uid" : "C7D32CAB-A2C0-49A7-9BFF-609130391C84",
     "name" : "details with table",
     "keyword" : "detailst"

@@ -1,30 +1,30 @@
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'amiralies/coc-elixir', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-vimlsp', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-svg', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
+let g:coc_global_extensions = [
+  \ 'coc-css',
+  \ 'coc-json',
+  \ 'coc-tsserver',
+  \ 'coc-elixir',
+  \ 'coc-html',
+  \ 'coc-yaml',
+  \ 'coc-vimlsp',
+  \ 'coc-svg',
+  \ 'coc-actions',
+  \ 'coc-lists',
+  \ 'coc-json',
+  \ 'coc-yank',
+  \ 'coc-highlight'
+  \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
-  Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+  let g:coc_global_extensions += ['coc-prettier']
 endif
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
-  Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+  let g:coc_global_extensions += ['coc-eslint']
 endif
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 inoremap <expr> <TAB> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<TAB>"
@@ -41,39 +41,26 @@ nmap <silent> gr <Plug>(coc-references)
 
 " show documentation
 function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
+  call CocAction('doHover')
 endfunction
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-" show error, otherwise documentation, on hold
+" show diagnostics, otherwise documentation, on hold
 function! ShowDocIfNoDiagnostic(timer_id)
   if (coc#util#has_float() == 0)
     silent call CocActionAsync('doHover')
   endif
 endfunction
+
 function! s:show_hover_doc()
   call timer_start(500, 'ShowDocIfNoDiagnostic')
 endfunction
+
 autocmd CursorHoldI * :call <SID>show_hover_doc()
 autocmd CursorHold * :call <SID>show_hover_doc()
 
 " common editor actions
 nmap <leader>rn <Plug>(coc-rename)
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-
-augroup cocgroup
-  autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-
-  " Update signature help on jump placeholder
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-augroup end
 
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
@@ -115,8 +102,16 @@ nnoremap <silent> <space>k :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p :<C-u>CocListResume<CR>
 
-" Close all coc windows
-nnoremap <leader>cc :cclose<cr>:pclose<cr>:call coc#util#float_hide()<cr>
+" actions menu
+nmap <leader>m :CocCommand actions.open<CR>
+nmap <C-a> :CocCommand actions.open<CR>
+nmap <leader>do <Plug>(coc-codeaction)
+
+" command history
+nmap <leader>h :CocList --top --number-select cmdhistory<CR>
+
+" mru 
+nmap <leader>r :CocList mru<CR>
 
 " Use <c-space> to trigger completion.
 if has('nvim')
@@ -124,7 +119,9 @@ if has('nvim')
 else
   map <silent> <C-@> <leader>cce"-yla<BS><c-r>-
 endif
-nmap <leader>do <Plug>(coc-codeaction)
+
+" Close all coc windows
+nnoremap <leader>cc :cclose<cr>:pclose<cr>:call coc#util#float_hide()<cr>
 
 " Restart coc
 nnoremap <leader>cr :silent CocRestart<cr>

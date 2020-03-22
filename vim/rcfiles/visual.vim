@@ -36,6 +36,10 @@ hi SpecialKey ctermfg=DarkGray guifg=#4a4a59
 hi VisualListChars ctermfg=DarkGray guifg=#4a4a59
 match VisualListChars /\s/
 
+" Highlights
+hi CocHoverRange term=bold ctermbg=0 guibg=#474e5d
+hi HighlightedyankRegion term=bold ctermbg=0 guibg=#474e5d
+
 " Allow for terminal background transparency
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE
@@ -52,6 +56,7 @@ hi VertSplit guibg=NONE
 hi NormalFloat guifg=#999999 guibg=#222222
 hi Pmenu guibg=#222222 guifg=#999999
 hi FzfBackground guibg=#282c34
+
 " spell check
 hi SpellBad cterm=undercurl gui=undercurl
 

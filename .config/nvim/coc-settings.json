@@ -26,6 +26,7 @@
   "signature.maxWindowHeight": 40,
   "diagnostic.checkCurrentLine": true,
   "yank.highlight.duration": 270,
+  "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.suggest.completeFunctionCalls": false,
   "javascript.suggest.completeFunctionCalls": false,
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,

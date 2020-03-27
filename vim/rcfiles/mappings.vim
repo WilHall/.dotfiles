@@ -36,3 +36,6 @@ nnoremap <silent> <C-i> :exe "resize +1"<cr>
 
 " delete surrounding function
 nmap <silent> dsf ds)db
+
+" write current buffer to the clipboard
+nmap <silent> <Leader>cc :w !pbcopy<cr><cr>

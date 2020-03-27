@@ -22,7 +22,7 @@ antigen bundle dircycle
 antigen bundle zsh-users/zsh-completions
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure@indestructible-pure
+antigen bundle sindresorhus/pure
 
 antigen apply
 

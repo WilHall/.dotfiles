@@ -16,5 +16,5 @@ function toggleAppWindow(appName)
 end
 
 hs.hotkey.bind(cmdshift, "`", function() toggleAppWindow("Airmail") end)
-hs.hotkey.bind(hyper, "M", function() toggleAppWindow("TIDAL") end)
+hs.hotkey.bind(hyper, "M", function() toggleAppWindow("Spotify") end)
 hs.hotkey.bind(hyper, "B", function() toggleAppWindow("Basecamp 3") end)

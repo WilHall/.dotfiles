@@ -7,6 +7,26 @@
       "initializationOptions": {
         "elmAnalyseTrigger": "change"
       }
+    },
+    "haskell": {
+      "command": "hie-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.config",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ],
+      "initializationOptions": {
+        "languageServerHaskell": {
+          "hlintOn": true
+        }
+      }
     }
   },
   "coc.preferences.jumpCommand": "drop",

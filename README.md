@@ -23,10 +23,10 @@ dotfiles and application settings
  * Install [athame](https://github.com/ardagnir/athame#option-2-the-safest-method-install-a-local-copy-of-zsh): `git clone --recursive http://github.com/ardagnir/athame && cd athame && pkdir -p ~/.athame && ./zsh_athame_setup.sh --prefix=$HOME/.athame/ --vimbin=/usr/local/bin/nvim && mv /usr/local/bin/zsh /usr/local/bin/_zsh && ln -s ~/.athame/bin/zsh /usr/local/bin/zsh`
  * `cd application/Visual\ Studio\ Code\ && ./settings.zsh restore`
  * `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
- * `brew services start koekeishiya/formulae/yabai`
- * `sudo yabai --install-sa`
- * `brew services start skhd`
- * `sudo tic -xe alacritty,alacritty-direct ~/.dotfiles/.alacritty.info`
+ * Install `haskell` 8.8.2: https://www.haskell.org/ghcup/
+ * Install `haskell-ide-engine`: https://github.com/haskell/haskell-ide-engine#building
+ * `stack ./install.hs hie-8.8.2`
+ * `stack install stylish-haskell`
 
 ### Backing Up and Restoring User Defaults
 1. `cd ~/.dotfiles/`

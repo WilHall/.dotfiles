@@ -12,7 +12,7 @@ end
 
 function undockedLayout()
   return {
-    {"TIDAL", nil, laptopScreenName, hs.layout.left70, nil, nil},
+    {"Spotify", nil, laptopScreenName, hs.layout.left70, nil, nil},
     {"Airmail", nil, laptopScreenName, hs.layout.left70, nil, nil},
     {"Messages", nil, laptopScreenName, hs.layout.right70, nil, nil},
     {"Basecamp 3", nil, laptopScreenName, hs.layout.right70, nil, nil},
@@ -24,7 +24,7 @@ end
 
 function dockedLayout()
   return {
-    {"TIDAL", nil, laptopScreenName, hs.layout.left50, nil, nil},
+    {"Spotify", nil, laptopScreenName, hs.layout.left50, nil, nil},
     {"Airmail", nil, laptopScreenName, hs.layout.left50, nil, nil},
     {"Messages", nil, laptopScreenName, hs.layout.right50, nil, nil},
     {"Basecamp 3", nil, laptopScreenName, hs.layout.right50, nil, nil},

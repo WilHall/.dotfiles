@@ -29,6 +29,8 @@
       }
     }
   },
+  "coc.source.OmniSharp.enable": true,
+  "coc.source.OmniSharp.triggerCharacters": ".",
   "coc.preferences.jumpCommand": "drop",
   "coc.preferences.hoverTarget": "float",
   "diagnostic.refreshOnInsertMode": true,

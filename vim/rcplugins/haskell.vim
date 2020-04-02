@@ -1,5 +1,5 @@
-Plug 'neovimhaskell/haskell-vim'
-Plug 'alx741/vim-stylishask'
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+Plug 'alx741/vim-stylishask', { 'for': 'haskell' }
 
 let g:haskell_enable_quantification = 1
 let g:haskell_enable_recursivedo = 1

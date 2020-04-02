@@ -1,6 +1,5 @@
-Plug 'tpope/vim-markdown'
-Plug 'nelstrom/vim-markdown-folding'
-Plug 'jxnblk/vim-mdx-js'
+Plug 'tpope/vim-markdown', { 'for': ['markdown', 'markdown.mdx'] }
+Plug 'jxnblk/vim-mdx-js', { 'for': ['markdown', 'markdown.mdx'] }
 
 let g:markdown_fenced_languages = [
   \ 'sql',

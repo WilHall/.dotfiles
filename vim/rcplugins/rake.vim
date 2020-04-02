@@ -1,1 +1,1 @@
-Plug 'tpope/vim-rake'
+Plug 'tpope/vim-rake', { 'for': 'ruby' }

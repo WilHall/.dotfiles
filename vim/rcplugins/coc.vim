@@ -23,6 +23,16 @@ if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
   let g:coc_global_extensions += ['coc-eslint']
 endif
 
+function! s:check_eslint()
+  if !isdirectory('./node_modules') || !isdirectory('./node_modules/eslint')
+    call coc#config('eslint', {
+    \ 'enable': v:false,
+    \ })
+  endif
+endfunction
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :call <SID>check_eslint()
+
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
 

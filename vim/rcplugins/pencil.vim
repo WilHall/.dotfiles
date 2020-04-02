@@ -1,6 +1,5 @@
-Plug 'reedes/vim-pencil'
+Plug 'reedes/vim-pencil', { 'for': 'markdown' }
 
 let g:pencil#wrapModeDefault = 'hard'
 let g:pencil#autoformat = 1
 let g:pencil#textwidth = 80
-let g:airline_section_x = '%{PencilMode()}'

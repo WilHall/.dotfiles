@@ -1,1 +1,1 @@
-Plug 'jparise/vim-graphql'
+Plug 'jparise/vim-graphql', { 'for': 'graphql' }

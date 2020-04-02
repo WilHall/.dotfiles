@@ -1,3 +1,3 @@
-Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
 
 command! OV only|AV

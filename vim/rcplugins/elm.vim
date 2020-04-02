@@ -1,1 +1,1 @@
-Plug 'andys8/vim-elm-syntax'
+Plug 'andys8/vim-elm-syntax', { 'for': 'elm' }

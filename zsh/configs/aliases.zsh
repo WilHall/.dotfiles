@@ -38,6 +38,10 @@ function findempty() {
   find $@ -type f -empty
 }
 
+function ddirs() {
+  find . -type d -name $@ -exec rm -r {} +
+}
+
 function tnpm() {
   mv ~/.tnpmrc ~/.npmrc
   $@

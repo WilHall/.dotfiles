@@ -87,4 +87,4 @@ function gbir() {
   git rebase -i --autosquash $(git merge-base --fork-point "$@" $(git rev-parse --abbrev-ref HEAD))
 }
 
-alias update-dev="brew cask upgrade kitty; brew update; brew upgrade; antigen update; vim -c 'PlugUpdate' -c 'CocUpdate' -c 'q!' -c 'q!'"
+alias update-dev="brew cask upgrade kitty; brew update; brew upgrade; asdf plugin-update --all; antigen update; vim -c 'PlugUpdate' -c 'CocUpdate' -c 'q!' -c 'q!'"

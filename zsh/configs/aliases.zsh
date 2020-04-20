@@ -87,4 +87,12 @@ function gbir() {
   git rebase -i --autosquash $(git merge-base --fork-point "$@" $(git rev-parse --abbrev-ref HEAD))
 }
 
+function gbc() {
+  git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative $@..$(git rev-parse --abbrev-ref HEAD)
+}
+
+function gbbc() {
+  git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative $(git rev-parse --abbrev-ref HEAD)..$@
+}
+
 alias update-dev="brew cask upgrade kitty; brew update; brew upgrade; asdf plugin-update --all; antigen update; vim -c 'PlugUpdate' -c 'CocUpdate' -c 'q!' -c 'q!'"

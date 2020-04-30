@@ -36,6 +36,9 @@ hi SpecialKey ctermfg=DarkGray guifg=#4a4a59
 hi VisualListChars ctermfg=DarkGray guifg=#4a4a59
 match VisualListChars /\s/
 
+" Folds
+hi Folded ctermfg=DarkGray guifg=#6a6a69
+
 " Highlights
 hi CocHoverRange term=bold ctermbg=0 guibg=#474e5d
 hi HighlightedyankRegion term=bold ctermbg=0 guibg=#474e5d

@@ -14,6 +14,7 @@ nnoremap <C-f> :call Fuzzy_Files()<CR>
 nnoremap <C-d> :call Fuzzy_Find()<CR>
 
 let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.95 } }
+" let g:fzf_layout = { 'tmux': '-p90%,60%' }
 
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],

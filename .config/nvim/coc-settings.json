@@ -29,6 +29,7 @@
       }
     }
   },
+  "workspace.ignoredFiletypes": ["gitcommit"],
   "coc.source.OmniSharp.enable": true,
   "coc.source.OmniSharp.triggerCharacters": ".",
   "coc.preferences.jumpCommand": "drop",

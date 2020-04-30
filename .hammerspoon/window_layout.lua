@@ -1,7 +1,7 @@
 laptopScreenName = 'Color LCD'
 
 local positions = {
-  centered = {x=0.15, y=0.15, w=0.7, h=0.7},
+  centered = {x=0.25, y=0.15, w=0.5, h=0.7},
   left34 = {x=0, y=0, w=0.34, h=1},
   left50 = hs.layout.left50,
   left66 = {x=0, y=0, w=0.66, h=1},
@@ -13,7 +13,9 @@ local positions = {
   upper50Right50 = {x=0.5, y=0, w=0.5, h=0.5},
   lower50 = {x=0, y=0.5, w=1, h=0.5},
   lower50Left50 = {x=0, y=0.5, w=0.5, h=0.5},
-  lower50Right50 = {x=0.5, y=0.5, w=0.5, h=0.5}
+  lower50Left30 = {x=0, y=0.5, w=0.3, h=0.5},
+  lower50Right50 = {x=0.5, y=0.5, w=0.5, h=0.5},
+  lower50Right30 = {x=0.7, y=0.5, w=0.3, h=0.5},
 }
 
 function getExternalScreenName()
@@ -57,7 +59,7 @@ function dockedClamshellLayout()
   return {
     {"Spotify", nil, externalScreenName, hs.layout.left30, nil, nil},
     {"Spark", nil, externalScreenName, hs.layout.left30, nil, nil},
-    {"Messages", nil, externalScreenName, positions.lower50Right50, nil, nil},
+    {"Messages", nil, externalScreenName, positions.lower50Right30, nil, nil},
     {"Basecamp 3", nil, externalScreenName, hs.layout.right34, nil, nil},
     {"NetNewsWire", nil, externalScreenName, hs.layout.right34, nil, nil},
     {"Slack", nil, externalScreenName, positions.centered, nil, nil},

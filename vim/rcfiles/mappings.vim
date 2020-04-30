@@ -9,9 +9,8 @@ nnoremap <leader>ff za
 nnoremap <leader>FF zA
 
 " Maps for folding, unfolding all
-nnoremap <LEADER>fu zM<CR>
-nnoremap <LEADER>uf zR<CR>
-
+nnoremap <LEADER>fa zM<CR>
+nnoremap <LEADER>Fa zR<CR>
 
 " shortcuts for substitutions
 nnoremap <leader>sg :%s///g<left><left>

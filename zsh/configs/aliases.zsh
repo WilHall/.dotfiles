@@ -68,6 +68,7 @@ function gittrackall() {
 alias gta="gittrackall"
 alias gbn="git rev-parse --abbrev-ref HEAD"
 alias gsu="git set-upstream"
+alias grcd="cd $(git root)"
 
 function psgrep() {
     ps auwx -o nice,command=cmd | grep -i -e '%CPU' -e "$@"

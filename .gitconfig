@@ -4,7 +4,7 @@
 	signingkey = A4B3531B2282D01EE7AF6C616CB50AFCD54B3555
 [core]
 	editor = nvim
-	excludesfile = /Users/wilhall/.gitignore
+	excludesfile = ~/.gitignore
 	trustctime = false
 [push]
 	default = current
@@ -32,17 +32,13 @@
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [init]
-	templatedir = /Users/wilhall/.dotfiles/.git_template
+	templatedir = ~/.git_template
 [tag]
 	forceSignAnnotated = true
 [duet "env"]
 	git-author-initials = wh
 	git-author-name = Wil Hall
 	git-author-email = wil@wilhall.com
-	mtime = 1587477330
-	git-committer-initials = 
-	git-committer-name = 
-	git-committer-email = 
 [github]
 	user = WilHall
 [filter "lfs"]

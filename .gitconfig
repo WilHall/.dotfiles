@@ -23,8 +23,10 @@
 	set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
     branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
 	whatadded = log --diff-filter=A
-  filelist = diff-tree --no-commit-id --name-only -r
+  filelist = diff-tree --no-commit-id --name-status -r
 	ctags = !.git/hooks/ctags
+  mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+  root = rev-parse --show-toplevel
 [commit]
 	gpgsign = true
 [gpg]
@@ -37,7 +39,7 @@
 	git-author-initials = wh
 	git-author-name = Wil Hall
 	git-author-email = wil@wilhall.com
-	mtime = 1585849279
+	mtime = 1587477330
 	git-committer-initials = 
 	git-committer-name = 
 	git-committer-email = 

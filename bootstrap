@@ -1,0 +1,90 @@
+#!/usr/bin/zsh
+
+if [ "$#" -ne 1 ]; then
+  echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>"
+  exit 1
+fi
+DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN=$1
+
+create_auth_dotfile() {
+  cat > "~/.auth" <<- OUT
+export HOMEBREW_GITHUB_API_TOKEN=$DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN
+OUT
+}
+
+install_xcode_clt() {
+  xcode-select -p 1>/dev/null
+  if [[ $? != 0 ]]; then
+    xcode-select --install
+  fi
+}
+
+install_homebrew() {
+  which -s brew
+  if [[ $? != 0 ]]; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  fi
+}
+
+install_homebrew_bundle() {
+  brew tap homebrew/bundle
+  brew bundle
+}
+
+install_gemfile_bundle() {
+  bundle install --system
+}
+
+symlink_dotfiles() {
+  cp ~/.dotfiles/.* ~/
+  mkdir -p ~/.config && ln -sfn ~/.dotfiles/_config/* ~/.config
+}
+
+copy_ssh_settings() {
+  mkdir -p ~/.ssh && rsync -u ~/.dotfiles/_ssh ~/.ssh
+}
+
+make_workspace() {
+  mkdir -p ~/workspace/utils
+}
+
+restore_user_defaults() {}
+
+set_default_shell() {
+  sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+}
+
+install_fonts() {
+  find . -name "*.[ot]tf" -type f -exec cp {} "$HOME/Library/Fonts" \; 
+}
+
+configure_sublime_merge() {
+  ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge
+}
+
+install_athame() {
+  git clone --recursive http://github.com/ardagnir/athame ~/workspace/utils/athame && cd ~/workspace/utils/athame && mkdir -p ~/.athame && ./zsh_athame_setup.sh --prefix=$HOME/.athame/ --vimbin=$(which nvim) && mv /usr/local/bin/zsh /usr/local/bin/_zsh && ln -s ~/.athame/bin/zsh /usr/local/bin/zsh && ln -s ~/.athame/bin/zsh ~/bin/.azsh
+}
+
+install_tpm() {
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+}
+
+bootstrap() {
+  make_workspace()
+  copy_ssh_settings()
+  install_fonts()
+  create_auth_dotfile()
+  symlink_dotfiles()
+  install_xcode_clt()
+  install_homebrew()
+  install_homebrew_bundle()
+  set_default_shell()
+  install_gemfile_bundle()
+  restore_user_defaults()
+  configure_sublime_merge()
+  install_athame()
+  install_tpm()
+}
+
+bootstrap

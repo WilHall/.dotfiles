@@ -1,3 +1,4 @@
+tap "caskroom/cask"
 tap "homebrew/cask-versions"
 tap "dteoh/sqa"
 tap "heroku/brew"

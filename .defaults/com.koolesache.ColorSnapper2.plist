@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PickColorShortCut</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldL
+	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzECOAAhIAHAAA0hQVFhdaJGNsYXNzbmFt
+	ZVgkY2xhc3Nlc1pEQVNob3J0Y3V0oxgZGlpEQVNob3J0Y3V0W01BU1Nob3J0Y3V0WE5T
+	T2JqZWN0CBEaJCkyN0lMUVNXXWRsc4GDhYqPmqOusr3JAAAAAAAAAQEAAAAAAAAAGwAA
+	AAAAAAAAAAAAAAAAANI=
+	</data>
+	<key>captureValue</key>
+	<real>23</real>
+	<key>codeStyle</key>
+	<dict>
+		<key>css</key>
+		<dict>
+			<key>useHexShorthand</key>
+			<false/>
+			<key>useUppercase</key>
+			<true/>
+			<key>useW3CNames</key>
+			<false/>
+		</dict>
+		<key>decimal</key>
+		<dict>
+			<key>precision</key>
+			<integer>3</integer>
+			<key>removeLeadingZero</key>
+			<false/>
+			<key>removeTrailingZeroes</key>
+			<false/>
+			<key>useFractions</key>
+			<integer>0</integer>
+			<key>useSuffix</key>
+			<false/>
+		</dict>
+		<key>hex</key>
+		<dict>
+			<key>prefix</key>
+			<string>0x</string>
+			<key>usePrefix</key>
+			<false/>
+			<key>useUppercase</key>
+			<false/>
+		</dict>
+		<key>int</key>
+		<dict/>
+		<key>whiteSpace</key>
+		<dict>
+			<key>csv</key>
+			<true/>
+			<key>kvc</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>colorInfo</key>
+	<integer>1</integer>
+	<key>exportFormat</key>
+	<string>CSS Hex</string>
+	<key>magnificationValue</key>
+	<real>4</real>
+	<key>openFormatsAfterPick</key>
+	<integer>0</integer>
+	<key>showMenubarIcon</key>
+	<true/>
+	<key>showWelcomeMessage</key>
+	<false/>
+	<key>userInterface</key>
+	<string>light</string>
+</dict>
+</plist>

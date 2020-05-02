@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSQuitAlwaysKeepsWindows</key>
+	<true/>
+	<key>defaultSourceFolder</key>
+	<string>/Users/wilhall/workspace</string>
+	<key>deleteStashAfterApply</key>
+	<false/>
+	<key>enabledTabsOnFirstRun</key>
+	<true/>
+	<key>fileListMode</key>
+	<integer>0</integer>
+	<key>pullSheetRebase</key>
+	<false/>
+	<key>pullSheetStashAndReapply</key>
+	<false/>
+	<key>pushSheetPushAllTags</key>
+	<true/>
+</dict>
+</plist>

@@ -1,4 +1,7 @@
-#!/usr/bin/zsh
+#!/bin/zsh
+# name: bootstrap
+# author: Wil Hall
+# email: wil@wilhall.com
 
 if [ "$#" -ne 1 ]; then
   echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>"
@@ -7,7 +10,7 @@ fi
 DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN=$1
 
 create_auth_dotfile() {
-  cat > "~/.auth" <<- OUT
+  cat > "$HOME/.auth" <<- OUT
 export HOMEBREW_GITHUB_API_TOKEN=$DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN
 OUT
 }
@@ -36,19 +39,26 @@ install_gemfile_bundle() {
 }
 
 symlink_dotfiles() {
-  cp ~/.dotfiles/.* ~/
-  mkdir -p ~/.config && ln -sfn ~/.dotfiles/_config/* ~/.config
+  cp $HOME/.dotfiles/.* $HOME/
+  mkdir -p $HOME/.config && ln -sfn $HOME/.dotfiles/_config/* $HOME/.config
 }
 
 copy_ssh_settings() {
-  mkdir -p ~/.ssh && rsync -u ~/.dotfiles/_ssh ~/.ssh
+  mkdir -p $HOME/.ssh && rsync -u $HOME/.dotfiles/_ssh $HOME/.ssh
 }
 
 make_workspace() {
-  mkdir -p ~/workspace/utils
+  mkdir -p $HOME/workspace/utils
 }
 
-restore_user_defaults() {}
+make_user_bin() {
+  mkdir -p $HOME/bin
+  rsync -u $HOME/.dotfiles/bin $HOME/bin
+}
+
+restore_user_defaults() {
+  $HOME/.dotfiles/applications/dx --restore-all
+}
 
 set_default_shell() {
   sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
@@ -63,15 +73,16 @@ configure_sublime_merge() {
 }
 
 install_athame() {
-  git clone --recursive http://github.com/ardagnir/athame ~/workspace/utils/athame && cd ~/workspace/utils/athame && mkdir -p ~/.athame && ./zsh_athame_setup.sh --prefix=$HOME/.athame/ --vimbin=$(which nvim) && mv /usr/local/bin/zsh /usr/local/bin/_zsh && ln -s ~/.athame/bin/zsh /usr/local/bin/zsh && ln -s ~/.athame/bin/zsh ~/bin/.azsh
+  git clone --recursive http://github.com/ardagnir/athame $HOME/workspace/utils/athame && cd $HOME/workspace/utils/athame && mkdir -p $HOME/.athame && ./zsh_athame_setup.sh --prefix=$HOME/.athame/ --vimbin=$(which nvim) && mv /usr/local/bin/zsh /usr/local/bin/_zsh && ln -s $HOME/.athame/bin/zsh /usr/local/bin/zsh && ln -s $HOME/.athame/bin/zsh $HOME/bin/.azsh
 }
 
 install_tpm() {
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 }
 
 bootstrap() {
   make_workspace()
+  make_user_bin()
   copy_ssh_settings()
   install_fonts()
   create_auth_dotfile()

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>check4Updates</key>
+	<true/>
+	<key>logActivity</key>
+	<true/>
+	<key>runHeadless</key>
+	<false/>
+	<key>startAtLogin</key>
+	<true/>
+</dict>
+</plist>

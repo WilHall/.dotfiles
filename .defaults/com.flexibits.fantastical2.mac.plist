@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppIconBadge</key>
+	<string>StatusItemStyleEventInvites</string>
+	<key>CombineIdenticalItems</key>
+	<true/>
+	<key>DayEnds</key>
+	<integer>18</integer>
+	<key>DayStarts</key>
+	<integer>8</integer>
+	<key>DaysPerWeek</key>
+	<integer>7</integer>
+	<key>DefaultEventDuration</key>
+	<real>3600</real>
+	<key>EventKitRemindersEnabled</key>
+	<true/>
+	<key>FirstWeekday</key>
+	<integer>1</integer>
+	<key>HideDockIcon</key>
+	<true/>
+	<key>HoursToShow</key>
+	<integer>10</integer>
+	<key>MiniWindowAttached</key>
+	<true/>
+	<key>OpenMapsIn</key>
+	<string>google</string>
+	<key>PlaySounds</key>
+	<true/>
+	<key>ShowCompletedReminders</key>
+	<true/>
+	<key>ShowEndTimes</key>
+	<true/>
+	<key>ShowEventAvailability</key>
+	<true/>
+	<key>ShowLocationMap</key>
+	<true/>
+	<key>ShowTasksInCalendarWindow</key>
+	<true/>
+	<key>ShowTimeToLeave</key>
+	<true/>
+	<key>SidebarWidthDefaultKey</key>
+	<real>300</real>
+	<key>StatusItemBadge</key>
+	<string>StatusItemStyleDate</string>
+	<key>TaskSort</key>
+	<string>priority</string>
+	<key>TwoTimeZonesEnabled</key>
+	<true/>
+	<key>WeekViewStartsWith</key>
+	<true/>
+	<key>WeeksPerMonth</key>
+	<integer>6</integer>
+</dict>
+</plist>

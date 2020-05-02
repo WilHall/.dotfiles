@@ -48,5 +48,6 @@ cache.json
 .vimrc.local
 .zcompdump
 .zsh_history
-applications/Alfred/preferences/Alfred.alfredpreferences/snippets
-applications/Alfred/preferences/Alfred.alfredpreferences/workflows
+appconfig/Alfred/preferences/Alfred.alfredpreferences/snippets
+appconfig/Alfred/preferences/Alfred.alfredpreferences/workflows
+appconfig/Alfred/preferences/Alfred.alfredpreferences/remote

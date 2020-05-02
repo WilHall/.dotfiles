@@ -1,0 +1,143 @@
+#!/bin/zsh
+# name: dx
+# author: Wil Hall
+# email: wil@wilhall.com
+
+READBACK=true
+
+usage()
+{
+cat << EOF
+usage: $0  
+
+This utility performs backups and restorations of macOS user defaults.
+Backups are managed in `~/.defaults/`.
+
+OPTIONS:
+   -h | --help        Show this message
+   -r | --restore     <DOMAIN> The domain to restore
+   -R | --restore-all Restore all domains that have backups
+   -b | --backup      <DOMAIN> The domain to back up
+   -B | --backup-all  Back up all domains that already have backups
+
+<DOMAIN> is one of:
+-globalDomain  The macOS global domain
+<DOMAIN_NAME>  The fully-qualified domain name (e.g. application bundle identifier)
+<APP_NAME>     The application name (e.g. `/Applications/<APP_NAME>.app`
+
+EOF
+}
+
+resolve_domain() {
+  if [[ "$1" == *'.'* ]] || [[ "$1" == '-globalDomain' ]]; then
+    echo "$1"
+  else
+    GLOBAL_APP_LOCATION="/Applications/$1.app"
+    USER_APP_LOCATION="$HOME/Applications/$1.app"
+    SYSTEM_APP_LOCATION="/System/Applications/$1.app"
+    CORE_SERVICES_APP_LOCATION="/System/Library/CoreServices/$1.app"
+    if [ -d "$GLOBAL_APP_LOCATION" ]; then
+      echo "$(mdls -name kMDItemCFBundleIdentifier -r "$GLOBAL_APP_LOCATION")"
+    elif [ -d "$USER_APP_LOCATION" ]; then
+      echo "$(mdls -name kMDItemCFBundleIdentifier -r "$USER_APP_LOCATION")"
+    if [ -d "$SYSTEM_APP_LOCATION" ]; then
+      echo "$(mdls -name kMDItemCFBundleIdentifier -r "$SYSTEM_APP_LOCATION")"
+    elif [ -d "$CORE_SERVICES_APP_LOCATION" ]; then
+      echo "$(mdls -name kMDItemCFBundleIdentifier -r "$CORE_SERVICES_APP_LOCATION")"
+    else
+      echo "$SYSTEM_APP_LOCATION" 1>&2
+      echo "Unable to resolve domain for app named '$1'" 1>&2
+      return 1
+    fi
+  fi
+}
+
+backup() {
+  BACKUP_FILE="$HOME/.defaults/$1.plist"
+  defaults export $1 "$BACKUP_FILE" && plutil -convert xml1 "$BACKUP_FILE" 
+  if [[ $? == 0 ]]; then
+    echo "Exported domain '$1' to $BACKUP_FILE"
+    if [ "$READBACK" = true ]; then plutil -p "$BACKUP_FILE"; fi
+  else
+    echo "Failed to export domain '$1'"
+    exit 1
+  fi
+}
+
+restore() {
+  if [ ! -f "$HOME/.defaults/$1.plist" ]; then
+    echo "No backup exists for the domain '$1'"
+    exit 1
+  fi
+  defaults import $1 "$HOME/.defaults/$1.plist"
+  if [[ $? == 0 ]]; then
+    echo "Imported domain '$1'"
+    if [ "$READBACK" = true ]; then defaults read $1; fi
+  else
+    echo "Failed to import domain '$1'"
+    exit 1
+  fi
+}
+
+backup_all() {
+  READBACK=false
+  for BACKUP_FILE in $HOME/.defaults/*.plist; do
+    DOMAIN="$(basename "$BACKUP_FILE" .plist)"
+    backup "$DOMAIN"
+  done
+}
+
+restore_all() {
+  READBACK=false
+  for BACKUP_FILE in $HOME/.defaults/*.plist; do
+    DOMAIN="$(basename "$BACKUP_FILE" .plist)"
+    restore "$DOMAIN"
+  done
+}
+
+while [ ! $# -eq 0 ]; do
+    case "$1" in
+        -r | --restore)
+            if [ "$2" ]; then
+                DOMAIN="$(resolve_domain $2)"
+                if [[ $? != 0 ]]; then exit 1; fi
+                restore "$DOMAIN"
+                exit
+            else
+                echo '--restore requires a DOMAIN'
+                exit 1
+            fi
+            ;;
+        -b | --backup)
+            if [ "$2" ]; then
+                OPERATION='backup'
+                DOMAIN="$(resolve_domain $2)"
+                if [[ $? != 0 ]]; then exit 1; fi
+                backup "$DOMAIN"
+                exit
+            else
+                echo '--backup requires a DOMAIN'
+                exit 1
+            fi
+            ;;
+        -R | --restore-all)
+            restore_all
+            exit
+            ;;
+        -B | --backup-all)
+            backup_all
+            exit
+            ;;
+        -h | --help)
+            usage
+            exit
+            ;;
+        *)
+            usage
+            exit
+            ;;
+    esac
+    shift
+done
+
+usage

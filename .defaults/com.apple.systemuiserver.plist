@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>23</real>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.airplay</key>
+	<real>20639</real>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.battery</key>
+	<real>297</real>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.bluetooth</key>
+	<real>342</real>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.clock</key>
+	<real>171.5</real>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.textinput</key>
+	<real>280</real>
+	<key>NSStatusItem Preferred Position com.apple.menuextra.volume</key>
+	<real>378</real>
+	<key>NSStatusItem Visible Siri</key>
+	<false/>
+	<key>NSStatusItem Visible com.apple.menuextra.airplay</key>
+	<true/>
+	<key>NSStatusItem Visible com.apple.menuextra.airport</key>
+	<true/>
+	<key>NSStatusItem Visible com.apple.menuextra.battery</key>
+	<true/>
+	<key>NSStatusItem Visible com.apple.menuextra.bluetooth</key>
+	<true/>
+	<key>NSStatusItem Visible com.apple.menuextra.clock</key>
+	<true/>
+	<key>NSStatusItem Visible com.apple.menuextra.volume</key>
+	<true/>
+	<key>__NSEnableTSMDocumentWindowLevel</key>
+	<true/>
+</dict>
+</plist>

@@ -3,16 +3,21 @@
 # author: Wil Hall
 # email: wil@wilhall.com
 
-if [ "$#" -ne 1 ]; then
+if [ "$#" -ne 1 ] && [ ! -f "$HOME/.auth" ]; then
   echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>"
   exit 1
 fi
+
 DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN=$1
+SETUP_HOMEBREW=false
 
 create_auth_dotfile() {
+  if [ ! -f "$HOME/.auth" ]; then
+    SETUP_HOMEBREW=true
   cat > "$HOME/.auth" <<- OUT
 export HOMEBREW_GITHUB_API_TOKEN=$DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN
 OUT
+  fi
 }
 
 install_xcode_clt() {
@@ -29,9 +34,11 @@ install_homebrew() {
   fi
 }
 
-install_homebrew_bundle() {
-  brew tap homebrew/bundle
-  brew bundle
+install_homebrew_bundle() { 
+  if [[ $SETUP_HOMEBREW == true ]]; then
+    brew tap homebrew/bundle
+    brew bundle
+  fi
 }
 
 install_gemfile_bundle() {
@@ -39,7 +46,7 @@ install_gemfile_bundle() {
 }
 
 symlink_dotfiles() {
-  cp $HOME/.dotfiles/.* $HOME/
+  ln -sfn $HOME/.dotfiles/.* $HOME/
   mkdir -p $HOME/.config && ln -sfn $HOME/.dotfiles/_config/* $HOME/.config
 }
 
@@ -60,6 +67,10 @@ restore_user_defaults() {
   $HOME/.dotfiles/applications/dx --restore-all
 }
 
+setup_vim() {
+ vim -c 'PlugUpdate' -c 'CocUpdate' -c 'q!' -c 'q!'
+}
+
 set_default_shell() {
   sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 }
@@ -73,29 +84,32 @@ configure_sublime_merge() {
 }
 
 install_athame() {
-  git clone --recursive http://github.com/ardagnir/athame $HOME/workspace/utils/athame && cd $HOME/workspace/utils/athame && mkdir -p $HOME/.athame && ./zsh_athame_setup.sh --prefix=$HOME/.athame/ --vimbin=$(which nvim) && mv /usr/local/bin/zsh /usr/local/bin/_zsh && ln -s $HOME/.athame/bin/zsh /usr/local/bin/zsh && ln -s $HOME/.athame/bin/zsh $HOME/bin/.azsh
+  if [ ! -f "$HOME/bin/azsh" ]; then
+    git clone --recursive http://github.com/ardagnir/athame $HOME/workspace/utils/athame && cd $HOME/workspace/utils/athame && mkdir -p $HOME/.athame && ./zsh_athame_setup.sh --prefix=$HOME/.athame/ --vimbin=$(which nvim) && mv /usr/local/bin/zsh /usr/local/bin/_zsh && ln -s $HOME/.athame/bin/zsh /usr/local/bin/zsh && ln -s $HOME/.athame/bin/zsh $HOME/bin/azsh
+  fi
 }
 
 install_tpm() {
-  git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+  git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
 }
 
 bootstrap() {
-  make_workspace()
-  make_user_bin()
-  copy_ssh_settings()
-  install_fonts()
-  create_auth_dotfile()
-  symlink_dotfiles()
-  install_xcode_clt()
-  install_homebrew()
-  install_homebrew_bundle()
-  set_default_shell()
-  install_gemfile_bundle()
-  restore_user_defaults()
-  configure_sublime_merge()
-  install_athame()
-  install_tpm()
+  make_workspace
+  make_user_bin
+  copy_ssh_settings
+  install_fonts
+  create_auth_dotfile
+  symlink_dotfiles
+  install_xcode_clt
+  install_homebrew
+  install_homebrew_bundle
+  set_default_shell
+  install_gemfile_bundle
+  restore_user_defaults
+  setup_vim
+  configure_sublime_merge
+  #install_athame
+  install_tpm
 }
 
 bootstrap

@@ -65,10 +65,10 @@ function gittrackall() {
     git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
     git fetch --all
 }
-alias gta="gittrackall"
-alias gbn="git rev-parse --abbrev-ref HEAD"
-alias gsu="git set-upstream"
-alias grcd="cd $(git root)"
+alias gta='gittrackall'
+alias gbn='git rev-parse --abbrev-ref HEAD'
+alias gsu='git set-upstream'
+alias grcd='cd $(git root)'
 
 function psgrep() {
     ps auwx -o nice,command=cmd | grep -i -e '%CPU' -e "$@"

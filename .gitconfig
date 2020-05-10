@@ -1,50 +1,50 @@
 [user]
-	name = Wil Hall
-	email = wil@wilhall.com
-	signingkey = A4B3531B2282D01EE7AF6C616CB50AFCD54B3555
+    name = Wil Hall
+    email = wil@wilhall.com
+    signingkey = A4B3531B2282D01EE7AF6C616CB50AFCD54B3555
 [core]
-	editor = nvim
-	excludesfile = ~/.gitignore
-	trustctime = false
+    editor = nvim
+    excludesfile = ~/.gitignore
+    trustctime = false
 [push]
-	default = current
+    default = current
 [pack]
-	windowMemory = 10m
-	packSizeLimit = 20m
+    windowMemory = 10m
+    packSizeLimit = 20m
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 [pull]
-	rebase = true
-	default = current
+    rebase = true
+    default = current
 [difftool]
-	prompt = false
+    prompt = false
 [alias]
-	wdiff = diff -w --word-diff=color
-	set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+    wdiff = diff -w --word-diff=color
+    set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
     branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
-	whatadded = log --diff-filter=A
-  filelist = diff-tree --no-commit-id --name-status -r
-	ctags = !.git/hooks/ctags
-  mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
-  root = rev-parse --show-toplevel
+    whatadded = log --diff-filter=A
+    filelist = diff-tree --no-commit-id --name-status -r
+    ctags = !.git/hooks/ctags
+    mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+    root = rev-parse --show-toplevel
 [commit]
-	gpgsign = true
+    gpgsign = true
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
+    program = /usr/local/MacGPG2/bin/gpg2
 [init]
-	templatedir = ~/.git_template
+    templatedir = ~/.git_template
 [tag]
-	forceSignAnnotated = true
+    forceSignAnnotated = true
 [duet "env"]
-	git-author-initials = wh
-	git-author-name = Wil Hall
-	git-author-email = wil@wilhall.com
+    git-author-initials = wh
+    git-author-name = Wil Hall
+    git-author-email = wil@wilhall.com
 [github]
-	user = WilHall
+    user = WilHall
 [filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
 [rebase]
-	autosquash = true
+    autosquash = true

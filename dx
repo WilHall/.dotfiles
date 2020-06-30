@@ -8,7 +8,7 @@ READBACK=true
 usage()
 {
 cat << EOF
-usage: $0  
+usage: $(basename $0)  
 
 This utility performs backups and restorations of macOS user defaults.
 Backups are managed in `~/.defaults/`.

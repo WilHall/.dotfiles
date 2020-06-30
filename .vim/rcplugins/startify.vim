@@ -24,7 +24,9 @@ function! s:list_commits()
 let g:startify_lists = [
   \ { 'header': ['   Marks'], 'type': 'bookmarks' },
   \ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
-  \ { 'header': ['   Commits'],        'type': function('s:list_commits') },
+  \ { 'type': function('s:gitUntracked'), 'header': ['   Untracked']},
+  \ { 'type': function('s:gitModified'),  'header': ['   Modified']},
+  \ { 'header': ['   Commits'], 'type': function('s:list_commits') },
 \ ]
 
 let g:startify_session_autoload = 1

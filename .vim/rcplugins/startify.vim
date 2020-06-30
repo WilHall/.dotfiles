@@ -8,7 +8,7 @@ function! s:list_commits()
   endfunction
 
 let g:startify_lists = [
-  \ { 'header': ['   Sessions'],       'type': 'sessions' },
+  \ { 'header': ['   Marks'], 'type': 'bookmarks' },
   \ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
   \ { 'header': ['   Commits'],        'type': function('s:list_commits') },
 \ ]

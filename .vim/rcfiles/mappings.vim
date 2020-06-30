@@ -12,6 +12,9 @@ nnoremap <leader>FF zA
 nnoremap <LEADER>fa zM<CR>
 nnoremap <LEADER>Fa zR<CR>
 
+" Marks
+nnoremap m<leader> :delmarks a-zA-Z0-9<cr>
+
 " shortcuts for substitutions
 nnoremap <leader>sg :%s///g<left><left>
 nnoremap <leader>sl :s///g<left><left>

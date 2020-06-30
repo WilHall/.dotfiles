@@ -1,0 +1,21 @@
+{
+  "title": "Change Esc to Tilde",
+  "rules": [
+    {
+      "description": "Change Esc to Tilde",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape"
+          },
+          "to": [
+            {
+              "key_code": "grave_accent_and_tilde"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

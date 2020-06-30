@@ -36,7 +36,7 @@ function undockedLayout()
     {"Basecamp 3", nil, laptopScreenName, hs.layout.right70, nil, nil},
     {"NetNewsWire", nil, laptopScreenName, hs.layout.right70, nil, nil},
     {"Slack", nil, laptopScreenName, hs.layout.right70, nil, nil},
-    {"Firefox Developer Edition", nil, laptopScreenName, hs.layout.maximized, nil, nil},
+    {"Google Chrome", nil, laptopScreenName, hs.layout.maximized, nil, nil},
     {"kitty", nil, laptopScreenName, hs.layout.maximized, nil, nil},
   }
 end
@@ -49,7 +49,7 @@ function dockedLayout()
     {"Basecamp 3", nil, laptopScreenName, hs.layout.right50, nil, nil},
     {"NetNewsWire", nil, laptopScreenName, hs.layout.right50, nil, nil},
     {"Slack", nil, laptopScreenName, hs.layout.right50, nil, nil},
-    {"Firefox Developer Edition", nil, laptopScreenName, hs.layout.left30, nil, nil},
+    {"Google Chrome", nil, laptopScreenName, hs.layout.left30, nil, nil},
     {"kitty", nil, laptopScreenName, hs.layout.right70, nil, nil},
   }
 end
@@ -61,9 +61,9 @@ function dockedClamshellLayout()
     {"Spark", nil, externalScreenName, hs.layout.left30, nil, nil},
     {"Messages", nil, externalScreenName, positions.lower50Right30, nil, nil},
     {"Basecamp 3", nil, externalScreenName, positions.right34, nil, nil},
-    {"NetNewsWire", nil, externalScreenName, positions.right34, nil, nil},
+    {"NetNewsWire", nil, externalScreenName, positions.right50, nil, nil},
     {"Slack", nil, externalScreenName, positions.centered, nil, nil},
-    {"Firefox Developer Edition", nil, externalScreenName, positions.left34, nil, nil},
+    {"Google Chrome", nil, externalScreenName, positions.left34, nil, nil},
     {"kitty", nil, externalScreenName, positions.right66, nil, nil},
   }
 end

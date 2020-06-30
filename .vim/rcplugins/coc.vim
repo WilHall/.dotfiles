@@ -12,7 +12,8 @@ let g:coc_global_extensions = [
   \ 'coc-lists',
   \ 'coc-json',
   \ 'coc-yank',
-  \ 'coc-highlight'
+  \ 'coc-highlight',
+  \ 'coc-solargraph'
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
@@ -123,11 +124,14 @@ nmap <leader>h :CocList --top --number-select cmdhistory<CR>
 " mru 
 nmap <leader>r :CocList mru<CR>
 
+
 " Use <c-space> to trigger completion.
 if has('nvim')
-  map <silent> <C-space> <leader>cce"-yla<BS><c-r>-
+  " map <silent> <C-space> <leader>cce"-yla<BS><c-r>-
+   nmap <silent> <C-space> :CocCommand actions.open<CR>
 else
-  map <silent> <C-@> <leader>cce"-yla<BS><c-r>-
+  " map <silent> <C-@> <leader>cce"-yla<BS><c-r>-
+   nmap <silent> <C-@> :CocCommand actions.open<CR>
 endif
 
 " Close all coc windows

@@ -1,8 +1,8 @@
 {
-  "title": "Command + Esc to Command + `",
+  "title": "Change Command + Esc to Command + `",
   "rules": [
     {
-      "description": "Command + Esc to Command + `",
+      "description": "Change Command + Esc to Command + `",
       "manipulators": [
         {
           "type": "basic",

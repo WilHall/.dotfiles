@@ -10,7 +10,7 @@ function! Fuzzy_Files()
 endfunction
 
 function! Fuzzy_Find()
-  call fzf#vim#ag('', fzf#vim#with_preview({'options': g:_fzf_file_preview_options }, g:_fzf_preview_size))
+  call fzf#vim#ag('', fzf#vim#with_preview({'options': g:_fzf_find_preview_options }, g:_fzf_preview_size))
 endfunction
 
 nnoremap <C-f> :call Fuzzy_Files()<CR>

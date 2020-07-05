@@ -42,12 +42,6 @@ function ddirs() {
   find . -type d -name $@ -exec rm -r {} +
 }
 
-function tnpm() {
-  mv ~/.tnpmrc ~/.npmrc
-  $@
-  mv ~/.npmrc ~/.tnpmrc
-}
-
 curl_time() {
     curl -so /dev/null -w "\
    namelookup:  %{time_namelookup}s\n\

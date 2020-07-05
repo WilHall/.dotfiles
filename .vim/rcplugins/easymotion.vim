@@ -23,17 +23,17 @@ function! s:fuzzy_search(...) abort
   \ }), get(a:, 1, {}))
 endfunction
 
-noremap <silent><expr> / incsearch#go(<SID>exact_search())
-noremap <silent><expr> ? incsearch#go(<SID>fuzzy_search())
+noremap <silent><expr> / incsearch#go(<sid>exact_search())
+noremap <silent><expr> ? incsearch#go(<sid>fuzzy_search())
 
 " <Leader>n{char} to move to {char}
-map  <Leader>n <Plug>(easymotion-bd-f)
-nmap <Leader>n <Plug>(easymotion-overwin-f)
+map  <leader>n <plug>(easymotion-bd-f)
+nmap <leader>n <plug>(easymotion-overwin-f)
 
 " Move to line
-map <Leader>L <Plug>(easymotion-bd-jk)
-nmap <Leader>L <Plug>(easymotion-overwin-line)
+map <leader>L <plug>(easymotion-bd-jk)
+nmap <leader>L <plug>(easymotion-overwin-line)
 
 " Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+map  <leader>w <plug>(easymotion-bd-w)
+nmap <leader>w <plug>(easymotion-overwin-w)

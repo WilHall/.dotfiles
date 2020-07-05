@@ -14,5 +14,5 @@ let g:ctrlsf_mapping = {
      \ "quit": { "key": "q", "suffix": "<C-w>_" },
      \ }
 
-nmap <leader>t <Plug>CtrlSFPrompt
-nmap <leader>tt <Plug>CtrlSFCCwordExec
+nmap <leader>t <plug>CtrlSFPrompt
+nmap <leader>tt <plug>CtrlSFCCwordExec

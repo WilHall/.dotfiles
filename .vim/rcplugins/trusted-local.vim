@@ -30,4 +30,4 @@ endfunction
 
 command! EditVimrcLocal call <sid>SmartSplit()
 
-nnoremap <Plug>(EditVimrcLocal) :EditVimrcLocal<cr>
+nnoremap <plug>(EditVimrcLocal) :EditVimrcLocal<cr>

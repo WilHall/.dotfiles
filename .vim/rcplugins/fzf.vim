@@ -13,8 +13,8 @@ function! Fuzzy_Find()
   call fzf#vim#ag('', fzf#vim#with_preview({'options': g:_fzf_find_preview_options }, g:_fzf_preview_size))
 endfunction
 
-nnoremap <C-f> :call Fuzzy_Files()<CR>
-nnoremap <C-d> :call Fuzzy_Find()<CR>
+nnoremap <c-f> :call Fuzzy_Files()<cr>
+nnoremap <c-d> :call Fuzzy_Find()<cr>
 
 let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.95 } }
 " let g:fzf_layout = { 'tmux': '-p90%,60%' }

@@ -38,4 +38,4 @@ let g:startify_session_sort = 1
 let g:startify_custom_header = 'startify#fortune#boxed()'
 let g:startify_relative_path = 1
 
-nnoremap <Leader>- :SClose<CR>
+nnoremap <leader>- :SClose<cr>

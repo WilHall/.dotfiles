@@ -1,6 +1,6 @@
 python 3.6.2
 ruby 2.7.0
-nodejs 12.14.1 
 crystal 0.32.1
-elixir 1.10.2
-erlang 22.0
+erlang 23.1
+elixir 1.11.0-otp-23
+nodejs 12.13.0

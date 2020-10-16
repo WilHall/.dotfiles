@@ -47,7 +47,7 @@ hi HighlightedyankRegion term=bold ctermbg=0 guibg=#474e5d
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE
 hi SignColumn guibg=NONE ctermbg=NONE
-hi ColorColumn guibg=NONE ctermbg=NONE
+hi ColorColumn guibg=DarkGray ctermbg=DarkGray
 hi CursorLine guibg=NONE ctermbg=NONE
 hi GitGutterAdd guibg=NONE
 hi GitGutterChange guibg=NONE

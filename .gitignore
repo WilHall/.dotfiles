@@ -1,5 +1,11 @@
+~
+*~HEAD
+tmp/
+tags
 .env
 .config/yarn/global/yarn.lock
+**/fixtures/**/*
+test/support/**/*
 **/automatic_backups/
 **/node_modules/
 yarn-error.json

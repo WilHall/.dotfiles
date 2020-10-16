@@ -58,5 +58,6 @@ set nojoinspaces
 " wrapping / line length
 set linebreak
 set wrap
-autocmd VimResized * | set columns=120
-set colorcolumn=120
+autocmd VimResized * | set columns=80
+set textwidth=80
+set colorcolumn=+1

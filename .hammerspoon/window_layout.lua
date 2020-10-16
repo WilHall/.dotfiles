@@ -37,7 +37,7 @@ function undockedLayout()
     {"NetNewsWire", nil, laptopScreenName, hs.layout.right70, nil, nil},
     {"Slack", nil, laptopScreenName, hs.layout.right70, nil, nil},
     {"Google Chrome", nil, laptopScreenName, hs.layout.maximized, nil, nil},
-    {"kitty", nil, laptopScreenName, hs.layout.maximized, nil, nil},
+    {"iTerm2", nil, laptopScreenName, hs.layout.maximized, nil, nil},
   }
 end
 
@@ -50,7 +50,7 @@ function dockedLayout()
     {"NetNewsWire", nil, laptopScreenName, hs.layout.right50, nil, nil},
     {"Slack", nil, laptopScreenName, hs.layout.right50, nil, nil},
     {"Google Chrome", nil, laptopScreenName, hs.layout.left30, nil, nil},
-    {"kitty", nil, laptopScreenName, hs.layout.right70, nil, nil},
+    {"iTerm2", nil, laptopScreenName, hs.layout.right70, nil, nil},
   }
 end
 
@@ -64,7 +64,7 @@ function dockedClamshellLayout()
     {"NetNewsWire", nil, externalScreenName, positions.right50, nil, nil},
     {"Slack", nil, externalScreenName, positions.centered, nil, nil},
     {"Google Chrome", nil, externalScreenName, positions.left34, nil, nil},
-    {"kitty", nil, externalScreenName, positions.right66, nil, nil},
+    {"iTerm2", nil, externalScreenName, positions.right66, nil, nil},
   }
 end
 

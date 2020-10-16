@@ -3,6 +3,10 @@ nnoremap <SPACE> <NOP>
 let mapleader = " "
 set timeoutlen=375
 
+if has('mouse_sgr')
+  set ttymouse=sgr
+endif
+
 " add a binding for reloading vim configs
 nnoremap <Leader>vr :source $MYVIMRC<CR>
 

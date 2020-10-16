@@ -1,4 +1,4 @@
-export TERM="xterm-kitty"
+export TERM="xterm-256color"
 
 ZSH_THEME=""
 COMPLETION_WAITING_DOTS="false"

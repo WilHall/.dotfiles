@@ -43,6 +43,12 @@
     "typescript",
     "typescriptreact"
   ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "wxss.validate": false,
+  "stylelintplus.autoFixOnSave": true,
+  "stylelintplus.validateOnType": true,
   "prettier.requireConfig": true,
   "prettier.disableSuccessMessage": true,
   "eslint.autoFixOnSave": true,

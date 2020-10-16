@@ -13,7 +13,8 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-yank',
   \ 'coc-highlight',
-  \ 'coc-solargraph'
+  \ 'coc-solargraph',
+  \ 'coc-styled-components'
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
@@ -22,6 +23,10 @@ endif
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
   let g:coc_global_extensions += ['coc-eslint']
+endif
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/stylelint')
+  let g:coc_global_extensions += ['coc-stylelintplus']
 endif
 
 function! s:check_eslint()

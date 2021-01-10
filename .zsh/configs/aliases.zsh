@@ -17,6 +17,10 @@ alias pwp='cd $(pbpaste -Prefer txt) && clear'
 
 alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
 
+function mtw() {
+  find "$@" | entr -c mix test "$@"
+}
+
 function digall() {
   dig +nocmd $@ any +multiline +noall +answer
 }
@@ -90,4 +94,8 @@ function gbbc() {
   git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative $(git rev-parse --abbrev-ref HEAD)..$@
 }
 
-alias update-dev="brew cask upgrade kitty; brew update; brew upgrade; asdf plugin-update --all; antigen update; vim -c 'PlugUpdate' -c 'CocUpdate' -c 'q!' -c 'q!'"
+function mixdepbust() {
+  rm -rf deps ~/.hex/cache.ets
+}
+
+alias update-dev="brew update; brew upgrade; brew upgrade --cask; asdf plugin-update --all; antigen update; vim -c 'PlugUpdate' -c 'CocUpdate' -c 'q!' -c 'q!'"

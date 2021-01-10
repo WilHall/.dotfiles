@@ -1,6 +1,6 @@
 [user]
-    name = Wil Hall
-    email = wil@wilhall.com
+	name = Wil Hall
+	email = wil@wilhall.com
     signingkey = A4B3531B2282D01EE7AF6C616CB50AFCD54B3555
 [core]
     editor = nvim
@@ -37,9 +37,13 @@
 [tag]
     forceSignAnnotated = true
 [duet "env"]
-    git-author-initials = wh
-    git-author-name = Wil Hall
-    git-author-email = wil@wilhall.com
+	git-author-initials = wh
+	git-author-name = Wil Hall
+	git-author-email = wil@wilhall.com
+	mtime = 1609873895
+	git-committer-initials = 
+	git-committer-name = 
+	git-committer-email = 
 [github]
     user = WilHall
 [filter "lfs"]

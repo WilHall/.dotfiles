@@ -63,7 +63,7 @@ nnoremap <silent> H :call <sid>show_documentation()<cr>
 
 " show diagnostics, otherwise documentation, on hold
 function! ShowDocIfNoDiagnostic(timer_id)
-  if (coc#util#has_float() == 0)
+  if (coc#float#has_float() == 0)
     silent call CocActionAsync('doHover')
   endif
 endfunction

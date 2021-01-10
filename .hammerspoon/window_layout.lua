@@ -21,11 +21,21 @@ local positions = {
 function getExternalScreenName()
   local screens = hs.screen.allScreens()
   
-  if screens[1] == laptopScreenName then
+  if screens[1]:name() == laptopScreenName then
     return screens[2]:name()
   end
 
   return screens[1]:name()
+end
+
+function getDuetScreenName()
+  local screens = hs.screen.allScreens()
+  
+  if screens[1]:name() == laptopScreenName then
+    return screens[3]
+  end
+
+  return screens[2]
 end
 
 function undockedLayout()
@@ -34,9 +44,8 @@ function undockedLayout()
     {"Spark", nil, laptopScreenName, hs.layout.left70, nil, nil},
     {"Messages", nil, laptopScreenName, hs.layout.right70, nil, nil},
     {"Basecamp 3", nil, laptopScreenName, hs.layout.right70, nil, nil},
-    {"NetNewsWire", nil, laptopScreenName, hs.layout.right70, nil, nil},
     {"Slack", nil, laptopScreenName, hs.layout.right70, nil, nil},
-    {"Google Chrome", nil, laptopScreenName, hs.layout.maximized, nil, nil},
+    {"Safari", nil, laptopScreenName, hs.layout.maximized, nil, nil},
     {"iTerm2", nil, laptopScreenName, hs.layout.maximized, nil, nil},
   }
 end
@@ -47,9 +56,8 @@ function dockedLayout()
     {"Spark", nil, laptopScreenName, hs.layout.left50, nil, nil},
     {"Messages", nil, laptopScreenName, hs.layout.right50, nil, nil},
     {"Basecamp 3", nil, laptopScreenName, hs.layout.right50, nil, nil},
-    {"NetNewsWire", nil, laptopScreenName, hs.layout.right50, nil, nil},
     {"Slack", nil, laptopScreenName, hs.layout.right50, nil, nil},
-    {"Google Chrome", nil, laptopScreenName, hs.layout.left30, nil, nil},
+    {"Safari", nil, laptopScreenName, hs.layout.left30, nil, nil},
     {"iTerm2", nil, laptopScreenName, hs.layout.right70, nil, nil},
   }
 end
@@ -61,9 +69,22 @@ function dockedClamshellLayout()
     {"Spark", nil, externalScreenName, hs.layout.left30, nil, nil},
     {"Messages", nil, externalScreenName, positions.lower50Right30, nil, nil},
     {"Basecamp 3", nil, externalScreenName, positions.right34, nil, nil},
-    {"NetNewsWire", nil, externalScreenName, positions.right50, nil, nil},
     {"Slack", nil, externalScreenName, positions.centered, nil, nil},
-    {"Google Chrome", nil, externalScreenName, positions.left34, nil, nil},
+    {"Safari", nil, externalScreenName, positions.left34, nil, nil},
+    {"iTerm2", nil, externalScreenName, positions.right66, nil, nil},
+  }
+end
+
+function dockedClamshellDuetLayout()
+  local externalScreenName = getExternalScreenName();
+  local duetScreenName = getDuetScreenName();
+  return {
+    {"Spotify", nil, externalScreenName, hs.layout.left30, nil, nil},
+    {"Spark", nil, externalScreenName, hs.layout.left30, nil, nil},
+    {"Messages", nil, duetScreenName, positions.lower50, nil, nil},
+    {"Basecamp 3", nil, externalScreenName, positions.right34, nil, nil},
+    {"Slack", nil, externalScreenName, positions.centered, nil, nil},
+    {"Safari", nil, externalScreenName, positions.left34, nil, nil},
     {"iTerm2", nil, externalScreenName, positions.right66, nil, nil},
   }
 end
@@ -71,10 +92,9 @@ end
 function applyLayout()
   local numScreens = #hs.screen.allScreens()
   local layout = {}
+  local screens = hs.screen.allScreens()
 
   if numScreens == 1 then
-    local screens = hs.screen.allScreens()
-    
     if screens[1]:name() == laptopScreenName then
       hs.alert.show("Applying 'Undocked' Layout")
       layout = undockedLayout()
@@ -83,8 +103,13 @@ function applyLayout()
       layout = dockedClamshellLayout()
     end
   elseif numScreens == 2 then
-    hs.alert.show("Applying 'Docked' Layout")
-    layout = dockedLayout()
+    if screens[1]:name() == laptopScreenName then
+      hs.alert.show("Applying 'Docked Clamshell Duet' Layout")
+      layout = dockedClamshellDuetLayout()
+    else
+      hs.alert.show("Applying 'Docked' Layout")
+      layout = dockedLayout()
+    end
   end
 
   hs.layout.apply(layout)

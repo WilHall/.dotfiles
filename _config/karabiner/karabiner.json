@@ -42,22 +42,6 @@
                         ]
                     },
                     {
-                        "description": "Change Esc to Tilde",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "escape"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Change Command + Esc to Command + `",
                         "manipulators": [
                             {
@@ -93,7 +77,7 @@
                         "product_id": 34304,
                         "vendor_id": 1452
                     },
-                    "ignore": true,
+                    "ignore": false,
                     "manipulate_caps_lock_led": true,
                     "simple_modifications": []
                 },
@@ -337,7 +321,7 @@
                         "pointing_button": "button4"
                     },
                     "to": {
-                        "consumer_key_code": "rewind"
+                        "consumer_key_code": "fast_forward"
                     }
                 },
                 {
@@ -345,7 +329,7 @@
                         "pointing_button": "button5"
                     },
                     "to": {
-                        "consumer_key_code": "fastforward"
+                        "consumer_key_code": "rewind"
                     }
                 },
                 {

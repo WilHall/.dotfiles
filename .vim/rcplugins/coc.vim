@@ -57,14 +57,18 @@ nmap <silent> gr <plug>(coc-references)
 
 " show documentation
 function! s:show_documentation()
-  call CocAction('doHover')
+  if (CocHasProvider('hover'))
+    call CocAction('doHover')
+  endif
 endfunction
 nnoremap <silent> H :call <sid>show_documentation()<cr>
 
 " show diagnostics, otherwise documentation, on hold
 function! ShowDocIfNoDiagnostic(timer_id)
-  if (coc#float#has_float() == 0)
-    silent call CocActionAsync('doHover')
+  if (CocHasProvider('hover'))
+    if (coc#float#has_float() == 0)
+      silent call CocActionAsync('doHover')
+    endif
   endif
 endfunction
 

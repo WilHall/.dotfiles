@@ -2,65 +2,56 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>autosaveDestinationFolder</key>
-	<data>
-	Ym9va8ACAAAAAAQQMAAAAM8KfxnbMMDg4qsCiFiS2mEcZdJrUwWl0L/JIU6K5jObvAEA
-	AAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAHdpbGhhbGwABgAAAAEB
-	AABNb3ZpZXMAABEAAAABAQAAU2NyZWVuIFJlY29yZGluZ3MAAAAQAAAAAQYAABAAAAAg
-	AAAAMAAAAEAAAAAIAAAABAMAACi6CgAAAAAACAAAAAQDAACBIxEAAAAAAAgAAAAEAwAA
-	ziMRAAAAAAAIAAAABAMAAP7QIQAAAAAAEAAAAAEGAAB0AAAAhAAAAJQAAACkAAAACAAA
-	AAAEAABBwXUDtMg2gRgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQD
-	AAACAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2lu
-	dG9zaCBIRAgAAAAEAwAAAKAgaHQAAAAIAAAAAAQAAEHBPsXzIBfoJAAAAAEBAAAxQ0ND
-	NUM5Mi0yOTgxLTQzM0YtODA4Ni1COUE4MTVDMEMwNjIYAAAAAQIAAIEAAAABAAAA7xMA
-	AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAA
-	AAAEEAAAXAAAAAAAAAAFEAAAtAAAAAAAAAAQEAAA3AAAAAAAAABAEAAAzAAAAAAAAAAC
-	IAAAqAEAAAAAAAAFIAAAGAEAAAAAAAAQIAAAKAEAAAAAAAARIAAAXAEAAAAAAAASIAAA
-	PAEAAAAAAAATIAAATAEAAAAAAAAgIAAAiAEAAAAAAAAwIAAAtAEAAAAAAAABwAAA/AAA
-	AAAAAAARwAAAIAAAAAAAAAASwAAADAEAAAAAAAAQ0AAABAAAAAAAAAA=
-	</data>
-	<key>autosaveDrops</key>
-	<true/>
-	<key>cameraRecordShortcut</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGCAlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKEHVSRudWxsXxAPTlNLZXllZEFyY2hpdmVy0QoLVHJvb3SAAAgRGiMtMjc5P1FU
-	WQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
-	</data>
-	<key>cloudRatioType</key>
-	<integer>6</integer>
+	<key>cloudFeatureFlags</key>
+	<dict>
+		<key>existing_instant_upload</key>
+		<true/>
+		<key>hls_transcoding</key>
+		<false/>
+		<key>instant_upload</key>
+		<true/>
+		<key>prize_steps</key>
+		<true/>
+		<key>window_title_naming</key>
+		<true/>
+	</dict>
+	<key>kInvertArrowKey</key>
+	<integer>1</integer>
+	<key>lastToolSelected</key>
+	<integer>1</integer>
+	<key>lastVersion</key>
+	<string>6.5.2</string>
 	<key>launchAtLogin</key>
+	<true/>
+	<key>nameDropsUsingWindowTitles</key>
 	<true/>
 	<key>openImageInAnnotationWindowWhenReady</key>
 	<false/>
-	<key>recordQuality</key>
-	<integer>0</integer>
-	<key>recordScreenInHD</key>
+	<key>shouldShowCoachMarkScreenShot</key>
 	<false/>
-	<key>recordScreenShortcut</key>
+	<key>shouldShowOnboarding</key>
+	<array>
+		<string>wil@wilhall.com</string>
+	</array>
+	<key>showIconInDock</key>
+	<false/>
+	<key>takeDelayedScreenshot</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldL
-	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzEA+AAhIAFgAA0hQVFhdaJGNsYXNzbmFt
+	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzEBWAAhIAFgAA0hQVFhdaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1tNQVNTaG9ydGN1dKIYGVtNQVNTaG9ydGN1dFhOU09iamVjdAgRGiQp
 	MjdJTFFTV11kbHOBg4WKj5qjr7K+AAAAAAAAAQEAAAAAAAAAGgAAAAAAAAAAAAAAAAAA
 	AMc=
 	</data>
-	<key>showIconInDock</key>
-	<false/>
-	<key>size</key>
-	<real>2</real>
-	<key>takeDelayedScreenshot</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGCAlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKEHVSRudWxsXxAPTlNLZXllZEFyY2hpdmVy0QoLVHJvb3SAAAgRGiMtMjc5P1FU
-	WQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
-	</data>
 	<key>takeFullScreenshot</key>
 	<data>
-	YnBsaXN0MDDUAQIDBAUGCAlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKEHVSRudWxsXxAPTlNLZXllZEFyY2hpdmVy0QoLVHJvb3SAAAgRGiMtMjc5P1FU
-	WQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldL
+	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzEBeAAhIAEgAA0hQVFhdaJGNsYXNzbmFt
+	ZVgkY2xhc3Nlc1tNQVNTaG9ydGN1dKIYGVtNQVNTaG9ydGN1dFhOU09iamVjdAgRGiQp
+	MjdJTFFTV11kbHOBg4WKj5qjr7K+AAAAAAAAAQEAAAAAAAAAGgAAAAAAAAAAAAAAAAAA
+	AMc=
 	</data>
 	<key>takeScreenshotShortcut</key>
 	<data>
@@ -71,26 +62,7 @@
 	MjdJTFFTV11kbHOBg4WKj5qjr7K+AAAAAAAAAQEAAAAAAAAAGgAAAAAAAAAAAAAAAAAA
 	AMc=
 	</data>
-	<key>toggleWindowShortcut</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGCAlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKEHVSRudWxsXxAPTlNLZXllZEFyY2hpdmVy0QoLVHJvb3SAAAgRGiMtMjc5P1FU
-	WQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
-	</data>
-	<key>triggerRaindropShortcut</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGCAlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKEHVSRudWxsXxAPTlNLZXllZEFyY2hpdmVy0QoLVHJvb3SAAAgRGiMtMjc5P1FU
-	WQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
-	</data>
-	<key>uploadFromClipboardShortcut</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldL
-	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzEBeAAhIAEgAA0hQVFhdaJGNsYXNzbmFt
-	ZVgkY2xhc3Nlc1tNQVNTaG9ydGN1dKIYGVtNQVNTaG9ydGN1dFhOU09iamVjdAgRGiQp
-	MjdJTFFTV11kbHOBg4WKj5qjr7K+AAAAAAAAAQEAAAAAAAAAGgAAAAAAAAAAAAAAAAAA
-	AMc=
-	</data>
+	<key>uploadHLSVideo</key>
+	<true/>
 </dict>
 </plist>

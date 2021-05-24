@@ -12,6 +12,7 @@ shift = '⇧'
 ctrlopt = {control, option}
 cmdopt = {command, option}
 cmdshift = {command, shift}
+optshift = {option, shift}
 hyper = {control, option, command}
 
 require "window_hints"

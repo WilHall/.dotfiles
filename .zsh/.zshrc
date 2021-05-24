@@ -6,7 +6,10 @@ CASE_SENSITIVE="true"
 unsetopt auto_cd
 setopt IGNORE_EOF # Unbind ^d for logout
 
-source /usr/local/share/antigen/antigen.zsh
+autoload -U promptinit; promptinit
+prompt pure
+
+source /opt/homebrew/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -22,7 +25,6 @@ antigen bundle dircycle
 antigen bundle zsh-users/zsh-completions
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
 
 antigen apply
 

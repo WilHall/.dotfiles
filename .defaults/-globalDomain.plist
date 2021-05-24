@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AppleActionOnDoubleClick</key>
-	<string>Minimize</string>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>4</integer>
 	<key>AppleKeyboardUIMode</key>
@@ -25,23 +23,23 @@
 	<key>AppleShowAllExtensions</key>
 	<true/>
 	<key>AppleShowScrollBars</key>
-	<string>Automatic</string>
+	<string>Always</string>
 	<key>AppleTemperatureUnit</key>
 	<string>Fahrenheit</string>
-	<key>CGDisableCursorLocationMagnification</key>
-	<true/>
+	<key>AppleWindowTabbingMode</key>
+	<string>always</string>
 	<key>NSAutomaticCapitalizationEnabled</key>
 	<true/>
 	<key>NSAutomaticDashSubstitutionEnabled</key>
-	<false/>
+	<true/>
 	<key>NSAutomaticPeriodSubstitutionEnabled</key>
 	<true/>
 	<key>NSAutomaticQuoteSubstitutionEnabled</key>
-	<false/>
+	<true/>
 	<key>NSAutomaticSpellingCorrectionEnabled</key>
 	<true/>
 	<key>NSAutomaticTextCompletionEnabled</key>
-	<false/>
+	<true/>
 	<key>NSPreferredWebServices</key>
 	<dict>
 		<key>NSWebServicesProviderWebSearch</key>
@@ -56,6 +54,17 @@
 	<integer>2</integer>
 	<key>com.apple.mouse.scaling</key>
 	<real>1</real>
+	<key>WebAutomaticSpellingCorrectionEnabled</key>
+	<true/>
+	<key>com.apple.finder.SyncExtensions</key>
+	<dict>
+		<key>collaborationMap</key>
+		<dict/>
+		<key>dirMap</key>
+		<dict/>
+	</dict>
+	<key>com.apple.sound.beep.feedback</key>
+	<integer>1</integer>
 	<key>com.apple.sound.beep.flash</key>
 	<integer>0</integer>
 	<key>com.apple.springing.delay</key>
@@ -64,5 +73,7 @@
 	<true/>
 	<key>com.apple.trackpad.forceClick</key>
 	<true/>
+	<key>com.apple.trackpad.scaling</key>
+	<real>1</real>
 </dict>
 </plist>

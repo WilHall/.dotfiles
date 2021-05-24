@@ -1,4 +1,5 @@
 Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 let g:_fzf_file_preview_options = '--ansi --preview "bat --theme="OneHalfDark" --style full --decorations always --color always {}"'

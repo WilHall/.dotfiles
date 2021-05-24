@@ -6,18 +6,6 @@
 	<array>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Firefox Developer Edition.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<dict>
-			<key>path</key>
 			<string>/Applications/Safari.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
@@ -25,13 +13,7 @@
 	</array>
 	<key>displayMenuBarItem</key>
 	<false/>
-	<key>displayMode</key>
-	<integer>0</integer>
-	<key>generalMode</key>
-	<integer>0</integer>
 	<key>launchAtLogin</key>
 	<true/>
-	<key>runningMode</key>
-	<integer>1</integer>
 </dict>
 </plist>

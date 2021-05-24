@@ -2,15 +2,37 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BugsnagUserUserId</key>
+	<string>6ce54835f1f633fff61202b9e058fea6edbd26f8</string>
+	<key>ColorsAndFormatsShortCut</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAChC1UkbnVsbAgRGiQpMjdJTFFT
+	VQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
+	</data>
+	<key>FavoriteColors</key>
+	<array/>
+	<key>HistoryColors</key>
+	<array/>
 	<key>PickColorShortCut</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldL
-	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzECOAAhIAHAAA0hQVFhdaJGNsYXNzbmFt
+	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzEAiAAhIAFAAA0hQVFhdaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1pEQVNob3J0Y3V0oxgZGlpEQVNob3J0Y3V0W01BU1Nob3J0Y3V0WE5T
 	T2JqZWN0CBEaJCkyN0lMUVNXXWRsc4GDhYqPmqOusr3JAAAAAAAAAQEAAAAAAAAAGwAA
 	AAAAAAAAAAAAAAAAANI=
 	</data>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2021-05-22T13:55:03Z</date>
+	<key>SUScheduledCheckInterval</key>
+	<real>43200</real>
+	<key>SUSendProfileInfo</key>
+	<true/>
 	<key>captureValue</key>
 	<real>23</real>
 	<key>codeStyle</key>
@@ -20,7 +42,7 @@
 			<key>useHexShorthand</key>
 			<false/>
 			<key>useUppercase</key>
-			<true/>
+			<false/>
 			<key>useW3CNames</key>
 			<false/>
 		</dict>
@@ -58,8 +80,8 @@
 	</dict>
 	<key>colorInfo</key>
 	<integer>1</integer>
-	<key>exportFormat</key>
-	<string>CSS Hex</string>
+	<key>exportColorObject</key>
+	<false/>
 	<key>magnificationValue</key>
 	<real>4</real>
 	<key>openFormatsAfterPick</key>

@@ -2,52 +2,102 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AppIconBadge</key>
-	<string>StatusItemStyleEventInvites</string>
-	<key>CombineIdenticalItems</key>
-	<true/>
-	<key>DayEnds</key>
-	<integer>18</integer>
-	<key>DayStarts</key>
-	<integer>8</integer>
+	<key>CalendarScreenId</key>
+	<integer>1</integer>
+	<key>CalendarWindowHeight</key>
+	<integer>599</integer>
+	<key>CalendarWindowOriginTopY</key>
+	<integer>115</integer>
+	<key>CalendarWindowOriginX</key>
+	<integer>172</integer>
+	<key>CalendarWindowSelectedTabIndex</key>
+	<integer>2</integer>
+	<key>CalendarWindowWidth</key>
+	<integer>980</integer>
 	<key>DaysPerWeek</key>
 	<integer>7</integer>
-	<key>DefaultEventDuration</key>
-	<real>3600</real>
-	<key>EventKitRemindersEnabled</key>
+	<key>DidImportFantastical1Defaults</key>
 	<true/>
-	<key>FirstWeekday</key>
-	<integer>1</integer>
-	<key>HideDockIcon</key>
+	<key>FirstRunSetup</key>
 	<true/>
 	<key>HoursToShow</key>
 	<integer>10</integer>
-	<key>MiniWindowAttached</key>
+	<key>LastLaunchVersion</key>
+	<string>1294</string>
+	<key>LastSpotlightCheck</key>
+	<real>643385042.59515905</real>
+	<key>LaunchInProgress</key>
+	<false/>
+	<key>MSAppCenter310AppCenterUserDefaultsMigratedKey</key>
 	<true/>
-	<key>OpenMapsIn</key>
-	<string>google</string>
-	<key>PlaySounds</key>
+	<key>MSAppCenter310CrashesUserDefaultsMigratedKey</key>
 	<true/>
-	<key>ShowCompletedReminders</key>
-	<true/>
-	<key>ShowEndTimes</key>
-	<true/>
-	<key>ShowEventAvailability</key>
-	<true/>
-	<key>ShowLocationMap</key>
-	<true/>
-	<key>ShowTasksInCalendarWindow</key>
-	<true/>
-	<key>ShowTimeToLeave</key>
-	<true/>
+	<key>MSAppCenterInstallId</key>
+	<string>A6BD5293-69BC-4B89-B4D0-73AFDEBC7BF4</string>
+	<key>MSAppCenterPastDevices</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBIYHCJQUVJTVFVWV1hZ
+	WltcXWJnVSRudWxs0g0ODxFaTlMub2JqZWN0c1YkY2xhc3OhEIACgBXTExQOFRYXXHRp
+	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HDLJk6iRHggATS
+	HR4fIFokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRGF0ZaIfIVhOU09iamVjdN8QFyMkJSYO
+	JygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PDxBQjw8PDxHSElKPDxNTk9Zb3NWZXJzaW9u
+	XnRpbWVab25lT2Zmc2V0WGFwcEJ1aWxkXxAVbGl2ZVVwZGF0ZVBhY2thZ2VIYXNoWmFw
+	cFZlcnNpb25fEBF3cmFwcGVyU2RrVmVyc2lvbltjYXJyaWVyTmFtZVdzZGtOYW1lVmxv
+	Y2FsZV8QF2xpdmVVcGRhdGVEZXBsb3ltZW50S2V5XmNhcnJpZXJDb3VudHJ5Wm9zQXBp
+	TGV2ZWxed3JhcHBlclNka05hbWVXb2VtTmFtZVpzZGtWZXJzaW9uXGFwcE5hbWVzcGFj
+	ZVVtb2RlbF8QFXdyYXBwZXJSdW50aW1lVmVyc2lvbl8QFmxpdmVVcGRhdGVSZWxlYXNl
+	TGFiZWxac2NyZWVuU2l6ZVZvc05hbWVXb3NCdWlsZIALgA6AEYAAgBOAEIAAgACABoAN
+	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNC4wLjBe
+	TWFjQm9va0FpcjEwLDFVQXBwbGVVbWFjT1NWMTEuMi4zVTIwRDkxVWVuX1VTE///////
+	//8QWDE0NDB4OTAwVjMuMy4xMFQxMjk0XxAeY29tLmZsZXhpYml0cy5mYW50YXN0aWNh
+	bDIubWFj0h0eXl9aTVNBQ0RldmljZaNgYSFaTVNBQ0RldmljZV5NU0FDV3JhcHBlclNk
+	a9IdHmNkXxAVTVNBQ0RldmljZUhpc3RvcnlJbmZvo2VmIV8QFU1TQUNEZXZpY2VIaXN0
+	b3J5SW5mb18QD01TQUNIaXN0b3J5SW5mb9IdHmhpXk5TTXV0YWJsZUFycmF5o2hqIVdO
+	U0FycmF5AAgAEQAaACQAKQAyADcASQBMAFEAUwBsAHIAdwCCAIkAiwCNAI8AlgCjAK0A
+	rwCxALMAuADAAMkAywDQANsA5ADrAO4A9wEoATIBQQFKAWIBbQGBAY0BlQGcAbYBxQHQ
+	Ad8B5wHyAf8CBQIdAjYCQQJIAlACUgJUAlYCWAJaAlwCXgJgAmICZAJmAmgCagJsAm4C
+	cAJyAnQCdgJ4AnoCfAJ+ApAClgKlAqsCsQK4Ar4CxALNAtYC3QLiAwMDCAMTAxcDIgMx
+	AzYDTgNSA2oDfAOBA5ADlAAAAAAAAAIBAAAAAAAAAGsAAAAAAAAAAAAAAAAAAAOc
+	</data>
+	<key>MSAppCenterSessionIdHistory</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
+	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBwyyZOofHDYAE0h0eHyBaJGNsYXNzbmFt
+	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
+	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
+	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
+	SQBMAFEAUwBbAGEAZgBxAHgAegB8AH4AhQCSAJ8AoQCjAKUAqgCyALsAvQDCAM0A1gDd
+	AOAA6QDuAQcBCwEkATYBOwFKAU4AAAAAAAACAQAAAAAAAAArAAAAAAAAAAAAAAAAAAAB
+	Vg==
+	</data>
+	<key>MSAppCenterUserIdHistory</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGoCwwSGBwiIyhVJG51bGzSDQ4P
+	EVpOUy5vYmplY3RzViRjbGFzc6EQgAKAB9MTFA4VFhdcdGltZXN0YW1wS2V5WXVzZXJJ
+	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcMsmUjdmS2ABNIdHh8gWiRjbGFzc25hbWVY
+	JGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN0XxAPd2lsQHdpbGhhbGwuY29t0h0eJCVf
+	EBVNU0FDVXNlcklkSGlzdG9yeUluZm+jJichXxAVTVNBQ1VzZXJJZEhpc3RvcnlJbmZv
+	XxAPTVNBQ0hpc3RvcnlJbmZv0h0eKSpeTlNNdXRhYmxlQXJyYXmjKSshV05TQXJyYXkA
+	CAARABoAJAApADIANwBJAEwAUQBTAFwAYgBnAHIAeQB7AH0AfwCGAJMAnQCfAKEAowCo
+	ALAAuQC7AMAAywDUANsA3gDnAPkA/gEWARoBMgFEAUkBWAFcAAAAAAAAAgEAAAAAAAAA
+	LAAAAAAAAAAAAAAAAAAAAWQ=
+	</data>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
+		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
+	</array>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>SidebarWidthDefaultKey</key>
 	<real>300</real>
-	<key>StatusItemBadge</key>
-	<string>StatusItemStyleDate</string>
-	<key>TaskSort</key>
-	<string>priority</string>
-	<key>TwoTimeZonesEnabled</key>
-	<true/>
 	<key>WeekViewStartsWith</key>
 	<true/>
 	<key>WeeksPerMonth</key>

@@ -40,7 +40,7 @@ resolve_domain() {
       echo "$(mdls -name kMDItemCFBundleIdentifier -r "$GLOBAL_APP_LOCATION")"
     elif [ -d "$USER_APP_LOCATION" ]; then
       echo "$(mdls -name kMDItemCFBundleIdentifier -r "$USER_APP_LOCATION")"
-    if [ -d "$SYSTEM_APP_LOCATION" ]; then
+    elif [ -d "$SYSTEM_APP_LOCATION" ]; then
       echo "$(mdls -name kMDItemCFBundleIdentifier -r "$SYSTEM_APP_LOCATION")"
     elif [ -d "$CORE_SERVICES_APP_LOCATION" ]; then
       echo "$(mdls -name kMDItemCFBundleIdentifier -r "$CORE_SERVICES_APP_LOCATION")"

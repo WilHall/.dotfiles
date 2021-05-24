@@ -2,19 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>GlobalTupleHostPaint</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAChC1UkbnVsbAgRGiQpMjdJTFFT
-	VQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
-	</data>
-	<key>cursorMode</key>
-	<string>paint</string>
-	<key>keyboardMode</key>
-	<string>on</string>
-	<key>loggingLevel</key>
-	<string>WARN</string>
-	<key>persistPaintMessages</key>
 	<true/>
 	<key>seenCameraPreview</key>
 	<true/>

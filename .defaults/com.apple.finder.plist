@@ -2,283 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AnimateWindowZoom</key>
-	<false/>
-	<key>AppleShowAllFiles</key>
-	<true/>
-	<key>ComputerViewSettings</key>
-	<dict>
-		<key>CustomViewStyleVersion</key>
-		<integer>1</integer>
-		<key>ExtendedListViewSettingsV2</key>
-		<dict>
-			<key>calculateAllSizes</key>
-			<false/>
-			<key>columns</key>
-			<array>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>name</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>1133</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>ubiquity</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>35</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateModified</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateCreated</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>size</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>97</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>kind</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>115</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>label</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>100</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>version</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>75</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>comments</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>300</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateLastOpened</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>200</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateAdded</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-			</array>
-			<key>iconSize</key>
-			<real>16</real>
-			<key>showIconPreview</key>
-			<true/>
-			<key>sortColumn</key>
-			<string>name</string>
-			<key>textSize</key>
-			<real>12</real>
-			<key>useRelativeDates</key>
-			<true/>
-			<key>viewOptionsVersion</key>
-			<integer>1</integer>
-		</dict>
-		<key>ListViewSettings</key>
-		<dict>
-			<key>calculateAllSizes</key>
-			<false/>
-			<key>columns</key>
-			<dict>
-				<key>comments</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>7</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>300</integer>
-				</dict>
-				<key>dateCreated</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>2</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<key>dateLastOpened</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>8</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>200</integer>
-				</dict>
-				<key>dateModified</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>1</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<key>kind</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>4</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>115</integer>
-				</dict>
-				<key>label</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>5</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>100</integer>
-				</dict>
-				<key>name</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>0</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>1133</integer>
-				</dict>
-				<key>size</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>3</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>97</integer>
-				</dict>
-				<key>version</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>6</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>75</integer>
-				</dict>
-			</dict>
-			<key>iconSize</key>
-			<real>16</real>
-			<key>showIconPreview</key>
-			<true/>
-			<key>sortColumn</key>
-			<string>name</string>
-			<key>textSize</key>
-			<real>12</real>
-			<key>useRelativeDates</key>
-			<true/>
-			<key>viewOptionsVersion</key>
-			<integer>1</integer>
-		</dict>
-		<key>WindowState</key>
-		<dict>
-			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
-			<true/>
-			<key>ShowSidebar</key>
-			<true/>
-			<key>ShowStatusBar</key>
-			<false/>
-			<key>ShowTabView</key>
-			<false/>
-			<key>ShowToolbar</key>
-			<true/>
-			<key>WindowBounds</key>
-			<string>{{328, 0}, {1164, 447}}</string>
-		</dict>
-	</dict>
 	<key>CopyProgressWindowLocation</key>
-	<string>{640, 245}</string>
+	<string>{549, 228}</string>
 	<key>DesktopViewSettings</key>
 	<dict>
 		<key>IconViewSettings</key>
@@ -300,7 +25,7 @@
 			<key>gridSpacing</key>
 			<real>54</real>
 			<key>iconSize</key>
-			<real>128</real>
+			<real>64</real>
 			<key>labelOnBottom</key>
 			<true/>
 			<key>showIconPreview</key>
@@ -313,12 +38,10 @@
 			<integer>1</integer>
 		</dict>
 	</dict>
-	<key>DisableAllAnimations</key>
-	<true/>
 	<key>DownloadsFolderListViewSettingsVersion</key>
 	<integer>1</integer>
 	<key>EmptyTrashProgressWindowLocation</key>
-	<string>{1229, 403}</string>
+	<string>{549, 228}</string>
 	<key>FK_AppCentricShowSidebar</key>
 	<true/>
 	<key>FK_DefaultIconViewSettings</key>
@@ -466,36 +189,14 @@
 		<key>sortColumn</key>
 		<string>dateAdded</string>
 		<key>textSize</key>
-		<integer>12</integer>
+		<integer>13</integer>
 		<key>useRelativeDates</key>
 		<true/>
 		<key>viewOptionsVersion</key>
 		<integer>1</integer>
 	</dict>
-	<key>FK_StandardViewOptions2</key>
-	<dict>
-		<key>ColumnViewOptions</key>
-		<dict>
-			<key>ArrangeBy</key>
-			<string>dnam</string>
-			<key>ColumnShowFolderArrow</key>
-			<true/>
-			<key>ColumnShowIcons</key>
-			<true/>
-			<key>ColumnWidth</key>
-			<integer>205</integer>
-			<key>FontSize</key>
-			<integer>12</integer>
-			<key>PreviewDisclosureState</key>
-			<true/>
-			<key>SharedArrangeBy</key>
-			<string>kipl</string>
-			<key>ShowIconThumbnails</key>
-			<true/>
-			<key>ShowPreview</key>
-			<true/>
-		</dict>
-	</dict>
+	<key>FK_SidebarWidth</key>
+	<real>143</real>
 	<key>FK_StandardViewSettings</key>
 	<dict>
 		<key>ExtendedListViewSettingsV2</key>
@@ -602,7 +303,7 @@
 			<key>sortColumn</key>
 			<string>name</string>
 			<key>textSize</key>
-			<integer>12</integer>
+			<integer>13</integer>
 			<key>useRelativeDates</key>
 			<true/>
 			<key>viewOptionsVersion</key>
@@ -752,7 +453,7 @@
 			<key>sortColumn</key>
 			<string>name</string>
 			<key>textSize</key>
-			<integer>12</integer>
+			<integer>13</integer>
 			<key>useRelativeDates</key>
 			<true/>
 			<key>viewOptionsVersion</key>
@@ -769,51 +470,88 @@
 	<string>SCcf</string>
 	<key>FXDesktopTouchBarUpgradedToTenTwelveOne</key>
 	<integer>1</integer>
-	<key>FXDisableFancyWindowTransition</key>
-	<true/>
+	<key>FXDesktopVolumePositions</key>
+	<dict>
+		<key>Affinity Designer_0x1.31227098p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>177</integer>
+		</dict>
+		<key>Affinity Photo_0x1.312be918p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
+		</dict>
+		<key>GPG Suite_0x1.32b987p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>177</integer>
+		</dict>
+		<key>Macintosh HD_0x1.1de448p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>65</integer>
+		</dict>
+		<key>Pop_0x1.32c4fdp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>401</integer>
+		</dict>
+	</dict>
 	<key>FXEnableExtensionChangeWarning</key>
-	<false/>
-	<key>FXEnableRemoveFromICloudDriveWarning</key>
 	<false/>
 	<key>FXICloudDriveDeclinedUpgrade</key>
 	<false/>
 	<key>FXICloudDriveDesktop</key>
-	<false/>
+	<true/>
 	<key>FXICloudDriveDocuments</key>
-	<false/>
+	<true/>
 	<key>FXICloudDriveEnabled</key>
 	<true/>
 	<key>FXICloudDriveFirstSyncDownComplete</key>
 	<true/>
 	<key>FXICloudLoggedIn</key>
 	<true/>
-	<key>FXInfoPanesExpanded</key>
-	<dict>
-		<key>MetaData</key>
-		<false/>
-		<key>OpenWith</key>
-		<true/>
-		<key>Preview</key>
-		<true/>
-		<key>Privileges</key>
-		<false/>
-	</dict>
 	<key>FXPreferencesWindow.Location</key>
-	<string>{{975, -147}, {660, 588}}</string>
-	<key>FXPreferredSearchViewStyleVersion</key>
-	<string>%00%00%00%01</string>
-	<key>FXPreferredViewStyle</key>
-	<string>Nlsv</string>
+	<string>{{10, 485}, {377, 380}}</string>
 	<key>FXQuickActionsConfigUpgradeLevel</key>
 	<integer>1</integer>
+	<key>FXRecentFolders</key>
+	<array/>
 	<key>FXSidebarUpgradedToTenFourteen</key>
 	<true/>
 	<key>FXSidebarUpgradedToTenTen</key>
 	<true/>
-	<key>FXSyncExtensionToolbarItemsAutomaticallyAdded</key>
-	<array>
-		<string>com.getdropbox.dropbox.garcon</string>
-	</array>
 	<key>FXToolbarUpgradedToTenEight</key>
 	<integer>1</integer>
 	<key>FXToolbarUpgradedToTenNine</key>
@@ -831,438 +569,65 @@
 		<string>Purple</string>
 		<string>Gray</string>
 	</array>
-	<key>ICloudViewSettings</key>
-	<dict>
-		<key>WindowState</key>
-		<dict>
-			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
-			<true/>
-			<key>ShowSidebar</key>
-			<true/>
-			<key>ShowStatusBar</key>
-			<false/>
-			<key>ShowTabView</key>
-			<false/>
-			<key>ShowToolbar</key>
-			<true/>
-			<key>WindowBounds</key>
-			<string>{{1046, 0}, {1413, 447}}</string>
-		</dict>
-	</dict>
+	<key>GoToField</key>
+	<string>~/.dotfiles/</string>
+	<key>GoToFieldHistory</key>
+	<array>
+		<string>~/.dotfiles/</string>
+		<string>/usr/local/bin/</string>
+	</array>
 	<key>LastTrashState</key>
 	<false/>
-	<key>MeetingRoomViewSetting</key>
-	<dict>
-		<key>CustomViewStyleVersion</key>
-		<integer>1</integer>
-		<key>WindowState</key>
-		<dict>
-			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
-			<false/>
-			<key>ShowSidebar</key>
-			<true/>
-			<key>ShowStatusBar</key>
-			<false/>
-			<key>ShowTabView</key>
-			<false/>
-			<key>ShowToolbar</key>
-			<true/>
-			<key>WindowBounds</key>
-			<string>{{582, 0}, {1439, 447}}</string>
-		</dict>
-	</dict>
 	<key>NSNavLastRootDirectory</key>
-	<string>/Applications</string>
+	<string>~/Downloads</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
-	<false/>
+	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{799, 448}</string>
+	<string>{800, 450}</string>
 	<key>NSToolbar Configuration Browser</key>
 	<dict>
-		<key>TB Default Item Identifiers</key>
-		<array>
-			<string>com.apple.finder.BACK</string>
-			<string>NSToolbarFlexibleSpaceItem</string>
-			<string>com.apple.finder.SWCH</string>
-			<string>com.apple.finder.ARNG</string>
-			<string>com.apple.finder.ACTN</string>
-			<string>com.apple.finder.SHAR</string>
-			<string>com.apple.finder.LABL</string>
-			<string>NSToolbarFlexibleSpaceItem</string>
-			<string>NSToolbarFlexibleSpaceItem</string>
-			<string>com.apple.finder.SRCH</string>
-		</array>
 		<key>TB Display Mode</key>
 		<integer>2</integer>
-		<key>TB Item Identifiers</key>
-		<array>
-			<string>com.apple.finder.BACK</string>
-			<string>NSToolbarFlexibleSpaceItem</string>
-			<string>com.apple.finder.SWCH</string>
-			<string>com.apple.finder.ARNG</string>
-			<string>com.apple.finder.ACTN</string>
-			<string>com.apple.finder.SHAR</string>
-			<string>com.apple.finder.LABL</string>
-			<string>NSToolbarFlexibleSpaceItem</string>
-			<string>NSToolbarFlexibleSpaceItem</string>
-			<string>com.getdropbox.dropbox.garcon</string>
-			<string>com.apple.finder.SRCH</string>
-		</array>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
 	</dict>
-	<key>NSTouchBarConfig: com·apple·finder·dfr·kDFRNoSelectionOnDesktopBarCustomizationIdentifier</key>
+	<key>NSUserKeyEquivalents</key>
 	<dict>
-		<key>CurrentItems</key>
-		<array/>
-		<key>DefaultItems</key>
-		<array>
-			<string>com.apple.finder.dfr.kDFRBackForwardButtonIdentifier</string>
-			<string>com.apple.finder.dfr.kDFRViewOptionsButtonIdentifier</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>com.apple.finder.dfr.kDFRQuickLookButtonIdentifier</string>
-			<string>com.apple.finder.dfr.kDFRShareButtonIdentifier</string>
-			<string>com.apple.finder.dfr.kDFRAddTagsButtonIdentifier</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-		</array>
+		<key>Cycle Through Windows</key>
+		<string>@$`</string>
 	</dict>
-	<key>NSWindow Frame ClipboardWindow</key>
-	<string>0 -265 3840 1642 0 0 3360 1377 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>687 -34 799 364 0 0 1680 1027 </string>
+	<string>-14 65 328 135 0 0 1440 875 </string>
 	<key>NewWindowTarget</key>
 	<string>PfLo</string>
 	<key>NewWindowTargetPath</key>
 	<string>file:///Users/wilhall/Downloads/</string>
-	<key>PackageViewSettings</key>
-	<dict>
-		<key>ExtendedListViewSettingsV2</key>
-		<dict>
-			<key>calculateAllSizes</key>
-			<false/>
-			<key>columns</key>
-			<array>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>name</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>802</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>ubiquity</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>35</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateModified</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateCreated</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>size</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>97</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>kind</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>115</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>label</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>100</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>version</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>75</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>comments</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>300</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateLastOpened</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>200</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateAdded</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-			</array>
-			<key>iconSize</key>
-			<real>16</real>
-			<key>showIconPreview</key>
-			<true/>
-			<key>sortColumn</key>
-			<string>name</string>
-			<key>textSize</key>
-			<real>12</real>
-			<key>useRelativeDates</key>
-			<true/>
-			<key>viewOptionsVersion</key>
-			<integer>1</integer>
-		</dict>
-		<key>ListViewSettings</key>
-		<dict>
-			<key>calculateAllSizes</key>
-			<false/>
-			<key>columns</key>
-			<dict>
-				<key>comments</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>7</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>300</integer>
-				</dict>
-				<key>dateCreated</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>2</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<key>dateLastOpened</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>8</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>200</integer>
-				</dict>
-				<key>dateModified</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>1</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<key>kind</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>4</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>115</integer>
-				</dict>
-				<key>label</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>5</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>100</integer>
-				</dict>
-				<key>name</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>0</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>802</integer>
-				</dict>
-				<key>size</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>3</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>97</integer>
-				</dict>
-				<key>version</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>6</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>75</integer>
-				</dict>
-			</dict>
-			<key>iconSize</key>
-			<real>16</real>
-			<key>showIconPreview</key>
-			<true/>
-			<key>sortColumn</key>
-			<string>name</string>
-			<key>textSize</key>
-			<real>12</real>
-			<key>useRelativeDates</key>
-			<true/>
-			<key>viewOptionsVersion</key>
-			<integer>1</integer>
-		</dict>
-		<key>WindowState</key>
-		<dict>
-			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
-			<true/>
-			<key>ShowSidebar</key>
-			<true/>
-			<key>ShowStatusBar</key>
-			<false/>
-			<key>ShowTabView</key>
-			<false/>
-			<key>ShowToolbar</key>
-			<true/>
-			<key>WindowBounds</key>
-			<string>{{254, 0}, {1333, 447}}</string>
-		</dict>
-	</dict>
 	<key>PreferencesWindow.LastSelection</key>
-	<string>GNRL</string>
+	<string>ADVD</string>
+	<key>RecentMoveAndCopyDestinations</key>
+	<array>
+		<string>file:///Users/wilhall/Pictures/</string>
+		<string>file:///Users/wilhall/Library/Application%20Support/Mail/Plug-ins/Bundles/Library/Mail/Bundles/</string>
+		<string>file:///Applications/</string>
+	</array>
 	<key>RecentsArrangeGroupViewBy</key>
 	<string>Date Last Opened</string>
 	<key>SearchRecentsSavedViewStyleVersion</key>
 	<string>%00%00%00%01</string>
-	<key>SearchRecentsViewSettings</key>
-	<dict>
-		<key>WindowState</key>
-		<dict>
-			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
-			<true/>
-			<key>ShowSidebar</key>
-			<true/>
-			<key>ShowStatusBar</key>
-			<false/>
-			<key>ShowTabView</key>
-			<false/>
-			<key>ShowToolbar</key>
-			<true/>
-			<key>WindowBounds</key>
-			<string>{{284, 0}, {1257, 447}}</string>
-		</dict>
-	</dict>
-	<key>SearchViewSettings</key>
-	<dict>
-		<key>WindowState</key>
-		<dict>
-			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
-			<true/>
-			<key>ShowSidebar</key>
-			<true/>
-			<key>ShowStatusBar</key>
-			<false/>
-			<key>ShowTabView</key>
-			<false/>
-			<key>ShowToolbar</key>
-			<true/>
-			<key>WindowBounds</key>
-			<string>{{190, 0}, {1333, 447}}</string>
-		</dict>
-	</dict>
 	<key>ShowExternalHardDrivesOnDesktop</key>
-	<false/>
+	<true/>
 	<key>ShowHardDrivesOnDesktop</key>
-	<false/>
+	<true/>
 	<key>ShowMountedServersOnDesktop</key>
-	<false/>
-	<key>ShowPathbar</key>
 	<true/>
 	<key>ShowRecentTags</key>
 	<false/>
 	<key>ShowRemovableMediaOnDesktop</key>
-	<false/>
+	<true/>
 	<key>ShowSidebar</key>
 	<true/>
 	<key>SidebarDevicesSectionDisclosedState</key>
@@ -1272,11 +637,11 @@
 	<key>SidebarShowingSignedIntoiCloud</key>
 	<true/>
 	<key>SidebarShowingiCloudDesktop</key>
-	<false/>
+	<true/>
 	<key>SidebarTagsSctionDisclosedState</key>
-	<false/>
+	<true/>
 	<key>SidebarWidth</key>
-	<real>137</real>
+	<real>159</real>
 	<key>StandardViewSettings</key>
 	<dict>
 		<key>ExtendedListViewSettingsV2</key>
@@ -1383,7 +748,7 @@
 			<key>sortColumn</key>
 			<string>name</string>
 			<key>textSize</key>
-			<integer>12</integer>
+			<integer>13</integer>
 			<key>useRelativeDates</key>
 			<true/>
 			<key>viewOptionsVersion</key>
@@ -1403,7 +768,7 @@
 		<key>IconViewSettings</key>
 		<dict>
 			<key>arrangeBy</key>
-			<string>name</string>
+			<string>none</string>
 			<key>backgroundColorBlue</key>
 			<real>1</real>
 			<key>backgroundColorGreen</key>
@@ -1425,7 +790,7 @@
 			<key>showIconPreview</key>
 			<true/>
 			<key>showItemInfo</key>
-			<true/>
+			<false/>
 			<key>textSize</key>
 			<real>12</real>
 			<key>viewOptionsVersion</key>
@@ -1544,7 +909,7 @@
 			<key>sortColumn</key>
 			<string>name</string>
 			<key>textSize</key>
-			<integer>12</integer>
+			<integer>13</integer>
 			<key>useRelativeDates</key>
 			<true/>
 			<key>viewOptionsVersion</key>
@@ -1553,323 +918,16 @@
 		<key>SettingsType</key>
 		<string>StandardViewSettings</string>
 	</dict>
-	<key>TotalFinderPlistRevision</key>
-	<integer>26</integer>
+	<key>TagsCloudSerialNumber</key>
+	<integer>28</integer>
 	<key>TrashViewSettings</key>
 	<dict>
 		<key>CustomViewStyleVersion</key>
 		<integer>1</integer>
-		<key>ExtendedListViewSettingsV2</key>
-		<dict>
-			<key>calculateAllSizes</key>
-			<false/>
-			<key>columns</key>
-			<array>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>name</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>867</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>ubiquity</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>35</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateModified</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateCreated</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>size</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>97</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>kind</string>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>115</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>label</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>100</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>version</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>75</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>identifier</key>
-					<string>comments</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>300</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateLastOpened</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>200</integer>
-				</dict>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>identifier</key>
-					<string>dateAdded</string>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-			</array>
-			<key>iconSize</key>
-			<real>16</real>
-			<key>scrollPositionX</key>
-			<real>0.0</real>
-			<key>scrollPositionY</key>
-			<real>1051</real>
-			<key>showIconPreview</key>
-			<true/>
-			<key>sortColumn</key>
-			<string>name</string>
-			<key>textSize</key>
-			<real>12</real>
-			<key>useRelativeDates</key>
-			<true/>
-			<key>viewOptionsVersion</key>
-			<integer>1</integer>
-		</dict>
-		<key>IconViewSettings</key>
-		<dict>
-			<key>arrangeBy</key>
-			<string>name</string>
-			<key>backgroundColorBlue</key>
-			<real>1</real>
-			<key>backgroundColorGreen</key>
-			<real>1</real>
-			<key>backgroundColorRed</key>
-			<real>1</real>
-			<key>backgroundType</key>
-			<integer>0</integer>
-			<key>gridOffsetX</key>
-			<real>0.0</real>
-			<key>gridOffsetY</key>
-			<real>0.0</real>
-			<key>gridSpacing</key>
-			<real>54</real>
-			<key>iconSize</key>
-			<real>64</real>
-			<key>labelOnBottom</key>
-			<true/>
-			<key>scrollPositionX</key>
-			<real>0.0</real>
-			<key>scrollPositionY</key>
-			<real>0.0</real>
-			<key>showIconPreview</key>
-			<true/>
-			<key>showItemInfo</key>
-			<true/>
-			<key>textSize</key>
-			<real>12</real>
-			<key>viewOptionsVersion</key>
-			<integer>1</integer>
-		</dict>
-		<key>ListViewSettings</key>
-		<dict>
-			<key>calculateAllSizes</key>
-			<false/>
-			<key>columns</key>
-			<dict>
-				<key>comments</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>7</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>300</integer>
-				</dict>
-				<key>dateCreated</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>2</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<key>dateLastOpened</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>8</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>200</integer>
-				</dict>
-				<key>dateModified</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>1</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>181</integer>
-				</dict>
-				<key>kind</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>4</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>115</integer>
-				</dict>
-				<key>label</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>5</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>100</integer>
-				</dict>
-				<key>name</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>0</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>867</integer>
-				</dict>
-				<key>size</key>
-				<dict>
-					<key>ascending</key>
-					<false/>
-					<key>index</key>
-					<integer>3</integer>
-					<key>visible</key>
-					<true/>
-					<key>width</key>
-					<integer>97</integer>
-				</dict>
-				<key>version</key>
-				<dict>
-					<key>ascending</key>
-					<true/>
-					<key>index</key>
-					<integer>6</integer>
-					<key>visible</key>
-					<false/>
-					<key>width</key>
-					<integer>75</integer>
-				</dict>
-			</dict>
-			<key>iconSize</key>
-			<real>16</real>
-			<key>scrollPositionX</key>
-			<real>0.0</real>
-			<key>scrollPositionY</key>
-			<real>1051</real>
-			<key>showIconPreview</key>
-			<true/>
-			<key>sortColumn</key>
-			<string>name</string>
-			<key>textSize</key>
-			<real>12</real>
-			<key>useRelativeDates</key>
-			<true/>
-			<key>viewOptionsVersion</key>
-			<integer>1</integer>
-		</dict>
-		<key>WindowState</key>
-		<dict>
-			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
-			<true/>
-			<key>ShowSidebar</key>
-			<true/>
-			<key>ShowStatusBar</key>
-			<false/>
-			<key>ShowTabView</key>
-			<false/>
-			<key>ShowToolbar</key>
-			<true/>
-			<key>WindowBounds</key>
-			<string>{{900, 0}, {1413, 447}}</string>
-		</dict>
 	</dict>
 	<key>_FXSortFoldersFirst</key>
+	<true/>
+	<key>_FXSortFoldersFirstOnDesktop</key>
 	<true/>
 </dict>
 </plist>

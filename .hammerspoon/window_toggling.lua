@@ -3,18 +3,19 @@ function toggleAppWindow(appName)
    if app == nil then
       hs.application.launchOrFocus(appName)
    else
-      local focusedWindow = hs.window.focusedWindow()
-      local toggleWindow = app:allWindows()[1]
+      local systemFocusedWindow = hs.window.focusedWindow()
 
-      if focusedWindow:id() == toggleWindow:id() then
-        toggleWindow:application():hide()
+      if systemFocusedWindow == app:focusedWindow() then
+        app:hide()
       else
-        toggleWindow:raise()
-        toggleWindow:focus()
+        app:unhide()
+        app:activate()
+        app:setFrontmost(true)
       end
    end
 end
 
+hs.hotkey.bind(optshift, "`", function() toggleAppWindow("Finder") end)
 hs.hotkey.bind(cmdshift, "`", function() toggleAppWindow("Spark") end)
 hs.hotkey.bind(hyper, "M", function() toggleAppWindow("Spotify") end)
 hs.hotkey.bind(hyper, "B", function() toggleAppWindow("Basecamp 3") end)

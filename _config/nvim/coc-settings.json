@@ -40,7 +40,8 @@
     "typescript",
     "typescriptreact",
     "elixir",
-    "eelixir"
+    "eelixir",
+    "svelte"
   ],
   "css.validate": false,
   "less.validate": false,
@@ -56,6 +57,7 @@
   "solargraph.diagnostics": true,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
+  "tailwindCSS.trace.server": "messages",
   "html.format.enable": true,
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true

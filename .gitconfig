@@ -53,3 +53,6 @@
     clean = git-lfs clean -- %f
 [rebase]
     autosquash = true
+[filter "ignoresensitivelines"]
+    clean = "sed '/intelephense\\.licensekey/d'"
+    smudge = "cat"

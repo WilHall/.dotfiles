@@ -43,7 +43,8 @@
     "eelixir",
     "svelte",
     "ruby",
-    "eruby"
+    "eruby",
+    "php"
   ],
   "css.validate": false,
   "less.validate": false,

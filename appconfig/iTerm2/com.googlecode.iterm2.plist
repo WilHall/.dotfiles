@@ -14,6 +14,8 @@
 	<string>MonoLisa</string>
 	<key>BootstrapDaemon</key>
 	<false/>
+	<key>CheckTestRelease</key>
+	<true/>
 	<key>CloseBookmarksWindowAfterOpening</key>
 	<true/>
 	<key>CopySelection</key>

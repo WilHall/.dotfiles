@@ -16,7 +16,8 @@ let g:coc_global_extensions = [
   \ 'coc-yank',
   \ 'coc-highlight',
   \ 'coc-solargraph',
-  \ 'coc-styled-components'
+  \ 'coc-styled-components',
+  \ 'coc-phpls'
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')

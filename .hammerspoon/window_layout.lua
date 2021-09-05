@@ -41,7 +41,7 @@ end
 function undockedLayout()
   return {
     {"Spotify", nil, laptopScreenName, hs.layout.left70, nil, nil},
-    {"Spark", nil, laptopScreenName, hs.layout.left70, nil, nil},
+    {"Mail", nil, laptopScreenName, hs.layout.left70, nil, nil},
     {"Messages", nil, laptopScreenName, hs.layout.right70, nil, nil},
     {"Basecamp 3", nil, laptopScreenName, hs.layout.right70, nil, nil},
     {"Slack", nil, laptopScreenName, hs.layout.right70, nil, nil},
@@ -53,7 +53,7 @@ end
 function dockedLayout()
   return {
     {"Spotify", nil, laptopScreenName, hs.layout.left50, nil, nil},
-    {"Spark", nil, laptopScreenName, hs.layout.left50, nil, nil},
+    {"Mail", nil, laptopScreenName, hs.layout.left50, nil, nil},
     {"Messages", nil, laptopScreenName, hs.layout.right50, nil, nil},
     {"Basecamp 3", nil, laptopScreenName, hs.layout.right50, nil, nil},
     {"Slack", nil, laptopScreenName, hs.layout.right50, nil, nil},
@@ -66,7 +66,7 @@ function dockedClamshellLayout()
   local externalScreenName = getExternalScreenName();
   return {
     {"Spotify", nil, externalScreenName, hs.layout.left30, nil, nil},
-    {"Spark", nil, externalScreenName, hs.layout.left30, nil, nil},
+    {"Mail", nil, externalScreenName, hs.layout.left30, nil, nil},
     {"Messages", nil, externalScreenName, positions.lower50Right30, nil, nil},
     {"Basecamp 3", nil, externalScreenName, positions.right34, nil, nil},
     {"Slack", nil, externalScreenName, positions.centered, nil, nil},
@@ -80,7 +80,7 @@ function dockedClamshellDuetLayout()
   local duetScreenName = getDuetScreenName();
   return {
     {"Spotify", nil, externalScreenName, hs.layout.left30, nil, nil},
-    {"Spark", nil, externalScreenName, hs.layout.left30, nil, nil},
+    {"Mail", nil, externalScreenName, hs.layout.left30, nil, nil},
     {"Messages", nil, duetScreenName, positions.lower50, nil, nil},
     {"Basecamp 3", nil, externalScreenName, positions.right34, nil, nil},
     {"Slack", nil, externalScreenName, positions.centered, nil, nil},

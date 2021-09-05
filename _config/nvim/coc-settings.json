@@ -28,7 +28,7 @@
   "signature.maxWindowHeight": 10,
   "diagnostic.checkCurrentLine": true,
   "yank.highlight.duration": 270,
-  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.suggest.completeFunctionCalls": false,
   "javascript.suggest.completeFunctionCalls": false,
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
@@ -41,7 +41,9 @@
     "typescriptreact",
     "elixir",
     "eelixir",
-    "svelte"
+    "svelte",
+    "ruby",
+    "eruby"
   ],
   "css.validate": false,
   "less.validate": false,
@@ -54,10 +56,11 @@
   "eslint.autoFixOnSave": true,
   "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "solargraph.trace.server": "verbose",
-  "solargraph.diagnostics": true,
+  "solargraph.diagnostics": false,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
   "tailwindCSS.trace.server": "messages",
+  "tailwindCSS.headwind.runOnSave": false,
   "html.format.enable": true,
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true

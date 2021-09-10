@@ -12,7 +12,7 @@ alias yc="yarn commit"
 
 # Commands for working with the current working directory
 alias pwr="cd ."
-alias pwc="pwd | pbcopy"
+alias pwc="pwd | pbcopy && clear"
 alias pwp='cd $(pbpaste -Prefer txt) && clear'
 
 alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"

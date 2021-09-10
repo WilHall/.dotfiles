@@ -32,4 +32,5 @@ call s:SourceConfigFilesIn('rcplugins')
 call plug#end()
 
 " source additional config files
+filetype plugin on
 call s:SourceConfigFilesIn('rcfiles')

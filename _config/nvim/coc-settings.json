@@ -9,6 +9,17 @@
       }
     }
   },
+  "intelephense.includePaths": ["vendor"],
+  "intelephense.files.exclude": ["kurogo/*", "**/stubs/*"],
+  "intelephense.references.exclude": ["kurogo/*", "**/stubs/*"],
+  "intelephense.files.maxSize": 1000000000,
+  "intelephense.completion.maxItems": 500,
+  "intelephense.format.enable": true,
+  "intelephense.format.braces": "k&r",
+  "intelephense.completion.triggerParameterHints": true,
+  "intelephense.completion.insertUseDeclaration": true,
+  "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+  "intelephense.trace.server": "messages",
   "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
   "workspace.ignoredFiletypes": ["gitcommit"],
   "coc.preferences.jumpCommand": "edit",
@@ -44,8 +55,10 @@
     "svelte",
     "ruby",
     "eruby",
-    "php"
+    "php",
+    "yaml"
   ],
+  "yaml.format.enable": true,
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,

@@ -4,9 +4,13 @@
 <dict>
 	<key>MiniBuddyLaunch</key>
 	<false/>
+	<key>NSWindow Frame ProcessPanel</key>
+	<string>215 523 338 313 0 0 3008 1228 </string>
 	<key>TALLogoutReason</key>
 	<string>Restart</string>
 	<key>TALLogoutSavesState</key>
 	<false/>
+	<key>oneTimeSSMigrationComplete</key>
+	<true/>
 </dict>
 </plist>

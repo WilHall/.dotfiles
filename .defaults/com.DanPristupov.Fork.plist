@@ -2,21 +2,174 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>MSAppCenter310AppCenterUserDefaultsMigratedKey</key>
+	<true/>
+	<key>MSAppCenter310CrashesUserDefaultsMigratedKey</key>
+	<true/>
+	<key>MSAppCenterInstallId</key>
+	<string>3EE35F3E-6870-4B1A-B004-B3CE91BDC423</string>
+	<key>MSAppCenterPastDevices</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBULDBIYHCJQUVJTVFVWV1hZ
+	WltcYWZVJG51bGzSDQ4PEVpOUy5vYmplY3RzViRjbGFzc6EQgAKAFNMTFA4VFhdcdGlt
+	ZXN0YW1wS2V5WWRldmljZUtleYADgAWAE9IZDhobV05TLnRpbWUjQcOK6f0C6wOABNId
+	Hh8gWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN03xAXIyQlJg4n
+	KCkqKywtLi8wMTIzNDU2Nzg5Ojs8PTs8PEFCPDw8PEdISUo8PE1OT1lvc1ZlcnNpb25e
+	dGltZVpvbmVPZmZzZXRYYXBwQnVpbGRfEBVsaXZlVXBkYXRlUGFja2FnZUhhc2haYXBw
+	VmVyc2lvbl8QEXdyYXBwZXJTZGtWZXJzaW9uW2NhcnJpZXJOYW1lV3Nka05hbWVWbG9j
+	YWxlXxAXbGl2ZVVwZGF0ZURlcGxveW1lbnRLZXleY2FycmllckNvdW50cnlab3NBcGlM
+	ZXZlbF53cmFwcGVyU2RrTmFtZVdvZW1OYW1lWnNka1ZlcnNpb25cYXBwTmFtZXNwYWNl
+	VW1vZGVsXxAVd3JhcHBlclJ1bnRpbWVWZXJzaW9uXxAWbGl2ZVVwZGF0ZVJlbGVhc2VM
+	YWJlbFpzY3JlZW5TaXplVm9zTmFtZVdvc0J1aWxkgAuADoAQgACAEoAQgACAAIAGgA2A
+	AIAAgACAAIAJgAeAEYAIgACAAIAPgAqADF8QD2FwcGNlbnRlci5tYWNvc1U0LjAuMV5N
+	YWNCb29rQWlyMTAsMVVBcHBsZVVtYWNPU1YxMS4zLjFWMjBFMjQxVWVuX1VTE///////
+	//8QWDE0NDB4OTAwVDIuMTJfEBVjb20uRGFuUHJpc3R1cG92LkZvcmvSHR5dXlpNU0FD
+	RGV2aWNlo19gIVpNU0FDRGV2aWNlXk1TQUNXcmFwcGVyU2Rr0h0eYmNfEBVNU0FDRGV2
+	aWNlSGlzdG9yeUluZm+jZGUhXxAVTVNBQ0RldmljZUhpc3RvcnlJbmZvXxAPTVNBQ0hp
+	c3RvcnlJbmZv0h0eZ2heTlNNdXRhYmxlQXJyYXmjZ2khV05TQXJyYXkACAARABoAJAAp
+	ADIANwBJAEwAUQBTAGsAcQB2AIEAiACKAIwAjgCVAKIArACuALAAsgC3AL8AyADKAM8A
+	2gDjAOoA7QD2AScBMQFAAUkBYQFsAYABjAGUAZsBtQHEAc8B3gHmAfEB/gIEAhwCNQJA
+	AkcCTwJRAlMCVQJXAlkCWwJdAl8CYQJjAmUCZwJpAmsCbQJvAnECcwJ1AncCeQJ7An0C
+	jwKVAqQCqgKwArcCvgLEAs0C1gLbAvMC+AMDAwcDEgMhAyYDPgNCA1oDbANxA4ADhAAA
+	AAAAAAIBAAAAAAAAAGoAAAAAAAAAAAAAAAAAAAOM
+	</data>
+	<key>MSAppCenterSessionIdHistory</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
+	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBw4rp/NDpPoAE0h0eHyBaJGNsYXNzbmFt
+	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
+	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
+	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
+	SQBMAFEAUwBbAGEAZgBxAHgAegB8AH4AhQCSAJ8AoQCjAKUAqgCyALsAvQDCAM0A1gDd
+	AOAA6QDuAQcBCwEkATYBOwFKAU4AAAAAAAACAQAAAAAAAAArAAAAAAAAAAAAAAAAAAAB
+	Vg==
+	</data>
+	<key>MSAppCenterUserIdHistory</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
+	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlZdXNlcklk
+	S2V5gAOAAIAF0hkOGhtXTlMudGltZSNBw4rp/NEtCoAE0h0eHyBaJGNsYXNzbmFtZVgk
+	Y2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFU1TQUNVc2VySWRIaXN0b3J5
+	SW5mb6MlJiFfEBVNU0FDVXNlcklkSGlzdG9yeUluZm9fEA9NU0FDSGlzdG9yeUluZm/S
+	HR4oKV5OU011dGFibGVBcnJheaMoKiFXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABR
+	AFMAWwBhAGYAcQB4AHoAfAB+AIUAkgCcAJ4AoACiAKcArwC4ALoAvwDKANMA2gDdAOYA
+	6wEDAQcBHwExATYBRQFJAAAAAAAAAgEAAAAAAAAAKwAAAAAAAAAAAAAAAAAAAVE=
+	</data>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<false/>
+	<key>NSOutlineView Items Sidebar_sagewell</key>
+	<array>
+		<string>Branches &gt; feature</string>
+		<string>Branches</string>
+		<string>Stashes</string>
+	</array>
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<true/>
+	<key>NSSplitView Subview Frames CommitSheet_SidebarSplit</key>
+	<array>
+		<string>0.000000, 0.000000, 364.000000, 747.000000, NO, NO</string>
+		<string>365.000000, 0.000000, 818.000000, 747.000000, NO, NO</string>
+	</array>
+	<key>NSSplitView Subview Frames RepositoryController_ContentSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 1183.000000, 546.000000, NO, NO</string>
+		<string>0.000000, 547.000000, 1183.000000, 200.000000, NO, NO</string>
+	</array>
+	<key>NSSplitView Subview Frames RepositoryController_SidebarSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 208.000000, 799.000000, NO, NO</string>
+		<string>209.000000, 0.000000, 1183.000000, 799.000000, NO, NO</string>
+	</array>
+	<key>NSSplitView Subview Frames RevisionDetails_ChangesSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 323.000000, 879.000000, NO, NO</string>
+		<string>324.000000, 0.000000, 942.000000, 879.000000, NO, NO</string>
+	</array>
+	<key>NSSplitView Subview Frames StageFileViewController_SplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 364.000000, 412.500000, NO, NO</string>
+		<string>0.000000, 413.500000, 364.000000, 312.500000, NO, NO</string>
+	</array>
+	<key>NSToolbar Configuration 24452ED6-13D2-4CDE-AD62-2D26B61D3241</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSToolbar Configuration PreferencesMainToolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame ForkWindow</key>
+	<string>52 34 1392 799 0 0 1440 875 </string>
+	<key>NSWindow Frame PreferencesWindowFrameAutoSaveName</key>
+	<string>1257 848 443 224 0 0 3008 1228 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>703 740 400 135 0 0 1440 875 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>1223 622 620 398 0 0 3008 1228 </string>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2021-10-12T14:32:26Z</date>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>218204831</integer>
+	<key>SUUpdateRelaunchingMarker</key>
+	<false/>
 	<key>defaultSourceFolder</key>
-	<string>/Users/wilhall/workspace</string>
+	<string>/Users/wilhall</string>
 	<key>deleteStashAfterApply</key>
 	<false/>
 	<key>enabledTabsOnFirstRun</key>
 	<true/>
-	<key>fileListMode</key>
-	<integer>0</integer>
-	<key>pullSheetRebase</key>
-	<false/>
-	<key>pullSheetStashAndReapply</key>
-	<false/>
-	<key>pushSheetPushAllTags</key>
+	<key>expandedRepositoryManagerItems</key>
+	<array>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>title</key>
+			<string>Services</string>
+		</dict>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>title</key>
+			<string>Recent</string>
+		</dict>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>title</key>
+			<string>Repositories</string>
+		</dict>
+	</array>
+	<key>gitInstanceType</key>
+	<integer>1</integer>
+	<key>migratedToFork2_12</key>
 	<true/>
+	<key>migratedToFork2_4</key>
+	<true/>
+	<key>migratedToMacOs111</key>
+	<true/>
+	<key>migratedToNewRepositoryManager</key>
+	<true/>
+	<key>pushSheetPushAllTags</key>
+	<false/>
 </dict>
 </plist>

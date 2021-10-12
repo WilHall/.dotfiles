@@ -2,10 +2,98 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSStatusItem Visible Item-0</key>
+	<false/>
+	<key>NSStatusItem Visible TupleStatusBarItem</key>
 	<true/>
+	<key>NSWindow Frame webcamFrame</key>
+	<string>1173 608 267 267 0 0 1440 875 </string>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUFeedURL</key>
+	<string>https://d32ifkf9k9ezcg.cloudfront.net/production/sparkle/appcast.xml</string>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2021-10-12T16:39:22Z</date>
+	<key>SUUpdateRelaunchingMarker</key>
+	<false/>
+	<key>analyticsProfile</key>
+	<dict>
+		<key>email</key>
+		<string>wil@wilhall.com</string>
+		<key>firstName</key>
+		<string>Wil</string>
+		<key>id</key>
+		<integer>1598</integer>
+		<key>isGuest</key>
+		<true/>
+		<key>isPaid</key>
+		<false/>
+		<key>lastName</key>
+		<string>Hall</string>
+		<key>subscriptionStatus</key>
+		<string>active</string>
+		<key>teamID</key>
+		<integer>1244</integer>
+		<key>teamName</key>
+		<string>Tuple Guests</string>
+		<key>teamOwnerEmail</key>
+		<string>joel+guest@tuple.app</string>
+	</dict>
+	<key>annotationMode</key>
+	<string>paint</string>
+	<key>audioDeviceManager</key>
+	<dict>
+		<key>preferredInputDevice</key>
+		<dict>
+			<key>name</key>
+			<string>US-2x2</string>
+			<key>uid</key>
+			<string>AppleUSBAudioEngine:TEAC Corporation:US-2x2:1113000:1,2</string>
+		</dict>
+		<key>preferredOutputDevice</key>
+		<dict>
+			<key>name</key>
+			<string>US-2x2</string>
+			<key>uid</key>
+			<string>AppleUSBAudioEngine:TEAC Corporation:US-2x2:1113000:1,2</string>
+		</dict>
+	</dict>
+	<key>currentUserEmail</key>
+	<string>wil@wilhall.com</string>
+	<key>cursorMode</key>
+	<string>multi</string>
+	<key>enableNewSignaler</key>
+	<false/>
+	<key>hasPromptedForCamera</key>
+	<true/>
+	<key>hasPromptedForMicrophone</key>
+	<true/>
+	<key>hasPromptedForScreenrecording</key>
+	<true/>
+	<key>hasShownPopover</key>
+	<true/>
+	<key>keyboardMode</key>
+	<string>off</string>
+	<key>keyboardOffNotification</key>
+	<true/>
+	<key>lastPreferencePane</key>
+	<integer>1</integer>
+	<key>lastUserSignalMessageDate</key>
+	<dict>
+		<key>clientID</key>
+		<string>1598</string>
+		<key>date</key>
+		<date>2021-10-08T18:48:17Z</date>
+	</dict>
 	<key>seenCameraPreview</key>
 	<true/>
-	<key>transmitResolutionNew</key>
-	<integer>1</integer>
+	<key>transmitResolution</key>
+	<string>high</string>
+	<key>videoDeviceID</key>
+	<string>EAB7A68FEC2B4487AADFD8A91C1CB782</string>
 </dict>
 </plist>

@@ -13,7 +13,90 @@
 	<key>FavoriteColors</key>
 	<array/>
 	<key>HistoryColors</key>
-	<array/>
+	<array>
+		<string>CCCCCCFF</string>
+		<string>48094DFF</string>
+		<string>0954BDFF</string>
+		<string>DCF6F1FF</string>
+		<string>2DB59BFF</string>
+		<string>F2B966FF</string>
+		<string>646464FF</string>
+		<string>F7F7F7FF</string>
+		<string>E0E0E0FF</string>
+		<string>38A9D1FF</string>
+		<string>0954BDFF</string>
+		<string>F1F7F9FF</string>
+		<string>FFFFFFFF</string>
+		<string>F4F8FFFF</string>
+		<string>FFFFFFFF</string>
+		<string>C2EDFFFF</string>
+		<string>212121FF</string>
+		<string>333333FF</string>
+		<string>61AFEFFF</string>
+		<string>042793FF</string>
+		<string>D9D9D9FF</string>
+		<string>F4F8FFFF</string>
+		<string>042793FF</string>
+		<string>D7D7D7FF</string>
+		<string>001351FF</string>
+		<string>F4F8FFFF</string>
+		<string>001351FF</string>
+		<string>042793FF</string>
+		<string>001351FF</string>
+		<string>F4F8FFFF</string>
+		<string>FFFFFFFF</string>
+		<string>667297FF</string>
+		<string>2DB59BFF</string>
+		<string>0954BDFF</string>
+		<string>001351FF</string>
+		<string>667297FF</string>
+		<string>2DB59BFF</string>
+		<string>0954BDFF</string>
+		<string>001351FF</string>
+		<string>667297FF</string>
+		<string>7171A2FF</string>
+		<string>0069B6FF</string>
+		<string>635EA4FF</string>
+		<string>9A96C8FF</string>
+		<string>EE3E44FF</string>
+		<string>1EA1F1FF</string>
+		<string>0B66C2FF</string>
+		<string>027DB5FF</string>
+		<string>12669AFF</string>
+		<string>000000FF</string>
+		<string>05407CFF</string>
+		<string>027DB5FF</string>
+		<string>9797D7FF</string>
+		<string>2563EBFF</string>
+		<string>ECFDF5FF</string>
+		<string>085F46FF</string>
+		<string>CE4A0DFF</string>
+		<string>194D60FF</string>
+		<string>CE4A0DFF</string>
+		<string>646464FF</string>
+		<string>1E2A21FF</string>
+		<string>FFFFFFFF</string>
+		<string>194D60FF</string>
+		<string>646464FF</string>
+	</array>
+	<key>NSColorPanelMode</key>
+	<string>6</string>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 480.000000, 318.000000, NO, NO</string>
+		<string>0.000000, 319.000000, 480.000000, 48.000000, NO, NO</string>
+	</array>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>661</real>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>48 81 480 347 0 0 1440 875 </string>
+	<key>Paddle-ColorSnapper2-499167-SD</key>
+	<string>fa48e501eecb0849a55335cbcf23962026337e8dd3ee5944c8920e8a47bdcc00</string>
 	<key>PickColorShortCut</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -28,13 +111,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2021-05-22T13:55:03Z</date>
+	<date>2021-10-12T12:04:50Z</date>
+	<key>SULastProfileSubmissionDate</key>
+	<date>2021-10-08T00:43:44Z</date>
 	<key>SUScheduledCheckInterval</key>
 	<real>43200</real>
 	<key>SUSendProfileInfo</key>
 	<true/>
 	<key>captureValue</key>
-	<real>23</real>
+	<real>27.848167419433594</real>
 	<key>codeStyle</key>
 	<dict>
 		<key>css</key>
@@ -82,6 +167,8 @@
 	<integer>1</integer>
 	<key>exportColorObject</key>
 	<false/>
+	<key>exportFormat</key>
+	<string>Generic Hex</string>
 	<key>magnificationValue</key>
 	<real>4</real>
 	<key>openFormatsAfterPick</key>

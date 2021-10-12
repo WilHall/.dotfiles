@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AKLastEmailListRequestDateKey</key>
+	<date>2021-10-12T16:22:14Z</date>
+	<key>AKLastIDMSEnvironment</key>
+	<integer>0</integer>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>4</integer>
 	<key>AppleKeyboardUIMode</key>
@@ -10,6 +14,10 @@
 	<array>
 		<string>en-US</string>
 	</array>
+	<key>AppleLanguagesDidMigrate</key>
+	<string>11.3.1</string>
+	<key>AppleLanguagesSchemaVersion</key>
+	<integer>2000</integer>
 	<key>AppleLocale</key>
 	<string>en_US</string>
 	<key>AppleMeasurementUnits</key>
@@ -28,18 +36,48 @@
 	<string>Fahrenheit</string>
 	<key>AppleWindowTabbingMode</key>
 	<string>always</string>
+	<key>CGDisableCursorLocationMagnification</key>
+	<true/>
 	<key>NSAutomaticCapitalizationEnabled</key>
-	<true/>
+	<false/>
 	<key>NSAutomaticDashSubstitutionEnabled</key>
-	<true/>
+	<false/>
 	<key>NSAutomaticPeriodSubstitutionEnabled</key>
-	<true/>
+	<false/>
 	<key>NSAutomaticQuoteSubstitutionEnabled</key>
-	<true/>
+	<false/>
 	<key>NSAutomaticSpellingCorrectionEnabled</key>
 	<true/>
 	<key>NSAutomaticTextCompletionEnabled</key>
 	<true/>
+	<key>NSLinguisticDataAssetsRequestLastInterval</key>
+	<real>86400</real>
+	<key>NSLinguisticDataAssetsRequestTime</key>
+	<date>2021-10-12T12:07:14Z</date>
+	<key>NSLinguisticDataAssetsRequested</key>
+	<array>
+		<string>en</string>
+		<string>nb</string>
+		<string>nn</string>
+		<string>nl</string>
+		<string>de</string>
+	</array>
+	<key>NSLinguisticDataAssetsRequestedByChecker</key>
+	<array>
+		<string>en</string>
+		<string>nb</string>
+		<string>nn</string>
+		<string>nl</string>
+		<string>de</string>
+	</array>
+	<key>NSNavRecentPlaces</key>
+	<array>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Sagewell/invoices</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Modo Labs/invoices</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Business Cards</string>
+		<string>~/Downloads/RE650_V1_20201112</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Sagewell</string>
+	</array>
 	<key>NSPreferredWebServices</key>
 	<dict>
 		<key>NSWebServicesProviderWebSearch</key>
@@ -50,19 +88,56 @@
 			<string>com.google.www</string>
 		</dict>
 	</dict>
-	<key>NSTableViewDefaultSizeMode</key>
-	<integer>2</integer>
-	<key>com.apple.mouse.scaling</key>
-	<real>1</real>
+	<key>NSUserDictionaryReplacementItems</key>
+	<array>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:p</string>
+			<key>with</key>
+			<string>😝</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>&lt;3</string>
+			<key>with</key>
+			<string>💜</string>
+		</dict>
+	</array>
 	<key>WebAutomaticSpellingCorrectionEnabled</key>
 	<true/>
 	<key>com.apple.finder.SyncExtensions</key>
 	<dict>
 		<key>collaborationMap</key>
-		<dict/>
+		<dict>
+			<key>com.adobe.accmac.ACCFinderSync</key>
+			<false/>
+			<key>com.getdropbox.dropbox.garcon</key>
+			<false/>
+		</dict>
 		<key>dirMap</key>
-		<dict/>
+		<dict>
+			<key>com.adobe.accmac.ACCFinderSync</key>
+			<array>
+				<string>file:///Users/wilhall/Creative%20Cloud%20Files/</string>
+			</array>
+			<key>com.getdropbox.dropbox.garcon</key>
+			<array>
+				<string>file:///Users/wilhall/Music/</string>
+				<string>file:///Users/wilhall/Movies/</string>
+				<string>file:///Users/wilhall/Downloads/</string>
+				<string>file:///Users/wilhall/Dropbox/</string>
+				<string>file:///Users/wilhall/Pictures/</string>
+				<string>file:///Users/wilhall/Documents/</string>
+				<string>file:///Users/wilhall/Desktop/</string>
+			</array>
+		</dict>
 	</dict>
+	<key>com.apple.mouse.scaling</key>
+	<real>2.5</real>
 	<key>com.apple.sound.beep.feedback</key>
 	<integer>1</integer>
 	<key>com.apple.sound.beep.flash</key>

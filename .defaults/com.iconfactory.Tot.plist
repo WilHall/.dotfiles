@@ -7,6 +7,8 @@
 		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
 		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>478</real>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
@@ -14,6 +16,10 @@
 	</dict>
 	<key>NSWindow Frame MainWindowController</key>
 	<string>596 475 500 400 0 0 1440 875 </string>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>73 81 224 278 0 0 1440 875 </string>
+	<key>detachedWindow</key>
+	<true/>
 	<key>detachedWindowFrame</key>
 	<string>{{596, 475}, {500, 400}}</string>
 	<key>hasRun</key>

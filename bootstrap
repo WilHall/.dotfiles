@@ -36,13 +36,9 @@ install_homebrew() {
 
 install_homebrew_bundle() { 
   if [[ $SETUP_HOMEBREW == true ]]; then
-    brew tap homebrew/bundle
-    brew bundle
+    /opt/homebrew/bin/brew tap homebrew/bundle
+    /opt/homebrew/bin/brew bundle
   fi
-}
-
-install_gemfile_bundle() {
-  bundle install --system
 }
 
 symlink_dotfiles() {
@@ -50,8 +46,12 @@ symlink_dotfiles() {
   mkdir -p $HOME/.config && ln -sfn $HOME/.dotfiles/_config/* $HOME/.config
 }
 
+copy_etc_paths() {
+  sudo cp $HOME/.dotfiles/_etc_paths/* /etc/paths.d
+}
+
 copy_ssh_settings() {
-  mkdir -p $HOME/.ssh && rsync -u $HOME/.dotfiles/_ssh $HOME/.ssh
+  mkdir -p $HOME/.ssh && rsync -u $HOME/.dotfiles/_ssh/* $HOME/.ssh
 }
 
 make_workspace() {
@@ -60,11 +60,11 @@ make_workspace() {
 
 make_user_bin() {
   mkdir -p $HOME/bin
-  rsync -u $HOME/.dotfiles/bin $HOME/bin
+  rsync -u $HOME/.dotfiles/bin/* $HOME/bin
 }
 
 restore_user_defaults() {
-  $HOME/.dotfiles/applications/dx --restore-all
+  $HOME/.dotfiles/dx --restore-all
 }
 
 setup_vim() {
@@ -80,7 +80,17 @@ install_fonts() {
 }
 
 configure_sublime_merge() {
-  ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge
+  if [ ! -L "/usr/local/bin/smerge" ]; then
+    sudo ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge
+  fi
+}
+
+configure_asdf() {
+  asdf plugin-add yarn
+  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+  asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+  # This may need to be run manually via a Rosetta Terminal
+  cd $HOME && export optflags="-w"; arch -x86_64 asdf install
 }
 
 install_athame() {
@@ -90,12 +100,14 @@ install_athame() {
 }
 
 install_tpm() {
-  git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+  if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+    git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+  fi
 }
 
 bootstrap() {
   make_workspace
-  make_user_bin
+  copy_etc_paths
   copy_ssh_settings
   install_fonts
   create_auth_dotfile
@@ -103,11 +115,12 @@ bootstrap() {
   install_xcode_clt
   install_homebrew
   install_homebrew_bundle
+  make_user_bin
   set_default_shell
-  install_gemfile_bundle
   restore_user_defaults
   setup_vim
   configure_sublime_merge
+  configure_asdf
   #install_athame
   install_tpm
 }

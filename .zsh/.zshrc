@@ -19,7 +19,6 @@ antigen bundle fzf
 antigen bundle git
 antigen bundle heroku
 antigen bundle zsh-autosuggestions
-antigen bundle zsh_reload
 antigen bundle colored-man-pages
 antigen bundle dircycle
 antigen bundle zsh-users/zsh-completions

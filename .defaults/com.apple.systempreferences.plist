@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AttentionPrefBundleIDs</key>
+	<dict>
+		<key>com.apple.preferences.softwareupdate</key>
+		<integer>1</integer>
+	</dict>
+	<key>DefaultExposeTab</key>
+	<string>ExposeTab</string>
+	<key>DidShowPrefBundleIDs</key>
+	<array>
+		<string>com.apple.preferences.softwareupdate</string>
+	</array>
+	<key>DisableAutoLoginButtonIsHidden</key>
+	<true/>
+	<key>NSFullScreenMenuItemEverywhere</key>
+	<false/>
+	<key>NSNavLastRootDirectory</key>
+	<string>/Applications</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{800, 448}</string>
+	<key>NSOutlineView Items DSKSourceOfPicturesOutlineView</key>
+	<array>
+		<string>DSKAppleRootSource</string>
+		<string>DSKUserFoldersRootSource</string>
+	</array>
+	<key>NSQuitAlwaysKeepsWindows</key>
+	<false/>
+	<key>NSSplitView Subview Frames keyboard.shortcuts.splitview</key>
+	<array>
+		<string>0.000000, 0.000000, 170.500000, 239.000000, NO, NO</string>
+		<string>179.500000, 0.000000, 405.500000, 239.000000, NO, NO</string>
+	</array>
+	<key>NSTableView Columns v3 LoginItemsColumn2</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABrxAUCwwVICEiIyQlJiw2NzhC
+	Q0ROT1BVJG51bGzSDQ4PFFpOUy5vYmplY3RzViRjbGFzc6QQERITgAKACoANgBCAE9MW
+	DQ4XGx9XTlMua2V5c6MYGRqAA4AEgAWjHB0egAaAB4AIgAlaSWRlbnRpZmllclVXaWR0
+	aFZIaWRkZW5USXRlbSNAaAAAAAAAAAjSJygpKlokY2xhc3NuYW1lWCRjbGFzc2VzXE5T
+	RGljdGlvbmFyeaIpK1hOU09iamVjdNMWDQ4tMR+jGBkagAOABIAFozIzHoALgAyACIAJ
+	WExvY2F0aW9uI0BegAAAAAAA0xYNDjk9H6MYGRqAA4AEgAWjPj8egA6AD4AIgAlUSGlk
+	ZSNARAAAAAAAANMWDQ5FSR+jGBkagAOABIAFo0pLHoARgBKACIAJV3dhcm5pbmcjQDQA
+	AAAAAADSJyhRUl5OU011dGFibGVBcnJheaNRUytXTlNBcnJheQAIABEAGgAkACkAMgA3
+	AEkATABSAFQAawBxAHYAgQCIAI0AjwCRAJMAlQCXAJ4ApgCqAKwArgCwALQAtgC4ALoA
+	vADHAM0A1ADZAOIA4wDoAPMA/AEJAQwBFQEcASABIgEkASYBKgEsAS4BMAEyATsBRAFL
+	AU8BUQFTAVUBWQFbAV0BXwFhAWYBbwF2AXoBfAF+AYABhAGGAYgBigGMAZQBnQGiAbEB
+	tQAAAAAAAAIBAAAAAAAAAFQAAAAAAAAAAAAAAAAAAAG9
+	</data>
+	<key>NSTableView Sort Ordering v2 LoginItemsColumn2</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABowsMEVUkbnVsbNINDg8QWk5T
+	Lm9iamVjdHNWJGNsYXNzoIAC0hITFBVaJGNsYXNzbmFtZVgkY2xhc3Nlc15OU011dGFi
+	bGVBcnJheaMUFhdXTlNBcnJheVhOU09iamVjdAgRGiQpMjdJTFJUWF5jbnV2eH2IkaCk
+	rAAAAAAAAAEBAAAAAAAAABgAAAAAAAAAAAAAAAAAAAC1
+	</data>
+	<key>NSTableView Supports v2 LoginItemsColumn2</key>
+	<true/>
+	<key>NSWindow Frame Main Window Frame SystemPreferencesApp 8.0</key>
+	<string>46 260 668 544 0 0 1440 875 </string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>609 270 800 476 0 0 1440 875 </string>
+	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
+	<string>692 407 425 137 0 0 1440 875 </string>
+	<key>SecurityPrefTab</key>
+	<string>Privacy</string>
+	<key>SoundTab</key>
+	<string>input</string>
+	<key>ThirdPartyCount</key>
+	<integer>1</integer>
+	<key>com.apple.PreferenceSync.ExcludeSyncKeys</key>
+	<array>
+		<string>Main Window Frame SystemPreferencesApp 8.0</string>
+		<string>com.apple.preference.keyboard.lastselectedtab</string>
+	</array>
+	<key>com.apple.SecurityPref.Privacy.LastSourceSelected</key>
+	<integer>12</integer>
+	<key>com.apple.dtandsspref.lastselectedtab</key>
+	<string>com.apple.preference.desktopscreeneffect.desktop</string>
+	<key>com.apple.preference.keyboard.lastselectedtab</key>
+	<string>com.apple.IntlTexts</string>
+	<key>com.apple.preferences.accounts.outline.usersparent</key>
+	<true/>
+	<key>com.apple.preferences.sharing.selectedservice</key>
+	<integer>0</integer>
+	<key>kAOSUIProfilePictureCropRect</key>
+	<string>{{0, 0}, {389, 389}}</string>
+	<key>trackpad.lastselectedtab</key>
+	<integer>2</integer>
+</dict>
+</plist>

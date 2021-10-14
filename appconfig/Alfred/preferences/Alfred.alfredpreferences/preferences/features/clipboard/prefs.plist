@@ -13,6 +13,8 @@
 		<key>string</key>
 		<string>C</string>
 	</dict>
+	<key>limit</key>
+	<integer>1</integer>
 	<key>persistForFiles</key>
 	<integer>1</integer>
 	<key>persistForImages</key>

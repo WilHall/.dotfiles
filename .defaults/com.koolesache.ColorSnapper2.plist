@@ -14,6 +14,8 @@
 	<array/>
 	<key>HistoryColors</key>
 	<array>
+		<string>F5F0EFFF</string>
+		<string>F5F0F1FF</string>
 		<string>CCCCCCFF</string>
 		<string>48094DFF</string>
 		<string>0954BDFF</string>
@@ -87,7 +89,7 @@
 		<string>0.000000, 319.000000, 480.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>661</real>
+	<real>393</real>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
@@ -96,7 +98,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>48 81 480 347 0 0 1440 875 </string>
 	<key>Paddle-ColorSnapper2-499167-SD</key>
-	<string>fa48e501eecb0849a55335cbcf23962026337e8dd3ee5944c8920e8a47bdcc00</string>
+	<string>9a4ae540691e6298c95950d237a98393fd00d564e7d35b353906ea9b9f2e472b</string>
 	<key>PickColorShortCut</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -111,7 +113,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2021-10-12T12:04:50Z</date>
+	<date>2021-10-14T01:02:17Z</date>
 	<key>SULastProfileSubmissionDate</key>
 	<date>2021-10-08T00:43:44Z</date>
 	<key>SUScheduledCheckInterval</key>

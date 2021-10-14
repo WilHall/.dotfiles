@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AppleActionOnDoubleClick</key>
-	<string>Minimize</string>
+	<key>AKLastEmailListRequestDateKey</key>
+	<date>2021-10-13T21:25:31Z</date>
+	<key>AKLastIDMSEnvironment</key>
+	<integer>0</integer>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>4</integer>
 	<key>AppleKeyboardUIMode</key>
@@ -12,6 +14,10 @@
 	<array>
 		<string>en-US</string>
 	</array>
+	<key>AppleLanguagesDidMigrate</key>
+	<string>11.3.1</string>
+	<key>AppleLanguagesSchemaVersion</key>
+	<integer>2000</integer>
 	<key>AppleLocale</key>
 	<string>en_US</string>
 	<key>AppleMeasurementUnits</key>
@@ -25,23 +31,59 @@
 	<key>AppleShowAllExtensions</key>
 	<true/>
 	<key>AppleShowScrollBars</key>
-	<string>Automatic</string>
+	<string>Always</string>
 	<key>AppleTemperatureUnit</key>
 	<string>Fahrenheit</string>
+	<key>AppleWindowTabbingMode</key>
+	<string>always</string>
 	<key>CGDisableCursorLocationMagnification</key>
 	<true/>
+	<key>ContextMenuGesture</key>
+	<integer>1</integer>
+	<key>InitialKeyRepeat</key>
+	<integer>68</integer>
+	<key>KeyRepeat</key>
+	<integer>6</integer>
 	<key>NSAutomaticCapitalizationEnabled</key>
-	<true/>
+	<false/>
 	<key>NSAutomaticDashSubstitutionEnabled</key>
 	<false/>
 	<key>NSAutomaticPeriodSubstitutionEnabled</key>
-	<true/>
+	<false/>
 	<key>NSAutomaticQuoteSubstitutionEnabled</key>
 	<false/>
 	<key>NSAutomaticSpellingCorrectionEnabled</key>
-	<true/>
+	<false/>
 	<key>NSAutomaticTextCompletionEnabled</key>
 	<false/>
+	<key>NSLinguisticDataAssetsRequestLastInterval</key>
+	<real>86400</real>
+	<key>NSLinguisticDataAssetsRequestTime</key>
+	<date>2021-10-13T12:07:14Z</date>
+	<key>NSLinguisticDataAssetsRequested</key>
+	<array>
+		<string>en</string>
+		<string>nb</string>
+		<string>nn</string>
+		<string>nl</string>
+		<string>de</string>
+	</array>
+	<key>NSLinguisticDataAssetsRequestedByChecker</key>
+	<array>
+		<string>en</string>
+		<string>nb</string>
+		<string>nn</string>
+		<string>nl</string>
+		<string>de</string>
+	</array>
+	<key>NSNavRecentPlaces</key>
+	<array>
+		<string>~/Pictures/Screenshots</string>
+		<string>~/.dotfiles/appconfig/iTerm2</string>
+		<string>~/.dotfiles/appconfig/Alfred/preferences</string>
+		<string>~/.dotfiles/appconfig/Alfred</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Sagewell/invoices</string>
+	</array>
 	<key>NSPreferredWebServices</key>
 	<dict>
 		<key>NSWebServicesProviderWebSearch</key>
@@ -52,14 +94,48 @@
 			<string>com.google.www</string>
 		</dict>
 	</dict>
-	<key>NSTableViewDefaultSizeMode</key>
-	<integer>2</integer>
+	<key>NSUserDictionaryReplacementItems</key>
+	<array>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:p</string>
+			<key>with</key>
+			<string>😝</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>&lt;3</string>
+			<key>with</key>
+			<string>💜</string>
+		</dict>
+	</array>
 	<key>WebAutomaticSpellingCorrectionEnabled</key>
-	<true/>
-	<key>_HIHideMenuBar</key>
+	<false/>
+	<key>com.apple.finder.SyncExtensions</key>
+	<dict>
+		<key>collaborationMap</key>
+		<dict>
+			<key>com.adobe.accmac.ACCFinderSync</key>
+			<false/>
+		</dict>
+		<key>dirMap</key>
+		<dict>
+			<key>com.adobe.accmac.ACCFinderSync</key>
+			<array>
+				<string>file:///Users/wilhall/Creative%20Cloud%20Files/</string>
+			</array>
+		</dict>
+	</dict>
+	<key>com.apple.keyboard.fnState</key>
 	<false/>
 	<key>com.apple.mouse.scaling</key>
-	<real>1</real>
+	<real>2.5</real>
+	<key>com.apple.sound.beep.feedback</key>
+	<integer>1</integer>
 	<key>com.apple.sound.beep.flash</key>
 	<integer>0</integer>
 	<key>com.apple.springing.delay</key>
@@ -68,5 +144,7 @@
 	<true/>
 	<key>com.apple.trackpad.forceClick</key>
 	<true/>
+	<key>com.apple.trackpad.scaling</key>
+	<real>1</real>
 </dict>
 </plist>

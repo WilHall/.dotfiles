@@ -11,6 +11,7 @@ test/support/**/*
 yarn-error.json
 scratch/
 *.com
+*.zwc
 yalc.lock
 .yalc
 .npmrc

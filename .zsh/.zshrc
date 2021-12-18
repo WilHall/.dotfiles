@@ -13,7 +13,6 @@ source /opt/homebrew/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
-antigen bundle per-directory-history
 antigen bundle asdf
 antigen bundle fzf
 antigen bundle git

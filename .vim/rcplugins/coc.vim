@@ -10,6 +10,7 @@ let g:coc_global_extensions = [
   \ 'coc-yaml',
   \ 'coc-vimlsp',
   \ 'coc-svg',
+  \ 'coc-sourcekit',
   \ 'coc-actions',
   \ 'coc-lists',
   \ 'coc-json',

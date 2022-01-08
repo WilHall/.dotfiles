@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:$HOME/.local/bin:/usr/sbin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.local/bin:/opt/homebrew/bin:/usr/sbin:/usr/local/bin:$PATH"
 
 export KEYTIMEOUT=1
 export EDITOR='vim'

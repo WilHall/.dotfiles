@@ -20,6 +20,7 @@ antigen bundle heroku
 antigen bundle zsh-autosuggestions
 antigen bundle colored-man-pages
 antigen bundle dircycle
+antigen bundle tymm/zsh-directory-history
 antigen bundle zsh-users/zsh-completions
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle mafredri/zsh-async
@@ -30,7 +31,11 @@ for zsh_source in $HOME/.zsh/configs/*.zsh; do
   source $zsh_source
 done
 
+bindkey '\e[A' directory-history-search-backward
+bindkey '\e[B' directory-history-search-forward
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 
-ensure_tmux_is_running
+export ASDF_DIR='/opt/homebrew/opt/asdf/libexec'
+
+# ensure_tmux_is_running

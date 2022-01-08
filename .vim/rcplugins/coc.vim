@@ -4,13 +4,11 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-tsserver',
   \ 'coc-tailwindcss',
-  \ 'coc-elixir',
   \ 'coc-svelte',
   \ 'coc-html',
   \ 'coc-yaml',
   \ 'coc-vimlsp',
   \ 'coc-svg',
-  \ 'coc-sourcekit',
   \ 'coc-actions',
   \ 'coc-lists',
   \ 'coc-json',
@@ -18,7 +16,6 @@ let g:coc_global_extensions = [
   \ 'coc-highlight',
   \ 'coc-solargraph',
   \ 'coc-styled-components',
-  \ 'coc-phpls'
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')

@@ -27,15 +27,12 @@
     whatremoved = log --diff-filter=D
     whatchanged = log --diff-filter=ADM
     filelist = diff-tree --no-commit-id --name-status -r
-    ctags = !.git/hooks/ctags
     mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
     root = rev-parse --show-toplevel
 [commit]
     gpgsign = true
 [gpg]
     program = /usr/local/MacGPG2/bin/gpg2
-[init]
-    templatedir = ~/.git_template
 [tag]
     forceSignAnnotated = true
 [duet "env"]

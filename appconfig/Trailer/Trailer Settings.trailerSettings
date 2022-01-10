@@ -268,7 +268,7 @@
 					<key>itemHidingPolicy</key>
 					<integer>0</integer>
 					<key>lastScannedIssueEventId</key>
-					<integer>0</integer>
+					<integer>5859725564</integer>
 					<key>manuallyAdded</key>
 					<integer>1</integer>
 					<key>nodeId</key>
@@ -276,9 +276,9 @@
 					<key>ownerNodeId</key>
 					<string>MDEyOk9yZ2FuaXphdGlvbjc4OTQwMjE3</string>
 					<key>postSyncAction</key>
-					<integer>3</integer>
+					<integer>0</integer>
 					<key>updatedAt</key>
-					<date>2022-01-07T12:56:17Z</date>
+					<date>2022-01-07T17:05:17Z</date>
 					<key>webUrl</key>
 					<string>https://github.com/sagewell/sagewell</string>
 				</dict>
@@ -330,7 +330,7 @@
 					<key>inaccessible</key>
 					<integer>0</integer>
 					<key>lastScannedIssueEventId</key>
-					<integer>0</integer>
+					<integer>5859022819</integer>
 					<key>manuallyAdded</key>
 					<integer>1</integer>
 					<key>nodeId</key>
@@ -340,7 +340,7 @@
 					<key>postSyncAction</key>
 					<integer>0</integer>
 					<key>updatedAt</key>
-					<date>2022-01-07T03:49:24Z</date>
+					<date>2022-01-07T17:19:32Z</date>
 					<key>webUrl</key>
 					<string>https://github.com/sagewell/sagewell-ios</string>
 				</dict>
@@ -371,7 +371,7 @@
 					<key>postSyncAction</key>
 					<integer>0</integer>
 					<key>updatedAt</key>
-					<date>2021-12-07T17:09:34Z</date>
+					<date>2021-12-07T17:09:38Z</date>
 					<key>webUrl</key>
 					<string>https://github.com/sagewell/sagewell-android</string>
 				</dict>
@@ -421,7 +421,7 @@
 	<key>INCLUDE_NUMBERS_IN_FILTER</key>
 	<true/>
 	<key>LAST_EXPORT_TIME</key>
-	<date>2022-01-07T16:24:49Z</date>
+	<date>2022-01-08T13:55:23Z</date>
 	<key>LAST_EXPORT_URL</key>
 	<string>file:///Users/wilhall/.dotfiles/appconfig/Trailer/Trailer%20Settings.trailerSettings</string>
 	<key>LAST_PREFS_TAB_SELECTED_OSX</key>
@@ -429,7 +429,7 @@
 	<key>LAST_RUN_VERSION_KEY</key>
 	<string>Version 1.7.6 (1584)</string>
 	<key>LAST_SUCCESSFUL_REFRESH</key>
-	<date>2022-01-07T13:16:07Z</date>
+	<date>2022-01-08T13:55:18Z</date>
 	<key>MAKE_STATUS_ITEMS_SELECTABLE</key>
 	<true/>
 	<key>MARK_PRS_AS_UNREAD_ON_NEW_COMMITS</key>

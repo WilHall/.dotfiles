@@ -24,10 +24,14 @@
 	<string>682A9F68-4FCF-4698-AB5F-90B4ED07E11C</string>
 	<key>DimBackgroundWindows</key>
 	<false/>
+	<key>DimOnlyText</key>
+	<true/>
 	<key>DisableAppNap</key>
 	<true/>
 	<key>DisableCustomBoxDrawing</key>
 	<true/>
+	<key>DisableFullscreenTransparency</key>
+	<false/>
 	<key>DisableWindowSizeSnap</key>
 	<false/>
 	<key>DisallowCopyEmptyString</key>
@@ -36,10 +40,14 @@
 	<true/>
 	<key>DoubleReportScrollWheel</key>
 	<true/>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>EnableDivisionView</key>
 	<false/>
 	<key>EnableRendezvous</key>
 	<false/>
+	<key>FlashTabBarInFullscreen</key>
+	<true/>
 	<key>FocusFollowsMouse</key>
 	<false/>
 	<key>GlobalKeyMap</key>
@@ -1027,7 +1035,7 @@
 			<key>Title Components</key>
 			<integer>512</integer>
 			<key>Transparency</key>
-			<real>0.026840101522842639</real>
+			<real>0.046637308969651153</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1100,7 +1108,7 @@
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>SeparateStatusBarsPerPane</key>
-	<false/>
+	<true/>
 	<key>SeparateWindowTitlePerTab</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
@@ -1113,9 +1121,13 @@
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.24172614532766987</real>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>TabStyleWithAutomaticOption</key>
+	<integer>5</integer>
+	<key>TerminalMargin</key>
 	<integer>5</integer>
 	<key>TmuxUnpauseAutomatically</key>
 	<true/>
@@ -1125,6 +1137,8 @@
 	<true/>
 	<key>UseAdaptiveFrameRate</key>
 	<true/>
+	<key>UseBorder</key>
+	<false/>
 	<key>UseTmuxStatusBar</key>
 	<true/>
 	<key>VisualIndicatorForEsc</key>

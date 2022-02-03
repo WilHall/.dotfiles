@@ -1063,7 +1063,7 @@
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenBookmark</key>
-	<true/>
+	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<true/>
 	<key>PasteTabToStringTabStopSize</key>

@@ -2,7 +2,7 @@ alias vim="nvim"
 alias vi="vim"
 alias cat="bat -A"
 alias ls="exa -F --group-directories-first"
-alias ll="exa -alh@ --git --group-directories-first"
+alias ll="exa -alh --git --group-directories-first"
 alias tree="exa -T"
 alias cd="z"
 

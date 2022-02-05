@@ -573,6 +573,17 @@
 			<key>yRelative</key>
 			<integer>177</integer>
 		</dict>
+		<key>Jumpshare_0x1.3d54e8bp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
+		</dict>
 		<key>Lightroom Installer_0x1.33491e98p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -585,6 +596,28 @@
 			<integer>177</integer>
 		</dict>
 		<key>Macintosh HD_0x1.1de448p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>65</integer>
+		</dict>
+		<key>Macintosh HD_0x1.3b014178p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>84</integer>
+		</dict>
+		<key>Macintosh HD_0x1.3cdf677p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
 			<integer>1</integer>
@@ -627,6 +660,17 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>177</integer>
+		</dict>
+		<key>Polypane 8.0.0-universal_0x1.3d40d24p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
 		</dict>
 		<key>Pop_0x1.32c4fdp+29</key>
 		<dict>
@@ -699,7 +743,7 @@
 	<key>FXICloudLoggedIn</key>
 	<true/>
 	<key>FXPreferencesWindow.Location</key>
-	<string>{{48, 485}, {377, 380}}</string>
+	<string>{{630, 246}, {377, 767}}</string>
 	<key>FXPreferredGroupBy</key>
 	<string>Name</string>
 	<key>FXPreferredSearchViewStyleVersion</key>
@@ -707,9 +751,172 @@
 	<key>FXPreferredViewStyle</key>
 	<string>Nlsv</string>
 	<key>FXQuickActionsConfigUpgradeLevel</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>FXRecentFolders</key>
-	<array/>
+	<array>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9va5wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAjAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAABEb3dubG9hZHMAAAAM
+			AAAAAQYAABAAAAAgAAAAMAAAAAgAAAAEAwAAhFwAAAAAAAAIAAAA
+			BAMAALjDAwAAAAAACAAAAAQDAADrwwMAAAAAAAwAAAABBgAAWAAA
+			AGgAAAB4AAAACAAAAAAEAABBw7AbAoAAABgAAAABAgAAAgAAAAAA
+			AAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAIAAAABAMAAAEAAAAA
+			AAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAA
+			TWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcOw
+			FBeAAAAkAAAAAQEAADI1QUM0MTk3LUNGNjItNDkzQi05Mzk1LThB
+			MEI3MzczREVCORgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+			AAAAAQAAAAEBAAAvAAAA2AAAAP7///8BAAAAAAAAABEAAAAEEAAA
+			RAAAAAAAAAAFEAAAiAAAAAAAAAAQEAAArAAAAAAAAABAEAAAnAAA
+			AAAAAAACIAAAgAEAAAAAAAAFIAAA8AAAAAAAAAAQIAAAAAEAAAAA
+			AAARIAAANAEAAAAAAAASIAAAFAEAAAAAAAATIAAAJAEAAAAAAAAg
+			IAAAYAEAAAAAAAAwIAAAzAAAAAAAAAABwAAA1AAAAAAAAAARwAAA
+			IAAAAAAAAAASwAAA5AAAAAAAAAAB0AAAzAAAAAAAAAAQ0AAABAAA
+			AAAAAAA=
+			</data>
+			<key>name</key>
+			<string>Downloads</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9va5gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAiAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwACAAAAAEBAABQaWN0dXJlcwwAAAAB
+			BgAAEAAAACAAAAAwAAAACAAAAAQDAACEXAAAAAAAAAgAAAAEAwAA
+			uMMDAAAAAAAIAAAABAMAALvDAwAAAAAADAAAAAEGAABUAAAAZAAA
+			AHQAAAAIAAAAAAQAAEHDsBsCgAAAGAAAAAECAAACAAAAAAAAAA8A
+			AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgAAAAEAwAAAQAAAAAAAAAE
+			AAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
+			bnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBw7AUF4AA
+			ACQAAAABAQAAMjVBQzQxOTctQ0Y2Mi00OTNCLTkzOTUtOEEwQjcz
+			NzNERUI5GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
+			AAAAAQEAAC8AAADYAAAA/v///wEAAAAAAAAAEQAAAAQQAABAAAAA
+			AAAAAAUQAACEAAAAAAAAABAQAACoAAAAAAAAAEAQAACYAAAAAAAA
+			AAIgAAB8AQAAAAAAAAUgAADsAAAAAAAAABAgAAD8AAAAAAAAABEg
+			AAAwAQAAAAAAABIgAAAQAQAAAAAAABMgAAAgAQAAAAAAACAgAABc
+			AQAAAAAAADAgAADIAAAAAAAAAAHAAADQAAAAAAAAABHAAAAgAAAA
+			AAAAABLAAADgAAAAAAAAAAHQAADIAAAAAAAAABDQAAAEAAAAAAAA
+			AA==
+			</data>
+			<key>name</key>
+			<string>Pictures</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9va1QDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAARAIAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAAB3b3Jrc3BhY2UAAAAI
+			AAAAAQEAAHNhZ2V3ZWxsAwAAAAEBAABhcHAACgAAAAEBAABqYXZh
+			c2NyaXB0AAAGAAAAAQEAAGltYWdlcwAAIAAAAAEGAAAQAAAAIAAA
+			ADAAAABEAAAARAAAAFQAAABgAAAAdAAAAAgAAAAEAwAAhFwAAAAA
+			AAAIAAAABAMAALjDAwAAAAAACAAAAAQDAAAxzRYAAAAAAAgAAAAE
+			AwAANM0WAAAAAAAIAAAABAMAAD3NFgAAAAAACAAAAAQDAACSzRYA
+			AAAAAAgAAAAEAwAA/tAWAAAAAAAIAAAABAMAAI/xFgAAAAAAIAAA
+			AAEGAACsAAAAvAAAAMwAAADcAAAA7AAAAPwAAAAMAQAAHAEAAAgA
+			AAAABAAAQcPEQn6AAAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAA
+			AAAAAAAAAAAAAAABBQAACAAAAAQDAAAGAAAAAAAAAAQAAAADAwAA
+			9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBI
+			RAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHDsBQXgAAAJAAAAAEB
+			AAAyNUFDNDE5Ny1DRjYyLTQ5M0ItOTM5NS04QTBCNzM3M0RFQjkY
+			AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
+			LwAAANgAAAD+////AQAAAAAAAAARAAAABBAAAIQAAAAAAAAABRAA
+			ACwBAAAAAAAAEBAAAGQBAAAAAAAAQBAAAFQBAAAAAAAAAiAAADgC
+			AAAAAAAABSAAAKgBAAAAAAAAECAAALgBAAAAAAAAESAAAOwBAAAA
+			AAAAEiAAAMwBAAAAAAAAEyAAANwBAAAAAAAAICAAABgCAAAAAAAA
+			MCAAAIQBAAAAAAAAAcAAAIwBAAAAAAAAEcAAACAAAAAAAAAAEsAA
+			AJwBAAAAAAAAAdAAAIQBAAAAAAAAENAAAAQAAAAAAAAA
+			</data>
+			<key>name</key>
+			<string>images</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9va/ACAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAA4AEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAAB3b3Jrc3BhY2UAAAAI
+			AAAAAQEAAHNhZ2V3ZWxsDAAAAAEBAABzYWdld2VsbC1pb3MUAAAA
+			AQYAABAAAAAgAAAAMAAAAEQAAABUAAAACAAAAAQDAACEXAAAAAAA
+			AAgAAAAEAwAAuMMDAAAAAAAIAAAABAMAADHNFgAAAAAACAAAAAQD
+			AAA0zRYAAAAAAAgAAAAEAwAAPs0WAAAAAAAUAAAAAQYAAIQAAACU
+			AAAApAAAALQAAADEAAAACAAAAAAEAABBw9VeyoAAABgAAAABAgAA
+			AgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAIAAAABAMA
+			AAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwA
+			AAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAA
+			BAAAQcOwFBeAAAAkAAAAAQEAADI1QUM0MTk3LUNGNjItNDkzQi05
+			Mzk1LThBMEI3MzczREVCORgAAAABAgAAgQAAAAEAAADvEwAAAQAA
+			AAAAAAAAAAAAAQAAAAEBAAAvAAAA2AAAAP7///8BAAAAAAAAABEA
+			AAAEEAAAaAAAAAAAAAAFEAAA1AAAAAAAAAAQEAAAAAEAAAAAAABA
+			EAAA8AAAAAAAAAACIAAA1AEAAAAAAAAFIAAARAEAAAAAAAAQIAAA
+			VAEAAAAAAAARIAAAiAEAAAAAAAASIAAAaAEAAAAAAAATIAAAeAEA
+			AAAAAAAgIAAAtAEAAAAAAAAwIAAAIAEAAAAAAAABwAAAKAEAAAAA
+			AAARwAAAIAAAAAAAAAASwAAAOAEAAAAAAAAB0AAAIAEAAAAAAAAQ
+			0AAABAAAAAAAAAA=
+			</data>
+			<key>name</key>
+			<string>sagewell-ios</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9va8QCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAtAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAAB3b3Jrc3BhY2UAAAAI
+			AAAAAQEAAHNhZ2V3ZWxsEAAAAAEGAAAQAAAAIAAAADAAAABEAAAA
+			CAAAAAQDAACEXAAAAAAAAAgAAAAEAwAAuMMDAAAAAAAIAAAABAMA
+			ADHNFgAAAAAACAAAAAQDAAA0zRYAAAAAABAAAAABBgAAbAAAAHwA
+			AACMAAAAnAAAAAgAAAAABAAAQcPVn4aAAAAYAAAAAQIAAAIAAAAA
+			AAAADwAAAAAAAAAAAAAAAAAAAAAAAAABBQAACAAAAAQDAAACAAAA
+			AAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
+			AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHD
+			sBQXgAAAJAAAAAEBAAAyNUFDNDE5Ny1DRjYyLTQ5M0ItOTM5NS04
+			QTBCNzM3M0RFQjkYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
+			AAAAAAEAAAABAQAALwAAANgAAAD+////AQAAAAAAAAARAAAABBAA
+			AFQAAAAAAAAABRAAAKwAAAAAAAAAEBAAANQAAAAAAAAAQBAAAMQA
+			AAAAAAAAAiAAAKgBAAAAAAAABSAAABgBAAAAAAAAECAAACgBAAAA
+			AAAAESAAAFwBAAAAAAAAEiAAADwBAAAAAAAAEyAAAEwBAAAAAAAA
+			ICAAAIgBAAAAAAAAMCAAAPQAAAAAAAAAAcAAAPwAAAAAAAAAEcAA
+			ACAAAAAAAAAAEsAAAAwBAAAAAAAAAdAAAPQAAAAAAAAAENAAAAQA
+			AAAAAAAA
+			</data>
+			<key>name</key>
+			<string>sagewell</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9vaxgDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAACAIAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAAB3b3Jrc3BhY2UAAAAI
+			AAAAAQEAAHNhZ2V3ZWxsDAAAAAEBAABzYWdld2VsbC1pb3MIAAAA
+			AQEAAFNhZ2V3ZWxsGAAAAAEGAAAQAAAAIAAAADAAAABEAAAAVAAA
+			AGgAAAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAC4wwMAAAAAAAgA
+			AAAEAwAAMc0WAAAAAAAIAAAABAMAADTNFgAAAAAACAAAAAQDAAA+
+			zRYAAAAAAAgAAAAEAwAAvc0WAAAAAAAYAAAAAQYAAJgAAACoAAAA
+			uAAAAMgAAADYAAAA6AAAAAgAAAAABAAAQcPViSSAAAAYAAAAAQIA
+			AAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAABBQAACAAAAAQD
+			AAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8M
+			AAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAA
+			AAQAAEHDsBQXgAAAJAAAAAEBAAAyNUFDNDE5Ny1DRjYyLTQ5M0It
+			OTM5NS04QTBCNzM3M0RFQjkYAAAAAQIAAIEAAAABAAAA7xMAAAEA
+			AAAAAAAAAAAAAAEAAAABAQAALwAAANgAAAD+////AQAAAAAAAAAR
+			AAAABBAAAHgAAAAAAAAABRAAAPgAAAAAAAAAEBAAACgBAAAAAAAA
+			QBAAABgBAAAAAAAAAiAAAPwBAAAAAAAABSAAAGwBAAAAAAAAECAA
+			AHwBAAAAAAAAESAAALABAAAAAAAAEiAAAJABAAAAAAAAEyAAAKAB
+			AAAAAAAAICAAANwBAAAAAAAAMCAAAEgBAAAAAAAAAcAAAFABAAAA
+			AAAAEcAAACAAAAAAAAAAEsAAAGABAAAAAAAAAdAAAEgBAAAAAAAA
+			ENAAAAQAAAAAAAAA
+			</data>
+			<key>name</key>
+			<string>Sagewell</string>
+		</dict>
+	</array>
+	<key>FXSidebarUpgradedSharedSearchToTwelve</key>
+	<true/>
 	<key>FXSidebarUpgradedToTenFourteen</key>
 	<true/>
 	<key>FXSidebarUpgradedToTenTen</key>
@@ -736,9 +943,10 @@
 		<string>Gray</string>
 	</array>
 	<key>GoToField</key>
-	<string>~/Library/Application Support/Google/Chrome</string>
+	<string>~/.dotfiles/</string>
 	<key>GoToFieldHistory</key>
 	<array>
+		<string>/Users/wilhall/.dotfiles</string>
 		<string>~/Library/Application Support/Google/Chrome/</string>
 		<string>~/Library/Caches/</string>
 		<string>~/.dotfiles/</string>
@@ -1087,7 +1295,7 @@
 		</dict>
 	</dict>
 	<key>LastTrashState</key>
-	<true/>
+	<false/>
 	<key>MeetingRoomViewSetting</key>
 	<dict>
 		<key>CustomViewStyleVersion</key>
@@ -1096,8 +1304,6 @@
 		<dict>
 			<key>ContainerShowSidebar</key>
 			<true/>
-			<key>ShowPathbar</key>
-			<false/>
 			<key>ShowSidebar</key>
 			<true/>
 			<key>ShowStatusBar</key>
@@ -1107,7 +1313,7 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{271, 439}, {920, 436}}</string>
+			<string>{{1736, 960}, {920, 464}}</string>
 		</dict>
 	</dict>
 	<key>NSNavLastRootDirectory</key>
@@ -1184,31 +1390,29 @@
 		</dict>
 	</dict>
 	<key>PreferencesWindow.LastSelection</key>
-	<string>ADVD</string>
+	<string>SDBR</string>
 	<key>RecentMoveAndCopyDestinations</key>
 	<array>
-		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/</string>
-		<string>file:///Users/wilhall/Downloads/commission/</string>
+		<string>file:///Users/wilhall/Pictures/</string>
 		<string>file:///Users/wilhall/workspace/sagewell/sagewell/app/javascript/images/</string>
-		<string>file:///Users/wilhall/workspace/modolabs/admins/wil40-admin/vendor/modolabs/modo_admin/modules/modo_theme_preview/images/</string>
+		<string>file:///Users/wilhall/Downloads/</string>
+		<string>file:///Applications/</string>
+		<string>file:///Users/wilhall/.config/coc/</string>
+		<string>file:///Users/wilhall/</string>
+		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/</string>
 		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Employment/Consulting/Sagewell/invoices/</string>
 		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Employment/</string>
-		<string>file:///Users/wilhall/workspace/sagewell/sagewell/app/javascript/components/inputs/</string>
 		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Employment/Consulting/</string>
-		<string>file:///Users/wilhall/workspace/sagewell/sagewell/app/javascript/fonts/</string>
-		<string>file:///Users/wilhall/workspace/modolabs/KitchenSink-App/vendor/modolabs/modo_app/src/DataRetriever/</string>
 	</array>
 	<key>RecentsArrangeGroupViewBy</key>
 	<string>Date Last Opened</string>
 	<key>SearchRecentsSavedViewStyleVersion</key>
 	<string>%00%00%00%01</string>
-	<key>SearchViewSettings</key>
+	<key>SearchRecentsViewSettings</key>
 	<dict>
 		<key>WindowState</key>
 		<dict>
 			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
 			<true/>
 			<key>ShowSidebar</key>
 			<true/>
@@ -1219,7 +1423,25 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{1142, 235}, {920, 436}}</string>
+			<string>{{482, 516}, {920, 436}}</string>
+		</dict>
+	</dict>
+	<key>SearchViewSettings</key>
+	<dict>
+		<key>WindowState</key>
+		<dict>
+			<key>ContainerShowSidebar</key>
+			<true/>
+			<key>ShowSidebar</key>
+			<true/>
+			<key>ShowStatusBar</key>
+			<false/>
+			<key>ShowTabView</key>
+			<false/>
+			<key>ShowToolbar</key>
+			<true/>
+			<key>WindowBounds</key>
+			<string>{{1012, 639}, {920, 436}}</string>
 		</dict>
 	</dict>
 	<key>ShowExternalHardDrivesOnDesktop</key>
@@ -1243,11 +1465,13 @@
 	<key>SidebarShowingSignedIntoiCloud</key>
 	<true/>
 	<key>SidebarShowingiCloudDesktop</key>
-	<true/>
+	<false/>
 	<key>SidebarTagsSctionDisclosedState</key>
 	<true/>
 	<key>SidebarWidth</key>
 	<real>159</real>
+	<key>SidebariCloudDriveSectionDisclosedState</key>
+	<true/>
 	<key>StandardViewSettings</key>
 	<dict>
 		<key>ExtendedListViewSettingsV2</key>

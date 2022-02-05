@@ -22,7 +22,7 @@ antigen bundle colored-man-pages
 antigen bundle dircycle
 antigen bundle tymm/zsh-directory-history
 antigen bundle zsh-users/zsh-completions
-antigen bundle zdharma/fast-syntax-highlighting
+antigen bundle zdharma-continuum/fast-syntax-highlighting
 antigen bundle mafredri/zsh-async
 
 antigen apply

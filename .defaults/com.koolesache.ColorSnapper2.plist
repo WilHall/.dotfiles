@@ -14,6 +14,7 @@
 	<array/>
 	<key>HistoryColors</key>
 	<array>
+		<string>F4F8FFFF</string>
 		<string>F5F0EFFF</string>
 		<string>F5F0F1FF</string>
 		<string>CCCCCCFF</string>
@@ -98,7 +99,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>48 81 480 347 0 0 1440 875 </string>
 	<key>Paddle-ColorSnapper2-499167-SD</key>
-	<string>9a4ae540691e6298c95950d237a98393fd00d564e7d35b353906ea9b9f2e472b</string>
+	<string>0816e238b09c9ee3d1e307763ba2c0b7ab86e49657e47fbd83d5844f43a22ef9</string>
 	<key>PickColorShortCut</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -113,9 +114,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2021-10-14T01:02:17Z</date>
+	<date>2022-02-05T14:28:30Z</date>
 	<key>SULastProfileSubmissionDate</key>
-	<date>2021-10-08T00:43:44Z</date>
+	<date>2022-02-03T20:21:56Z</date>
 	<key>SUScheduledCheckInterval</key>
 	<real>43200</real>
 	<key>SUSendProfileInfo</key>

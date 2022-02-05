@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>AKLastEmailListRequestDateKey</key>
-	<date>2021-10-12T16:22:14Z</date>
+	<date>2022-02-05T05:33:55Z</date>
 	<key>AKLastIDMSEnvironment</key>
 	<integer>0</integer>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>4</integer>
+	<key>AppleInterfaceStyleSwitchesAutomatically</key>
+	<true/>
 	<key>AppleKeyboardUIMode</key>
 	<integer>2</integer>
 	<key>AppleLanguages</key>
@@ -15,7 +17,7 @@
 		<string>en-US</string>
 	</array>
 	<key>AppleLanguagesDidMigrate</key>
-	<string>11.3.1</string>
+	<string>12.2</string>
 	<key>AppleLanguagesSchemaVersion</key>
 	<integer>2000</integer>
 	<key>AppleLocale</key>
@@ -53,7 +55,7 @@
 	<key>NSLinguisticDataAssetsRequestLastInterval</key>
 	<real>86400</real>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2021-10-12T12:07:14Z</date>
+	<date>2022-02-04T19:28:54Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>en</string>
@@ -72,11 +74,11 @@
 	</array>
 	<key>NSNavRecentPlaces</key>
 	<array>
+		<string>~/workspace/sagewell/sagewell</string>
+		<string>~/.dotfiles/appconfig/Trailer</string>
+		<string>~/.dotfiles/appconfig/iTerm2</string>
+		<string>~/.dotfiles/appconfig/Alfred/preferences</string>
 		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Sagewell/invoices</string>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Modo Labs/invoices</string>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Business Cards</string>
-		<string>~/Downloads/RE650_V1_20201112</string>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Sagewell</string>
 	</array>
 	<key>NSPreferredWebServices</key>
 	<dict>
@@ -90,6 +92,22 @@
 	</dict>
 	<key>NSUserDictionaryReplacementItems</key>
 	<array>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>omw</string>
+			<key>with</key>
+			<string>On my way!</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:)</string>
+			<key>with</key>
+			<string>🙂</string>
+		</dict>
 		<dict>
 			<key>on</key>
 			<integer>1</integer>
@@ -112,29 +130,9 @@
 	<key>com.apple.finder.SyncExtensions</key>
 	<dict>
 		<key>collaborationMap</key>
-		<dict>
-			<key>com.adobe.accmac.ACCFinderSync</key>
-			<false/>
-			<key>com.getdropbox.dropbox.garcon</key>
-			<false/>
-		</dict>
+		<dict/>
 		<key>dirMap</key>
-		<dict>
-			<key>com.adobe.accmac.ACCFinderSync</key>
-			<array>
-				<string>file:///Users/wilhall/Creative%20Cloud%20Files/</string>
-			</array>
-			<key>com.getdropbox.dropbox.garcon</key>
-			<array>
-				<string>file:///Users/wilhall/Music/</string>
-				<string>file:///Users/wilhall/Movies/</string>
-				<string>file:///Users/wilhall/Downloads/</string>
-				<string>file:///Users/wilhall/Dropbox/</string>
-				<string>file:///Users/wilhall/Pictures/</string>
-				<string>file:///Users/wilhall/Documents/</string>
-				<string>file:///Users/wilhall/Desktop/</string>
-			</array>
-		</dict>
+		<dict/>
 	</dict>
 	<key>com.apple.mouse.scaling</key>
 	<real>2.5</real>

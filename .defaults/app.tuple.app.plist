@@ -17,31 +17,31 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2021-10-12T16:39:22Z</date>
+	<date>2022-02-05T14:28:31Z</date>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>analyticsProfile</key>
 	<dict>
 		<key>email</key>
-		<string>wil@wilhall.com</string>
+		<string>wil@sagewellfinancial.com</string>
 		<key>firstName</key>
 		<string>Wil</string>
 		<key>id</key>
-		<integer>1598</integer>
+		<integer>54717</integer>
 		<key>isGuest</key>
-		<true/>
-		<key>isPaid</key>
 		<false/>
+		<key>isPaid</key>
+		<true/>
 		<key>lastName</key>
 		<string>Hall</string>
 		<key>subscriptionStatus</key>
 		<string>active</string>
 		<key>teamID</key>
-		<integer>1244</integer>
+		<integer>12458</integer>
 		<key>teamName</key>
-		<string>Tuple Guests</string>
+		<string>Chris Toomey</string>
 		<key>teamOwnerEmail</key>
-		<string>joel+guest@tuple.app</string>
+		<string>chris@sagewellfinancial.com</string>
 	</dict>
 	<key>annotationMode</key>
 	<string>paint</string>
@@ -50,24 +50,24 @@
 		<key>preferredInputDevice</key>
 		<dict>
 			<key>name</key>
-			<string>US-2x2</string>
+			<string>Scarlett Solo USB</string>
 			<key>uid</key>
-			<string>AppleUSBAudioEngine:TEAC Corporation:US-2x2:1113000:1,2</string>
+			<string>AppleUSBAudioEngine:Focusrite:Scarlett Solo USB:Y7Z0HBU17CCAC8:1,2</string>
 		</dict>
 		<key>preferredOutputDevice</key>
 		<dict>
 			<key>name</key>
-			<string>US-2x2</string>
+			<string>Scarlett Solo USB</string>
 			<key>uid</key>
-			<string>AppleUSBAudioEngine:TEAC Corporation:US-2x2:1113000:1,2</string>
+			<string>AppleUSBAudioEngine:Focusrite:Scarlett Solo USB:Y7Z0HBU17CCAC8:1,2</string>
 		</dict>
 	</dict>
 	<key>currentUserEmail</key>
-	<string>wil@wilhall.com</string>
+	<string>wil@sagewellfinancial.com</string>
 	<key>cursorMode</key>
 	<string>multi</string>
 	<key>enableNewSignaler</key>
-	<false/>
+	<true/>
 	<key>hasPromptedForCamera</key>
 	<true/>
 	<key>hasPromptedForMicrophone</key>
@@ -85,15 +85,15 @@
 	<key>lastUserSignalMessageDate</key>
 	<dict>
 		<key>clientID</key>
-		<string>1598</string>
+		<string>54717</string>
 		<key>date</key>
-		<date>2021-10-08T18:48:17Z</date>
+		<date>2022-02-04T17:59:55Z</date>
 	</dict>
 	<key>seenCameraPreview</key>
 	<true/>
 	<key>transmitResolution</key>
 	<string>high</string>
 	<key>videoDeviceID</key>
-	<string>EAB7A68FEC2B4487AADFD8A91C1CB782</string>
+	<string>0x114100046d085e</string>
 </dict>
 </plist>

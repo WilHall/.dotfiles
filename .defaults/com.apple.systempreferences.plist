@@ -2,11 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AttentionPrefBundleIDs</key>
-	<dict>
-		<key>com.apple.preferences.softwareupdate</key>
-		<integer>1</integer>
-	</dict>
 	<key>DefaultExposeTab</key>
 	<string>ExposeTab</string>
 	<key>DidShowPrefBundleIDs</key>
@@ -15,6 +10,8 @@
 	</array>
 	<key>DisableAutoLoginButtonIsHidden</key>
 	<true/>
+	<key>ICQ_iCloudFirstRunNotificationShown</key>
+	<string>001903-05-32b18c74-bb1d-493d-828a-728e2d7a9005</string>
 	<key>NSFullScreenMenuItemEverywhere</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
@@ -30,8 +27,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames keyboard.shortcuts.splitview</key>
 	<array>
-		<string>0.000000, 0.000000, 170.500000, 239.000000, NO, NO</string>
-		<string>179.500000, 0.000000, 405.500000, 239.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 171.000000, 239.000000, NO, NO</string>
+		<string>180.000000, 0.000000, 405.000000, 239.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v3 LoginItemsColumn2</key>
 	<data>
@@ -60,13 +57,13 @@
 	<key>NSTableView Supports v2 LoginItemsColumn2</key>
 	<true/>
 	<key>NSWindow Frame Main Window Frame SystemPreferencesApp 8.0</key>
-	<string>46 260 668 544 0 0 1440 875 </string>
+	<string>1296 1387 668 188 0 0 3840 1575 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>609 270 800 476 0 0 1440 875 </string>
+	<string>1799 910 800 476 0 0 3840 1575 </string>
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
 	<string>692 407 425 137 0 0 1440 875 </string>
 	<key>SecurityPrefTab</key>
-	<string>Privacy</string>
+	<string>General</string>
 	<key>SoundTab</key>
 	<string>input</string>
 	<key>ThirdPartyCount</key>
@@ -77,17 +74,17 @@
 		<string>com.apple.preference.keyboard.lastselectedtab</string>
 	</array>
 	<key>com.apple.SecurityPref.Privacy.LastSourceSelected</key>
-	<integer>12</integer>
+	<integer>0</integer>
 	<key>com.apple.dtandsspref.lastselectedtab</key>
 	<string>com.apple.preference.desktopscreeneffect.desktop</string>
 	<key>com.apple.preference.keyboard.lastselectedtab</key>
-	<string>com.apple.IntlTexts</string>
+	<string>hotkeysTabIdentifier</string>
 	<key>com.apple.preferences.accounts.outline.usersparent</key>
 	<true/>
 	<key>com.apple.preferences.sharing.selectedservice</key>
 	<integer>0</integer>
 	<key>kAOSUIProfilePictureCropRect</key>
-	<string>{{0, 0}, {389, 389}}</string>
+	<string>{{0, 0}, {0, 0}}</string>
 	<key>trackpad.lastselectedtab</key>
 	<integer>2</integer>
 </dict>

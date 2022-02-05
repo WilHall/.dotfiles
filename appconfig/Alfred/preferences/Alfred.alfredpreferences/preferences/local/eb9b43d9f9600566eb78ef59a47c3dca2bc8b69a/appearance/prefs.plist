@@ -2,9 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>__NSEnableTSMDocumentWindowLevel</key>
-	<true/>
-	<key>last-analytics-stamp</key>
-	<real>665609264.19464397</real>
+	<key>lightthemeuid</key>
+	<string>theme.bundled.modern</string>
 </dict>
 </plist>

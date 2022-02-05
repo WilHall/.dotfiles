@@ -20,7 +20,7 @@ OUT
   fi
 }
 
-install_xcode_clt() {
+install_xcode_cli() {
   xcode-select -p 1>/dev/null
   if [[ $? != 0 ]]; then
     xcode-select --install
@@ -72,7 +72,7 @@ setup_vim() {
 }
 
 set_default_shell() {
-  sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+  sudo dscl . -create /Users/$USER UserShell /opt/homebrew/bin/zsh
 }
 
 install_fonts() {
@@ -85,12 +85,17 @@ configure_sublime_merge() {
   fi
 }
 
+install_rosetta() {
+  sudo softwareupdate --install-rosetta
+}
+
 configure_asdf() {
   asdf plugin-add yarn
-  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-  asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-  # This may need to be run manually via a Rosetta Terminal
-  cd $HOME && export optflags="-w"; arch -x86_64 asdf install
+  asdf plugin-add python
+  asdf plugin add nodejs 
+  asdf plugin add ruby 
+  # For nodejs, this may need to be run manually from the Rosetta terminal 
+  cd $HOME && RUBY_CFLAGS="-w" arch -x86_64 asdf install
 }
 
 install_athame() {
@@ -112,7 +117,8 @@ bootstrap() {
   install_fonts
   create_auth_dotfile
   symlink_dotfiles
-  install_xcode_clt
+  install_xcode_cli
+  install_rosetta
   install_homebrew
   install_homebrew_bundle
   make_user_bin

@@ -2,12 +2,15 @@ laptopScreenName = 'Color LCD'
 
 local positions = {
   centered = {x=0.25, y=0.15, w=0.5, h=0.7},
+  left25 = {x=0, y=0, w=0.25, h=1},
   left34 = {x=0, y=0, w=0.34, h=1},
   left50 = hs.layout.left50,
   left66 = {x=0, y=0, w=0.66, h=1},
+  right25 = {x=0.75, y=0, w=0.25, h=1},
   right34 = {x=0.66, y=0, w=0.34, h=1},
   right50 = hs.layout.right50,
   right66 = {x=0.34, y=0, w=0.66, h=1},
+  middle50 = {x=0.25, y=0, w=0.50, h=1},
   upper50 = {x=0, y=0, w=1, h=0.5},
   upper50Left50 = {x=0, y=0, w=0.5, h=0.5},
   upper50Right50 = {x=0.5, y=0, w=0.5, h=0.5},
@@ -66,9 +69,9 @@ function dockedClamshellLayout()
     {"Spotify", nil, externalScreenName, hs.layout.left30, nil, nil},
     {"Mail", nil, externalScreenName, hs.layout.left30, nil, nil},
     {"Messages", nil, externalScreenName, positions.lower50Right30, nil, nil},
-    {"Slack", nil, externalScreenName, positions.centered, nil, nil},
-    {"Google Chrome", nil, externalScreenName, positions.left34, nil, nil},
-    {"iTerm2", nil, externalScreenName, positions.right66, nil, nil},
+    {"Slack", nil, externalScreenName, positions.right25, nil, nil},
+    {"Google Chrome", nil, externalScreenName, positions.left25, nil, nil},
+    {"iTerm2", nil, externalScreenName, positions.middle50, nil, nil},
   }
 end
 

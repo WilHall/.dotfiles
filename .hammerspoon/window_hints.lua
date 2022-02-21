@@ -1,6 +1,6 @@
 hs.hints.showTitleThresh = 0
 hs.hints.style = "vimperator"
-hs.hints.fontName = "Fira Code Bold"
+hs.hints.fontName = "MonoLisa Bold"
 hs.hints.fontSize = 30.0
 
 function appWindowHints()

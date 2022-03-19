@@ -1,5 +1,6 @@
 ~
 *~HEAD
+*.swp
 tmp/
 tags
 .env
@@ -60,3 +61,4 @@ appconfig/Alfred/preferences/Alfred.alfredpreferences/snippets
 appconfig/Alfred/preferences/Alfred.alfredpreferences/workflows
 appconfig/Alfred/preferences/Alfred.alfredpreferences/remote
 appconfig/Trailer/Trailer Settings.trailerSettings
+Brewfile.lock.json

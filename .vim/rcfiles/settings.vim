@@ -2,7 +2,6 @@
 
 syntax on
 
-set nocompatible
 set showcmd
 set clipboard=unnamed
 set hidden

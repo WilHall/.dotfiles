@@ -1,3 +1,6 @@
+set noswapfile
+set clipboard^=unnamed,unnamedplus
+
 " configure leader
 nnoremap <SPACE> <NOP>
 let mapleader = " "

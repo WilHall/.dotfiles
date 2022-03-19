@@ -1,6 +1,7 @@
 " Visual Settings
 
 " color scheme
+set background=dark
 colorscheme onehalfdark
 
 " color settings

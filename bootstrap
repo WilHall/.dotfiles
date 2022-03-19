@@ -42,7 +42,7 @@ install_homebrew_bundle() {
 }
 
 symlink_dotfiles() {
-  ln -sfn $HOME/.dotfiles/.* $HOME/
+  ln -sfn $HOME/.dotfiles/.^(gitignore|git)# $HOME/
   mkdir -p $HOME/.config && ln -sfn $HOME/.dotfiles/_config/* $HOME/.config
 }
 
@@ -94,8 +94,16 @@ configure_asdf() {
   asdf plugin-add python
   asdf plugin add nodejs 
   asdf plugin add ruby 
-  # For nodejs, this may need to be run manually from the Rosetta terminal 
-  cd $HOME && RUBY_CFLAGS="-w" arch -x86_64 asdf install
+  asdf install python 2.7.18
+  brew reinstall -s readline
+  export PATH=/opt/homebrew/bin:$PATH
+  export PATH="/opt/homebrew/sbin:$PATH"
+  export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
+  export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
+  export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/opt/homebrew/opt/openssl@1.1"
+  RUBY_CFLAGS="-w" asdf install
 }
 
 install_athame() {

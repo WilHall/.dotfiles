@@ -19,6 +19,10 @@ alias pwp='cd $(pbpaste -Prefer txt) && clear'
 
 alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
 
+function vimm() {
+  vim $(git status --porcelain | awk '{print $2}')
+}
+
 function mtw() {
   find "$@" | entr -c mix test "$@"
 }

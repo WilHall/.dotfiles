@@ -1,6 +1,7 @@
 laptopScreenName = 'Color LCD'
 
 local positions = {
+  full = {x=0, y=0, w=1, h=1},
   centered = {x=0.25, y=0.15, w=0.5, h=0.7},
   left25 = {x=0, y=0, w=0.25, h=1},
   left34 = {x=0, y=0, w=0.34, h=1},
@@ -20,6 +21,18 @@ local positions = {
   lower50Right50 = {x=0.5, y=0.5, w=0.5, h=0.5},
   lower50Right30 = {x=0.7, y=0.5, w=0.3, h=0.5},
 }
+
+function getPrimaryScreenName()
+  return hs.screen.primaryScreen():name()
+end
+
+function getScreenNameLeftOfPrimary()
+  return hs.screen.find{x=-1, y=0}:name()
+end
+
+function getScreenNameRightOfPrimary()
+  return hs.screen.find{x=1, y=0}:name()
+end
 
 function getExternalScreenName()
   local screens = hs.screen.allScreens()
@@ -75,16 +88,17 @@ function dockedClamshellLayout()
   }
 end
 
-function dockedClamshellDuetLayout()
-  local externalScreenName = getExternalScreenName();
-  local duetScreenName = getDuetScreenName();
+function dockedClamshellPipLayout()
+  local primaryScreenName = getPrimaryScreenName();
+  local leftScreenName = getScreenNameLeftOfPrimary();
+  local rightScreenName = getScreenNameRightOfPrimary();
   return {
-    {"Spotify", nil, externalScreenName, hs.layout.left30, nil, nil},
-    {"Mail", nil, externalScreenName, hs.layout.left30, nil, nil},
-    {"Messages", nil, duetScreenName, positions.lower50, nil, nil},
-    {"Slack", nil, externalScreenName, positions.centered, nil, nil},
-    {"Google Chrome", nil, externalScreenName, positions.left34, nil, nil},
-    {"iTerm2", nil, externalScreenName, positions.right66, nil, nil},
+    {"Spotify", nil, leftScreenName, hs.layout.full, nil, nil},
+    {"Mail", nil, leftScreenName, hs.layout.full, nil, nil},
+    {"Messages", nil, rightScreenName, positions.lower50, nil, nil},
+    {"Slack", nil, rightScreenName, positions.full, nil, nil},
+    {"Google Chrome", nil, leftScreenName, positions.full, nil, nil},
+    {"iTerm2", nil, primaryScreenName, positions.full, nil, nil},
   }
 end
 
@@ -102,13 +116,11 @@ function applyLayout()
       layout = dockedClamshellLayout()
     end
   elseif numScreens == 2 then
-    if screens[1]:name() == laptopScreenName then
-      hs.alert.show("Applying 'Docked Clamshell Duet' Layout")
-      layout = dockedClamshellDuetLayout()
-    else
-      hs.alert.show("Applying 'Docked' Layout")
-      layout = dockedLayout()
-    end
+    hs.alert.show("Applying 'Docked' Layout")
+    layout = dockedLayout()
+  elseif numScreens == 3 then
+    hs.alert.show("Applying 'Docked Clamshell PIP' Layout")
+    layout = dockedClamshellPipLayout()
   end
 
   hs.layout.apply(layout)

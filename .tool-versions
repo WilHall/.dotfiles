@@ -1,3 +1,4 @@
-python 3.9.2
+python 2.7.18
 ruby 2.6.6
-nodejs 14.17.0
+nodejs 14.16.0
+yarn 1.22.4

@@ -3,8 +3,8 @@
 	email = wil@wilhall.com
     signingkey = 87EB0BA92335B3F080F4101751D584806F5191B4
 [core]
-    editor = nvim
-    excludesfile = ~/.gitignore
+    editor = vim
+    excludesfile = ~/.dotfiles/.gitignore
     trustctime = false
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [push]

@@ -30,6 +30,12 @@ nnoremap <leader>, :silent! bp<cr>
 nnoremap <leader>. :silent! bn<cr>
 nnoremap <leader>; :silent! bd<cr>
 
+" navigate splits
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
 " resize splits
 nnoremap <silent> <c-y> :exe "vertical resize -1"<cr>
 nnoremap <silent> <c-o> :exe "vertical resize +1"<cr>

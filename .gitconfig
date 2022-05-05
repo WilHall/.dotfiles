@@ -1,7 +1,9 @@
 [user]
-	name = Wil Hall
-	email = wil@wilhall.com
+    name = Wil Hall
+    email = wil@wilhall.com
     signingkey = 87EB0BA92335B3F080F4101751D584806F5191B4
+[blame]
+    ignoreRevsFile = .git-blame-ignore-revs
 [core]
     editor = vim
     excludesfile = ~/.dotfiles/.gitignore

@@ -18,3 +18,5 @@ end
 hs.hotkey.bind(optshift, "`", function() toggleAppWindow("Finder") end)
 hs.hotkey.bind(cmdshift, "`", function() toggleAppWindow("Mail") end)
 hs.hotkey.bind(hyper, "M", function() toggleAppWindow("Spotify") end)
+hs.hotkey.bind(hyper, "T", function() toggleAppWindow("Linear") end)
+hs.hotkey.bind(hyper, "/", function() toggleAppWindow("Linear") end)

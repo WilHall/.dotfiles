@@ -5,6 +5,10 @@ alias ll="exa -alh --git --group-directories-first"
 alias tree="exa -T"
 alias cd="z"
 
+# Bundle aliases
+alias rails="bundle exec rails"
+alias rspec="bundle exec rspec"
+
 # yarn shortcuts
 alias ys="BROWSER=none yarn start"
 alias yt="yarn test"

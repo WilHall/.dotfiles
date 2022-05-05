@@ -39,6 +39,10 @@ function getWidestScreen()
   return max(hs.screen.allScreens(), function (a,b) return a:fullFrame().w < b:fullFrame().w end)
 end
 
+function getNarrowestScreen()
+  return max(hs.screen.allScreens(), function (a,b) return a:fullFrame().w > b:fullFrame().w end)
+end
+
 function getPrimaryScreen()
   return hs.screen.primaryScreen()
 end
@@ -96,13 +100,49 @@ function dockedLayout()
   }
 end
 
-function dockedClamshellPipArrangement()
+function dockedClamshellPipArrangementLeft()
+  local newPrimary = getWidestScreen() 
+  local newRight = find(hs.screen.allScreens(), function (screen) return (screen:id() ~= newPrimary:id()) end) 
+  local newLeft = find(hs.screen.allScreens(), function (screen) return (screen:id() ~= newPrimary:id()) and (screen:id() ~= newRight:id()) end) 
+  local primaryFrame = newPrimary:fullFrame()
+  local leftFrame = newLeft:fullFrame()
+  local rightFrame = newRight:fullFrame()
+  newPrimary:setPrimary()
+  newLeft:setOrigin(primaryFrame.x - leftFrame.w, primaryFrame.y)
+  newRight:setOrigin(primaryFrame.w + rightFrame.w, primaryFrame.y)
+end
+
+function dockedClamshellPipArrangementRight()
   local newPrimary = getWidestScreen() 
   local newLeft = find(hs.screen.allScreens(), function (screen) return (screen:id() ~= newPrimary:id()) end) 
   local newRight = find(hs.screen.allScreens(), function (screen) return (screen:id() ~= newPrimary:id()) and (screen:id() ~= newLeft:id()) end) 
   local primaryFrame = newPrimary:fullFrame()
   local leftFrame = newLeft:fullFrame()
-  local rightFrame = newLeft:fullFrame()
+  local rightFrame = newRight:fullFrame()
+  newPrimary:setPrimary()
+  newLeft:setOrigin(primaryFrame.x - leftFrame.w, primaryFrame.y)
+  newRight:setOrigin(primaryFrame.w + rightFrame.w, primaryFrame.y)
+end
+
+function triScreenArrangementLeft()
+  local newPrimary = getNarrowestScreen() 
+  local newRight = find(hs.screen.allScreens(), function (screen) return (screen:id() ~= newPrimary:id()) end) 
+  local newLeft = find(hs.screen.allScreens(), function (screen) return (screen:id() ~= newPrimary:id()) and (screen:id() ~= newRight:id()) end) 
+  local primaryFrame = newPrimary:fullFrame()
+  local leftFrame = newLeft:fullFrame()
+  local rightFrame = newRight:fullFrame()
+  newPrimary:setPrimary()
+  newLeft:setOrigin(primaryFrame.x - leftFrame.w, primaryFrame.y)
+  newRight:setOrigin(primaryFrame.w + rightFrame.w, primaryFrame.y)
+end
+
+function triScreenArrangementRight()
+  local newPrimary = getNarrowestScreen() 
+  local newLeft = find(hs.screen.allScreens(), function (screen) return (screen:id() ~= newPrimary:id()) end) 
+  local newRight = find(hs.screen.allScreens(), function (screen) return (screen:id() ~= newPrimary:id()) and (screen:id() ~= newLeft:id()) end) 
+  local primaryFrame = newPrimary:fullFrame()
+  local leftFrame = newLeft:fullFrame()
+  local rightFrame = newRight:fullFrame()
   newPrimary:setPrimary()
   newLeft:setOrigin(primaryFrame.x - leftFrame.w, primaryFrame.y)
   newRight:setOrigin(primaryFrame.w + rightFrame.w, primaryFrame.y)
@@ -122,25 +162,72 @@ function dockedClamshellPipLayout()
   }
 end
 
+function triScreenLayout()
+  local primaryScreen = getPrimaryScreen();
+  local leftScreen = getScreenLeftOfPrimary();
+  local rightScreen = getScreenRightOfPrimary();
+  return {
+    {"Spotify", nil, leftScreen, hs.layout.full, nil, nil},
+    {"Mail", nil, leftScreen, hs.layout.full, nil, nil},
+    {"Messages", nil, rightScreen, positions.lower50, nil, nil},
+    {"Slack", nil, rightScreen, positions.full, nil, nil},
+    {"Google Chrome", nil, leftScreen, positions.full, nil, nil},
+    {"iTerm2", nil, primaryScreen, positions.full, nil, nil},
+  }
+end
+
 function applyLayout()
   local numScreens = #hs.screen.allScreens()
   local layout = {}
   local screens = hs.screen.allScreens()
 
   if numScreens == 1 then
-      hs.alert.show("Applying 'Undocked' Layout")
-      layout = undockedLayout()
+    hs.alert.show("Applying 'Undocked' Layout")
+    layout = undockedLayout()
   elseif numScreens == 2 then
     hs.alert.show("Applying 'Docked' Layout")
     layout = dockedLayout()
   elseif numScreens == 3 then
-    hs.alert.show("Applying 'Docked Clamshell PIP' Layout")
-    dockedClamshellPipArrangement()
-    layout = dockedClamshellPipLayout()
+    local isTriScreen = find(hs.screen.allScreens(), function (screen) return (screen:name() ~= "RTK HDR (1)") end) 
+    if isTriScreen then
+      hs.alert.show("Applying 'Tri-screen' Layout")
+      layout = triScreenLayout()
+    else
+      hs.alert.show("Applying 'Docked Clamshell PIP' Layout")
+      layout = dockedClamshellPipLayout()
+    end
   end
 
   hs.layout.apply(layout)
 end
+
+hs.hotkey.bind(cmdshift, "2", function()
+  local numScreens = #hs.screen.allScreens()
+  if numScreens == 3 then
+    local isTriScreen = find(hs.screen.allScreens(), function (screen) return (screen:name() ~= "RTK HDR (1)") end) 
+    if isTriScreen then
+      triScreenArrangementLeft()
+    else
+      dockedClamshellPipArrangementLeft()
+    end
+  end
+
+  applyLayout()
+end)
+
+hs.hotkey.bind(cmdshift, "3", function()
+  local numScreens = #hs.screen.allScreens()
+  if numScreens == 3 then
+    local isTriScreen = find(hs.screen.allScreens(), function (screen) return (screen:name() ~= "RTK HDR (1)") end) 
+    if isTriScreen then
+      triScreenArrangementRight()
+    else
+      dockedClamshellPipArrangementRight()
+    end
+  end
+
+  applyLayout()
+end)
 
 hs.hotkey.bind(cmdshift, "1", function()
   applyLayout()

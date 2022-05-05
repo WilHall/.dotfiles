@@ -30,7 +30,8 @@
     "svelte",
     "ruby",
     "eruby",
-    "yaml"
+    "yaml",
+    "markdown.mdx"
   ],
   "yaml.format.enable": true,
   "css.validate": false,

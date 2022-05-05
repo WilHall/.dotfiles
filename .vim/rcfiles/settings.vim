@@ -57,8 +57,8 @@ set nojoinspaces
 " wrapping / line length
 set linebreak
 set wrap
-autocmd VimResized * | set columns=80
-set textwidth=80
+autocmd VimResized * | set columns=120
+set textwidth=120
 set colorcolumn=+1
 
 " create interstitial directories when saving files

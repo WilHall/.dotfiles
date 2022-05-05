@@ -17,6 +17,7 @@ antigen bundle asdf
 antigen bundle fzf
 antigen bundle git
 antigen bundle heroku
+antigen bundle z
 antigen bundle zsh-autosuggestions
 antigen bundle colored-man-pages
 antigen bundle dircycle

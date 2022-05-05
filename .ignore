@@ -1,12 +1,6 @@
 **/tmp/
 **/node_modules/*
 run/*
-test/*
-**/test/
-prod/*
-**/prod/*
-edit/*
-**/edit/*
 cache/*
 **/run/*
 **/cache/*

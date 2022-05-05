@@ -188,13 +188,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.20392156862745098</real>
+				<real>0.43908166885375977</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.17254901960784313</real>
+				<real>0.37959706783294678</real>
 				<key>Red Component</key>
-				<real>0.15686274509803921</real>
+				<real>0.35830602049827576</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -370,13 +370,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.20392156862745098</real>
+				<real>0.75815790891647339</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.17254901960784313</real>
+				<real>0.65540969371795654</real>
 				<key>Red Component</key>
-				<real>0.15686274509803921</real>
+				<real>0.61866414546966553</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -1040,6 +1040,8 @@
 			<real>0.046637308969651153</real>
 			<key>Unicode Normalization</key>
 			<integer>0</integer>
+			<key>Unicode Version</key>
+			<integer>9</integer>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1152,7 +1154,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 </dict>

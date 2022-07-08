@@ -59,7 +59,7 @@
   "eslint.lintTask.options": ["--ignore-path", ".gitignore", "."],
   "eslint.validate": ["svelte"],
   "solargraph.trace.server": "verbose",
-  "solargraph.diagnostics": false,
+  "solargraph.diagnostics": true,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
   "solargraph.commandPath": "/Users/wilhall/.asdf/shims/solargraph",

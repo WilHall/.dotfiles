@@ -158,6 +158,7 @@ function dockedClamshellPipLayout()
     {"Messages", nil, rightScreen, positions.lower50, nil, nil},
     {"Slack", nil, rightScreen, positions.full, nil, nil},
     {"Google Chrome", nil, leftScreen, positions.full, nil, nil},
+    {"Linear", nil, leftScreen, positions.full, nil, nil},
     {"iTerm2", nil, primaryScreen, positions.full, nil, nil},
   }
 end
@@ -172,6 +173,7 @@ function triScreenLayout()
     {"Messages", nil, rightScreen, positions.lower50, nil, nil},
     {"Slack", nil, rightScreen, positions.full, nil, nil},
     {"Google Chrome", nil, leftScreen, positions.full, nil, nil},
+    {"Linear", nil, leftScreen, positions.full, nil, nil},
     {"iTerm2", nil, primaryScreen, positions.full, nil, nil},
   }
 end
@@ -188,7 +190,7 @@ function applyLayout()
     hs.alert.show("Applying 'Docked' Layout")
     layout = dockedLayout()
   elseif numScreens == 3 then
-    local isTriScreen = find(hs.screen.allScreens(), function (screen) return (screen:name() ~= "RTK HDR (1)") end) 
+    local isTriScreen = find(hs.screen.allScreens(), function (screen) return (screen:name() == "RTK HDR (1)") end) 
     if isTriScreen then
       hs.alert.show("Applying 'Tri-screen' Layout")
       layout = triScreenLayout()
@@ -204,7 +206,7 @@ end
 hs.hotkey.bind(cmdshift, "2", function()
   local numScreens = #hs.screen.allScreens()
   if numScreens == 3 then
-    local isTriScreen = find(hs.screen.allScreens(), function (screen) return (screen:name() ~= "RTK HDR (1)") end) 
+    local isTriScreen = find(hs.screen.allScreens(), function (screen) return (screen:name() == "RTK HDR (1)") end) 
     if isTriScreen then
       triScreenArrangementLeft()
     else
@@ -218,7 +220,7 @@ end)
 hs.hotkey.bind(cmdshift, "3", function()
   local numScreens = #hs.screen.allScreens()
   if numScreens == 3 then
-    local isTriScreen = find(hs.screen.allScreens(), function (screen) return (screen:name() ~= "RTK HDR (1)") end) 
+    local isTriScreen = find(hs.screen.allScreens(), function (screen) return (screen:name() == "RTK HDR (1)") end) 
     if isTriScreen then
       triScreenArrangementRight()
     else

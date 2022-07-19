@@ -3,6 +3,7 @@ tap "dteoh/sqa"
 tap "heroku/brew"
 tap "koekeishiya/formulae"
 
+brew "overmind"
 brew "jq"
 brew "fx"
 brew "fd"

@@ -1,4 +1,10 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
-export PATH=~/.bin:$PATH
+
+if [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
+fi
+export PATH=~/.bin:~/.asdf/shims:$PATH
+
 ZDOTDIR=$HOME/.zsh
 . $ZDOTDIR/.zshenv

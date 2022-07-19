@@ -24,3 +24,6 @@ scratch/
 .idea
 cache.json
 .git
+spec/examples.txt
+storybook-static
+tmp

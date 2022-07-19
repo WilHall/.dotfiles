@@ -106,12 +106,6 @@ configure_asdf() {
   RUBY_CFLAGS="-w" asdf install
 }
 
-install_athame() {
-  if [ ! -f "$HOME/bin/azsh" ]; then
-    git clone --recursive http://github.com/ardagnir/athame $HOME/workspace/utils/athame && cd $HOME/workspace/utils/athame && mkdir -p $HOME/.athame && ./zsh_athame_setup.sh --prefix=$HOME/.athame/ --vimbin=$(which nvim) && mv /usr/local/bin/zsh /usr/local/bin/_zsh && ln -s $HOME/.athame/bin/zsh /usr/local/bin/zsh && ln -s $HOME/.athame/bin/zsh $HOME/bin/azsh
-  fi
-}
-
 install_tpm() {
   if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
     git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
@@ -135,7 +129,6 @@ bootstrap() {
   setup_vim
   configure_sublime_merge
   configure_asdf
-  #install_athame
   install_tpm
 }
 

@@ -14,12 +14,12 @@
 		<string>C</string>
 	</dict>
 	<key>limit</key>
-	<integer>1</integer>
+	<integer>3</integer>
 	<key>persistFor</key>
 	<integer>3</integer>
 	<key>persistForFiles</key>
-	<integer>1</integer>
+	<integer>3</integer>
 	<key>persistForImages</key>
-	<integer>1</integer>
+	<integer>3</integer>
 </dict>
 </plist>

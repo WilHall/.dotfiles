@@ -44,7 +44,19 @@ autocmd BufEnter *.{js,jsx,ts,tsx} :call <SID>check_eslint()
 set shortmess+=c
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
-inoremap <expr> <tab> complete_info()["selected"] != "-1" ? "\<c-y>" : "\<c-g>u\<tab>"
+  inoremap <silent><expr> <TAB>
+    \ coc#pum#visible() ? coc#_select_confirm() :
+    \ coc#expandableOrJumpable() ?
+    \ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+    \ <SID>check_back_space() ? "\<TAB>" :
+    \ coc#refresh()
+
+  function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
+  endfunction
+
+  let g:coc_snippet_next = '<tab>'
 
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <plug>(coc-diagnostic-prev)

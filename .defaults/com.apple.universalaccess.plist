@@ -8,13 +8,21 @@
 	<integer>0</integer>
 	<key>closeViewZoomFactor</key>
 	<real>1</real>
+	<key>closeViewZoomFactorBeforeTermination</key>
+	<real>1</real>
 	<key>com.apple.custommenu.apps</key>
 	<array>
 		<string>com.apple.mail</string>
 	</array>
+	<key>hoverTextEnabled</key>
+	<false/>
 	<key>login</key>
 	<false/>
+	<key>selectedTab</key>
+	<integer>22</integer>
 	<key>sessionChange</key>
+	<false/>
+	<key>voiceOverOnOffKey</key>
 	<false/>
 </dict>
 </plist>

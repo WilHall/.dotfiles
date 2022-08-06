@@ -62,10 +62,12 @@
 			<string>AppleUSBAudioEngine:Focusrite:Scarlett Solo USB:Y7Z0HBU17CCAC8:1,2</string>
 		</dict>
 	</dict>
+	<key>callFeedback</key>
+	<false/>
 	<key>currentUserEmail</key>
 	<string>wil@sagewellfinancial.com</string>
 	<key>cursorMode</key>
-	<string>multi</string>
+	<string>tagTeam</string>
 	<key>enableNewSignaler</key>
 	<true/>
 	<key>hasPromptedForCamera</key>
@@ -77,7 +79,7 @@
 	<key>hasShownPopover</key>
 	<true/>
 	<key>keyboardMode</key>
-	<string>off</string>
+	<string>on</string>
 	<key>keyboardOffNotification</key>
 	<true/>
 	<key>lastPreferencePane</key>

@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>CalendarScreenId</key>
-	<integer>4</integer>
+	<integer>5</integer>
 	<key>CalendarWindowHeight</key>
-	<integer>1228</integer>
+	<integer>1125</integer>
 	<key>CalendarWindowOriginTopY</key>
-	<integer>0</integer>
+	<integer>19</integer>
 	<key>CalendarWindowOriginX</key>
-	<integer>1183</integer>
+	<integer>646</integer>
 	<key>CalendarWindowSelectedTabIndex</key>
 	<integer>2</integer>
 	<key>CalendarWindowState</key>
 	<integer>0</integer>
 	<key>CalendarWindowWidth</key>
-	<integer>1777</integer>
+	<integer>1218</integer>
 	<key>DaysPerWeek</key>
 	<integer>7</integer>
 	<key>DidCheckGoogleScopes</key>
@@ -31,9 +31,9 @@
 	<key>HoursToShow</key>
 	<integer>10</integer>
 	<key>LastLaunchVersion</key>
-	<string>1374</string>
+	<string>1454</string>
 	<key>LastSpotlightCheck</key>
-	<real>665618280.51816905</real>
+	<real>681415475.04723895</real>
 	<key>LaunchInProgress</key>
 	<false/>
 	<key>MSAppCenter310AppCenterUserDefaultsMigratedKey</key>
@@ -42,12 +42,14 @@
 	<true/>
 	<key>MSAppCenterInstallId</key>
 	<string>A6BD5293-69BC-4B89-B4D0-73AFDEBC7BF4</string>
+	<key>MSAppCenterNetworkRequestsAllowed</key>
+	<false/>
 	<key>MSAppCenterPastDevices</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBIYHCJQUVJTVFVWV1hZ
 	WltcXWJnVSRudWxs0g0ODxFaTlMub2JqZWN0c1YkY2xhc3OhEIACgBXTExQOFRYXXHRp
-	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HD1jfcr5z6gATS
+	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HETZV43VtogATS
 	HR4fIFokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRGF0ZaIfIVhOU09iamVjdN8QFyMkJSYO
 	JygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PDxBQjw8PDxHSElKPDxNTk9Zb3NWZXJzaW9u
 	XnRpbWVab25lT2Zmc2V0WGFwcEJ1aWxkXxAVbGl2ZVVwZGF0ZVBhY2thZ2VIYXNoWmFw
@@ -57,8 +59,8 @@
 	ZVVtb2RlbF8QFXdyYXBwZXJSdW50aW1lVmVyc2lvbl8QFmxpdmVVcGRhdGVSZWxlYXNl
 	TGFiZWxac2NyZWVuU2l6ZVZvc05hbWVXb3NCdWlsZIALgA6AEYAAgBOAEIAAgACABoAN
 	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNC40LjBe
-	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTIuMS4wVTIxQzUyVWVuX1VTE///////
-	//7UWTM4NDB4MTYwMFUzLjUuMlQxMzc0XxAeY29tLmZsZXhpYml0cy5mYW50YXN0aWNh
+	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTIuNC4wVTIxRjc5VWVuX1VTE///////
+	//8QWTI1NjB4MTQ0MFUzLjYuNlQxNDU0XxAeY29tLmZsZXhpYml0cy5mYW50YXN0aWNh
 	bDIubWFj0h0eXl9aTVNBQ0RldmljZaNgYSFaTVNBQ0RldmljZV5NU0FDV3JhcHBlclNk
 	a9IdHmNkXxAVTVNBQ0RldmljZUhpc3RvcnlJbmZvo2VmIV8QFU1TQUNEZXZpY2VIaXN0
 	b3J5SW5mb18QD01TQUNIaXN0b3J5SW5mb9IdHmhpXk5TTXV0YWJsZUFycmF5o2hqIVdO
@@ -73,7 +75,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
 	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
-	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBw9Y33K2ZVoAE0h0eHyBaJGNsYXNzbmFt
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxE2VeNwbCYAE0h0eHyBaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
 	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
 	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
@@ -86,7 +88,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGoCwwSGBwiIyhVJG51bGzSDQ4P
 	EVpOUy5vYmplY3RzViRjbGFzc6EQgAKAB9MTFA4VFhdcdGltZXN0YW1wS2V5WXVzZXJJ
-	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcPWN/KiHkeABNIdHh8gWiRjbGFzc25hbWVY
+	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcRNlXjd0ZGABNIdHh8gWiRjbGFzc25hbWVY
 	JGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN0XxAPd2lsQHdpbGhhbGwuY29t0h0eJCVf
 	EBVNU0FDVXNlcklkSGlzdG9yeUluZm+jJichXxAVTVNBQ1VzZXJJZEhpc3RvcnlJbmZv
 	XxAPTVNBQ0hpc3RvcnlJbmZv0h0eKSpeTlNNdXRhYmxlQXJyYXmjKSshV05TQXJyYXkA
@@ -111,19 +113,21 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Calendar</key>
-	<string>1231 -5 1777 1228 0 0 3008 1228 </string>
+	<string>53 0 1746 1125 0 0 1800 1125 </string>
 	<key>NSWindow Frame InterestingCalendars</key>
 	<string>1633 582 652 473 0 0 3008 1228 </string>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>1212 597 228 278 0 0 1440 875 </string>
+	<string>1572 679 228 278 1512 -218 1920 1175 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>-919 762 620 398 -1280 0 1280 1415 </string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2022-02-03T20:17:00Z</date>
+	<date>2022-08-04T22:20:28Z</date>
 	<key>SULastProfileSubmissionDate</key>
-	<date>2022-02-03T20:17:00Z</date>
+	<date>2022-08-03T22:15:14Z</date>
 	<key>SUSendProfileInfo</key>
 	<true/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -134,5 +138,7 @@
 	<true/>
 	<key>WeeksPerMonth</key>
 	<integer>6</integer>
+	<key>WeeksPerQuarter</key>
+	<integer>13</integer>
 </dict>
 </plist>

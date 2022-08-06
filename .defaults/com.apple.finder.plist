@@ -6,11 +6,288 @@
 	<dict>
 		<key>CustomViewStyleVersion</key>
 		<integer>1</integer>
+		<key>ExtendedListViewSettingsV2</key>
+		<dict>
+			<key>calculateAllSizes</key>
+			<false/>
+			<key>columns</key>
+			<array>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>name</string>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>335</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>ubiquity</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>35</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>dateModified</string>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>dateCreated</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>size</string>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>97</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>kind</string>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>115</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>label</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>100</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>version</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>75</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>comments</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>300</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>dateLastOpened</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>200</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>dateAdded</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>shareOwner</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>210</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>shareLastEditor</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>210</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>invitationStatus</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>210</integer>
+				</dict>
+			</array>
+			<key>iconSize</key>
+			<real>16</real>
+			<key>showIconPreview</key>
+			<true/>
+			<key>sortColumn</key>
+			<string>name</string>
+			<key>textSize</key>
+			<real>13</real>
+			<key>useRelativeDates</key>
+			<true/>
+			<key>viewOptionsVersion</key>
+			<integer>1</integer>
+		</dict>
+		<key>ListViewSettings</key>
+		<dict>
+			<key>calculateAllSizes</key>
+			<false/>
+			<key>columns</key>
+			<dict>
+				<key>comments</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>7</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>300</integer>
+				</dict>
+				<key>dateCreated</key>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>index</key>
+					<integer>2</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<key>dateLastOpened</key>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>index</key>
+					<integer>8</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>200</integer>
+				</dict>
+				<key>dateModified</key>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>index</key>
+					<integer>1</integer>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<key>kind</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>4</integer>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>115</integer>
+				</dict>
+				<key>label</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>5</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>100</integer>
+				</dict>
+				<key>name</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>0</integer>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>335</integer>
+				</dict>
+				<key>size</key>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>index</key>
+					<integer>3</integer>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>97</integer>
+				</dict>
+				<key>version</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>6</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>75</integer>
+				</dict>
+			</dict>
+			<key>iconSize</key>
+			<real>16</real>
+			<key>showIconPreview</key>
+			<true/>
+			<key>sortColumn</key>
+			<string>name</string>
+			<key>textSize</key>
+			<real>13</real>
+			<key>useRelativeDates</key>
+			<true/>
+			<key>viewOptionsVersion</key>
+			<integer>1</integer>
+		</dict>
 		<key>WindowState</key>
 		<dict>
 			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
 			<true/>
 			<key>ShowSidebar</key>
 			<true/>
@@ -21,7 +298,7 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{577, 188}, {920, 480}}</string>
+			<string>{{228, 131}, {920, 436}}</string>
 		</dict>
 	</dict>
 	<key>CopyProgressWindowLocation</key>
@@ -63,7 +340,7 @@
 	<key>DownloadsFolderListViewSettingsVersion</key>
 	<integer>1</integer>
 	<key>EmptyTrashProgressWindowLocation</key>
-	<string>{549, 228}</string>
+	<string>{1180, 315}</string>
 	<key>FK_AppCentricShowSidebar</key>
 	<true/>
 	<key>FK_DefaultIconViewSettings</key>
@@ -540,6 +817,50 @@
 			<key>yRelative</key>
 			<integer>289</integer>
 		</dict>
+		<key>Android File Transfer_0x1.0badbfd8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>177</integer>
+		</dict>
+		<key>Android Studio - Bumblebee | 2021.1.1 Patch 1_0x1.3af4213p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>177</integer>
+		</dict>
+		<key>Commander One_0x1.b690296p+28</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
+		<key>Deckset_0x1.3098c28p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
 		<key>Dropbox Installer_0x0p+0</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -562,7 +883,29 @@
 			<key>yRelative</key>
 			<integer>177</integer>
 		</dict>
+		<key>Google Analytics Opt Out_0x1.1121c598p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
+		</dict>
 		<key>Google Chrome_0x1.3381ea9p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>177</integer>
+		</dict>
+		<key>Heimdall Suite 1.4.0_0x1.768816fp+28</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
 			<integer>1</integer>
@@ -628,6 +971,28 @@
 			<key>yRelative</key>
 			<integer>65</integer>
 		</dict>
+		<key>Macintosh HD_0x1.3e504518p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>84</integer>
+		</dict>
+		<key>Macintosh HD_0x1.414dfc4p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>84</integer>
+		</dict>
 		<key>Mimestream_0.23.2_0x1.348a9c6p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -649,6 +1014,28 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>177</integer>
+		</dict>
+		<key>OM Webcam Beta_0x1.3d160eap+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
+		<key>O_O_-0x1.d27e44p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
 		</dict>
 		<key>Polypane 6.2.0-universal_0x1.34ec2178p+29</key>
 		<dict>
@@ -694,7 +1081,51 @@
 			<key>yRelative</key>
 			<integer>177</integer>
 		</dict>
+		<key>PrinterDriver_PRO-10 series_0x1.2fb8be38p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
+		<key>Reflector 4_0x1.38c3b0f8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>177</integer>
+		</dict>
+		<key>Solstice Client Installer_0x1.3ad6e8fp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
 		<key>Untitled_-0x1.d27e44p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>177</integer>
+		</dict>
+		<key>checkra1n beta 0.12.4_0x1.32312298p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
 			<integer>1</integer>
@@ -727,21 +1158,34 @@
 			<key>yRelative</key>
 			<integer>177</integer>
 		</dict>
+		<key>我的光盘_0x1.a89f718p+28</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>177</integer>
+		</dict>
 	</dict>
 	<key>FXEnableExtensionChangeWarning</key>
 	<false/>
 	<key>FXICloudDriveDeclinedUpgrade</key>
 	<false/>
 	<key>FXICloudDriveDesktop</key>
-	<true/>
+	<false/>
 	<key>FXICloudDriveDocuments</key>
-	<true/>
+	<false/>
 	<key>FXICloudDriveEnabled</key>
 	<true/>
 	<key>FXICloudDriveFirstSyncDownComplete</key>
 	<true/>
 	<key>FXICloudLoggedIn</key>
 	<true/>
+	<key>FXLastSearchScope</key>
+	<string>SCcf</string>
 	<key>FXPreferencesWindow.Location</key>
 	<string>{{630, 246}, {377, 767}}</string>
 	<key>FXPreferredGroupBy</key>
@@ -757,6 +1201,73 @@
 		<dict>
 			<key>file-bookmark</key>
 			<data>
+			Ym9va/wBAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAEAEAAAQAAAADAwAAAAIAIAwAAAABAQAAQXBwbGlj
+			YXRpb25zBAAAAAEGAAAQAAAACAAAAAQDAACNzIcBAAAAAAQAAAAB
+			BgAAMAAAAAgAAAAABAAAQcQU38QAAAAYAAAAAQIAAAIAAAAAAAAA
+			DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAACAAAAAEJAABmaWxlOi8v
+			LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAACQA
+			AAABAQAAMjVBQzQxOTctQ0Y2Mi00OTNCLTkzOTUtOEEwQjczNzNE
+			RUI5GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
+			AQEAAC8AAAC0AAAA/v///wEAAAAAAAAADgAAAAQQAAAkAAAAAAAA
+			AAUQAABAAAAAAAAAABAQAABcAAAAAAAAAEAQAABMAAAAAAAAAAIg
+			AAAEAQAAAAAAAAUgAACEAAAAAAAAABAgAACUAAAAAAAAABEgAAC4
+			AAAAAAAAABIgAACoAAAAAAAAABMgAABMAAAAAAAAACAgAADkAAAA
+			AAAAADAgAAB8AAAAAAAAAAHQAAB8AAAAAAAAABDQAAAEAAAAAAAA
+			AA==
+			</data>
+			<key>name</key>
+			<string>Applications</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9va8wFAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAyAQAAAQAAAADAwAAAAIAIAcAAAABAQAAVm9sdW1l
+			cwAYAAAAAQEAAEdvb2dsZSBBbmFseXRpY3MgT3B0IE91dAgAAAAB
+			BgAAEAAAACAAAAAIAAAABAMAABtmAAAAAAAACAAAAAQDAAACAAAA
+			AAAAAAgAAAABBgAAUAAAAGAAAAAIAAAAAAQAAEHBEhxZgAAAGAAA
+			AAECAAAKAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAC8A
+			AAABCQAAZmlsZTovLy9Wb2x1bWVzL0dvb2dsZSUyMEFuYWx5dGlj
+			cyUyME9wdCUyME91dC8ACAAAAAQDAAAAYB8CAAAAACQAAAABAQAA
+			QTJERjVDMkUtM0JEOS0zMTJELTgyOEMtQUNEMzBGNzkzM0I5GAAA
+			AAECAABpAgAAAQAAAO8TAAABAAAAAAAAAAAAAAAEAAAAAwMAAKAP
+			AAAFAAAAAQEAAFVzZXJzAAAABwAAAAEBAAB3aWxoYWxsAAkAAAAB
+			AQAARG93bmxvYWRzAAAAGQAAAAEBAABHb29nbGVBbmFseXRpY3NP
+			cHRPdXQuZG1nAAAAEAAAAAEGAABYAQAAaAEAAHgBAACMAQAACAAA
+			AAQDAACEXAAAAAAAAAgAAAAEAwAAuMMDAAAAAAAIAAAABAMAAOvD
+			AwAAAAAACAAAAAQDAABUjDwCAAAAABAAAAABBgAAyAEAANgBAADo
+			AQAA+AEAAAgAAAAABAAAQcRO/SESkxMYAAAAAQIAAAEAAAAAAAAA
+			DwAAAAAAAAAAAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmls
+			ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
+			AAAIAAAAAAQAAEHEFN/EAAAAJAAAAAEBAAAyNUFDNDE5Ny1DRjYy
+			LTQ5M0ItOTM5NS04QTBCNzM3M0RFQjkYAAAAAQIAAIEAAAABAAAA
+			7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAMwAAAD+////oA8A
+			AAAAAAAQAAAABBAAALABAAAAAAAABRAAAAgCAAAAAAAAEBAAADAC
+			AAAAAAAAQBAAACACAAAAAAAAAiAAAOwCAAAAAAAABSAAAFwCAAAA
+			AAAAECAAAGwCAAAAAAAAESAAAKACAAAAAAAAEiAAAIACAAAAAAAA
+			EyAAAJACAAAAAAAAICAAAMwCAAAAAAAAMCAAALAAAAAAAAAAAcAA
+			AGAAAAAAAAAAEcAAAGgBAAAAAAAAEsAAAFACAAAAAAAAENAAAAQA
+			AAAAAAAAIQAAAAEBAAAvVm9sdW1lcy9Hb29nbGUgQW5hbHl0aWNz
+			IE9wdCBPdXQAAABgAAAA/v///wDwAAD4AgAABwAAAAIgAADsAgAA
+			AAAAAAUgAABcAgAAAAAAABAgAABsAgAAAAAAABEgAACgAgAAAAAA
+			ABIgAACAAgAAAAAAABMgAACQAgAAAAAAACAgAADMAgAAAAAAAAQA
+			AAADAwAAAPAAAAQAAAADAwAAAAAAAAQAAAADAwAAAQAAAAwAAAAB
+			BgAAYAQAAGwEAAB4BAAAGgAAAAEBAABOU1VSTERvY3VtZW50SWRl
+			bnRpZmllcktleQAABAAAAAMDAAACAAAAzAAAAP7///8BAAAA+AMA
+			ABAAAAAEEAAAQAAAAAAAAAAFEAAAcAAAAAAAAAAQEAAAkAAAAAAA
+			AABAEAAAgAAAAAAAAAAAIAAAhAQAAAAAAAACIAAAzAMAAAAAAAAF
+			IAAAuAAAAAAAAAAQIAAAIAAAAAAAAAARIAAAAAEAAAAAAAASIAAA
+			8AAAAAAAAAATIAAAgAAAAAAAAAAgIAAALAEAAAAAAABAIAAATAEA
+			AAAAAAAB0AAAsAAAAAAAAAAQ0AAABAAAAAAAAACYBACAvAQAAAAA
+			AAA=
+			</data>
+			<key>name</key>
+			<string>Google Analytics Opt Out</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
 			Ym9va5wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 			AAAAAAAAAAAAjAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
 			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAABEb3dubG9hZHMAAAAM
@@ -765,8 +1276,8 @@
 			AGgAAAB4AAAACAAAAAAEAABBw7AbAoAAABgAAAABAgAAAgAAAAAA
 			AAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAIAAAABAMAAAEAAAAA
 			AAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAA
-			TWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcOw
-			FBeAAAAkAAAAAQEAADI1QUM0MTk3LUNGNjItNDkzQi05Mzk1LThB
+			TWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcPl
+			BFGAAAAkAAAAAQEAADI1QUM0MTk3LUNGNjItNDkzQi05Mzk1LThB
 			MEI3MzczREVCORgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
 			AAAAAQAAAAEBAAAvAAAA2AAAAP7///8BAAAAAAAAABEAAAAEEAAA
 			RAAAAAAAAAAFEAAAiAAAAAAAAAAQEAAArAAAAAAAAABAEAAAnAAA
@@ -778,31 +1289,6 @@
 			</data>
 			<key>name</key>
 			<string>Downloads</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9va5gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAiAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACAAAAAEBAABQaWN0dXJlcwwAAAAB
-			BgAAEAAAACAAAAAwAAAACAAAAAQDAACEXAAAAAAAAAgAAAAEAwAA
-			uMMDAAAAAAAIAAAABAMAALvDAwAAAAAADAAAAAEGAABUAAAAZAAA
-			AHQAAAAIAAAAAAQAAEHDsBsCgAAAGAAAAAECAAACAAAAAAAAAA8A
-			AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgAAAAEAwAAAQAAAAAAAAAE
-			AAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
-			bnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBw7AUF4AA
-			ACQAAAABAQAAMjVBQzQxOTctQ0Y2Mi00OTNCLTkzOTUtOEEwQjcz
-			NzNERUI5GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
-			AAAAAQEAAC8AAADYAAAA/v///wEAAAAAAAAAEQAAAAQQAABAAAAA
-			AAAAAAUQAACEAAAAAAAAABAQAACoAAAAAAAAAEAQAACYAAAAAAAA
-			AAIgAAB8AQAAAAAAAAUgAADsAAAAAAAAABAgAAD8AAAAAAAAABEg
-			AAAwAQAAAAAAABIgAAAQAQAAAAAAABMgAAAgAQAAAAAAACAgAABc
-			AQAAAAAAADAgAADIAAAAAAAAAAHAAADQAAAAAAAAABHAAAAgAAAA
-			AAAAABLAAADgAAAAAAAAAAHQAADIAAAAAAAAABDQAAAEAAAAAAAA
-			AA==
-			</data>
-			<key>name</key>
-			<string>Pictures</string>
 		</dict>
 		<dict>
 			<key>file-bookmark</key>
@@ -820,7 +1306,7 @@
 			AAAABAAAQcPEQn6AAAAYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAA
 			AAAAAAAAAAAAAAABBQAACAAAAAQDAAAGAAAAAAAAAAQAAAADAwAA
 			9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBI
-			RAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHDsBQXgAAAJAAAAAEB
+			RAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHEFN/EAAAAJAAAAAEB
 			AAAyNUFDNDE5Ny1DRjYyLTQ5M0ItOTM5NS04QTBCNzM3M0RFQjkY
 			AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
 			LwAAANgAAAD+////AQAAAAAAAAARAAAABBAAAIQAAAAAAAAABRAA
@@ -836,83 +1322,170 @@
 		<dict>
 			<key>file-bookmark</key>
 			<data>
-			Ym9va/ACAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAA4AEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			Ym9va5ADAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAgAIAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
 			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAAB3b3Jrc3BhY2UAAAAI
-			AAAAAQEAAHNhZ2V3ZWxsDAAAAAEBAABzYWdld2VsbC1pb3MUAAAA
-			AQYAABAAAAAgAAAAMAAAAEQAAABUAAAACAAAAAQDAACEXAAAAAAA
-			AAgAAAAEAwAAuMMDAAAAAAAIAAAABAMAADHNFgAAAAAACAAAAAQD
-			AAA0zRYAAAAAAAgAAAAEAwAAPs0WAAAAAAAUAAAAAQYAAIQAAACU
-			AAAApAAAALQAAADEAAAACAAAAAAEAABBw9VeyoAAABgAAAABAgAA
-			AgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAIAAAABAMA
-			AAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwA
-			AAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAA
-			BAAAQcOwFBeAAAAkAAAAAQEAADI1QUM0MTk3LUNGNjItNDkzQi05
-			Mzk1LThBMEI3MzczREVCORgAAAABAgAAgQAAAAEAAADvEwAAAQAA
-			AAAAAAAAAAAAAQAAAAEBAAAvAAAA2AAAAP7///8BAAAAAAAAABEA
-			AAAEEAAAaAAAAAAAAAAFEAAA1AAAAAAAAAAQEAAAAAEAAAAAAABA
-			EAAA8AAAAAAAAAACIAAA1AEAAAAAAAAFIAAARAEAAAAAAAAQIAAA
-			VAEAAAAAAAARIAAAiAEAAAAAAAASIAAAaAEAAAAAAAATIAAAeAEA
-			AAAAAAAgIAAAtAEAAAAAAAAwIAAAIAEAAAAAAAABwAAAKAEAAAAA
-			AAARwAAAIAAAAAAAAAASwAAAOAEAAAAAAAAB0AAAIAEAAAAAAAAQ
-			0AAABAAAAAAAAAA=
+			AAAAAQEAAHNhZ2V3ZWxsEAAAAAEBAABzYWdld2VsbC1hbmRyb2lk
+			AwAAAAEBAABhcHAABQAAAAEBAABidWlsZAAAAAcAAAABAQAAb3V0
+			cHV0cwAGAAAAAQEAAGJ1bmRsZQAAJAAAAAEGAAAQAAAAIAAAADAA
+			AABEAAAAVAAAAGwAAAB4AAAAiAAAAJgAAAAIAAAABAMAAIRcAAAA
+			AAAACAAAAAQDAAC4wwMAAAAAAAgAAAAEAwAAMc0WAAAAAAAIAAAA
+			BAMAADTNFgAAAAAACAAAAAQDAAA8zRYAAAAAAAgAAAAEAwAAfs0W
+			AAAAAAAIAAAABAMAAAvHHgEAAAAACAAAAAQDAABfyR4BAAAAAAgA
+			AAAEAwAACY4bAgAAAAAkAAAAAQYAANQAAADkAAAA9AAAAAQBAAAU
+			AQAAJAEAADQBAABEAQAAVAEAAAgAAAAABAAAQcRKFKzVRzUYAAAA
+			AQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAABBQAACAAA
+			AAQDAAAHAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTov
+			Ly8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAI
+			AAAAAAQAAEHEFN/EAAAAJAAAAAEBAAAyNUFDNDE5Ny1DRjYyLTQ5
+			M0ItOTM5NS04QTBCNzM3M0RFQjkYAAAAAQIAAIEAAAABAAAA7xMA
+			AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAANgAAAD+////AQAAAAAA
+			AAARAAAABBAAAKgAAAAAAAAABRAAAGQBAAAAAAAAEBAAAKABAAAA
+			AAAAQBAAAJABAAAAAAAAAiAAAHQCAAAAAAAABSAAAOQBAAAAAAAA
+			ECAAAPQBAAAAAAAAESAAACgCAAAAAAAAEiAAAAgCAAAAAAAAEyAA
+			ABgCAAAAAAAAICAAAFQCAAAAAAAAMCAAAMABAAAAAAAAAcAAAMgB
+			AAAAAAAAEcAAACAAAAAAAAAAEsAAANgBAAAAAAAAAdAAAMABAAAA
+			AAAAENAAAAQAAAAAAAAA
 			</data>
 			<key>name</key>
-			<string>sagewell-ios</string>
+			<string>bundle</string>
 		</dict>
 		<dict>
 			<key>file-bookmark</key>
 			<data>
-			Ym9va8QCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAtAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			Ym9va7gDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAqAIAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
 			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAAB3b3Jrc3BhY2UAAAAI
-			AAAAAQEAAHNhZ2V3ZWxsEAAAAAEGAAAQAAAAIAAAADAAAABEAAAA
-			CAAAAAQDAACEXAAAAAAAAAgAAAAEAwAAuMMDAAAAAAAIAAAABAMA
-			ADHNFgAAAAAACAAAAAQDAAA0zRYAAAAAABAAAAABBgAAbAAAAHwA
-			AACMAAAAnAAAAAgAAAAABAAAQcPVn4aAAAAYAAAAAQIAAAIAAAAA
-			AAAADwAAAAAAAAAAAAAAAAAAAAAAAAABBQAACAAAAAQDAAACAAAA
-			AAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
-			AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQAAEHD
-			sBQXgAAAJAAAAAEBAAAyNUFDNDE5Ny1DRjYyLTQ5M0ItOTM5NS04
-			QTBCNzM3M0RFQjkYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
-			AAAAAAEAAAABAQAALwAAANgAAAD+////AQAAAAAAAAARAAAABBAA
-			AFQAAAAAAAAABRAAAKwAAAAAAAAAEBAAANQAAAAAAAAAQBAAAMQA
-			AAAAAAAAAiAAAKgBAAAAAAAABSAAABgBAAAAAAAAECAAACgBAAAA
-			AAAAESAAAFwBAAAAAAAAEiAAADwBAAAAAAAAEyAAAEwBAAAAAAAA
-			ICAAAIgBAAAAAAAAMCAAAPQAAAAAAAAAAcAAAPwAAAAAAAAAEcAA
-			ACAAAAAAAAAAEsAAAAwBAAAAAAAAAdAAAPQAAAAAAAAAENAAAAQA
-			AAAAAAAA
+			AAAAAQEAAHNhZ2V3ZWxsEAAAAAEBAABzYWdld2VsbC1hbmRyb2lk
+			AwAAAAEBAABhcHAABQAAAAEBAABidWlsZAAAAAcAAAABAQAAb3V0
+			cHV0cwAGAAAAAQEAAGJ1bmRsZQAABQAAAAEBAABkZWJ1ZwAAACgA
+			AAABBgAAEAAAACAAAAAwAAAARAAAAFQAAABsAAAAeAAAAIgAAACY
+			AAAAqAAAAAgAAAAEAwAAhFwAAAAAAAAIAAAABAMAALjDAwAAAAAA
+			CAAAAAQDAAAxzRYAAAAAAAgAAAAEAwAANM0WAAAAAAAIAAAABAMA
+			ADzNFgAAAAAACAAAAAQDAAB+zRYAAAAAAAgAAAAEAwAAC8ceAQAA
+			AAAIAAAABAMAAF/JHgEAAAAACAAAAAQDAAAJjhsCAAAAAAgAAAAE
+			AwAACo4bAgAAAAAoAAAAAQYAAOgAAAD4AAAACAEAABgBAAAoAQAA
+			OAEAAEgBAABYAQAAaAEAAHgBAAAIAAAAAAQAAEHEShSs1UklGAAA
+			AAECAAACAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgA
+			AAAEAwAACAAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6
+			Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAA
+			CAAAAAAEAABBxBTfxAAAACQAAAABAQAAMjVBQzQxOTctQ0Y2Mi00
+			OTNCLTkzOTUtOEEwQjczNzNERUI5GAAAAAECAACBAAAAAQAAAO8T
+			AAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAADYAAAA/v///wEAAAAA
+			AAAAEQAAAAQQAAC4AAAAAAAAAAUQAACIAQAAAAAAABAQAADIAQAA
+			AAAAAEAQAAC4AQAAAAAAAAIgAACcAgAAAAAAAAUgAAAMAgAAAAAA
+			ABAgAAAcAgAAAAAAABEgAABQAgAAAAAAABIgAAAwAgAAAAAAABMg
+			AABAAgAAAAAAACAgAAB8AgAAAAAAADAgAADoAQAAAAAAAAHAAADw
+			AQAAAAAAABHAAAAgAAAAAAAAABLAAAAAAgAAAAAAAAHQAADoAQAA
+			AAAAABDQAAAEAAAAAAAAAA==
 			</data>
 			<key>name</key>
-			<string>sagewell</string>
+			<string>debug</string>
 		</dict>
 		<dict>
 			<key>file-bookmark</key>
 			<data>
-			Ym9vaxgDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAACAIAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			Ym9va0ADAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAMAIAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
 			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAAB3b3Jrc3BhY2UAAAAI
-			AAAAAQEAAHNhZ2V3ZWxsDAAAAAEBAABzYWdld2VsbC1pb3MIAAAA
-			AQEAAFNhZ2V3ZWxsGAAAAAEGAAAQAAAAIAAAADAAAABEAAAAVAAA
-			AGgAAAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAC4wwMAAAAAAAgA
-			AAAEAwAAMc0WAAAAAAAIAAAABAMAADTNFgAAAAAACAAAAAQDAAA+
-			zRYAAAAAAAgAAAAEAwAAvc0WAAAAAAAYAAAAAQYAAJgAAACoAAAA
-			uAAAAMgAAADYAAAA6AAAAAgAAAAABAAAQcPViSSAAAAYAAAAAQIA
-			AAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAABBQAACAAAAAQD
-			AAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8M
-			AAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAA
-			AAQAAEHDsBQXgAAAJAAAAAEBAAAyNUFDNDE5Ny1DRjYyLTQ5M0It
-			OTM5NS04QTBCNzM3M0RFQjkYAAAAAQIAAIEAAAABAAAA7xMAAAEA
-			AAAAAAAAAAAAAAEAAAABAQAALwAAANgAAAD+////AQAAAAAAAAAR
-			AAAABBAAAHgAAAAAAAAABRAAAPgAAAAAAAAAEBAAACgBAAAAAAAA
-			QBAAABgBAAAAAAAAAiAAAPwBAAAAAAAABSAAAGwBAAAAAAAAECAA
-			AHwBAAAAAAAAESAAALABAAAAAAAAEiAAAJABAAAAAAAAEyAAAKAB
-			AAAAAAAAICAAANwBAAAAAAAAMCAAAEgBAAAAAAAAAcAAAFABAAAA
-			AAAAEcAAACAAAAAAAAAAEsAAAGABAAAAAAAAAdAAAEgBAAAAAAAA
-			ENAAAAQAAAAAAAAA
+			AAAAAQEAAHNhZ2V3ZWxsEAAAAAEBAABzYWdld2VsbC1hbmRyb2lk
+			AwAAAAEBAABhcHAABQAAAAEBAABkZWJ1ZwAAABwAAAABBgAAEAAA
+			ACAAAAAwAAAARAAAAFQAAABsAAAAeAAAAAgAAAAEAwAAhFwAAAAA
+			AAAIAAAABAMAALjDAwAAAAAACAAAAAQDAAAxzRYAAAAAAAgAAAAE
+			AwAANM0WAAAAAAAIAAAABAMAADzNFgAAAAAACAAAAAQDAAB+zRYA
+			AAAAAAgAAAAEAwAAWd5SAAAAAAAcAAAAAQYAAKwAAAC8AAAAzAAA
+			ANwAAADsAAAA/AAAAAwBAAAIAAAAAAQAAEHD30hxtWG0GAAAAAEC
+			AAACAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgAAAAE
+			AwAABQAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8v
+			DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAA
+			AAAEAABBxBTfxAAAACQAAAABAQAAMjVBQzQxOTctQ0Y2Mi00OTNC
+			LTkzOTUtOEEwQjczNzNERUI5GAAAAAECAACBAAAAAQAAAO8TAAAB
+			AAAAAAAAAAAAAAABAAAAAQEAAC8AAADYAAAA/v///wEAAAAAAAAA
+			EQAAAAQQAACIAAAAAAAAAAUQAAAcAQAAAAAAABAQAABQAQAAAAAA
+			AEAQAABAAQAAAAAAAAIgAAAkAgAAAAAAAAUgAACUAQAAAAAAABAg
+			AACkAQAAAAAAABEgAADYAQAAAAAAABIgAAC4AQAAAAAAABMgAADI
+			AQAAAAAAACAgAAAEAgAAAAAAADAgAABwAQAAAAAAAAHAAAB4AQAA
+			AAAAABHAAAAgAAAAAAAAABLAAACIAQAAAAAAAAHQAABwAQAAAAAA
+			ABDQAAAEAAAAAAAAAA==
 			</data>
 			<key>name</key>
-			<string>Sagewell</string>
+			<string>debug</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9va5gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAiAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwABwAAAAEBAABEZXNrdG9wAAwAAAAB
+			BgAAEAAAACAAAAAwAAAACAAAAAQDAACEXAAAAAAAAAgAAAAEAwAA
+			uMMDAAAAAAAIAAAABAMAAL3DAwAAAAAADAAAAAEGAABUAAAAZAAA
+			AHQAAAAIAAAAAAQAAEHDsBsCgAAAGAAAAAECAAACAAAAAAAAAA8A
+			AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgAAAAEAwAAAQAAAAAAAAAE
+			AAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
+			bnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBxBTfxAAA
+			ACQAAAABAQAAMjVBQzQxOTctQ0Y2Mi00OTNCLTkzOTUtOEEwQjcz
+			NzNERUI5GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
+			AAAAAQEAAC8AAADYAAAA/v///wEAAAAAAAAAEQAAAAQQAABAAAAA
+			AAAAAAUQAACEAAAAAAAAABAQAACoAAAAAAAAAEAQAACYAAAAAAAA
+			AAIgAAB8AQAAAAAAAAUgAADsAAAAAAAAABAgAAD8AAAAAAAAABEg
+			AAAwAQAAAAAAABIgAAAQAQAAAAAAABMgAAAgAQAAAAAAACAgAABc
+			AQAAAAAAADAgAADIAAAAAAAAAAHAAADQAAAAAAAAABHAAAAgAAAA
+			AAAAABLAAADgAAAAAAAAAAHQAADIAAAAAAAAABDQAAAEAAAAAAAA
+			AA==
+			</data>
+			<key>name</key>
+			<string>Desktop</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9va8wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAvAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAABEb3dubG9hZHMAAAAP
+			AAAAAQEAAGN1cnNlX29mX3N0cmFoZAAQAAAAAQYAABAAAAAgAAAA
+			MAAAAEQAAAAIAAAABAMAAIRcAAAAAAAACAAAAAQDAAC4wwMAAAAA
+			AAgAAAAEAwAA68MDAAAAAAAIAAAABAMAAIpGngEAAAAAEAAAAAEG
+			AAB0AAAAhAAAAJQAAACkAAAACAAAAAAEAABBxCqIzAAAABgAAAAB
+			AgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAIAAAA
+			BAMAAAIAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8v
+			LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
+			AAAABAAAQcQU38QAAAAkAAAAAQEAADI1QUM0MTk3LUNGNjItNDkz
+			Qi05Mzk1LThBMEI3MzczREVCORgAAAABAgAAgQAAAAEAAADvEwAA
+			AQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA2AAAAP7///8BAAAAAAAA
+			ABEAAAAEEAAAXAAAAAAAAAAFEAAAtAAAAAAAAAAQEAAA3AAAAAAA
+			AABAEAAAzAAAAAAAAAACIAAAsAEAAAAAAAAFIAAAIAEAAAAAAAAQ
+			IAAAMAEAAAAAAAARIAAAZAEAAAAAAAASIAAARAEAAAAAAAATIAAA
+			VAEAAAAAAAAgIAAAkAEAAAAAAAAwIAAA/AAAAAAAAAABwAAABAEA
+			AAAAAAARwAAAIAAAAAAAAAASwAAAFAEAAAAAAAAB0AAA/AAAAAAA
+			AAAQ0AAABAAAAAAAAAA=
+			</data>
+			<key>name</key>
+			<string>curse_of_strahd</string>
+		</dict>
+		<dict>
+			<key>file-bookmark</key>
+			<data>
+			Ym9va5gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAiAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwACAAAAAEBAABQaWN0dXJlcwwAAAAB
+			BgAAEAAAACAAAAAwAAAACAAAAAQDAACEXAAAAAAAAAgAAAAEAwAA
+			uMMDAAAAAAAIAAAABAMAALvDAwAAAAAADAAAAAEGAABUAAAAZAAA
+			AHQAAAAIAAAAAAQAAEHDsBsCgAAAGAAAAAECAAACAAAAAAAAAA8A
+			AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgAAAAEAwAAAQAAAAAAAAAE
+			AAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
+			bnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBxBTfxAAA
+			ACQAAAABAQAAMjVBQzQxOTctQ0Y2Mi00OTNCLTkzOTUtOEEwQjcz
+			NzNERUI5GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
+			AAAAAQEAAC8AAADYAAAA/v///wEAAAAAAAAAEQAAAAQQAABAAAAA
+			AAAAAAUQAACEAAAAAAAAABAQAACoAAAAAAAAAEAQAACYAAAAAAAA
+			AAIgAAB8AQAAAAAAAAUgAADsAAAAAAAAABAgAAD8AAAAAAAAABEg
+			AAAwAQAAAAAAABIgAAAQAQAAAAAAABMgAAAgAQAAAAAAACAgAABc
+			AQAAAAAAADAgAADIAAAAAAAAAAHAAADQAAAAAAAAABHAAAAgAAAA
+			AAAAABLAAADgAAAAAAAAAAHQAADIAAAAAAAAABDQAAAEAAAAAAAA
+			AA==
+			</data>
+			<key>name</key>
+			<string>Pictures</string>
 		</dict>
 	</array>
 	<key>FXSidebarUpgradedSharedSearchToTwelve</key>
@@ -943,14 +1516,14 @@
 		<string>Gray</string>
 	</array>
 	<key>GoToField</key>
-	<string>~/.dotfiles/</string>
+	<string>~/Library/MobileDevice/Provisioning Profiles/</string>
 	<key>GoToFieldHistory</key>
 	<array>
+		<string>/Users/wilhall/Library/MobileDevice/Provisioning Profiles</string>
+		<string>/Users/wilhall/Library/Application Support/Google/Android File Transfer</string>
+		<string>/opt/homebrew/bin/watchman</string>
 		<string>/Users/wilhall/.dotfiles</string>
 		<string>~/Library/Application Support/Google/Chrome/</string>
-		<string>~/Library/Caches/</string>
-		<string>~/.dotfiles/</string>
-		<string>/usr/local/bin/</string>
 	</array>
 	<key>ICloudViewSettings</key>
 	<dict>
@@ -1106,7 +1679,7 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>0.0</real>
+			<real>327</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
@@ -1264,7 +1837,7 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>0.0</real>
+			<real>327</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
@@ -1280,8 +1853,6 @@
 		<dict>
 			<key>ContainerShowSidebar</key>
 			<true/>
-			<key>ShowPathbar</key>
-			<true/>
 			<key>ShowSidebar</key>
 			<true/>
 			<key>ShowStatusBar</key>
@@ -1291,11 +1862,11 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{283, 308}, {920, 464}}</string>
+			<string>{{1111, 376}, {920, 436}}</string>
 		</dict>
 	</dict>
 	<key>LastTrashState</key>
-	<false/>
+	<true/>
 	<key>MeetingRoomViewSetting</key>
 	<dict>
 		<key>CustomViewStyleVersion</key>
@@ -1313,7 +1884,7 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{1736, 960}, {920, 464}}</string>
+			<string>{{467, 516}, {920, 436}}</string>
 		</dict>
 	</dict>
 	<key>NSNavLastRootDirectory</key>
@@ -1341,7 +1912,7 @@
 		<key>TB Icon Size Mode</key>
 		<integer>1</integer>
 		<key>TB Is Shown</key>
-		<integer>1</integer>
+		<integer>0</integer>
 		<key>TB Item Identifiers</key>
 		<array>
 			<string>com.apple.finder.BACK</string>
@@ -1365,17 +1936,15 @@
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>547 173 800 365 0 0 1440 875 </string>
-	<key>NewWindowTarget</key>
-	<string>PfLo</string>
-	<key>NewWindowTargetPath</key>
-	<string>file:///Users/wilhall/Downloads/</string>
-	<key>PackageViewSettings</key>
+	<key>NSWindowTabbingShoudShowTabBarKey-com.apple.finder.TBrowserWindow</key>
+	<true/>
+	<key>NetworkViewSettings</key>
 	<dict>
+		<key>CustomViewStyleVersion</key>
+		<integer>1</integer>
 		<key>WindowState</key>
 		<dict>
 			<key>ContainerShowSidebar</key>
-			<true/>
-			<key>ShowPathbar</key>
 			<true/>
 			<key>ShowSidebar</key>
 			<true/>
@@ -1386,23 +1955,328 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{75, 439}, {920, 436}}</string>
+			<string>{{1043, 790}, {920, 464}}</string>
+		</dict>
+	</dict>
+	<key>NewWindowTarget</key>
+	<string>PfLo</string>
+	<key>NewWindowTargetPath</key>
+	<string>file:///Users/wilhall/Downloads/</string>
+	<key>PackageViewSettings</key>
+	<dict>
+		<key>ExtendedListViewSettingsV2</key>
+		<dict>
+			<key>calculateAllSizes</key>
+			<false/>
+			<key>columns</key>
+			<array>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>name</string>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>300</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>ubiquity</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>35</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>dateModified</string>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>dateCreated</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>size</string>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>97</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>kind</string>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>115</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>label</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>100</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>version</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>75</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>identifier</key>
+					<string>comments</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>300</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>dateLastOpened</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>200</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>dateAdded</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>shareOwner</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>210</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>shareLastEditor</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>210</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>invitationStatus</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>210</integer>
+				</dict>
+			</array>
+			<key>iconSize</key>
+			<real>16</real>
+			<key>scrollPositionX</key>
+			<real>0.0</real>
+			<key>scrollPositionY</key>
+			<real>31</real>
+			<key>showIconPreview</key>
+			<true/>
+			<key>sortColumn</key>
+			<string>name</string>
+			<key>textSize</key>
+			<real>13</real>
+			<key>useRelativeDates</key>
+			<true/>
+			<key>viewOptionsVersion</key>
+			<integer>1</integer>
+		</dict>
+		<key>ListViewSettings</key>
+		<dict>
+			<key>calculateAllSizes</key>
+			<false/>
+			<key>columns</key>
+			<dict>
+				<key>comments</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>7</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>300</integer>
+				</dict>
+				<key>dateCreated</key>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>index</key>
+					<integer>2</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<key>dateLastOpened</key>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>index</key>
+					<integer>8</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>200</integer>
+				</dict>
+				<key>dateModified</key>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>index</key>
+					<integer>1</integer>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<key>kind</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>4</integer>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>115</integer>
+				</dict>
+				<key>label</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>5</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>100</integer>
+				</dict>
+				<key>name</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>0</integer>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>300</integer>
+				</dict>
+				<key>size</key>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>index</key>
+					<integer>3</integer>
+					<key>visible</key>
+					<true/>
+					<key>width</key>
+					<integer>97</integer>
+				</dict>
+				<key>version</key>
+				<dict>
+					<key>ascending</key>
+					<true/>
+					<key>index</key>
+					<integer>6</integer>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>75</integer>
+				</dict>
+			</dict>
+			<key>iconSize</key>
+			<real>16</real>
+			<key>scrollPositionX</key>
+			<real>0.0</real>
+			<key>scrollPositionY</key>
+			<real>31</real>
+			<key>showIconPreview</key>
+			<true/>
+			<key>sortColumn</key>
+			<string>name</string>
+			<key>textSize</key>
+			<real>13</real>
+			<key>useRelativeDates</key>
+			<true/>
+			<key>viewOptionsVersion</key>
+			<integer>1</integer>
+		</dict>
+		<key>WindowState</key>
+		<dict>
+			<key>ContainerShowSidebar</key>
+			<true/>
+			<key>ShowSidebar</key>
+			<true/>
+			<key>ShowStatusBar</key>
+			<false/>
+			<key>ShowTabView</key>
+			<false/>
+			<key>ShowToolbar</key>
+			<true/>
+			<key>WindowBounds</key>
+			<string>{{466, 495}, {920, 464}}</string>
 		</dict>
 	</dict>
 	<key>PreferencesWindow.LastSelection</key>
 	<string>SDBR</string>
 	<key>RecentMoveAndCopyDestinations</key>
 	<array>
-		<string>file:///Users/wilhall/Pictures/</string>
+		<string>file:///Applications/</string>
 		<string>file:///Users/wilhall/workspace/sagewell/sagewell/app/javascript/images/</string>
 		<string>file:///Users/wilhall/Downloads/</string>
-		<string>file:///Applications/</string>
-		<string>file:///Users/wilhall/.config/coc/</string>
-		<string>file:///Users/wilhall/</string>
-		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/</string>
-		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Employment/Consulting/Sagewell/invoices/</string>
-		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Employment/</string>
-		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Employment/Consulting/</string>
+		<string>file:///Users/wilhall/workspace/sagewell/sagewell/app/events/kard/</string>
+		<string>file:///Users/wilhall/workspace/sagewell/sagewell/app/events/</string>
+		<string>file:///Users/wilhall/workspace/sagewell/sagewell/app/events/customer_io/</string>
 	</array>
 	<key>RecentsArrangeGroupViewBy</key>
 	<string>Date Last Opened</string>
@@ -1441,7 +2315,7 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{1012, 639}, {920, 436}}</string>
+			<string>{{0, 692}, {858, 723}}</string>
 		</dict>
 	</dict>
 	<key>ShowExternalHardDrivesOnDesktop</key>
@@ -1469,7 +2343,7 @@
 	<key>SidebarTagsSctionDisclosedState</key>
 	<true/>
 	<key>SidebarWidth</key>
-	<real>159</real>
+	<real>178</real>
 	<key>SidebariCloudDriveSectionDisclosedState</key>
 	<true/>
 	<key>StandardViewSettings</key>
@@ -1906,11 +2780,11 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>0.0</real>
+			<real>326</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
-			<string>name</string>
+			<string>dateModified</string>
 			<key>textSize</key>
 			<real>13</real>
 			<key>useRelativeDates</key>
@@ -2029,11 +2903,11 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>0.0</real>
+			<real>326</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
-			<string>name</string>
+			<string>dateModified</string>
 			<key>textSize</key>
 			<real>13</real>
 			<key>useRelativeDates</key>
@@ -2045,18 +2919,16 @@
 		<dict>
 			<key>ContainerShowSidebar</key>
 			<true/>
-			<key>ShowPathbar</key>
-			<true/>
 			<key>ShowSidebar</key>
 			<true/>
 			<key>ShowStatusBar</key>
 			<false/>
 			<key>ShowTabView</key>
-			<false/>
+			<true/>
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{283, 309}, {920, 464}}</string>
+			<string>{{213, 591}, {920, 464}}</string>
 		</dict>
 	</dict>
 	<key>ViewOptionsWindow.Location</key>

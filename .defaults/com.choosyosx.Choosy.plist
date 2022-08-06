@@ -2,25 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSNavLastRootDirectory</key>
+	<string>/Applications</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{800, 448}</string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>526 507 800 448 0 0 1800 1125 </string>
 	<key>SUAutomaticallyUpdate</key>
 	<false/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2022-02-05T00:21:07Z</date>
+	<date>2022-08-05T18:07:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>browsers</key>
 	<array>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
+			<string>/Applications/Safari.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Safari.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>

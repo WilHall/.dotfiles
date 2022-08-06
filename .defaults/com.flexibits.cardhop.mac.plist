@@ -10,6 +10,8 @@
 		<string>iCloud</string>
 		<key>account:6D61299C-876F-4352-B60C-E9294A7C2156</key>
 		<string>On My Mac</string>
+		<key>account:76C64EB9-BA94-4E71-BBEE-F474972CAECB</key>
+		<string>On My Mac</string>
 		<key>account:9721CA1F-C6BC-41E0-9B1B-7D2EA5010388</key>
 		<string>On My Mac</string>
 		<key>account:A5BC081E-0B28-42E5-9BC9-5830E7C9AA08</key>
@@ -24,7 +26,7 @@
 	<key>AddressFormat</key>
 	<string>us</string>
 	<key>CardhopQuickContactWidgetChangeHash</key>
-	<integer>9495476327708920287</integer>
+	<integer>1293550675996911269</integer>
 	<key>ContactTemplate</key>
 	<array>
 		<dict>
@@ -83,7 +85,11 @@
 	<key>HideInDock</key>
 	<true/>
 	<key>LastLaunchVersion</key>
-	<string>1072</string>
+	<string>1084</string>
+	<key>LastSelectedContactIdentifiers</key>
+	<array>
+		<string>74F57A4B-7577-4D1C-B513-4257F4ACED90:ABPerson</string>
+	</array>
 	<key>LastSelectedTab</key>
 	<integer>2</integer>
 	<key>LightModeTheme</key>
@@ -94,12 +100,14 @@
 	<true/>
 	<key>MSAppCenterInstallId</key>
 	<string>3871956C-83E2-47ED-BE86-067992D80575</string>
+	<key>MSAppCenterNetworkRequestsAllowed</key>
+	<false/>
 	<key>MSAppCenterPastDevices</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBIYHCJQUVJTVFVWV1hZ
 	WltcXWJnVSRudWxs0g0ODxFaTlMub2JqZWN0c1YkY2xhc3OhEIACgBXTExQOFRYXXHRp
-	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HD1jeJPaphgATS
+	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HETYn5ruUugATS
 	HR4fIFokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRGF0ZaIfIVhOU09iamVjdN8QFyMkJSYO
 	JygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PDxBQjw8PDxHSElKPDxNTk9Zb3NWZXJzaW9u
 	XnRpbWVab25lT2Zmc2V0WGFwcEJ1aWxkXxAVbGl2ZVVwZGF0ZVBhY2thZ2VIYXNoWmFw
@@ -109,23 +117,23 @@
 	ZVVtb2RlbF8QFXdyYXBwZXJSdW50aW1lVmVyc2lvbl8QFmxpdmVVcGRhdGVSZWxlYXNl
 	TGFiZWxac2NyZWVuU2l6ZVZvc05hbWVXb3NCdWlsZIALgA6AEYAAgBOAEIAAgACABoAN
 	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNC40LjBe
-	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTIuMS4wVTIxQzUyVWVuX1VTE///////
-	//7UWTM4NDB4MTYwMFUyLjAuOFQxMDcyXxAZY29tLmZsZXhpYml0cy5jYXJkaG9wLm1h
-	Y9IdHl5fWk1TQUNEZXZpY2WjYGEhWk1TQUNEZXZpY2VeTVNBQ1dyYXBwZXJTZGvSHR5j
-	ZF8QFU1TQUNEZXZpY2VIaXN0b3J5SW5mb6NlZiFfEBVNU0FDRGV2aWNlSGlzdG9yeUlu
-	Zm9fEA9NU0FDSGlzdG9yeUluZm/SHR5oaV5OU011dGFibGVBcnJheaNoaiFXTlNBcnJh
-	eQAIABEAGgAkACkAMgA3AEkATABRAFMAbAByAHcAggCJAIsAjQCPAJYAowCtAK8AsQCz
-	ALgAwADJAMsA0ADbAOQA6wDuAPcBKAEyAUEBSgFiAW0BgQGNAZUBnAG2AcUB0AHfAecB
-	8gH/AgUCHQI2AkECSAJQAlICVAJWAlgCWgJcAl4CYAJiAmQCZgJoAmoCbAJuAnACcgJ0
-	AnYCeAJ6AnwCfgKQApYCpQKrArECuAK+AsQCzQLXAt0C4gL+AwMDDgMSAx0DLAMxA0kD
-	TQNlA3cDfAOLA48AAAAAAAACAQAAAAAAAABrAAAAAAAAAAAAAAAAAAADlw==
+	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTIuNC4wVTIxRjc5VWVuX1VTE///////
+	//8QWTI1NjB4MTQ0MFMyLjFUMTA4NF8QGWNvbS5mbGV4aWJpdHMuY2FyZGhvcC5tYWPS
+	HR5eX1pNU0FDRGV2aWNlo2BhIVpNU0FDRGV2aWNlXk1TQUNXcmFwcGVyU2Rr0h0eY2Rf
+	EBVNU0FDRGV2aWNlSGlzdG9yeUluZm+jZWYhXxAVTVNBQ0RldmljZUhpc3RvcnlJbmZv
+	XxAPTVNBQ0hpc3RvcnlJbmZv0h0eaGleTlNNdXRhYmxlQXJyYXmjaGohV05TQXJyYXkA
+	CAARABoAJAApADIANwBJAEwAUQBTAGwAcgB3AIIAiQCLAI0AjwCWAKMArQCvALEAswC4
+	AMAAyQDLANAA2wDkAOsA7gD3ASgBMgFBAUoBYgFtAYEBjQGVAZwBtgHFAdAB3wHnAfIB
+	/wIFAh0CNgJBAkgCUAJSAlQCVgJYAloCXAJeAmACYgJkAmYCaAJqAmwCbgJwAnICdAJ2
+	AngCegJ8An4CkAKWAqUCqwKxArgCvgLEAs0C1wLbAuAC/AMBAwwDEAMbAyoDLwNHA0sD
+	YwN1A3oDiQONAAAAAAAAAgEAAAAAAAAAawAAAAAAAAAAAAAAAAAAA5U=
 	</data>
 	<key>MSAppCenterSessionIdHistory</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
 	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
-	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBw9Y3iTMDfYAE0h0eHyBaJGNsYXNzbmFt
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxE2J+a29SYAE0h0eHyBaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
 	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
 	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
@@ -138,7 +146,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
 	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlZdXNlcklk
-	S2V5gAOAAIAF0hkOGhtXTlMudGltZSNBw9Y3iTMqt4AE0h0eHyBaJGNsYXNzbmFtZVgk
+	S2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxE2J+a3KfYAE0h0eHyBaJGNsYXNzbmFtZVgk
 	Y2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFU1TQUNVc2VySWRIaXN0b3J5
 	SW5mb6MlJiFfEBVNU0FDVXNlcklkSGlzdG9yeUluZm9fEA9NU0FDSGlzdG9yeUluZm/S
 	HR4oKV5OU011dGFibGVBcnJheaMoKiFXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABR
@@ -155,22 +163,24 @@
 	<false/>
 	<key>NSSplitView Subview Frames Group</key>
 	<array>
-		<string>0.000000, 0.000000, 65.000000, 1121.000000, NO, NO</string>
-		<string>65.000000, 0.000000, 300.000000, 1121.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 65.000000, 221.000000, NO, NO</string>
+		<string>65.000000, 0.000000, 300.000000, 221.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames Notes</key>
 	<array>
-		<string>0.000000, 0.000000, 350.000000, 308.000000, NO, NO</string>
-		<string>0.000000, 308.000000, 350.000000, 110.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 350.000000, 416.000000, NO, NO</string>
+		<string>0.000000, 416.000000, 350.000000, 110.000000, NO, NO</string>
 	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
 	<real>770</real>
 	<key>NSWindow Frame ContactPopover</key>
-	<string>2429 805 360 418 0 0 3008 1228 </string>
+	<string>1440 594 360 526 0 0 1800 1125 </string>
 	<key>NSWindow Frame Main Window</key>
-	<string>2165 10 365 1208 0 0 3008 1228 </string>
+	<string>1090 807 365 308 0 0 1800 1125 </string>
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
 	<string>692 407 425 137 0 0 1440 875 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>970 762 620 398 0 0 2560 1415 </string>
 	<key>OpenCallsIn</key>
 	<string>com.apple.FaceTime</string>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -182,9 +192,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2022-02-03T20:14:13Z</date>
+	<date>2022-08-04T20:37:14Z</date>
 	<key>SULastProfileSubmissionDate</key>
-	<date>2022-02-03T20:14:12Z</date>
+	<date>2022-07-31T20:27:07Z</date>
 	<key>SUSendProfileInfo</key>
 	<true/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -192,6 +202,10 @@
 	<key>ShowActionButtons</key>
 	<true/>
 	<key>ShowActionButtonsInList</key>
+	<true/>
+	<key>ShowAnniversaries</key>
+	<true/>
+	<key>ShowBirthdays</key>
 	<true/>
 	<key>VCardExportNotes</key>
 	<true/>
@@ -201,9 +215,9 @@
 	<date>2021-09-25T15:31:02Z</date>
 	<key>review.launches</key>
 	<array>
-		<date>2021-09-25T15:31:02Z</date>
-		<date>2021-09-27T21:02:44Z</date>
-		<date>2021-10-01T14:49:26Z</date>
+		<date>2022-07-11T18:30:09Z</date>
+		<date>2022-07-24T20:13:11Z</date>
+		<date>2022-07-28T00:08:17Z</date>
 	</array>
 </dict>
 </plist>

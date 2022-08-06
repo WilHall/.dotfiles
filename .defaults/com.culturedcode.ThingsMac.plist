@@ -7,11 +7,11 @@
 	<key>CrashDeviceIdentifier</key>
 	<string>6C399F8F-661A-4C66-9EDC-DE6AF95A5458</string>
 	<key>ImportantInformationLastCheckedDate</key>
-	<date>2022-02-04T22:06:31Z</date>
+	<date>2022-08-05T14:06:32Z</date>
 	<key>ImportantInformationLastForegroundDate</key>
-	<date>2022-02-05T14:45:35Z</date>
+	<date>2022-08-05T21:17:27Z</date>
 	<key>LastPreferencePaneIdentifier</key>
-	<string>sync</string>
+	<string>quickentry</string>
 	<key>MSAppCenter310AppCenterUserDefaultsMigratedKey</key>
 	<true/>
 	<key>MSAppCenter310CrashesUserDefaultsMigratedKey</key>
@@ -23,7 +23,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBIYHCJQUVJTVFVWV1hZ
 	WltcXWJnVSRudWxs0g0ODxFaTlMub2JqZWN0c1YkY2xhc3OhEIACgBXTExQOFRYXXHRp
-	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HD1v0s5kApgATS
+	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HETsnd+BP1gATS
 	HR4fIFokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRGF0ZaIfIVhOU09iamVjdN8QFyMkJSYO
 	JygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PDxBQjw8PDxHSElKPDxNTk9Zb3NWZXJzaW9u
 	XnRpbWVab25lT2Zmc2V0WGFwcEJ1aWxkXxAVbGl2ZVVwZGF0ZVBhY2thZ2VIYXNoWmFw
@@ -33,8 +33,8 @@
 	ZVVtb2RlbF8QFXdyYXBwZXJSdW50aW1lVmVyc2lvbl8QFmxpdmVVcGRhdGVSZWxlYXNl
 	TGFiZWxac2NyZWVuU2l6ZVZvc05hbWVXb3NCdWlsZIALgA6AEYAAgBOAEIAAgACABoAN
 	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNC4yLjBe
-	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTIuMi4wVTIxRDQ5VWVuX1VTE///////
-	//7UWTM4NDB4MTYwMFczLjE1LjEyWDMxNTEyNTAzXxAaY29tLmN1bHR1cmVkY29kZS5U
+	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTIuNC4wVTIxRjc5VWVuX1VTE///////
+	//8QWTE5MjB4MTIwMFczLjE1LjE2WDMxNTE2NTAyXxAaY29tLmN1bHR1cmVkY29kZS5U
 	aGluZ3NNYWPSHR5eX1pNU0FDRGV2aWNlo2BhIVpNU0FDRGV2aWNlXk1TQUNXcmFwcGVy
 	U2Rr0h0eY2RfEBVNU0FDRGV2aWNlSGlzdG9yeUluZm+jZWYhXxAVTVNBQ0RldmljZUhp
 	c3RvcnlJbmZvXxAPTVNBQ0hpc3RvcnlJbmZv0h0eaGleTlNNdXRhYmxlQXJyYXmjaGoh
@@ -49,7 +49,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
 	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
-	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBw9b9K57X8YAE0h0eHyBaJGNsYXNzbmFt
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxE7JzvIBo4AE0h0eHyBaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
 	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
 	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
@@ -62,7 +62,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGoCwwSGBwiIyhVJG51bGzSDQ4P
 	EVpOUy5vYmplY3RzViRjbGFzc6EQgAKAB9MTFA4VFhdcdGltZXN0YW1wS2V5WXVzZXJJ
-	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcPW/S09GNKABNIdHh8gWiRjbGFzc25hbWVY
+	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcROyeN9RvaABNIdHh8gWiRjbGFzc25hbWVY
 	JGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN0XxAkNkMzOTlGOEYtNjYxQS00QzY2LTlF
 	REMtREU2QUY5NUE1NDU40h0eJCVfEBVNU0FDVXNlcklkSGlzdG9yeUluZm+jJichXxAV
 	TVNBQ1VzZXJJZEhpc3RvcnlJbmZvXxAPTVNBQ0hpc3RvcnlJbmZv0h0eKSpeTlNNdXRh
@@ -76,18 +76,23 @@
 	<string>AsdSigS1SP1gqZGqN4gpaw</string>
 	<key>RecentlyDisplayedSourceUUIDs</key>
 	<array>
-		<string>THMAreaParentSource/7P5ij2UV8rb8fazXUoCHFS</string>
-		<string>THMAreaParentSource/FQNyxUyg6BppdtcezStwLB</string>
-		<string>THMTodayListSource</string>
 		<string>THMAreaParentSource/VAnrePdGvr56UFZSMpMe2r</string>
+		<string>THMTodayListSource</string>
+		<string>THMAreaParentSource/7P5ij2UV8rb8fazXUoCHFS</string>
+		<string>THMAreaParentSource/Q6BCDfhnL9i4QeZkZxjpRZ</string>
+		<string>THMAreaParentSource/6NRixigdST5CasHCmP518Y</string>
+		<string>THMAreaParentSource/J5EhVpFEkCqs25UF8BdjrE</string>
 		<string>THMAreaParentSource/GvQJ2AtPK1n9efqS5x8Vtm</string>
+		<string>THMAreaParentSource/AA8x1BdvBc5FLizms7VzpW</string>
+		<string>THMAreaParentSource/24z3wEL22WXVaVQpU3npwz</string>
+		<string>THMLogbookListSource</string>
 	</array>
 	<key>SharedDataSegmentContextPropertyList</key>
 	<dict>
 		<key>ExpandedContextKeyForProjectsOfArea-24z3wEL22WXVaVQpU3npwz</key>
 		<true/>
 		<key>ExpandedContextKeyForProjectsOfArea-2Bp7YkNdHv1ugWdyKpt82e</key>
-		<true/>
+		<integer>1</integer>
 		<key>ExpandedContextKeyForProjectsOfArea-6CZFp3Rjvw9LA2Kon47HN8</key>
 		<true/>
 		<key>ExpandedContextKeyForProjectsOfArea-6NRixigdST5CasHCmP518Y</key>
@@ -117,28 +122,34 @@
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctcICQoLDA0ODxARDxMUFV8QD2lzU2lkZUJhckhp
 	ZGRlblVmcmFtZVxzaWRlQmFyV2lkdGhcaW5GdWxsU2NyZWVuXxARc2VsZWN0ZWRJdGVt
 	VVVJRHNfEBVhdXRvQ2FzY2FkZUlkZW50aWZpZXJfEBxJbnRlcmFjdGlvbkNvbnRleHRT
-	b3VyY2VVVUlECIABI0BuAAAAAAAACIAEgAKAA6YXGBkaGyBVJG51bGxfEBl7ezE0Mzks
-	IDM4OH0sIHs5MzUsIDcwMH19XxAhVFhNYWluV2luZG93QXV0b0Nhc2NhZGVJZGVudGlm
-	aWVyXxAqVEhNQXJlYVBhcmVudFNvdXJjZS83UDVpajJVVjhyYjhmYXpYVW9DSEZT0hwd
+	b3VyY2VVVUlECIABI0BoIAAAAAAACIAEgAKAA6YXGBkaGyBVJG51bGxfEBl7ezIxOTMs
+	IDEzM30sIHs4NzMsIDc4NX19XxAhVFhNYWluV2luZG93QXV0b0Nhc2NhZGVJZGVudGlm
+	aWVyXxAqVEhNQXJlYVBhcmVudFNvdXJjZS9WQW5yZVBkR3ZyNTZVRlpTTXBNZTJy0hwd
 	Hh9aTlMub2JqZWN0c1YkY2xhc3OggAXSISIjJFokY2xhc3NuYW1lWCRjbGFzc2VzVU5T
 	U2V0oiMlWE5TT2JqZWN0AAgAEQAaACQAKQAyADcASQBYAGoAcAB9AIoAngC2ANUA1gDY
 	AOEA4gDkAOYA6ADvAPUBEQE1AWIBZwFyAXkBegF8AYEBjAGVAZsBngAAAAAAAAIBAAAA
 	AAAAACYAAAAAAAAAAAAAAAAAAAGn
 	</data>
+	<key>TXTextViewAutomaticDashSubstitutionEnabledKey</key>
+	<false/>
+	<key>TXTextViewAutomaticQuoteSubstitutionEnabledKey</key>
+	<false/>
+	<key>TXTextViewAutomaticSpellingCorrectionEnabledKey</key>
+	<true/>
 	<key>TXWindowAutoCascadeTopLeftPoints</key>
 	<dict>
 		<key>TXMainWindowAutoCascadeIdentifier</key>
-		<string>{1439, 1088}</string>
+		<string>{2222, 889}</string>
 	</dict>
 	<key>ThingsCloudEverUsed</key>
 	<true/>
 	<key>ThingsMainWindowSideBarWidthAutosaveName</key>
-	<real>240</real>
+	<real>193</real>
 	<key>firstAppLaunchDate</key>
 	<date>2021-10-12T18:50:54Z</date>
 	<key>whatsNewLastCheckedDate</key>
-	<date>2022-02-05T14:38:53Z</date>
+	<date>2022-08-05T20:41:35Z</date>
 	<key>whatsNewLastCheckedParameterChecksum</key>
-	<string>6188e7a62afa549cb0a7794defbd853afb719c42c5973565744a0b1b4c7f17eb445a3b8f6e73c1fd198f3ed32d7ff1d96798b2b2d817462d771fd6f7024bd96c</string>
+	<string>01d6d304c385294bdc7be99a4e267ba8ff8baf286e03a50e90ec5af70c0750ece22c7fe5a61dfa871e1f37e71ee71dbd9869565eecc0be0742354d55bef074ad</string>
 </dict>
 </plist>

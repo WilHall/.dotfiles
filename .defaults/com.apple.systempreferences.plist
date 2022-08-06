@@ -56,16 +56,18 @@
 	</data>
 	<key>NSTableView Supports v2 LoginItemsColumn2</key>
 	<true/>
+	<key>NSWindow Frame GoToSheet</key>
+	<string>921 646 460 208 0 0 1800 1125 </string>
 	<key>NSWindow Frame Main Window Frame SystemPreferencesApp 8.0</key>
-	<string>1296 1387 668 188 0 0 3840 1575 </string>
+	<string>1382 627 668 448 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>1799 910 800 476 0 0 3840 1575 </string>
+	<string>1316 575 800 476 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
-	<string>692 407 425 137 0 0 1440 875 </string>
+	<string>-900 541 428 137 -1920 -31 1920 1175 </string>
 	<key>SecurityPrefTab</key>
-	<string>General</string>
+	<string>Privacy</string>
 	<key>SoundTab</key>
-	<string>input</string>
+	<string>effects</string>
 	<key>ThirdPartyCount</key>
 	<integer>1</integer>
 	<key>com.apple.PreferenceSync.ExcludeSyncKeys</key>
@@ -74,11 +76,11 @@
 		<string>com.apple.preference.keyboard.lastselectedtab</string>
 	</array>
 	<key>com.apple.SecurityPref.Privacy.LastSourceSelected</key>
-	<integer>0</integer>
+	<integer>8</integer>
 	<key>com.apple.dtandsspref.lastselectedtab</key>
 	<string>com.apple.preference.desktopscreeneffect.desktop</string>
 	<key>com.apple.preference.keyboard.lastselectedtab</key>
-	<string>hotkeysTabIdentifier</string>
+	<string>com.apple.IntlTexts</string>
 	<key>com.apple.preferences.accounts.outline.usersparent</key>
 	<true/>
 	<key>com.apple.preferences.sharing.selectedservice</key>

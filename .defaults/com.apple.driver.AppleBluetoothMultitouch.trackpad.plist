@@ -43,7 +43,7 @@
 	<key>TrackpadTwoFingerDoubleTapGesture</key>
 	<integer>1</integer>
 	<key>TrackpadTwoFingerFromRightEdgeSwipeGesture</key>
-	<integer>3</integer>
+	<integer>0</integer>
 	<key>USBMouseStopsTrackpad</key>
 	<integer>0</integer>
 	<key>UserPreferences</key>

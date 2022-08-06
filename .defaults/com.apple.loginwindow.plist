@@ -5,7 +5,7 @@
 	<key>MiniBuddyLaunch</key>
 	<false/>
 	<key>NSWindow Frame ProcessPanel</key>
-	<string>215 523 338 313 0 0 3008 1228 </string>
+	<string>179 630 338 313 0 0 2560 1415 </string>
 	<key>TALLogoutReason</key>
 	<string>Restart</string>
 	<key>TALLogoutSavesState</key>

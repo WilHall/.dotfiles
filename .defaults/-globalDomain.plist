@@ -96,9 +96,41 @@
 			<key>on</key>
 			<integer>1</integer>
 			<key>replace</key>
-			<string>omw</string>
+			<string>:leaves:</string>
 			<key>with</key>
-			<string>On my way!</string>
+			<string>🍃</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:fire:</string>
+			<key>with</key>
+			<string>🔥</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:knife:</string>
+			<key>with</key>
+			<string>🔪</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:tada:</string>
+			<key>with</key>
+			<string>🎉</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:pear:</string>
+			<key>with</key>
+			<string>🍐</string>
 		</dict>
 		<dict>
 			<key>on</key>

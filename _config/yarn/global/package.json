@@ -4,6 +4,7 @@
     "@linear/import": "^1.5.17",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "create-react-app": "^3.4.1",
+    "depcheck": "^1.4.3",
     "elm-format": "^0.8.2",
     "expo-cli": "^3.3.0",
     "graphql-faker": "^2.0.0-rc.4",

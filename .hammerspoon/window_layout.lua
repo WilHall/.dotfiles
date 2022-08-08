@@ -82,7 +82,7 @@ function undockedLayout()
     {"Mail", nil, laptopScreen, hs.layout.left70, nil, nil},
     {"Messages", nil, laptopScreen, hs.layout.right70, nil, nil},
     {"Slack", nil, laptopScreen, hs.layout.right70, nil, nil},
-    {"Safari", nil, laptopScreen, hs.layout.maximized, nil, nil},
+    {"Google Chrome", nil, laptopScreen, hs.layout.maximized, nil, nil},
     {"iTerm2", nil, laptopScreen, hs.layout.maximized, nil, nil},
   }
 end
@@ -95,7 +95,7 @@ function dockedLayout()
     {"Mail", nil, laptopScreen, hs.layout.left50, nil, nil},
     {"Messages", nil, laptopScreen, hs.layout.right50, nil, nil},
     {"Slack", nil, laptopScreen, hs.layout.right50, nil, nil},
-    {"Safari", nil, externalScreen, hs.layout.full, nil, nil},
+    {"Google Chrome", nil, externalScreen, hs.layout.full, nil, nil},
     {"iTerm2", nil, laptopScreen, hs.layout.full, nil, nil},
   }
 end
@@ -157,7 +157,7 @@ function dockedClamshellPipLayout()
     {"Mail", nil, leftScreen, hs.layout.full, nil, nil},
     {"Messages", nil, rightScreen, positions.lower50, nil, nil},
     {"Slack", nil, rightScreen, positions.full, nil, nil},
-    {"Safari", nil, leftScreen, positions.full, nil, nil},
+    {"Google Chrome", nil, leftScreen, positions.full, nil, nil},
     {"Linear", nil, leftScreen, positions.full, nil, nil},
     {"iTerm2", nil, primaryScreen, positions.full, nil, nil},
   }
@@ -172,7 +172,7 @@ function triScreenLayout()
     {"Mail", nil, leftScreen, hs.layout.full, nil, nil},
     {"Messages", nil, rightScreen, positions.lower50, nil, nil},
     {"Slack", nil, rightScreen, positions.full, nil, nil},
-    {"Safari", nil, leftScreen, positions.full, nil, nil},
+    {"Google Chrome", nil, leftScreen, positions.full, nil, nil},
     {"Linear", nil, leftScreen, positions.full, nil, nil},
     {"iTerm2", nil, primaryScreen, positions.full, nil, nil},
   }

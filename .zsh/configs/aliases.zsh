@@ -23,6 +23,14 @@ alias pwp='cd $(pbpaste -Prefer txt) && clear'
 
 alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
 
+function gpurge() {
+  git fetch -p ; git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -D
+  git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs git branch -D
+  git clean -f -d
+  git prune
+  git gc --aggressive
+}
+
 function vimm() {
   vim $(git status --porcelain | awk '{print $2}')
 }

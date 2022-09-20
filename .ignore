@@ -2,6 +2,7 @@
 **/node_modules/*
 run/*
 cache/*
+coverage/*
 **/run/*
 **/cache/*
 stubs/*
@@ -27,3 +28,4 @@ cache.json
 spec/examples.txt
 storybook-static
 tmp
+.irb_history

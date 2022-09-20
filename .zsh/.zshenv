@@ -1,5 +1,6 @@
 export PATH="$HOME/bin:$HOME/.local/bin:/opt/homebrew/bin:/usr/sbin:/usr/local/bin:$PATH"
 
+export COLORTERM="truecolor"
 export KEYTIMEOUT=1
 export EDITOR='vim'
 export REACT_EDITOR='none'

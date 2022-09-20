@@ -46,8 +46,6 @@ set shortmess+=c
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
   inoremap <silent><expr> <TAB>
     \ coc#pum#visible() ? coc#_select_confirm() :
-    \ coc#expandableOrJumpable() ?
-    \ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
     \ <SID>check_back_space() ? "\<TAB>" :
     \ coc#refresh()
 

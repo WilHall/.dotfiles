@@ -5,7 +5,7 @@
 [blame]
     ignoreRevsFile = .git-blame-ignore-revs
 [core]
-    editor = vim
+    editor = nvim
     excludesfile = ~/.dotfiles/.gitignore
     trustctime = false
 	pager = diff-so-fancy | less --tabs=4 -RFX

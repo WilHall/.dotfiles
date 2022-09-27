@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "<details>\n<summary>Screenshot<\/summary>\n\n![]({cursor})\n\n<\/details>\n",
+    "uid" : "6291F04B-5EAE-4289-B145-AD7B23C38BFA",
+    "name" : "Screenshot",
+    "keyword" : "gss"
+  }
+}

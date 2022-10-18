@@ -62,6 +62,7 @@
   "solargraph.diagnostics": true,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
+  "solargraph.hover": true,
   "solargraph.commandPath": "/Users/wilhall/.asdf/shims/solargraph",
   "tailwindCSS.trace.server": "messages",
   "tailwindCSS.headwind.runOnSave": false,

@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "<table><thead><tr>\n<th>Before<\/th><th>After<\/th>\n<\/tr><\/thead><tbody><tr><td>\n\nLeft{cursor}\n\n<\/td><td>\n\nRight\n\n<\/td><\/tr><\/tbody><\/table>",
-    "uid" : "ED26CDFE-9675-4A14-A314-DFF3E58B0442",
-    "name" : "Side-by-side",
-    "keyword" : "gsbs"
-  }
-}

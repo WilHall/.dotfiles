@@ -67,8 +67,27 @@ hi SpellBad cterm=undercurl gui=undercurl
 " coc diagnostics
 hi CocErrorHighlight guifg=#c94940 gui=bold,undercurl cterm=bold,undercurl 
 hi CocWarningHighlight guifg=#f4b80f gui=bold,undercurl cterm=bold,undercurl 
+hi CocInfoHighlight guifg=#f4b80f gui=bold,undercurl cterm=bold,undercurl 
+hi CocHintHighlight guifg=#f4b80f gui=bold,undercurl cterm=bold,undercurl 
+hi CocUnusedHighlight guifg=#f4b80f gui=bold,undercurl cterm=bold,undercurl 
+hi CocDeprecatedHighlight guifg=#f4b80f gui=bold,undercurl cterm=bold,undercurl 
 hi CocErrorFloat guifg=#c94940 gui=bold 
 hi CocWarningFloat guifg=#f4b80f gui=bold 
+hi CocInfoFloat guifg=#f4b80f gui=bold 
+hi CocHintFloat guifg=#f4b80f gui=bold 
+
+hi! CocErrorSign guifg=#c94940 gui=bold
+hi! CocInfoSign guifg=#f4b80f gui=bold
+hi! CocHintSign guifg=#f4b80f gui=bold
+hi! CocWarningSign guifg=#f4b80f gui=bold
+
+hi! CocErrorVirtualText guifg=#c94940 gui=bold
+hi! CocInfoVirtualText guifg=#f4b80f gui=bold
+hi! CocHintVirtualText guifg=#f4b80f gui=bold
+hi! CocWarningVirtualText guifg=#f4b80f gui=bold
+
+hi! CocErrorFloat guifg=#c94940 gui=bold
+hi! CocHintFloat guifg=#f4b80f gui=bold
 
 " easy motion targets
 hi EasyMotionTarget guifg=#f4b80f guibg=black

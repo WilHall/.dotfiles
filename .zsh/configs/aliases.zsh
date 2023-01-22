@@ -4,6 +4,8 @@ alias ls="exa -F --group-directories-first"
 alias ll="exa -alh --git --group-directories-first"
 alias tree="exa -T"
 alias cd="z"
+alias ctags="`brew --prefix`/bin/ctags"
+
 
 # Bundle aliases
 alias rails="bundle exec rails"
@@ -22,6 +24,10 @@ alias pwc="pwd | pbcopy && clear"
 alias pwp='cd $(pbpaste -Prefer txt) && clear'
 
 alias pscan="lsof -iTCP -sTCP:LISTEN -n -P"
+
+function mvim() {
+   vim `grep -rl "$1" "$2"`
+}
 
 function gpurge() {
   git fetch -p ; git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -D

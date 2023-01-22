@@ -31,7 +31,8 @@
     "ruby",
     "eruby",
     "yaml",
-    "markdown.mdx"
+    "markdown.mdx",
+    "liquid"
   ],
   "yaml.format.enable": true,
   "css.validate": false,
@@ -42,7 +43,16 @@
   "prettier.requireConfig": true,
   "prettier.disableSuccessMessage": true,
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "markdown", "svelte"],
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "markdown",
+    "svelte",
+    "liquid"
+  ],
   "eslint.probe": [
     "javascript",
     "javascriptreact",
@@ -50,14 +60,24 @@
     "typescriptreact",
     "html",
     "markdown",
-    "svelte"
+    "svelte",
+    "liquid"
   ],
   "eslint.options": {
     "ignorePath": ".gitignore"
   },
   "eslint.packageManager": "yarn",
   "eslint.lintTask.options": ["--ignore-path", ".gitignore", "."],
-  "eslint.validate": ["svelte"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "markdown",
+    "svelte",
+    "liquid"
+  ],
   "solargraph.trace.server": "verbose",
   "solargraph.diagnostics": true,
   "solargraph.autoformat": true,
@@ -68,6 +88,7 @@
   "tailwindCSS.headwind.runOnSave": false,
   "html.format.enable": true,
   "tsserver.formatOnType": true,
+  "typescript.preferences.autoImportFileExcludePatterns": ["**/generated/generatedTypes", "**/generated/generatedRoutes"],
   "coc.preferences.formatOnType": true,
   "svelte.enable-ts-plugin": true
 }

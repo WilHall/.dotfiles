@@ -1,3 +1,5 @@
+[init]
+    templatedir = ~/.dotfiles/.git_template
 [user]
     name = Wil Hall
     email = wil@wilhall.com
@@ -38,14 +40,6 @@
     program = /usr/local/MacGPG2/bin/gpg2
 [tag]
     forceSignAnnotated = true
-[duet "env"]
-	git-author-initials = wh
-	git-author-name = Wil Hall
-	git-author-email = wil@wilhall.com
-	mtime = 1609873895
-	git-committer-initials = 
-	git-committer-name = 
-	git-committer-email = 
 [github]
     user = WilHall
 [filter "lfs"]

@@ -2,5 +2,5 @@
 set -e
 dir="`git rev-parse --show-toplevel`"
 trap 'rm -f "$dir/.git/.$$.tags"' EXIT
-ctags -R --extra=+f -f"$dir/.git/.$$.tags" --languages=-ruby,javascript --exclude=*.git* --exclude=*node_modules* --exclude=*public* --exclude=*log* --exclude=*tmp* --exclude=*storybook* --exclude=*.licenses* --exclude=*coverage* --exclude=*bin* --exclude=*generated* --exclude=*config* --exclude=*svg*
+ctags -R --extra=+f -f"$dir/.git/.$$.tags" --languages=-ruby,javascript --exclude=*.git* --exclude=*node_modules* --exclude=*public* --exclude=*log* --exclude=*tmp* --exclude=*storybook* --exclude=*.licenses* --exclude=*coverage* --exclude=*bin* --exclude=*generated* --exclude=*config* --exclude=*svg* --exclude=*tasks* --exclude=*scss* --exclude=*html*
 mv "$dir/.git/.$$.tags" "$dir/.git/tags"

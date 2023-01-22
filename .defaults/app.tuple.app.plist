@@ -2,12 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSStatusItem Preferred Position TupleStatusBarItem</key>
+	<real>687</real>
 	<key>NSStatusItem Visible Item-0</key>
 	<false/>
 	<key>NSStatusItem Visible TupleStatusBarItem</key>
 	<true/>
 	<key>NSWindow Frame webcamFrame</key>
-	<string>1173 608 267 267 0 0 1440 875 </string>
+	<string>1482 850 269 269 0 0 1800 1125 </string>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -17,7 +19,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2022-02-05T14:28:31Z</date>
+	<date>2023-01-22T14:55:57Z</date>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>analyticsProfile</key>
@@ -47,6 +49,8 @@
 	<string>paint</string>
 	<key>audioDeviceManager</key>
 	<dict>
+		<key>preferredInputChannel</key>
+		<integer>0</integer>
 		<key>preferredInputDevice</key>
 		<dict>
 			<key>name</key>
@@ -89,13 +93,22 @@
 		<key>clientID</key>
 		<string>54717</string>
 		<key>date</key>
-		<date>2022-02-04T17:59:55Z</date>
+		<date>2022-04-12T15:12:53Z</date>
 	</dict>
 	<key>seenCameraPreview</key>
 	<true/>
 	<key>transmitResolution</key>
-	<string>high</string>
+	<string>max</string>
 	<key>videoDeviceID</key>
-	<string>0x114100046d085e</string>
+	<string>47B4B64B70674B9CAD2BAE273A71F4B5</string>
+	<key>webcam</key>
+	<dict>
+		<key>id</key>
+		<string>47B4B64B70674B9CAD2BAE273A71F4B5</string>
+		<key>name</key>
+		<string>FaceTime HD Camera</string>
+	</dict>
+	<key>webcamResolution</key>
+	<string>high</string>
 </dict>
 </plist>

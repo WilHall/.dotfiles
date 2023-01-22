@@ -2,11 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSStatusItem Preferred Position Item-1</key>
+	<real>734</real>
 	<key>NSWindow Frame Preferences Window</key>
 	<string>1090 839 460 319 0 0 2560 1415 </string>
-	<key>selectedPopoverSize</key>
+	<key>NSWindow Frame Settings Window</key>
+	<string>858 586 844 633 0 0 2560 1415 </string>
+	<key>NSWindow Frame Welcome Window</key>
+	<string>880 512 800 640 0 0 2560 1440 </string>
+	<key>defaultCameraPreference</key>
+	<string>Logitech BRIO</string>
+	<key>defaultCameraPreferenceKey</key>
+	<string>47B4B64B-7067-4B9C-AD2B-AE273A71F4B5</string>
+	<key>hasJustUpdatedToVersion2</key>
+	<false/>
+	<key>hasNewFeatureToHighlight</key>
+	<false/>
+	<key>hasPurchasedHandMirrorPlus</key>
+	<false/>
+	<key>isCameraPermissionsAllowed</key>
+	<true/>
+	<key>isGenerous</key>
+	<false/>
+	<key>isInMiddleOfOnboarding</key>
+	<false/>
+	<key>preferredDisplay</key>
+	<string>2</string>
+	<key>zoomLevel</key>
 	<integer>1</integer>
-	<key>selectedUIIcon</key>
-	<integer>0</integer>
 </dict>
 </plist>

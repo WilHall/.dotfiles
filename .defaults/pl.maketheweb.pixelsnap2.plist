@@ -11,17 +11,21 @@
 		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
 		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>475</real>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>66 81 224 278 0 0 1800 1125 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 762 620 398 0 0 2560 1415 </string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2022-08-06T00:58:02Z</date>
+	<date>2023-01-21T15:35:43Z</date>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>adobeXDIntegration</key>
@@ -271,6 +275,8 @@
 	AAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAA2g
 	</data>
 	<key>s000</key>
-	<integer>2</integer>
+	<integer>16</integer>
+	<key>usedInactiveMode</key>
+	<true/>
 </dict>
 </plist>

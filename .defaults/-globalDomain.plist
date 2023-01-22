@@ -3,13 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>AKLastEmailListRequestDateKey</key>
-	<date>2022-02-05T05:33:55Z</date>
+	<date>2023-01-22T03:03:16Z</date>
 	<key>AKLastIDMSEnvironment</key>
 	<integer>0</integer>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>4</integer>
-	<key>AppleInterfaceStyleSwitchesAutomatically</key>
-	<true/>
 	<key>AppleKeyboardUIMode</key>
 	<integer>2</integer>
 	<key>AppleLanguages</key>
@@ -17,9 +15,9 @@
 		<string>en-US</string>
 	</array>
 	<key>AppleLanguagesDidMigrate</key>
-	<string>12.2</string>
+	<string>13.1</string>
 	<key>AppleLanguagesSchemaVersion</key>
-	<integer>2000</integer>
+	<integer>3000</integer>
 	<key>AppleLocale</key>
 	<string>en_US</string>
 	<key>AppleMeasurementUnits</key>
@@ -55,7 +53,7 @@
 	<key>NSLinguisticDataAssetsRequestLastInterval</key>
 	<real>86400</real>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2022-02-04T19:28:54Z</date>
+	<date>2023-01-21T18:39:44Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>en</string>
@@ -63,6 +61,8 @@
 		<string>nn</string>
 		<string>nl</string>
 		<string>de</string>
+		<string>fr</string>
+		<string>it</string>
 	</array>
 	<key>NSLinguisticDataAssetsRequestedByChecker</key>
 	<array>
@@ -71,14 +71,16 @@
 		<string>nn</string>
 		<string>nl</string>
 		<string>de</string>
+		<string>fr</string>
+		<string>it</string>
 	</array>
 	<key>NSNavRecentPlaces</key>
 	<array>
-		<string>~/workspace/sagewell/sagewell</string>
-		<string>~/.dotfiles/appconfig/Trailer</string>
-		<string>~/.dotfiles/appconfig/iTerm2</string>
-		<string>~/.dotfiles/appconfig/Alfred/preferences</string>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Sagewell/invoices</string>
+		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Elmendorf</string>
+		<string>~/workspace</string>
+		<string>~/Downloads/lightbox</string>
+		<string>~/Pictures/emoji/turts</string>
+		<string>~/Downloads/cut sheets</string>
 	</array>
 	<key>NSPreferredWebServices</key>
 	<dict>
@@ -92,6 +94,22 @@
 	</dict>
 	<key>NSUserDictionaryReplacementItems</key>
 	<array>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:broc:</string>
+			<key>with</key>
+			<string>🥦</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:broccoli:</string>
+			<key>with</key>
+			<string>🥦</string>
+		</dict>
 		<dict>
 			<key>on</key>
 			<integer>1</integer>
@@ -162,9 +180,15 @@
 	<key>com.apple.finder.SyncExtensions</key>
 	<dict>
 		<key>collaborationMap</key>
-		<dict/>
+		<dict>
+			<key>com.adobe.accmac.ACCFinderSync</key>
+			<true/>
+		</dict>
 		<key>dirMap</key>
-		<dict/>
+		<dict>
+			<key>com.adobe.accmac.ACCFinderSync</key>
+			<array/>
+		</dict>
 	</dict>
 	<key>com.apple.mouse.scaling</key>
 	<real>2.5</real>

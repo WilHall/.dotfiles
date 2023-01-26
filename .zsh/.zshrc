@@ -38,5 +38,3 @@ bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 
 export ASDF_DIR='/opt/homebrew/opt/asdf/libexec'
-
-ensure_tmux_is_running

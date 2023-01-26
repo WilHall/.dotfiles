@@ -5,6 +5,7 @@ tap "koekeishiya/formulae"
 brew tap unused-code/formulae
 
 brew "overmind"
+brew "tmuxinator"
 brew "universal-ctags"
 brew "unused"
 brew "xcodes"

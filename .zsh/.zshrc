@@ -18,13 +18,15 @@ antigen bundle fzf
 antigen bundle git
 antigen bundle heroku
 antigen bundle z
-antigen bundle zsh-autosuggestions
 antigen bundle colored-man-pages
 antigen bundle dircycle
 antigen bundle tymm/zsh-directory-history
+antigen bundle mafredri/zsh-async
 antigen bundle zsh-users/zsh-completions
 antigen bundle zdharma-continuum/fast-syntax-highlighting
-antigen bundle mafredri/zsh-async
+antigen bundle zsh-autosuggestions
+antigen bundle unixorn/fzf-zsh-plugin@main
+antigen bundle Aloxaf/fzf-tab
 
 antigen apply
 

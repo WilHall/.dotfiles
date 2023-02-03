@@ -32,7 +32,6 @@ _config/yarn/global/yarn.lock
 *.tar
 *.zip
 *.log
-*.sql
 *.sqlite
 .DS_Store
 .DS_Store?

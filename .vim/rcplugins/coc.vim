@@ -13,6 +13,7 @@ let g:coc_global_extensions = [
   \ 'coc-lists',
   \ 'coc-json',
   \ 'coc-yank',
+  \ 'coc-pairs',
   \ 'coc-highlight',
   \ 'coc-solargraph',
   \ 'coc-styled-components',
@@ -68,23 +69,31 @@ nmap <silent> gr <plug>(coc-references)
 
 " show documentation
 function! s:show_documentation()
-  if (CocHasProvider('hover'))
-    call CocAction('doHover')
+  if exists("g:coc_status") && g:coc_status !~ "Starting"
+    if (CocHasProvider('hover'))
+      call CocActionAsync('doHover')
+    endif
   endif
 endfunction
 nnoremap <silent> H :call <sid>show_documentation()<cr>
 
 " show diagnostics, otherwise documentation, on hold
 function! ShowDocIfNoDiagnostic(timer_id)
-  if (CocHasProvider('hover'))
-    if (coc#float#has_float() == 0)
-      silent call CocActionAsync('doHover')
+  if exists("g:coc_status") && g:coc_status !~ "Starting"
+    if (CocHasProvider('hover'))
+      if (coc#float#has_float() == 0)
+        silent call CocActionAsync('doHover')
+      endif
     endif
   endif
 endfunction
 
 function! s:show_hover_doc()
-  call timer_start(500, 'ShowDocIfNoDiagnostic')
+  if exists("g:coc_status") && g:coc_status !~ "Starting"
+    if (CocHasProvider('hover'))
+      call timer_start(100, 'ShowDocIfNoDiagnostic')
+    endif
+  endif
 endfunction
 
 autocmd CursorHoldI * :call <sid>show_hover_doc()

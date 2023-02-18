@@ -13,7 +13,6 @@ let g:coc_global_extensions = [
   \ 'coc-lists',
   \ 'coc-json',
   \ 'coc-yank',
-  \ 'coc-pairs',
   \ 'coc-highlight',
   \ 'coc-solargraph',
   \ 'coc-styled-components',

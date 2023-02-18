@@ -87,6 +87,8 @@ function gittrackall() {
     git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
     git fetch --all
 }
+
+alias cch='git rev-parse HEAD | pbcopy'
 alias gta='gittrackall'
 alias gbn='git rev-parse --abbrev-ref HEAD'
 alias gsu='git set-upstream'
@@ -97,9 +99,12 @@ function psgrep() {
 }
 
 function gfu() {
-  echo "nope"
-  # git commit --fixup HEAD
-  # EDITOR=true GIT_EDITOR=true git rebase -i --autosquash HEAD~2
+  branch_pr_has_reviews=$(gh pr status --json reviews | jq ".currentBranch | .reviews | if length > 0 then true else false end")
+  if [ "$branch_pr_has_reviews" = 'true' ]; then
+    git commit
+  else
+    git commit --amend --no-edit
+  fi
 }
 
 function gqrb() {

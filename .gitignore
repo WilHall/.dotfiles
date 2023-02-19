@@ -20,6 +20,7 @@ yalc.lock
 _config/yarn/global/yarn.lock
 .elixir_ls/
 .tool-versions
+lazy-lock.json
 *.class
 *.o
 *.so

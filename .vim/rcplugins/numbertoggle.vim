@@ -1,1 +1,0 @@
-Plug 'jeffkreeftmeijer/vim-numbertoggle'

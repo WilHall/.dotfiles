@@ -4,7 +4,7 @@ return {
     name = "catppuccin",
     config = function()
       require("catppuccin").setup({
-        flavour = "frappe",
+        flavour = "macchiato",
         transparent_background = true,
         dim_inactive = {
             enabled = true,
@@ -14,18 +14,7 @@ return {
         styles = {
             comments = {},
             conditionals = {},
-            loops = {},
-            functions = {},
-            keywords = {},
-            strings = {},
-            variables = {},
-            numbers = {},
-            booleans = {},
-            properties = {},
-            types = {},
-            operators =  {},
         },
-        color_overrides = {},
         custom_highlights = function(colors)
             return {
                 FloatBorder = { bg = "#FFFFFF" },
@@ -46,7 +35,7 @@ return {
         },
       })
 
-      vim.cmd.colorscheme "catppuccin"
+      vim.cmd.colorscheme "catppuccin-macchiato"
     end,
   },
 }

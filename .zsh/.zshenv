@@ -4,6 +4,7 @@ export COLORTERM="truecolor"
 export KEYTIMEOUT=1
 export EDITOR='vim'
 export REACT_EDITOR='none'
+BAT_THEME="Catppuccin-mocha"
 
 # I don't like dogs
 export HUSKY_SKIP_HOOKS=1

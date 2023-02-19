@@ -10,6 +10,7 @@ autoload -U promptinit; promptinit
 prompt pure
 
 source /opt/homebrew/share/antigen/antigen.zsh
+source ~/.zsh/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 
 antigen use oh-my-zsh
 

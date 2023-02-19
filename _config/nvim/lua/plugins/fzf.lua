@@ -6,7 +6,7 @@ return {
     },
     config = function()
       vim.cmd [[
-        let g:_fzf_file_preview_options = '--ansi --preview "bat --theme="OneHalfDark" --layout=reverse --style full --decorations always --color always {}"'
+        let g:_fzf_file_preview_options = '--ansi --preview "bat --theme="Catppuccin-mocha" --layout=reverse --style full --decorations always --color always {}"'
         let g:_fzf_find_preview_options = '--delimiter : --nth 4..' . ' ' . g:_fzf_file_preview_options
         let g:_fzf_preview_size = 'down:80%'
         let g:ag_options = '--skip-vcs-ignores -u --path-to-ignore ~/.ignore'

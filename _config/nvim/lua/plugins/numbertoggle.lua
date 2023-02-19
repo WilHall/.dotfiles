@@ -1,0 +1,5 @@
+return {
+  {
+    "jeffkreeftmeijer/vim-numbertoggle",
+  },
+}

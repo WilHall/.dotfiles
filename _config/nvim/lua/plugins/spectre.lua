@@ -7,7 +7,15 @@ return {
     config = function()
       require('spectre').setup({
         open_cmd = 'new',
-        is_insert_mode = true
+        is_insert_mode = true,
+        default = {
+          find = {
+              cmd = "rg",
+          },
+          replace={
+              cmd = "sed"
+          }
+      },
       })
       vim.cmd [[
         nnoremap <leader>S <cmd>lua require('spectre').open()<CR>
@@ -16,8 +24,8 @@ return {
         nnoremap <leader>sw <cmd>lua require('spectre').open_visual({select_word=true})<CR>
         vnoremap <leader>s <esc>:lua require('spectre').open_visual()<CR>
         "  search in current file
-        nnoremap <leader>sp viw:lua require('spectre').open_file_search()<cr>
-      ]]
+        nnoremap <leader>s viw:lua require('spectre').open_file_search()<cr>
+        ]]
     end
   },
 }

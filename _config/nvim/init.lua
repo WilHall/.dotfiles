@@ -1,5 +1,6 @@
 vim.opt.termguicolors = true
 
+-- Load configs before plugins to initialize
 vim.cmd('runtime! lua/configs/*.lua')
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -20,3 +21,6 @@ require("lazy").setup("plugins", {
     notify = false,
   },
 })
+
+-- Load configs after plugins to ensure we don't get overriden
+vim.cmd('runtime! lua/configs/*.lua')

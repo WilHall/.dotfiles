@@ -1,4 +1,4 @@
-alias vim="nvim"
+ahttps://linear.app/sagewell-financial/issue/DEV-1099/upgrade-axios-to-130lias vim="nvim"
 alias vi="vim"
 alias ls="exa -F --group-directories-first"
 alias ll="exa -alh --git --group-directories-first"
@@ -128,4 +128,4 @@ function mixdepbust() {
   rm -rf deps ~/.hex/cache.ets
 }
 
-alias update-dev="brew update; brew upgrade; brew upgrade --cask; asdf plugin-update --all; antigen update; vim -c 'PlugUpdate' -c 'CocUpdate' -c 'q!' -c 'q!'"
+alias update-dev="brew update; brew upgrade; brew upgrade --cask; asdf plugin-update --all; antigen update; vim -c 'Lazy update' -c 'q!' -c 'q!'"

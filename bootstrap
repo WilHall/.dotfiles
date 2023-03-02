@@ -94,6 +94,7 @@ configure_asdf() {
   asdf plugin-add python
   asdf plugin add nodejs 
   asdf plugin add ruby 
+  asdf plugin add rust
   asdf install python 2.7.18
   brew reinstall -s readline
   export PATH=/opt/homebrew/bin:$PATH

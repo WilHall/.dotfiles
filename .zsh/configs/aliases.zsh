@@ -1,4 +1,4 @@
-ahttps://linear.app/sagewell-financial/issue/DEV-1099/upgrade-axios-to-130lias vim="nvim"
+alias vim="nvim"
 alias vi="vim"
 alias ls="exa -F --group-directories-first"
 alias ll="exa -alh --git --group-directories-first"

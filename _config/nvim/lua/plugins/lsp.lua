@@ -7,28 +7,87 @@ return {
       "saadparwaiz1/cmp_luasnip",
       "L3MON4D3/LuaSnip",
       "fsouza/prettierd",
-      "mattn/efm-langserver"
+      "mattn/efm-langserver",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "delphinus/cmp-ctags",
+      "zbirenbaum/copilot.lua",
+      "zbirenbaum/copilot-cmp",
+      "nvim-tree/nvim-web-devicons",
+      "onsails/lspkind.nvim"
     },
     config = function()
-      local capabilities = require("cmp_nvim_lsp").default_capabilities()
       local lspconfig = require('lspconfig')
+      local luasnip = require('luasnip')
+      local cmp_buffer = require('cmp_buffer')
+      local cmp = require('cmp')
+      local lspkind = require("lspkind")
+      local copilot = require("copilot")
+      local copilot_cmp = require("copilot_cmp")
 
-      local cmp = require 'cmp'
+      local has_words_before = function()
+        if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then return false end
+        local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+        return col ~= 0 and vim.api.nvim_buf_get_text(0, line-1, 0, line-1, col, {})[1]:match("^%s*$") == nil
+      end
+
+      copilot.setup({
+        suggestion = { enabled = false },
+        panel = { enabled = false },
+      })
+
+      copilot_cmp.setup({
+        formatters = {
+          label = require("copilot_cmp.format").format_label_text,
+          insert_text = require("copilot_cmp.format").remove_existing,
+          preview = require("copilot_cmp.format").deindent,
+        },
+      })
+
+      lspkind.init({
+        symbol_map = {
+          Copilot = ""
+        }
+      })
+
+      vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
+
+
       cmp.setup {
+        sorting = {
+          comparators = {
+            require("copilot_cmp.comparators").prioritize,
+            function(...) return cmp_buffer:compare_locality(...) end,
+            cmp.config.compare.locality,
+            cmp.config.compare.score,
+            cmp.config.compare.priority,
+            cmp.config.compare.order,
+            cmp.config.compare.offset,
+            cmp.config.compare.recently_used,
+          },
+        },
+        formatting = {
+          format = function(entry, vim_item)
+            if vim.tbl_contains({ 'path' }, entry.source.name) then
+              local icon, hl_group = require('nvim-web-devicons').get_icon(entry:get_completion_item().label)
+              if icon then
+                vim_item.kind = icon
+                vim_item.kind_hl_group = hl_group
+                return vim_item
+              end
+            end
+            return require('lspkind').cmp_format({ with_text = false })(entry, vim_item)
+          end
+        },
         snippet = {
           expand = function(args)
             luasnip.lsp_expand(args.body)
           end,
         },
         mapping = cmp.mapping.preset.insert({
-          ['<C-u>'] = cmp.mapping.scroll_docs(-4), -- Up
-          ['<C-d>'] = cmp.mapping.scroll_docs(4), -- Down
-          -- C-b (back) C-f (forward) for snippet placeholder navigation.
+          ['<C-u>'] = cmp.mapping.scroll_docs(-4),
+          ['<C-d>'] = cmp.mapping.scroll_docs(4),
           ['<C-Space>'] = cmp.mapping.complete(),
-          ['<CR>'] = cmp.mapping.confirm {
-            behavior = cmp.ConfirmBehavior.Replace,
-            select = true,
-          },
           ['<Tab>'] = cmp.mapping.confirm {
             behavior = cmp.ConfirmBehavior.Replace,
             select = true,
@@ -53,8 +112,12 @@ return {
           end, { 'i', 's' }),
         }),
         sources = {
-          { name = 'nvim_lsp' },
-          { name = 'luasnip' },
+          { name = 'copilot', priority = 40},
+          { name = 'nvim_lsp', priority = 20},
+          { name = 'luasnip', priority = 20},
+          { name = 'ctags', priority = 20},
+          { name = 'buffer', priority = 10},
+          { name = 'path', priority = 10},
         },
       }
 
@@ -89,10 +152,11 @@ return {
       -- Mappings.
       -- See `:help vim.diagnostic.*` for documentation on any of the below functions
       local opts = { noremap=true, silent=true }
-      vim.keymap.set('n', '<space>h', vim.diagnostic.open_float, opts)
+      vim.cmd [[ nnoremap <silent> <leader>cr :LspRestart<cr> ]]
+      vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, opts)
       vim.keymap.set('n', '[g', vim.diagnostic.goto_prev, opts)
       vim.keymap.set('n', ']g', vim.diagnostic.goto_next, opts)
-      vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
+      vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
 
       -- Use an on_attach function to only map the following keys
       -- after the language server attaches to the current buffer
@@ -105,11 +169,11 @@ return {
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
         vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
         vim.keymap.set('n', '<C-k>', vim.lsp.buf.hover, bufopts)
-        vim.keymap.set('n', '<space>gt', vim.lsp.buf.type_definition, bufopts)
-        vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-        vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
+        vim.keymap.set('n', '<leader>gt', vim.lsp.buf.type_definition, bufopts)
+        vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
+        vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
         vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-        vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
+        vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 
         vim.api.nvim_create_autocmd("CursorHold", {
           buffer = bufnr,
@@ -145,31 +209,31 @@ return {
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
-
       })
       lspconfig.solargraph.setup({
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
-
       })
       lspconfig.stylelint_lsp.setup({
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
-
       })
       lspconfig.tsserver.setup({
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
-
       })
       lspconfig.svelte.setup({
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
-
+      })
+      lspconfig.rust_analyzer.setup({
+        on_attach = on_attach,
+        flags = lsp_flags,
+        handlers = handlers,
       })
       lspconfig.eslint.setup({
         flags = lsp_flags,
@@ -229,7 +293,7 @@ return {
       vim.diagnostic.config({
         signs = true,
         underline = true,
-        update_in_insert = true,
+        update_in_insert = false,
         severity_sort = true,
         virtual_text = false,
         float = {
@@ -246,7 +310,7 @@ return {
       vim.api.nvim_set_hl(0,'NormalFloat',{ bg = "None", fg = "None" })
       vim.api.nvim_set_hl(0,'FloatBorder',{ bg = "None"})
 
-      vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+      vim.cmd [[autocmd! CursorHold * lua vim.diagnostic.open_float(nil, {focus=false})]]
       vim.cmd [[
         highlight! DiagnosticLineNrError guibg=#51202A guifg=#FF0000 gui=bold
         highlight! DiagnosticLineNrWarn guibg=#51412A guifg=#FFA500 gui=bold

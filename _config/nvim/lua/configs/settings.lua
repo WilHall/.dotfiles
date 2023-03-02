@@ -9,6 +9,7 @@ vim.cmd [[
 
     syntax on
     set noswapfile
+    set shortmess+=FWAcs
 
     " configure leader
     nnoremap <SPACE> <NOP>

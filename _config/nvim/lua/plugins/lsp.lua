@@ -25,15 +25,19 @@ return {
       local copilot = require("copilot")
       local copilot_cmp = require("copilot_cmp")
 
-      local has_words_before = function()
-        if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then return false end
-        local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-        return col ~= 0 and vim.api.nvim_buf_get_text(0, line-1, 0, line-1, col, {})[1]:match("^%s*$") == nil
-      end
-
       copilot.setup({
         suggestion = { enabled = false },
         panel = { enabled = false },
+        copilot_node_command = vim.fn.expand("$HOME") .. "/.asdf/shims/node",
+        server_opts_overrides = {
+          trace = "verbose",
+          settings = {
+            advanced = {
+              listCount = 10,
+              inlineSuggestCount = 3,
+            }
+          },
+        }
       })
 
       copilot_cmp.setup({
@@ -52,8 +56,14 @@ return {
 
       vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
 
-
+      vim.cmd([[ set pumheight=6 ]])
       cmp.setup {
+        experimental = {
+          native_menu = false,
+          ghost_text = true,
+        },
+        preselect = true,
+        completion = { completeopt = 'menu,menuone,noinsert' },
         sorting = {
           comparators = {
             require("copilot_cmp.comparators").prioritize,

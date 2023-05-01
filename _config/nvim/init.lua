@@ -20,6 +20,7 @@ require("lazy").setup("plugins", {
     enabled = false,
     notify = false,
   },
+  checker = { enabled = false },
 })
 
 -- Load configs after plugins to ensure we don't get overriden

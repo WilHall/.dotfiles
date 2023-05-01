@@ -16,6 +16,8 @@
 [pack]
     windowMemory = 10m
     packSizeLimit = 20m
+[checkout]
+  defaultRemote = origin
 [branch]
     autosetuprebase = always
 [pull]

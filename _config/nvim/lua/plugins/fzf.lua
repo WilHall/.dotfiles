@@ -2,7 +2,8 @@ return {
   {
     "junegunn/fzf.vim",
     dependencies = {
-      "junegunn/fzf"
+      "junegunn/fzf",
+      "sainnhe/tmux-fzf"
     },
     config = function()
       vim.cmd [[

@@ -14,6 +14,20 @@
 	<array/>
 	<key>HistoryColors</key>
 	<array>
+		<string>F0F3FAFF</string>
+		<string>031751FF</string>
+		<string>F0F3FAFF</string>
+		<string>2EB59BFF</string>
+		<string>00826AFF</string>
+		<string>014F40FF</string>
+		<string>84ACF4FF</string>
+		<string>E5E5E5FF</string>
+		<string>60A896FF</string>
+		<string>DEF0EBFF</string>
+		<string>60A896FF</string>
+		<string>DEF0EBFF</string>
+		<string>001651FF</string>
+		<string>E1E0DFFF</string>
 		<string>BA1E1EFF</string>
 		<string>CF0202FF</string>
 		<string>027AA2FF</string>
@@ -100,20 +114,6 @@
 		<string>001351FF</string>
 		<string>2DB59BFF</string>
 		<string>2C826AFF</string>
-		<string>18503FFF</string>
-		<string>42B59BFF</string>
-		<string>02826AFF</string>
-		<string>004F40FF</string>
-		<string>02826AFF</string>
-		<string>001351FF</string>
-		<string>333333FF</string>
-		<string>9E5A00FF</string>
-		<string>42B59BFF</string>
-		<string>F3B966FF</string>
-		<string>E9EAECFF</string>
-		<string>A05B01FF</string>
-		<string>F2B864FF</string>
-		<string>F2B764FF</string>
 	</array>
 	<key>NSColorPanelMode</key>
 	<string>6</string>
@@ -147,9 +147,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-01-22T13:36:17Z</date>
+	<date>2023-05-25T14:05:12Z</date>
 	<key>SULastProfileSubmissionDate</key>
-	<date>2023-01-19T15:50:42Z</date>
+	<date>2023-05-21T22:25:51Z</date>
 	<key>SUScheduledCheckInterval</key>
 	<real>43200</real>
 	<key>SUSendProfileInfo</key>

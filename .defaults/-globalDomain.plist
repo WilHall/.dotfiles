@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>AKLastEmailListRequestDateKey</key>
-	<date>2023-01-22T03:03:16Z</date>
+	<date>2023-05-25T11:52:19Z</date>
 	<key>AKLastIDMSEnvironment</key>
 	<integer>0</integer>
+	<key>AKLastLocale</key>
+	<string>en_US</string>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>4</integer>
 	<key>AppleKeyboardUIMode</key>
@@ -15,7 +17,7 @@
 		<string>en-US</string>
 	</array>
 	<key>AppleLanguagesDidMigrate</key>
-	<string>13.1</string>
+	<string>13.3.1</string>
 	<key>AppleLanguagesSchemaVersion</key>
 	<integer>3000</integer>
 	<key>AppleLocale</key>
@@ -38,6 +40,15 @@
 	<string>always</string>
 	<key>CGDisableCursorLocationMagnification</key>
 	<true/>
+	<key>KB_DoubleQuoteOption</key>
+	<string>“abc”</string>
+	<key>KB_SingleQuoteOption</key>
+	<string>‘abc’</string>
+	<key>KB_SpellingLanguage</key>
+	<dict>
+		<key>KB_SpellingLanguageIsAutomatic</key>
+		<true/>
+	</dict>
 	<key>NSAutomaticCapitalizationEnabled</key>
 	<false/>
 	<key>NSAutomaticDashSubstitutionEnabled</key>
@@ -53,7 +64,7 @@
 	<key>NSLinguisticDataAssetsRequestLastInterval</key>
 	<real>86400</real>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2023-01-21T18:39:44Z</date>
+	<date>2023-05-25T14:11:33Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>en</string>
@@ -63,6 +74,7 @@
 		<string>de</string>
 		<string>fr</string>
 		<string>it</string>
+		<string>vi</string>
 	</array>
 	<key>NSLinguisticDataAssetsRequestedByChecker</key>
 	<array>
@@ -73,14 +85,7 @@
 		<string>de</string>
 		<string>fr</string>
 		<string>it</string>
-	</array>
-	<key>NSNavRecentPlaces</key>
-	<array>
-		<string>~/Library/Mobile Documents/com~apple~CloudDocs/Employment/Consulting/Elmendorf</string>
-		<string>~/workspace</string>
-		<string>~/Downloads/lightbox</string>
-		<string>~/Pictures/emoji/turts</string>
-		<string>~/Downloads/cut sheets</string>
+		<string>vi</string>
 	</array>
 	<key>NSPreferredWebServices</key>
 	<dict>
@@ -174,6 +179,13 @@
 			<key>with</key>
 			<string>💜</string>
 		</dict>
+	</array>
+	<key>NSUserQuotesArray</key>
+	<array>
+		<string>“</string>
+		<string>”</string>
+		<string>‘</string>
+		<string>’</string>
 	</array>
 	<key>WebAutomaticSpellingCorrectionEnabled</key>
 	<true/>

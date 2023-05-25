@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSStatusItem Preferred Position TupleStatusBarItem</key>
-	<real>687</real>
+	<key>GlobalTupleOpenPopover</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAChC1UkbnVsbAgRGiQpMjdJTFFT
+	VQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
+	</data>
 	<key>NSStatusItem Visible Item-0</key>
 	<false/>
 	<key>NSStatusItem Visible TupleStatusBarItem</key>
@@ -19,30 +23,30 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-01-22T14:55:57Z</date>
+	<date>2023-05-25T14:05:12Z</date>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>analyticsProfile</key>
 	<dict>
 		<key>email</key>
 		<string>wil@sagewellfinancial.com</string>
-		<key>firstName</key>
-		<string>Wil</string>
 		<key>id</key>
 		<integer>54717</integer>
-		<key>isGuest</key>
+		<key>is_guest</key>
 		<false/>
-		<key>isPaid</key>
+		<key>name</key>
+		<string>Wil Hall</string>
+		<key>paid</key>
 		<true/>
-		<key>lastName</key>
-		<string>Hall</string>
-		<key>subscriptionStatus</key>
+		<key>sfu_support</key>
+		<string>enabled</string>
+		<key>subscription_status</key>
 		<string>active</string>
-		<key>teamID</key>
+		<key>team_id</key>
 		<integer>12458</integer>
-		<key>teamName</key>
-		<string>Chris Toomey</string>
-		<key>teamOwnerEmail</key>
+		<key>team_name</key>
+		<string>Sagewell Financial</string>
+		<key>team_owner_email</key>
 		<string>chris@sagewellfinancial.com</string>
 	</dict>
 	<key>annotationMode</key>
@@ -58,15 +62,10 @@
 			<key>uid</key>
 			<string>AppleUSBAudioEngine:Focusrite:Scarlett Solo USB:Y7Z0HBU17CCAC8:1,2</string>
 		</dict>
-		<key>preferredOutputDevice</key>
-		<dict>
-			<key>name</key>
-			<string>Scarlett Solo USB</string>
-			<key>uid</key>
-			<string>AppleUSBAudioEngine:Focusrite:Scarlett Solo USB:Y7Z0HBU17CCAC8:1,2</string>
-		</dict>
 	</dict>
 	<key>callFeedback</key>
+	<false/>
+	<key>clientUIRedesign</key>
 	<false/>
 	<key>currentUserEmail</key>
 	<string>wil@sagewellfinancial.com</string>
@@ -87,7 +86,7 @@
 	<key>keyboardOffNotification</key>
 	<true/>
 	<key>lastPreferencePane</key>
-	<integer>1</integer>
+	<integer>4</integer>
 	<key>lastUserSignalMessageDate</key>
 	<dict>
 		<key>clientID</key>

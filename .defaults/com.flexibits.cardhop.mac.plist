@@ -26,7 +26,7 @@
 	<key>AddressFormat</key>
 	<string>us</string>
 	<key>CardhopQuickContactWidgetChangeHash</key>
-	<integer>17353861183022790477</integer>
+	<integer>18033002909676334588</integer>
 	<key>ContactTemplate</key>
 	<array>
 		<dict>
@@ -83,13 +83,13 @@
 	<key>FirstRunSetup</key>
 	<true/>
 	<key>FullSidebarVisible</key>
-	<false/>
+	<true/>
 	<key>GroupSplitWidth</key>
 	<real>161</real>
 	<key>HideInDock</key>
 	<true/>
 	<key>LastLaunchVersion</key>
-	<string>1120</string>
+	<string>1138</string>
 	<key>LastSelectedContactIdentifiers</key>
 	<array>
 		<string>74F57A4B-7577-4D1C-B513-4257F4ACED90:ABPerson</string>
@@ -113,7 +113,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBIYHCJQUVJTVFVWV1hZ
 	WltcXWJnVSRudWxs0g0ODxFaTlMub2JqZWN0c1YkY2xhc3OhEIACgBXTExQOFRYXXHRp
-	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HErZe/pJHzgATS
+	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HFDiGCU9+PgATS
 	HR4fIFokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRGF0ZaIfIVhOU09iamVjdN8QFyMkJSYO
 	JygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PDxBQjw8PDxHSElKPDxNTk9Zb3NWZXJzaW9u
 	XnRpbWVab25lT2Zmc2V0WGFwcEJ1aWxkXxAVbGl2ZVVwZGF0ZVBhY2thZ2VIYXNoWmFw
@@ -122,24 +122,24 @@
 	TGV2ZWxed3JhcHBlclNka05hbWVXb2VtTmFtZVpzZGtWZXJzaW9uXGFwcE5hbWVzcGFj
 	ZVVtb2RlbF8QFXdyYXBwZXJSdW50aW1lVmVyc2lvbl8QFmxpdmVVcGRhdGVSZWxlYXNl
 	TGFiZWxac2NyZWVuU2l6ZVZvc05hbWVXb3NCdWlsZIALgA6AEYAAgBOAEIAAgACABoAN
-	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNS4wLjBe
-	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTMuMS4wVTIyQzY1VWVuX1VTE///////
-	//7UWTI1NjB4MTQ0MFUyLjIuNFQxMTIwXxAZY29tLmZsZXhpYml0cy5jYXJkaG9wLm1h
-	Y9IdHl5fWk1TQUNEZXZpY2WjYGEhWk1TQUNEZXZpY2VeTVNBQ1dyYXBwZXJTZGvSHR5j
-	ZF8QFU1TQUNEZXZpY2VIaXN0b3J5SW5mb6NlZiFfEBVNU0FDRGV2aWNlSGlzdG9yeUlu
-	Zm9fEA9NU0FDSGlzdG9yeUluZm/SHR5oaV5OU011dGFibGVBcnJheaNoaiFXTlNBcnJh
-	eQAIABEAGgAkACkAMgA3AEkATABRAFMAbAByAHcAggCJAIsAjQCPAJYAowCtAK8AsQCz
-	ALgAwADJAMsA0ADbAOQA6wDuAPcBKAEyAUEBSgFiAW0BgQGNAZUBnAG2AcUB0AHfAecB
-	8gH/AgUCHQI2AkECSAJQAlICVAJWAlgCWgJcAl4CYAJiAmQCZgJoAmoCbAJuAnACcgJ0
-	AnYCeAJ6AnwCfgKQApYCpQKrArECuAK+AsQCzQLXAt0C4gL+AwMDDgMSAx0DLAMxA0kD
-	TQNlA3cDfAOLA48AAAAAAAACAQAAAAAAAABrAAAAAAAAAAAAAAAAAAADlw==
+	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNS4wLjJe
+	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTMuMy4xVjIyRTI2MVVlbl9VUxP/////
+	////EFkyNTYweDE0NDBVMi4yLjdUMTEzOF8QGWNvbS5mbGV4aWJpdHMuY2FyZGhvcC5t
+	YWPSHR5eX1pNU0FDRGV2aWNlo2BhIVpNU0FDRGV2aWNlXk1TQUNXcmFwcGVyU2Rr0h0e
+	Y2RfEBVNU0FDRGV2aWNlSGlzdG9yeUluZm+jZWYhXxAVTVNBQ0RldmljZUhpc3RvcnlJ
+	bmZvXxAPTVNBQ0hpc3RvcnlJbmZv0h0eaGleTlNNdXRhYmxlQXJyYXmjaGohV05TQXJy
+	YXkACAARABoAJAApADIANwBJAEwAUQBTAGwAcgB3AIIAiQCLAI0AjwCWAKMArQCvALEA
+	swC4AMAAyQDLANAA2wDkAOsA7gD3ASgBMgFBAUoBYgFtAYEBjQGVAZwBtgHFAdAB3wHn
+	AfIB/wIFAh0CNgJBAkgCUAJSAlQCVgJYAloCXAJeAmACYgJkAmYCaAJqAmwCbgJwAnIC
+	dAJ2AngCegJ8An4CkAKWAqUCqwKxArgCvwLFAs4C2ALeAuMC/wMEAw8DEwMeAy0DMgNK
+	A04DZgN4A30DjAOQAAAAAAAAAgEAAAAAAAAAawAAAAAAAAAAAAAAAAAAA5g=
 	</data>
 	<key>MSAppCenterSessionIdHistory</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
 	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
-	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxK2Xv6NG5YAE0h0eHyBaJGNsYXNzbmFt
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxQ4hglHCsYAE0h0eHyBaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
 	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
 	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
@@ -152,7 +152,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGoCwwSGBwiIyhVJG51bGzSDQ4P
 	EVpOUy5vYmplY3RzViRjbGFzc6EQgAKAB9MTFA4VFhdcdGltZXN0YW1wS2V5WXVzZXJJ
-	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcStl7+lSeCABNIdHh8gWiRjbGFzc25hbWVY
+	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcUOIYJWS7qABNIdHh8gWiRjbGFzc25hbWVY
 	JGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN0XxAPd2lsQHdpbGhhbGwuY29t0h0eJCVf
 	EBVNU0FDVXNlcklkSGlzdG9yeUluZm+jJichXxAVTVNBQ1VzZXJJZEhpc3RvcnlJbmZv
 	XxAPTVNBQ0hpc3RvcnlJbmZv0h0eKSpeTlNNdXRhYmxlQXJyYXmjKSshV05TQXJyYXkA
@@ -170,24 +170,26 @@
 	<false/>
 	<key>NSSplitView Subview Frames Group</key>
 	<array>
-		<string>0.000000, 0.000000, 65.000000, 221.000000, NO, NO</string>
-		<string>65.000000, 0.000000, 300.000000, 221.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 163.000000, 261.000000, NO, NO</string>
+		<string>163.000000, 0.000000, 298.000000, 261.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames Notes</key>
 	<array>
-		<string>0.000000, 0.000000, 350.000000, 434.000000, NO, NO</string>
-		<string>0.000000, 434.000000, 350.000000, 110.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 350.000000, 466.000000, NO, NO</string>
+		<string>0.000000, 466.000000, 350.000000, 110.000000, NO, NO</string>
 	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
 	<real>437</real>
+	<key>NSTableViewCanEstimateRowHeights</key>
+	<false/>
 	<key>NSWindow Frame ContactPopover</key>
-	<string>884 519 360 544 0 0 1800 1125 </string>
+	<string>1680 777 360 576 0 0 1800 1125 </string>
 	<key>NSWindow Frame Main Window</key>
-	<string>1164 807 365 308 0 0 1800 1125 </string>
+	<string>1862 1057 461 348 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
 	<string>692 407 425 137 0 0 1440 875 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 762 620 398 0 0 2560 1415 </string>
+	<string>1073 762 620 398 0 0 2560 1415 </string>
 	<key>OpenCallsIn</key>
 	<string>com.apple.FaceTime</string>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -199,9 +201,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-01-22T14:33:06Z</date>
+	<date>2023-05-25T00:43:53Z</date>
 	<key>SULastProfileSubmissionDate</key>
-	<date>2023-01-18T14:33:02Z</date>
+	<date>2023-05-21T22:24:59Z</date>
 	<key>SUSendProfileInfo</key>
 	<true/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -219,12 +221,12 @@
 	<key>VCardExportPhotos</key>
 	<true/>
 	<key>review.firstLaunch</key>
-	<date>2021-09-25T15:31:02Z</date>
+	<date>2023-03-23T15:35:07Z</date>
 	<key>review.launches</key>
 	<array>
-		<date>2022-12-20T21:10:58Z</date>
-		<date>2022-12-27T17:30:49Z</date>
-		<date>2022-12-31T23:01:52Z</date>
+		<date>2023-03-23T15:35:07Z</date>
+		<date>2023-04-11T11:53:46Z</date>
+		<date>2023-04-17T16:55:39Z</date>
 	</array>
 </dict>
 </plist>

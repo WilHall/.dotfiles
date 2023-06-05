@@ -8,7 +8,7 @@ return {
     },
     config = function()
       require'nvim-treesitter.configs'.setup({
-        ensure_installed = { "scss", "markdown", "html", "bash", "diff", "css", "ruby", "lua", "javascript", "tsx", "typescript", "json", "svelte", "vim", "help" }
+        ensure_installed = { "scss", "markdown", "html", "bash", "diff", "css", "ruby", "lua", "javascript", "tsx", "typescript", "json", "svelte", "vim" }
       })
     end
   },

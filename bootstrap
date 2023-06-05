@@ -114,6 +114,7 @@ install_tpm() {
 }
 
 bootstrap() {
+  setopt extended_glob
   make_workspace
   copy_etc_paths
   copy_ssh_settings

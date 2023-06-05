@@ -54,7 +54,7 @@ return {
         }
       })
 
-      vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
+      vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#6CC644" })
 
       vim.cmd([[ set pumheight=6 ]])
       cmp.setup {
@@ -122,12 +122,12 @@ return {
           end, { 'i', 's' }),
         }),
         sources = {
-          { name = 'copilot', priority = 40},
-          { name = 'nvim_lsp', priority = 20},
-          { name = 'luasnip', priority = 20},
-          { name = 'ctags', priority = 20},
-          { name = 'buffer', priority = 10},
-          { name = 'path', priority = 10},
+          { name = 'copilot',  priority = 40 },
+          { name = 'nvim_lsp', priority = 20 },
+          { name = 'luasnip',  priority = 20 },
+          { name = 'ctags',    priority = 20 },
+          { name = 'buffer',   priority = 10 },
+          { name = 'path',     priority = 10 },
         },
       }
 
@@ -135,20 +135,20 @@ return {
       vim.cmd [[autocmd! ColorScheme * highlight FloatBorder guifg=NONE guibg=#1f2335]]
 
       local border = {
-            {"╭", "FloatBorder"},
-            {"─", "FloatBorder"},
-            {"╮", "FloatBorder"},
-            {"│", "FloatBorder"},
-            {"╯", "FloatBorder"},
-            {"─", "FloatBorder"},
-            {"╰", "FloatBorder"},
-            {"│", "FloatBorder"},
+        { "╭", "FloatBorder" },
+        { "─", "FloatBorder" },
+        { "╮", "FloatBorder" },
+        { "│", "FloatBorder" },
+        { "╯", "FloatBorder" },
+        { "─", "FloatBorder" },
+        { "╰", "FloatBorder" },
+        { "│", "FloatBorder" },
       }
 
       -- LSP settings (for overriding per client)
-      local handlers =  {
-        ["textDocument/hover"] =  vim.lsp.with(vim.lsp.handlers.hover, {border = border}),
-        ["textDocument/signatureHelp"] =  vim.lsp.with(vim.lsp.handlers.signature_help, {border = border }),
+      local handlers = {
+        ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
+        ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
       }
 
       -- To instead override globally
@@ -161,7 +161,7 @@ return {
 
       -- Mappings.
       -- See `:help vim.diagnostic.*` for documentation on any of the below functions
-      local opts = { noremap=true, silent=true }
+      local opts = { noremap = true, silent = true }
       vim.cmd [[ nnoremap <silent> <leader>cr :LspRestart<cr> ]]
       vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, opts)
       vim.keymap.set('n', '[g', vim.diagnostic.goto_prev, opts)
@@ -173,7 +173,7 @@ return {
       local on_attach = function(client, bufnr)
         -- Mappings.
         -- See `:help vim.lsp.*` for documentation on any of the below functions
-        local bufopts = { noremap=true, silent=true, buffer=bufnr }
+        local bufopts = { noremap = true, silent = true, buffer = bufnr }
         vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
         vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
@@ -250,7 +250,7 @@ return {
         handlers = handlers,
 
         on_attach = function(client, bufnr)
-          on_attach(client. bufnr)
+          on_attach(client.bufnr)
           vim.api.nvim_create_autocmd("BufWritePre", {
             buffer = bufnr,
             command = "EslintFixAll",
@@ -269,7 +269,7 @@ return {
             },
             diagnostics = {
               -- Get the language server to recognize the `vim` global
-              globals = {'vim'},
+              globals = { 'vim' },
             },
             workspace = {
               -- Make the server aware of Neovim runtime files
@@ -287,19 +287,19 @@ return {
         formatStdin = true,
       }
       lspconfig.efm.setup {
-          init_options = {documentFormatting = true},
-          settings = {
-              rootMarkers = {".git/"},
-              languages = {
-                ruby = { prettier },
-                javascript = { prettier },
-                typescript = { prettier },
-                svelte = { prettier },
-              }
+        init_options = { documentFormatting = true },
+        settings = {
+          rootMarkers = { ".git/" },
+          languages = {
+            ruby = { prettier },
+            javascript = { prettier },
+            typescript = { prettier },
+            svelte = { prettier },
           }
+        }
       }
       vim.cmd [[ autocmd BufWritePre * lua vim.lsp.buf.format() ]]
-      
+
       vim.diagnostic.config({
         signs = true,
         underline = true,
@@ -317,8 +317,8 @@ return {
         vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
       end
 
-      vim.api.nvim_set_hl(0,'NormalFloat',{ bg = "None", fg = "None" })
-      vim.api.nvim_set_hl(0,'FloatBorder',{ bg = "None"})
+      vim.api.nvim_set_hl(0, 'NormalFloat', { bg = "None", fg = "None" })
+      vim.api.nvim_set_hl(0, 'FloatBorder', { bg = "None" })
 
       vim.cmd [[autocmd! CursorHold * lua vim.diagnostic.open_float(nil, {focus=false})]]
       vim.cmd [[
@@ -327,8 +327,6 @@ return {
         highlight! DiagnosticLineNrInfo guibg=#1E535D guifg=#00FFFF gui=bold
         highlight! DiagnosticLineNrHint guibg=#1E205D guifg=#0000FF gui=bold
       ]]
-
     end,
   },
 }
-

@@ -22,7 +22,7 @@ antigen bundle z
 antigen bundle colored-man-pages
 antigen bundle dircycle
 antigen bundle tymm/zsh-directory-history
-antigen bundle mafredri/zsh-async
+antigen bundle mafredri/zsh-async@main
 antigen bundle zsh-users/zsh-completions
 antigen bundle zdharma-continuum/fast-syntax-highlighting
 antigen bundle zsh-autosuggestions
@@ -40,4 +40,3 @@ bindkey '\e[B' directory-history-search-forward
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 
-export ASDF_DIR='/opt/homebrew/opt/asdf/libexec'

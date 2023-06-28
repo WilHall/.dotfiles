@@ -4,6 +4,8 @@
 <dict>
 	<key>AccountNamesExternalIDs</key>
 	<dict>
+		<key>account:0CA54B84-FCA9-4BA2-9653-58D405D25291</key>
+		<string>iCloud</string>
 		<key>account:3BED0317-C119-4DCA-9088-7AD4FAED1086</key>
 		<string>On My Mac</string>
 		<key>account:5EE13A91-B4C1-48FC-84BB-8BB2F39316A5</key>
@@ -22,11 +24,13 @@
 		<string>iCloud</string>
 		<key>account:CC7F5F36-A260-4F88-B030-5AB59B9C4DB5</key>
 		<string>iCloud</string>
+		<key>account:F194D77B-5E71-4907-BD30-D37425472966</key>
+		<string>On My Mac</string>
 	</dict>
 	<key>AddressFormat</key>
 	<string>us</string>
 	<key>CardhopQuickContactWidgetChangeHash</key>
-	<integer>18033002909676334588</integer>
+	<integer>11667924204107197836</integer>
 	<key>ContactTemplate</key>
 	<array>
 		<dict>
@@ -85,14 +89,22 @@
 	<key>FullSidebarVisible</key>
 	<true/>
 	<key>GroupSplitWidth</key>
-	<real>161</real>
+	<real>163</real>
 	<key>HideInDock</key>
 	<true/>
+	<key>HideInMenubar</key>
+	<true/>
+	<key>HotKeyCode</key>
+	<integer>8</integer>
+	<key>HotKeyEmpty</key>
+	<false/>
+	<key>HotKeyFlags</key>
+	<integer>1835008</integer>
 	<key>LastLaunchVersion</key>
-	<string>1138</string>
+	<string>1140</string>
 	<key>LastSelectedContactIdentifiers</key>
 	<array>
-		<string>74F57A4B-7577-4D1C-B513-4257F4ACED90:ABPerson</string>
+		<string>B340B509-DE65-47C0-950C-1D3F9428CECE:ABPerson</string>
 	</array>
 	<key>LastSelectedTab</key>
 	<integer>2</integer>
@@ -113,7 +125,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBIYHCJQUVJTVFVWV1hZ
 	WltcXWJnVSRudWxs0g0ODxFaTlMub2JqZWN0c1YkY2xhc3OhEIACgBXTExQOFRYXXHRp
-	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HFDiGCU9+PgATS
+	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HFJkEoxSNXgATS
 	HR4fIFokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRGF0ZaIfIVhOU09iamVjdN8QFyMkJSYO
 	JygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PDxBQjw8PDxHSElKPDxNTk9Zb3NWZXJzaW9u
 	XnRpbWVab25lT2Zmc2V0WGFwcEJ1aWxkXxAVbGl2ZVVwZGF0ZVBhY2thZ2VIYXNoWmFw
@@ -123,23 +135,23 @@
 	ZVVtb2RlbF8QFXdyYXBwZXJSdW50aW1lVmVyc2lvbl8QFmxpdmVVcGRhdGVSZWxlYXNl
 	TGFiZWxac2NyZWVuU2l6ZVZvc05hbWVXb3NCdWlsZIALgA6AEYAAgBOAEIAAgACABoAN
 	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNS4wLjJe
-	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTMuMy4xVjIyRTI2MVVlbl9VUxP/////
-	////EFkyNTYweDE0NDBVMi4yLjdUMTEzOF8QGWNvbS5mbGV4aWJpdHMuY2FyZGhvcC5t
-	YWPSHR5eX1pNU0FDRGV2aWNlo2BhIVpNU0FDRGV2aWNlXk1TQUNXcmFwcGVyU2Rr0h0e
-	Y2RfEBVNU0FDRGV2aWNlSGlzdG9yeUluZm+jZWYhXxAVTVNBQ0RldmljZUhpc3RvcnlJ
-	bmZvXxAPTVNBQ0hpc3RvcnlJbmZv0h0eaGleTlNNdXRhYmxlQXJyYXmjaGohV05TQXJy
-	YXkACAARABoAJAApADIANwBJAEwAUQBTAGwAcgB3AIIAiQCLAI0AjwCWAKMArQCvALEA
-	swC4AMAAyQDLANAA2wDkAOsA7gD3ASgBMgFBAUoBYgFtAYEBjQGVAZwBtgHFAdAB3wHn
-	AfIB/wIFAh0CNgJBAkgCUAJSAlQCVgJYAloCXAJeAmACYgJkAmYCaAJqAmwCbgJwAnIC
-	dAJ2AngCegJ8An4CkAKWAqUCqwKxArgCvwLFAs4C2ALeAuMC/wMEAw8DEwMeAy0DMgNK
-	A04DZgN4A30DjAOQAAAAAAAAAgEAAAAAAAAAawAAAAAAAAAAAAAAAAAAA5g=
+	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTMuNC4xVTIyRjgyVWVuX1VTE///////
+	//8QWDE1MTJ4OTgyVTIuMi43VDExNDBfEBljb20uZmxleGliaXRzLmNhcmRob3AubWFj
+	0h0eXl9aTVNBQ0RldmljZaNgYSFaTVNBQ0RldmljZV5NU0FDV3JhcHBlclNka9IdHmNk
+	XxAVTVNBQ0RldmljZUhpc3RvcnlJbmZvo2VmIV8QFU1TQUNEZXZpY2VIaXN0b3J5SW5m
+	b18QD01TQUNIaXN0b3J5SW5mb9IdHmhpXk5TTXV0YWJsZUFycmF5o2hqIVdOU0FycmF5
+	AAgAEQAaACQAKQAyADcASQBMAFEAUwBsAHIAdwCCAIkAiwCNAI8AlgCjAK0ArwCxALMA
+	uADAAMkAywDQANsA5ADrAO4A9wEoATIBQQFKAWIBbQGBAY0BlQGcAbYBxQHQAd8B5wHy
+	Af8CBQIdAjYCQQJIAlACUgJUAlYCWAJaAlwCXgJgAmICZAJmAmgCagJsAm4CcAJyAnQC
+	dgJ4AnoCfAJ+ApAClgKlAqsCsQK4Ar4CxALNAtYC3ALhAv0DAgMNAxEDHAMrAzADSANM
+	A2QDdgN7A4oDjgAAAAAAAAIBAAAAAAAAAGsAAAAAAAAAAAAAAAAAAAOW
 	</data>
 	<key>MSAppCenterSessionIdHistory</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
 	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
-	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxQ4hglHCsYAE0h0eHyBaJGNsYXNzbmFt
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxSZBKMK1HIAE0h0eHyBaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
 	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
 	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
@@ -152,7 +164,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGoCwwSGBwiIyhVJG51bGzSDQ4P
 	EVpOUy5vYmplY3RzViRjbGFzc6EQgAKAB9MTFA4VFhdcdGltZXN0YW1wS2V5WXVzZXJJ
-	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcUOIYJWS7qABNIdHh8gWiRjbGFzc25hbWVY
+	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcUmQSjHhEWABNIdHh8gWiRjbGFzc25hbWVY
 	JGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN0XxAPd2lsQHdpbGhhbGwuY29t0h0eJCVf
 	EBVNU0FDVXNlcklkSGlzdG9yeUluZm+jJichXxAVTVNBQ1VzZXJJZEhpc3RvcnlJbmZv
 	XxAPTVNBQ0hpc3RvcnlJbmZv0h0eKSpeTlNNdXRhYmxlQXJyYXmjKSshV05TQXJyYXkA
@@ -161,37 +173,37 @@
 	LAAAAAAAAAAAAAAAAAAAAWQ=
 	</data>
 	<key>MeCardExternalID</key>
-	<string>contact:605EDF27-E3AF-4191-8288-7D6469005A58</string>
+	<string>contact:01719BAA-0B34-43D7-A673-DAF268282465</string>
 	<key>MeCardExternalIDLocal</key>
-	<string>contact:605EDF27-E3AF-4191-8288-7D6469005A58</string>
+	<string>contact:01719BAA-0B34-43D7-A673-DAF268282465</string>
 	<key>MiniWindowAttached</key>
 	<true/>
 	<key>MiniWindowVisible</key>
 	<false/>
 	<key>NSSplitView Subview Frames Group</key>
 	<array>
-		<string>0.000000, 0.000000, 163.000000, 261.000000, NO, NO</string>
-		<string>163.000000, 0.000000, 298.000000, 261.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 163.000000, 339.000000, NO, NO</string>
+		<string>163.000000, 0.000000, 298.000000, 339.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames Notes</key>
 	<array>
-		<string>0.000000, 0.000000, 350.000000, 466.000000, NO, NO</string>
-		<string>0.000000, 466.000000, 350.000000, 110.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 350.000000, 308.000000, NO, NO</string>
+		<string>0.000000, 308.000000, 350.000000, 110.000000, NO, NO</string>
 	</array>
-	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>437</real>
 	<key>NSTableViewCanEstimateRowHeights</key>
 	<false/>
 	<key>NSWindow Frame ContactPopover</key>
-	<string>1680 777 360 576 0 0 1800 1125 </string>
+	<string>628 464 360 418 0 0 1512 944 </string>
 	<key>NSWindow Frame Main Window</key>
-	<string>1862 1057 461 348 0 0 2560 1415 </string>
+	<string>842 508 461 426 0 0 1512 944 </string>
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
 	<string>692 407 425 137 0 0 1440 875 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1073 762 620 398 0 0 2560 1415 </string>
 	<key>OpenCallsIn</key>
 	<string>com.apple.FaceTime</string>
+	<key>OpenMapsIn</key>
+	<string>google</string>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<true/>
 	<key>PlaySounds</key>
@@ -224,9 +236,9 @@
 	<date>2023-03-23T15:35:07Z</date>
 	<key>review.launches</key>
 	<array>
-		<date>2023-03-23T15:35:07Z</date>
-		<date>2023-04-11T11:53:46Z</date>
-		<date>2023-04-17T16:55:39Z</date>
+		<date>2023-06-06T11:35:06Z</date>
+		<date>2023-06-26T19:05:10Z</date>
+		<date>2023-06-28T13:06:38Z</date>
 	</array>
 </dict>
 </plist>

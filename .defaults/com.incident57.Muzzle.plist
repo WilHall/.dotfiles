@@ -5,8 +5,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2021-10-13T19:42:27Z</date>
+	<date>2023-06-27T19:02:33Z</date>
 	<key>showStatusBarIcon</key>
 	<false/>
+	<key>suppressZoomWarning</key>
+	<true/>
 </dict>
 </plist>

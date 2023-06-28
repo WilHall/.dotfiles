@@ -8,6 +8,8 @@
 	<false/>
 	<key>Dragging</key>
 	<false/>
+	<key>HIDScrollZoomModifierMask</key>
+	<integer>262144</integer>
 	<key>TrackpadCornerSecondaryClick</key>
 	<integer>0</integer>
 	<key>TrackpadFiveFingerPinchGesture</key>

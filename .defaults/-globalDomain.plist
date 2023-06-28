@@ -3,13 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>AKLastEmailListRequestDateKey</key>
-	<date>2023-05-25T11:52:19Z</date>
+	<date>2023-06-28T13:42:06Z</date>
 	<key>AKLastIDMSEnvironment</key>
 	<integer>0</integer>
 	<key>AKLastLocale</key>
 	<string>en_US</string>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>4</integer>
+	<key>AppleAquaColorVariant</key>
+	<integer>1</integer>
+	<key>AppleInterfaceStyleSwitchesAutomatically</key>
+	<true/>
 	<key>AppleKeyboardUIMode</key>
 	<integer>2</integer>
 	<key>AppleLanguages</key>
@@ -17,7 +21,7 @@
 		<string>en-US</string>
 	</array>
 	<key>AppleLanguagesDidMigrate</key>
-	<string>13.3.1</string>
+	<string>13.4.1</string>
 	<key>AppleLanguagesSchemaVersion</key>
 	<integer>3000</integer>
 	<key>AppleLocale</key>
@@ -58,13 +62,13 @@
 	<key>NSAutomaticQuoteSubstitutionEnabled</key>
 	<false/>
 	<key>NSAutomaticSpellingCorrectionEnabled</key>
-	<true/>
+	<false/>
 	<key>NSAutomaticTextCompletionEnabled</key>
 	<true/>
 	<key>NSLinguisticDataAssetsRequestLastInterval</key>
 	<real>86400</real>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2023-05-25T14:11:33Z</date>
+	<date>2023-06-27T21:58:11Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>en</string>
@@ -87,6 +91,10 @@
 		<string>it</string>
 		<string>vi</string>
 	</array>
+	<key>NSNavPanelFileLastListModeForOpenModeKey</key>
+	<integer>3</integer>
+	<key>NSNavPanelFileListModeForOpenMode2</key>
+	<integer>3</integer>
 	<key>NSPreferredWebServices</key>
 	<dict>
 		<key>NSWebServicesProviderWebSearch</key>
@@ -99,6 +107,14 @@
 	</dict>
 	<key>NSUserDictionaryReplacementItems</key>
 	<array>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>:)</string>
+			<key>with</key>
+			<string>🙂</string>
+		</dict>
 		<dict>
 			<key>on</key>
 			<integer>1</integer>
@@ -159,14 +175,6 @@
 			<key>on</key>
 			<integer>1</integer>
 			<key>replace</key>
-			<string>:)</string>
-			<key>with</key>
-			<string>🙂</string>
-		</dict>
-		<dict>
-			<key>on</key>
-			<integer>1</integer>
-			<key>replace</key>
 			<string>:p</string>
 			<key>with</key>
 			<string>😝</string>
@@ -180,6 +188,8 @@
 			<string>💜</string>
 		</dict>
 	</array>
+	<key>NSUserKeyEquivalents</key>
+	<dict/>
 	<key>NSUserQuotesArray</key>
 	<array>
 		<string>“</string>
@@ -188,13 +198,13 @@
 		<string>’</string>
 	</array>
 	<key>WebAutomaticSpellingCorrectionEnabled</key>
-	<true/>
+	<false/>
 	<key>com.apple.finder.SyncExtensions</key>
 	<dict>
 		<key>collaborationMap</key>
 		<dict>
 			<key>com.adobe.accmac.ACCFinderSync</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>dirMap</key>
 		<dict>

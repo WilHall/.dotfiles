@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSStatusItem Preferred Position Item-1</key>
+	<real>527</real>
 	<key>NSWindow Frame Preferences Window</key>
 	<string>1090 839 460 319 0 0 2560 1415 </string>
 	<key>NSWindow Frame Settings Window</key>

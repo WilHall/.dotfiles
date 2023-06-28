@@ -123,7 +123,7 @@
 		<string>0.000000, 319.000000, 480.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>366</real>
+	<real>423</real>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
@@ -132,12 +132,12 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>48 81 480 347 0 0 1440 875 </string>
 	<key>Paddle-ColorSnapper2-499167-SD</key>
-	<string>0816e238b09c9ee3d1e307763ba2c0b7ab86e49657e47fbd83d5844f43a22ef9</string>
+	<string>de178b5a9a00b1f6141720bfad1eb7f468c9750ad5ff1a6c84db956b6eec3af7</string>
 	<key>PickColorShortCut</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldL
-	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzEAiAAhIAFAAA0hQVFhdaJGNsYXNzbmFt
+	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzECOAAhIAEgAA0hQVFhdaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1pEQVNob3J0Y3V0oxgZGlpEQVNob3J0Y3V0W01BU1Nob3J0Y3V0WE5T
 	T2JqZWN0CBEaJCkyN0lMUVNXXWRsc4GDhYqPmqOusr3JAAAAAAAAAQEAAAAAAAAAGwAA
 	AAAAAAAAAAAAAAAAANI=
@@ -147,9 +147,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-05-25T14:05:12Z</date>
+	<date>2023-06-28T12:19:45Z</date>
 	<key>SULastProfileSubmissionDate</key>
-	<date>2023-05-21T22:25:51Z</date>
+	<date>2023-06-28T12:19:45Z</date>
 	<key>SUScheduledCheckInterval</key>
 	<real>43200</real>
 	<key>SUSendProfileInfo</key>
@@ -205,8 +205,6 @@
 	<false/>
 	<key>exportFormat</key>
 	<string>Generic Hex</string>
-	<key>magnificationValue</key>
-	<real>4</real>
 	<key>openFormatsAfterPick</key>
 	<integer>0</integer>
 	<key>showMenubarIcon</key>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConnectionsWindowLastScreenNumber</key>
+	<integer>1</integer>
+	<key>ConnectionsWindowPositions</key>
+	<dict>
+		<key>1</key>
+		<string>{0.13624338624338625, 0.95010183299389006}</string>
+	</dict>
+	<key>InspectorSectionCollapseStates</key>
+	<dict>
+		<key>_codeSignature</key>
+		<true/>
+		<key>_connectionDetails</key>
+		<true/>
+		<key>_generalInformation</key>
+		<false/>
+		<key>_geoSection</key>
+		<true/>
+		<key>_internetAccessPolicy</key>
+		<false/>
+		<key>_summaryConnections</key>
+		<false/>
+	</dict>
+	<key>InspectorTrafficPanelMode</key>
+	<integer>0</integer>
+	<key>LiveConnectionsWindowIsOpen</key>
+	<true/>
+	<key>NSFullScreenMenuItemEverywhere</key>
+	<false/>
+	<key>NSToolbar Configuration D4E458FC-AE62-46CA-AA52-AD13C98D5A16</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>TrafficViewTimeRange</key>
+	<real>3600.9999999999991</real>
+</dict>
+</plist>

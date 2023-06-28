@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HSenableSpotlightForNameSearches</key>
+	<true/>
+	<key>MJShowMenuIconKey</key>
+	<false/>
+	<key>MJSkipDockMenuIconProblemAlertKey</key>
+	<true/>
+	<key>NSToolbar Configuration Console Default</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame console</key>
+	<string>341 273 510 417 0 0 1512 944 </string>
+	<key>NSWindow Frame prefs</key>
+	<string>601 499 365 277 0 0 1512 944 </string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2023-06-28T13:34:00Z</date>
+	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>3906537174</integer>
+</dict>
+</plist>

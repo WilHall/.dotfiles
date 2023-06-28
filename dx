@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # name: dx
 # author: Wil Hall
 # email: wil@wilhall.com
@@ -11,7 +11,7 @@ cat << EOF
 usage: $(basename $0)  
 
 This utility performs backups and restorations of macOS user defaults.
-Backups are managed in `~/.defaults/`.
+Backups are managed in '~/.defaults/'.
 
 OPTIONS:
    -h | --help        Show this message
@@ -23,7 +23,7 @@ OPTIONS:
 <DOMAIN> is one of:
 -globalDomain  The macOS global domain
 <DOMAIN_NAME>  The fully-qualified domain name (e.g. application bundle identifier)
-<APP_NAME>     The application name (e.g. `/Applications/<APP_NAME>.app`
+<APP_NAME>     The application name (e.g. '/Applications/<APP_NAME>.app'
 
 EOF
 }
@@ -54,7 +54,7 @@ resolve_domain() {
 
 backup() {
   BACKUP_FILE="$HOME/.defaults/$1.plist"
-  defaults export $1 "$BACKUP_FILE" && plutil -convert xml1 "$BACKUP_FILE" 
+  defaults export "$1" "$BACKUP_FILE" && plutil -convert xml1 "$BACKUP_FILE" 
   if [[ $? == 0 ]]; then
     echo "Exported domain '$1' to $BACKUP_FILE"
     if [ "$READBACK" = true ]; then plutil -p "$BACKUP_FILE"; fi
@@ -69,7 +69,7 @@ restore() {
     echo "No backup exists for the domain '$1'"
     exit 1
   fi
-  defaults import $1 "$HOME/.defaults/$1.plist"
+  defaults import "$1" "$HOME/.defaults/$1.plist"
   if [[ $? == 0 ]]; then
     echo "Imported domain '$1'"
     if [ "$READBACK" = true ]; then defaults read $1; fi
@@ -99,7 +99,7 @@ while [ ! $# -eq 0 ]; do
     case "$1" in
         -r | --restore)
             if [ "$2" ]; then
-                DOMAIN="$(resolve_domain $2)"
+                DOMAIN="$(resolve_domain "$2")"
                 if [[ $? != 0 ]]; then exit 1; fi
                 restore "$DOMAIN"
                 exit
@@ -111,7 +111,7 @@ while [ ! $# -eq 0 ]; do
         -b | --backup)
             if [ "$2" ]; then
                 OPERATION='backup'
-                DOMAIN="$(resolve_domain $2)"
+                DOMAIN="$(resolve_domain "$2")"
                 if [[ $? != 0 ]]; then exit 1; fi
                 backup "$DOMAIN"
                 exit

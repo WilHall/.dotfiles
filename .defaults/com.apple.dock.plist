@@ -8,7 +8,7 @@
 	<real>51</real>
 	<key>last-analytics-stamp</key>
 	<array>
-		<real>706559736.53446102</real>
+		<real>709657142.12836003</real>
 	</array>
 	<key>lastShowIndicatorTime</key>
 	<real>666717712.45329499</real>
@@ -21,7 +21,7 @@
 	<key>minimize-to-application</key>
 	<true/>
 	<key>mod-count</key>
-	<integer>342</integer>
+	<integer>365</integer>
 	<key>mru-spaces</key>
 	<false/>
 	<key>orientation</key>
@@ -40,12 +40,12 @@
 				AAABAQAAU3lzdGVtAAAMAAAAAQEAAEFwcGxpY2F0aW9u
 				cxMAAAABAQAAU3lzdGVtIFNldHRpbmdzLmFwcAAMAAAA
 				AQYAABAAAAAgAAAANAAAAAgAAAAEAwAAFQAAAP///w8I
-				AAAABAMAABcAAAD///8PCAAAAAQDAADlWwAA////DwwA
-				AAABBgAAZAAAAHQAAACEAAAACAAAAAAEAABBxJ0NfAAA
+				AAAABAMAABcAAAD///8PCAAAAAQDAAB4WwAA////DwwA
+				AAABBgAAZAAAAHQAAACEAAAACAAAAAAEAABBxQd6oAAA
 				ABgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAA
 				CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3No
-				IEhECAAAAAQDAAAAkIKW5wAAACQAAAABAQAAMjVBQzQx
-				OTctQ0Y2Mi00OTNCLTkzOTUtOEEwQjczNzNERUI5GAAA
+				IEhECAAAAAQDAAAAkIKW5wAAACQAAAABAQAAOTVEMzlE
+				MTEtN0RCQS00QTk1LTg2MjQtQzA4MDVFNzQzOTlFGAAA
 				AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
 				AQEAAC8AAAAAAAAAAQUAAKgAAAD+////AQAAAAAAAAAN
 				AAAABBAAAFAAAAAAAAAABRAAAJQAAAAAAAAAEBAAALgA
@@ -68,13 +68,13 @@
 				<key>file-label</key>
 				<string>System Settings</string>
 				<key>file-mod-date</key>
-				<integer>3752825848</integer>
+				<integer>3766775360</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>3752825848</integer>
+				<integer>3766775360</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -89,13 +89,13 @@
 				Ym9vaywCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
 				AAAAAAAAAAAAAAAAAAAATAEAAAQAAAADAwAAAAAAIAwA
 				AAABAQAAQXBwbGljYXRpb25zCQAAAAEBAABpVGVybS5h
-				cHAAAAAIAAAAAQYAABAAAAAkAAAACAAAAAQDAAD0GJcD
-				AAAAAAgAAAAEAwAAyNDlBAAAAAAIAAAAAQYAAEgAAABY
-				AAAACAAAAAAEAABBxMts6gAAABgAAAABAgAAAgAAAAAA
+				cHAAAAAIAAAAAQYAABAAAAAkAAAACAAAAAQDAAD/QwAA
+				AAAAAAgAAAAEAwAAYaQ0AAAAAAAIAAAAAQYAAEgAAABY
+				AAAACAAAAAAEAABBxMtl4gAAABgAAAABAgAAAgAAAAAA
 				AAAPAAAAAAAAAAAAAAAAAAAACAAAAAEJAABmaWxlOi8v
 				LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW
-				5wAAAAgAAAAABAAAQcSdDXwAAAAkAAAAAQEAADI1QUM0
-				MTk3LUNGNjItNDkzQi05Mzk1LThBMEI3MzczREVCORgA
+				5wAAAAgAAAAABAAAQcUHeqAAAAAkAAAAAQEAADk1RDM5
+				RDExLTdEQkEtNEE5NS04NjI0LUMwODA1RTc0Mzk5RRgA
 				AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
 				AAEBAAAvAAAAAAAAAAEFAACoAAAA/v///wEAAAAAAAAA
 				DQAAAAQQAAA4AAAAAAAAAAUQAABoAAAAAAAAABAQAACI
@@ -118,13 +118,13 @@
 				<key>file-label</key>
 				<string>iTerm</string>
 				<key>file-mod-date</key>
-				<integer>228268378430667</integer>
+				<integer>3755531674</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>171759496128066</integer>
+				<integer>215297594383356</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -193,21 +193,21 @@
 				AwAAAAEBAABBcHAADAAAAAEBAABBcHBsaWNhdGlvbnMK
 				AAAAAQEAAFNhZmFyaS5hcHAAACAAAAABBgAAEAAAACAA
 				AAAwAAAAQAAAAFQAAAAQAAAAYAAAAHQAAAAIAAAABAMA
-				ABUAAAD///8PCAAAAAQDAAADMAgA////DwgAAAAEAwAA
-				AgAAAAAAAAAIAAAABAMAAMpGAAAAAAAACAAAAAQDAADM
-				RgAAAAAAAAgAAAAEAwAACCQBAAAAAAAIAAAABAMAAAkk
-				AQAAAAAACAAAAAQDAAAKJAEAAAAAACAAAAABBgAAsAAA
+				ABUAAAD///8PCAAAAAQDAADLKwgA////DwgAAAAEAwAA
+				AgAAAAAAAAAIAAAABAMAAAYBAAAAAAAACAAAAAQDAAAI
+				AQAAAAAAAAgAAAAEAwAAu5sAAAAAAAAIAAAABAMAALyb
+				AAAAAAAACAAAAAQDAAC9mwAAAAAAACAAAAABBgAAsAAA
 				AMAAAADQAAAA4AAAAPAAAAAAAQAAEAEAACABAAAIAAAA
-				AAQAAEHE7AYpAAAAGAAAAAECAAACAAAAAAAAAA8AAAAA
+				AAQAAEHFHYB7gAAAGAAAAAECAAACAAAAAAAAAA8AAAAA
 				AAAAAAAAAAAAAAAfAAAAAQkAAGZpbGU6Ly8vU3lzdGVt
 				L1ZvbHVtZXMvUHJlYm9vdC8ACAAAAAQDAAAAkIKW5wAA
-				AAgAAAAABAAAQcPRBUIjIxEkAAAAAQEAADdDNzBDN0JC
-				LUJCQTUtNDVERi1CNDJBLUE0RTMzNjUwQ0JBNRgAAAAB
+				AAgAAAAABAAAQcUV++X1OEEkAAAAAQEAADRCRTk5MTE1
+				LTI4NDMtNDdBMS1CQzBELTFGRTU0MkI5OTJDNhgAAAAB
 				AgAAhQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAFwAAAAEB
 				AAAvU3lzdGVtL1ZvbHVtZXMvUHJlYm9vdAAIAAAAAQkA
 				AGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAA
-				AAQAAEHE7Eu9AAAAJAAAAAEBAAAyNUFDNDE5Ny1DRjYy
-				LTQ5M0ItOTM5NS04QTBCNzM3M0RFQjkYAAAAAQIAAIEA
+				AAQAAEHFHY1OgAAAJAAAAAEBAAA5NUQzOUQxMS03REJB
+				LTRBOTUtODYyNC1DMDgwNUU3NDM5OUUYAAAAAQIAAIEA
 				AAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAA
 				AGAAAAD+////APAAAAAAAAAHAAAAAiAAALwCAAAAAAAA
 				BSAAADwCAAAAAAAAECAAAEwCAAAAAAAAESAAAHACAAAA
@@ -349,6 +349,56 @@
 		</dict>
 		<dict>
 			<key>GUID</key>
+			<integer>2264524004</integer>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9vazACAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAUAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zDwAAAAEBAABOZXROZXdz
+				V2lyZS5hcHAACAAAAAEGAAAQAAAAJAAAAAgAAAAEAwAA
+				/0MAAAAAAAAIAAAABAMAAHIMNAAAAAAACAAAAAEGAABM
+				AAAAXAAAAAgAAAAABAAAQcUXBuaAAAAYAAAAAQIAAAIA
+				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAABCQAAZmls
+				ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
+				AJCClucAAAAIAAAAAAQAAEHFB3qgAAAAJAAAAAEBAAA5
+				NUQzOUQxMS03REJBLTRBOTUtODYyNC1DMDgwNUU3NDM5
+				OUUYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAA
+				AAEAAAABAQAALwAAAAAAAAABBQAAqAAAAP7///8BAAAA
+				AAAAAA0AAAAEEAAAPAAAAAAAAAAFEAAAbAAAAAAAAAAQ
+				EAAAjAAAAAAAAABAEAAAfAAAAAAAAAACIAAAPAEAAAAA
+				AAAFIAAArAAAAAAAAAAQIAAAvAAAAAAAAAARIAAA8AAA
+				AAAAAAASIAAA0AAAAAAAAAATIAAA4AAAAAAAAAAgIAAA
+				HAEAAAAAAAAwIAAASAEAAAAAAAAQ0AAABAAAAAAAAAA=
+				</data>
+				<key>bundle-identifier</key>
+				<string>com.ranchero.NetNewsWire-Evergreen</string>
+				<key>dock-extra</key>
+				<false/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///Applications/NetNewsWire.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>NetNewsWire</string>
+				<key>file-mod-date</key>
+				<integer>0</integer>
+				<key>file-type</key>
+				<integer>1</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>0</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
+		<dict>
+			<key>GUID</key>
 			<integer>3451403672</integer>
 			<key>tile-data</key>
 			<dict>
@@ -394,6 +444,56 @@
 				<false/>
 				<key>parent-mod-date</key>
 				<integer>3752825848</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
+		<dict>
+			<key>GUID</key>
+			<integer>1563780318</integer>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9vaywCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAATAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zCwAAAAEBAABEaXNjb3Jk
+				LmFwcAAIAAAAAQYAABAAAAAkAAAACAAAAAQDAAD/QwAA
+				AAAAAAgAAAAEAwAAn5ANAAAAAAAIAAAAAQYAAEgAAABY
+				AAAACAAAAAAEAABBxPznuQAAABgAAAABAgAAAgAAAAAA
+				AAAPAAAAAAAAAAAAAAAAAAAACAAAAAEJAABmaWxlOi8v
+				LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW
+				5wAAAAgAAAAABAAAQcUHeqAAAAAkAAAAAQEAADk1RDM5
+				RDExLTdEQkEtNEE5NS04NjI0LUMwODA1RTc0Mzk5RRgA
+				AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
+				AAEBAAAvAAAAAAAAAAEFAACoAAAA/v///wEAAAAAAAAA
+				DQAAAAQQAAA4AAAAAAAAAAUQAABoAAAAAAAAABAQAACI
+				AAAAAAAAAEAQAAB4AAAAAAAAAAIgAAA4AQAAAAAAAAUg
+				AACoAAAAAAAAABAgAAC4AAAAAAAAABEgAADsAAAAAAAA
+				ABIgAADMAAAAAAAAABMgAADcAAAAAAAAACAgAAAYAQAA
+				AAAAADAgAABEAQAAAAAAABDQAAAEAAAAAAAAAA==
+				</data>
+				<key>bundle-identifier</key>
+				<string>com.hnc.Discord</string>
+				<key>dock-extra</key>
+				<false/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///Applications/Discord.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>Discord</string>
+				<key>file-mod-date</key>
+				<integer>0</integer>
+				<key>file-type</key>
+				<integer>1</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>0</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -553,6 +653,57 @@
 		</dict>
 		<dict>
 			<key>GUID</key>
+			<integer>2264524005</integer>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9vazgCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAWAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zGAAAAAEBAABBZmZpbml0
+				eSBQdWJsaXNoZXIgMi5hcHAIAAAAAQYAABAAAAAkAAAA
+				CAAAAAQDAAD/QwAAAAAAAAgAAAAEAwAAtTMzAAAAAAAI
+				AAAAAQYAAFQAAABkAAAACAAAAAAEAABBxQm2EoAAABgA
+				AAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
+				AAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhE
+				CAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcUHeqAAAAAk
+				AAAAAQEAADk1RDM5RDExLTdEQkEtNEE5NS04NjI0LUMw
+				ODA1RTc0Mzk5RRgAAAABAgAAgQAAAAEAAADvEwAAAQAA
+				AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAACoAAAA
+				/v///wEAAAAAAAAADQAAAAQQAABEAAAAAAAAAAUQAAB0
+				AAAAAAAAABAQAACUAAAAAAAAAEAQAACEAAAAAAAAAAIg
+				AABEAQAAAAAAAAUgAAC0AAAAAAAAABAgAADEAAAAAAAA
+				ABEgAAD4AAAAAAAAABIgAADYAAAAAAAAABMgAADoAAAA
+				AAAAACAgAAAkAQAAAAAAADAgAABQAQAAAAAAABDQAAAE
+				AAAAAAAAAA==
+				</data>
+				<key>bundle-identifier</key>
+				<string>com.seriflabs.affinitypublisher2</string>
+				<key>dock-extra</key>
+				<false/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///Applications/Affinity%20Publisher%202.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>Affinity Publisher 2</string>
+				<key>file-mod-date</key>
+				<integer>0</integer>
+				<key>file-type</key>
+				<integer>1</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>0</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
+		<dict>
+			<key>GUID</key>
 			<integer>2133717388</integer>
 			<key>tile-data</key>
 			<dict>
@@ -604,51 +755,52 @@
 		</dict>
 		<dict>
 			<key>GUID</key>
-			<integer>2133717389</integer>
+			<integer>2264524006</integer>
 			<key>tile-data</key>
 			<dict>
 				<key>book</key>
 				<data>
-				Ym9vazgCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAWAEAAAQAAAADAwAAAAAAIAwA
-				AAABAQAAQXBwbGljYXRpb25zGAAAAAEBAABBZmZpbml0
-				eSBQdWJsaXNoZXIgMi5hcHAIAAAAAQYAABAAAAAkAAAA
-				CAAAAAQDAAA91R4GAAAAAAgAAAAEAwAAijX6AwAAAAAI
-				AAAAAQYAAFQAAABkAAAACAAAAAAEAABBxKht/QAAABgA
-				AAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
-				AAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhE
-				CAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcTsS70AAAAk
-				AAAAAQEAADI1QUM0MTk3LUNGNjItNDkzQi05Mzk1LThB
-				MEI3MzczREVCORgAAAABAgAAgQAAAAEAAADvEwAAAQAA
-				AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAACoAAAA
-				/v///wEAAAAAAAAADQAAAAQQAABEAAAAAAAAAAUQAAB0
-				AAAAAAAAABAQAACUAAAAAAAAAEAQAACEAAAAAAAAAAIg
-				AABEAQAAAAAAAAUgAAC0AAAAAAAAABAgAADEAAAAAAAA
-				ABEgAAD4AAAAAAAAABIgAADYAAAAAAAAABMgAADoAAAA
-				AAAAACAgAAAkAQAAAAAAADAgAABQAQAAAAAAABDQAAAE
-				AAAAAAAAAA==
+				Ym9va2gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAiAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zEgAAAAEBAABBZG9iZSBM
+				aWdodHJvb20gQ0MAABMAAAABAQAAQWRvYmUgTGlnaHRy
+				b29tLmFwcAAMAAAAAQYAABAAAAAkAAAAQAAAAAgAAAAE
+				AwAA/0MAAAAAAAAIAAAABAMAAH/RMwAAAAAACAAAAAQD
+				AACpnzMAAAAAAAwAAAABBgAAcAAAAIAAAACQAAAACAAA
+				AAAEAABBxRa+EX2Z8xgAAAABAgAAAgAAAAAAAAAPAAAA
+				AAAAAAAAAAAAAAAACAAAAAEJAABmaWxlOi8vLwwAAAAB
+				AQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
+				AAAABAAAQcUHeqAAAAAkAAAAAQEAADk1RDM5RDExLTdE
+				QkEtNEE5NS04NjI0LUMwODA1RTc0Mzk5RRgAAAABAgAA
+				gQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAv
+				AAAAAAAAAAEFAACoAAAA/v///wEAAAAAAAAADQAAAAQQ
+				AABcAAAAAAAAAAUQAACgAAAAAAAAABAQAADEAAAAAAAA
+				AEAQAAC0AAAAAAAAAAIgAAB0AQAAAAAAAAUgAADkAAAA
+				AAAAABAgAAD0AAAAAAAAABEgAAAoAQAAAAAAABIgAAAI
+				AQAAAAAAABMgAAAYAQAAAAAAACAgAABUAQAAAAAAADAg
+				AACAAQAAAAAAABDQAAAEAAAAAAAAAA==
 				</data>
 				<key>bundle-identifier</key>
-				<string>com.seriflabs.affinitypublisher2</string>
+				<string>com.adobe.lightroomCC</string>
 				<key>dock-extra</key>
 				<false/>
 				<key>file-data</key>
 				<dict>
 					<key>_CFURLString</key>
-					<string>file:///Applications/Affinity%20Publisher%202.app/</string>
+					<string>file:///Applications/Adobe%20Lightroom%20CC/Adobe%20Lightroom.app/</string>
 					<key>_CFURLStringType</key>
 					<integer>15</integer>
 				</dict>
 				<key>file-label</key>
-				<string>Affinity Publisher 2</string>
+				<string>Adobe Lightroom</string>
 				<key>file-mod-date</key>
-				<integer>71867148767780</integer>
+				<integer>0</integer>
 				<key>file-type</key>
-				<integer>41</integer>
+				<integer>1</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>49653587387793</integer>
+				<integer>0</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -714,13 +866,13 @@
 				AAAAAAAAAAAAAAAAAAAAUAEAAAQAAAADAwAAAAAAIAwA
 				AAABAQAAQXBwbGljYXRpb25zDgAAAAEBAABFbnRpdHkg
 				UHJvLmFwcAAACAAAAAEGAAAQAAAAJAAAAAgAAAAEAwAA
-				9BiXAwAAAAAIAAAABAMAACQJtgMAAAAACAAAAAEGAABM
+				/0MAAAAAAAAIAAAABAMAAAlsGwAAAAAACAAAAAEGAABM
 				AAAAXAAAAAgAAAAABAAAQcSoON4AAAAYAAAAAQIAAAIA
 				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAABCQAAZmls
 				ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
-				AJCClucAAAAIAAAAAAQAAEHEnQ18AAAAJAAAAAEBAAAy
-				NUFDNDE5Ny1DRjYyLTQ5M0ItOTM5NS04QTBCNzM3M0RF
-				QjkYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAA
+				AJCClucAAAAIAAAAAAQAAEHFB3qgAAAAJAAAAAEBAAA5
+				NUQzOUQxMS03REJBLTRBOTUtODYyNC1DMDgwNUU3NDM5
+				OUUYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAA
 				AAEAAAABAQAALwAAAAAAAAABBQAAqAAAAP7///8BAAAA
 				AAAAAA0AAAAEEAAAPAAAAAAAAAAFEAAAbAAAAAAAAAAQ
 				EAAAjAAAAAAAAABAEAAAfAAAAAAAAAACIAAAPAEAAAAA
@@ -742,13 +894,13 @@
 				<key>file-label</key>
 				<string>Entity Pro</string>
 				<key>file-mod-date</key>
-				<integer>96619043674108</integer>
+				<integer>81449233566644</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>275534501645919</integer>
+				<integer>215297594383356</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -913,13 +1065,13 @@
 				Ym9vaygCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
 				AAAAAAAAAAAAAAAAAAAASAEAAAQAAAADAwAAAAAAIAwA
 				AAABAQAAQXBwbGljYXRpb25zCAAAAAEBAABGb3JrLmFw
-				cAgAAAABBgAAEAAAACQAAAAIAAAABAMAAPQYlwMAAAAA
-				CAAAAAQDAABYlNwFAAAAAAgAAAABBgAARAAAAFQAAAAI
-				AAAAAAQAAEHE9qBOgAAAGAAAAAECAAACAAAAAAAAAA8A
+				cAgAAAABBgAAEAAAACQAAAAIAAAABAMAAP9DAAAAAAAA
+				CAAAAAQDAAAaqQ0AAAAAAAgAAAABBgAARAAAAFQAAAAI
+				AAAAAAQAAEHFC9GKgAAAGAAAAAECAAACAAAAAAAAAA8A
 				AAAAAAAAAAAAAAAAAAAIAAAAAQkAAGZpbGU6Ly8vDAAA
 				AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAA
-				CAAAAAAEAABBxJ0NfAAAACQAAAABAQAAMjVBQzQxOTct
-				Q0Y2Mi00OTNCLTkzOTUtOEEwQjczNzNERUI5GAAAAAEC
+				CAAAAAAEAABBxQd6oAAAACQAAAABAQAAOTVEMzlEMTEt
+				N0RCQS00QTk1LTg2MjQtQzA4MDVFNzQzOTlFGAAAAAEC
 				AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEA
 				AC8AAAAAAAAAAQUAAKgAAAD+////AQAAAAAAAAANAAAA
 				BBAAADQAAAAAAAAABRAAAGQAAAAAAAAAEBAAAIQAAAAA
@@ -1000,6 +1152,57 @@
 				<false/>
 				<key>parent-mod-date</key>
 				<integer>59347330144416</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
+		<dict>
+			<key>GUID</key>
+			<integer>917283249</integer>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9vazgCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAWAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zFQAAAAEBAABQYXJhbGxl
+				bHMgRGVza3RvcC5hcHAAAAAIAAAAAQYAABAAAAAkAAAA
+				CAAAAAQDAAD/QwAAAAAAAAgAAAAEAwAASnk8AAAAAAAI
+				AAAAAQYAAFQAAABkAAAACAAAAAAEAABBxRVAdQAAABgA
+				AAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
+				AAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhE
+				CAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcUHeqAAAAAk
+				AAAAAQEAADk1RDM5RDExLTdEQkEtNEE5NS04NjI0LUMw
+				ODA1RTc0Mzk5RRgAAAABAgAAgQAAAAEAAADvEwAAAQAA
+				AAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAACoAAAA
+				/v///wEAAAAAAAAADQAAAAQQAABEAAAAAAAAAAUQAAB0
+				AAAAAAAAABAQAACUAAAAAAAAAEAQAACEAAAAAAAAAAIg
+				AABEAQAAAAAAAAUgAAC0AAAAAAAAABAgAADEAAAAAAAA
+				ABEgAAD4AAAAAAAAABIgAADYAAAAAAAAABMgAADoAAAA
+				AAAAACAgAAAkAQAAAAAAADAgAABQAQAAAAAAABDQAAAE
+				AAAAAAAAAA==
+				</data>
+				<key>bundle-identifier</key>
+				<string>com.parallels.desktop.console</string>
+				<key>dock-extra</key>
+				<false/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///Applications/Parallels%20Desktop.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>Parallels Desktop</string>
+				<key>file-mod-date</key>
+				<integer>3768580586</integer>
+				<key>file-type</key>
+				<integer>41</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>205973221778000</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>

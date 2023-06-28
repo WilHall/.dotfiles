@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CKPerBootTasks</key>
+	<array>
+		<string>CKAcccountInfoCacheReset</string>
+	</array>
+	<key>CKStartupTime</key>
+	<integer>1687806220</integer>
+	<key>DatabaseQueue-LastVacuumDate-/Users/wilhall/Library/Containers/com.ranchero.NetNewsWire-Evergreen/Data/Library/Application Support/NetNewsWire/Accounts/2_iCloud/Sync.sqlite3</key>
+	<date>2023-06-18T18:20:20Z</date>
+	<key>NSToolbar Configuration MainWindowToolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame MainWindow</key>
+	<string>82 0 1417 944 0 0 1512 944 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>580 606 400 135 0 0 1512 944 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>470 409 620 398 0 0 1512 944 </string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2023-06-26T19:04:11Z</date>
+	<key>SendCrashLogsAutomatically</key>
+	<true/>
+	<key>addWebFeedAccountID</key>
+	<string>iCloud</string>
+	<key>cloudkit.server.token.Account.__defaultOwner__</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwRElUkbnVsbNINDg8QViRj
+	bGFzc18QD0NoYW5nZVRva2VuRGF0YYADgAJPECEBAAAAAAAAABh//////////yEY9AwC
+	lUF5l5um/3PcoyvSExQVFlokY2xhc3NuYW1lWCRjbGFzc2VzXxATQ0tTZXJ2ZXJDaGFu
+	Z2VUb2tlbqIVF1hOU09iamVjdAgRGiQpMjdJTFFTWF5janx+gKSptL3T1gAAAAAAAAEB
+	AAAAAAAAABgAAAAAAAAAAAAAAAAAAADf
+	</data>
+	<key>cloudkit.server.token.Articles.__defaultOwner__</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwRElUkbnVsbNINDg8QViRj
+	bGFzc18QD0NoYW5nZVRva2VuRGF0YYADgAJPECEBAAAAAAAAClZ//////////+iEpgM1
+	zkyWrXn5DSle7tDSExQVFlokY2xhc3NuYW1lWCRjbGFzc2VzXxATQ0tTZXJ2ZXJDaGFu
+	Z2VUb2tlbqIVF1hOU09iamVjdAgRGiQpMjdJTFFTWF5janx+gKSptL3T1gAAAAAAAAEB
+	AAAAAAAAABgAAAAAAAAAAAAAAAAAAADf
+	</data>
+	<key>firstRunDate</key>
+	<date>2023-06-05T12:49:46Z</date>
+	<key>lastImageCacheFlushDate</key>
+	<date>2023-06-26T19:04:11Z</date>
+	<key>openInBrowserInBackground</key>
+	<false/>
+	<key>twitterDeprecationAlertShown</key>
+	<true/>
+	<key>windowState</key>
+	<dict>
+		<key>articlePath</key>
+		<dict>
+			<key>accountID</key>
+			<string>iCloud</string>
+			<key>accountName</key>
+			<string>iCloud</string>
+			<key>articleID</key>
+			<string>24326de4dc0e965fc617124780f302af</string>
+			<key>webFeedID</key>
+			<string>https://www.oidaisdes.org/rss.xml</string>
+		</dict>
+		<key>containerExpandedWindowState</key>
+		<array>
+			<dict>
+				<key>accountID</key>
+				<string>OnMyMac</string>
+				<key>type</key>
+				<string>account</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>smartFeedController</string>
+			</dict>
+			<dict>
+				<key>accountID</key>
+				<string>iCloud</string>
+				<key>type</key>
+				<string>account</string>
+			</dict>
+		</array>
+		<key>isShowingExtractedArticle</key>
+		<false/>
+		<key>mainWindowWidthsStateKey</key>
+		<array>
+			<integer>240</integer>
+			<integer>375</integer>
+			<integer>800</integer>
+		</array>
+		<key>readArticlesFilterStateKey</key>
+		<array/>
+		<key>readArticlesFilterStateValue</key>
+		<array/>
+		<key>readFeedsFilterState</key>
+		<false/>
+		<key>selectedFeedsState</key>
+		<array>
+			<dict>
+				<key>id</key>
+				<string>UnreadFeed</string>
+				<key>type</key>
+				<string>smartFeed</string>
+			</dict>
+		</array>
+		<key>windowFullScreenState</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

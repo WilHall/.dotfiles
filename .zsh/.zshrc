@@ -1,10 +1,6 @@
-export TERM="xterm-256color"
-
 ZSH_THEME=""
 COMPLETION_WAITING_DOTS="false"
 CASE_SENSITIVE="true"
-unsetopt auto_cd
-setopt IGNORE_EOF # Unbind ^d for logout
 
 autoload -U promptinit; promptinit
 prompt pure
@@ -40,3 +36,5 @@ bindkey '\e[B' directory-history-search-forward
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

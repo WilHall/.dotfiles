@@ -8,12 +8,21 @@
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAChC1UkbnVsbAgRGiQpMjdJTFFT
 	VQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
 	</data>
+	<key>GlobalTupleSoundCheckHotkey</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldL
+	ZXlDb2RlViRjbGFzc11Nb2RpZmllckZsYWdzEBGAAhIAHAAA0hQVFhdaJGNsYXNzbmFt
+	ZVgkY2xhc3Nlc1tNQVNTaG9ydGN1dKIYGVtNQVNTaG9ydGN1dFhOU09iamVjdAgRGiQp
+	MjdJTFFTV11kbHOBg4WKj5qjr7K+AAAAAAAAAQEAAAAAAAAAGgAAAAAAAAAAAAAAAAAA
+	AMc=
+	</data>
 	<key>NSStatusItem Visible Item-0</key>
 	<false/>
 	<key>NSStatusItem Visible TupleStatusBarItem</key>
 	<true/>
 	<key>NSWindow Frame webcamFrame</key>
-	<string>1482 850 269 269 0 0 1800 1125 </string>
+	<string>1243 672 269 269 0 0 1512 944 </string>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -23,34 +32,34 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-05-25T14:05:12Z</date>
+	<date>2023-06-28T14:59:13Z</date>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>analyticsProfile</key>
 	<dict>
 		<key>email</key>
-		<string>wil@sagewellfinancial.com</string>
+		<string>wil@wilhall.com</string>
 		<key>id</key>
-		<integer>54717</integer>
+		<integer>1598</integer>
 		<key>is_guest</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Wil Hall</string>
 		<key>paid</key>
-		<true/>
+		<false/>
 		<key>sfu_support</key>
 		<string>enabled</string>
 		<key>subscription_status</key>
 		<string>active</string>
 		<key>team_id</key>
-		<integer>12458</integer>
+		<integer>1244</integer>
 		<key>team_name</key>
-		<string>Sagewell Financial</string>
+		<string>Tuple Guests</string>
 		<key>team_owner_email</key>
-		<string>chris@sagewellfinancial.com</string>
+		<string>joel+guest@tuple.app</string>
 	</dict>
 	<key>annotationMode</key>
-	<string>paint</string>
+	<string>none</string>
 	<key>audioDeviceManager</key>
 	<dict>
 		<key>preferredInputChannel</key>
@@ -66,9 +75,9 @@
 	<key>callFeedback</key>
 	<false/>
 	<key>clientUIRedesign</key>
-	<false/>
+	<true/>
 	<key>currentUserEmail</key>
-	<string>wil@sagewellfinancial.com</string>
+	<string>wil@wilhall.com</string>
 	<key>cursorMode</key>
 	<string>tagTeam</string>
 	<key>enableNewSignaler</key>
@@ -81,12 +90,14 @@
 	<true/>
 	<key>hasShownPopover</key>
 	<true/>
+	<key>hideRedesignFeedbackBanner</key>
+	<true/>
 	<key>keyboardMode</key>
 	<string>on</string>
 	<key>keyboardOffNotification</key>
 	<true/>
 	<key>lastPreferencePane</key>
-	<integer>4</integer>
+	<integer>2</integer>
 	<key>lastUserSignalMessageDate</key>
 	<dict>
 		<key>clientID</key>
@@ -96,6 +107,8 @@
 	</dict>
 	<key>seenCameraPreview</key>
 	<true/>
+	<key>startCallsWithWebcam</key>
+	<true/>
 	<key>transmitResolution</key>
 	<string>max</string>
 	<key>videoDeviceID</key>
@@ -103,7 +116,7 @@
 	<key>webcam</key>
 	<dict>
 		<key>id</key>
-		<string>47B4B64B70674B9CAD2BAE273A71F4B5</string>
+		<string>47B4B64B-7067-4B9C-AD2B-AE273A71F4B5</string>
 		<key>name</key>
 		<string>FaceTime HD Camera</string>
 	</dict>

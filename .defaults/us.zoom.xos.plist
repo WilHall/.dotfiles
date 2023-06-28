@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BounceApplicationSetting</key>
+	<integer>2</integer>
+	<key>Hotkey Have Shown Tip</key>
+	<true/>
+	<key>NSAllowContinuousSpellChecking</key>
+	<true/>
+	<key>NSConstraintBasedLayoutVisualizeMutuallyExclusiveConstraints</key>
+	<false/>
+	<key>NSInitialToolTipDelay</key>
+	<integer>100</integer>
+	<key>NSQuitAlwaysKeepsWindows</key>
+	<false/>
+	<key>NSWindow Frame ZOOM Main Window</key>
+	<string>48 101 1464 843 0 0 1512 944 </string>
+	<key>PresAppKeyHash</key>
+	<integer>-2145492511746712566</integer>
+	<key>PresMeetingAppKeyHash</key>
+	<integer>6708667284879355442</integer>
+	<key>User Select Language Identify</key>
+	<string>follow system language</string>
+	<key>WebContinuousSpellCheckingEnabled</key>
+	<true/>
+	<key>ZMJoinMeetingFlowAnchor</key>
+	<string>{{1080, 540}, {400, 360}}</string>
+	<key>ZoomAutoUpdateState</key>
+	<string>ZoomAutoUpdateStateTouched</string>
+	<key>ZoomAutoUpdateVersion</key>
+	<string>5.14.10.19202</string>
+	<key>kCaptureWithoutChatWindow</key>
+	<true/>
+	<key>kIM_LastOpenedSession</key>
+	<string></string>
+	<key>kZMShowNotificationCenter</key>
+	<true/>
+	<key>kZMUserDedaultWindowOriginFrame</key>
+	<string>{{230, 213}, {975, 660}}</string>
+	<key>kZMUserDefaultMainWindowCompressed</key>
+	<false/>
+	<key>kZMUserDefaultSelectedTabType</key>
+	<integer>1</integer>
+</dict>
+</plist>

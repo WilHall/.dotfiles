@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AddAdjustmentToSelectionAction</key>
+	<integer>0</integer>
+	<key>AddFilterToSelectionAction</key>
+	<integer>0</integer>
+	<key>AddMaskToSelectionAction</key>
+	<integer>0</integer>
+	<key>AlertOnActions</key>
+	<integer>1</integer>
+	<key>AppGamma</key>
+	<real>0.20999999999999999</real>
+	<key>AppTextGammaUIKey</key>
+	<real>0.80000000000000004</real>
+	<key>ArtboardGrayLevelBackground</key>
+	<real>0.90000000000000002</real>
+	<key>AutoUndoRedoActions</key>
+	<integer>1</integer>
+	<key>BrushTipSharingAction</key>
+	<integer>0</integer>
+	<key>ColumnGuideFillColour</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxA0MC43NTI5NDEyNTA4IDAuNzUyOTQxMjUw
+	OCAwLjc1Mjk0MTI1MDggMC4xODgyMzUzMTI3ABABgALSFBUWF1okY2xhc3NuYW1lWCRj
+	bGFzc2VzV05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1ddZGp3frW3ub7J0trd
+	AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAOY=
+	</data>
+	<key>ColumnGuideLineColumnColour</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxA0MC43NTI5NDEyNTA4IDAuNzUyOTQxMjUw
+	OCAwLjc1Mjk0MTI1MDggMC43NTI5NDEyNTA4ABABgALSFBUWF1okY2xhc3NuYW1lWCRj
+	bGFzc2VzV05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1ddZGp3frW3ub7J0trd
+	AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAOY=
+	</data>
+	<key>ColumnGuideLineRowColour</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxA0MC43NTI5NDEyNTA4IDAuNzUyOTQxMjUw
+	OCAwLjc1Mjk0MTI1MDggMC43NTI5NDEyNTA4ABABgALSFBUWF1okY2xhc3NuYW1lWCRj
+	bGFzc2VzV05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1ddZGp3frW3ub7J0trd
+	AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAOY=
+	</data>
+	<key>ContextToolbarHiddenState</key>
+	<false/>
+	<key>CrashDiagnosticId</key>
+	<string></string>
+	<key>DefaultBrushCategoryVector</key>
+	<integer>0</integer>
+	<key>DevelopAlertOnActions</key>
+	<integer>1</integer>
+	<key>DevelopApplyToneCurve</key>
+	<integer>0</integer>
+	<key>DevelopApplyToneCurveToLinear</key>
+	<integer>1</integer>
+	<key>DevelopAutoNoiseReduction</key>
+	<integer>1</integer>
+	<key>DevelopCoreImage</key>
+	<integer>0</integer>
+	<key>DevelopExposureBias</key>
+	<integer>2</integer>
+	<key>DevelopGlobalEnable</key>
+	<integer>1</integer>
+	<key>DevelopLensProfileSelectionMode</key>
+	<integer>1</integer>
+	<key>DevelopMapDefault</key>
+	<integer>2</integer>
+	<key>DevelopOutputLinear</key>
+	<integer>0</integer>
+	<key>DocumentDefaultSize</key>
+	<integer>12</integer>
+	<key>EffectOnVectorSelectionAction</key>
+	<integer>0</integer>
+	<key>EmbedAffinityLayers</key>
+	<false/>
+	<key>EraseFromVectorSelectionAction</key>
+	<integer>0</integer>
+	<key>Export Preset EPS</key>
+	<string>EPS (for export)</string>
+	<key>Export Preset EXR</key>
+	<string>OpenEXR 32-bit linear</string>
+	<key>Export Preset GIF</key>
+	<string>GIF RGB</string>
+	<key>Export Preset HDR</key>
+	<string>Radiance HDR 32-bit linear</string>
+	<key>Export Preset JPEG</key>
+	<string>JPEG (Best quality)</string>
+	<key>Export Preset JPEG XL</key>
+	<string>JPEG XL (Best Quality)</string>
+	<key>Export Preset PDF</key>
+	<string>PDF (for print)</string>
+	<key>Export Preset PNG</key>
+	<string>PNG</string>
+	<key>Export Preset PSD</key>
+	<string>PSD (preserve accuracy)</string>
+	<key>Export Preset SVG</key>
+	<string>SVG (for export)</string>
+	<key>Export Preset TGA</key>
+	<string>TGA</string>
+	<key>Export Preset TIFF</key>
+	<string>TIFF RGB 8-bit</string>
+	<key>Export Preset WEBP</key>
+	<string>WEBP (Best Quality)</string>
+	<key>ExportSettingsTabIdentifier</key>
+	<string>SVG</string>
+	<key>FillColumnGuides</key>
+	<true/>
+	<key>FlyoutID_ColourPicker state</key>
+	<string>ColourPicker</string>
+	<key>FlyoutID_Drawing state</key>
+	<string>Pencil</string>
+	<key>FlyoutID_Node state</key>
+	<string>Node</string>
+	<key>FlyoutID_Select state</key>
+	<string>Select</string>
+	<key>FlyoutID_Shape state</key>
+	<string>ShapeRoundedRectangle</string>
+	<key>FlyoutID_Text state</key>
+	<string>ArtText</string>
+	<key>FlyoutID_Utility state</key>
+	<string>MeasureTool</string>
+	<key>FlyoutID_VectorFill state</key>
+	<string>VectorFill</string>
+	<key>FlyoutID_ViewUtility state</key>
+	<string>Zoom</string>
+	<key>GlobalEnable</key>
+	<integer>1</integer>
+	<key>GrayLevelBackground</key>
+	<real>0.13500000000000001</real>
+	<key>GridMainColour</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxA0MC44MDAwMDAwNzE1IDAuODAwMDAwMDcx
+	NSAwLjgwMDAwMDA3MTUgMC4zNDkwMTk2MTY4ABABgALSFBUWF1okY2xhc3NuYW1lWCRj
+	bGFzc2VzV05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1ddZGp3frW3ub7J0trd
+	AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAOY=
+	</data>
+	<key>GridSubColour</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxA0MC44MDAwMDAwNzE1IDAuODAwMDAwMDcx
+	NSAwLjgwMDAwMDA3MTUgMC4xNzY0NzA1OTI2ABABgALSFBUWF1okY2xhc3NuYW1lWCRj
+	bGFzc2VzV05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1ddZGp3frW3ub7J0trd
+	AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAOY=
+	</data>
+	<key>KnifeToolAutoClose</key>
+	<false/>
+	<key>LinkGridColours</key>
+	<true/>
+	<key>ModelSelected</key>
+	<integer>0</integer>
+	<key>MonochromaticIconography</key>
+	<false/>
+	<key>NSFullScreenMenuItemEverywhere</key>
+	<false/>
+	<key>NSNavLastRootDirectory</key>
+	<string>~/Downloads</string>
+	<key>NSTreatUnknownArgumentsAsOpen</key>
+	<string>NO</string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>558 408 430 167 0 0 1512 944 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>580 606 400 135 0 0 1512 944 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>470 409 620 398 0 0 1512 944 </string>
+	<key>OtherBrushOnVectorSelectionAction</key>
+	<integer>0</integer>
+	<key>PaintOnNoSelectionAction</key>
+	<integer>0</integer>
+	<key>PaintOnVectorSelectionAction</key>
+	<integer>0</integer>
+	<key>PaletteDefaultCategory</key>
+	<string>Colors</string>
+	<key>PaletteDefaultType</key>
+	<integer>0</integer>
+	<key>PaletteListMode</key>
+	<false/>
+	<key>PenToolUsesFill</key>
+	<false/>
+	<key>PencilToolAutoClose</key>
+	<false/>
+	<key>PencilToolUsesFill</key>
+	<false/>
+	<key>PreviewAfterPDFExport</key>
+	<false/>
+	<key>RasterDRAMLimit</key>
+	<integer>65536</integer>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUFeedURL</key>
+	<string>https://go.seriflabs.com/affinity-update-mac-retail-designer2</string>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2023-06-26T19:15:01Z</date>
+	<key>SUScheduledCheckInterval</key>
+	<real>86400</real>
+	<key>SelectNewShapes</key>
+	<true/>
+	<key>ShowFrameTextRuler</key>
+	<false/>
+	<key>Tab-ToolUI-Hidden</key>
+	<false/>
+	<key>Tab-ToolUIPanel-NumberOfColumns</key>
+	<integer>1</integer>
+	<key>Tab-ToolsPanel-showingPalette</key>
+	<false/>
+	<key>Tab-ToolsUI-DockedState</key>
+	<true/>
+	<key>com.seriflabs.MainWindowFrame</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwTFFUkbnVsbNMNDg8QERJa
+	TlMucmVjdHZhbFYkY2xhc3NaTlMuc3BlY2lhbIACgAMQA18QF3t7NDksIDY0fSwgezE0
+	NDgsIDg1NH190hUWFxhaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU1ZhbHVlohcZWE5TT2Jq
+	ZWN0CBEaJCkyN0lMUVNYXmVwd4KEhoiip7K7w8YAAAAAAAABAQAAAAAAAAAaAAAAAAAA
+	AAAAAAAAAAAAzw==
+	</data>
+	<key>com.seriflabs.SelectedNewDocumentCategory</key>
+	<integer>1</integer>
+	<key>com.seriflabs.StatusBar.HiddenState</key>
+	<false/>
+	<key>com.seriflabs.Studio.CharacterPage.ExpandedState</key>
+	<dict>
+		<key>language</key>
+		<false/>
+		<key>optical</key>
+		<false/>
+		<key>positioning</key>
+		<true/>
+		<key>typography</key>
+		<true/>
+		<key>underline_strikethrough</key>
+		<true/>
+	</dict>
+	<key>com.seriflabs.Studio.Data2.Draw.com.seriflabs.hide.east</key>
+	<false/>
+	<key>com.seriflabs.Studio.Data2.HideState</key>
+	<false/>
+	<key>com.seriflabs.Studio.Data2Draw</key>
+	<data>
+	YnBsaXN0MDDUAAEAAgADAAQABQAGAAcAClgkdmVyc2lvblkkYXJjaGl2ZXJUJHRvcFgk
+	b2JqZWN0cxIAAYagXxAPTlNLZXllZEFyY2hpdmVy0QAIAAlUcm9vdIABrxB5AAsADAAT
+	ABgAHgAiACgAPABDAEQARQBGAEcATQA7AFUAXABiAGMAZgBpAGoAbQBuAHEAcgBzAHcA
+	ggCLAIwAjQCOAI8AkACRADgAmwCkAKcAqACrAKwArwCwALMAtAC3ALgAuwC8AL0AyADQ
+	ANEA0gDTANQA1QDdAOUA6ADpAOwA7QDwAPEA9AD1APgA+QD6AP0BAQEEAQgBEwEYARkB
+	GgEfASQBJwEoASsBLAEtATEBNgE8AT0BSAFQAVEBUgFTAVQBVQFdAWUBaAFpAWwBbQFw
+	AXEBdAF1AXgBeQF6AX4BgwGEAY8BkwGUAZgBnAGfAaBVJG51bGzTAA0ADgAPABAAEQAS
+	XxAfY29tLnNlcmlmbGFicy5TdHVkaW8uV2luZG93RGF0YVYkY2xhc3NfECFjb20uc2Vy
+	aWZsYWJzLlN0dWRpby5GbG9hdGluZ0RhdGGAAoB4gFfSABQADgAVABdaTlMub2JqZWN0
+	c6EAFoADgEfTABkAGgAOABsAHAAdWUVhc3RTaGVsZllXZXN0U2hlbGaABIBJgFbSAB8A
+	DgAgACFYQm9va0RhdGGABYBI0gAUAA4AIwAXowAkACUAJoAGgBuAM4BH2gAOACkAKgAr
+	ACwALQAuAC8AMAAxADIAMwA0ADUANgA3ADgAOAA4ADtXUGFnZUlEc1pWaXNpYmlsaXR5
+	WnNhdmVkU2l6ZXNbRnJvbnRQYWdlSURVRnJhbWVcQXV0b0NvbGxhcHNlWENvbGxhcHNl
+	XxAURGlzYWJsZWRBdXRvQ29sbGFwc2VeU2hvd1BhZ2VUaXRsZXOAGoAHgA2AD4AIgBkI
+	CAgJ0gAUAA4APQBCpAA2AD8AQABBgAiACYAKgAuADFpDb2xvdXJQYWdlXFN3YXRjaGVz
+	UGFnZVhMaW5lUGFnZV5BcHBlYXJhbmNlUGFnZdIASABJAEoAS1okY2xhc3NuYW1lWCRj
+	bGFzc2VzV05TQXJyYXmiAEoATFhOU09iamVjdNIAFAAOAE4AQqQATwBPAE8AT4AOgA6A
+	DoAOgAwJ0gAUAA4AVgBCpABXAFgAWQBagBCAE4AVgBeADNMAXQAOAF4AXwBgAGFaTlMu
+	c2l6ZXZhbFpOUy5zcGVjaWFsgBGAEhACWnsyNjQsIDIxMH3SAEgASQBkAGVXTlNWYWx1
+	ZaIAZABM0wBdAA4AXgBnAGAAYYAUgBJaezI2NCwgMjI1fdMAXQAOAF4AawBgAGGAFoAS
+	WnsyNjQsIDI5N33TAF0ADgBeAG8AYABhgBiAElp7MjY0LCAyMTB9XxAUe3swLCAwfSwg
+	ezI2NCwgMjM4fX3SAEgASQB0AHVeU3R1ZGlvQm9va0RhdGGiAHYATF5TdHVkaW9Cb29r
+	RGF0YdoADgApACoAKwAsAC0ALgAvADAAMQAyAHkAegB7AHwAfQA4ADgAOAA7gBqAHIAj
+	gCWAHYAyCAgICdIAFAAOAIMAQqYAfACFAIYAhwCIAImAHYAegB+AIIAhgCKADFlMYXll
+	clBhZ2VZQnJ1c2hQYWdlW0VmZmVjdHNQYWdlWlN0eWxlc1BhZ2VeVGV4dFN0eWxlc1Bh
+	Z2VZRGVidWdQYWdl0gAUAA4AkgBCpgBPAE8ATwBPAJcAl4AOgA6ADoAOgCSAJIAMCNIA
+	FAAOAJwAQqYAnQCeAJ8AoAChAKKAJoAogCqALIAugDCADNMAXQAOAF4ApQBgAGGAJ4AS
+	WnsyNjQsIDMzMH3TAF0ADgBeAKkAYABhgCmAElp7MjY0LCAyMjV90wBdAA4AXgCtAGAA
+	YYArgBJaezI2NCwgMTUwfdMAXQAOAF4AsQBgAGGALYASWnsyNjQsIDE1MH3TAF0ADgBe
+	ALUAYABhgC+AElp7MjY0LCAxMDB90wBdAA4AXgC5AGAAYYAxgBJaezI2NCwgNTM2fV8Q
+	Fnt7MCwgMjQwfSwgezI2NCwgMzU4fX3aAA4AKQAqACsALAAtAC4ALwAwADEAMgC/AMAA
+	wQDCAMMAOAA4ADgAO4AagDSAOoA7gDWARggICAnSABQADgDJAEKlAMIAywDMAM0AzoA1
+	gDaAN4A4gDmADF1UcmFuc2Zvcm1QYWdlXU5hdmlnYXRvclBhZ2VbSGlzdG9yeVBhZ2Vd
+	U25hcHNob3RzUGFnZV5IRFJQcmV2aWV3UGFnZdIAFAAOANYAQqUATwBPAE8AlwCXgA6A
+	DoAOgCSAJIAM0gAUAA4A3gBCpQDfAOAA4QDiAOOAPIA+gECAQoBEgAzTAF0ADgBeAOYA
+	YABhgD2AElp7MjY0LCAxMjB90wBdAA4AXgDqAGAAYYA/gBJaezI2NCwgMTkyfdMAXQAO
+	AF4A7gBgAGGAQYASWnsyNjQsIDE1MH3TAF0ADgBeAPIAYABhgEOAElp7MjY0LCAxNTB9
+	0wBdAA4AXgD2AGAAYYBFgBJaezI2NCwgMjgwfV8QFnt7MCwgNjAwfSwgezI2NCwgMTQ4
+	fX3SAEgASQD7APxeTlNNdXRhYmxlQXJyYXmjAPsASgBM0gBIAEkA/gD/XxAPU3R1ZGlv
+	U2hlbGZEYXRhogEAAExfEA9TdHVkaW9TaGVsZkRhdGHSAB8ADgECACGASoBI0gAUAA4B
+	BQAXoQEGgEuAR9oADgApACoAKwAsAC0ALgAvADAAMQAyAQoBCwEMAQ0BDgA4ADgAOAA7
+	gBqATIBPgFCAAIBVCAgICdIAFAAOARQAQqIBFQEWgE2AToAMWkFzc2V0c1BhZ2VZU3Rv
+	Y2tQYWdl0gAUAA4BGwBCogCXAJeAJIAkgAzSABQADgEgAEKiASEBIoBRgFOADNMAXQAO
+	AF4BJQBgAGGAUoASWnsyNjQsIDY3Mn3TAF0ADgBeASkAYABhgFSAElp7MjY0LCAxNTB9
+	XxAUe3swLCAwfSwgezI2NCwgNzAwfX3SAEgASQEuAS9fEBBTdHVkaW9XaW5kb3dEYXRh
+	ogEwAExfEBBTdHVkaW9XaW5kb3dEYXRh0gAUAA4BMgAXogEzATSAWIBvgEfUAB8ALQE3
+	AA4BOAE5ADgBO1lIaWRlU3RhdGWAWoBZCIBuXxAXe3s5NDcsIDc4NX0sIHsyNjQsIDI4
+	fX3aAA4AKQAqACsALAAtAC4ALwAwADEAMgE/AUABQQENAUMAOAA4ADgAO4AagFuAYYBi
+	gACAbQgICAnSABQADgFJAEKlAUoBSwFMAU0BToBcgF2AXoBfgGCADF1DaGFyYWN0ZXJQ
+	YWdlXVBhcmFncmFwaFBhZ2VbU3ltYm9sc1BhZ2VfEA9Db25zdHJhaW50c1BhZ2VaUGxh
+	bmVzUGFnZdIAFAAOAVYAQqUAlwCXAJcAlwCXgCSAJIAkgCSAJIAM0gAUAA4BXgBCpQFf
+	AWABYQFiAWOAY4BlgGeAaYBrgAzTAF0ADgBeAWYAYABhgGSAElp7MjY0LCAyMDB90wBd
+	AA4AXgFqAGAAYYBmgBJaezI2NCwgMjAwfdMAXQAOAF4BbgBgAGGAaIASWnsyNjQsIDE1
+	MH3TAF0ADgBeAXIAYABhgGqAElp7MjY0LCAyNTZ90wBdAA4AXgF2AGAAYYBsgBJaezI2
+	NCwgMzU0fV8QEHt7MCwgMH0sIHswLCAwfX3SAEgASQF7AXxfEA9TdHVkaW9QYW5lbERh
+	dGGiAX0ATF8QD1N0dWRpb1BhbmVsRGF0YdQAHwAtATcADgF/AYAAOAE7gHGAcAiAbl8Q
+	F3t7OTQ3LCA3NTd9LCB7MjY0LCAyOH192gAOACkAKgArACwALQAuAC8AMAAxADIBhgGH
+	AYgBDQFDADgAOAA4ADuAGoBygHSAdYAAgG0ICAgJ0gAUAA4BkABCoQGRgHOADF8QEEds
+	eXBoQnJvd3NlclBhZ2XSABQADgGVAEKhAJeAJIAM0gAUAA4BmQBCoQGagHaADNMAXQAO
+	AF4BnQBgAGGAd4ASWnsyNjQsIDMwMH3SAEgASQGhAaJaU3R1ZGlvRGF0YaIBowBMWlN0
+	dWRpb0RhdGEACAAZACIALAAxADoAPwBRAFYAWwBdAVIBWAFlAYcBjgGyAbQBtgG4AcEB
+	zAHPAdEB0wHgAeoB9AH2AfgB+gIDAgwCDgIQAhkCIAIiAiQCJgIoAlECWQJkAm8CewKB
+	Ao4ClwKuAr0CvwLBAsMCxQLHAskCygLLAswCzQLWAt8C4QLjAuUC5wLpAvQDAQMKAxkD
+	IgMtAzYDPgNDA0wDVQNeA2ADYgNkA2YDaANpA3IDewN9A38DgQODA4UDkgOdA6gDqgOs
+	A64DuQPCA8oDzwPcA94D4APrA/gD+gP8BAcEFAQWBBgEIwQ6BEMEUgRXBGYEjwSRBJME
+	lQSXBJkEmwScBJ0EngSfBKgEtQS3BLkEuwS9BL8EwQTDBM0E1wTjBO4E/QUHBRAFHQUf
+	BSEFIwUlBScFKQUrBSwFNQVCBUQFRgVIBUoFTAVOBVAFXQVfBWEFbAV5BXsFfQWIBZUF
+	lwWZBaQFsQWzBbUFwAXNBc8F0QXcBekF6wXtBfgGEQY6BjwGPgZABkIGRAZGBkcGSAZJ
+	BkoGUwZeBmAGYgZkBmYGaAZqBngGhgaSBqAGrwa4BsMGxQbHBskGywbNBs8G2AbjBuUG
+	5wbpBusG7QbvBvwG/gcABwsHGAcaBxwHJwc0BzYHOAdDB1AHUgdUB18HbAduB3AHeweU
+	B50HrAezB7wHzgfTB+UH7gfwB/IH+wf+CAAIAggrCC0ILwgxCDMINQg3CDgIOQg6CDsI
+	RAhJCEsITQhPCFoIZAhtCHIIdAh2CHgIgQiGCIgIigiMCJkImwidCKgItQi3CLkIxAjb
+	COQI9wj8CQ8JGAkdCR8JIQkjCTQJPglACUIJQwlFCV8JiAmKCYwJjgmQCZIJlAmVCZYJ
+	lwmYCaEJrAmuCbAJsgm0CbYJuAnGCdQJ4AnyCf0KBgoRChMKFQoXChkKGwodCiYKMQoz
+	CjUKNwo5CjsKPQpKCkwKTgpZCmYKaApqCnUKggqECoYKkQqeCqAKogqtCroKvAq+CskK
+	3ArlCvcK/AsOCx8LIQsjCyQLJgtAC2kLawttC28LcQtzC3ULdgt3C3gLeQuCC4ULhwuJ
+	C5wLpQuoC6oLrAu1C7gLugu8C8kLywvNC9gL4QvsC/EAAAAAAAACAgAAAAAAAAGkAAAA
+	AAAAAAAAAAAAAAAL/A==
+	</data>
+	<key>com.seriflabs.Studio.ParagraphPage.ExpandedState</key>
+	<dict>
+		<key>Baseline Grid</key>
+		<false/>
+		<key>Decorations</key>
+		<false/>
+		<key>Drop Caps</key>
+		<false/>
+		<key>Flow Control</key>
+		<false/>
+		<key>Hyphenation</key>
+		<false/>
+		<key>Initial Words</key>
+		<false/>
+		<key>Justification</key>
+		<false/>
+		<key>Lists</key>
+		<false/>
+		<key>Spacing</key>
+		<true/>
+		<key>TabStops</key>
+		<false/>
+	</dict>
+	<key>com.seriflabs.Studio.SchemaVersion</key>
+	<integer>5</integer>
+	<key>com.seriflabs.affinity.watchForCrash</key>
+	<false/>
+	<key>com.seriflabs.export.panel.startupdir</key>
+	<string>/Users/wilhall/Downloads</string>
+	<key>com.seriflabs.favourites.fonts.names</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0g0ODxBaTlMu
+	b2JqZWN0c1YkY2xhc3OggALSEhMUFVokY2xhc3NuYW1lWCRjbGFzc2VzXk5TTXV0YWJs
+	ZUFycmF5oxQWF1dOU0FycmF5WE5TT2JqZWN0CBEaJCkyN0lMUVNXXWJtdHV3fIeQn6Or
+	AAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=
+	</data>
+	<key>com.seriflabs.recent.fonts.names</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0g0ODxBaTlMu
+	b2JqZWN0c1YkY2xhc3OggALSEhMUFVokY2xhc3NuYW1lWCRjbGFzc2VzXk5TTXV0YWJs
+	ZUFycmF5oxQWF1dOU0FycmF5WE5TT2JqZWN0CBEaJCkyN0lMUVNXXWJtdHV3fIeQn6Or
+	AAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=
+	</data>
+	<key>com.seriflabs.restoration.urls</key>
+	<array/>
+</dict>
+</plist>

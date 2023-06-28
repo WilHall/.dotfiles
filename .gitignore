@@ -46,6 +46,7 @@ lazy-lock.json
 **/*.last-run
 **/*.user-ca-bundle
 **/*.merged-ca-bundle
+.vscode/extensions/**/*
 plug.vim
 .vim/bundle/
 .vim/undo/

@@ -2,19 +2,45 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>closeViewDesiredZoomFactor</key>
+	<real>2.0017604540529059</real>
 	<key>closeViewHotkeysEnabled</key>
-	<false/>
+	<true/>
+	<key>closeViewScrollWheelToggle</key>
+	<true/>
+	<key>closeViewSplitScreenRatio</key>
+	<real>0.20000000000000001</real>
+	<key>closeViewTrackpadGestureZoomEnabled</key>
+	<true/>
 	<key>closeViewZoomDisplayID</key>
 	<integer>0</integer>
 	<key>closeViewZoomFactor</key>
 	<real>1</real>
 	<key>closeViewZoomFactorBeforeTermination</key>
 	<real>1</real>
+	<key>closeViewZoomedIn</key>
+	<false/>
 	<key>com.apple.custommenu.apps</key>
 	<array>
+		<string>NSGlobalDomain</string>
 		<string>com.apple.mail</string>
 	</array>
 	<key>hoverTextEnabled</key>
+	<false/>
+	<key>keyboardAccessCommandMap</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0g0ODxBfEBNj
+	b21tYW5kc1RvS2V5Q2hvcmRzViRjbGFzc4AAgALSEhMUFVokY2xhc3NuYW1lWCRjbGFz
+	c2VzXxAWQVhTU0tleWJvYXJkQ29tbWFuZE1hcKIWF18QFkFYU1NLZXlib2FyZENvbW1h
+	bmRNYXBYTlNPYmplY3QIERokKTI3SUxRU1ddYnh/gYOIk5y1uNEAAAAAAAABAQAAAAAA
+	AAAYAAAAAAAAAAAAAAAAAAAA2g==
+	</data>
+	<key>keyboardAccessEnabled</key>
+	<false/>
+	<key>keyboardAccessFocusRingTimeout</key>
+	<real>15</real>
+	<key>keyboardAccessPassthroughMode</key>
 	<false/>
 	<key>login</key>
 	<false/>

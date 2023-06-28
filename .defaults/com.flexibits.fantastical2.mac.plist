@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>CalendarScreenId</key>
-	<integer>4</integer>
+	<integer>1</integer>
 	<key>CalendarWindowHeight</key>
-	<integer>1125</integer>
+	<integer>944</integer>
 	<key>CalendarWindowOriginTopY</key>
-	<integer>145</integer>
+	<integer>0</integer>
 	<key>CalendarWindowOriginX</key>
-	<integer>1351</integer>
+	<integer>247</integer>
 	<key>CalendarWindowSelectedTabIndex</key>
 	<integer>2</integer>
 	<key>CalendarWindowState</key>
@@ -29,9 +29,9 @@
 	<key>HideSidebarForever</key>
 	<false/>
 	<key>LastLaunchVersion</key>
-	<string>1600</string>
+	<string>1612</string>
 	<key>LastSpotlightCheck</key>
-	<real>706719104.99443495</real>
+	<real>709655296.27398598</real>
 	<key>LaunchInProgress</key>
 	<false/>
 	<key>MSAppCenter310AppCenterUserDefaultsMigratedKey</key>
@@ -47,7 +47,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBIYHCJQUVJTVFVWV1hZ
 	WltcXWJnVSRudWxs0g0ODxFaTlMub2JqZWN0c1YkY2xhc3OhEIACgBXTExQOFRYXXHRp
-	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HFCnt7IU9AgATS
+	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HFJjo5SfIKgATS
 	HR4fIFokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRGF0ZaIfIVhOU09iamVjdN8QFyMkJSYO
 	JygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PDxBQjw8PDxHSElKPDxNTk9Zb3NWZXJzaW9u
 	XnRpbWVab25lT2Zmc2V0WGFwcEJ1aWxkXxAVbGl2ZVVwZGF0ZVBhY2thZ2VIYXNoWmFw
@@ -57,23 +57,23 @@
 	ZVVtb2RlbF8QFXdyYXBwZXJSdW50aW1lVmVyc2lvbl8QFmxpdmVVcGRhdGVSZWxlYXNl
 	TGFiZWxac2NyZWVuU2l6ZVZvc05hbWVXb3NCdWlsZIALgA6AEYAAgBOAEIAAgACABoAN
 	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNS4wLjJe
-	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTMuMy4xVjIyRTI2MVVlbl9VUxP/////
-	////EFkyNTYweDE0NDBWMy43LjEzVDE2MDBfEB5jb20uZmxleGliaXRzLmZhbnRhc3Rp
-	Y2FsMi5tYWPSHR5eX1pNU0FDRGV2aWNlo2BhIVpNU0FDRGV2aWNlXk1TQUNXcmFwcGVy
-	U2Rr0h0eY2RfEBVNU0FDRGV2aWNlSGlzdG9yeUluZm+jZWYhXxAVTVNBQ0RldmljZUhp
-	c3RvcnlJbmZvXxAPTVNBQ0hpc3RvcnlJbmZv0h0eaGleTlNNdXRhYmxlQXJyYXmjaGoh
-	V05TQXJyYXkACAARABoAJAApADIANwBJAEwAUQBTAGwAcgB3AIIAiQCLAI0AjwCWAKMA
-	rQCvALEAswC4AMAAyQDLANAA2wDkAOsA7gD3ASgBMgFBAUoBYgFtAYEBjQGVAZwBtgHF
-	AdAB3wHnAfIB/wIFAh0CNgJBAkgCUAJSAlQCVgJYAloCXAJeAmACYgJkAmYCaAJqAmwC
-	bgJwAnICdAJ2AngCegJ8An4CkAKWAqUCqwKxArgCvwLFAs4C2ALfAuQDBQMKAxUDGQMk
-	AzMDOANQA1QDbAN+A4MDkgOWAAAAAAAAAgEAAAAAAAAAawAAAAAAAAAAAAAAAAAAA54=
+	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTMuNC4xVTIyRjgyVWVuX1VTE///////
+	//8QWDE1MTJ4OTgyVjMuNy4xNVQxNjEyXxAeY29tLmZsZXhpYml0cy5mYW50YXN0aWNh
+	bDIubWFj0h0eXl9aTVNBQ0RldmljZaNgYSFaTVNBQ0RldmljZV5NU0FDV3JhcHBlclNk
+	a9IdHmNkXxAVTVNBQ0RldmljZUhpc3RvcnlJbmZvo2VmIV8QFU1TQUNEZXZpY2VIaXN0
+	b3J5SW5mb18QD01TQUNIaXN0b3J5SW5mb9IdHmhpXk5TTXV0YWJsZUFycmF5o2hqIVdO
+	U0FycmF5AAgAEQAaACQAKQAyADcASQBMAFEAUwBsAHIAdwCCAIkAiwCNAI8AlgCjAK0A
+	rwCxALMAuADAAMkAywDQANsA5ADrAO4A9wEoATIBQQFKAWIBbQGBAY0BlQGcAbYBxQHQ
+	Ad8B5wHyAf8CBQIdAjYCQQJIAlACUgJUAlYCWAJaAlwCXgJgAmICZAJmAmgCagJsAm4C
+	cAJyAnQCdgJ4AnoCfAJ+ApAClgKlAqsCsQK4Ar4CxALNAtYC3QLiAwMDCAMTAxcDIgMx
+	AzYDTgNSA2oDfAOBA5ADlAAAAAAAAAIBAAAAAAAAAGsAAAAAAAAAAAAAAAAAAAOc
 	</data>
 	<key>MSAppCenterSessionIdHistory</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
 	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
-	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxQp7eyAa34AE0h0eHyBaJGNsYXNzbmFt
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxSY6OUiTr4AE0h0eHyBaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
 	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
 	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
@@ -86,7 +86,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGoCwwSGBwiIyhVJG51bGzSDQ4P
 	EVpOUy5vYmplY3RzViRjbGFzc6EQgAKAB9MTFA4VFhdcdGltZXN0YW1wS2V5WXVzZXJJ
-	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcUKe3siX42ABNIdHh8gWiRjbGFzc25hbWVY
+	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcUmOjlK1FaABNIdHh8gWiRjbGFzc25hbWVY
 	JGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN0XxAPd2lsQHdpbGhhbGwuY29t0h0eJCVf
 	EBVNU0FDVXNlcklkSGlzdG9yeUluZm+jJichXxAVTVNBQ1VzZXJJZEhpc3RvcnlJbmZv
 	XxAPTVNBQ0hpc3RvcnlJbmZv0h0eKSpeTlNNdXRhYmxlQXJyYXmjKSshV05TQXJyYXkA
@@ -113,32 +113,36 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Calendar</key>
-	<string>1335 143 1209 1125 0 0 2560 1415 </string>
+	<string>294 0 1209 944 0 0 1512 944 </string>
 	<key>NSWindow Frame InterestingCalendars</key>
 	<string>1633 582 652 473 0 0 3008 1228 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>113 847 228 278 0 0 1800 1125 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 762 620 398 0 0 2560 1415 </string>
+	<string>470 409 620 398 0 0 1512 944 </string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-05-24T22:32:48Z</date>
+	<date>2023-06-27T22:24:03Z</date>
 	<key>SULastProfileSubmissionDate</key>
-	<date>2023-05-21T22:25:00Z</date>
+	<date>2023-06-26T19:04:46Z</date>
 	<key>SUSendProfileInfo</key>
 	<true/>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>3581216092</integer>
 	<key>SidebarWidthDefaultKey</key>
-	<real>302</real>
+	<real>307.5</real>
 	<key>WeekViewStartsWith</key>
 	<true/>
 	<key>WeeksPerMonth</key>
 	<integer>6</integer>
 	<key>WeeksPerQuarter</key>
 	<integer>13</integer>
+	<key>WidgetChangeHash</key>
+	<integer>7857090588562697082</integer>
+	<key>WidgetLastRefresh</key>
+	<date>2023-06-28T14:49:28Z</date>
 </dict>
 </plist>

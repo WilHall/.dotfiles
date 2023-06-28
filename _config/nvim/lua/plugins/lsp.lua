@@ -234,6 +234,7 @@ return {
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
+        filetypes = { "typescript", "typescriptreact" },
       })
       lspconfig.svelte.setup({
         on_attach = on_attach,
@@ -293,7 +294,9 @@ return {
           languages = {
             ruby = { prettier },
             javascript = { prettier },
+            javascriptreact = { prettier },
             typescript = { prettier },
+            typescriptreact = { prettier },
             svelte = { prettier },
           }
         }

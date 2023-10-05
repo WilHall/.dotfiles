@@ -77,6 +77,20 @@ function getExternalScreen()
   return screens[1]
 end
 
+function undockedMonoLayout()
+  local laptopScreen = getLaptopScreen()
+  return {
+    { "Spotify",       nil, laptopScreen, positions.full,    nil, nil },
+    { "Mail",          nil, laptopScreen, positions.full,    nil, nil },
+    { "Linear",        nil, laptopScreen, positions.full,    nil, nil },
+    { "Messages",      nil, laptopScreen, positions.lower50, nil, nil },
+    { "Slack",         nil, laptopScreen, positions.right50, nil, nil },
+    { "Google Chrome", nil, laptopScreen, positions.full,    nil, nil },
+    { "WebStorm",      nil, laptopScreen, positions.full,    nil, nil },
+    { "iTerm2",        nil, laptopScreen, positions.full,    nil, nil },
+  }
+end
+
 function dockedMonoLayout()
   local externalScreen = getExternalScreen()
   return {
@@ -88,20 +102,6 @@ function dockedMonoLayout()
     { "Google Chrome", nil, externalScreen, positions.left25,   nil, nil },
     { "WebStorm",      nil, externalScreen, positions.center50, nil, nil },
     { "iTerm2",        nil, externalScreen, positions.center50, nil, nil },
-  }
-end
-
-function dockedDuoLayout()
-  local laptopScreen = getLaptopScreen()
-  local externalScreen = getExternalScreen()
-  return {
-    { "Spotify",       nil, laptopScreen,   hs.layout.left50,  nil, nil },
-    { "Mail",          nil, laptopScreen,   hs.layout.left50,  nil, nil },
-    { "Messages",      nil, laptopScreen,   hs.layout.right50, nil, nil },
-    { "Slack",         nil, laptopScreen,   hs.layout.right50, nil, nil },
-    { "Google Chrome", nil, externalScreen, hs.layout.full,    nil, nil },
-    { "WebStorm",      nil, laptopScreen,   hs.layout.full,    nil, nil },
-    { "iTerm2",        nil, laptopScreen,   hs.layout.full,    nil, nil },
   }
 end
 
@@ -196,11 +196,13 @@ function applyLayout()
   local screens = hs.screen.allScreens()
 
   if numScreens == 1 then
-    hs.alert.show("Applying 'Docked Mono' Layout")
-    layout = dockedMonoLayout()
-  elseif numScreens == 2 then
-    hs.alert.show("Applying 'Docked Duo' Layout")
-    layout = dockedDuoLayout()
+    if screens[1]:name() == laptopScreenName then
+      hs.alert.show("Applying 'Undocked Mono' Layout")
+      layout = undockedMonoLayout()
+    else
+      hs.alert.show("Applying 'Docked Mono' Layout")
+      layout = dockedMonoLayout()
+    end
   elseif numScreens == 3 then
     local isTriScreen = find(hs.screen.allScreens(), function(screen) return (screen:name() == "RTK HDR (1)") end)
     if isTriScreen then

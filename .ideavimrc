@@ -1,0 +1,142 @@
+ " General Vim Settings
+
+syntax on
+set noswapfile
+set shortmess+=FWAcs
+
+" configure leader
+nnoremap <SPACE> <NOP>
+let mapleader = " "
+set timeoutlen=375
+
+if has('mouse_sgr')
+set ttymouse=sgr
+endif
+
+set showcmd
+set clipboard^=unnamed,unnamedplus
+set hidden
+set laststatus=2
+set nofixendofline
+
+" autoreading
+set autoread
+autocmd FocusGained,BufEnter * :checktime 
+
+" autowriting
+set autowrite
+set autowriteall
+
+" undo
+set undofile
+set undodir=$HOME/.configs/undo
+set undolevels=10000
+set undoreload=20000
+
+" searching
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+
+" completion
+set completeopt=menu,menuone,preview
+
+" folding
+set foldenable
+set foldmethod=indent
+set foldlevel=999
+
+" splits
+set splitbelow
+set splitright
+
+" gutters
+set number
+set numberwidth=5
+set number norelativenumber
+
+" whitespace
+set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+set backspace=2
+set nojoinspaces
+
+" wrapping / line length
+set linebreak
+set wrap
+autocmd VimResized * | set columns=120
+set textwidth=120
+set colorcolumn=+1
+
+" color settings
+set t_Co=256
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+" underline settings
+let &t_Cs = "\e[4:3m"
+let &t_Ce = "\e[4:0m"
+
+" cursor settings
+let &t_SI.="\e[5 q"
+let &t_SR.="\e[4 q"
+let &t_EI.="\e[1 q"
+
+" show cursorline in insert mode
+autocmd InsertEnter,InsertLeave * set cursorline!
+
+" no arrows
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" fold, unfold
+nnoremap <leader>ff za
+nnoremap <leader>FF zA
+
+" Maps for folding, unfolding all
+nnoremap <leader>fa zM<cr>
+nnoremap <leader>Fa zR<cr>
+
+" Marks
+nnoremap m<leader> :delmarks a-zA-Z0-9<cr>
+
+" shortcuts for substitutions
+nnoremap <leader>sg :%s///g<left><left>
+nnoremap <leader>sl :s///g<left><left>
+
+" Make double-<Esc> clear search highlights
+nnoremap <silent> <esc><esc> <esc>:nohlsearch<cr><esc>
+
+" shortcut to edit file in the same directory as the current file
+nnoremap <leader>e :e <c-r>=expand('%:p:h') . '/'<cr>
+
+" navigate splits
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
+" resize splits
+nnoremap <silent> <c-y> :exe "vertcal resize -1"<cr>
+nnoremap <silent> <c-o> :exe "vertical resize +1"<cr>
+nnoremap <silent> <c-u> :exe "resize -1"<cr>
+nnoremap <silent> <c-i> :exe "resize +1"<cr>
+
+" delete surrounding function
+nmap <silent> dsf ds)db
+
+" write current buffer to the clipboard
+nmap <silent> <leader>cc :w !pbcopy<cr><cr>
+
+
+
+Plug 'tpope/vim-surround'
+Plug 'tommcdo/vim-exchange'
+Plug 'kana/vim-textobj-entire'
+Plug 'vim-matchit'
+Plug 'tpope/vim-commentary'
+Plug 'terryma/vim-multiple-cursors'
+

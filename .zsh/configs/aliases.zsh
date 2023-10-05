@@ -99,12 +99,7 @@ function psgrep() {
 }
 
 function gfu() {
-  branch_pr_has_reviews=$(gh pr status --json reviews | jq ".currentBranch | .reviews | if length > 0 then true else false end")
-  if [ "$branch_pr_has_reviews" = 'true' ]; then
-    git commit
-  else
-    git commit --amend --no-edit
-  fi
+  git commit --amend --no-edit
 }
 
 function gqrb() {
@@ -128,4 +123,4 @@ function mixdepbust() {
   rm -rf deps ~/.hex/cache.ets
 }
 
-alias update-dev="brew update; brew upgrade; brew upgrade --cask; asdf plugin-update --all; antigen update; vim -c 'Lazy update' -c 'q!' -c 'q!'"
+alias update-dev="brew update; brew upgrade; brew upgrade --cask; asdf plugin-update --all; antigen update; vim -c 'Lazy sync' -c 'q!' -c 'q!'"

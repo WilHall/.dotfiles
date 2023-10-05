@@ -20,7 +20,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame console</key>
-	<string>341 273 510 417 0 0 1512 944 </string>
+	<string>47 52 1465 892 0 0 1512 944 </string>
 	<key>NSWindow Frame prefs</key>
 	<string>601 499 365 277 0 0 1512 944 </string>
 	<key>SUEnableAutomaticChecks</key>
@@ -28,7 +28,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-06-28T13:34:00Z</date>
+	<date>2023-10-05T11:19:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>

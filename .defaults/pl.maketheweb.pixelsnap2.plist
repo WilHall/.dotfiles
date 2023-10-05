@@ -19,7 +19,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>886 81 224 278 0 0 1512 944 </string>
+	<string>886 81 224 278 0 0 1800 1125 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>340 993 400 135 0 0 2560 1415 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -27,11 +27,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-06-28T14:59:10Z</date>
+	<date>2023-10-05T12:39:05Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>2547082375</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<true/>
+	<key>activationKey</key>
+	<string>ED2C0EEF-156F48B0-9629CFAD-C0CC038B</string>
 	<key>adobeXDIntegration</key>
 	<false/>
 	<key>affinityIntegration</key>
@@ -279,7 +281,7 @@
 	AAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAADZ8=
 	</data>
 	<key>s000</key>
-	<integer>34</integer>
+	<integer>38</integer>
 	<key>showMenubarIcon</key>
 	<false/>
 	<key>usedInactiveMode</key>

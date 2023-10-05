@@ -22,7 +22,7 @@
 	<key>NSStatusItem Visible TupleStatusBarItem</key>
 	<true/>
 	<key>NSWindow Frame webcamFrame</key>
-	<string>1243 672 269 269 0 0 1512 944 </string>
+	<string>3666 1154 261 261 0 0 5120 1415 </string>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -32,7 +32,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-06-28T14:59:13Z</date>
+	<date>2023-10-05T12:39:05Z</date>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>analyticsProfile</key>
@@ -42,24 +42,24 @@
 		<key>id</key>
 		<integer>1598</integer>
 		<key>is_guest</key>
-		<true/>
+		<false/>
 		<key>name</key>
 		<string>Wil Hall</string>
 		<key>paid</key>
-		<false/>
+		<true/>
 		<key>sfu_support</key>
 		<string>enabled</string>
 		<key>subscription_status</key>
 		<string>active</string>
 		<key>team_id</key>
-		<integer>1244</integer>
+		<integer>10336</integer>
 		<key>team_name</key>
-		<string>Tuple Guests</string>
+		<string>August Health</string>
 		<key>team_owner_email</key>
-		<string>joel+guest@tuple.app</string>
+		<string>sid@augusthealth.com</string>
 	</dict>
 	<key>annotationMode</key>
-	<string>none</string>
+	<string>paint</string>
 	<key>audioDeviceManager</key>
 	<dict>
 		<key>preferredInputChannel</key>
@@ -74,8 +74,6 @@
 	</dict>
 	<key>callFeedback</key>
 	<false/>
-	<key>clientUIRedesign</key>
-	<true/>
 	<key>currentUserEmail</key>
 	<string>wil@wilhall.com</string>
 	<key>cursorMode</key>
@@ -96,8 +94,13 @@
 	<string>on</string>
 	<key>keyboardOffNotification</key>
 	<true/>
+	<key>lastPartialScreenRects</key>
+	<dict>
+		<key>7789-40571-490766</key>
+		<string>((0.257617, 0.000000), (0.495703, 1.000000))</string>
+	</dict>
 	<key>lastPreferencePane</key>
-	<integer>2</integer>
+	<integer>3</integer>
 	<key>lastUserSignalMessageDate</key>
 	<dict>
 		<key>clientID</key>
@@ -116,9 +119,9 @@
 	<key>webcam</key>
 	<dict>
 		<key>id</key>
-		<string>47B4B64B-7067-4B9C-AD2B-AE273A71F4B5</string>
+		<string>0x1220000046d085e</string>
 		<key>name</key>
-		<string>FaceTime HD Camera</string>
+		<string>Logitech BRIO</string>
 	</dict>
 	<key>webcamResolution</key>
 	<string>high</string>

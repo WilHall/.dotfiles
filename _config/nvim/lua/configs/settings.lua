@@ -24,7 +24,6 @@ vim.cmd [[
     set clipboard^=unnamed,unnamedplus
     set hidden
     set laststatus=2
-    set incsearch
     set nofixendofline
 
     " autoreading
@@ -45,6 +44,7 @@ vim.cmd [[
     set ignorecase
     set smartcase
     set hlsearch
+    set incsearch
 
     " completion
     set completeopt=menu,menuone,preview

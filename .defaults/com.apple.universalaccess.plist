@@ -2,6 +2,51 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>FontSizeCategory</key>
+	<dict>
+		<key>com.apple.finder</key>
+		<string>Custom</string>
+		<key>version</key>
+		<string>2.0</string>
+	</dict>
+	<key>History</key>
+	<dict>
+		<key>MouseKeys</key>
+		<array>
+			<dict>
+				<key>Date</key>
+				<string>2023-10-05 08:26:20</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-10-05 08:26:25</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-10-05 08:26:25</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-10-05 08:38:17</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>closeViewDesiredZoomFactor</key>
 	<real>2.0017604540529059</real>
 	<key>closeViewHotkeysEnabled</key>
@@ -25,8 +70,50 @@
 		<string>NSGlobalDomain</string>
 		<string>com.apple.mail</string>
 	</array>
+	<key>cursorFill</key>
+	<dict>
+		<key>alpha</key>
+		<real>1</real>
+		<key>blue</key>
+		<real>0.0</real>
+		<key>green</key>
+		<real>0.0</real>
+		<key>red</key>
+		<real>0.0</real>
+	</dict>
+	<key>cursorIsCustomized</key>
+	<true/>
+	<key>cursorOutline</key>
+	<dict>
+		<key>alpha</key>
+		<real>1</real>
+		<key>blue</key>
+		<real>1</real>
+		<key>green</key>
+		<real>1</real>
+		<key>red</key>
+		<real>1</real>
+	</dict>
+	<key>customFonts</key>
+	<true/>
+	<key>differentiateWithoutColor</key>
+	<true/>
+	<key>displaysLastCursorLocation</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>X</key>
+			<real>1229.203125</real>
+			<key>Y</key>
+			<real>421.77734375</real>
+		</dict>
+	</dict>
+	<key>grayscale</key>
+	<false/>
 	<key>hoverTextEnabled</key>
 	<false/>
+	<key>hudNotifiedConstrast</key>
+	<real>0.0</real>
 	<key>keyboardAccessCommandMap</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -37,7 +124,7 @@
 	AAAYAAAAAAAAAAAAAAAAAAAA2g==
 	</data>
 	<key>keyboardAccessEnabled</key>
-	<false/>
+	<true/>
 	<key>keyboardAccessFocusRingTimeout</key>
 	<real>15</real>
 	<key>keyboardAccessPassthroughMode</key>
@@ -47,6 +134,10 @@
 	<key>selectedTab</key>
 	<integer>22</integer>
 	<key>sessionChange</key>
+	<false/>
+	<key>showToolbarButtonShapes</key>
+	<false/>
+	<key>showWindowTitlebarIcons</key>
 	<false/>
 	<key>voiceOverOnOffKey</key>
 	<false/>

@@ -4,14 +4,16 @@
 <dict>
 	<key>467e65ff56f72dc467e23ba45</key>
 	<integer>1</integer>
+	<key>AppleRemindersImportEnabled</key>
+	<false/>
 	<key>CrashDeviceIdentifier</key>
 	<string>6C399F8F-661A-4C66-9EDC-DE6AF95A5458</string>
 	<key>ImportantInformationLastCheckedDate</key>
-	<date>2023-06-27T21:58:32Z</date>
+	<date>2023-10-05T12:40:35Z</date>
 	<key>ImportantInformationLastForegroundDate</key>
-	<date>2023-06-28T14:59:42Z</date>
+	<date>2023-10-05T12:43:07Z</date>
 	<key>LastPreferencePaneIdentifier</key>
-	<string>sync</string>
+	<string>general</string>
 	<key>MSAppCenter310AppCenterUserDefaultsMigratedKey</key>
 	<true/>
 	<key>MSAppCenter310CrashesUserDefaultsMigratedKey</key>
@@ -23,7 +25,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBIYHCJQUVJTVFVWV1hZ
 	WltcXWJnVSRudWxs0g0ODxFaTlMub2JqZWN0c1YkY2xhc3OhEIACgBXTExQOFRYXXHRp
-	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HFJkEpO2idgATS
+	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HFZ3NtwmJfgATS
 	HR4fIFokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRGF0ZaIfIVhOU09iamVjdN8QFyMkJSYO
 	JygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PDxBQjw8PDxHSElKPDxNTk9Zb3NWZXJzaW9u
 	XnRpbWVab25lT2Zmc2V0WGFwcEJ1aWxkXxAVbGl2ZVVwZGF0ZVBhY2thZ2VIYXNoWmFw
@@ -33,23 +35,23 @@
 	ZVVtb2RlbF8QFXdyYXBwZXJSdW50aW1lVmVyc2lvbl8QFmxpdmVVcGRhdGVSZWxlYXNl
 	TGFiZWxac2NyZWVuU2l6ZVZvc05hbWVXb3NCdWlsZIALgA6AEYAAgBOAEIAAgACABoAN
 	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNC4yLjBe
-	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTMuNC4xVTIyRjgyVWVuX1VTE///////
-	//8QWDE1MTJ4OTgyVjMuMTcuN1gzMTcwNzUwMF8QGmNvbS5jdWx0dXJlZGNvZGUuVGhp
-	bmdzTWFj0h0eXl9aTVNBQ0RldmljZaNgYSFaTVNBQ0RldmljZV5NU0FDV3JhcHBlclNk
-	a9IdHmNkXxAVTVNBQ0RldmljZUhpc3RvcnlJbmZvo2VmIV8QFU1TQUNEZXZpY2VIaXN0
-	b3J5SW5mb18QD01TQUNIaXN0b3J5SW5mb9IdHmhpXk5TTXV0YWJsZUFycmF5o2hqIVdO
-	U0FycmF5AAgAEQAaACQAKQAyADcASQBMAFEAUwBsAHIAdwCCAIkAiwCNAI8AlgCjAK0A
-	rwCxALMAuADAAMkAywDQANsA5ADrAO4A9wEoATIBQQFKAWIBbQGBAY0BlQGcAbYBxQHQ
-	Ad8B5wHyAf8CBQIdAjYCQQJIAlACUgJUAlYCWAJaAlwCXgJgAmICZAJmAmgCagJsAm4C
-	cAJyAnQCdgJ4AnoCfAJ+ApAClgKlAqsCsQK4Ar4CxALNAtYC3QLmAwMDCAMTAxcDIgMx
-	AzYDTgNSA2oDfAOBA5ADlAAAAAAAAAIBAAAAAAAAAGsAAAAAAAAAAAAAAAAAAAOc
+	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTQuMC4wVjIzQTM0NFVlbl9VUxP/////
+	////EFgxNTEyeDk4MlYzLjE5LjFYMzE5MDE1MDFfEBpjb20uY3VsdHVyZWRjb2RlLlRo
+	aW5nc01hY9IdHl5fWk1TQUNEZXZpY2WjYGEhWk1TQUNEZXZpY2VeTVNBQ1dyYXBwZXJT
+	ZGvSHR5jZF8QFU1TQUNEZXZpY2VIaXN0b3J5SW5mb6NlZiFfEBVNU0FDRGV2aWNlSGlz
+	dG9yeUluZm9fEA9NU0FDSGlzdG9yeUluZm/SHR5oaV5OU011dGFibGVBcnJheaNoaiFX
+	TlNBcnJheQAIABEAGgAkACkAMgA3AEkATABRAFMAbAByAHcAggCJAIsAjQCPAJYAowCt
+	AK8AsQCzALgAwADJAMsA0ADbAOQA6wDuAPcBKAEyAUEBSgFiAW0BgQGNAZUBnAG2AcUB
+	0AHfAecB8gH/AgUCHQI2AkECSAJQAlICVAJWAlgCWgJcAl4CYAJiAmQCZgJoAmoCbAJu
+	AnACcgJ0AnYCeAJ6AnwCfgKQApYCpQKrArECuAK/AsUCzgLXAt4C5wMEAwkDFAMYAyMD
+	MgM3A08DUwNrA30DggORA5UAAAAAAAACAQAAAAAAAABrAAAAAAAAAAAAAAAAAAADnQ==
 	</data>
 	<key>MSAppCenterSessionIdHistory</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
 	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
-	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxSZBGht9t4AE0h0eHyBaJGNsYXNzbmFt
+	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxWdzbbVc6oAE0h0eHyBaJGNsYXNzbmFt
 	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
 	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
 	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
@@ -62,7 +64,7 @@
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGoCwwSGBwiIyhVJG51bGzSDQ4P
 	EVpOUy5vYmplY3RzViRjbGFzc6EQgAKAB9MTFA4VFhdcdGltZXN0YW1wS2V5WXVzZXJJ
-	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcUmQSuEMsqABNIdHh8gWiRjbGFzc25hbWVY
+	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcVnc23PYjCABNIdHh8gWiRjbGFzc25hbWVY
 	JGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN0XxAkNkMzOTlGOEYtNjYxQS00QzY2LTlF
 	REMtREU2QUY5NUE1NDU40h0eJCVfEBVNU0FDVXNlcklkSGlzdG9yeUluZm+jJichXxAV
 	TVNBQ1VzZXJJZEhpc3RvcnlJbmZvXxAPTVNBQ0hpc3RvcnlJbmZv0h0eKSpeTlNNdXRh
@@ -76,15 +78,16 @@
 	<string>AsdSigS1SP1gqZGqN4gpaw</string>
 	<key>RecentlyDisplayedListUUIDs</key>
 	<array>
-		<string>area-7P5ij2UV8rb8fazXUoCHFS</string>
-		<string>today</string>
-		<string>area-Q6BCDfhnL9i4QeZkZxjpRZ</string>
-		<string>area-8iZozMecFjibSiq6MhFbEC</string>
 		<string>area-VAnrePdGvr56UFZSMpMe2r</string>
-		<string>area-8CSS75E6uTwjvyJnK7kjYR</string>
-		<string>inbox</string>
-		<string>area-24z3wEL22WXVaVQpU3npwz</string>
+		<string>area-7P5ij2UV8rb8fazXUoCHFS</string>
+		<string>project-WafiXaFnj3bifwCVoXVuPL</string>
 		<string>area-DNNVvaa5VzqBN51famFS8c</string>
+		<string>area-8iZozMecFjibSiq6MhFbEC</string>
+		<string>area-8CSS75E6uTwjvyJnK7kjYR</string>
+		<string>area-Q6BCDfhnL9i4QeZkZxjpRZ</string>
+		<string>today</string>
+		<string>inbox</string>
+		<string>area-Kiz68GgrDbiJrGhRByQ5qY</string>
 	</array>
 	<key>RecentlyDisplayedSourceUUIDs</key>
 	<array>
@@ -114,7 +117,7 @@
 		<key>ExpandedContextKeyForProjectsOfArea-83mSGdVDLhu3QLnmYL5MRc</key>
 		<true/>
 		<key>ExpandedContextKeyForProjectsOfArea-8iZozMecFjibSiq6MhFbEC</key>
-		<false/>
+		<true/>
 		<key>ExpandedContextKeyForProjectsOfArea-BhzjWozgonehgzAs6jmxuL</key>
 		<true/>
 		<key>ExpandedContextKeyForProjectsOfArea-FQNyxUyg6BppdtcezStwLB</key>
@@ -130,18 +133,27 @@
 		<key>version</key>
 		<integer>1</integer>
 	</dict>
+	<key>THCEventKitCalendarHints</key>
+	<dict>
+		<key>calendarName</key>
+		<string>Tasks</string>
+		<key>localCalendarIdentifier</key>
+		<string>A5B546FC-EDB4-4A3C-B1C4-07FD6DB1E9C1</string>
+		<key>sourceName</key>
+		<string>iCloud</string>
+	</dict>
 	<key>TXMainWindowDefaultState</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBxZYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctcICQoLDA0ODxARDxMUFV8QD2lzU2lkZUJhckhp
 	ZGRlblVmcmFtZVxzaWRlQmFyV2lkdGhcaW5GdWxsU2NyZWVuWExpc3RVVUlEXxARc2Vs
 	ZWN0ZWRJdGVtVVVJRHNfEBVhdXRvQ2FzY2FkZUlkZW50aWZpZXIIgAEjQGggAAAAAAAI
-	gAOABIACphcYGRobIFUkbnVsbF8QFnt7NjcyLCAwfSwgezg0MCwgOTQ0fX1fECFUWE1h
-	aW5XaW5kb3dBdXRvQ2FzY2FkZUlkZW50aWZpZXJfEBthcmVhLTdQNWlqMlVWOHJiOGZh
-	elhVb0NIRlPSHB0eH1pOUy5vYmplY3RzViRjbGFzc6CABdIhIiMkWiRjbGFzc25hbWVY
-	JGNsYXNzZXNVTlNTZXSiIyVYTlNPYmplY3QACAARABoAJAApADIANwBJAFgAagBwAH0A
-	igCTAKcAvwDAAMIAywDMAM4A0ADSANkA3wD4ARwBOgE/AUoBUQFSAVQBWQFkAW0BcwF2
-	AAAAAAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAAX8=
+	gAOABIACphcYGRobIFUkbnVsbF8QF3t7NTYzLCA2OX0sIHs4MjksIDgwN319XxAhVFhN
+	YWluV2luZG93QXV0b0Nhc2NhZGVJZGVudGlmaWVyXxAbYXJlYS1WQW5yZVBkR3ZyNTZV
+	RlpTTXBNZTJy0hwdHh9aTlMub2JqZWN0c1YkY2xhc3OggAXSISIjJFokY2xhc3NuYW1l
+	WCRjbGFzc2VzVU5TU2V0oiMlWE5TT2JqZWN0AAgAEQAaACQAKQAyADcASQBYAGoAcAB9
+	AIoAkwCnAL8AwADCAMsAzADOANAA0gDZAN8A+QEdATsBQAFLAVIBUwFVAVoBZQFuAXQB
+	dwAAAAAAAAIBAAAAAAAAACYAAAAAAAAAAAAAAAAAAAGA
 	</data>
 	<key>TXTextViewAutomaticDashSubstitutionEnabledKey</key>
 	<false/>
@@ -158,7 +170,7 @@
 	<key>TXWindowAutoCascadeTopLeftPoints</key>
 	<dict>
 		<key>TXMainWindowAutoCascadeIdentifier</key>
-		<string>{43.5, 915}</string>
+		<string>{563, 876}</string>
 	</dict>
 	<key>ThingsCloudEverUsed</key>
 	<true/>
@@ -167,8 +179,17 @@
 	<key>firstAppLaunchDate</key>
 	<date>2021-10-12T18:50:54Z</date>
 	<key>whatsNewLastCheckedDate</key>
-	<date>2023-06-28T13:42:38Z</date>
+	<date>2023-10-05T12:43:08Z</date>
 	<key>whatsNewLastCheckedParameterChecksum</key>
-	<string>ce4192630d57b388e3e61640537cf3cf09e6a5fd23fec263e50b9a93c70605b1f06f0e36d295f65560ee50a4fced6460e46fdb02f9e94a3b7e74b8339eb38aff</string>
+	<string>1109fe8d46f82068318a0e458bba463a3989c22d573920dba8694cff69950afc8de9de48403eac123e32d83d5d5795a9a4b3a4286f3e10615250feac06a95f4a</string>
+	<key>whatsNewServerResponseCache</key>
+	<data>
+	eyJvcGVuLWluLXNhZmFyaSI6ZmFsc2UsImJhbm5lci10ZXh0Ijoi8J+OiSBUaGluZ3Pi
+	gJkgd2lkZ2V0cyBhcmUgbm93IGludGVyYWN0aXZlIGFuZCBjYW4gYmUgYWRkZWQgdG8g
+	eW91ciBNYWPigJlzIGRlc2t0b3AuIiwibXNnLWRhdGUiOiIyMDIzLTA5LTI1VDAwOjAw
+	OjAwWiIsImFjdGlvbi10ZXh0IjoiTGVhcm4gbW9yZS4uLiIsImFjdGlvbi11cmwiOiJo
+	dHRwczpcL1wvY3VsdHVyZWRjb2RlLmNvbVwvZnJvemVuXC8yMDIzXC8wOVwvd2hhdHMt
+	bmV3LWluLTMtMTktbWFjXC9pbmRleC5odG1sIn0=
+	</data>
 </dict>
 </plist>

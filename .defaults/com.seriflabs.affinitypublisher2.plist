@@ -75,10 +75,42 @@
 	<integer>48</integer>
 	<key>EffectOnVectorSelectionAction</key>
 	<integer>0</integer>
+	<key>EmbedAffinityLayers</key>
+	<false/>
 	<key>EraseFromVectorSelectionAction</key>
 	<integer>0</integer>
+	<key>Export Preset EPS</key>
+	<string>EPS (for export)</string>
+	<key>Export Preset EXR</key>
+	<string>OpenEXR 32-bit linear</string>
+	<key>Export Preset GIF</key>
+	<string>GIF RGB</string>
+	<key>Export Preset HDR</key>
+	<string>Radiance HDR 32-bit linear</string>
+	<key>Export Preset JPEG</key>
+	<string>JPEG (Best quality)</string>
+	<key>Export Preset JPEG XL</key>
+	<string>JPEG XL (Best Quality)</string>
+	<key>Export Preset PDF</key>
+	<string>PDF (for print)</string>
+	<key>Export Preset PNG</key>
+	<string>PNG</string>
+	<key>Export Preset PSD</key>
+	<string>PSD (preserve accuracy)</string>
+	<key>Export Preset SVG</key>
+	<string>SVG (for export)</string>
+	<key>Export Preset TGA</key>
+	<string>TGA</string>
+	<key>Export Preset TIFF</key>
+	<string>TIFF RGB 8-bit</string>
+	<key>Export Preset WEBP</key>
+	<string>WEBP (Best Quality)</string>
+	<key>ExportSettingsTabIdentifier</key>
+	<string>PDF</string>
 	<key>FillColumnGuides</key>
 	<true/>
+	<key>FillFlyoutModelTag</key>
+	<integer>5</integer>
 	<key>FlyoutID_ColourPicker state</key>
 	<string>ColourPicker</string>
 	<key>FlyoutID_Shape state</key>
@@ -107,6 +139,19 @@
 	bGFzc2VzV05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1ddZGp3frW3ub7J0trd
 	AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAOY=
 	</data>
+	<key>GuidesWindowController-Frame</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwTFFUkbnVsbNMNDg8QERJa
+	TlMucmVjdHZhbFYkY2xhc3NaTlMuc3BlY2lhbIACgAMQA18QGHt7MTMwLCAyMDF9LCB7
+	NzE3LCAzNzZ9fdIVFhcYWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNWYWx1ZaIXGVhOU09i
+	amVjdAgRGiQpMjdJTFFTWF5lcHeChIaIo6izvMTHAAAAAAAAAQEAAAAAAAAAGgAAAAAA
+	AAAAAAAAAAAAANA=
+	</data>
+	<key>IndexPage</key>
+	<data>
+	AP9LUwIAdHNpdQEAFAAAAINHcHhFAgAAAAAAAABndHBvAA==
+	</data>
 	<key>KnifeToolAutoClose</key>
 	<false/>
 	<key>LinkGridColours</key>
@@ -114,13 +159,25 @@
 	<key>ModelSelected</key>
 	<integer>1</integer>
 	<key>ModelSelected-Sliders</key>
-	<integer>0</integer>
+	<integer>3</integer>
 	<key>MonochromaticIconography</key>
 	<false/>
 	<key>NSFullScreenMenuItemEverywhere</key>
 	<false/>
+	<key>NSNavLastRootDirectory</key>
+	<string>~/Library/Mobile Documents/com~apple~CloudDocs/Professional Development/Resume</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{800, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSTreatUnknownArgumentsAsOpen</key>
 	<string>NO</string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>379 248 800 448 0 0 1512 944 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>107 196 400 135 0 0 1512 944 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>468 409 620 398 0 0 1512 944 </string>
 	<key>OtherBrushOnVectorSelectionAction</key>
 	<integer>0</integer>
 	<key>PaintOnNoSelectionAction</key>
@@ -131,6 +188,8 @@
 	<string>Colors</string>
 	<key>PaletteDefaultType</key>
 	<integer>0</integer>
+	<key>PaletteFlyoutIndex</key>
+	<integer>0</integer>
 	<key>PaletteListMode</key>
 	<false/>
 	<key>PenToolUsesFill</key>
@@ -138,6 +197,8 @@
 	<key>PencilToolAutoClose</key>
 	<false/>
 	<key>PencilToolUsesFill</key>
+	<false/>
+	<key>PreviewAfterPDFExport</key>
 	<false/>
 	<key>RasterDRAMLimit</key>
 	<integer>65536</integer>
@@ -150,9 +211,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-06-05T02:12:29Z</date>
+	<date>2023-09-21T20:07:32Z</date>
 	<key>SUScheduledCheckInterval</key>
 	<real>86400</real>
+	<key>SUUpdateRelaunchingMarker</key>
+	<false/>
 	<key>SelectNewShapes</key>
 	<true/>
 	<key>ShowFrameTextRuler</key>
@@ -177,10 +240,10 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwTFFUkbnVsbNMNDg8QERJa
-	TlMucmVjdHZhbFYkY2xhc3NaTlMuc3BlY2lhbIACgAMQA18QF3t7NTMsIDY0fSwgezE0
-	NDgsIDg1NH190hUWFxhaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU1ZhbHVlohcZWE5TT2Jq
-	ZWN0CBEaJCkyN0lMUVNYXmVwd4KEhoiip7K7w8YAAAAAAAABAQAAAAAAAAAaAAAAAAAA
-	AAAAAAAAAAAAzw==
+	TlMucmVjdHZhbFYkY2xhc3NaTlMuc3BlY2lhbIACgAMQA18QFnt7NDYsIDB9LCB7MTQ2
+	NiwgOTQ0fX3SFRYXGFokY2xhc3NuYW1lWCRjbGFzc2VzV05TVmFsdWWiFxlYTlNPYmpl
+	Y3QIERokKTI3SUxRU1heZXB3goSGiKGmsbrCxQAAAAAAAAEBAAAAAAAAABoAAAAAAAAA
+	AAAAAAAAAADO
 	</data>
 	<key>com.seriflabs.PreferredUserDisplayName</key>
 	<string>Wil Hall</string>
@@ -231,20 +294,20 @@
 	AEYARwBgAGFXTlNWYWx1ZaIAYABK0wBZAA4AWgBjAFwAXYATgBFaezI2NCwgMjI1fdMA
 	WQAOAFoAZwBcAF2AFYARWnsyNjQsIDI5N31fEBR7ezAsIDB9LCB7MjY0LCAyMzh9fdIA
 	RgBHAGwAbV5TdHVkaW9Cb29rRGF0YaIAbgBKXlN0dWRpb0Jvb2tEYXRh2gAOACkAKgAr
-	ACwALQAuAC8AMAAxADIAcQByAHMAdAB1ADgAOAA4ADuAF4AZgCCAIoAagC8ICAgJ0gAU
+	ACwALQAuAC8AMAAxADIAcQByAHMAdAB1ADgAOAA7ADuAF4AZgCCAIoAagC8ICAkJ0gAU
 	AA4AewBBpgB0AH0AfgB/AIAAgYAagBuAHIAdgB6AH4ALWUxheWVyUGFnZV1DaGFyYWN0
 	ZXJQYWdlXVBhcmFncmFwaFBhZ2VeVGV4dFN0eWxlc1BhZ2VaU3R5bGVzUGFnZVtFZmZl
 	Y3RzUGFnZdIAFAAOAIoAQaYATQBNAE0ATQCPAI+ADYANgA2ADYAhgCGACwjSABQADgCU
 	AEGmAJUAlgCXAJgAmQCagCOAJYAngCmAK4AtgAvTAFkADgBaAJ0AXABdgCSAEVp7MjY0
-	LCAzMzB90wBZAA4AWgChAFwAXYAmgBFaezI2NCwgMjAwfdMAWQAOAFoApQBcAF2AKIAR
+	LCAzMzB90wBZAA4AWgChAFwAXYAmgBFaezI2NCwgNDIwfdMAWQAOAFoApQBcAF2AKIAR
 	WnsyNjQsIDIwMH3TAFkADgBaAKkAXABdgCqAEVp7MjY0LCAxMDB90wBZAA4AWgCtAFwA
 	XYAsgBFaezI2NCwgMTUwfdMAWQAOAFoAsQBcAF2ALoARWnsyNjQsIDE1MH1fEBZ7ezAs
-	IDI0MH0sIHsyNjQsIDM1OH192gAOACkAKgArACwALQAuAC8AMAAxADIAtwC4ALkAugC7
+	IDI0MH0sIHsyNjQsIDQ0OH192gAOACkAKgArACwALQAuAC8AMAAxADIAtwC4ALkAugC7
 	ADgAOAA4ADuAF4AxgDWANoAygD0ICAgJ0gAUAA4AwQBBowC6AMMAxIAygDOANIALXVRy
 	YW5zZm9ybVBhZ2VdTmF2aWdhdG9yUGFnZVtIaXN0b3J5UGFnZdIAFAAOAMoAQaMATQBN
 	AE2ADYANgA2AC9IAFAAOANAAQaMA0QDSANOAN4A5gDuAC9MAWQAOAFoA1gBcAF2AOIAR
 	WnsyNjQsIDEyMH3TAFkADgBaANoAXABdgDqAEVp7MjY0LCAxOTJ90wBZAA4AWgDeAFwA
-	XYA8gBFaezI2NCwgMTUwfV8QFnt7MCwgNjAwfSwgezI2NCwgMTQ4fX3SAEYARwDjAORe
+	XYA8gBFaezI2NCwgMTUwfV8QFnt7MCwgNjkwfSwgezI2NCwgMTQ4fX3SAEYARwDjAORe
 	TlNNdXRhYmxlQXJyYXmjAOMASABK0gBGAEcA5gDnXxAPU3R1ZGlvU2hlbGZEYXRhogDo
 	AEpfEA9TdHVkaW9TaGVsZkRhdGHSAB8ADgDqACGAQYA/0gAUAA4A7QAXoQDugEKAPtoA
 	DgApACoAKwAsAC0ALgAvADAAMQAyAPIA8wD0APUA9gA4ADgAOAA7gBeAQ4BNgE6ARIBh
@@ -253,12 +316,12 @@
 	Z2VfEBRQbGFjZVRvb2xTb3VyY2VzUGFnZVdUb2NQYWdlWUluZGV4UGFnZV1QcmVmbGln
 	aHRQYWdlWUJvb2tzUGFnZdIAFAAOAREAQakATQBNAE0AjwCPAI8AjwCPAI+ADYANgA2A
 	IYAhgCGAIYAhgCGAC9IAFAAOAR0AQakBHgEfASABIQEiASMBJAElASaAT4BRgFOAVYBX
-	gFmAW4BdgF+AC9MAWQAOAFoBKQBcAF2AUIARWnsyNjQsIDcyMH3TAFkADgBaAS0AXABd
+	gFmAW4BdgF+AC9MAWQAOAFoBKQBcAF2AUIARWnsyMDAsIDgxMH3TAFkADgBaAS0AXABd
 	gFKAEVp7MjAwLCAxNTB90wBZAA4AWgExAFwAXYBUgBFaezI2NCwgMTUwfdMAWQAOAFoB
 	NQBcAF2AVoARWnsyNjQsIDM1MH3TAFkADgBaATkAXABdgFiAEVp7MjAwLCAxNTB90wBZ
 	AA4AWgE9AFwAXYBagBFaezI2NCwgMzUwfdMAWQAOAFoBQQBcAF2AXIARWnsyNjQsIDMw
 	MH3TAFkADgBaAUUAXABdgF6AEVp7MjY0LCAzMDB90wBZAA4AWgFJAFwAXYBggBFaezI2
-	NCwgMjU2fV8QFHt7MCwgMH0sIHsyNjQsIDc0OH190gBGAEcBTgFPXxAQU3R1ZGlvV2lu
+	NCwgMjU2fV8QFHt7MCwgMH0sIHsyMDAsIDgzOH190gBGAEcBTgFPXxAQU3R1ZGlvV2lu
 	ZG93RGF0YaIBUABKXxAQU3R1ZGlvV2luZG93RGF0YdIAFAAOAVIAF6EBU4BkgD7UAB8A
 	LQFWAA4BVwFYADgBWllIaWRlU3RhdGWAZoBlCICMXxAXe3s5NTEsIDc4NX0sIHsyNjQs
 	IDI4fX3aAA4AKQAqACsALAAtAC4ALwAwADEAMgFeAV8BYAFhAWIAOAA4ADgAO4AXgGeA
@@ -274,28 +337,28 @@
 	NjQsIDI1Nn3TAFkADgBaAbEAXABdgICAEVp7MjY0LCAyMDB90wBZAA4AWgG1AFwAXYCC
 	gBFaezI2NCwgMjU2fdMAWQAOAFoBuQBcAF2AhIARWnsyNjQsIDI1Nn3TAFkADgBaAb0A
 	XABdgIaAEVp7MjY0LCAxMjB90wBZAA4AWgHBAFwAXYCIgBFaezI2NCwgMTAwfdMAWQAO
-	AFoBxQBcAF2AioARWnsyNjQsIDUzNn1fEBB7ezAsIDB9LCB7MCwgMH190gBGAEcBygHL
-	XxAPU3R1ZGlvUGFuZWxEYXRhogHMAEpfEA9TdHVkaW9QYW5lbERhdGHSAEYARwHOAc9a
-	U3R1ZGlvRGF0YaIB0ABKWlN0dWRpb0RhdGEACAAZACIALAAxADoAPwBRAFYAWwBdAXwB
-	ggGPAbEBuAHcAd4B4AHiAesB9gH5AfsB/QIKAhQCHgIgAiICJAItAjYCOAI6AkMCSgJM
-	Ak4CUAJSAnsCgwKOApkCpQKrArgCwQLYAucC6QLrAu0C7wLxAvMC9AL1AvYC9wMAAwcD
-	CQMLAw0DDwMaAycDMAM5A0QDTQNVA1oDYwNsA3MDdQN3A3kDewN8A4UDjAOOA5ADkgOU
-	A6EDrAO3A7kDuwO9A8gD0QPZA94D6wPtA+8D+gQHBAkECwQWBC0ENgRFBEoEWQSCBIQE
-	hgSIBIoEjASOBI8EkASRBJIEmwSoBKoErASuBLAEsgS0BLYEwATOBNwE6wT2BQIFCwUY
-	BRoFHAUeBSAFIgUkBSYFJwUwBT0FPwVBBUMFRQVHBUkFSwVYBVoFXAVnBXQFdgV4BYMF
-	kAWSBZQFnwWsBa4FsAW7BcgFygXMBdcF5AXmBegF8wYMBjUGNwY5BjsGPQY/BkEGQgZD
-	BkQGRQZOBlUGVwZZBlsGXQZrBnkGhQaOBpUGlwaZBpsGnQamBq0GrwaxBrMGtQbCBsQG
-	xgbRBt4G4AbiBu0G+gb8Bv4HCQciBysHOgdBB0oHXAdhB3MHfAd+B4AHiQeMB44HkAe5
-	B7sHvQe/B8EHwwfFB8YHxwfIB8kH0gflB+cH6QfrB+0H7wfxB/MH9Qf3B/kIAwgOCBgI
-	LQhECEwIVghkCG4IdwiKCIwIjgiQCJIIlAiWCJgImgicCJ4Ipwi6CLwIvgjACMIIxAjG
-	CMgIygjMCM4I2wjdCN8I6gj3CPkI+wkGCRMJFQkXCSIJLwkxCTMJPglLCU0JTwlaCWcJ
-	aQlrCXYJgwmFCYcJkgmfCaEJowmuCbsJvQm/CcoJ4QnqCf0KAgoVCh4KIQojCiUKNgpA
-	CkIKRApFCkcKYQqKCowKjgqQCpIKlAqWCpcKmAqZCpoKowq6CrwKvgrACsIKxArGCsgK
-	ygrMCs4K0ArSCuAK6gr8Cw8LIQssCzoLRgtSC1wLZgtvC4YLiAuKC4wLjguQC5ILlAuW
-	C5gLmgucC54Lpwu+C8ALwgvEC8YLyAvKC8wLzgvQC9IL1AvWC+ML5QvnC/IL/wwBDAMM
-	DgwbDB0MHwwqDDcMOQw7DEYMUwxVDFcMYgxvDHEMcwx+DIsMjQyPDJoMpwypDKsMtgzD
-	DMUMxwzSDN8M4QzjDO4M+wz9DP8NCg0dDSYNOA09DU8NWA1jDWgAAAAAAAACAgAAAAAA
-	AAHRAAAAAAAAAAAAAAAAAAANcw==
+	AFoBxQBcAF2AioARWnsyNjQsIDUzNn1fEBN7ezAsIDB9LCB7MjY0LCAyOH190gBGAEcB
+	ygHLXxAPU3R1ZGlvUGFuZWxEYXRhogHMAEpfEA9TdHVkaW9QYW5lbERhdGHSAEYARwHO
+	Ac9aU3R1ZGlvRGF0YaIB0ABKWlN0dWRpb0RhdGEACAAZACIALAAxADoAPwBRAFYAWwBd
+	AXwBggGPAbEBuAHcAd4B4AHiAesB9gH5AfsB/QIKAhQCHgIgAiICJAItAjYCOAI6AkMC
+	SgJMAk4CUAJSAnsCgwKOApkCpQKrArgCwQLYAucC6QLrAu0C7wLxAvMC9AL1AvYC9wMA
+	AwcDCQMLAw0DDwMaAycDMAM5A0QDTQNVA1oDYwNsA3MDdQN3A3kDewN8A4UDjAOOA5AD
+	kgOUA6EDrAO3A7kDuwO9A8gD0QPZA94D6wPtA+8D+gQHBAkECwQWBC0ENgRFBEoEWQSC
+	BIQEhgSIBIoEjASOBI8EkASRBJIEmwSoBKoErASuBLAEsgS0BLYEwATOBNwE6wT2BQIF
+	CwUYBRoFHAUeBSAFIgUkBSYFJwUwBT0FPwVBBUMFRQVHBUkFSwVYBVoFXAVnBXQFdgV4
+	BYMFkAWSBZQFnwWsBa4FsAW7BcgFygXMBdcF5AXmBegF8wYMBjUGNwY5BjsGPQY/BkEG
+	QgZDBkQGRQZOBlUGVwZZBlsGXQZrBnkGhQaOBpUGlwaZBpsGnQamBq0GrwaxBrMGtQbC
+	BsQGxgbRBt4G4AbiBu0G+gb8Bv4HCQciBysHOgdBB0oHXAdhB3MHfAd+B4AHiQeMB44H
+	kAe5B7sHvQe/B8EHwwfFB8YHxwfIB8kH0gflB+cH6QfrB+0H7wfxB/MH9Qf3B/kIAwgO
+	CBgILQhECEwIVghkCG4IdwiKCIwIjgiQCJIIlAiWCJgImgicCJ4Ipwi6CLwIvgjACMII
+	xAjGCMgIygjMCM4I2wjdCN8I6gj3CPkI+wkGCRMJFQkXCSIJLwkxCTMJPglLCU0JTwla
+	CWcJaQlrCXYJgwmFCYcJkgmfCaEJowmuCbsJvQm/CcoJ4QnqCf0KAgoVCh4KIQojCiUK
+	NgpACkIKRApFCkcKYQqKCowKjgqQCpIKlAqWCpcKmAqZCpoKowq6CrwKvgrACsIKxArG
+	CsgKygrMCs4K0ArSCuAK6gr8Cw8LIQssCzoLRgtSC1wLZgtvC4YLiAuKC4wLjguQC5IL
+	lAuWC5gLmgucC54Lpwu+C8ALwgvEC8YLyAvKC8wLzgvQC9IL1AvWC+ML5QvnC/IL/wwB
+	DAMMDgwbDB0MHwwqDDcMOQw7DEYMUwxVDFcMYgxvDHEMcwx+DIsMjQyPDJoMpwypDKsM
+	tgzDDMUMxwzSDN8M4QzjDO4M+wz9DP8NCg0gDSkNOw1ADVINWw1mDWsAAAAAAAACAgAA
+	AAAAAAHRAAAAAAAAAAAAAAAAAAANdg==
 	</data>
 	<key>com.seriflabs.Studio.FieldsPage.ExpandedState</key>
 	<array>
@@ -368,6 +431,8 @@
 	</data>
 	<key>com.seriflabs.affinity.watchForCrash</key>
 	<false/>
+	<key>com.seriflabs.export.panel.startupdir</key>
+	<string>/Users/wilhall/Library/Mobile Documents/com~apple~CloudDocs/Professional Development/Resume</string>
 	<key>com.seriflabs.favourites.fonts.names</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -376,13 +441,24 @@
 	ZUFycmF5oxQWF1dOU0FycmF5WE5TT2JqZWN0CBEaJCkyN0lMUVNXXWJtdHV3fIeQn6Or
 	AAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=
 	</data>
+	<key>com.seriflabs.favourites.fonts.names-migrated</key>
+	<true/>
+	<key>com.seriflabs.opensave.panel.startupdir</key>
+	<string>file:/Users/wilhall/Downloads</string>
 	<key>com.seriflabs.recent.fonts.names</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0g0ODxBaTlMu
-	b2JqZWN0c1YkY2xhc3OggALSEhMUFVokY2xhc3NuYW1lWCRjbGFzc2VzXk5TTXV0YWJs
-	ZUFycmF5oxQWF1dOU0FycmF5WE5TT2JqZWN0CBEaJCkyN0lMUVNXXWJtdHV3fIeQn6Or
-	AAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGoCwwWFxgZGhtVJG51bGzSDQ4P
+	FVpOUy5vYmplY3RzViRjbGFzc6UQERITFIACgAOABIAFgAaAB1hUYXkgV2F3YV1UQVkg
+	RHJlYW1ib2F0WlN3ZWV0aGVhcnRfEBFNZXJyaXdlYXRoZXIgU2Fuc1xNZXJyaXdlYXRo
+	ZXLSHB0eH1okY2xhc3NuYW1lWCRjbGFzc2VzXk5TTXV0YWJsZUFycmF5ox4gIVdOU0Fy
+	cmF5WE5TT2JqZWN0AAgAEQAaACQAKQAyADcASQBMAFEAUwBcAGIAZwByAHkAfwCBAIMA
+	hQCHAIkAiwCUAKIArQDBAM4A0wDeAOcA9gD6AQIAAAAAAAACAQAAAAAAAAAiAAAAAAAA
+	AAAAAAAAAAABCw==
 	</data>
+	<key>com.seriflabs.recent.fonts.names-migrated</key>
+	<true/>
+	<key>com.seriflabs.restoration.urls</key>
+	<array/>
 </dict>
 </plist>

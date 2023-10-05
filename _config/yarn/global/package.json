@@ -2,6 +2,7 @@
   "dependencies": {
     "@elm-tooling/elm-language-server": "^1.4.5",
     "@linear/import": "^1.5.17",
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "create-react-app": "^3.4.1",
     "depcheck": "^1.4.3",

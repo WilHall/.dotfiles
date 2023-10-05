@@ -44,7 +44,7 @@
 	<key>NSTableView Supports v2 RulesTable</key>
 	<true/>
 	<key>NSWindow Frame RulesWindow</key>
-	<string>387 92 1068 580 0 0 1512 944 </string>
+	<string>1916 688 1068 580 0 0 5120 1415 </string>
 	<key>ShowTerminationAlert</key>
 	<false/>
 </dict>

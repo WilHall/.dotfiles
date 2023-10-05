@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AKLastEmailListRequestDateKey</key>
-	<date>2023-06-28T13:42:06Z</date>
+	<date>2023-10-05T12:27:42Z</date>
 	<key>AKLastIDMSEnvironment</key>
 	<integer>0</integer>
 	<key>AKLastLocale</key>
@@ -12,8 +12,6 @@
 	<integer>4</integer>
 	<key>AppleAquaColorVariant</key>
 	<integer>1</integer>
-	<key>AppleInterfaceStyleSwitchesAutomatically</key>
-	<true/>
 	<key>AppleKeyboardUIMode</key>
 	<integer>2</integer>
 	<key>AppleLanguages</key>
@@ -23,7 +21,7 @@
 	<key>AppleLanguagesDidMigrate</key>
 	<string>13.4.1</string>
 	<key>AppleLanguagesSchemaVersion</key>
-	<integer>3000</integer>
+	<integer>4000</integer>
 	<key>AppleLocale</key>
 	<string>en_US</string>
 	<key>AppleMeasurementUnits</key>
@@ -32,6 +30,8 @@
 	<false/>
 	<key>AppleMiniaturizeOnDoubleClick</key>
 	<false/>
+	<key>ApplePressAndHoldEnabled</key>
+	<string>0</string>
 	<key>AppleScrollerPagingBehavior</key>
 	<true/>
 	<key>AppleShowAllExtensions</key>
@@ -68,7 +68,7 @@
 	<key>NSLinguisticDataAssetsRequestLastInterval</key>
 	<real>86400</real>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2023-06-27T21:58:11Z</date>
+	<date>2023-10-04T16:55:06Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>en</string>
@@ -105,6 +105,10 @@
 			<string>com.google.www</string>
 		</dict>
 	</dict>
+	<key>NSSpellCheckerInputAnalyticsTime</key>
+	<date>2023-10-05T12:38:49Z</date>
+	<key>NSTableViewDefaultSizeMode</key>
+	<integer>2</integer>
 	<key>NSUserDictionaryReplacementItems</key>
 	<array>
 		<dict>
@@ -197,6 +201,8 @@
 		<string>‘</string>
 		<string>’</string>
 	</array>
+	<key>PKOrderManagementDisabled</key>
+	<true/>
 	<key>WebAutomaticSpellingCorrectionEnabled</key>
 	<false/>
 	<key>com.apple.finder.SyncExtensions</key>
@@ -209,7 +215,9 @@
 		<key>dirMap</key>
 		<dict>
 			<key>com.adobe.accmac.ACCFinderSync</key>
-			<array/>
+			<array>
+				<string>file:///Users/wilhall/Creative%20Cloud%20Files/</string>
+			</array>
 		</dict>
 	</dict>
 	<key>com.apple.mouse.scaling</key>

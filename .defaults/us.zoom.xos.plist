@@ -6,6 +6,8 @@
 	<integer>2</integer>
 	<key>Hotkey Have Shown Tip</key>
 	<true/>
+	<key>LottieTip</key>
+	<true/>
 	<key>NSAllowContinuousSpellChecking</key>
 	<true/>
 	<key>NSConstraintBasedLayoutVisualizeMutuallyExclusiveConstraints</key>
@@ -15,7 +17,7 @@
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<false/>
 	<key>NSWindow Frame ZOOM Main Window</key>
-	<string>48 101 1464 843 0 0 1512 944 </string>
+	<string>1322 0 2531 1415 0 0 5120 1415 </string>
 	<key>PresAppKeyHash</key>
 	<integer>-2145492511746712566</integer>
 	<key>PresMeetingAppKeyHash</key>
@@ -24,20 +26,52 @@
 	<string>follow system language</string>
 	<key>WebContinuousSpellCheckingEnabled</key>
 	<true/>
+	<key>ZMCCCaptionsBoxWidthKey</key>
+	<real>400</real>
 	<key>ZMJoinMeetingFlowAnchor</key>
-	<string>{{1080, 540}, {400, 360}}</string>
+	<string>{{960, 456}, {640, 500}}</string>
 	<key>ZoomAutoUpdateState</key>
 	<string>ZoomAutoUpdateStateTouched</string>
 	<key>ZoomAutoUpdateVersion</key>
-	<string>5.14.10.19202</string>
+	<string>5.15.7.21404</string>
+	<key>_favoriteArray</key>
+	<array>
+		<string>:sparkles:=✨</string>
+		<string>:heart:=❤️</string>
+		<string>:clap:=👏;:clap_tone1:=👏🏻;:clap_tone2:=👏🏼;:clap_tone3:=👏🏽;:clap_tone4:=👏🏾;:clap_tone5:=👏🏿</string>
+		<string>:smiley:=😃</string>
+	</array>
+	<key>_favoriteArrayV2</key>
+	<array>
+		<string>:cactus:=🌵</string>
+		<string>:house:=🏠</string>
+		<string>:sparkles:=✨</string>
+		<string>:fire:=🔥</string>
+		<string>:smiling_face_with_tear:=🥲</string>
+		<string>:heart:=❤️</string>
+		<string>:clap:=👏;:clap_tone1:=👏🏻;:clap_tone2:=👏🏼;:clap_tone3:=👏🏽;:clap_tone4:=👏🏾;:clap_tone5:=👏🏿</string>
+		<string>:smiley:=😃</string>
+	</array>
+	<key>been dragged wall video</key>
+	<true/>
 	<key>kCaptureWithoutChatWindow</key>
 	<true/>
 	<key>kIM_LastOpenedSession</key>
 	<string></string>
+	<key>kZMAlreadyShowPMCTip</key>
+	<true/>
+	<key>kZMHadShowFiveMinsCountDown</key>
+	<false/>
+	<key>kZMHadShowOneDayCountDown</key>
+	<false/>
+	<key>kZMHadShowOneHourCountDown</key>
+	<false/>
+	<key>kZMHadShowSessionWarning</key>
+	<false/>
 	<key>kZMShowNotificationCenter</key>
 	<true/>
 	<key>kZMUserDedaultWindowOriginFrame</key>
-	<string>{{230, 213}, {975, 660}}</string>
+	<string></string>
 	<key>kZMUserDefaultMainWindowCompressed</key>
 	<false/>
 	<key>kZMUserDefaultSelectedTabType</key>

@@ -8,7 +8,9 @@
     "depcheck": "^1.4.3",
     "elm-format": "^0.8.2",
     "expo-cli": "^3.3.0",
+    "graphql-cli": "^4.1.0",
     "graphql-faker": "^2.0.0-rc.4",
+    "netlify-cli": "^16.9.2",
     "prettier": "^2.5.1",
     "svelte-language-server": "^0.14.20"
   }

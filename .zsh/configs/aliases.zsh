@@ -1,10 +1,13 @@
 alias vim="nvim"
 alias vi="vim"
 alias ls="exa -F --group-directories-first"
-alias ll="exa -alh --git --group-directories-first"
+alias ll="exa -alh --group-directories-first"
 alias tree="exa -T"
 alias cd="z"
-alias ctags="`brew --prefix`/bin/ctags"
+
+if [[ "$PLATFORM" == "macos" ]]; then
+  alias ctags="`brew --prefix`/bin/ctags"
+fi
 
 
 # Bundle aliases
@@ -70,7 +73,7 @@ function ddirs() {
   find . -type d -name $@ -exec rm -r {} +
 }
 
-curl_time() {
+function curl_time() {
     curl -so /dev/null -w "\
    namelookup:  %{time_namelookup}s\n\
       connect:  %{time_connect}s\n\

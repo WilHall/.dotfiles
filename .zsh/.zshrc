@@ -2,10 +2,16 @@ ZSH_THEME=""
 COMPLETION_WAITING_DOTS="false"
 CASE_SENSITIVE="true"
 
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
-source /opt/homebrew/share/antigen/antigen.zsh
+if [[ "$PLATFORM" == "macos" ]]; then
+  source /opt/homebrew/share/antigen/antigen.zsh
+elif [[ "$PLATFORM" == "wsl" ]]; then
+  source /usr/share/zsh-antigen/antigen.zsh
+fi
+
 source ~/.zsh/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 
 antigen use oh-my-zsh
@@ -37,4 +43,8 @@ bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+if [[ "$PLATFORM" == "macos" ]]; then
+  . /opt/homebrew/opt/asdf/libexec/asdf.sh
+elif [[ "$PLATFORM" = "wsl" ]]; then
+  . "$HOME/.asdf/asdf.sh"
+fi

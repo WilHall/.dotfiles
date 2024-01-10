@@ -1,9 +1,11 @@
 ## .dotfiles
 
-macOS dotfiles, application settings, and user defaults
+macOS, Linux, and Windows dotfiles, application settings, and user defaults
 
 
 ### Bootstrapping
+
+If bootstrapping for Windows, perform all steps in a Windows Subsystem for Linux (WSL) terminal (See [How to install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install)).
 
 1. `clone git@github.com:WilHall/.dotfiles.git ~/.dotfiles/`
 1. `cd ~/.dotfiles`

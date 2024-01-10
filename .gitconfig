@@ -37,9 +37,7 @@
     mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
     root = rev-parse --show-toplevel
 [commit]
-    gpgsign = true
-[gpg]
-    program = /usr/local/MacGPG2/bin/gpg2
+    gpgsign = false
 [tag]
     forceSignAnnotated = true
 [github]

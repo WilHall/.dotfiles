@@ -5,3 +5,7 @@ vscode-langservers-extracted
 @tailwindcss/language-server
 typescript typescript-language-server
 stylelint-lsp
+mprocs
+prettier
+@fsouza/prettierd
+diff-so-fancy

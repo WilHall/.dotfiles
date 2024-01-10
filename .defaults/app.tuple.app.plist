@@ -17,24 +17,26 @@
 	MjdJTFFTV11kbHOBg4WKj5qjr7K+AAAAAAAAAQEAAAAAAAAAGgAAAAAAAAAAAAAAAAAA
 	AMc=
 	</data>
+	<key>NSStatusItem Preferred Position TupleStatusBarItem</key>
+	<real>498</real>
 	<key>NSStatusItem Visible Item-0</key>
 	<false/>
 	<key>NSStatusItem Visible TupleStatusBarItem</key>
 	<true/>
 	<key>NSWindow Frame webcamFrame</key>
-	<string>3666 1154 261 261 0 0 5120 1415 </string>
+	<string>3628 1190 225 225 0 0 5120 1415 </string>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
-	<key>SUFeedURL</key>
-	<string>https://d32ifkf9k9ezcg.cloudfront.net/production/sparkle/appcast.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-10-05T12:39:05Z</date>
+	<date>2024-01-10T11:36:08Z</date>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>1943549101</integer>
 	<key>SUUpdateRelaunchingMarker</key>
-	<false/>
+	<true/>
 	<key>analyticsProfile</key>
 	<dict>
 		<key>email</key>
@@ -49,8 +51,6 @@
 		<true/>
 		<key>sfu_support</key>
 		<string>enabled</string>
-		<key>subscription_status</key>
-		<string>active</string>
 		<key>team_id</key>
 		<integer>10336</integer>
 		<key>team_name</key>
@@ -65,6 +65,13 @@
 		<key>preferredInputChannel</key>
 		<integer>0</integer>
 		<key>preferredInputDevice</key>
+		<dict>
+			<key>name</key>
+			<string>Scarlett Solo USB</string>
+			<key>uid</key>
+			<string>AppleUSBAudioEngine:Focusrite:Scarlett Solo USB:Y7Z0HBU17CCAC8:1,2</string>
+		</dict>
+		<key>preferredOutputDevice</key>
 		<dict>
 			<key>name</key>
 			<string>Scarlett Solo USB</string>
@@ -86,6 +93,8 @@
 	<true/>
 	<key>hasPromptedForScreenrecording</key>
 	<true/>
+	<key>hasSeenVeilAlert</key>
+	<true/>
 	<key>hasShownPopover</key>
 	<true/>
 	<key>hideRedesignFeedbackBanner</key>
@@ -97,10 +106,10 @@
 	<key>lastPartialScreenRects</key>
 	<dict>
 		<key>7789-40571-490766</key>
-		<string>((0.257617, 0.000000), (0.495703, 1.000000))</string>
+		<string>((0.257617, 0.000000), (0.495117, 1.000000))</string>
 	</dict>
 	<key>lastPreferencePane</key>
-	<integer>3</integer>
+	<string>general</string>
 	<key>lastUserSignalMessageDate</key>
 	<dict>
 		<key>clientID</key>
@@ -108,12 +117,35 @@
 		<key>date</key>
 		<date>2022-04-12T15:12:53Z</date>
 	</dict>
+	<key>noiseSuppressionEnabled</key>
+	<false/>
 	<key>seenCameraPreview</key>
 	<true/>
 	<key>startCallsWithWebcam</key>
 	<true/>
 	<key>transmitResolution</key>
-	<string>max</string>
+	<string>High</string>
+	<key>veiledApplications</key>
+	<array>
+		<dict>
+			<key>bundleIdentifier</key>
+			<string>com.1password.1password</string>
+			<key>name</key>
+			<string>1Password</string>
+		</dict>
+		<dict>
+			<key>bundleIdentifier</key>
+			<string>com.apple.keychainaccess</string>
+			<key>name</key>
+			<string>Keychain Access</string>
+		</dict>
+		<dict>
+			<key>bundleIdentifier</key>
+			<string>com.apple.MobileSMS</string>
+			<key>name</key>
+			<string>Messages</string>
+		</dict>
+	</array>
 	<key>videoDeviceID</key>
 	<string>47B4B64B70674B9CAD2BAE273A71F4B5</string>
 	<key>webcam</key>
@@ -125,5 +157,9 @@
 	</dict>
 	<key>webcamResolution</key>
 	<string>high</string>
+	<key>webcamSelfie</key>
+	<string>detached</string>
+	<key>webcamWindowOrientation</key>
+	<string>vertical</string>
 </dict>
 </plist>

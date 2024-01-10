@@ -14,6 +14,79 @@
 	<array/>
 	<key>HistoryColors</key>
 	<array>
+		<string>EFB16BFF</string>
+		<string>257294FF</string>
+		<string>8695C9FF</string>
+		<string>194E66FF</string>
+		<string>257294FF</string>
+		<string>F5B400FF</string>
+		<string>FBBC00FF</string>
+		<string>F5B400FF</string>
+		<string>444444FF</string>
+		<string>277293FF</string>
+		<string>EDB16BFF</string>
+		<string>8695CAFF</string>
+		<string>277293FF</string>
+		<string>8793C8FF</string>
+		<string>027DB5FF</string>
+		<string>040404FF</string>
+		<string>2865ACFF</string>
+		<string>EA3E45FF</string>
+		<string>EFEFF0FF</string>
+		<string>010100FF</string>
+		<string>EDB16BFF</string>
+		<string>194F67FF</string>
+		<string>257294FF</string>
+		<string>8694C9FF</string>
+		<string>267294FF</string>
+		<string>8794C9FF</string>
+		<string>267294FF</string>
+		<string>194F67FF</string>
+		<string>5075B7FF</string>
+		<string>194F67FF</string>
+		<string>194F66FF</string>
+		<string>257295FF</string>
+		<string>194F66FF</string>
+		<string>8694C9FF</string>
+		<string>3F5263FF</string>
+		<string>758F98FF</string>
+		<string>194F66FF</string>
+		<string>257295FF</string>
+		<string>194F66FF</string>
+		<string>257295FF</string>
+		<string>EEB06BFF</string>
+		<string>194F66FF</string>
+		<string>8694C9FF</string>
+		<string>758E96FF</string>
+		<string>1CD760FF</string>
+		<string>262625FF</string>
+		<string>807E7CFF</string>
+		<string>027580FF</string>
+		<string>807E7CFF</string>
+		<string>262625FF</string>
+		<string>EDEBE8FF</string>
+		<string>E9354AFF</string>
+		<string>9A1F2FFF</string>
+		<string>FCF5E2FF</string>
+		<string>9A1F2FFF</string>
+		<string>991F2EFF</string>
+		<string>FDF6E6FF</string>
+		<string>219585FF</string>
+		<string>94080EFF</string>
+		<string>E58F17FF</string>
+		<string>262626FF</string>
+		<string>007580FF</string>
+		<string>808080FF</string>
+		<string>4AB5BFFF</string>
+		<string>F1F1F1FF</string>
+		<string>EBE9E6FF</string>
+		<string>262625FF</string>
+		<string>E58F17FF</string>
+		<string>807E7CFF</string>
+		<string>4AB5BFFF</string>
+		<string>262626FF</string>
+		<string>DDDBD9FF</string>
+		<string>B99FE4FF</string>
 		<string>4AB5BFFF</string>
 		<string>262626FF</string>
 		<string>808080FF</string>
@@ -41,79 +114,6 @@
 		<string>505D5FFF</string>
 		<string>737D7FFF</string>
 		<string>3D4B4DFF</string>
-		<string>808080FF</string>
-		<string>4AB5BFFF</string>
-		<string>E58F17FF</string>
-		<string>808080FF</string>
-		<string>F0EDEBFF</string>
-		<string>E2E0DEFF</string>
-		<string>595956FF</string>
-		<string>9EA5A6FF</string>
-		<string>BFBFBFFF</string>
-		<string>D17417FF</string>
-		<string>E5E5E5FF</string>
-		<string>F7F5F2FF</string>
-		<string>9EA5A6FF</string>
-		<string>52B1BAFF</string>
-		<string>FF5959FF</string>
-		<string>FE7364FF</string>
-		<string>3F5163FF</string>
-		<string>748E97FF</string>
-		<string>3F5163FF</string>
-		<string>8794C8FF</string>
-		<string>FAFAFAFF</string>
-		<string>F0F3FAFF</string>
-		<string>031751FF</string>
-		<string>F0F3FAFF</string>
-		<string>2EB59BFF</string>
-		<string>00826AFF</string>
-		<string>014F40FF</string>
-		<string>84ACF4FF</string>
-		<string>E5E5E5FF</string>
-		<string>60A896FF</string>
-		<string>DEF0EBFF</string>
-		<string>60A896FF</string>
-		<string>DEF0EBFF</string>
-		<string>001651FF</string>
-		<string>E1E0DFFF</string>
-		<string>BA1E1EFF</string>
-		<string>CF0202FF</string>
-		<string>027AA2FF</string>
-		<string>02826AFF</string>
-		<string>4E8EF7FF</string>
-		<string>2D8F51FF</string>
-		<string>459C65FF</string>
-		<string>629BF8FF</string>
-		<string>C13838FF</string>
-		<string>F8F8F8FF</string>
-		<string>394FB5FF</string>
-		<string>092D91FF</string>
-		<string>F0F3FAFF</string>
-		<string>3450BBFF</string>
-		<string>E5E7EBFF</string>
-		<string>0450BCFF</string>
-		<string>2D8F51FF</string>
-		<string>459C65FF</string>
-		<string>629BF8FF</string>
-		<string>C13838FF</string>
-		<string>F8F8F8FF</string>
-		<string>394FB5FF</string>
-		<string>092D91FF</string>
-		<string>F0F3FAFF</string>
-		<string>3450BBFF</string>
-		<string>E5E7EBFF</string>
-		<string>0450BCFF</string>
-		<string>00826AFF</string>
-		<string>E99B15FF</string>
-		<string>370F03FF</string>
-		<string>9A5328FF</string>
-		<string>1E293BFF</string>
-		<string>001651FF</string>
-		<string>EE980FFF</string>
-		<string>217B69FF</string>
-		<string>004D3EFF</string>
-		<string>001651FF</string>
-		<string>00826AFF</string>
 	</array>
 	<key>NSColorPanelMode</key>
 	<string>6</string>
@@ -123,7 +123,7 @@
 		<string>0.000000, 319.000000, 480.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>487</real>
+	<real>578</real>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
@@ -147,15 +147,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-10-05T11:37:33Z</date>
+	<date>2024-01-10T01:48:57Z</date>
 	<key>SULastProfileSubmissionDate</key>
-	<date>2023-10-05T11:37:32Z</date>
+	<date>2024-01-04T02:05:17Z</date>
 	<key>SUScheduledCheckInterval</key>
 	<real>43200</real>
 	<key>SUSendProfileInfo</key>
 	<true/>
 	<key>captureValue</key>
-	<real>33.525070190429688</real>
+	<real>32.775070190429688</real>
 	<key>codeStyle</key>
 	<dict>
 		<key>css</key>

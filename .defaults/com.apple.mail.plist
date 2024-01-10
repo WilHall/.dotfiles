@@ -16,7 +16,7 @@
 		<string>CKAccountInfoCacheReset</string>
 	</array>
 	<key>CKStartupTime</key>
-	<integer>1696508653</integer>
+	<integer>1703044318</integer>
 	<key>CheckedForOldLSMMapFile</key>
 	<true/>
 	<key>CloudKitAccountInfoCache</key>
@@ -29,7 +29,7 @@
 		aWFsc1xXYWxydXNTdGF0dXNfEBJOZWVkc1RvVmVyaWZ5VGVybXNfECREZXZp
 		Y2VUb0RldmljZUVuY3J5cHRpb25BdmFpbGFiaWxpdHlfEBBBY2NvdW50UGFy
 		dGl0aW9uXUFjY291bnRTdGF0dXNfEBxBY2NvdW50SW5mb1ZhbGlkYXRpb25D
-		b3VudGVygAIJEAEIEAMRAabSHB0eH1okY2xhc3NuYW1lWCRjbGFzc2VzXUNL
+		b3VudGVygAIJEAEIEAMRAqnSHB0eH1okY2xhc3NuYW1lWCRjbGFzc2VzXUNL
 		QWNjb3VudEluZm+iHiBYTlNPYmplY3QACAARABoAJAApADIANwBJAEwAUQBT
 		AFcAXQBuAHUAiwCYAK0A1ADnAPUBFAEWARcBGQEaARwBHwEkAS8BOAFGAUkA
 		AAAAAAACAQAAAAAAAAAhAAAAAAAAAAAAAAAAAAABUg==
@@ -38,27 +38,27 @@
 	<key>ColumnConfiguration</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBwLDB8gISIjJCUpMDQ4Pj9N
-	VVZXWFldY2tzdHqCVSRudWxs0w0ODxAXHldOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNz
-	phESExQVFoACgAOABIAFgAaAB6YYGRobHB2ACIAKgAuADIAVgBmACV8QFk1haWxib3hD
-	b2x1bW5UeXBlU21hcnRfEBpNYWlsYm94Q29sdW1uVHlwZVJlYWRMYXRlcl8QGk1haWxi
-	b3hDb2x1bW5UeXBlU2VuZExhdGVyXxAZTWFpbGJveENvbHVtblR5cGVPdXRnb2luZ18Q
-	F01haWxib3hDb2x1bW5UeXBlTm9ybWFsXxAXTWFpbGJveENvbHVtblR5cGVEcmFmdHPT
-	DQ4PJiceoKCACdIqKywtWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0
-	aW9uYXJ5oywuL1xOU0RpY3Rpb25hcnlYTlNPYmplY3TTDQ4PMTIeoKCACdMNDg81Nh6g
-	oIAJ0w0ODzk7HqE6gA2hPIAOgAlSMjDXD0BBQkNERUZHSElJOklYcG9zaXRpb25Wd2lk
-	dGhzV3Zpc2libGVfEB1pc0F1dG9tYXRpY0luc2VydGlvbkF2YWlsYWJsZVppZGVudGlm
-	aWVyXxAraXNBdXRvbWF0aWNJbnNlcnRpb25XaGlsZVNlYXJjaGluZ0F2YWlsYWJsZYAU
-	gBOADwgIgA0I0w0OD05RHqJPUIAQgBGiUlKAEoASgAlYbXVsdGlwbGVWbm9ybWFsI0Bp
-	YAAAAAAAEADSKitaW18QHk1lc3NhZ2VMaXN0Q29sdW1uQ29uZmlndXJhdGlvbqJcL18Q
-	Hk1lc3NhZ2VMaXN0Q29sdW1uQ29uZmlndXJhdGlvbtMNDg9eYB6hOoANoWGAFoAJ1w9A
-	QUJDREVGR2ZJSTpJgBSAE4AXCAiADQjTDQ4PbG8eok9QgBCAEaJwcIAYgBiACSNAa0AA
-	AAAAANMNDg91dx6hOoANoXiAGoAJ1w9AQUJDREVGR31JSTpJgBSAE4AbCAiADQjTDQ4P
-	g4Yeok9QgBCAEaJwcIAYgBiACQAIABEAGgAkACkAMgA3AEkATABRAFMAcgB4AH8AhwCS
-	AJkAoACiAKQApgCoAKoArACzALUAtwC5ALsAvQC/AMEA2gD3ARQBMAFKAWQBawFsAW0B
-	bwF0AX8BiAGeAaIBrwG4Ab8BwAHBAcMBygHLAcwBzgHVAdcB2QHbAd0B3wHiAfEB+gIB
-	AgkCKQI0AmICZAJmAmgCaQJqAmwCbQJ0AncCeQJ7An4CgAKCAoQCjQKUAp0CnwKkAsUC
-	yALpAvAC8gL0AvYC+AL6AwkDCwMNAw8DEAMRAxMDFAMbAx4DIAMiAyUDJwMpAysDNAM7
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBwLDB8gISIjJCUrLDpCQ0RF
+	TE1RVVlfZ29wdHqCVSRudWxs0w0ODxAXHldOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNz
+	phESExQVFoACgAOABIAFgAaAB6YYGRobHB2ACIASgBOAFIAYgBmAD18QGU1haWxib3hD
+	b2x1bW5UeXBlT3V0Z29pbmdfEBpNYWlsYm94Q29sdW1uVHlwZVJlYWRMYXRlcl8QGk1h
+	aWxib3hDb2x1bW5UeXBlU2VuZExhdGVyXxAXTWFpbGJveENvbHVtblR5cGVOb3JtYWxf
+	EBZNYWlsYm94Q29sdW1uVHlwZVNtYXJ0XxAXTWFpbGJveENvbHVtblR5cGVEcmFmdHPT
+	DQ4PJigeoSeACaEpgAqAD1IyMNcPLS4vMDEyMzQ1NjYnNlhwb3NpdGlvblZ3aWR0aHNX
+	dmlzaWJsZV8QHWlzQXV0b21hdGljSW5zZXJ0aW9uQXZhaWxhYmxlWmlkZW50aWZpZXJf
+	ECtpc0F1dG9tYXRpY0luc2VydGlvbldoaWxlU2VhcmNoaW5nQXZhaWxhYmxlgBGAEIAL
+	CAiACQjTDQ4POz4eojw9gAyADaI/P4AOgA6AD1htdWx0aXBsZVZub3JtYWwjQGlgAAAA
+	AADSRkdISVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxlRGljdGlvbmFyeaNI
+	SktcTlNEaWN0aW9uYXJ5WE5TT2JqZWN0EADSRkdOT18QHk1lc3NhZ2VMaXN0Q29sdW1u
+	Q29uZmlndXJhdGlvbqJQS18QHk1lc3NhZ2VMaXN0Q29sdW1uQ29uZmlndXJhdGlvbtMN
+	Dg9SUx6goIAP0w0OD1ZXHqCggA/TDQ4PWlweoSeACaFdgBWAD9cPLS4vMDEyMzRiNjYn
+	NoARgBCAFggIgAkI0w0OD2hrHqI8PYAMgA2ibGyAF4AXgA8jQGtAAAAAAADTDQ4PcXIe
+	oKCAD9MNDg91dx6hJ4AJoXiAGoAP1w8tLi8wMTIzNH02Nic2gBGAEIAbCAiACQjTDQ4P
+	g4Yeojw9gAyADaJsbIAXgBeADwAIABEAGgAkACkAMgA3AEkATABRAFMAcgB4AH8AhwCS
+	AJkAoACiAKQApgCoAKoArACzALUAtwC5ALsAvQC/AMEA3QD6ARcBMQFKAWQBawFtAW8B
+	cQFzAXUBeAGHAZABlwGfAb8BygH4AfoB/AH+Af8CAAICAgMCCgINAg8CEQIUAhYCGAIa
+	AiMCKgIzAjgCQwJMAmICZgJzAnwCfgKDAqQCpwLIAs8C0ALRAtMC2gLbAtwC3gLlAucC
+	6QLrAu0C7wL+AwADAgMEAwUDBgMIAwkDEAMTAxUDFwMaAxwDHgMgAykDMAMxAzIDNAM7
 	Az0DPwNBA0MDRQNUA1YDWANaA1sDXANeA18DZgNpA2sDbQNwA3IDdAAAAAAAAAIBAAAA
 	AAAAAIoAAAAAAAAAAAAAAAAAAAN2
 	</data>
@@ -101,7 +101,7 @@
 			<false/>
 		</dict>
 		<key>windowFrame</key>
-		<string>42 0 611 944 0 0 1800 1125 </string>
+		<string>58 0 1265 1415 0 0 5120 1415 </string>
 	</dict>
 	<key>DeleteAttachmentsEnabled</key>
 	<false/>
@@ -256,7 +256,7 @@
 			<integer>0</integer>
 			<key>ThreadIdentifiers</key>
 			<array>
-				<integer>19250</integer>
+				<integer>23681</integer>
 			</array>
 		</dict>
 		<key>ReadLaterEnabled</key>
@@ -280,7 +280,7 @@
 	<key>LastAttachedDir</key>
 	<string>/Users/wilhall/Downloads</string>
 	<key>LastMessageTracingDate</key>
-	<date>2023-10-01T16:30:24Z</date>
+	<date>2024-01-09T16:30:07Z</date>
 	<key>LibraryCompressionUpgradeState</key>
 	<integer>1</integer>
 	<key>MSAssetDownloadRetryInterval.com.apple.mailsupport.downloadMobileAssetCatalog</key>
@@ -316,6 +316,7 @@
 	<array>
 		<string>FavoritesSection</string>
 		<string>SmartMailboxesSection</string>
+		<string>local://50AB6912-677A-4ADC-947A-CCDC1AF0B5AF/</string>
 		<string>imap://0F322549-5F7C-473D-8269-9DA3332B3760/</string>
 		<string>imap://24E5B97C-03B6-46C2-B1CD-351EA1C242DC/</string>
 	</array>
@@ -337,19 +338,18 @@
 	<array>
 		<string>FavoritesSection</string>
 		<string>imap://24E5B97C-03B6-46C2-B1CD-351EA1C242DC/</string>
-		<string>favoritemailboxdatum:Sent%20Messages?parent=0</string>
+		<string>local://50AB6912-677A-4ADC-947A-CCDC1AF0B5AF/</string>
 		<string>imap://0F322549-5F7C-473D-8269-9DA3332B3760/</string>
-		<string>SearchSection</string>
 	</array>
 	<key>NSSplitView Subview Frames Main Window</key>
 	<array>
-		<string>-19.000000, 0.000000, 140.000000, 944.000000, YES, YES</string>
-		<string>0.000000, 0.000000, 611.000000, 944.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 140.000000, 1415.000000, NO, NO</string>
+		<string>141.000000, 0.000000, 1124.000000, 1415.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames Main Window Preview Pane Vertical</key>
 	<array>
-		<string>0.000000, 0.000000, 250.000000, 944.000000, NO, NO</string>
-		<string>251.000000, 0.000000, 360.000000, 944.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 250.000000, 1415.000000, NO, NO</string>
+		<string>251.000000, 0.000000, 873.000000, 1415.000000, NO, NO</string>
 	</array>
 	<key>NSToolbar Configuration ComposeWindow</key>
 	<dict>
@@ -425,23 +425,23 @@
 		<string>@↩</string>
 	</dict>
 	<key>NSWindow Frame Compose Window</key>
-	<string>1695 236 1264 944 0 0 5120 1415 </string>
+	<string>1332 145 1107 1125 0 0 5120 1415 </string>
 	<key>NSWindow Frame Main Window Preview Pane Vertical</key>
 	<string>45 0 1008 944 0 0 1512 944 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>4368 150 445 239 0 0 5120 1415 </string>
+	<string>1266 120 445 239 0 0 1800 1125 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>399 283 430 188 0 0 1512 944 </string>
+	<string>711 373 430 188 0 0 1800 1125 </string>
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
-	<string>4265 900 425 137 0 0 1512 944 </string>
+	<string>3910 110 425 137 0 0 5120 1415 </string>
 	<key>NSWindow Frame SetupAssistant</key>
 	<string>225 385 578 442 0 0 1512 944 </string>
 	<key>NSWindow Frame Torn Off Window</key>
-	<string>1961 0 1107 1415 0 0 5120 1415 </string>
+	<string>1834 0 1107 1415 0 0 5120 1415 </string>
 	<key>NumberOfMessagesMarkedAsJunk</key>
-	<integer>4</integer>
+	<integer>12</integer>
 	<key>NumberOfMessagesMarkedAsNotJunk</key>
-	<integer>11</integer>
+	<integer>36</integer>
 	<key>OutboxViewerAttributes</key>
 	<dict>
 		<key>DisplayInThreadedMode</key>
@@ -487,7 +487,7 @@
 			<integer>0</integer>
 			<key>ThreadIdentifiers</key>
 			<array>
-				<integer>18954</integer>
+				<integer>23311</integer>
 			</array>
 		</dict>
 		<key>ReadLaterEnabled</key>
@@ -551,7 +551,7 @@
 	<key>WebContinuousSpellCheckingEnabled</key>
 	<true/>
 	<key>com.apple.email.searchableIndex.scheduler.com.apple.mail.contentIndex</key>
-	<real>220.92262008400002</real>
+	<real>300</real>
 	<key>engagementCount-com.apple.Spotlight</key>
 	<integer>0</integer>
 	<key>engagementCount-com.apple.Spotlight.suggestions</key>
@@ -576,7 +576,7 @@
 	ACYAAAAAAAAAAAAAAAAAAAFx
 	</data>
 	<key>kDefaultsKeyLastVerifiedMessageID</key>
-	<integer>16162</integer>
+	<integer>4067</integer>
 	<key>maxSizeKB</key>
 	<real>5000000</real>
 	<key>minSizeKB</key>

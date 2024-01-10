@@ -17,7 +17,7 @@
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<false/>
 	<key>NSWindow Frame ZOOM Main Window</key>
-	<string>1322 0 2531 1415 0 0 5120 1415 </string>
+	<string>1326 0 2528 1415 0 0 5120 1415 </string>
 	<key>PresAppKeyHash</key>
 	<integer>-2145492511746712566</integer>
 	<key>PresMeetingAppKeyHash</key>
@@ -31,9 +31,9 @@
 	<key>ZMJoinMeetingFlowAnchor</key>
 	<string>{{960, 456}, {640, 500}}</string>
 	<key>ZoomAutoUpdateState</key>
-	<string>ZoomAutoUpdateStateTouched</string>
+	<string>ZoomAutoUpdateStateReady</string>
 	<key>ZoomAutoUpdateVersion</key>
-	<string>5.15.7.21404</string>
+	<string>5.16.10.25689</string>
 	<key>_favoriteArray</key>
 	<array>
 		<string>:sparkles:=✨</string>
@@ -71,7 +71,7 @@
 	<key>kZMShowNotificationCenter</key>
 	<true/>
 	<key>kZMUserDedaultWindowOriginFrame</key>
-	<string></string>
+	<string>{{460, 233}, {975, 660}}</string>
 	<key>kZMUserDefaultMainWindowCompressed</key>
 	<false/>
 	<key>kZMUserDefaultSelectedTabType</key>

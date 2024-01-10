@@ -19,7 +19,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>886 81 224 278 0 0 1800 1125 </string>
+	<string>886 81 224 278 0 0 5120 1415 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>340 993 400 135 0 0 2560 1415 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -27,7 +27,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-10-05T12:39:05Z</date>
+	<date>2024-01-09T15:03:47Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>2547082375</integer>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -281,7 +281,7 @@
 	AAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAADZ8=
 	</data>
 	<key>s000</key>
-	<integer>38</integer>
+	<integer>47</integer>
 	<key>showMenubarIcon</key>
 	<false/>
 	<key>usedInactiveMode</key>

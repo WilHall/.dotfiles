@@ -298,11 +298,11 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{318, 381}, {920, 436}}</string>
+			<string>{{415, 173}, {835, 1055}}</string>
 		</dict>
 	</dict>
 	<key>CopyProgressWindowLocation</key>
-	<string>{1060, 343}</string>
+	<string>{721, 258}</string>
 	<key>DesktopViewSettings</key>
 	<dict>
 		<key>IconViewSettings</key>
@@ -374,7 +374,7 @@
 		<key>viewOptionsVersion</key>
 		<integer>1</integer>
 	</dict>
-	<key>FK_DefaultListViewSettings</key>
+	<key>FK_DefaultListViewSettingsV2</key>
 	<dict>
 		<key>calculateAllSizes</key>
 		<false/>
@@ -382,13 +382,23 @@
 		<array>
 			<dict>
 				<key>ascending</key>
-				<true/>
+				<false/>
 				<key>identifier</key>
 				<string>name</string>
 				<key>visible</key>
 				<true/>
 				<key>width</key>
 				<integer>300</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>ubiquity</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>35</integer>
 			</dict>
 			<dict>
 				<key>ascending</key>
@@ -480,15 +490,45 @@
 				<key>width</key>
 				<integer>181</integer>
 			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>shareOwner</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>210</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>shareLastEditor</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>210</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>invitationStatus</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>210</integer>
+			</dict>
 		</array>
 		<key>iconSize</key>
-		<integer>16</integer>
+		<real>16</real>
 		<key>showIconPreview</key>
 		<true/>
 		<key>sortColumn</key>
-		<string>dateAdded</string>
+		<string>name</string>
 		<key>textSize</key>
-		<integer>13</integer>
+		<real>13</real>
 		<key>useRelativeDates</key>
 		<true/>
 		<key>viewOptionsVersion</key>
@@ -785,6 +825,166 @@
 		<key>SettingsType</key>
 		<string>FK_StandardViewSettings</string>
 	</dict>
+	<key>FK_iCloudListViewSettingsV2</key>
+	<dict>
+		<key>calculateAllSizes</key>
+		<false/>
+		<key>columns</key>
+		<array>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>name</string>
+				<key>visible</key>
+				<true/>
+				<key>width</key>
+				<integer>268</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>ubiquity</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>35</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>dateModified</string>
+				<key>visible</key>
+				<true/>
+				<key>width</key>
+				<integer>181</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>dateCreated</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>181</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>size</string>
+				<key>visible</key>
+				<true/>
+				<key>width</key>
+				<integer>97</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>kind</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>115</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>label</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>100</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>version</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>75</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>comments</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>300</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>dateLastOpened</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>200</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>dateAdded</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>181</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>shareOwner</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>210</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>shareLastEditor</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>210</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>invitationStatus</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>210</integer>
+			</dict>
+		</array>
+		<key>iconSize</key>
+		<real>16</real>
+		<key>showIconPreview</key>
+		<true/>
+		<key>sortColumn</key>
+		<string>dateModified</string>
+		<key>textSize</key>
+		<real>13</real>
+		<key>useRelativeDates</key>
+		<true/>
+		<key>viewOptionsVersion</key>
+		<integer>1</integer>
+	</dict>
 	<key>FXArrangeGroupViewBy</key>
 	<string>Name</string>
 	<key>FXAtLeastOneScreenHasBeenInHIDPI</key>
@@ -799,6 +999,28 @@
 	<integer>1</integer>
 	<key>FXDesktopVolumePositions</key>
 	<dict>
+		<key>741131783702214241_0x1.55a34628p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>755158424316220284_0x1.58afb9f8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
 		<key>&lt;3_0x1.512a701p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -909,6 +1131,50 @@
 			<key>yRelative</key>
 			<integer>177</integer>
 		</dict>
+		<key>Bambu Studio_0x1.56c7647p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
+		</dict>
+		<key>Bartender 5_0x1.57f1d0946d23p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>BlenderQuickLook_0x1.e48b51ap+28</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
+		<key>Blender_0x1.56128fb8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>308</integer>
+		</dict>
 		<key>Commander One_0x1.b690296p+28</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -986,6 +1252,182 @@
 			<key>yRelative</key>
 			<integer>401</integer>
 		</dict>
+		<key>Copilot_0x1.56c36d4p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
+		<key>Copilot_0x1.570d501p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
+		<key>Copilot_0x1.57899e9p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
+		</dict>
+		<key>Copilot_0x1.57a11ebp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
+		<key>Copilot_0x1.57cb964p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
+		</dict>
+		<key>Copilot_0x1.57f6a3f8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.580d9d2p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.58361668p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.58891e7p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.58a9e838p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.58bded48p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.58f14f9p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.599f4ffp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.59dd1e9p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5a248d1p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5a30b57p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
 		<key>Deckset_0x1.3098c28p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1019,6 +1461,17 @@
 			<key>yRelative</key>
 			<integer>177</integer>
 		</dict>
+		<key>Folx_0x1.d88981ep+27</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
 		<key>GPG Suite_0x1.32b987p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1029,6 +1482,17 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>177</integer>
+		</dict>
+		<key>Gitify 4.4.0-universal_0x1.5604b9a8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
 		</dict>
 		<key>Google Analytics Opt Out_0x1.1121c598p+29</key>
 		<dict>
@@ -1051,6 +1515,17 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>177</integer>
+		</dict>
+		<key>Google Chrome_0x1.5992efd8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
 		</dict>
 		<key>Harvard_Secure_and_eduroam_0x1.4f2dbc58p+29</key>
 		<dict>
@@ -1250,6 +1725,28 @@
 			<key>yRelative</key>
 			<integer>78</integer>
 		</dict>
+		<key>Macintosh HD_0x1.5849b338p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>84</integer>
+		</dict>
+		<key>Macintosh HD_0x1.5964ec88p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>84</integer>
+		</dict>
 		<key>Mimestream_0.23.2_0x1.348a9c6p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1304,6 +1801,28 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>420</integer>
+		</dict>
+		<key>OpenSCAD_0x1.2e39999p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>OrcaSlicer_0x1.559a33509291fp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
 		</dict>
 		<key>Polypane 6.2.0-universal_0x1.34ec2178p+29</key>
 		<dict>
@@ -1360,6 +1879,28 @@
 			<key>yRelative</key>
 			<integer>196</integer>
 		</dict>
+		<key>PullBarPro_0x1.557d0cfc3bc1dp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
+		</dict>
+		<key>QGIS.app_0x1.5889eb18p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
 		<key>Raycast_0x1.472316cp+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1393,6 +1934,17 @@
 			<key>yRelative</key>
 			<integer>177</integer>
 		</dict>
+		<key>Shapr3D_0x1.567cbc38p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
+		</dict>
 		<key>Silhouette Studio_0x1.46a252ep+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1414,6 +1966,17 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>190</integer>
+		</dict>
+		<key>Silhouette Studio_0x1.59446cp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
 		</dict>
 		<key>Solstice Client Installer_0x1.3ad6e8fp+29</key>
 		<dict>
@@ -1447,6 +2010,39 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>414</integer>
+		</dict>
+		<key>Tor Browser_-0x1.e276b3p+24</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Transmission_0x1.5915ac4p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>UltiMaker-Cura-5.5.0-macos-ARM64_0x1.574901bp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
 		</dict>
 		<key>Untitled_-0x1.d27e44p+29</key>
 		<dict>
@@ -1552,7 +2148,7 @@
 	<key>FXPreferencesWindow.Location</key>
 	<string>{{510, 564}, {377, 380}}</string>
 	<key>FXPreferredGroupBy</key>
-	<string>Name</string>
+	<string>None</string>
 	<key>FXPreferredSearchViewStyle</key>
 	<string>Nlsv</string>
 	<key>FXPreferredSearchViewStyleVersion</key>
@@ -1562,268 +2158,7 @@
 	<key>FXQuickActionsConfigUpgradeLevel</key>
 	<integer>3</integer>
 	<key>FXRecentFolders</key>
-	<array>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9va/wBAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAEAEAAAQAAAADAwAAAAIAIAwAAAABAQAAQXBwbGlj
-			YXRpb25zBAAAAAEGAAAQAAAACAAAAAQDAABKMmIBAAAAAAQAAAAB
-			BgAAMAAAAAgAAAAABAAAQcVa8n8AAAAYAAAAAQIAAAIAAAAAAAAA
-			DwAAAAAAAAAAAAAAAAAAAAAAAAABBQAACAAAAAEJAABmaWxlOi8v
-			LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAACQA
-			AAABAQAAOTVEMzlEMTEtN0RCQS00QTk1LTg2MjQtQzA4MDVFNzQz
-			OTlFGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
-			AQEAAC8AAAC0AAAA/v///wEAAAAAAAAADgAAAAQQAAAkAAAAAAAA
-			AAUQAABAAAAAAAAAABAQAABcAAAAAAAAAEAQAABMAAAAAAAAAAIg
-			AAAEAQAAAAAAAAUgAACEAAAAAAAAABAgAACUAAAAAAAAABEgAAC4
-			AAAAAAAAABIgAACoAAAAAAAAABMgAABMAAAAAAAAACAgAADkAAAA
-			AAAAADAgAAB8AAAAAAAAAAHQAAB8AAAAAAAAABDQAAAEAAAAAAAA
-			AA==
-			</data>
-			<key>name</key>
-			<string>Applications</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9va5wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAjAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAABEb3dubG9hZHMAAAAM
-			AAAAAQYAABAAAAAgAAAAMAAAAAgAAAAEAwAA+0MAAAAAAAAIAAAA
-			BAMAAJVpAAAAAAAACAAAAAQDAADIaQAAAAAAAAwAAAABBgAAWAAA
-			AGgAAAB4AAAACAAAAAAEAABBxQd6oAAAABgAAAABAgAAAgAAAAAA
-			AAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAIAAAABAMAAAEAAAAA
-			AAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAA
-			TWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcUd
-			jU6AAAAkAAAAAQEAADk1RDM5RDExLTdEQkEtNEE5NS04NjI0LUMw
-			ODA1RTc0Mzk5RRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
-			AAAAAQAAAAEBAAAvAAAA2AAAAP7///8BAAAAAAAAABEAAAAEEAAA
-			RAAAAAAAAAAFEAAAiAAAAAAAAAAQEAAArAAAAAAAAABAEAAAnAAA
-			AAAAAAACIAAAgAEAAAAAAAAFIAAA8AAAAAAAAAAQIAAAAAEAAAAA
-			AAARIAAANAEAAAAAAAASIAAAFAEAAAAAAAATIAAAJAEAAAAAAAAg
-			IAAAYAEAAAAAAAAwIAAAzAAAAAAAAAABwAAA1AAAAAAAAAARwAAA
-			IAAAAAAAAAASwAAA5AAAAAAAAAAB0AAAzAAAAAAAAAAQ0AAABAAA
-			AAAAAAA=
-			</data>
-			<key>name</key>
-			<string>Downloads</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9vayQDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAFAIAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAABEb3dubG9hZHMAAAAL
-			AAAAAQEAAEdpbmdlcmJyZWFkABUAAAABAQAARWxtZW5kb3JmIEdp
-			bmdlcmJyZWFkAAAABAAAAAEBAAAyMDIxGAAAAAEGAAAQAAAAIAAA
-			ADAAAABEAAAAWAAAAHgAAAAIAAAABAMAAPtDAAAAAAAACAAAAAQD
-			AACVaQAAAAAAAAgAAAAEAwAAyGkAAAAAAAAIAAAABAMAAIowXAEA
-			AAAACAAAAAQDAAAIMVwBAAAAAAgAAAAEAwAAXS1cAQAAAAAYAAAA
-			AQYAAKQAAAC0AAAAxAAAANQAAADkAAAA9AAAAAgAAAAABAAAQcVm
-			Z4GIoKUYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAAA
-			AAABBQAACAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAAB
-			CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
-			AJCClucAAAAIAAAAAAQAAEHFHY1OgAAAJAAAAAEBAAA5NUQzOUQx
-			MS03REJBLTRBOTUtODYyNC1DMDgwNUU3NDM5OUUYAAAAAQIAAIEA
-			AAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAANgAAAD+
-			////AQAAAAAAAAARAAAABBAAAIQAAAAAAAAABRAAAAQBAAAAAAAA
-			EBAAADQBAAAAAAAAQBAAACQBAAAAAAAAAiAAAAgCAAAAAAAABSAA
-			AHgBAAAAAAAAECAAAIgBAAAAAAAAESAAALwBAAAAAAAAEiAAAJwB
-			AAAAAAAAEyAAAKwBAAAAAAAAICAAAOgBAAAAAAAAMCAAAFQBAAAA
-			AAAAAcAAAFwBAAAAAAAAEcAAACAAAAAAAAAAEsAAAGwBAAAAAAAA
-			AdAAAFQBAAAAAAAAENAAAAQAAAAAAAAA
-			</data>
-			<key>name</key>
-			<string>2021</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9va8gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAuAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAABEb3dubG9hZHMAAAAL
-			AAAAAQEAAEdpbmdlcmJyZWFkABAAAAABBgAAEAAAACAAAAAwAAAA
-			RAAAAAgAAAAEAwAA+0MAAAAAAAAIAAAABAMAAJVpAAAAAAAACAAA
-			AAQDAADIaQAAAAAAAAgAAAAEAwAAijBcAQAAAAAQAAAAAQYAAHAA
-			AACAAAAAkAAAAKAAAAAIAAAAAAQAAEHFZmeM2UFsGAAAAAECAAAC
-			AAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgAAAAEAwAA
-			AgAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAA
-			AAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAE
-			AABBxR2NToAAACQAAAABAQAAOTVEMzlEMTEtN0RCQS00QTk1LTg2
-			MjQtQzA4MDVFNzQzOTlFGAAAAAECAACBAAAAAQAAAO8TAAABAAAA
-			AAAAAAAAAAABAAAAAQEAAC8AAADYAAAA/v///wEAAAAAAAAAEQAA
-			AAQQAABYAAAAAAAAAAUQAACwAAAAAAAAABAQAADYAAAAAAAAAEAQ
-			AADIAAAAAAAAAAIgAACsAQAAAAAAAAUgAAAcAQAAAAAAABAgAAAs
-			AQAAAAAAABEgAABgAQAAAAAAABIgAABAAQAAAAAAABMgAABQAQAA
-			AAAAACAgAACMAQAAAAAAADAgAAD4AAAAAAAAAAHAAAAAAQAAAAAA
-			ABHAAAAgAAAAAAAAABLAAAAQAQAAAAAAAAHQAAD4AAAAAAAAABDQ
-			AAAEAAAAAAAAAA==
-			</data>
-			<key>name</key>
-			<string>Gingerbread</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9vayQDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAFAIAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAABEb3dubG9hZHMAAAAL
-			AAAAAQEAAEdpbmdlcmJyZWFkABUAAAABAQAARWxtZW5kb3JmIEdp
-			bmdlcmJyZWFkAAAABAAAAAEBAAAyMDIyGAAAAAEGAAAQAAAAIAAA
-			ADAAAABEAAAAWAAAAHgAAAAIAAAABAMAAPtDAAAAAAAACAAAAAQD
-			AACVaQAAAAAAAAgAAAAEAwAAyGkAAAAAAAAIAAAABAMAAIowXAEA
-			AAAACAAAAAQDAAAIMVwBAAAAAAgAAAAEAwAAsy5cAQAAAAAYAAAA
-			AQYAAKQAAAC0AAAAxAAAANQAAADkAAAA9AAAAAgAAAAABAAAQcVm
-			Z4Gpwi0YAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAAA
-			AAABBQAACAAAAAQDAAAEAAAAAAAAAAQAAAADAwAA9QEAAAgAAAAB
-			CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
-			AJCClucAAAAIAAAAAAQAAEHFHY1OgAAAJAAAAAEBAAA5NUQzOUQx
-			MS03REJBLTRBOTUtODYyNC1DMDgwNUU3NDM5OUUYAAAAAQIAAIEA
-			AAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAALwAAANgAAAD+
-			////AQAAAAAAAAARAAAABBAAAIQAAAAAAAAABRAAAAQBAAAAAAAA
-			EBAAADQBAAAAAAAAQBAAACQBAAAAAAAAAiAAAAgCAAAAAAAABSAA
-			AHgBAAAAAAAAECAAAIgBAAAAAAAAESAAALwBAAAAAAAAEiAAAJwB
-			AAAAAAAAEyAAAKwBAAAAAAAAICAAAOgBAAAAAAAAMCAAAFQBAAAA
-			AAAAAcAAAFwBAAAAAAAAEcAAACAAAAAAAAAAEsAAAGwBAAAAAAAA
-			AdAAAFQBAAAAAAAAENAAAAQAAAAAAAAA
-			</data>
-			<key>name</key>
-			<string>2022</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9va1ADAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAQAIAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAABEb3dubG9hZHMAAAAL
-			AAAAAQEAAEdpbmdlcmJyZWFkABUAAAABAQAARWxtZW5kb3JmIEdp
-			bmdlcmJyZWFkAAAABAAAAAEBAAAyMDIyCgAAAAEBAABSZW5kZXJp
-			bmdzAAAcAAAAAQYAABAAAAAgAAAAMAAAAEQAAABYAAAAeAAAAIQA
-			AAAIAAAABAMAAPtDAAAAAAAACAAAAAQDAACVaQAAAAAAAAgAAAAE
-			AwAAyGkAAAAAAAAIAAAABAMAAIowXAEAAAAACAAAAAQDAAAIMVwB
-			AAAAAAgAAAAEAwAAsy5cAQAAAAAIAAAABAMAALQuXAEAAAAAHAAA
-			AAEGAAC8AAAAzAAAANwAAADsAAAA/AAAAAwBAAAcAQAACAAAAAAE
-			AABBxWZRugAAABgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAA
-			AAAAAAAAAAEFAAAIAAAABAMAAAUAAAAAAAAABAAAAAMDAAD1AQAA
-			CAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAA
-			AAQDAAAAkIKW5wAAAAgAAAAABAAAQcUdjU6AAAAkAAAAAQEAADk1
-			RDM5RDExLTdEQkEtNEE5NS04NjI0LUMwODA1RTc0Mzk5RRgAAAAB
-			AgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA
-			2AAAAP7///8BAAAAAAAAABEAAAAEEAAAmAAAAAAAAAAFEAAALAEA
-			AAAAAAAQEAAAYAEAAAAAAABAEAAAUAEAAAAAAAACIAAANAIAAAAA
-			AAAFIAAApAEAAAAAAAAQIAAAtAEAAAAAAAARIAAA6AEAAAAAAAAS
-			IAAAyAEAAAAAAAATIAAA2AEAAAAAAAAgIAAAFAIAAAAAAAAwIAAA
-			gAEAAAAAAAABwAAAiAEAAAAAAAARwAAAIAAAAAAAAAASwAAAmAEA
-			AAAAAAAB0AAAgAEAAAAAAAAQ0AAABAAAAAAAAAA=
-			</data>
-			<key>name</key>
-			<string>Renderings</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9va/wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAA7AEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwABwAAAAEBAABMaWJyYXJ5ABAAAAAB
-			AQAATW9iaWxlIERvY3VtZW50cxMAAAABAQAAY29tfmFwcGxlfkNs
-			b3VkRG9jcwAUAAAAAQYAABAAAAAgAAAAMAAAAEAAAABYAAAACAAA
-			AAQDAAD7QwAAAAAAAAgAAAAEAwAAlWkAAAAAAAAIAAAABAMAAJxp
-			AAAAAAAACAAAAAQDAABcgwAAAAAAAAgAAAAEAwAAirEAAAAAAAAU
-			AAAAAQYAAJAAAACgAAAAsAAAAMAAAADQAAAACAAAAAAEAABBxRYA
-			vmGK5xgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAA
-			AAEFAAAIAAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJ
-			AABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAA
-			kIKW5wAAAAgAAAAABAAAQcUdjU6AAAAkAAAAAQEAADk1RDM5RDEx
-			LTdEQkEtNEE5NS04NjI0LUMwODA1RTc0Mzk5RRgAAAABAgAAgQAA
-			AAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA2AAAAP7/
-			//8BAAAAAAAAABEAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQ
-			EAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA4AEAAAAAAAAFIAAA
-			UAEAAAAAAAAQIAAAYAEAAAAAAAARIAAAlAEAAAAAAAASIAAAdAEA
-			AAAAAAATIAAAhAEAAAAAAAAgIAAAwAEAAAAAAAAwIAAALAEAAAAA
-			AAABwAAANAEAAAAAAAARwAAAIAAAAAAAAAASwAAARAEAAAAAAAAB
-			0AAALAEAAAAAAAAQ0AAABAAAAAAAAAA=
-			</data>
-			<key>name</key>
-			<string>iCloud Drive</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9va5wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAjAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACQAAAAEBAABEb2N1bWVudHMAAAAM
-			AAAAAQYAABAAAAAgAAAAMAAAAAgAAAAEAwAA+0MAAAAAAAAIAAAA
-			BAMAAJVpAAAAAAAACAAAAAQDAADGaQAAAAAAAAwAAAABBgAAWAAA
-			AGgAAAB4AAAACAAAAAAEAABBxQd6oAAAABgAAAABAgAAAgAAAAAA
-			AAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAIAAAABAMAAAEAAAAA
-			AAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAA
-			TWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcUd
-			jU6AAAAkAAAAAQEAADk1RDM5RDExLTdEQkEtNEE5NS04NjI0LUMw
-			ODA1RTc0Mzk5RRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
-			AAAAAQAAAAEBAAAvAAAA2AAAAP7///8BAAAAAAAAABEAAAAEEAAA
-			RAAAAAAAAAAFEAAAiAAAAAAAAAAQEAAArAAAAAAAAABAEAAAnAAA
-			AAAAAAACIAAAgAEAAAAAAAAFIAAA8AAAAAAAAAAQIAAAAAEAAAAA
-			AAARIAAANAEAAAAAAAASIAAAFAEAAAAAAAATIAAAJAEAAAAAAAAg
-			IAAAYAEAAAAAAAAwIAAAzAAAAAAAAAABwAAA1AAAAAAAAAARwAAA
-			IAAAAAAAAAASwAAA5AAAAAAAAAAB0AAAzAAAAAAAAAAQ0AAABAAA
-			AAAAAAA=
-			</data>
-			<key>name</key>
-			<string>Documents</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9va5gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAiAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACAAAAAEBAABQaWN0dXJlcwwAAAAB
-			BgAAEAAAACAAAAAwAAAACAAAAAQDAAD7QwAAAAAAAAgAAAAEAwAA
-			lWkAAAAAAAAIAAAABAMAAJhpAAAAAAAADAAAAAEGAABUAAAAZAAA
-			AHQAAAAIAAAAAAQAAEHFB3qgAAAAGAAAAAECAAACAAAAAAAAAA8A
-			AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgAAAAEAwAAAQAAAAAAAAAE
-			AAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
-			bnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBxR2NToAA
-			ACQAAAABAQAAOTVEMzlEMTEtN0RCQS00QTk1LTg2MjQtQzA4MDVF
-			NzQzOTlFGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
-			AAAAAQEAAC8AAADYAAAA/v///wEAAAAAAAAAEQAAAAQQAABAAAAA
-			AAAAAAUQAACEAAAAAAAAABAQAACoAAAAAAAAAEAQAACYAAAAAAAA
-			AAIgAAB8AQAAAAAAAAUgAADsAAAAAAAAABAgAAD8AAAAAAAAABEg
-			AAAwAQAAAAAAABIgAAAQAQAAAAAAABMgAAAgAQAAAAAAACAgAABc
-			AQAAAAAAADAgAADIAAAAAAAAAAHAAADQAAAAAAAAABHAAAAgAAAA
-			AAAAABLAAADgAAAAAAAAAAHQAADIAAAAAAAAABDQAAAEAAAAAAAA
-			AA==
-			</data>
-			<key>name</key>
-			<string>Pictures</string>
-		</dict>
-		<dict>
-			<key>file-bookmark</key>
-			<data>
-			Ym9va8ACAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-			AAAAAAAAAAAAsAEAAAQAAAADAwAAAAIAIAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACAAAAAEBAABQaWN0dXJlcwgAAAAB
-			AQAAcmVhY3Rpb24QAAAAAQYAABAAAAAgAAAAMAAAAEAAAAAIAAAA
-			BAMAAPtDAAAAAAAACAAAAAQDAACVaQAAAAAAAAgAAAAEAwAAmGkA
-			AAAAAAAIAAAABAMAAHXfHwAAAAAAEAAAAAEGAABoAAAAeAAAAIgA
-			AACYAAAACAAAAAAEAABBw8OZRIAAABgAAAABAgAAAgAAAAAAAAAP
-			AAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAIAAAABAMAAAIAAAAAAAAA
-			BAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFj
-			aW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcUdjU6A
-			AAAkAAAAAQEAADk1RDM5RDExLTdEQkEtNEE5NS04NjI0LUMwODA1
-			RTc0Mzk5RRgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAA
-			AQAAAAEBAAAvAAAA2AAAAP7///8BAAAAAAAAABEAAAAEEAAAUAAA
-			AAAAAAAFEAAAqAAAAAAAAAAQEAAA0AAAAAAAAABAEAAAwAAAAAAA
-			AAACIAAApAEAAAAAAAAFIAAAFAEAAAAAAAAQIAAAJAEAAAAAAAAR
-			IAAAWAEAAAAAAAASIAAAOAEAAAAAAAATIAAASAEAAAAAAAAgIAAA
-			hAEAAAAAAAAwIAAA8AAAAAAAAAABwAAA+AAAAAAAAAARwAAAIAAA
-			AAAAAAASwAAACAEAAAAAAAAB0AAA8AAAAAAAAAAQ0AAABAAAAAAA
-			AAA=
-			</data>
-			<key>name</key>
-			<string>reaction</string>
-		</dict>
-	</array>
+	<array/>
 	<key>FXSidebarUpgradedSharedSearchToTwelve</key>
 	<true/>
 	<key>FXSidebarUpgradedToTenFourteen</key>
@@ -1854,19 +2189,21 @@
 	<key>FontSizeCategory</key>
 	<string>Custom</string>
 	<key>GoToField</key>
-	<string>~/.dotfiles</string>
+	<string>/Users/wilhall/Library/Containers/com.docker.docker/Data/vms/0/data</string>
 	<key>GoToFieldHistory</key>
 	<array>
+		<string>/Users/wilhall/Library/Containers/com.docker.docker/Data/vms/0/data</string>
+		<string>/Users/wilhall/Library</string>
+		<string>/Users/wilhall/Library/QuickLook</string>
 		<string>/Users/wilhall/.dotfiles</string>
 		<string>/Users/wilhall/.zsh</string>
-		<string>/Users/wilhall</string>
-		<string>/Users/wilhall/.dotfiles/appconfig/iTerm2</string>
-		<string>/Users/wilhall/.dotfiles/appconfig/Raycast</string>
 	</array>
 	<key>ICloudViewSettings</key>
 	<dict>
 		<key>ExtendedListViewSettingsV2</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>13</real>
 			<key>calculateAllSizes</key>
 			<false/>
 			<key>columns</key>
@@ -1879,7 +2216,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>300</integer>
+					<integer>554</integer>
 				</dict>
 				<dict>
 					<key>ascending</key>
@@ -2017,11 +2354,11 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>0.0</real>
+			<real>168</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
-			<string>dateModified</string>
+			<string>name</string>
 			<key>textSize</key>
 			<real>13</real>
 			<key>useRelativeDates</key>
@@ -2066,6 +2403,8 @@
 		</dict>
 		<key>ListViewSettings</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>13</real>
 			<key>calculateAllSizes</key>
 			<false/>
 			<key>columns</key>
@@ -2145,7 +2484,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>300</integer>
+					<integer>554</integer>
 				</dict>
 				<key>size</key>
 				<dict>
@@ -2175,11 +2514,11 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>0.0</real>
+			<real>168</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
-			<string>dateModified</string>
+			<string>name</string>
 			<key>textSize</key>
 			<real>13</real>
 			<key>useRelativeDates</key>
@@ -2200,7 +2539,7 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{317, 381}, {920, 436}}</string>
+			<string>{{1911, 701}, {921, 416}}</string>
 		</dict>
 	</dict>
 	<key>InspectorWindow.Location</key>
@@ -2234,7 +2573,7 @@
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{800, 450}</string>
+	<string>{800, 951}</string>
 	<key>NSToolbar Configuration Browser</key>
 	<dict>
 		<key>TB Default Item Identifiers</key>
@@ -2277,9 +2616,11 @@
 		<string>@$`</string>
 	</dict>
 	<key>NSWindow Frame GoToSheet</key>
-	<string>1690 545 460 180 0 0 2560 1415 </string>
+	<string>2082 922 460 180 0 0 5120 1415 </string>
+	<key>NSWindow Frame GoToWindow</key>
+	<string>695 708 460 180 0 0 1800 1125 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>616 249 800 365 0 0 1512 944 </string>
+	<string>49 136 800 891 0 0 1800 1125 </string>
 	<key>NSWindowTabbingShoudShowTabBarKey-com.apple.finder.TBrowserWindow</key>
 	<true/>
 	<key>NetworkViewSettings</key>
@@ -2615,16 +2956,16 @@
 	<string>ADVD</string>
 	<key>RecentMoveAndCopyDestinations</key>
 	<array>
+		<string>file:///Volumes/%3C3/kouignamann%20backup/Cloud%20Drive/</string>
+		<string>file:///Volumes/%3C3/kouignamann%20backup/</string>
+		<string>file:///Users/wilhall/Downloads/_3d_printing/_PRINT%20QUEUE/studio%20prints/</string>
+		<string>file:///Users/wilhall/Downloads/_3d_printing/_PRINT%20QUEUE/</string>
 		<string>file:///Users/wilhall/Downloads/</string>
-		<string>file:///Users/wilhall/Downloads/Gingerbread/</string>
-		<string>file:///Users/wilhall/Downloads/Gingerbread/Elmendorf%20Gingerbread/</string>
 		<string>file:///Applications/</string>
-		<string>file:///Users/wilhall/Downloads/printers_flowers/cut_sheets/</string>
-		<string>file:///Users/wilhall/Documents/</string>
-		<string>file:///Users/wilhall/workspace/augusthealth/august-frontend/src/careapp/webworkers/</string>
-		<string>file:///Users/wilhall/workspace/augusthealth/august-frontend/src/careapp/</string>
-		<string>file:///Users/wilhall/Pictures/</string>
-		<string>file:///Users/wilhall/Documents/_/</string>
+		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Professional%20Development/Plume%20&amp;%20Pith/</string>
+		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/</string>
+		<string>file:///Users/wilhall/Downloads/Michaela%20Stencils/</string>
+		<string>file:///Users/wilhall/Downloads/_3d_printing/SCAD/</string>
 	</array>
 	<key>RecentsArrangeGroupViewBy</key>
 	<string>Date Last Opened</string>
@@ -2652,6 +2993,8 @@
 	<dict>
 		<key>ExtendedListViewSettingsV2</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>13</real>
 			<key>calculateAllSizes</key>
 			<false/>
 			<key>columns</key>
@@ -2664,7 +3007,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>300</integer>
+					<integer>516</integer>
 				</dict>
 				<dict>
 					<key>ascending</key>
@@ -2812,6 +3155,8 @@
 		</dict>
 		<key>ListViewSettings</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>13</real>
 			<key>calculateAllSizes</key>
 			<false/>
 			<key>columns</key>
@@ -2891,7 +3236,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>300</integer>
+					<integer>516</integer>
 				</dict>
 				<key>size</key>
 				<dict>
@@ -2942,7 +3287,7 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{1474, 288}, {920, 436}}</string>
+			<string>{{1701, 438}, {920, 436}}</string>
 		</dict>
 	</dict>
 	<key>ShowExternalHardDrivesOnDesktop</key>
@@ -2970,7 +3315,7 @@
 	<key>SidebarTagsSctionDisclosedState</key>
 	<true/>
 	<key>SidebarWidth</key>
-	<real>178</real>
+	<real>177</real>
 	<key>SidebariCloudDriveSectionDisclosedState</key>
 	<true/>
 	<key>SmartSharedSearchViewSettings</key>
@@ -2997,8 +3342,10 @@
 	<dict>
 		<key>ExtendedListViewSettingsV2</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>11</real>
 			<key>calculateAllSizes</key>
-			<false/>
+			<true/>
 			<key>columns</key>
 			<array>
 				<dict>
@@ -3010,6 +3357,16 @@
 					<true/>
 					<key>width</key>
 					<integer>300</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>ubiquity</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>35</integer>
 				</dict>
 				<dict>
 					<key>ascending</key>
@@ -3089,17 +3446,61 @@
 					<key>visible</key>
 					<false/>
 					<key>width</key>
-					<integer>200</integer>
+					<integer>181</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>dateAdded</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>181</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>shareOwner</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>210</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>shareLastEditor</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>210</integer>
+				</dict>
+				<dict>
+					<key>ascending</key>
+					<false/>
+					<key>identifier</key>
+					<string>invitationStatus</string>
+					<key>visible</key>
+					<false/>
+					<key>width</key>
+					<integer>210</integer>
 				</dict>
 			</array>
 			<key>iconSize</key>
-			<integer>16</integer>
+			<real>32</real>
+			<key>scrollPositionX</key>
+			<real>0.0</real>
+			<key>scrollPositionY</key>
+			<real>41</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
 			<string>name</string>
 			<key>textSize</key>
-			<integer>13</integer>
+			<real>11</real>
 			<key>useRelativeDates</key>
 			<true/>
 			<key>viewOptionsVersion</key>
@@ -3149,8 +3550,10 @@
 		</dict>
 		<key>ListViewSettings</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>11</real>
 			<key>calculateAllSizes</key>
-			<false/>
+			<true/>
 			<key>columns</key>
 			<dict>
 				<key>comments</key>
@@ -3184,7 +3587,7 @@
 					<key>visible</key>
 					<false/>
 					<key>width</key>
-					<integer>200</integer>
+					<integer>181</integer>
 				</dict>
 				<key>dateModified</key>
 				<dict>
@@ -3254,13 +3657,17 @@
 				</dict>
 			</dict>
 			<key>iconSize</key>
-			<integer>16</integer>
+			<real>32</real>
+			<key>scrollPositionX</key>
+			<real>0.0</real>
+			<key>scrollPositionY</key>
+			<real>41</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
 			<string>name</string>
 			<key>textSize</key>
-			<integer>13</integer>
+			<real>11</real>
 			<key>useRelativeDates</key>
 			<true/>
 			<key>viewOptionsVersion</key>
@@ -3277,6 +3684,8 @@
 		<integer>1</integer>
 		<key>ExtendedListViewSettingsV2</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>13</real>
 			<key>calculateAllSizes</key>
 			<false/>
 			<key>columns</key>
@@ -3427,11 +3836,11 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>0.0</real>
+			<real>1470</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
-			<string>name</string>
+			<string>dateModified</string>
 			<key>textSize</key>
 			<real>13</real>
 			<key>useRelativeDates</key>
@@ -3441,6 +3850,8 @@
 		</dict>
 		<key>ListViewSettings</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>13</real>
 			<key>calculateAllSizes</key>
 			<false/>
 			<key>columns</key>
@@ -3550,11 +3961,11 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>0.0</real>
+			<real>1470</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
-			<string>name</string>
+			<string>dateModified</string>
 			<key>textSize</key>
 			<real>13</real>
 			<key>useRelativeDates</key>
@@ -3575,11 +3986,11 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{471, 99}, {920, 436}}</string>
+			<string>{{2514, 463}, {921, 416}}</string>
 		</dict>
 	</dict>
 	<key>ViewOptionsWindow.Location</key>
-	<string>{886, 259}</string>
+	<string>{2951, 327}</string>
 	<key>_FXSortFoldersFirst</key>
 	<true/>
 	<key>_FXSortFoldersFirstOnDesktop</key>

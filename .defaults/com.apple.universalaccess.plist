@@ -45,10 +45,218 @@
 				<key>State</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-10-05 09:22:07</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-10-05 09:22:23</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-10-23 20:31:40</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-10-23 20:32:09</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-10-23 20:32:10</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-11-15 18:15:02</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-04 07:49:03</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-04 07:49:29</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-04 07:49:53</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-04 08:13:08</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-04 08:13:49</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-04 08:13:49</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-04 08:13:50</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-04 08:53:14</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-04 15:01:36</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-19 19:29:14</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-19 22:54:26</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-19 22:55:14</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-19 22:55:15</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2023-12-19 22:55:17</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
+	<key>closeViewCustomHotkeyKey</key>
+	<dict>
+		<key>AX_ZOOM_FREEZE_PANNING</key>
+		<dict>
+			<key>charCode</key>
+			<integer>65535</integer>
+			<key>keyCode</key>
+			<integer>65535</integer>
+			<key>modifiers</key>
+			<integer>0</integer>
+		</dict>
+		<key>AX_ZOOM_MONITOR_SELECTION</key>
+		<dict>
+			<key>charCode</key>
+			<integer>65535</integer>
+			<key>keyCode</key>
+			<integer>65535</integer>
+			<key>modifiers</key>
+			<integer>0</integer>
+		</dict>
+		<key>AX_ZOOM_TEMP_DETACH</key>
+		<dict>
+			<key>charCode</key>
+			<integer>65535</integer>
+			<key>keyCode</key>
+			<integer>65535</integer>
+			<key>modifiers</key>
+			<integer>1310720</integer>
+		</dict>
+		<key>AX_ZOOM_TEMP_TOGGLE</key>
+		<dict>
+			<key>charCode</key>
+			<integer>65535</integer>
+			<key>keyCode</key>
+			<integer>65535</integer>
+			<key>modifiers</key>
+			<integer>786432</integer>
+		</dict>
+		<key>AX_ZOOM_TOGGLE_FS_AND_PIP</key>
+		<dict>
+			<key>charCode</key>
+			<integer>102</integer>
+			<key>keyCode</key>
+			<integer>3</integer>
+			<key>modifiers</key>
+			<integer>1572864</integer>
+		</dict>
+	</dict>
 	<key>closeViewDesiredZoomFactor</key>
-	<real>2.0017604540529059</real>
+	<real>1.0818160772323608</real>
 	<key>closeViewHotkeysEnabled</key>
 	<true/>
 	<key>closeViewScrollWheelToggle</key>
@@ -63,6 +271,8 @@
 	<real>1</real>
 	<key>closeViewZoomFactorBeforeTermination</key>
 	<real>1</real>
+	<key>closeViewZoomMode</key>
+	<integer>0</integer>
 	<key>closeViewZoomedIn</key>
 	<false/>
 	<key>com.apple.custommenu.apps</key>
@@ -100,12 +310,12 @@
 	<true/>
 	<key>displaysLastCursorLocation</key>
 	<dict>
-		<key>1</key>
+		<key>2</key>
 		<dict>
 			<key>X</key>
-			<real>1229.203125</real>
+			<real>1919.98046875</real>
 			<key>Y</key>
-			<real>421.77734375</real>
+			<real>882.421875</real>
 		</dict>
 	</dict>
 	<key>grayscale</key>
@@ -124,7 +334,7 @@
 	AAAYAAAAAAAAAAAAAAAAAAAA2g==
 	</data>
 	<key>keyboardAccessEnabled</key>
-	<true/>
+	<false/>
 	<key>keyboardAccessFocusRingTimeout</key>
 	<real>15</real>
 	<key>keyboardAccessPassthroughMode</key>

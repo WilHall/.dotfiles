@@ -7,9 +7,9 @@
 		<string>CKAcccountInfoCacheReset</string>
 	</array>
 	<key>CKStartupTime</key>
-	<integer>1692014563</integer>
+	<integer>1701720068</integer>
 	<key>DatabaseQueue-LastVacuumDate-/Users/wilhall/Library/Containers/com.ranchero.NetNewsWire-Evergreen/Data/Library/Application Support/NetNewsWire/Accounts/2_iCloud/Sync.sqlite3</key>
-	<date>2023-09-06T16:52:34Z</date>
+	<date>2023-12-14T13:22:01Z</date>
 	<key>NSToolbar Configuration MainWindowToolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -22,7 +22,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame MainWindow</key>
-	<string>45 0 1467 944 0 0 1512 944 </string>
+	<string>333 91 1467 944 0 0 1800 1125 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>-821 959 400 135 -1280 0 1280 1415 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -32,7 +32,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-09-12T15:18:16Z</date>
+	<date>2023-12-14T13:22:02Z</date>
 	<key>SendCrashLogsAutomatically</key>
 	<true/>
 	<key>addWebFeedAccountID</key>
@@ -50,7 +50,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwRElUkbnVsbNINDg8QViRj
-	bGFzc18QD0NoYW5nZVRva2VuRGF0YYADgAJPECIfCgMIyRYYACIWCJaZua6zwKnC6AEQ
+	bGFzc18QD0NoYW5nZVRva2VuRGF0YYADgAJPECIfCgMI5BYYACIWCJaZua6zwKnC6AEQ
 	0N37ytKh/rytASgA0hMUFRZaJGNsYXNzbmFtZVgkY2xhc3Nlc18QE0NLU2VydmVyQ2hh
 	bmdlVG9rZW6iFRdYTlNPYmplY3QIERokKTI3SUxRU1heY2p8foClqrW+1NcAAAAAAAAB
 	AQAAAAAAAAAYAAAAAAAAAAAAAAAAAAAA4A==
@@ -58,7 +58,7 @@
 	<key>firstRunDate</key>
 	<date>2023-06-05T12:49:46Z</date>
 	<key>lastImageCacheFlushDate</key>
-	<date>2023-09-12T15:18:15Z</date>
+	<date>2023-12-14T13:22:01Z</date>
 	<key>openInBrowserInBackground</key>
 	<false/>
 	<key>twitterDeprecationAlertShown</key>
@@ -82,13 +82,13 @@
 		<array>
 			<dict>
 				<key>accountID</key>
-				<string>iCloud</string>
+				<string>OnMyMac</string>
 				<key>type</key>
 				<string>account</string>
 			</dict>
 			<dict>
 				<key>accountID</key>
-				<string>OnMyMac</string>
+				<string>iCloud</string>
 				<key>type</key>
 				<string>account</string>
 			</dict>

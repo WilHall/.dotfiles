@@ -80,37 +80,39 @@ end
 function undockedMonoLayout()
   local laptopScreen = getLaptopScreen()
   return {
-    { "Spotify",       nil, laptopScreen, positions.full,    nil, nil },
-    { "Mail",          nil, laptopScreen, positions.full,    nil, nil },
-    { "Linear",        nil, laptopScreen, positions.full,    nil, nil },
-    { "Messages",      nil, laptopScreen, positions.lower50, nil, nil },
-    { "Slack",         nil, laptopScreen, positions.right66, nil, nil },
-    { "Google Chrome", nil, laptopScreen, positions.full,    nil, nil },
-    { "WebStorm",      nil, laptopScreen, positions.full,    nil, nil },
-    { "BambuStudio",   nil, laptopScreen, positions.full,    nil, nil },
-    { "OrcaSlicer",    nil, laptopScreen, positions.full,    nil, nil },
-    { "Blender",       nil, laptopScreen, positions.full,    nil, nil },
-    { "iTerm2",        nil, laptopScreen, positions.full,    nil, nil },
+    { "Spotify",         nil, laptopScreen, positions.full,    nil, nil },
+    { "Mail",            nil, laptopScreen, positions.full,    nil, nil },
+    { "Linear",          nil, laptopScreen, positions.full,    nil, nil },
+    { "Messages",        nil, laptopScreen, positions.lower50, nil, nil },
+    { "Slack",           nil, laptopScreen, positions.right66, nil, nil },
+    { "Google Chrome",   nil, laptopScreen, positions.full,    nil, nil },
+    { "WebStorm",        nil, laptopScreen, positions.full,    nil, nil },
+    { "BambuStudio",     nil, laptopScreen, positions.full,    nil, nil },
+    { "OrcaSlicer",      nil, laptopScreen, positions.full,    nil, nil },
+    { "Adobe Lightroom", nil, laptopScreen, positions.full,    nil, nil },
+    { "Blender",         nil, laptopScreen, positions.full,    nil, nil },
+    { "Copilot",         nil, laptopScreen, positions.full,    nil, nil },
+    { "iTerm2",          nil, laptopScreen, positions.full,    nil, nil },
   }
 end
 
 function dockedMonoLayout()
   local externalScreen = getExternalScreen()
   return {
-    { "Spotify",       nil, externalScreen, positions.left25,   nil, nil },
-    { "Mail",          nil, externalScreen, positions.left25,   nil, nil },
-    { "Notion",        nil, externalScreen, positions.left25,   nil, nil },
-    { "Linear",        nil, externalScreen, positions.left25,   nil, nil },
-    { "Messages",      nil, externalScreen, positions.right25b, nil, nil },
-    { "Slack",         nil, externalScreen, positions.right25,  nil, nil },
-    { "Google Chrome", nil, externalScreen, positions.left25,   nil, nil },
-    { "WebStorm",      nil, externalScreen, positions.center50, nil, nil },
-    { "BambuStudio",   nil, externalScreen, positions.center50, nil, nil },
-    { "OrcaSlicer",    nil, externalScreen, positions.center50, nil, nil },
-    { "Blender",       nil, externalScreen, positions.center50, nil, nil },
-    { "Fork",          nil, externalScreen, positions.center50, nil, nil },
-    { "Copilot",       nil, externalScreen, positions.center50, nil, nil },
-    { "iTerm2",        nil, externalScreen, positions.center50, nil, nil },
+    { "Spotify",         nil, externalScreen, positions.left25,   nil, nil },
+    { "Mail",            nil, externalScreen, positions.left25,   nil, nil },
+    { "Linear",          nil, externalScreen, positions.left25,   nil, nil },
+    { "Messages",        nil, externalScreen, positions.right25b, nil, nil },
+    { "Slack",           nil, externalScreen, positions.right25,  nil, nil },
+    { "Google Chrome",   nil, externalScreen, positions.left25,   nil, nil },
+    { "WebStorm",        nil, externalScreen, positions.center50, nil, nil },
+    { "BambuStudio",     nil, externalScreen, positions.center50, nil, nil },
+    { "OrcaSlicer",      nil, externalScreen, positions.center50, nil, nil },
+    { "Adobe Lightroom", nil, externalScreen, positions.center50, nil, nil },
+    { "Blender",         nil, externalScreen, positions.center50, nil, nil },
+    { "Fork",            nil, externalScreen, positions.center50, nil, nil },
+    { "Copilot",         nil, externalScreen, positions.center50, nil, nil },
+    { "iTerm2",          nil, externalScreen, positions.center50, nil, nil },
   }
 end
 

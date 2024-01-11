@@ -5,12 +5,12 @@ root: ~/workspace
 
 windows:
   - main:
-      root: ~/workspace/augusthealth
+      root: ~/workspace
       layout: 9a96,231x60,0,0{134x60,0,0,0,96x60,135,0[96x18,135,0,6,96x41,135,19,7]}
       panes:
-        - cd august-frontend && vim
-        - mprocs
-        - cd august-frontend && clear
+        - 
+        - 
+        - 
   - dotfiles:
       root: ~/.dotfiles/
       layout: main-vertical

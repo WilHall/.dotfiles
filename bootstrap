@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # name: bootstrap
 # author: Wil Hall
 # email: wil@wilhall.com
@@ -24,9 +24,9 @@ detect_platform() {
 }
 
 configure_shell_options() {
-  if [ $PLATFORM = "macos" ]; then
+  if [ -n "$ZSH_VERSION" ]; then
     setopt extended_glob
-  elif [ $PLATFORM = "wsl" ]; then
+  elif [ -n "$BASH_VERSION" ]; then
     shopt -s extglob
   fi
 }
@@ -74,7 +74,7 @@ manual_install() {
     tar -xf $HOME/tmp/unused.tar.gz --strip-components=1 -C $HOME/bin
   fi
 
-  if [ ! -f $HOME/.pure ]; then
+  if [ ! -d $HOME/.pure ]; then
     git clone https://github.com/sindresorhus/pure.git "$HOME/.pure"
   fi
 }

@@ -2,7 +2,7 @@ ZSH_THEME=""
 COMPLETION_WAITING_DOTS="false"
 CASE_SENSITIVE="true"
 
-fpath+=$HOME/.zsh/pure
+fpath+=$HOME/.pure
 autoload -U promptinit; promptinit
 prompt pure
 
@@ -48,3 +48,5 @@ if [[ "$PLATFORM" == "macos" ]]; then
 elif [[ "$PLATFORM" = "wsl" ]]; then
   . "$HOME/.asdf/asdf.sh"
 fi
+
+if [ "$TMUX" = "" ]; then tmuxinator start workspace; fi

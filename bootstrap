@@ -23,6 +23,7 @@ winget_install() {
 }
 
 aptitude_install() {
+  curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
   sudo add-apt-repository ppa:neovim-ppa/stable -y
   source /etc/os-release
   wget -O $HOME/tmp/packages-microsoft-prod.deb https://packages.microsoft.com/config/ubuntu/$VERSION_ID/packages-microsoft-prod.deb
@@ -37,6 +38,11 @@ aptitude_install() {
 }
 
 manual_install() {
+  powershell.exe -C "Add-AppxPackage -Path $(wslpath -w $HOME/.dotfiles/msix)/affinity-photo-2.3.1.msix"
+  powershell.exe -C "Add-AppxPackage -Path $(wslpath -w $HOME/.dotfiles/msix)/affinity-designer-2.3.1.msix"
+  powershell.exe -C "Add-AppxPackage -Path $(wslpath -w $HOME/.dotfiles/msix)/affinity-publisher-2.3.1.msix"
+  wget https://dl.todesktop.com/210203cqcj00tw1/windows/nsis/x64 -O $HOME/.tmp/morgen.exe && chmod +x $HOME/tmp/morgen.exe && $HOME/tmp/morgen.exe
+
   if [ ! -f /usr/local/bin/fx ]; then
     curl https://fx.wtf/install.sh | sudo sh
   fi
@@ -96,6 +102,11 @@ install_homebrew_bundle() {
       /opt/homebrew/bin/brew bundle
     fi
   fi
+}
+
+copy_userprofile_files() {
+  WINDOWS_PROFILE_PATH=$(wslpath "$(wslvar USERPROFILE)")
+  cp $HOME/.dotfiles/userprofile/* "$WINDOWS_PROFILE_PATH"
 }
 
 symlink_dotfiles() {
@@ -209,6 +220,7 @@ bootstrap() {
   make_user_bin
   
   if [ $PLATFORM = "wsl" ]; then
+    copy_userprofile_files
     winget_install
     aptitude_install
     manual_install

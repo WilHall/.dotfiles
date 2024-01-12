@@ -8,12 +8,12 @@ windows:
       root: ~/workspace
       layout: 9a96,231x60,0,0{134x60,0,0,0,96x60,135,0[96x18,135,0,6,96x41,135,19,7]}
       panes:
-        - 
-        - 
-        - 
+        - clear
+        - clear
+        - clear
   - dotfiles:
       root: ~/.dotfiles/
       layout: main-vertical
       panes:
-        -
-        -
+        - clear
+        - clear

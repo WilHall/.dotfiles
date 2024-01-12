@@ -10,5 +10,28 @@
 		"{2c4de342-38b7-51cf-b940-2309a097f518}",
 		"{574e775e-4f2a-5b96-ac1e-a2962a402336}"
 	],
-	"settingsHash" : "98400c9ec35d3a94-01da43ff3f9d790b"
+	"persistedWindowLayouts" : 
+	[
+		{
+			"initialPosition" : "1662,154",
+			"initialSize" : 
+			{
+				"height" : 586.0,
+				"width" : 1113.0
+			},
+			"launchMode" : "default",
+			"tabLayout" : 
+			[
+				{
+					"action" : "newTab",
+					"commandline" : "%SystemRoot%\\System32\\cmd.exe",
+					"profile" : "Default",
+					"startingDirectory" : null,
+					"suppressApplicationTitle" : false,
+					"tabTitle" : "Default"
+				}
+			]
+		}
+	],
+	"settingsHash" : "d8c4e1cf627b393f-01da4584c1636085"
 }

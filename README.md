@@ -63,3 +63,31 @@ not include the settings you are looking for, try the following:
 1. Try backing up those plist domains to see what they contain by running `dx
    --backup <PLIST_FILE_NAME>` (without the `.plist` extension)
 
+### Backing Up and Restoring Windows AppData and Registry settings 
+
+I've created a command line utility `wx` for backing up and restoring Windows
+APpData and Registry settings to my dotfiles:
+
+***Note: If you are committing backed up settings to a public repository,
+make sure to audit them first. Some applications may store sensitive information
+such as license keys, names, emails, or file system information.***
+
+```shell
+usage: wx
+
+This utility performs backups and restorations of Windows application settings.
+Backups are managed in '~/.appdata/'.
+
+OPTIONS:
+   -h | --help        Show this message
+   -r | --restore     <SCOPE> <DOMAIN> [FILE_GLOB] The domain to restore
+   -R | --restore-all <SCOPE> Restore all domains that have backups
+   -b | --backup      <SCOPE> <DOMAIN> [FILE_GLOB] The domain to back up
+   -B | --backup-all  <SCOPE> Back up all domains that already have backups
+
+<SCOPE> is "Roaming", "Local", or "Registry"
+<DOMAIN> is one of:
+ - When <SCOPE> is "Registry": The registry key to operate on.
+ - When <SCOPE> is "Roaming" or "Local": A subdirectory of %USERPROFILE%/AppData/<Roaming|Local>; may be a subpath.
+```
+

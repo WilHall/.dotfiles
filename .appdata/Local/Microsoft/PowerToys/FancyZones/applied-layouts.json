@@ -1,0 +1,21 @@
+{
+  "applied-layouts": [
+    {
+      "device": {
+        "monitor": "GSM9E7A",
+        "monitor-instance": "5\u002622c3578\u00260\u0026UID184578",
+        "monitor-number": 1,
+        "serial-number": "490766",
+        "virtual-desktop": "{00000000-0000-0000-0000-000000000000}"
+      },
+      "applied-layout": {
+        "uuid": "{4D928D2A-275B-4F6E-9464-FBE98DE3E77B}",
+        "type": "priority-grid",
+        "show-spacing": true,
+        "spacing": 16,
+        "zone-count": 3,
+        "sensitivity-radius": 20
+      }
+    }
+  ]
+}

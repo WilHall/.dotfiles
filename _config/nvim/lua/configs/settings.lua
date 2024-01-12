@@ -22,6 +22,7 @@ vim.cmd [[
 
     set showcmd
     set clipboard^=unnamed,unnamedplus
+
     set hidden
     set laststatus=2
     set nofixendofline

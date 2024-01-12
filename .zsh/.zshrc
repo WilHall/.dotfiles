@@ -26,10 +26,10 @@ antigen bundle dircycle
 antigen bundle tymm/zsh-directory-history
 antigen bundle mafredri/zsh-async@main
 antigen bundle zsh-users/zsh-completions
-antigen bundle zdharma-continuum/fast-syntax-highlighting
-antigen bundle zsh-autosuggestions
 antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle Aloxaf/fzf-tab
+antigen bundle zsh-autosuggestions
+antigen bundle zdharma-continuum/fast-syntax-highlighting
 
 antigen apply
 
@@ -49,4 +49,5 @@ elif [[ "$PLATFORM" = "wsl" ]]; then
   . "$HOME/.asdf/asdf.sh"
 fi
 
+eval $(ssh-agent)
 if [ "$TMUX" = "" ]; then tmuxinator start workspace; fi

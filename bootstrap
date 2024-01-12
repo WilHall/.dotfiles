@@ -1,35 +1,4 @@
-#!/bin/zsh
-# name: bootstrap
-# author: Wil Hall
-# email: wil@wilhall.com
-
-if [ "$#" -ne 1 ] && [ ! -f "$HOME/.auth" ]; then
-  echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>"
-  exit 1
-fi
-
-DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN=$1
-SETUP_HOMEBREW=false
-
-detect_platform() {
-  UNAME=$(uname -a)
-  
-  case "${UNAME}" in
-    *microsoft*) PLATFORM=wsl;;
-    *Darwin*)    PLATFORM=macos;;
-    *Linux*)     PLATFORM=linux;;
-    *)           PLATFORM=unknown;;
-  esac
-
-}
-
-configure_shell_options() {
-  if [ -n "$ZSH_VERSION" ]; then
-    setopt extended_glob
-  elif [ -n "$BASH_VERSION" ]; then
-    shopt -s extglob
-  fi
-}
+#!/bin/zsh name: bootstrap author: Wil Hall email: wil@wilhall.com if [ "$#" -ne 1 ] && [ ! -f "$HOME/.auth" ]; then echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>" exit 1 fi DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN=$1 SETUP_HOMEBREW=false detect_platform() { UNAME=$(uname -a) case "${UNAME}" in *microsoft*) PLATFORM=wsl;; *Darwin*)    PLATFORM=macos;; *Linux*)     PLATFORM=linux;; *)           PLATFORM=unknown;; esac } configure_shell_options() { if [ -n "$ZSH_VERSION" ]; then setopt extended_glob elif [ -n "$BASH_VERSION" ]; then shopt -s extglob fi }
 
 create_auth_dotfile() {
   if [ ! -f "$HOME/.auth" ]; then
@@ -69,7 +38,6 @@ manual_install() {
   fi
 
   if [ ! -f $HOME/bin/unused ]; then
-    mkdir -p $HOME/tmp
     wget -O $HOME/tmp/unused.tar.gz https://github.com/unused-code/unused/releases/download/0.4.0/unused-0.4.0-x86_64-unknown-linux-musl.tar.gz
     tar -xf $HOME/tmp/unused.tar.gz --strip-components=1 -C $HOME/bin
   fi
@@ -77,13 +45,18 @@ manual_install() {
   if [ ! -d $HOME/.pure ]; then
     git clone https://github.com/sindresorhus/pure.git "$HOME/.pure"
   fi
+
+  chmod +x $HOME/bin/*
 }
 
 configure_wsl_windows_crossover_paths() {
   WINDOWS_PROFILE_PATH=$(wslpath "$(wslvar USERPROFILE)")
   WINDOWS_USER_BIN_PATH="$(wslpath "$(wslvar USERPROFILE)")/bin"
-  sudo grep -qF "$WINDOWS_USER_BIN_PATH" /etc/zsh/zshenv || echo "export
-  PATH=\"$WINDOWS_USER_BIN_PATH:\$PATH\"" | sudo tee -a /etc/zsh/zshenv
+  WINDOWS_POWERSHELL_BIN_PATH="$(wslpath "$(wslvar WINDIR)")/System32/WindowsPowerShell/v1.0"
+  WINDOWS_APPS_PATH="$(wslpath "$(wslvar USERPROFILE)")/AppData/Local/Microsoft/WindowsApps"
+  WINDOWS_CROSSOVER_PATHS="$WINDOWS_USER_BIN_PATH:$WINDOWS_APPS_PATH:$WINDOWS_POWERSHELL_BIN_PATH"
+  sudo grep -qF "$WINDOWS_CROSSOVER_PATHS" /etc/zsh/zshenv || echo "export
+  PATH=\"$WINDOWS_CROSSOVER_PATHS:\$PATH\"" | sudo tee -a /etc/zsh/zshenv
 }
 
 install_homebrew() {
@@ -113,7 +86,7 @@ configure_paths() {
   if [ $PLATFORM = "macos" ]; then
     sudo cp $HOME/.dotfiles/_etc_paths/* /etc/paths.d
   elif [ $PLATFORM = "wsl" ]; then
-    PATH_AMENDMENT="$HOME/.asdf/bin"
+    PATH_AMENDMENT="$HOME/bin:$HOME/.asdf/bin"
     sudo grep -qF "$PATH_AMENDMENT" /etc/zsh/zshenv || echo "export PATH=\"$PATH_AMENDMENT:\$PATH\"" | sudo tee -a /etc/zsh/zshenv
   fi
 }
@@ -151,9 +124,10 @@ install_fonts() {
   if [ $PLATFORM = "macos" ]; then
     find . -name "*.[ot]tf" -type f -exec cp {} "$HOME/Library/Fonts" \; 
   elif [ $PLATFORM = "wsl" ]; then
-    echo "Installing fonts via Powershell"
-    # TODO: this command hangs 
-    # powershell.exe -Command "$fonts = (New-Object -com Shell.Application).Namespace(0x14); Get-ChildItem -Path $(wslpath -w $HOME/.dotfiles/fonts)* -Recurse -include *.ttf,*.otf"
+    echo "Installing fonts via Ubuntu & Powershell"
+    find . -name "*.[ot]tf" -type f -exec sudo cp {} "/usr/local/share/fonts" \;
+    sudo fc-cache -fv
+    powershell.exe -Command "Get-ChildItem -Path $(wslpath -w $HOME/.dotfiles/fonts)* -Recurse -include *.ttf,*.otf | % { (New-Object -ComObject Shell.Application).Namespace(0x14).CopyHere(\"$_.fullname\") }"
   fi
 }
 

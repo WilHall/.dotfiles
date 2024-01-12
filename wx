@@ -1,0 +1,185 @@
+#!/bin/bash
+# name: wx
+# author: Wil Hall
+# email: wil@wilhall.com
+
+READBACK=true
+
+usage()
+{
+cat << EOF
+usage: $(basename $0)
+
+This utility performs backups and restorations of Windows application settings.
+Backups are managed in '~/.appdata/'.
+
+OPTIONS:
+   -h | --help        Show this message
+   -r | --restore     <SCOPE> <DOMAIN> [FILE_GLOB] The domain to restore
+   -R | --restore-all <SCOPE> Restore all domains that have backups
+   -b | --backup      <SCOPE> <DOMAIN> [FILE_GLOB] The domain to back up
+   -B | --backup-all  <SCOPE> Back up all domains that already have backups
+
+<SCOPE> is "Roaming", "Local", or "Registry"
+<DOMAIN> is one of:
+ - When <SCOPE> is "Registry": The registry key to operate on.
+ - When <SCOPE> is "Roaming" or "Local": A subdirectory of %USERPROFILE%/AppData/<Roaming|Local>; may be a subpath.
+
+EOF
+}
+
+resolve_domain() {
+  if [ $SCOPE = "Registry" ]; then
+    echo "$1"
+  else
+    WINDOWS_APPDATA_PATH="$(wslpath "$(wslvar USERPROFILE)")/AppData"
+    DOMAIN="$(echo "$1" | tr \\\\ "/")"
+    echo "$WINDOWS_APPDATA_PATH/$SCOPE/$DOMAIN"
+  fi
+}
+
+backup() {
+  if [ $SCOPE = "Registry" ]; then
+    REG_FILE_NAME="$(echo "$1" | tr \\\\ "%")"
+    reg.exe export "$1" "$HOME/.dotfiles/.appdata/$SCOPE/$REG_FILE_NAME.reg" /y
+  else
+    BACKUP_PATH="$HOME/.appdata/$(echo $1 | cut -d'/' -f7- | rev | cut -d'/' -f2- | rev)"
+    rsync -zarvm --prune-empty-dirs --mkpath --include="*/" --include="${2:-"*"}" --exclude="*" "$1" "$BACKUP_PATH"
+  fi
+}
+
+restore() {
+  if [ $SCOPE = "Registry" ]; then
+    REG_FILE_NAME="$(echo "$1" | tr \\\\ "%")"
+    reg.exe import "$HOME/.dotfiles/.appdata/$SCOPE/$REG_FILE_NAME.reg"
+  else
+    BACKUP_PATH="$HOME/.appdata/$(echo $1 | cut -d'/' -f7-)"
+    RESTORE_PATH="$(echo $1 | rev | cut -d'/' -f2- | rev)"
+    
+    if [ ! -d "$BACKUP_PATH" ]; then
+      echo "No backup exists for the domain '$1'"
+      exit 1
+    fi
+
+    rsync -zarvm --prune-empty-dirs --mkpath --include="*/" --include="${2:-"*"}" --exclude="*" "$BACKUP_PATH" "$RESTORE_PATH"
+  fi
+}
+
+backup_all() {
+  READBACK=false
+
+  if [ $SCOPE = "Registry" ]; then
+    for BACKUP_FILE in $HOME/.dotfiles/.appdata/$SCOPE/*.reg; do
+      FILENAME="${BACKUP_FILE##*/}"
+      REGISTRY_KEY="$(echo "${FILENAME%.*}" | tr "%" \\\\)"
+      reg.exe export "$REGISTRY_KEY" "$BACKUP_FILE" /y
+    done
+  else
+    WINDOWS_APPDATA_PATH="$(wslpath "$(wslvar USERPROFILE)")/AppData"
+    shopt -s globstar dotglob
+    for BACKUP_FILE in $HOME/.appdata/$SCOPE/**/*; do
+      if [ -f "$BACKUP_FILE" ]; then
+        RELATIVE_PATH="$(echo $BACKUP_FILE | cut -d'/' -f6-)"
+        SOURCE_PATH="$WINDOWS_APPDATA_PATH/$SCOPE/$RELATIVE_PATH"
+        BACKUP_PATH="$HOME/.appdata/$SCOPE/$RELATIVE_PATH"
+        rsync -az --mkpath "$SOURCE_PATH" "$BACKUP_PATH"
+      fi
+    done
+  fi
+}
+
+restore_all() {
+  READBACK=false
+
+  if [ $SCOPE = "Registry" ]; then
+    for BACKUP_FILE in $HOME/.dotfiles/.appdata/$SCOPE/*.reg; do
+      reg.exe import "$BACKUP_FILE"
+    done
+  else
+    WINDOWS_APPDATA_PATH="$(wslpath "$(wslvar USERPROFILE)")/AppData"
+    shopt -s globstar dotglob
+    for BACKUP_FILE in $HOME/.appdata/$SCOPE/**/*; do
+      if [ -f "$BACKUP_FILE" ]; then
+        RELATIVE_PATH="$(echo $BACKUP_FILE | cut -d'/' -f6-)"
+        SOURCE_PATH="$WINDOWS_APPDATA_PATH/$SCOPE/$RELATIVE_PATH"
+        BACKUP_PATH="$HOME/.appdata/$SCOPE/$RELATIVE_PATH"
+        rsync -az --mkpath "$BACKUP_PATH" "$SOURCE_PATH"
+      fi
+    done
+  fi
+}
+
+scopes=("Roaming" "Local" "Registry")
+while [ ! $# -eq 0 ]; do
+    case "$1" in
+        -r | --restore)
+            if [[ ${scopes[@]} =~ $2 ]]; then
+              SCOPE="$2"
+            else
+              echo "<SCOPE> is required"
+              exit 1
+            fi
+
+            if [ "$3" ]; then
+                DOMAIN="$(resolve_domain "$3")"
+                if [[ $? != 0 ]]; then exit 1; fi
+                restore "$DOMAIN" "$4"
+                exit
+            else
+                echo '--restore requires a DOMAIN'
+                exit 1
+            fi
+            ;;
+        -b | --backup)
+            if [[ ${scopes[@]} =~ $2 ]]; then
+              SCOPE="$2"
+            else
+              echo "<SCOPE> is required"
+              exit 1
+            fi
+
+            if [ "$3" ]; then
+                DOMAIN="$(resolve_domain "$3")"
+                if [[ $? != 0 ]]; then exit 1; fi
+                backup "$DOMAIN" "$4"
+                exit
+            else
+                echo '--backup requires a DOMAIN'
+                exit 1
+            fi
+            ;;
+        -R | --restore-all)
+            if [[ ${scopes[@]} =~ $2 ]]; then
+              SCOPE="$2"
+            else
+              echo "<SCOPE> is required"
+              exit 1
+            fi
+
+            restore_all
+            exit
+            ;;
+        -B | --backup-all)
+            if [[ ${scopes[@]} =~ $2 ]]; then
+              SCOPE="$2"
+            else
+              echo "<SCOPE> is required"
+              exit 1
+            fi
+
+            backup_all
+            exit
+            ;;
+        -h | --help)
+            usage
+            exit
+            ;;
+        *)
+            usage
+            exit
+            ;;
+    esac
+    shift
+done
+
+usage

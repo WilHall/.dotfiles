@@ -18,6 +18,10 @@ install_xcode_cli() {
   fi
 }
 
+winget_install() {
+  winget.exe install $(<$HOME/.dotfiles/wingetpkgs) --disable-interactivity --accept-package-agreements --accept-source-agreements
+}
+
 aptitude_install() {
   sudo add-apt-repository ppa:neovim-ppa/stable -y
   source /etc/os-release
@@ -47,6 +51,23 @@ manual_install() {
   fi
 
   chmod +x $HOME/bin/*
+}
+
+configure_gpg() {
+  echo "----------"
+  echo "INSTRUCTIONS:"
+  echo "1. Select pinentry-tty from the prompt"
+  echo "2. Complete the rest of the prompts"
+  echo "3. Run 'gpg --list-secret-keys --keyid-format LONG'"
+  echo "4. From the output line 'sec   XXXXX/<LONG_KEY> XXXX-XX-XX [expires: XXXX-XX-XX]' copy <LINK_KEY>"
+  echo "5. Run 'gpg --armor --export <LONG_KEY> > gpg-key.txt'"
+  echo "6. Run 'git config --global user.signingkey <LONG_KEY>'"
+  echo "7. Add the contents of the file to GitHub"
+  echo "----------"
+  sudo update-alternatives --config pinentry
+  export GPG_TTY=$(tty)
+  gpg --gen-key
+  gpg-agent --daemon
 }
 
 configure_wsl_windows_crossover_paths() {
@@ -188,8 +209,10 @@ bootstrap() {
   make_user_bin
   
   if [ $PLATFORM = "wsl" ]; then
+    winget_install
     aptitude_install
     manual_install
+    configure_gpg
     configure_wsl_windows_crossover_paths
   elif [ $PLATFORM = "macos" ]; then
     install_xcode_cli

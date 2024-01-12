@@ -50,3 +50,6 @@ watchman
 zsh-syntax-highlighting
 zsh-antigen
 aptpkglist
+gpa
+seahorse
+pinentry-tty

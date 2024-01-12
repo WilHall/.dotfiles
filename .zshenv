@@ -9,6 +9,7 @@ esac
 
 export TERM="xterm-256color"
 export EDITOR=vim
+export GPG_TTY=$(tty)
 export ZDOTDIR=$HOME/.zsh
 export PATH="$HOME/.bin:$HOME/.asdf/shims:/usr/local/bin:$PATH"
 

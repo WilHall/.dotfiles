@@ -2,8 +2,8 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      "hrsh7th/nvim-cmp",
       "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/nvim-cmp",
       "saadparwaiz1/cmp_luasnip",
       "L3MON4D3/LuaSnip",
       "fsouza/prettierd",
@@ -28,7 +28,6 @@ return {
       copilot.setup({
         suggestion = { enabled = false },
         panel = { enabled = false },
-        copilot_node_command = vim.fn.expand("$HOME") .. "/.asdf/shims/node",
         server_opts_overrides = {
           trace = "verbose",
           settings = {
@@ -68,7 +67,6 @@ return {
           comparators = {
             require("copilot_cmp.comparators").prioritize,
             function(...) return cmp_buffer:compare_locality(...) end,
-            cmp.config.compare.locality,
             cmp.config.compare.score,
             cmp.config.compare.priority,
             cmp.config.compare.order,
@@ -244,6 +242,11 @@ return {
         handlers = handlers,
       })
       lspconfig.rust_analyzer.setup({
+        on_attach = on_attach,
+        flags = lsp_flags,
+        handlers = handlers,
+      })
+      lspconfig.pylsp.setup({
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,

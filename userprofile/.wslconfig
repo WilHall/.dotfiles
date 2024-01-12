@@ -1,0 +1,13 @@
+[wsl2]
+memory=16GB
+processors=4
+swap=16GB
+pageReporting=false
+localhostforwarding=true
+vmIdleTimeout=9999999999
+networkingMode=mirrored
+dnsTunneling=true
+autoProxy=true
+useWindowsDnsCache=true
+bestEffortDnsParsing=true
+hostAddressLoopback=true

@@ -3,7 +3,7 @@
 [user]
     name = Wil Hall
     email = wil@wilhall.com
-    signingkey = AFEB2813FFED9B0422E05ECBB8FF1E85FB465FE0
+	signingkey = 026FDB827AAA30CC
 [blame]
     ignoreRevsFile = .git-blame-ignore-revs
 [core]
@@ -37,7 +37,7 @@
     mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
     root = rev-parse --show-toplevel
 [commit]
-    gpgsign = false
+	gpgsign = true
 [tag]
     forceSignAnnotated = true
 [github]

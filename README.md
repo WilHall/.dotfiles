@@ -46,6 +46,16 @@ OPTIONS:
    --backup-all`
 1. Restore all existing backups: `dx --restore-all`
 
+#### Finding Microsoft Store App IDs for winget
+
+Copy the share URL from the microsoft store, and grab the ID (last path segement)) and put that into the URL:
+
+```
+https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<APPID>/applockerdata
+```
+
+Then copy the `packageIdentityName`.
+
 #### Backing up macOS system user defaults
 
 Some macOS system settings, or settings that are changed in `System

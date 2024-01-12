@@ -26,9 +26,9 @@ antigen bundle dircycle
 antigen bundle tymm/zsh-directory-history
 antigen bundle mafredri/zsh-async@main
 antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-autosuggestions
 antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle Aloxaf/fzf-tab
-antigen bundle zsh-autosuggestions
 antigen bundle zdharma-continuum/fast-syntax-highlighting
 
 antigen apply
@@ -50,4 +50,6 @@ elif [[ "$PLATFORM" = "wsl" ]]; then
 fi
 
 eval $(ssh-agent)
+gpg-agent --daemon
+
 if [ "$TMUX" = "" ]; then tmuxinator start workspace; fi

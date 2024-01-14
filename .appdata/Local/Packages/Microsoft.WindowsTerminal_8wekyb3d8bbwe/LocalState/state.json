@@ -13,25 +13,25 @@
 	"persistedWindowLayouts" : 
 	[
 		{
-			"initialPosition" : "1662,154",
+			"initialPosition" : "1638,159",
 			"initialSize" : 
 			{
-				"height" : 586.0,
-				"width" : 1113.0
+				"height" : 750.0,
+				"width" : 1337.0
 			},
 			"launchMode" : "default",
 			"tabLayout" : 
 			[
 				{
 					"action" : "newTab",
-					"commandline" : "%SystemRoot%\\System32\\cmd.exe",
+					"commandline" : "\"C:\\Program Files\\WindowsApps\\CanonicalGroupLimited.Ubuntu_2204.3.49.0_x64__79rhkp1fndgsc\\ubuntu.exe\" ",
 					"profile" : "Default",
 					"startingDirectory" : null,
 					"suppressApplicationTitle" : false,
-					"tabTitle" : "Default"
+					"tabTitle" : "C:\\Program Files\\WindowsApps\\CanonicalGroupLimited.Ubuntu_2204.3.49.0_x64__79rhkp1fndgsc\\ubuntu.exe"
 				}
 			]
 		}
 	],
-	"settingsHash" : "d8c4e1cf627b393f-01da4584c1636085"
+	"settingsHash" : "e21f5534983b11fa-01da45875e4e50eb"
 }

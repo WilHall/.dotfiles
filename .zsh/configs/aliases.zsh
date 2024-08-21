@@ -1,8 +1,8 @@
 alias vim="nvim"
 alias vi="vim"
-alias ls="exa -F --group-directories-first"
-alias ll="exa -alh --group-directories-first"
-alias tree="exa -T"
+alias ls="lsd -F --group-directories-first"
+alias ll="lsd -alh --group-directories-first"
+alias tree="lsd --tree"
 alias cd="z"
 
 if [[ "$PLATFORM" == "macos" ]]; then

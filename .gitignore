@@ -1,4 +1,5 @@
 ~
+.gnupg/*
 *~HEAD
 *.swp
 tmp/

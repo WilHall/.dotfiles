@@ -44,6 +44,7 @@ backup() {
     reg.exe export "$1" "$HOME/.dotfiles/.appdata/$SCOPE/$REG_FILE_NAME.reg" /y
   else
     BACKUP_PATH="$HOME/.appdata/$(echo $1 | cut -d'/' -f7- | rev | cut -d'/' -f2- | rev)"
+    mkdir -p $(dirname $BACKUP_PATH)
     rsync -zarvm --prune-empty-dirs --mkpath --include="*/" --include="${2:-"*"}" --exclude="*" "$1" "$BACKUP_PATH"
   fi
 }
@@ -56,6 +57,7 @@ restore() {
     BACKUP_PATH="$HOME/.appdata/$(echo $1 | cut -d'/' -f7-)"
     RESTORE_PATH="$(echo $1 | rev | cut -d'/' -f2- | rev)"
     
+    mkdir -p $(dirname $RESTORE_PATH)
     if [ ! -d "$BACKUP_PATH" ]; then
       echo "No backup exists for the domain '$1'"
       exit 1
@@ -82,6 +84,7 @@ backup_all() {
         RELATIVE_PATH="$(echo $BACKUP_FILE | cut -d'/' -f6-)"
         SOURCE_PATH="$WINDOWS_APPDATA_PATH/$SCOPE/$RELATIVE_PATH"
         BACKUP_PATH="$HOME/.appdata/$SCOPE/$RELATIVE_PATH"
+	mkdir -p $BACKUP_PATH
         rsync -az --mkpath "$SOURCE_PATH" "$BACKUP_PATH"
       fi
     done
@@ -103,6 +106,7 @@ restore_all() {
         RELATIVE_PATH="$(echo $BACKUP_FILE | cut -d'/' -f6-)"
         SOURCE_PATH="$WINDOWS_APPDATA_PATH/$SCOPE/$RELATIVE_PATH"
         BACKUP_PATH="$HOME/.appdata/$SCOPE/$RELATIVE_PATH"
+	mkdir -p  $SOURCE_PATH
         rsync -az --mkpath "$BACKUP_PATH" "$SOURCE_PATH"
       fi
     done

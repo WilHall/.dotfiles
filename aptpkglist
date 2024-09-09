@@ -49,9 +49,15 @@ silversearcher-ag
 watchman
 zsh-syntax-highlighting
 zsh-antigen
-aptpkglist
 gpa
 seahorse
 pinentry-tty
 ngrok
 python2
+docker-ce
+docker-ce-cli
+containerd.io
+docker-buildx-plugin
+docker-compose-plugin
+libsqlite3-dev
+libbz2-dev

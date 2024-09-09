@@ -1,4 +1,29 @@
-#!/bin/zsh name: bootstrap author: Wil Hall email: wil@wilhall.com if [ "$#" -ne 1 ] && [ ! -f "$HOME/.auth" ]; then echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>" exit 1 fi DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN=$1 SETUP_HOMEBREW=false detect_platform() { UNAME=$(uname -a) case "${UNAME}" in *microsoft*) PLATFORM=wsl;; *Darwin*)    PLATFORM=macos;; *Linux*)     PLATFORM=linux;; *)           PLATFORM=unknown;; esac } configure_shell_options() { if [ -n "$ZSH_VERSION" ]; then setopt extended_glob elif [ -n "$BASH_VERSION" ]; then shopt -s extglob fi }
+#!/usr/bin/zsh
+
+if [ "$#" -ne 1 ] && [ ! -f "$HOME/.auth" ]; then
+	echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>"
+	exit 1
+fi
+
+DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN=$1
+SETUP_HOMEBREW=false
+detect_platform() {
+	UNAME=$(uname -a)
+	case "${UNAME}" in
+		*microsoft*) PLATFORM=wsl;;
+		*Darwin*)    PLATFORM=macos;;
+		*Linux*)     PLATFORM=linux;;
+		*)           PLATFORM=unknown;;
+	esac
+}
+
+configure_shell_options() {
+	if [ -n "$ZSH_VERSION" ]; then
+		setopt extended_glob
+	elif [ -n "$BASH_VERSION" ];
+	then shopt -s extglob
+		fi
+	}
 
 create_auth_dotfile() {
   if [ ! -f "$HOME/.auth" ]; then
@@ -27,12 +52,21 @@ winget_install() {
 }
 
 aptitude_install() {
+sudo add-apt-repository ppa:wslutilities/wslu
   curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
-  sudo add-apt-repository ppa:neovim-ppa/stable -y
+  sudo add-apt-repository ppa:neovim-ppa/unstable -y
   source /etc/os-release
   wget -O $HOME/tmp/packages-microsoft-prod.deb https://packages.microsoft.com/config/ubuntu/$VERSION_ID/packages-microsoft-prod.deb
   sudo dpkg -i $HOME/tmp/packages-microsoft-prod.deb
 
+  sudo apt-get install ca-certificates curl gnupg
+  sudo install -m 0755 -d /etc/apt/keyrings
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+  echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
   echo 'deb http://download.opensuse.org/repositories/shells:/zsh-users:/zsh-completions/xUbuntu_22.04/ /' | sudo tee /etc/apt/sources.list.d/shells:zsh-users:zsh-completions.list
   curl -fsSL https://download.opensuse.org/repositories/shells:zsh-users:zsh-completions/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_zsh-users_zsh-completions.gpg > /dev/null
@@ -122,7 +156,7 @@ configure_paths() {
   if [ $PLATFORM = "macos" ]; then
     sudo cp $HOME/.dotfiles/_etc_paths/* /etc/paths.d
   elif [ $PLATFORM = "wsl" ]; then
-    PATH_AMENDMENT="$HOME/bin:$HOME/.asdf/bin"
+    PATH_AMENDMENT="$HOME/bin:$HOME/.local/share/mise/shims"
     sudo grep -qF "$PATH_AMENDMENT" /etc/zsh/zshenv || echo "export PATH=\"$PATH_AMENDMENT:\$PATH\"" | sudo tee -a /etc/zsh/zshenv
   fi
 }
@@ -177,19 +211,8 @@ install_rosetta() {
   sudo softwareupdate --install-rosetta
 }
 
-configure_asdf() {
-  if [ $PLATFORM = "wsl" ]; then
-    if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
-      # Not available via aptitude
-      git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.13.1
-    fi
-  fi
-
-  asdf plugin-add yarn
-  asdf plugin-add python
-  asdf plugin add nodejs 
-  asdf plugin add ruby 
-  asdf plugin add rust
+configure_mise() {
+  curl https://mise.run | sh
 
   if [ $PLATFORM = 'macos' ]; then
     export PATH=/opt/homebrew/bin:$PATH
@@ -202,7 +225,7 @@ configure_asdf() {
     export RUBY_CFLAGS="-w"
   fi
 
-  asdf install
+  mise install
 }
 
 install_tpm() {
@@ -228,7 +251,7 @@ bootstrap() {
     winget_install
     aptitude_install
     manual_install
-    configure_gpg
+    # configure_gpg
     configure_wsl_windows_crossover_paths
   elif [ $PLATFORM = "macos" ]; then
     install_xcode_cli
@@ -247,7 +270,7 @@ bootstrap() {
 
   setup_vim
   configure_sublime_merge
-  configure_asdf
+  configure_mise
   install_tpm
 }
 

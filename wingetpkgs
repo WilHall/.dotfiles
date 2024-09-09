@@ -1,5 +1,4 @@
 MicrosoftCorporationII.WindowsSubsystemforLinux
-CanonicalGroupLimited.Ubuntu
 Microsoft.OutlookforWindow
 Microsoft.PowerShell
 Microsoft.WindowsTerminal
@@ -22,12 +21,10 @@ Mozilla.Firefox
 Google.Chrome
 Brave.Brave
 Postman.Postman
-BlastApps.FluentSearch
 RandyRants.SharpKeys
 NurgoSoftware.AquaSnap
 XPDLJXH603QVT8
 AgileBits.1Password
-Foundry376.Mailspring
 Appest.TickTick
 JetBrains.WebStorm
 JetBrains.PyCharm.Professional
@@ -47,3 +44,5 @@ Microsoft.Sysinternals.Desktops
 Microsoft.Sysinternals.BGInfo
 Microsoft.Sysinternals.Autoruns
 Microsoft.Sysinternals.ZoomIt
+Notepad++.Notepad++
+appmakes.Typora

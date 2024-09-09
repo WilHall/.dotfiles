@@ -60,7 +60,7 @@ brew "tmux"
 brew "bat"
 brew "ag"
 brew "heroku"
-brew "asdf"
+brew "mise"
 brew "watchman"
 
 cask "hammerspoon"

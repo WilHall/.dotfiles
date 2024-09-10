@@ -4,6 +4,8 @@ local positions = {
   full = { x = 0, y = 0, w = 1, h = 1 },
   centered = { x = 0.25, y = 0.15, w = 0.5, h = 0.7 },
   center50 = { x = 0.25, y = 0, w = 0.50, h = 1 },
+  center30Left = { x = 0.25, y = 0, w = 0.30, h = 1 },
+  center20Right = { x = 0.55, y = 0, w = 0.20, h = 1 },
   right25b = { x = 0.75, y = 0.5, w = 0.25, h = 0.5 },
   left25 = { x = 0, y = 0, w = 0.25, h = 1 },
   left34 = { x = 0, y = 0, w = 0.34, h = 1 },
@@ -112,7 +114,8 @@ function dockedMonoLayout()
     { "Blender",         nil, externalScreen, positions.center50, nil, nil },
     { "Fork",            nil, externalScreen, positions.center50, nil, nil },
     { "Copilot",         nil, externalScreen, positions.center50, nil, nil },
-    { "iTerm2",          nil, externalScreen, positions.center50, nil, nil },
+    { "Code",   nil, externalScreen, positions.center30Left, nil, nil },
+    { "iTerm2",          nil, externalScreen, positions.center20Right, nil, nil },
   }
 end
 

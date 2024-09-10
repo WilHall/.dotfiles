@@ -20,7 +20,6 @@ source ~/.zsh/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 
 antigen use oh-my-zsh
 
-antigen bundle asdf
 antigen bundle fzf
 antigen bundle git
 antigen bundle heroku
@@ -46,15 +45,8 @@ bindkey '\e[B' directory-history-search-forward
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 
-
-if [[ "$PLATFORM" == "macos" ]]; then
-  . /opt/homebrew/opt/asdf/libexec/asdf.sh
-elif [[ "$PLATFORM" = "wsl" ]]; then
-  . "$HOME/.asdf/asdf.sh"
-fi
-
 eval $(ssh-agent)
 gpg-agent --daemon
 
 if [ "$TMUX" = "" ]; then tmuxinator start workspace; fi
-eval "$(/home/wil/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"

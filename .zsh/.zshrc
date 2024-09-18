@@ -2,10 +2,6 @@ ZSH_THEME=""
 COMPLETION_WAITING_DOTS="false"
 CASE_SENSITIVE="true"
 
-# export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
-sudo /etc/init.d/dbus start &> /dev/null
-
-
 fpath+=$HOME/.pure
 autoload -U promptinit; promptinit
 prompt pure

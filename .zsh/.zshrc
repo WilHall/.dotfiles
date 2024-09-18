@@ -20,7 +20,6 @@ antigen bundle asdf
 antigen bundle fzf
 antigen bundle git
 antigen bundle heroku
-antigen bundle z
 antigen bundle colored-man-pages
 antigen bundle dircycle
 antigen bundle tymm/zsh-directory-history

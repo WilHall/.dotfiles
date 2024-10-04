@@ -7,9 +7,9 @@
 		<string>CKAcccountInfoCacheReset</string>
 	</array>
 	<key>CKStartupTime</key>
-	<integer>1701720068</integer>
+	<integer>1720807746</integer>
 	<key>DatabaseQueue-LastVacuumDate-/Users/wilhall/Library/Containers/com.ranchero.NetNewsWire-Evergreen/Data/Library/Application Support/NetNewsWire/Accounts/2_iCloud/Sync.sqlite3</key>
-	<date>2023-12-14T13:22:01Z</date>
+	<date>2024-07-14T18:33:07Z</date>
 	<key>NSToolbar Configuration MainWindowToolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -32,7 +32,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2023-12-14T13:22:02Z</date>
+	<date>2024-07-14T18:33:18Z</date>
 	<key>SendCrashLogsAutomatically</key>
 	<true/>
 	<key>addWebFeedAccountID</key>
@@ -50,7 +50,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwRElUkbnVsbNINDg8QViRj
-	bGFzc18QD0NoYW5nZVRva2VuRGF0YYADgAJPECIfCgMI5BYYACIWCJaZua6zwKnC6AEQ
+	bGFzc18QD0NoYW5nZVRva2VuRGF0YYADgAJPECIfCgMI9xgYACIWCJaZua6zwKnC6AEQ
 	0N37ytKh/rytASgA0hMUFRZaJGNsYXNzbmFtZVgkY2xhc3Nlc18QE0NLU2VydmVyQ2hh
 	bmdlVG9rZW6iFRdYTlNPYmplY3QIERokKTI3SUxRU1heY2p8foClqrW+1NcAAAAAAAAB
 	AQAAAAAAAAAYAAAAAAAAAAAAAAAAAAAA4A==
@@ -58,7 +58,7 @@
 	<key>firstRunDate</key>
 	<date>2023-06-05T12:49:46Z</date>
 	<key>lastImageCacheFlushDate</key>
-	<date>2023-12-14T13:22:01Z</date>
+	<date>2024-07-14T18:33:07Z</date>
 	<key>openInBrowserInBackground</key>
 	<false/>
 	<key>twitterDeprecationAlertShown</key>

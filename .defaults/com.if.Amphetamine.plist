@@ -124,6 +124,9 @@
 		<integer>147902</integer>
 		<integer>157982</integer>
 		<integer>13197</integer>
+		<integer>1835018</integer>
+		<integer>4219</integer>
+		<integer>64467</integer>
 	</array>
 	<key>Session End Time Calcuation</key>
 	<integer>0</integer>
@@ -158,7 +161,7 @@
 	<key>Stop Mouse Movement Inactivity Delay</key>
 	<integer>1800</integer>
 	<key>Total Session Run Time</key>
-	<integer>2848960</integer>
+	<integer>4752664</integer>
 	<key>Trigger Data</key>
 	<array/>
 	<key>Use 24 Hour Clock</key>

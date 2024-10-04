@@ -8,6 +8,8 @@
 		<integer>1</integer>
 		<key>ExtendedListViewSettingsV2</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>13</real>
 			<key>calculateAllSizes</key>
 			<false/>
 			<key>columns</key>
@@ -20,7 +22,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>335</integer>
+					<integer>340</integer>
 				</dict>
 				<dict>
 					<key>ascending</key>
@@ -168,6 +170,8 @@
 		</dict>
 		<key>ListViewSettings</key>
 		<dict>
+			<key>axTextSize</key>
+			<real>13</real>
 			<key>calculateAllSizes</key>
 			<false/>
 			<key>columns</key>
@@ -247,7 +251,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>335</integer>
+					<integer>340</integer>
 				</dict>
 				<key>size</key>
 				<dict>
@@ -298,11 +302,11 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{415, 173}, {835, 1055}}</string>
+			<string>{{288, 57}, {920, 436}}</string>
 		</dict>
 	</dict>
 	<key>CopyProgressWindowLocation</key>
-	<string>{721, 258}</string>
+	<string>{1401, 276}</string>
 	<key>DesktopViewSettings</key>
 	<dict>
 		<key>IconViewSettings</key>
@@ -1032,6 +1036,17 @@
 			<key>yRelative</key>
 			<integer>625</integer>
 		</dict>
+		<key>Acrobat Installer_0x1.5fa4d3c8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
 		<key>Additional Tools_0x1.492ec018p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1131,6 +1146,17 @@
 			<key>yRelative</key>
 			<integer>177</integer>
 		</dict>
+		<key>Autodesk Fusion Installer_0x1.609a9808p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
 		<key>Bambu Studio_0x1.56c7647p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1141,6 +1167,17 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>289</integer>
+		</dict>
+		<key>Bambu Studio_0x1.5f999238p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
 		</dict>
 		<key>Bartender 5_0x1.57f1d0946d23p+29</key>
 		<dict>
@@ -1174,6 +1211,17 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>308</integer>
+		</dict>
+		<key>Bruno 1.30.1_0x1.64ffe9bp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
 		</dict>
 		<key>Commander One_0x1.b690296p+28</key>
 		<dict>
@@ -1428,6 +1476,204 @@
 			<key>yRelative</key>
 			<integer>513</integer>
 		</dict>
+		<key>Copilot_0x1.5a83f038p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5b93bc68p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5bd5cc7p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5bf351d8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.5bffe0c8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5c3f78b8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.5c4bd328p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.5c731dcp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5c7eb8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5cd2acd8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5cfa294p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5d1b6a5p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.5d516048p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.5d5a6fe8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5dd84b4p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.5eca9bap+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Copilot_0x1.5ee324ep+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Copilot_0x1.5f9e82cp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
 		<key>Deckset_0x1.3098c28p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1440,6 +1686,17 @@
 			<integer>196</integer>
 		</dict>
 		<key>Docker_0x1.529680e8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
+		</dict>
+		<key>Docker_0x1.5f1e0ae8p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
 			<integer>1</integer>
@@ -1526,6 +1783,17 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>513</integer>
+		</dict>
+		<key>HTTPie 2024.1.2-arm64_0x1.5a4e8ce8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>196</integer>
 		</dict>
 		<key>Harvard_Secure_and_eduroam_0x1.4f2dbc58p+29</key>
 		<dict>
@@ -1614,6 +1882,17 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>190</integer>
+		</dict>
+		<key>Little Snitch 6.0_0x1.5fde70bp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>513</integer>
 		</dict>
 		<key>Macintosh HD_0x1.1de448p+29</key>
 		<dict>
@@ -1737,6 +2016,39 @@
 			<integer>84</integer>
 		</dict>
 		<key>Macintosh HD_0x1.5964ec88p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>84</integer>
+		</dict>
+		<key>Macintosh HD_0x1.5f504acp+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>84</integer>
+		</dict>
+		<key>Macintosh HD_0x1.62fc8068p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>65</integer>
+		</dict>
+		<key>Macintosh HD_0x1.64528fc8p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
 			<integer>1</integer>
@@ -1934,6 +2246,28 @@
 			<key>yRelative</key>
 			<integer>177</integer>
 		</dict>
+		<key>RoomSketcher_0x1.50143e8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>RubyMine_0x1.5fe93458p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
 		<key>Shapr3D_0x1.567cbc38p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1944,6 +2278,17 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>196</integer>
+		</dict>
+		<key>Signal 7.26.0-universal_0x1.65277266984d6p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>289</integer>
 		</dict>
 		<key>Silhouette Studio_0x1.46a252ep+29</key>
 		<dict>
@@ -1998,7 +2343,7 @@
 			<key>xRelative</key>
 			<integer>-65</integer>
 			<key>yRelative</key>
-			<integer>401</integer>
+			<integer>532</integer>
 		</dict>
 		<key>Timing_0x1.530c396edf54dp+29</key>
 		<dict>
@@ -2065,6 +2410,28 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>190</integer>
+		</dict>
+		<key>VLC media player_0x1.579633a8p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
+		</dict>
+		<key>Warp_0x1.64a3db9p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>532</integer>
 		</dict>
 		<key>WebStorm_0x1.54b20e98p+29</key>
 		<dict>
@@ -2146,9 +2513,9 @@
 	<key>FXLastSearchScope</key>
 	<string>SCcf</string>
 	<key>FXPreferencesWindow.Location</key>
-	<string>{{510, 564}, {377, 380}}</string>
+	<string>{{510, 542}, {377, 402}}</string>
 	<key>FXPreferredGroupBy</key>
-	<string>None</string>
+	<string>Date Added</string>
 	<key>FXPreferredSearchViewStyle</key>
 	<string>Nlsv</string>
 	<key>FXPreferredSearchViewStyleVersion</key>
@@ -2169,6 +2536,10 @@
 	<array>
 		<string>com.getdropbox.dropbox.garcon</string>
 	</array>
+	<key>FXSyncExtensionToolbarItemsPendingAdd</key>
+	<array/>
+	<key>FXSyncExtensionToolbarItemsPendingRemove</key>
+	<array/>
 	<key>FXToolbarUpgradedToTenEight</key>
 	<integer>1</integer>
 	<key>FXToolbarUpgradedToTenNine</key>
@@ -2189,13 +2560,13 @@
 	<key>FontSizeCategory</key>
 	<string>Custom</string>
 	<key>GoToField</key>
-	<string>/Users/wilhall/Library/Containers/com.docker.docker/Data/vms/0/data</string>
+	<string>~/.dotfiles</string>
 	<key>GoToFieldHistory</key>
 	<array>
+		<string>/Users/wilhall/.dotfiles</string>
 		<string>/Users/wilhall/Library/Containers/com.docker.docker/Data/vms/0/data</string>
 		<string>/Users/wilhall/Library</string>
 		<string>/Users/wilhall/Library/QuickLook</string>
-		<string>/Users/wilhall/.dotfiles</string>
 		<string>/Users/wilhall/.zsh</string>
 	</array>
 	<key>ICloudViewSettings</key>
@@ -2216,7 +2587,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>554</integer>
+					<integer>853</integer>
 				</dict>
 				<dict>
 					<key>ascending</key>
@@ -2354,7 +2725,7 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>168</real>
+			<real>0.0</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
@@ -2484,7 +2855,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>554</integer>
+					<integer>853</integer>
 				</dict>
 				<key>size</key>
 				<dict>
@@ -2514,7 +2885,7 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>168</real>
+			<real>0.0</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
@@ -2535,11 +2906,11 @@
 			<key>ShowStatusBar</key>
 			<false/>
 			<key>ShowTabView</key>
-			<true/>
+			<false/>
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{1911, 701}, {921, 416}}</string>
+			<string>{{367, 0}, {1433, 1125}}</string>
 		</dict>
 	</dict>
 	<key>InspectorWindow.Location</key>
@@ -2563,7 +2934,7 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{307, 66}, {920, 436}}</string>
+			<string>{{647, 457}, {920, 438}}</string>
 		</dict>
 	</dict>
 	<key>MountProgressWindowLocation</key>
@@ -2616,13 +2987,11 @@
 		<string>@$`</string>
 	</dict>
 	<key>NSWindow Frame GoToSheet</key>
-	<string>2082 922 460 180 0 0 5120 1415 </string>
+	<string>502 708 460 180 0 0 1800 1125 </string>
 	<key>NSWindow Frame GoToWindow</key>
 	<string>695 708 460 180 0 0 1800 1125 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>49 136 800 891 0 0 1800 1125 </string>
-	<key>NSWindowTabbingShoudShowTabBarKey-com.apple.finder.TBrowserWindow</key>
-	<true/>
+	<string>187 0 800 866 0 0 1800 1125 </string>
 	<key>NetworkViewSettings</key>
 	<dict>
 		<key>CustomViewStyleVersion</key>
@@ -2953,19 +3322,23 @@
 		</dict>
 	</dict>
 	<key>PreferencesWindow.LastSelection</key>
-	<string>ADVD</string>
+	<string>GNRL</string>
+	<key>PreviewPaneGalleryWidth</key>
+	<real>250</real>
+	<key>PreviewPaneWidth</key>
+	<real>250</real>
 	<key>RecentMoveAndCopyDestinations</key>
 	<array>
-		<string>file:///Volumes/%3C3/kouignamann%20backup/Cloud%20Drive/</string>
-		<string>file:///Volumes/%3C3/kouignamann%20backup/</string>
-		<string>file:///Users/wilhall/Downloads/_3d_printing/_PRINT%20QUEUE/studio%20prints/</string>
-		<string>file:///Users/wilhall/Downloads/_3d_printing/_PRINT%20QUEUE/</string>
 		<string>file:///Users/wilhall/Downloads/</string>
 		<string>file:///Applications/</string>
-		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Professional%20Development/Plume%20&amp;%20Pith/</string>
-		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/</string>
-		<string>file:///Users/wilhall/Downloads/Michaela%20Stencils/</string>
-		<string>file:///Users/wilhall/Downloads/_3d_printing/SCAD/</string>
+		<string>file:///Users/wilhall/Downloads/Glaze%20Options/</string>
+		<string>file:///Users/wilhall/Documents/_/</string>
+		<string>file:///Users/wilhall/workspace/sipwithelissa.com/public/</string>
+		<string>file:///Users/wilhall/workspace/taylorcomeau.com/public/</string>
+		<string>file:///Users/wilhall/.Trash/Sip%20with%20Elissa%20-%20Sip,%20Learn,%20and%20Grow%20-%20https___sipwithelissa.my.canva.site__files/</string>
+		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Presentations/</string>
+		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Professional%20Development/</string>
+		<string>file:///Users/wilhall/Library/Mobile%20Documents/com~apple~CloudDocs/Therapy/</string>
 	</array>
 	<key>RecentsArrangeGroupViewBy</key>
 	<string>Date Last Opened</string>
@@ -3283,11 +3656,11 @@
 			<key>ShowStatusBar</key>
 			<false/>
 			<key>ShowTabView</key>
-			<true/>
+			<false/>
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{1701, 438}, {920, 436}}</string>
+			<string>{{2881, 460}, {920, 436}}</string>
 		</dict>
 	</dict>
 	<key>ShowExternalHardDrivesOnDesktop</key>
@@ -3298,12 +3671,16 @@
 	<true/>
 	<key>ShowPathbar</key>
 	<true/>
+	<key>ShowPreviewPane</key>
+	<false/>
 	<key>ShowRecentTags</key>
 	<false/>
 	<key>ShowRemovableMediaOnDesktop</key>
 	<true/>
 	<key>ShowSidebar</key>
 	<true/>
+	<key>ShowStatusBar</key>
+	<false/>
 	<key>SidebarDevicesSectionDisclosedState</key>
 	<true/>
 	<key>SidebarPlacesSectionDisclosedState</key>
@@ -3315,7 +3692,7 @@
 	<key>SidebarTagsSctionDisclosedState</key>
 	<true/>
 	<key>SidebarWidth</key>
-	<real>177</real>
+	<real>154</real>
 	<key>SidebariCloudDriveSectionDisclosedState</key>
 	<true/>
 	<key>SmartSharedSearchViewSettings</key>
@@ -3698,7 +4075,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>300</integer>
+					<integer>838</integer>
 				</dict>
 				<dict>
 					<key>ascending</key>
@@ -3836,7 +4213,7 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>1470</real>
+			<real>1302</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
@@ -3845,6 +4222,43 @@
 			<real>13</real>
 			<key>useRelativeDates</key>
 			<true/>
+			<key>viewOptionsVersion</key>
+			<integer>1</integer>
+		</dict>
+		<key>IconViewSettings</key>
+		<dict>
+			<key>arrangeBy</key>
+			<string>dateAdded</string>
+			<key>axTextSize</key>
+			<real>12</real>
+			<key>backgroundColorBlue</key>
+			<real>1</real>
+			<key>backgroundColorGreen</key>
+			<real>1</real>
+			<key>backgroundColorRed</key>
+			<real>1</real>
+			<key>backgroundType</key>
+			<integer>0</integer>
+			<key>gridOffsetX</key>
+			<real>0.0</real>
+			<key>gridOffsetY</key>
+			<real>0.0</real>
+			<key>gridSpacing</key>
+			<real>37</real>
+			<key>iconSize</key>
+			<real>56</real>
+			<key>labelOnBottom</key>
+			<true/>
+			<key>scrollPositionX</key>
+			<real>0.0</real>
+			<key>scrollPositionY</key>
+			<real>1142</real>
+			<key>showIconPreview</key>
+			<true/>
+			<key>showItemInfo</key>
+			<true/>
+			<key>textSize</key>
+			<real>12</real>
 			<key>viewOptionsVersion</key>
 			<integer>1</integer>
 		</dict>
@@ -3931,7 +4345,7 @@
 					<key>visible</key>
 					<true/>
 					<key>width</key>
-					<integer>300</integer>
+					<integer>838</integer>
 				</dict>
 				<key>size</key>
 				<dict>
@@ -3961,7 +4375,7 @@
 			<key>scrollPositionX</key>
 			<real>0.0</real>
 			<key>scrollPositionY</key>
-			<real>1470</real>
+			<real>1302</real>
 			<key>showIconPreview</key>
 			<true/>
 			<key>sortColumn</key>
@@ -3986,11 +4400,11 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{2514, 463}, {921, 416}}</string>
+			<string>{{545, 93}, {1433, 877}}</string>
 		</dict>
 	</dict>
 	<key>ViewOptionsWindow.Location</key>
-	<string>{2951, 327}</string>
+	<string>{1497, 333}</string>
 	<key>_FXSortFoldersFirst</key>
 	<true/>
 	<key>_FXSortFoldersFirstOnDesktop</key>

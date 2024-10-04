@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AKLastEmailListRequestDateKey</key>
-	<date>2024-01-09T15:54:22Z</date>
 	<key>AKLastIDMSEnvironment</key>
 	<integer>0</integer>
 	<key>AKLastLocale</key>
@@ -32,6 +30,8 @@
 	<false/>
 	<key>ApplePressAndHoldEnabled</key>
 	<string>0</string>
+	<key>AppleReduceDesktopTinting</key>
+	<true/>
 	<key>AppleScrollerPagingBehavior</key>
 	<true/>
 	<key>AppleShowAllExtensions</key>
@@ -68,7 +68,7 @@
 	<key>NSLinguisticDataAssetsRequestLastInterval</key>
 	<real>86400</real>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2024-01-09T15:12:04Z</date>
+	<date>2024-10-03T12:55:36Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>en</string>
@@ -79,6 +79,7 @@
 		<string>fr</string>
 		<string>it</string>
 		<string>vi</string>
+		<string>en_US</string>
 	</array>
 	<key>NSLinguisticDataAssetsRequestedByChecker</key>
 	<array>
@@ -92,9 +93,9 @@
 		<string>vi</string>
 	</array>
 	<key>NSNavPanelFileLastListModeForOpenModeKey</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>NSNavPanelFileListModeForOpenMode2</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>NSPreferredWebServices</key>
 	<dict>
 		<key>NSWebServicesProviderWebSearch</key>
@@ -105,8 +106,12 @@
 			<string>com.google.www</string>
 		</dict>
 	</dict>
+	<key>NSSpellCheckerContainerTransitionComplete</key>
+	<true/>
+	<key>NSSpellCheckerDictionaryContainerTransitionComplete</key>
+	<true/>
 	<key>NSSpellCheckerInputAnalyticsTime</key>
-	<date>2024-01-10T00:22:18Z</date>
+	<date>2024-09-16T21:44:54Z</date>
 	<key>NSTableViewDefaultSizeMode</key>
 	<integer>2</integer>
 	<key>NSUserDictionaryReplacementItems</key>
@@ -202,7 +207,7 @@
 		<string>’</string>
 	</array>
 	<key>NavPanelFileListModeForOpenMode</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>PKOrderManagementDisabled</key>
 	<true/>
 	<key>WebAutomaticSpellingCorrectionEnabled</key>
@@ -220,6 +225,14 @@
 			<array/>
 		</dict>
 	</dict>
+	<key>com.apple.gms.availability.key</key>
+	<data>
+	YnBsaXN0MDChARACCAoAAAAAAAABAQAAAAAAAAACAAAAAAAAAAAAAAAAAAAADA==
+	</data>
+	<key>com.apple.gms.availability.osEligibilityReasons</key>
+	<array>
+		<integer>1</integer>
+	</array>
 	<key>com.apple.mouse.scaling</key>
 	<real>0.875</real>
 	<key>com.apple.sound.beep.feedback</key>

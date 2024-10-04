@@ -2,6 +2,8 @@ ZSH_THEME=""
 COMPLETION_WAITING_DOTS="false"
 CASE_SENSITIVE="true"
 
+unset -v GEM_HOME
+
 fpath+=$HOME/.pure
 autoload -U promptinit; promptinit
 prompt pure

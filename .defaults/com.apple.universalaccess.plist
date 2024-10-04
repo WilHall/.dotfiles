@@ -205,6 +205,142 @@
 				<key>State</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-03-23 19:55:44</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-05-27 21:43:18</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-05-29 18:20:56</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-06-18 18:33:26</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-06-18 18:34:16</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-06-18 18:34:17</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-06-18 18:34:18</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-07-12 14:11:20</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-08-15 07:27:55</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-08-21 10:36:19</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-08-21 10:37:08</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-08-21 10:37:08</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-08-21 10:37:09</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-09-18 09:19:21</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-09-18 09:20:12</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-09-18 09:20:13</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<string>2024-09-18 09:32:27</string>
+				<key>Reason</key>
+				<string>Reset</string>
+				<key>State</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>closeViewCustomHotkeyKey</key>
@@ -256,7 +392,7 @@
 		</dict>
 	</dict>
 	<key>closeViewDesiredZoomFactor</key>
-	<real>1.0818160772323608</real>
+	<real>2.057288646697998</real>
 	<key>closeViewHotkeysEnabled</key>
 	<true/>
 	<key>closeViewScrollWheelToggle</key>
@@ -268,7 +404,7 @@
 	<key>closeViewZoomDisplayID</key>
 	<integer>0</integer>
 	<key>closeViewZoomFactor</key>
-	<real>1</real>
+	<real>2.057288646697998</real>
 	<key>closeViewZoomFactorBeforeTermination</key>
 	<real>1</real>
 	<key>closeViewZoomMode</key>
@@ -313,9 +449,9 @@
 		<key>2</key>
 		<dict>
 			<key>X</key>
-			<real>1919.98046875</real>
+			<real>504.35546875</real>
 			<key>Y</key>
-			<real>882.421875</real>
+			<real>467.75</real>
 		</dict>
 	</dict>
 	<key>grayscale</key>

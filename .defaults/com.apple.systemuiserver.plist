@@ -2,9 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSStatusItem Visible Item-0</key>
+	<false/>
 	<key>__NSEnableTSMDocumentWindowLevel</key>
 	<true/>
 	<key>last-analytics-stamp</key>
-	<real>726505291.61170602</real>
+	<real>749499241.76934803</real>
+	<key>menuExtras</key>
+	<array/>
 </dict>
 </plist>

@@ -17,7 +17,7 @@
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<false/>
 	<key>NSWindow Frame ZOOM Main Window</key>
-	<string>1326 0 2528 1415 0 0 5120 1415 </string>
+	<string>537 0 1263 1125 0 0 1800 1125 </string>
 	<key>PresAppKeyHash</key>
 	<integer>-2145492511746712566</integer>
 	<key>PresMeetingAppKeyHash</key>
@@ -28,12 +28,14 @@
 	<true/>
 	<key>ZMCCCaptionsBoxWidthKey</key>
 	<real>400</real>
+	<key>ZMCustomOrderTabsFlags</key>
+	<false/>
 	<key>ZMJoinMeetingFlowAnchor</key>
 	<string>{{960, 456}, {640, 500}}</string>
 	<key>ZoomAutoUpdateState</key>
 	<string>ZoomAutoUpdateStateReady</string>
 	<key>ZoomAutoUpdateVersion</key>
-	<string>5.16.10.25689</string>
+	<string>6.1.11.39163</string>
 	<key>_favoriteArray</key>
 	<array>
 		<string>:sparkles:=✨</string>
@@ -58,6 +60,8 @@
 	<true/>
 	<key>kIM_LastOpenedSession</key>
 	<string></string>
+	<key>kWorkVivoTabName</key>
+	<string></string>
 	<key>kZMAlreadyShowPMCTip</key>
 	<true/>
 	<key>kZMHadShowFiveMinsCountDown</key>
@@ -68,13 +72,25 @@
 	<false/>
 	<key>kZMHadShowSessionWarning</key>
 	<false/>
+	<key>kZMLoginHadShowFiveMinsCountDown</key>
+	<false/>
+	<key>kZMLoginHadShowOneDayCountDown</key>
+	<false/>
+	<key>kZMLoginHadShowOneHourCountDown</key>
+	<false/>
+	<key>kZMLoginHadShowSessionWarning</key>
+	<false/>
+	<key>kZMMTViusalRefreshTipAlreadyShown</key>
+	<true/>
 	<key>kZMShowNotificationCenter</key>
 	<true/>
 	<key>kZMUserDedaultWindowOriginFrame</key>
-	<string>{{460, 233}, {975, 660}}</string>
+	<string>{{285, 123}, {1280, 960}}</string>
 	<key>kZMUserDefaultMainWindowCompressed</key>
 	<false/>
 	<key>kZMUserDefaultSelectedTabType</key>
+	<integer>0</integer>
+	<key>q6zajljerpgxblmzphd0iw@xmpp.zoom.uskZMUserDefaultSelectedTabType</key>
 	<integer>1</integer>
 </dict>
 </plist>

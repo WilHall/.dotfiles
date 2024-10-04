@@ -24,7 +24,7 @@
 	<key>NSStatusItem Visible TupleStatusBarItem</key>
 	<true/>
 	<key>NSWindow Frame webcamFrame</key>
-	<string>3628 1190 225 225 0 0 5120 1415 </string>
+	<string>3625 1103 225 225 0 0 5120 1415 </string>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -32,7 +32,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-01-10T11:36:08Z</date>
+	<date>2024-09-18T13:33:18Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>1943549101</integer>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -44,19 +44,19 @@
 		<key>id</key>
 		<integer>1598</integer>
 		<key>is_guest</key>
-		<false/>
+		<true/>
 		<key>name</key>
 		<string>Wil Hall</string>
 		<key>paid</key>
-		<true/>
+		<false/>
 		<key>sfu_support</key>
 		<string>enabled</string>
 		<key>team_id</key>
-		<integer>10336</integer>
+		<integer>1244</integer>
 		<key>team_name</key>
-		<string>August Health</string>
+		<string>Tuple Guests</string>
 		<key>team_owner_email</key>
-		<string>sid@augusthealth.com</string>
+		<string>joel+guest@tuple.app</string>
 	</dict>
 	<key>annotationMode</key>
 	<string>paint</string>
@@ -81,8 +81,6 @@
 	</dict>
 	<key>callFeedback</key>
 	<false/>
-	<key>currentUserEmail</key>
-	<string>wil@wilhall.com</string>
 	<key>cursorMode</key>
 	<string>tagTeam</string>
 	<key>enableNewSignaler</key>
@@ -106,7 +104,7 @@
 	<key>lastPartialScreenRects</key>
 	<dict>
 		<key>7789-40571-490766</key>
-		<string>((0.257617, 0.000000), (0.495117, 1.000000))</string>
+		<string>((0.257422, 0.000000), (0.495117, 1.000000))</string>
 	</dict>
 	<key>lastPreferencePane</key>
 	<string>general</string>
@@ -155,10 +153,14 @@
 		<key>name</key>
 		<string>Logitech BRIO</string>
 	</dict>
+	<key>webcamGridSelfieAttached</key>
+	<false/>
 	<key>webcamResolution</key>
 	<string>high</string>
 	<key>webcamSelfie</key>
 	<string>detached</string>
+	<key>webcamSelfieAttached</key>
+	<false/>
 	<key>webcamWindowOrientation</key>
 	<string>vertical</string>
 </dict>

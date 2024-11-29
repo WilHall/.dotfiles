@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 
 if [ "$#" -ne 1 ] && [ ! -f "$HOME/.auth" ]; then
 	echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>"
@@ -224,6 +224,7 @@ configure_asdf() {
   asdf plugin add nodejs 
   asdf plugin add ruby 
   asdf plugin add rust
+  asdf plugin-add golang
 
   if [ $PLATFORM = 'macos' ]; then
     export PATH=/opt/homebrew/bin:$PATH

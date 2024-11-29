@@ -1,4 +1,6 @@
 python 2.7.18
 ruby 3.3.4
-nodejs 18.12.0
+nodejs 18.19.0
 yarn 1.22.19
+golang 1.23.0
+pnpm 8.9.2

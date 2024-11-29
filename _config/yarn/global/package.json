@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "madge": "8.0.0",
     "@elm-tooling/elm-language-server": "^1.4.5",
     "@linear/import": "^1.5.17",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",

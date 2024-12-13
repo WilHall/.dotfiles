@@ -225,6 +225,7 @@ configure_asdf() {
   asdf plugin add ruby 
   asdf plugin add rust
   asdf plugin-add golang
+  asdf plugin-add pnpm
 
   if [ $PLATFORM = 'macos' ]; then
     export PATH=/opt/homebrew/bin:$PATH

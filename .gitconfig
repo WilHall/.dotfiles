@@ -1,9 +1,9 @@
 [init]
     templatedir = ~/.dotfiles/.git-template
 [user]
-    name = Wil Hall
-    email = wil@wilhall.com
-	signingkey = 2370EB089B9DF50E
+	name = Wil Hall
+	email = wil@wilhall.com
+	signingkey = 9B9DF50E
 [blame]
     ignoreRevsFile = .git-blame-ignore-revs
 [core]

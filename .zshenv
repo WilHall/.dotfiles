@@ -17,6 +17,8 @@ unsetopt auto_cd
 setopt IGNORE_EOF
 setopt extended_glob
 
+source ~/.asdf/installs/rust/1.83.0/env
+
 if [[ "$PLATFORM" == "macos" ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
   eval "$(/opt/homebrew/bin/brew shellenv)"

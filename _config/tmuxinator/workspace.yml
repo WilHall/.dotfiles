@@ -2,5 +2,13 @@ name: workspace
 root: ~/workspace
 
 windows:
-  - main:
-      root: ~/workspace
+  - ctw:
+      root: ~/workspace/zus/ctw
+      layout: even-vertical
+      panes:
+        - mprocs:
+          - mprocs
+        - mactop:
+          - sudo mactop --color blue
+        - shell:
+          - clear

@@ -27,9 +27,7 @@
 [difftool]
     prompt = false
 [alias]
-    mob = !~/.asdf/installs/rust/1.83.0/bin/git-mob
-    pair = !~/.asdf/installs/rust/1.83.0/bin/git-mob --with
-    solo = !~/.asdf/installs/rust/1.83.0/bin/git-mob --clear
+    pair = mob
     wdiff = diff -w --word-diff=color
     slog = log --pretty=oneline --abbrev-commit
     set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
@@ -42,6 +40,7 @@
     root = rev-parse --show-toplevel
 [commit]
 	gpgsign = true
+	template = /Users/wilhall/.gitmessage
 [tag]
     forceSignAnnotated = true
 [github]
@@ -70,10 +69,3 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
-[coauthors]
-	eg = Eric Gunther <egunther@zushealth.com>
-	st = Steve Tsen <stsen@zushealth.com>
-	mr = Michael Rosata <mrosata@zushealth.com>
-	mg = Matt Gay <mgay@zushealth.com>
-	pm = Priyank Madria <pmadria@zushealth.com>
-	ml = Melody Liu <mliu@zushealth.com>

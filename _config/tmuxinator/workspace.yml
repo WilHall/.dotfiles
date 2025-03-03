@@ -12,3 +12,13 @@ windows:
           - sudo mactop --color blue
         - shell:
           - clear
+  - kilnshare:
+      root: ~/workspace/kilnshare/kilnshare.com
+      layout: even-vertical
+      panes:
+        - mprocs:
+          - mprocs
+        - mactop:
+          - sudo mactop --color blue
+        - shell:
+          - clear

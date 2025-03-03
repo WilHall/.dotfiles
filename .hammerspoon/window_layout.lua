@@ -5,6 +5,7 @@ local positions = {
   centered = { x = 0.25, y = 0.15, w = 0.5, h = 0.7 },
   center50 = { x = 0.25, y = 0, w = 0.50, h = 1 },
   center30Left = { x = 0.25, y = 0, w = 0.30, h = 1 },
+  center50Left = { x = 0.25, y = 0, w = 0.50, h = 1 },
   center20Right = { x = 0.55, y = 0, w = 0.20, h = 1 },
   right25b = { x = 0.75, y = 0.5, w = 0.25, h = 0.5 },
   left25 = { x = 0, y = 0, w = 0.25, h = 1 },
@@ -88,7 +89,11 @@ function undockedMonoLayout()
     { "Messages",        nil, laptopScreen, positions.lower50, nil, nil },
     { "Slack",           nil, laptopScreen, positions.right66, nil, nil },
     { "Google Chrome",   nil, laptopScreen, positions.full,    nil, nil },
+    { "Arc",   nil, laptopScreen, positions.full,    nil, nil },
     { "WebStorm",        nil, laptopScreen, positions.full,    nil, nil },
+    { "RubyMine",        nil, laptopScreen, positions.full,    nil, nil },
+    { "Cursor",        nil, laptopScreen, positions.full,    nil, nil },
+    { "Kaleidoscope",        nil, laptopScreen, positions.full,    nil, nil },
     { "BambuStudio",     nil, laptopScreen, positions.full,    nil, nil },
     { "OrcaSlicer",      nil, laptopScreen, positions.full,    nil, nil },
     { "Adobe Lightroom", nil, laptopScreen, positions.full,    nil, nil },
@@ -107,6 +112,7 @@ function dockedMonoLayout()
     { "Messages",        nil, externalScreen, positions.right25b,      nil, nil },
     { "Slack",           nil, externalScreen, positions.right25,       nil, nil },
     { "Google Chrome",   nil, externalScreen, positions.left25,        nil, nil },
+    { "Arc",   nil, externalScreen, positions.left25,        nil, nil },
     { "BambuStudio",     nil, externalScreen, positions.center50,      nil, nil },
     { "OrcaSlicer",      nil, externalScreen, positions.center50,      nil, nil },
     { "Adobe Lightroom", nil, externalScreen, positions.center50,      nil, nil },
@@ -115,6 +121,9 @@ function dockedMonoLayout()
     { "Copilot",         nil, externalScreen, positions.center50,      nil, nil },
     { "Code",            nil, externalScreen, positions.center30Left,  nil, nil },
     { "WebStorm",        nil, externalScreen, positions.center30Left,  nil, nil },
+    { "RubyMine",        nil, externalScreen, positions.center30Left,  nil, nil },
+    { "Cursor",        nil, externalScreen, positions.center30Left,  nil, nil },
+    { "Kaleidoscope",        nil, externalScreen, positions.center50Left,  nil, nil },
     { "iTerm2",          nil, externalScreen, positions.center20Right, nil, nil },
   }
 end
@@ -182,8 +191,12 @@ function dockedClamshellPipLayout()
     { "Messages",      nil, rightScreen,   positions.lower50, nil, nil },
     { "Slack",         nil, rightScreen,   positions.full,    nil, nil },
     { "Google Chrome", nil, leftScreen,    positions.full,    nil, nil },
+    { "Arc", nil, leftScreen,    positions.full,    nil, nil },
     { "Linear",        nil, leftScreen,    positions.full,    nil, nil },
     { "WebStorm",      nil, primaryScreen, positions.full,    nil, nil },
+    { "RubyMine",      nil, primaryScreen, positions.full,    nil, nil },
+    { "Cursor",      nil, primaryScreen, positions.full,    nil, nil },
+    { "Kaleidoscope",      nil, primaryScreen, positions.full,    nil, nil },
     { "iTerm2",        nil, primaryScreen, positions.full,    nil, nil },
   }
 end
@@ -198,8 +211,12 @@ function triScreenLayout()
     { "Messages",      nil, rightScreen,   positions.lower50, nil, nil },
     { "Slack",         nil, rightScreen,   positions.full,    nil, nil },
     { "Google Chrome", nil, leftScreen,    positions.full,    nil, nil },
+    { "Arc", nil, leftScreen,    positions.full,    nil, nil },
     { "Linear",        nil, leftScreen,    positions.full,    nil, nil },
     { "WebStorm",      nil, primaryScreen, positions.full,    nil, nil },
+    { "RubyMine",      nil, primaryScreen, positions.full,    nil, nil },
+    { "Cursor",      nil, primaryScreen, positions.full,    nil, nil },
+    { "Kaleidoscope",      nil, primaryScreen, positions.full,    nil, nil },
     { "iTerm2",        nil, primaryScreen, positions.full,    nil, nil },
   }
 end
@@ -230,34 +247,6 @@ function applyLayout()
 
   hs.layout.apply(layout)
 end
-
-hs.hotkey.bind(cmdshift, "2", function()
-  local numScreens = #hs.screen.allScreens()
-  if numScreens == 3 then
-    local isTriScreen = find(hs.screen.allScreens(), function(screen) return (screen:name() == "RTK HDR (1)") end)
-    if isTriScreen then
-      triScreenArrangementLeft()
-    else
-      dockedClamshellPipArrangementLeft()
-    end
-  end
-
-  applyLayout()
-end)
-
-hs.hotkey.bind(cmdshift, "3", function()
-  local numScreens = #hs.screen.allScreens()
-  if numScreens == 3 then
-    local isTriScreen = find(hs.screen.allScreens(), function(screen) return (screen:name() == "RTK HDR (1)") end)
-    if isTriScreen then
-      triScreenArrangementRight()
-    else
-      dockedClamshellPipArrangementRight()
-    end
-  end
-
-  applyLayout()
-end)
 
 hs.hotkey.bind(cmdshift, "1", function()
   applyLayout()

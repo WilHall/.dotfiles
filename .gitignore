@@ -65,3 +65,4 @@ appconfig/Trailer/Trailer Settings.trailerSettings
 Brewfile.lock.json
 .zsh/pure
 *.msix
+*.orig

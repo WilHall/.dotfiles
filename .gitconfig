@@ -3,7 +3,7 @@
 [user]
 	name = Wil Hall
 	email = wil@wilhall.com
-	signingkey = 9B9DF50E
+	signingkey = 26C86982F8826802
 [blame]
     ignoreRevsFile = .git-blame-ignore-revs
 [core]
@@ -11,7 +11,6 @@
     excludesfile = ~/.dotfiles/.gitignore
     trustctime = false
 	pager = diff-so-fancy | less --tabs=4 -RFX
-	hooksPath = /Users/wilhall/.git/hooks
 [push]
     autoSetupRemote = true
     default = current
@@ -26,9 +25,15 @@
     rebase = true
     default = current
 [difftool]
-    prompt = false
+	prompt = false
+	trustExitCode = true
+[log]
+  date = relative
+[format]
+  pretty = format:%h %Cblue%ad%Creset %ae %Cgreen%s%Creset
 [alias]
     pair = mob
+    solo = mob solo
     wdiff = diff -w --word-diff=color
     slog = log --pretty=oneline --abbrev-commit
     set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
@@ -44,6 +49,7 @@
 	template = /Users/wilhall/.gitmessage
 [tag]
     forceSignAnnotated = true
+	gpgSign = true
 [github]
     user = WilHall
 [filter "lfs"]
@@ -70,3 +76,19 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[gpg]
+	program = gpg2
+[diff]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+	keepBackup = false
+[git-mob-config]
+	github-fetch = true

@@ -9,6 +9,7 @@ if [[ "$PLATFORM" == "macos" ]]; then
   alias ctags="`brew --prefix`/bin/ctags"
 fi
 
+alias fspy="fs_usage -f filesys"
 
 # Bundle aliases
 alias rails="bundle exec rails"
@@ -105,6 +106,10 @@ function gfu() {
   git commit --amend --no-edit
 }
 
+function grec() {
+  git fsck --lost-found | grep "^dangling commit" | sed "s/^dangling commit //g" | xargs git show -s --oneline
+}
+
 function gqrb() {
     git set-upstream
     git fetch origin "$@:$@" && git pull && git rebase "$@"
@@ -120,6 +125,14 @@ function gbc() {
 
 function gbbc() {
   git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative $(git rev-parse --abbrev-ref HEAD)..$@
+}
+
+function rdel() {
+  find . -type f -name '$@' -delete
+}
+
+function portkill() {
+  lsof -t -i tcp:$@ | xargs kill -9
 }
 
 function mixdepbust() {

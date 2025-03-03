@@ -19,8 +19,11 @@ setopt extended_glob
 
 source ~/.asdf/installs/rust/1.83.0/env
 
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+autoload -Uz compinit && compinit
+
 if [[ "$PLATFORM" == "macos" ]]; then
-  export PATH="/opt/homebrew/bin:$PATH"
+  export PATH="/Users/wilhall/.asdf/shims:/opt/homebrew/bin:$PATH"
   eval "$(/opt/homebrew/bin/brew shellenv)"
 
   if [ -f /etc/profile ]; then

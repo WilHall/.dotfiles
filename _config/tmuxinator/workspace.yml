@@ -7,7 +7,17 @@ windows:
       layout: even-vertical
       panes:
         - mprocs:
-          - mprocs
+          - clear
+        - mactop:
+          - sudo mactop --color blue
+        - shell:
+          - clear
+  - wilhall:
+      root: ~/workspace/wilhall.com
+      layout: even-vertical
+      panes:
+        - mprocs:
+          - clear
         - mactop:
           - sudo mactop --color blue
         - shell:
@@ -17,7 +27,7 @@ windows:
       layout: even-vertical
       panes:
         - mprocs:
-          - mprocs
+          - clear
         - mactop:
           - sudo mactop --color blue
         - shell:

@@ -18,6 +18,11 @@ local positions = {
   right66 = { x = 0.34, y = 0, w = 0.66, h = 1 },
   upper50 = { x = 0, y = 0, w = 1, h = 0.5 },
   lower50 = { x = 0, y = 0.5, w = 1, h = 0.5 },
+  browser = { x = 0, y = 0, w = 0.25, h = 1 },
+  ide = { x = 0.25, y = 0, w = 0.40, h = 1 },
+  terminal = { x = 0.65, y = 0, w = 0.15, h = 1 },
+  messaging = { x = 0.80, y = 0, w = 0.20, h = 1 },
+  messagingHalf= { x = 0.80, y = 0.5, w = 0.20, h = 0.5 },
 }
 
 function find(array, fn)
@@ -106,25 +111,24 @@ end
 function dockedMonoLayout()
   local externalScreen = getExternalScreen()
   return {
-    { "Spotify",         nil, externalScreen, positions.left25,        nil, nil },
-    { "Mail",            nil, externalScreen, positions.left25,        nil, nil },
-    { "Linear",          nil, externalScreen, positions.left25,        nil, nil },
-    { "Messages",        nil, externalScreen, positions.right25b,      nil, nil },
-    { "Slack",           nil, externalScreen, positions.right25,       nil, nil },
-    { "Google Chrome",   nil, externalScreen, positions.left25,        nil, nil },
+    { "Spotify",         nil, externalScreen, positions.browser,        nil, nil },
+    { "Mail",            nil, externalScreen, positions.browser,        nil, nil },
+    { "Linear",          nil, externalScreen, positions.browser,        nil, nil },
+    { "Google Chrome",   nil, externalScreen, positions.browser,        nil, nil },
     { "Arc",   nil, externalScreen, positions.left25,        nil, nil },
     { "BambuStudio",     nil, externalScreen, positions.center50,      nil, nil },
     { "OrcaSlicer",      nil, externalScreen, positions.center50,      nil, nil },
     { "Adobe Lightroom", nil, externalScreen, positions.center50,      nil, nil },
     { "Blender",         nil, externalScreen, positions.center50,      nil, nil },
     { "Fork",            nil, externalScreen, positions.center50,      nil, nil },
-    { "Copilot",         nil, externalScreen, positions.center50,      nil, nil },
-    { "Code",            nil, externalScreen, positions.center30Left,  nil, nil },
-    { "WebStorm",        nil, externalScreen, positions.center30Left,  nil, nil },
-    { "RubyMine",        nil, externalScreen, positions.center30Left,  nil, nil },
-    { "Cursor",        nil, externalScreen, positions.center30Left,  nil, nil },
+    { "Code",            nil, externalScreen, positions.ide,  nil, nil },
+    { "WebStorm",        nil, externalScreen, positions.ide,  nil, nil },
+    { "RubyMine",        nil, externalScreen, positions.ide,  nil, nil },
+    { "Cursor",        nil, externalScreen, positions.ide,  nil, nil },
     { "Kaleidoscope",        nil, externalScreen, positions.center50Left,  nil, nil },
-    { "iTerm2",          nil, externalScreen, positions.center20Right, nil, nil },
+    { "iTerm2",          nil, externalScreen, positions.terminal, nil, nil },
+    { "Messages",        nil, externalScreen, positions.messagingHalf,      nil, nil },
+    { "Slack",           nil, externalScreen, positions.messaging,       nil, nil },
   }
 end
 

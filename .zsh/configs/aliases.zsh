@@ -9,7 +9,7 @@ if [[ "$PLATFORM" == "macos" ]]; then
   alias ctags="`brew --prefix`/bin/ctags"
 fi
 
-alias fspy="fs_usage -f filesys"
+alias fspy="sudo fs_usage -f filesys"
 
 # Bundle aliases
 alias rails="bundle exec rails"

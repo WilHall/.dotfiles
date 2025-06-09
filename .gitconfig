@@ -1,5 +1,6 @@
 [init]
     templatedir = ~/.dotfiles/.git-template
+	defaultBranch = main
 [user]
 	name = Wil Hall
 	email = wil@wilhall.com
@@ -45,7 +46,7 @@
     mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
     root = rev-parse --show-toplevel
 [commit]
-	gpgsign = true
+	gpgsign = false
 	template = /Users/wilhall/.gitmessage
 [tag]
     forceSignAnnotated = true

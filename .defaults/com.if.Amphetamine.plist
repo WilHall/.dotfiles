@@ -77,7 +77,7 @@
 	<key>Mouse Movement Smoothness</key>
 	<integer>1</integer>
 	<key>NSStatusItem Preferred Position Amphetamine</key>
-	<real>610</real>
+	<real>748</real>
 	<key>Notification Sound End</key>
 	<integer>0</integer>
 	<key>Notification Sound Start</key>
@@ -127,6 +127,17 @@
 		<integer>1835018</integer>
 		<integer>4219</integer>
 		<integer>64467</integer>
+		<integer>281284</integer>
+		<integer>251810</integer>
+		<integer>290782</integer>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>79181</integer>
+		<integer>342027</integer>
+		<integer>834388</integer>
+		<integer>183258</integer>
+		<integer>484270</integer>
+		<integer>579812</integer>
 	</array>
 	<key>Session End Time Calcuation</key>
 	<integer>0</integer>
@@ -161,7 +172,7 @@
 	<key>Stop Mouse Movement Inactivity Delay</key>
 	<integer>1800</integer>
 	<key>Total Session Run Time</key>
-	<integer>4752664</integer>
+	<integer>8079479</integer>
 	<key>Trigger Data</key>
 	<array/>
 	<key>Use 24 Hour Clock</key>

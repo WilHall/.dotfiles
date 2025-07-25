@@ -13,21 +13,23 @@
 		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
 		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>256</real>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>823 81 224 278 0 0 5120 1415 </string>
+	<string>425 335 224 278 0 0 5120 1415 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>340 993 400 135 0 0 2560 1415 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>2250 762 620 398 0 0 5120 1415 </string>
+	<string>2283 762 620 398 0 0 5120 1415 </string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-10-03T18:14:11Z</date>
+	<date>2025-07-25T14:10:40Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>2547082375</integer>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -112,10 +114,12 @@
 	fgCLAKAApwC9AOcA6QDrAO0A9AD5AP8BAQEDAQUNUQ1WDWENag13DXoNhw2QDZUNnQAA
 	AAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAA2g
 	</data>
+	<key>appearance</key>
+	<integer>2</integer>
 	<key>cleanshotIntegration</key>
 	<true/>
 	<key>defaultWallpaperPlainNSColor</key>
-	<string>cfa59ed8d549d369bcada2f599f7b432</string>
+	<string>17c0bf6877c937e12363aad1b660c3e4</string>
 	<key>displayUnits</key>
 	<true/>
 	<key>displayWidthHeightIndicators</key>
@@ -281,9 +285,9 @@
 	AAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAADZ8=
 	</data>
 	<key>s000</key>
-	<integer>56</integer>
+	<integer>68</integer>
 	<key>showMenubarIcon</key>
-	<false/>
+	<true/>
 	<key>usedInactiveMode</key>
 	<true/>
 </dict>

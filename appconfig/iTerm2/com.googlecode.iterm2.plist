@@ -1228,12 +1228,6 @@
 			<string>No</string>
 			<key>Custom Directory</key>
 			<string>No</string>
-			<key>Custom Icon Path</key>
-			<string>/Users/wilhall/Pictures/emoji/pridecat.png</string>
-			<key>Custom Tab Title</key>
-			<string>iTerm</string>
-			<key>Custom Window Title</key>
-			<string>iTerm</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -1483,12 +1477,6 @@
 			<true/>
 			<key>Use Bright Bold</key>
 			<true/>
-			<key>Use Cursor Guide</key>
-			<false/>
-			<key>Use Custom Tab Title</key>
-			<false/>
-			<key>Use Custom Window Title</key>
-			<true/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
@@ -1540,32 +1528,6 @@
 	</dict>
 	<key>SoundForEsc</key>
 	<false/>
-	<key>SplitPaneDimmingAmount</key>
-	<real>0.24172614532766987</real>
-	<key>StatusBarPosition</key>
-	<integer>0</integer>
-	<key>TabStyleWithAutomaticOption</key>
-	<integer>5</integer>
-	<key>TerminalMargin</key>
-	<integer>5</integer>
-	<key>TmuxUnpauseAutomatically</key>
-	<true/>
-	<key>TmuxUsesDedicatedProfile</key>
-	<false/>
-	<key>TmuxWarnBeforePausing</key>
-	<true/>
-	<key>TrackingRunloopForLiveResize</key>
-	<true/>
-	<key>UseAdaptiveFrameRate</key>
-	<true/>
-	<key>UseBorder</key>
-	<false/>
-	<key>UseExperimentalFontMetrics</key>
-	<true/>
-	<key>UseLionStyleFullscreen</key>
-	<true/>
-	<key>UseTmuxStatusBar</key>
-	<true/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>findMode_iTerm</key>

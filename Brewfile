@@ -72,6 +72,7 @@ brew "watchman"
 brew "pure"
 brew "python-build"
 brew "pyenv"
+brew "diff-so-fancy"
 
 cask "nextdns"
 cask "hammerspoon"

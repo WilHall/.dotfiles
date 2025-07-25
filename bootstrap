@@ -219,13 +219,13 @@ configure_asdf() {
     fi
   fi
 
-  asdf plugin-add yarn
-  asdf plugin-add python
-  asdf plugin add nodejs 
-  asdf plugin add ruby 
-  asdf plugin add rust
-  asdf plugin-add golang
-  asdf plugin-add pnpm
+  asdf plugin add yarn https://github.com/twuni/asdf-yarn
+  asdf plugin add python https://github.com/asdf-community/asdf-python.git
+  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+  asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git
+asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
+  asdf plugin add pnpm https://github.com/jonathanmorley/asdf-pnpm
 
   if [ $PLATFORM = 'macos' ]; then
     export PATH=/opt/homebrew/bin:$PATH

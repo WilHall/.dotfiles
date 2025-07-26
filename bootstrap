@@ -240,6 +240,10 @@ configure_asdf() {
     export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
     export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/opt/homebrew/opt/openssl@1.1"
     export RUBY_CFLAGS="-w"
+
+    # python@2 must be installed explicitly using Rosetta on macOS
+    export ASDF_PYTHON2_INSTALL_VERSION=$(awk '$1 == "python" { for (i=2; i<=NF; i++) if ($i ~ /^2/) print $i }' .tool-versions)
+    ARCHFLAGS="-arch x86_6" asdf install python "$ASDF_PYTHON2_INSTALL_VERSION"
   fi
 
   asdf install

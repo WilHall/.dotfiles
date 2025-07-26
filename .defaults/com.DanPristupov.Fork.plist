@@ -81,8 +81,8 @@
 	</array>
 	<key>NSSplitView Subview Frames RepositoryController_SidebarSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 249.000000, 944.000000, NO, NO</string>
-		<string>250.000000, 0.000000, 1220.000000, 944.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 249.000000, 768.000000, NO, NO</string>
+		<string>250.000000, 0.000000, 774.000000, 768.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames RevisionDetails_ChangesSplitView</key>
 	<array>
@@ -125,8 +125,10 @@
 	<string>105 159 1000 600 0 0 1512 944 </string>
 	<key>NSWindow Frame ForkWindow</key>
 	<string>1416 123 1749 1125 0 0 5120 1415 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>997 105 445 235 0 0 1512 944 </string>
 	<key>NSWindow Frame PreferencesWindowFrameAutoSaveName</key>
-	<string>2320 1001 443 224 0 0 5120 1415 </string>
+	<string>500 445 508 427 0 0 1512 944 </string>
 	<key>NSWindow Frame RevisionDetailsWindow</key>
 	<string>1568 611 1024 600 0 0 5120 1415 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
@@ -142,7 +144,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2025-07-22T15:07:52Z</date>
+	<date>2025-07-26T15:21:45Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>553371983</integer>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -153,6 +155,10 @@
 	<string>/Users/wilhall</string>
 	<key>deleteStashAfterApply</key>
 	<true/>
+	<key>diffFontName</key>
+	<string>ComicMonoRelaxedRegular</string>
+	<key>diffFontSize</key>
+	<real>12</real>
 	<key>diffShowChangeMarks</key>
 	<true/>
 	<key>enabledTabsOnFirstRun</key>
@@ -204,6 +210,8 @@
 	<string>/Users/wilhall/Downloads</string>
 	<key>revisionDetailsActiveTab</key>
 	<integer>1</integer>
+	<key>spaceCharacter</key>
+	<string>hyphen</string>
 	<key>terminalClient</key>
 	<integer>1</integer>
 	<key>theme</key>

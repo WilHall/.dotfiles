@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CKPerBootTasks</key>
+	<array>
+		<string>CKAccountInfoCacheReset</string>
+	</array>
+	<key>CKStartupTime</key>
+	<integer>1753466135</integer>
+	<key>NSApplicationCrashOnExceptions</key>
+	<false/>
+	<key>NSSplitView Subview Frames MainSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 281.000000, 944.000000, NO, NO</string>
+		<string>282.000000, 0.000000, 585.000000, 944.000000, NO, NO</string>
+		<string>868.000000, 0.000000, 320.000000, 944.000000, NO, NO</string>
+	</array>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
+		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
+	</array>
+	<key>NSSplitView Subview Frames SplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 585.000000, 0.000000, NO, NO</string>
+		<string>0.000000, 1.000000, 585.000000, 943.000000, NO, NO</string>
+	</array>
+	<key>NSToolbar Configuration 27C66883-3175-4259-9481-9141662B9C7C</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame ItemDetailWindow</key>
+	<string>140 0 925 944 0 0 1512 944 </string>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>44 81 224 278 0 0 1512 944 </string>
+	<key>NSWindow Frame SearchWindow</key>
+	<string>157 475 365 462 0 0 1512 944 </string>
+	<key>NSWindow Frame WindowAutosave</key>
+	<string>324 0 1188 944 0 0 1512 944 </string>
+	<key>NSWindow Frame introWindow</key>
+	<string>66 291 720 600 0 0 1512 944 </string>
+	<key>NSWindow Frame newTaskPanel</key>
+	<string>877 684 550 260 0 0 1512 944 </string>
+	<key>RecentSearches</key>
+	<true/>
+	<key>analyticsData</key>
+	<dict>
+		<key>dayCount</key>
+		<integer>0</integer>
+		<key>goalsCount</key>
+		<integer>0</integer>
+		<key>nextPageCount</key>
+		<integer>0</integer>
+		<key>reportsCount</key>
+		<integer>0</integer>
+		<key>sessionCount</key>
+		<integer>57</integer>
+		<key>standardDate</key>
+		<date>2025-07-26T10:32:19Z</date>
+		<key>todayPageCount</key>
+		<integer>0</integer>
+	</dict>
+	<key>automationsLastRun</key>
+	<integer>775218743</integer>
+	<key>completedTaskFileLastSaved</key>
+	<integer>775218721</integer>
+	<key>currentVersion</key>
+	<integer>801</integer>
+	<key>currentView</key>
+	<integer>0</integer>
+	<key>gtRestoration</key>
+	<dict>
+		<key>mac</key>
+		<dict>
+			<key>row</key>
+			<integer>2</integer>
+			<key>view</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>inWindowTaskDetail</key>
+	<true/>
+	<key>recentViewsArray</key>
+	<array/>
+	<key>showCompleted</key>
+	<false/>
+	<key>syncAppearanceDate</key>
+	<date>2025-07-26T15:48:40Z</date>
+	<key>syncListsDate</key>
+	<date>2025-07-26T15:50:14Z</date>
+	<key>syncOthersDate</key>
+	<date>2025-07-26T15:49:17Z</date>
+	<key>v3AutoSyncTime</key>
+	<integer>0</integer>
+</dict>
+</plist>

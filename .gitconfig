@@ -80,16 +80,14 @@
 [gpg]
 	program = gpg2
 [diff]
-	tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[merge]
-	tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	tool = fork
+[difftool "fork"]
 	trustExitCode = true
-[mergetool]
-	prompt = false
-	keepBackup = false
+	cmd = fork --diff $LOCAL $REMOTE
+[merge]
+	tool = fork
+[mergetool "fork"]
+	trustExitCode = true
+	cmd = fork --merge $LOCAL $REMOTE $BASE $MERGED
 [git-mob-config]
 	github-fetch = true

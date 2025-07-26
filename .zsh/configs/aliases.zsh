@@ -139,4 +139,4 @@ function mixdepbust() {
   rm -rf deps ~/.hex/cache.ets
 }
 
-alias update-dev="brew update; brew upgrade; brew upgrade --cask; asdf plugin-update --all; antigen update; vim -c 'Lazy sync' -c 'q!' -c 'q!'"
+alias update-dev="brew update; brew upgrade; brew upgrade --cask; asdf plugin-update --all; antigen update; vim -c 'Lazy sync' -c 'q!' -c 'q!'; mas upgrade"

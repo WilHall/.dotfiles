@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppCore.UserSession.latitude</key>
+	<real>42.494500000000002</real>
+	<key>AppCore.UserSession.longitude</key>
+	<real>-71.0715</real>
+	<key>NSCOnboardingCompleted</key>
+	<true/>
+	<key>NSStatusItem Preferred Position Item-1</key>
+	<real>5722</real>
+	<key>appDataCollectionAccepted</key>
+	<true/>
+	<key>appIcon</key>
+	<integer>1</integer>
+	<key>appPreviouslyOpened</key>
+	<true/>
+	<key>autoConnectOnLaunchConnectionTarget</key>
+	<dict>
+		<key>wireguard_udp</key>
+		<string>country:us:-:-:-</string>
+	</dict>
+	<key>cocoamqtt.emqx.version</key>
+	<string>3.1.1</string>
+	<key>connectOnDemand</key>
+	<integer>0</integer>
+	<key>connection_statistics_longest_streak</key>
+	<integer>1</integer>
+	<key>enableCustomDNS</key>
+	<integer>0</integer>
+	<key>helpUsImprove</key>
+	<true/>
+	<key>isAnalyticsConsentAllowed</key>
+	<true/>
+	<key>isAppWasConnectedToVPN</key>
+	<true/>
+	<key>isAutoConnectOn</key>
+	<true/>
+	<key>isDefaultPresetsUsed</key>
+	<true/>
+	<key>isEngagementMeasurementConsentAllowed</key>
+	<true/>
+	<key>isUserConsentAccepted</key>
+	<true/>
+	<key>keychainMigrationVersionKey</key>
+	<integer>2</integer>
+	<key>lastConnectionDate</key>
+	<date>2025-07-26T02:17:27Z</date>
+	<key>lastLoadUpdateTime</key>
+	<date>2025-07-26T02:14:51Z</date>
+	<key>lastMapLocation</key>
+	<string>{"long":-71.060278,"lat":42.358333}</string>
+	<key>lastServerDownloadTimeKey</key>
+	<date>2025-07-26T01:14:25Z</date>
+	<key>lastSuccessfulSubscriptionHistoryUpdate</key>
+	<date>2025-07-26T01:17:05Z</date>
+	<key>lastTemplatesUpdateTimeKey</key>
+	<date>2025-07-25T18:35:15Z</date>
+	<key>meshnetEnabled</key>
+	<false/>
+	<key>noNetworkAlertOnMeshnetEnabled</key>
+	<true/>
+	<key>ratingPopupShowed</key>
+	<date>2025-07-26T02:17:29Z</date>
+	<key>startOnBoot</key>
+	<true/>
+	<key>wasDashboardOnboardingShownAfterUpdate</key>
+	<false/>
+</dict>
+</plist>

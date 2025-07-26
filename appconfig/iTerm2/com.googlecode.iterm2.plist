@@ -1235,7 +1235,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<false/>
+			<true/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1370,6 +1370,8 @@
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
+			<false/>
+			<key>Restrict Mouse Reporting to Alternate Screen Mode</key>
 			<false/>
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>

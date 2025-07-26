@@ -13,8 +13,6 @@
 		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
 		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
-	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>256</real>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
@@ -119,7 +117,7 @@
 	<key>cleanshotIntegration</key>
 	<true/>
 	<key>defaultWallpaperPlainNSColor</key>
-	<string>17c0bf6877c937e12363aad1b660c3e4</string>
+	<string>cfa59ed8d549d369bcada2f599f7b432</string>
 	<key>displayUnits</key>
 	<true/>
 	<key>displayWidthHeightIndicators</key>
@@ -287,7 +285,7 @@
 	<key>s000</key>
 	<integer>68</integer>
 	<key>showMenubarIcon</key>
-	<true/>
+	<false/>
 	<key>usedInactiveMode</key>
 	<true/>
 </dict>

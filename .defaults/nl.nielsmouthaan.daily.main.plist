@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CKPerBootTasks</key>
+	<array>
+		<string>CKAccountInfoCacheReset</string>
+	</array>
+	<key>CKStartupTime</key>
+	<integer>1753548519</integer>
+	<key>MASPreferences Frame Top Left</key>
+	<string>{497, 835}</string>
+	<key>MASPreferences Selected Identifier View</key>
+	<string>PreferencesPreferences</string>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>5554</real>
+	<key>askAfterInactivity</key>
+	<real>900</real>
+	<key>deduplicatedActivities</key>
+	<true/>
+	<key>deduplicatedDays</key>
+	<true/>
+	<key>dialogTimeInterval</key>
+	<real>900</real>
+	<key>displayedDashboardBannerLastAt</key>
+	<date>2025-07-26T17:01:26Z</date>
+	<key>groupsViewWidth</key>
+	<real>250</real>
+	<key>installationID</key>
+	<string>E14D9B6B-7B9B-42EC-9A45-6D4F495C66B3</string>
+	<key>introductionShown</key>
+	<true/>
+	<key>lastAppVersionWhenOpeningDashboard</key>
+	<string>1.24.0</string>
+	<key>migratedEnabledAndHiddenToArchived</key>
+	<true/>
+	<key>previouslyDeniedForNewsletterSubscription</key>
+	<date>2025-07-26T16:51:45Z</date>
+	<key>promotionalOfferLastDisplayedAsDialog_Year_Subscription_Extended_Trial_1W_Yearly</key>
+	<date>2025-07-26T16:01:15Z</date>
+	<key>timeRounding</key>
+	<integer>15</integer>
+	<key>translucentEffect</key>
+	<true/>
+</dict>
+</plist>

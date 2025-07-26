@@ -2,33 +2,29 @@ name: workspace
 root: ~/workspace
 
 windows:
-  - ctw:
-      root: ~/workspace/zus/ctw
-      layout: even-vertical
-      panes:
-        - mprocs:
-          - clear
-        - mactop:
-          - sudo mactop --color blue
-        - shell:
-          - clear
   - wilhall:
       root: ~/workspace/wilhall.com
       layout: even-vertical
       panes:
         - mprocs:
-          - clear
+            - clear
         - mactop:
-          - sudo mactop --color blue
+            - sudo mactop --color blue
         - shell:
-          - clear
-  - kilnshare:
-      root: ~/workspace/kilnshare/kilnshare.com
+            - clear
+  - general:
+      root: ~/workspace
       layout: even-vertical
       panes:
-        - mprocs:
-          - clear
         - mactop:
-          - sudo mactop --color blue
+            - sudo mactop --color blue
         - shell:
-          - clear
+            - clear
+  - dotfiles:
+      root: ~/.dotfiles
+      layout: even-vertical
+      panes:
+        - mactop:
+            - sudo mactop --color blue
+        - shell:
+            - clear

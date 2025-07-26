@@ -307,6 +307,8 @@
 	</dict>
 	<key>CopyProgressWindowLocation</key>
 	<string>{1401, 276}</string>
+	<key>DataSeparatedDisplayNameCache</key>
+	<string></string>
 	<key>DesktopViewSettings</key>
 	<dict>
 		<key>IconViewSettings</key>
@@ -375,6 +377,146 @@
 		<true/>
 		<key>textSize</key>
 		<real>12</real>
+		<key>viewOptionsVersion</key>
+		<integer>1</integer>
+	</dict>
+	<key>FK_DefaultListViewSettings</key>
+	<dict>
+		<key>calculateAllSizes</key>
+		<false/>
+		<key>columns</key>
+		<array>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>name</string>
+				<key>visible</key>
+				<true/>
+				<key>width</key>
+				<integer>300</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>dateModified</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>181</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>dateCreated</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>181</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>size</string>
+				<key>visible</key>
+				<true/>
+				<key>width</key>
+				<integer>97</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>kind</string>
+				<key>visible</key>
+				<true/>
+				<key>width</key>
+				<integer>115</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>label</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>100</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>version</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>75</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<true/>
+				<key>identifier</key>
+				<string>comments</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>300</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>dateLastOpened</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>200</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>shareOwner</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>200</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>shareLastEditor</string>
+				<key>visible</key>
+				<false/>
+				<key>width</key>
+				<integer>200</integer>
+			</dict>
+			<dict>
+				<key>ascending</key>
+				<false/>
+				<key>identifier</key>
+				<string>dateAdded</string>
+				<key>visible</key>
+				<true/>
+				<key>width</key>
+				<integer>181</integer>
+			</dict>
+		</array>
+		<key>iconSize</key>
+		<integer>16</integer>
+		<key>showIconPreview</key>
+		<true/>
+		<key>sortColumn</key>
+		<string>dateAdded</string>
+		<key>textSize</key>
+		<integer>13</integer>
+		<key>useRelativeDates</key>
+		<true/>
 		<key>viewOptionsVersion</key>
 		<integer>1</integer>
 	</dict>
@@ -1729,6 +1871,17 @@
 			<key>yRelative</key>
 			<integer>532</integer>
 		</dict>
+		<key>Fork_0x1.6fc1c12p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>190</integer>
+		</dict>
 		<key>GPG Suite_0x1.32b987p+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
@@ -1873,6 +2026,17 @@
 			<integer>196</integer>
 		</dict>
 		<key>Lightroom Installer_0x1.4d64fb58p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>190</integer>
+		</dict>
+		<key>Lightroom Installer_0x1.6ee29eep+29</key>
 		<dict>
 			<key>AnchorRelativeTo</key>
 			<integer>1</integer>
@@ -2058,6 +2222,28 @@
 			<integer>-65</integer>
 			<key>yRelative</key>
 			<integer>84</integer>
+		</dict>
+		<key>Macintosh HD_0x1.6e25621p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>78</integer>
+		</dict>
+		<key>Macintosh HD_0x1.6e39a85p+29</key>
+		<dict>
+			<key>AnchorRelativeTo</key>
+			<integer>1</integer>
+			<key>ScreenID</key>
+			<integer>0</integer>
+			<key>xRelative</key>
+			<integer>-65</integer>
+			<key>yRelative</key>
+			<integer>78</integer>
 		</dict>
 		<key>Mimestream_0.23.2_0x1.348a9c6p+29</key>
 		<dict>
@@ -2513,7 +2699,7 @@
 	<key>FXLastSearchScope</key>
 	<string>SCcf</string>
 	<key>FXPreferencesWindow.Location</key>
-	<string>{{510, 542}, {377, 402}}</string>
+	<string>{{509, 564}, {377, 380}}</string>
 	<key>FXPreferredGroupBy</key>
 	<string>Date Added</string>
 	<key>FXPreferredSearchViewStyle</key>
@@ -2535,6 +2721,7 @@
 	<key>FXSyncExtensionToolbarItemsAutomaticallyAdded</key>
 	<array>
 		<string>com.getdropbox.dropbox.garcon</string>
+		<string>com.aone.keka.KekaFinderIntegration</string>
 	</array>
 	<key>FXSyncExtensionToolbarItemsPendingAdd</key>
 	<array/>
@@ -2560,14 +2747,14 @@
 	<key>FontSizeCategory</key>
 	<string>Custom</string>
 	<key>GoToField</key>
-	<string>~/.dotfiles</string>
+	<string>~/config</string>
 	<key>GoToFieldHistory</key>
 	<array>
+		<string>/Users/wilhall/.config</string>
 		<string>/Users/wilhall/.dotfiles</string>
 		<string>/Users/wilhall/Library/Containers/com.docker.docker/Data/vms/0/data</string>
 		<string>/Users/wilhall/Library</string>
 		<string>/Users/wilhall/Library/QuickLook</string>
-		<string>/Users/wilhall/.zsh</string>
 	</array>
 	<key>ICloudViewSettings</key>
 	<dict>
@@ -2930,11 +3117,11 @@
 			<key>ShowStatusBar</key>
 			<false/>
 			<key>ShowTabView</key>
-			<true/>
+			<false/>
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{647, 457}, {920, 438}}</string>
+			<string>{{79, 85}, {1433, 859}}</string>
 		</dict>
 	</dict>
 	<key>MountProgressWindowLocation</key>
@@ -2976,6 +3163,7 @@
 			<string>com.apple.finder.ACTN</string>
 			<string>NSToolbarSpaceItem</string>
 			<string>com.getdropbox.dropbox.garcon</string>
+			<string>com.aone.keka.KekaFinderIntegration</string>
 			<string>com.apple.finder.SRCH</string>
 		</array>
 		<key>TB Size Mode</key>
@@ -3322,7 +3510,7 @@
 		</dict>
 	</dict>
 	<key>PreferencesWindow.LastSelection</key>
-	<string>GNRL</string>
+	<string>ADVD</string>
 	<key>PreviewPaneGalleryWidth</key>
 	<real>250</real>
 	<key>PreviewPaneWidth</key>

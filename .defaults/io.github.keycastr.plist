@@ -7,13 +7,15 @@
 		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
 		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>5590</real>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame KCBezelWindow default.bezelWindow</key>
-	<string>10 10 5100 139 0 0 5120 1415 </string>
+	<string>10 10 1492 33 0 0 1512 944 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>473 158 224 278 0 0 5120 1415 </string>
 	<key>NSWindow Frame svelte visualizerFrame</key>
@@ -25,16 +27,18 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2025-07-25T14:16:24Z</date>
+	<date>2025-07-26T21:41:06Z</date>
 	<key>SULastProfileSubmissionDate</key>
 	<date>2025-07-24T14:16:21Z</date>
 	<key>SUSendProfileInfo</key>
 	<true/>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>859578622</integer>
+	<key>alwaysShowPrefs</key>
+	<false/>
 	<key>capturingHotKey</key>
 	<data>
-	AAAcACgAAAA=
+	AAAeACgAAAA=
 	</data>
 	<key>default.allKeys</key>
 	<false/>

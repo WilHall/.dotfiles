@@ -7,7 +7,7 @@
 		<string>CKAccountInfoCacheReset</string>
 	</array>
 	<key>CKStartupTime</key>
-	<integer>1753466135</integer>
+	<integer>1753548519</integer>
 	<key>NSApplicationCrashOnExceptions</key>
 	<false/>
 	<key>NSSplitView Subview Frames MainSplitView</key>
@@ -47,7 +47,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>44 81 224 278 0 0 1512 944 </string>
 	<key>NSWindow Frame SearchWindow</key>
-	<string>157 475 365 462 0 0 1512 944 </string>
+	<string>439 475 365 462 0 0 1512 944 </string>
 	<key>NSWindow Frame WindowAutosave</key>
 	<string>324 0 1188 944 0 0 1512 944 </string>
 	<key>NSWindow Frame introWindow</key>
@@ -67,7 +67,7 @@
 		<key>reportsCount</key>
 		<integer>0</integer>
 		<key>sessionCount</key>
-		<integer>57</integer>
+		<integer>106</integer>
 		<key>standardDate</key>
 		<date>2025-07-26T10:32:19Z</date>
 		<key>todayPageCount</key>
@@ -86,7 +86,7 @@
 		<key>mac</key>
 		<dict>
 			<key>row</key>
-			<integer>2</integer>
+			<integer>21</integer>
 			<key>view</key>
 			<integer>0</integer>
 		</dict>
@@ -100,7 +100,7 @@
 	<key>syncAppearanceDate</key>
 	<date>2025-07-26T15:48:40Z</date>
 	<key>syncListsDate</key>
-	<date>2025-07-26T15:50:14Z</date>
+	<date>2025-07-26T16:16:31Z</date>
 	<key>syncOthersDate</key>
 	<date>2025-07-26T15:49:17Z</date>
 	<key>v3AutoSyncTime</key>

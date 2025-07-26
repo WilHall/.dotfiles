@@ -6,10 +6,14 @@
 	<integer>0</integer>
 	<key>AKLastLocale</key>
 	<string>en_US</string>
+	<key>AppleAccentColor</key>
+	<integer>6</integer>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>4</integer>
 	<key>AppleAquaColorVariant</key>
 	<integer>1</integer>
+	<key>AppleHighlightColor</key>
+	<string>1.000000 0.749020 0.823529 Pink</string>
 	<key>AppleKeyboardUIMode</key>
 	<integer>2</integer>
 	<key>AppleLanguages</key>
@@ -24,6 +28,8 @@
 	<string>en_US</string>
 	<key>AppleMeasurementUnits</key>
 	<string>Inches</string>
+	<key>AppleMenuBarVisibleInFullscreen</key>
+	<true/>
 	<key>AppleMetricUnits</key>
 	<false/>
 	<key>AppleMiniaturizeOnDoubleClick</key>
@@ -42,6 +48,11 @@
 	<string>Fahrenheit</string>
 	<key>AppleWindowTabbingMode</key>
 	<string>always</string>
+	<key>CFRKS</key>
+	<dict>
+		<key>DomainCategory</key>
+		<real>9310500</real>
+	</dict>
 	<key>CGDisableCursorLocationMagnification</key>
 	<true/>
 	<key>KB_DoubleQuoteOption</key>
@@ -68,7 +79,7 @@
 	<key>NSLinguisticDataAssetsRequestLastInterval</key>
 	<real>86400</real>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2024-10-03T12:55:36Z</date>
+	<date>2025-07-26T16:50:06Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>en</string>
@@ -218,11 +229,23 @@
 		<dict>
 			<key>com.adobe.accmac.ACCFinderSync</key>
 			<true/>
+			<key>com.aone.keka.KekaFinderIntegration</key>
+			<false/>
 		</dict>
 		<key>dirMap</key>
 		<dict>
 			<key>com.adobe.accmac.ACCFinderSync</key>
 			<array/>
+			<key>com.aone.keka.KekaFinderIntegration</key>
+			<array>
+				<string>file:///Users/wilhall/Music/</string>
+				<string>file:///Users/wilhall/Downloads/</string>
+				<string>file:///Users/wilhall/Movies/</string>
+				<string>file:///Users/wilhall/Public/</string>
+				<string>file:///Users/wilhall/Pictures/</string>
+				<string>file:///Users/wilhall/Documents/</string>
+				<string>file:///Users/wilhall/Desktop/</string>
+			</array>
 		</dict>
 	</dict>
 	<key>com.apple.gms.availability.key</key>

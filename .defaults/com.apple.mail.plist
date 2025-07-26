@@ -4,19 +4,21 @@
 <dict>
 	<key>AccountOrdering</key>
 	<array>
-		<string>local://50AB6912-677A-4ADC-947A-CCDC1AF0B5AF/</string>
-		<string>imap://0F322549-5F7C-473D-8269-9DA3332B3760/</string>
+		<string>local://C4C3A2DB-E3FC-4244-B7E0-A16D58B35425/</string>
+		<string>imap://F86DE43D-2B13-4F66-B458-7DB373B6A47E/</string>
 	</array>
 	<key>AttachmentMIMESnipUpgradeState</key>
 	<integer>4</integer>
+	<key>BottomPreview</key>
+	<false/>
 	<key>CKPerBootTasks</key>
 	<array>
 		<string>CKAccountInfoCacheReset</string>
 	</array>
 	<key>CKStartupTime</key>
-	<integer>1726665444</integer>
-	<key>CheckedForOldLSMMapFile</key>
-	<true/>
+	<integer>1753548519</integer>
+	<key>CategoriesEnabledByDefault</key>
+	<false/>
 	<key>CloudKitAccountInfoCache</key>
 	<dict>
 		<key>b0f6c00c1bc0cc8f587b86d07289c43e1d5161b1cf9a6687daf033a3801a3c16</key>
@@ -28,46 +30,51 @@
 		E0hhc1ZhbGlkQ3JlZGVudGlhbHNfEBBBY2NvdW50UGFydGl0aW9uXxAkRGV2
 		aWNlVG9EZXZpY2VFbmNyeXB0aW9uQXZhaWxhYmlsaXR5XxASTmVlZHNUb1Zl
 		cmlmeVRlcm1zViRjbGFzc11BY2NvdW50U3RhdHVzXxAcQWNjb3VudEluZm9W
-		YWxpZGF0aW9uQ291bnRlchABCAkQAwiAAhEBdNIfICEiWiRjbGFzc25hbWVY
-		JGNsYXNzZXNdQ0tBY2NvdW50SW5mb6IhI1hOU09iamVjdAAIABEAGgAkACkA
-		MgA3AEkATABRAFMAVwBdAHIAjwCcALIAyADbAQIBFwEeASwBSwFNAU4BTwFR
-		AVIBVAFXAVwBZwFwAX4BgQAAAAAAAAIBAAAAAAAAACQAAAAAAAAAAAAAAAAA
-		AAGK
+		YWxpZGF0aW9uQ291bnRlchABCAkQAwiAAhAT0h8gISJaJGNsYXNzbmFtZVgk
+		Y2xhc3Nlc11DS0FjY291bnRJbmZvoiEjWE5TT2JqZWN0AAgAEQAaACQAKQAy
+		ADcASQBMAFEAUwBXAF0AcgCPAJwAsgDIANsBAgEXAR4BLAFLAU0BTgFPAVEB
+		UgFUAVYBWwFmAW8BfQGAAAAAAAAAAgEAAAAAAAAAJAAAAAAAAAAAAAAAAAAA
+		AYk=
 		</data>
 	</dict>
 	<key>ColumnConfiguration</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBwLDB8gISIjJCUpMDQ4Pj9N
-	VVZXWFldY2tzdHqCVSRudWxs0w0ODxAXHldOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNz
-	phESExQVFoACgAOABIAFgAaAB6YYGRobHB2ACIAKgAuADIAVgBmACV8QFk1haWxib3hD
-	b2x1bW5UeXBlU21hcnRfEBpNYWlsYm94Q29sdW1uVHlwZVJlYWRMYXRlcl8QGk1haWxi
-	b3hDb2x1bW5UeXBlU2VuZExhdGVyXxAZTWFpbGJveENvbHVtblR5cGVPdXRnb2luZ18Q
-	F01haWxib3hDb2x1bW5UeXBlTm9ybWFsXxAXTWFpbGJveENvbHVtblR5cGVEcmFmdHPT
-	DQ4PJiceoKCACdIqKywtWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0
-	aW9uYXJ5oywuL1xOU0RpY3Rpb25hcnlYTlNPYmplY3TTDQ4PMTIeoKCACdMNDg81Nh6g
-	oIAJ0w0ODzk7HqE6gA2hPIAOgAlSMjDXD0BBQkNERUZHSElJOklYcG9zaXRpb25Wd2lk
-	dGhzV3Zpc2libGVfEB1pc0F1dG9tYXRpY0luc2VydGlvbkF2YWlsYWJsZVppZGVudGlm
-	aWVyXxAraXNBdXRvbWF0aWNJbnNlcnRpb25XaGlsZVNlYXJjaGluZ0F2YWlsYWJsZYAU
-	gBOADwgIgA0I0w0OD05RHqJPUIAQgBGiUlKAEoASgAlYbXVsdGlwbGVWbm9ybWFsI0Bp
-	YAAAAAAAEADSKitaW18QHk1lc3NhZ2VMaXN0Q29sdW1uQ29uZmlndXJhdGlvbqJcL18Q
-	Hk1lc3NhZ2VMaXN0Q29sdW1uQ29uZmlndXJhdGlvbtMNDg9eYB6hOoANoWGAFoAJ1w9A
-	QUJDREVGR2ZJSTpJgBSAE4AXCAiADQjTDQ4PbG8eok9QgBCAEaJwcIAYgBiACSNAa0AA
-	AAAAANMNDg91dx6hOoANoXiAGoAJ1w9AQUJDREVGR31JSTpJgBSAE4AbCAiADQjTDQ4P
-	g4Yeok9QgBCAEaJwcIAYgBiACQAIABEAGgAkACkAMgA3AEkATABRAFMAcgB4AH8AhwCS
-	AJkAoACiAKQApgCoAKoArACzALUAtwC5ALsAvQC/AMEA2gD3ARQBMAFKAWQBawFsAW0B
-	bwF0AX8BiAGeAaIBrwG4Ab8BwAHBAcMBygHLAcwBzgHVAdcB2QHbAd0B3wHiAfEB+gIB
-	AgkCKQI0AmICZAJmAmgCaQJqAmwCbQJ0AncCeQJ7An4CgAKCAoQCjQKUAp0CnwKkAsUC
-	yALpAvAC8gL0AvYC+AL6AwkDCwMNAw8DEAMRAxMDFAMbAx4DIAMiAyUDJwMpAysDNAM7
-	Az0DPwNBA0MDRQNUA1YDWANaA1sDXANeA18DZgNpA2sDbQNwA3IDdAAAAAAAAAIBAAAA
-	AAAAAIoAAAAAAAAAAAAAAAAAAAN2
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEB4LDB8gISIjJCUrLDpCQ0RF
+	TE1RVVldYWlqcnp7g4dVJG51bGzTDQ4PEBceV05TLmtleXNaTlMub2JqZWN0c1YkY2xh
+	c3OmERITFBUWgAKAA4AEgAWABoAHphgZGhscHYAIgBKAE4AUgBWAFoAPXxAXTWFpbGJv
+	eENvbHVtblR5cGVEcmFmdHNfEBpNYWlsYm94Q29sdW1uVHlwZVJlYWRMYXRlcl8QGk1h
+	aWxib3hDb2x1bW5UeXBlU2VuZExhdGVyXxAZTWFpbGJveENvbHVtblR5cGVPdXRnb2lu
+	Z18QFk1haWxib3hDb2x1bW5UeXBlU21hcnRfEBdNYWlsYm94Q29sdW1uVHlwZU5vcm1h
+	bNMNDg8mKB6hJ4AJoSmACoAPUjIw1w8tLi8wMTIzNDU2Nic2WHBvc2l0aW9uVndpZHRo
+	c1d2aXNpYmxlXxAdaXNBdXRvbWF0aWNJbnNlcnRpb25BdmFpbGFibGVaaWRlbnRpZmll
+	cl8QK2lzQXV0b21hdGljSW5zZXJ0aW9uV2hpbGVTZWFyY2hpbmdBdmFpbGFibGWAEYAQ
+	gAsICIAJCNMNDg87Ph6iPD2ADIANoj8/gA6ADoAPWG11bHRpcGxlVm5vcm1hbCNAdwAA
+	AAAAANJGR0hJWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5
+	o0hKS1xOU0RpY3Rpb25hcnlYTlNPYmplY3QQANJGR05PXxAeTWVzc2FnZUxpc3RDb2x1
+	bW5Db25maWd1cmF0aW9uolBLXxAeTWVzc2FnZUxpc3RDb2x1bW5Db25maWd1cmF0aW9u
+	0w0OD1JTHqCggA/TDQ4PVlceoKCAD9MNDg9aWx6goIAP0w0OD15fHqCggA/TDQ4PYmUe
+	oidkgAmAF6JmZ4AYgBuAD1IxNNcPLS4vMDEyMzRtNjYnNoARgBCAGQgIgAkI0w0OD3N2
+	HqI8PYAMgA2id3eAGoAagA8jQHYQAAAAAADXDy0uLzAxMjN9fn82ZDaAEYAdgBwJCIAX
+	CNMNDg+EhR6goIAPEA0ACAARABoAJAApADIANwBJAEwAUQBTAHQAegCBAIkAlACbAKIA
+	pACmAKgAqgCsAK4AtQC3ALkAuwC9AL8AwQDDAN0A+gEXATMBTAFmAW0BbwFxAXMBdQF3
+	AXoBiQGSAZkBoQHBAcwB+gH8Af4CAAIBAgICBAIFAgwCDwIRAhMCFgIYAhoCHAIlAiwC
+	NQI6AkUCTgJkAmgCdQJ+AoAChQKmAqkCygLRAtIC0wLVAtwC3QLeAuAC5wLoAukC6wLy
+	AvMC9AL2Av0DAAMCAwQDBwMJAwsDDQMQAx8DIQMjAyUDJgMnAykDKgMxAzQDNgM4AzsD
+	PQM/A0EDSgNZA1sDXQNfA2ADYQNjA2QDawNsA20DbwAAAAAAAAIBAAAAAAAAAIgAAAAA
+	AAAAAAAAAAAAAANx
 	</data>
-	<key>ConversationViewMarkAllAsRead</key>
-	<true/>
+	<key>ColumnLayoutMessageList</key>
+	<false/>
 	<key>ConversationViewSortDescending</key>
 	<true/>
-	<key>CurrentTransferMailboxURLString</key>
-	<string>imap://0F322549-5F7C-473D-8269-9DA3332B3760/INBOX</string>
+	<key>ConversationViewSpansMailboxes</key>
+	<true/>
+	<key>D02C4B54-E5FD-4412-8DC4-4C1D9A923731</key>
+	<dict>
+		<key>count</key>
+		<integer>0</integer>
+	</dict>
 	<key>DefaultViewerState</key>
 	<dict>
 		<key>FavoritesBarVisible</key>
@@ -101,41 +108,12 @@
 			<false/>
 		</dict>
 		<key>windowFrame</key>
-		<string>58 0 1265 1415 0 0 5120 1415 </string>
+		<string>45 0 1467 944 0 0 1512 944 </string>
 	</dict>
-	<key>DeleteAttachmentsEnabled</key>
-	<false/>
-	<key>DraftsViewerAttributes</key>
-	<dict>
-		<key>DisplayInThreadedMode</key>
-		<string>YES</string>
-		<key>FilterEnabled</key>
-		<string>NO</string>
-		<key>FocusEnabled</key>
-		<string>YES</string>
-		<key>MailboxViewingState</key>
-		<dict>
-			<key>ScrollPositionType</key>
-			<integer>0</integer>
-		</dict>
-		<key>ReadLaterEnabled</key>
-		<string>NO</string>
-		<key>SelectedFilters</key>
-		<array>
-			<dict>
-				<key>FilterIdentifier</key>
-				<string>Unread</string>
-			</dict>
-		</array>
-		<key>SortOrder</key>
-		<string>received-date</string>
-		<key>SortedDescending</key>
-		<string>YES</string>
-	</dict>
-	<key>FavoriteMailboxDraftsAutomaticallyAdded</key>
-	<true/>
-	<key>FavoriteMailboxFlaggedAutomaticallyAdded</key>
-	<true/>
+	<key>EnableContactPhotos</key>
+	<integer>0</integer>
+	<key>EnableToCcInMessageList</key>
+	<integer>0</integer>
 	<key>FavoriteMailboxInboxAutomaticallyAdded</key>
 	<true/>
 	<key>FavoriteMailboxSentAutomaticallyAdded</key>
@@ -160,30 +138,6 @@
 			<key>MailboxUidIsContainer</key>
 			<true/>
 			<key>MailboxUidName</key>
-			<string>Flagged</string>
-			<key>MailboxUidPersistentIdentifier</key>
-			<string>Flags</string>
-			<key>MailboxUidType</key>
-			<integer>108</integer>
-		</dict>
-		<dict>
-			<key>IsPrefferedSelection</key>
-			<false/>
-			<key>MailboxUidIsContainer</key>
-			<true/>
-			<key>MailboxUidName</key>
-			<string>Drafts</string>
-			<key>MailboxUidPersistentIdentifier</key>
-			<string>Drafts</string>
-			<key>MailboxUidType</key>
-			<integer>103</integer>
-		</dict>
-		<dict>
-			<key>IsPrefferedSelection</key>
-			<false/>
-			<key>MailboxUidIsContainer</key>
-			<true/>
-			<key>MailboxUidName</key>
 			<string>Sent</string>
 			<key>MailboxUidPersistentIdentifier</key>
 			<string>Sent Messages</string>
@@ -196,7 +150,7 @@
 	<key>FavoritesVersion</key>
 	<integer>3</integer>
 	<key>FlagColorToDisplay</key>
-	<integer>3</integer>
+	<integer>1</integer>
 	<key>FlagNames</key>
 	<dict>
 		<key>0</key>
@@ -214,518 +168,14 @@
 		<key>6</key>
 		<string>Gray</string>
 	</dict>
-	<key>FlagsViewerAttributes</key>
-	<dict>
-		<key>DisplayInThreadedMode</key>
-		<string>YES</string>
-		<key>FilterEnabled</key>
-		<string>NO</string>
-		<key>FocusEnabled</key>
-		<string>YES</string>
-		<key>MailboxViewingState</key>
-		<dict>
-			<key>ScrollPositionType</key>
-			<integer>0</integer>
-			<key>ThreadIdentifiers</key>
-			<array>
-				<integer>27437</integer>
-				<integer>27389</integer>
-				<integer>28015</integer>
-				<integer>26837</integer>
-				<integer>26763</integer>
-				<integer>7981</integer>
-				<integer>8321</integer>
-				<integer>776</integer>
-				<integer>8724</integer>
-				<integer>7980</integer>
-				<integer>8710</integer>
-				<integer>8689</integer>
-				<integer>8686</integer>
-				<integer>8676</integer>
-				<integer>769</integer>
-				<integer>8665</integer>
-				<integer>8664</integer>
-				<integer>757</integer>
-				<integer>8655</integer>
-				<integer>8650</integer>
-				<integer>8647</integer>
-				<integer>8646</integer>
-				<integer>8645</integer>
-				<integer>8641</integer>
-				<integer>8623</integer>
-				<integer>8603</integer>
-				<integer>8560</integer>
-				<integer>8555</integer>
-				<integer>8524</integer>
-				<integer>752</integer>
-				<integer>8502</integer>
-				<integer>745</integer>
-				<integer>746</integer>
-				<integer>747</integer>
-				<integer>22727</integer>
-				<integer>22726</integer>
-				<integer>8476</integer>
-				<integer>8475</integer>
-				<integer>8455</integer>
-				<integer>8445</integer>
-				<integer>8439</integer>
-				<integer>8425</integer>
-				<integer>8415</integer>
-				<integer>8413</integer>
-				<integer>9094</integer>
-				<integer>8395</integer>
-				<integer>8802</integer>
-				<integer>8801</integer>
-				<integer>662</integer>
-				<integer>8382</integer>
-				<integer>9159</integer>
-				<integer>9158</integer>
-				<integer>9038</integer>
-				<integer>9010</integer>
-				<integer>9004</integer>
-				<integer>9003</integer>
-				<integer>8988</integer>
-				<integer>8974</integer>
-				<integer>8956</integer>
-				<integer>9137</integer>
-				<integer>8951</integer>
-				<integer>8939</integer>
-				<integer>9131</integer>
-				<integer>9129</integer>
-				<integer>8897</integer>
-				<integer>8873</integer>
-				<integer>8851</integer>
-				<integer>8850</integer>
-				<integer>8842</integer>
-				<integer>9437</integer>
-				<integer>654</integer>
-				<integer>9406</integer>
-				<integer>9399</integer>
-				<integer>9494</integer>
-				<integer>9386</integer>
-				<integer>652</integer>
-				<integer>9474</integer>
-				<integer>9337</integer>
-				<integer>9469</integer>
-				<integer>9312</integer>
-				<integer>9311</integer>
-				<integer>9300</integer>
-				<integer>9465</integer>
-				<integer>9238</integer>
-				<integer>9773</integer>
-				<integer>9772</integer>
-				<integer>9199</integer>
-				<integer>658</integer>
-				<integer>9453</integer>
-				<integer>9197</integer>
-				<integer>9192</integer>
-				<integer>9181</integer>
-				<integer>9178</integer>
-				<integer>9443</integer>
-				<integer>9167</integer>
-				<integer>650</integer>
-				<integer>9850</integer>
-				<integer>9754</integer>
-				<integer>9846</integer>
-				<integer>9842</integer>
-				<integer>9704</integer>
-				<integer>9675</integer>
-				<integer>9823</integer>
-				<integer>9640</integer>
-				<integer>9624</integer>
-				<integer>9619</integer>
-				<integer>9606</integer>
-				<integer>9605</integer>
-				<integer>9599</integer>
-				<integer>9805</integer>
-				<integer>642</integer>
-				<integer>9589</integer>
-				<integer>9579</integer>
-				<integer>640</integer>
-				<integer>9798</integer>
-				<integer>9781</integer>
-				<integer>637</integer>
-				<integer>9526</integer>
-				<integer>10134</integer>
-				<integer>10122</integer>
-				<integer>10121</integer>
-				<integer>10120</integer>
-				<integer>10088</integer>
-				<integer>10017</integer>
-				<integer>9997</integer>
-				<integer>9979</integer>
-				<integer>9977</integer>
-				<integer>9960</integer>
-				<integer>9926</integer>
-				<integer>10211</integer>
-				<integer>9912</integer>
-				<integer>9911</integer>
-				<integer>10207</integer>
-				<integer>9895</integer>
-				<integer>9889</integer>
-				<integer>9887</integer>
-				<integer>9876</integer>
-				<integer>9864</integer>
-				<integer>10493</integer>
-				<integer>10492</integer>
-				<integer>10491</integer>
-				<integer>632</integer>
-				<integer>10474</integer>
-				<integer>10469</integer>
-				<integer>10465</integer>
-				<integer>10464</integer>
-				<integer>14962</integer>
-				<integer>10456</integer>
-				<integer>10448</integer>
-				<integer>10580</integer>
-				<integer>10422</integer>
-				<integer>10578</integer>
-				<integer>10407</integer>
-				<integer>10397</integer>
-				<integer>10389</integer>
-				<integer>10565</integer>
-				<integer>10563</integer>
-				<integer>10560</integer>
-				<integer>10335</integer>
-				<integer>10331</integer>
-				<integer>10547</integer>
-				<integer>10290</integer>
-				<integer>10286</integer>
-				<integer>10281</integer>
-				<integer>10279</integer>
-				<integer>10523</integer>
-				<integer>10266</integer>
-				<integer>10518</integer>
-				<integer>10516</integer>
-				<integer>10869</integer>
-				<integer>10861</integer>
-				<integer>10969</integer>
-				<integer>10844</integer>
-				<integer>10843</integer>
-				<integer>10965</integer>
-				<integer>10815</integer>
-				<integer>10808</integer>
-				<integer>10798</integer>
-				<integer>10950</integer>
-				<integer>10770</integer>
-				<integer>10766</integer>
-				<integer>10765</integer>
-				<integer>10946</integer>
-				<integer>10734</integer>
-				<integer>10726</integer>
-				<integer>10721</integer>
-				<integer>10711</integer>
-				<integer>10694</integer>
-				<integer>625</integer>
-				<integer>10679</integer>
-				<integer>624</integer>
-				<integer>10673</integer>
-				<integer>10915</integer>
-				<integer>10640</integer>
-				<integer>10626</integer>
-				<integer>10614</integer>
-				<integer>10601</integer>
-				<integer>11248</integer>
-				<integer>623</integer>
-				<integer>11227</integer>
-				<integer>11226</integer>
-				<integer>14958</integer>
-				<integer>14959</integer>
-				<integer>11185</integer>
-				<integer>11181</integer>
-				<integer>11180</integer>
-				<integer>11178</integer>
-				<integer>11175</integer>
-				<integer>11171</integer>
-				<integer>619</integer>
-				<integer>11163</integer>
-				<integer>618</integer>
-				<integer>11116</integer>
-				<integer>11102</integer>
-				<integer>11095</integer>
-				<integer>11086</integer>
-				<integer>11069</integer>
-				<integer>11282</integer>
-				<integer>10222</integer>
-				<integer>11009</integer>
-				<integer>11653</integer>
-				<integer>11652</integer>
-				<integer>11644</integer>
-				<integer>12602</integer>
-				<integer>11629</integer>
-				<integer>11688</integer>
-				<integer>11514</integer>
-				<integer>616</integer>
-				<integer>11473</integer>
-				<integer>11674</integer>
-				<integer>11466</integer>
-				<integer>11672</integer>
-				<integer>11464</integer>
-				<integer>11663</integer>
-				<integer>11405</integer>
-				<integer>11374</integer>
-				<integer>11373</integer>
-				<integer>11371</integer>
-				<integer>11369</integer>
-				<integer>11366</integer>
-				<integer>14984</integer>
-				<integer>12012</integer>
-				<integer>12010</integer>
-				<integer>11340</integer>
-				<integer>12001</integer>
-				<integer>12000</integer>
-				<integer>11997</integer>
-				<integer>11996</integer>
-				<integer>11988</integer>
-				<integer>11984</integer>
-				<integer>12115</integer>
-				<integer>11935</integer>
-				<integer>11904</integer>
-				<integer>11903</integer>
-				<integer>612</integer>
-				<integer>11782</integer>
-				<integer>11768</integer>
-				<integer>11759</integer>
-				<integer>12035</integer>
-				<integer>11728</integer>
-				<integer>12030</integer>
-				<integer>12505</integer>
-				<integer>12504</integer>
-				<integer>12056</integer>
-				<integer>12347</integer>
-				<integer>12344</integer>
-				<integer>12343</integer>
-				<integer>12342</integer>
-				<integer>12495</integer>
-				<integer>12322</integer>
-				<integer>12487</integer>
-				<integer>12312</integer>
-				<integer>12273</integer>
-				<integer>12471</integer>
-				<integer>12242</integer>
-				<integer>12241</integer>
-				<integer>12240</integer>
-				<integer>12239</integer>
-				<integer>12238</integer>
-				<integer>12237</integer>
-				<integer>14951</integer>
-				<integer>12135</integer>
-				<integer>14954</integer>
-				<integer>14952</integer>
-				<integer>12755</integer>
-				<integer>12751</integer>
-				<integer>14953</integer>
-				<integer>14950</integer>
-				<integer>12865</integer>
-				<integer>12465</integer>
-				<integer>12725</integer>
-				<integer>14949</integer>
-				<integer>12864</integer>
-				<integer>12437</integer>
-				<integer>12656</integer>
-				<integer>14947</integer>
-				<integer>12832</integer>
-				<integer>12635</integer>
-				<integer>12825</integer>
-				<integer>14948</integer>
-				<integer>12619</integer>
-				<integer>12612</integer>
-				<integer>12822</integer>
-				<integer>12611</integer>
-				<integer>12604</integer>
-				<integer>14941</integer>
-				<integer>14944</integer>
-				<integer>14943</integer>
-				<integer>14942</integer>
-				<integer>12813</integer>
-				<integer>12803</integer>
-				<integer>12583</integer>
-				<integer>14940</integer>
-				<integer>14939</integer>
-				<integer>12565</integer>
-				<integer>12790</integer>
-				<integer>12560</integer>
-				<integer>12787</integer>
-				<integer>14938</integer>
-				<integer>14934</integer>
-				<integer>14935</integer>
-				<integer>12539</integer>
-				<integer>12531</integer>
-				<integer>14932</integer>
-				<integer>14920</integer>
-				<integer>13145</integer>
-				<integer>13274</integer>
-				<integer>14924</integer>
-				<integer>13161</integer>
-				<integer>14926</integer>
-				<integer>13150</integer>
-				<integer>14921</integer>
-				<integer>13147</integer>
-				<integer>14923</integer>
-				<integer>14919</integer>
-				<integer>14922</integer>
-				<integer>13140</integer>
-				<integer>13122</integer>
-				<integer>13118</integer>
-				<integer>14918</integer>
-				<integer>14978</integer>
-				<integer>13252</integer>
-				<integer>13103</integer>
-				<integer>13250</integer>
-				<integer>13249</integer>
-				<integer>13096</integer>
-				<integer>13248</integer>
-				<integer>13244</integer>
-				<integer>13243</integer>
-				<integer>14912</integer>
-				<integer>14914</integer>
-				<integer>13081</integer>
-				<integer>14911</integer>
-				<integer>13233</integer>
-				<integer>13225</integer>
-				<integer>13224</integer>
-				<integer>13054</integer>
-				<integer>13223</integer>
-				<integer>13226</integer>
-				<integer>13048</integer>
-				<integer>14908</integer>
-				<integer>14910</integer>
-				<integer>13216</integer>
-				<integer>13215</integer>
-				<integer>12997</integer>
-				<integer>13211</integer>
-				<integer>13195</integer>
-				<integer>12962</integer>
-				<integer>12948</integer>
-				<integer>12945</integer>
-				<integer>12910</integer>
-				<integer>12907</integer>
-				<integer>13172</integer>
-				<integer>12896</integer>
-				<integer>14976</integer>
-				<integer>13539</integer>
-				<integer>13535</integer>
-				<integer>13532</integer>
-				<integer>13520</integer>
-				<integer>13084</integer>
-				<integer>13510</integer>
-				<integer>13503</integer>
-				<integer>13627</integer>
-				<integer>13484</integer>
-				<integer>13472</integer>
-				<integer>13471</integer>
-				<integer>13468</integer>
-				<integer>14977</integer>
-				<integer>13390</integer>
-				<integer>13385</integer>
-				<integer>13383</integer>
-				<integer>13579</integer>
-				<integer>13348</integer>
-				<integer>13347</integer>
-				<integer>13315</integer>
-				<integer>14973</integer>
-				<integer>13936</integer>
-				<integer>13912</integer>
-				<integer>13895</integer>
-				<integer>13842</integer>
-				<integer>13820</integer>
-				<integer>14013</integer>
-				<integer>13815</integer>
-				<integer>13779</integer>
-				<integer>13771</integer>
-				<integer>13770</integer>
-				<integer>13750</integer>
-				<integer>13746</integer>
-				<integer>13990</integer>
-				<integer>13729</integer>
-				<integer>13719</integer>
-				<integer>13716</integer>
-				<integer>13711</integer>
-				<integer>13709</integer>
-				<integer>14898</integer>
-				<integer>13984</integer>
-				<integer>13698</integer>
-				<integer>13693</integer>
-				<integer>13690</integer>
-				<integer>13689</integer>
-				<integer>13679</integer>
-				<integer>13652</integer>
-				<integer>13970</integer>
-				<integer>14392</integer>
-				<integer>14368</integer>
-				<integer>14353</integer>
-				<integer>14347</integer>
-				<integer>14310</integer>
-				<integer>14267</integer>
-				<integer>14453</integer>
-				<integer>14253</integer>
-				<integer>14229</integer>
-				<integer>14218</integer>
-				<integer>14213</integer>
-				<integer>14438</integer>
-				<integer>14207</integer>
-				<integer>14190</integer>
-				<integer>14189</integer>
-				<integer>14188</integer>
-				<integer>14187</integer>
-				<integer>14179</integer>
-				<integer>14168</integer>
-				<integer>14156</integer>
-				<integer>14155</integer>
-				<integer>14153</integer>
-				<integer>14888</integer>
-				<integer>14142</integer>
-				<integer>14140</integer>
-				<integer>14134</integer>
-				<integer>14416</integer>
-				<integer>14100</integer>
-				<integer>14087</integer>
-				<integer>14071</integer>
-				<integer>14623</integer>
-				<integer>14616</integer>
-				<integer>14607</integer>
-				<integer>14603</integer>
-				<integer>14592</integer>
-				<integer>14588</integer>
-				<integer>14582</integer>
-				<integer>14579</integer>
-				<integer>14578</integer>
-				<integer>14573</integer>
-				<integer>14563</integer>
-				<integer>14554</integer>
-				<integer>14535</integer>
-				<integer>14534</integer>
-				<integer>14530</integer>
-				<integer>14524</integer>
-				<integer>14509</integer>
-				<integer>14507</integer>
-				<integer>14506</integer>
-				<integer>14500</integer>
-				<integer>14497</integer>
-				<integer>14887</integer>
-				<integer>14494</integer>
-			</array>
-		</dict>
-		<key>ReadLaterEnabled</key>
-		<string>NO</string>
-		<key>SelectedFilters</key>
-		<array>
-			<dict>
-				<key>FilterIdentifier</key>
-				<string>Unread</string>
-			</dict>
-		</array>
-		<key>SortOrder</key>
-		<string>received-date</string>
-		<key>SortedDescending</key>
-		<string>YES</string>
-	</dict>
 	<key>HasSetupIndexingDefaults</key>
 	<true/>
 	<key>IMAPServerPrefixesMirrorFilesystem</key>
 	<true/>
 	<key>InboxViewerAttributes</key>
 	<dict>
+		<key>CategoriesEnabled</key>
+		<string>NO</string>
 		<key>DisplayInThreadedMode</key>
 		<string>YES</string>
 		<key>FilterEnabled</key>
@@ -738,11 +188,13 @@
 			<integer>0</integer>
 			<key>ThreadIdentifiers</key>
 			<array>
-				<integer>41050</integer>
+				<integer>15</integer>
 			</array>
 		</dict>
 		<key>ReadLaterEnabled</key>
 		<string>NO</string>
+		<key>SelectedBucket</key>
+		<integer>1</integer>
 		<key>SelectedFilters</key>
 		<array>
 			<dict>
@@ -755,51 +207,51 @@
 		<key>SortedDescending</key>
 		<string>YES</string>
 	</dict>
+	<key>IndexDecryptedMessages</key>
+	<true/>
 	<key>IndexJunk</key>
 	<true/>
 	<key>IndexTrash</key>
 	<true/>
-	<key>LastAttachedDir</key>
-	<string>/Users/wilhall/Downloads</string>
 	<key>LastMessageTracingDate</key>
-	<date>2024-09-13T16:35:18Z</date>
+	<date>2025-07-22T13:34:54Z</date>
 	<key>LibraryCompressionUpgradeState</key>
 	<integer>1</integer>
-	<key>MFEWSLastSyncDate-BE67C646-82FB-485D-981B-4A43E2A5B84C</key>
-	<date>2024-01-22T11:12:06Z</date>
-	<key>MFEWSLastSyncDate-CBB311EE-8032-45CC-B009-0F6BE461463E</key>
-	<date>2024-09-18T13:42:19Z</date>
-	<key>MSAssetDownloadRetryInterval.com.apple.mailsupport.downloadMobileAssetCatalog</key>
-	<integer>86400</integer>
+	<key>MailDockBadge</key>
+	<integer>5</integer>
 	<key>MailDockBadgeCurrentCount</key>
 	<dict>
 		<key>count</key>
 		<integer>0</integer>
 	</dict>
+	<key>MailDockBadgeUpdatedForCategorization</key>
+	<true/>
 	<key>MailSections</key>
 	<array>
 		<string>SearchSection</string>
 		<string>MailboxesSection</string>
 		<string>FavoritesSection</string>
 		<string>SmartMailboxesSection</string>
-		<string>local://50AB6912-677A-4ADC-947A-CCDC1AF0B5AF/</string>
-		<string>imap://0F322549-5F7C-473D-8269-9DA3332B3760/</string>
-		<string>imap://27BF2E7C-9CA4-421A-88E6-3A92F211DC7D/</string>
+		<string>local://C4C3A2DB-E3FC-4244-B7E0-A16D58B35425/</string>
+		<string>imap://F86DE43D-2B13-4F66-B458-7DB373B6A47E/</string>
 	</array>
 	<key>MailShowFlags</key>
-	<true/>
+	<false/>
 	<key>MailUpgraderPrePersistenceVersion</key>
 	<integer>21</integer>
 	<key>MailUpgraderVersion</key>
 	<integer>30</integer>
+	<key>MailUserNotificationUpdatedForCategorization</key>
+	<true/>
 	<key>MailVisibleSections</key>
 	<array>
 		<string>FavoritesSection</string>
 		<string>SmartMailboxesSection</string>
-		<string>local://50AB6912-677A-4ADC-947A-CCDC1AF0B5AF/</string>
-		<string>imap://0F322549-5F7C-473D-8269-9DA3332B3760/</string>
+		<string>imap://F86DE43D-2B13-4F66-B458-7DB373B6A47E/</string>
 	</array>
 	<key>MessageListNextMessageDirection</key>
+	<integer>0</integer>
+	<key>MessageListShowSize</key>
 	<integer>1</integer>
 	<key>NSFixedPitchFont</key>
 	<string>Menlo-Regular</string>
@@ -809,28 +261,31 @@
 	<string>Helvetica</string>
 	<key>NSFontSize</key>
 	<string>12</string>
-	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{800, 448}</string>
 	<key>NSOutlineView Items Main Window Mailbox List-V2</key>
 	<array>
-		<string>ews://CBB311EE-8032-45CC-B009-0F6BE461463E/</string>
 		<string>FavoritesSection</string>
-		<string>local://50AB6912-677A-4ADC-947A-CCDC1AF0B5AF/</string>
-		<string>favoritemailboxdatum:Sent%20Messages?parent=0</string>
-		<string>imap://0F322549-5F7C-473D-8269-9DA3332B3760/</string>
 		<string>SearchSection</string>
+		<string>imap://F86DE43D-2B13-4F66-B458-7DB373B6A47E/</string>
 	</array>
 	<key>NSSplitView Subview Frames Main Window</key>
 	<array>
-		<string>0.000000, 0.000000, 140.000000, 1415.000000, NO, NO</string>
-		<string>141.000000, 0.000000, 1124.000000, 1415.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 200.000000, 944.000000, NO, NO</string>
+		<string>201.000000, 0.000000, 1266.000000, 944.000000, NO, NO</string>
+	</array>
+	<key>NSSplitView Subview Frames Main Window Preview Pane</key>
+	<array>
+		<string>0.000000, 0.000000, 1266.000000, 743.000000, NO, NO</string>
+		<string>0.000000, 744.000000, 1266.000000, 200.000000, NO, NO</string>
+	</array>
+	<key>NSSplitView Subview Frames Main Window Preview Pane Column</key>
+	<array>
+		<string>0.000000, 0.000000, 1266.000000, 743.000000, NO, NO</string>
+		<string>0.000000, 744.000000, 1266.000000, 200.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames Main Window Preview Pane Vertical</key>
 	<array>
-		<string>0.000000, 0.000000, 250.000000, 1415.000000, NO, NO</string>
-		<string>251.000000, 0.000000, 873.000000, 1415.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 400.000000, 944.000000, NO, NO</string>
+		<string>401.000000, 0.000000, 865.000000, 944.000000, NO, NO</string>
 	</array>
 	<key>NSToolbar Configuration ComposeWindow</key>
 	<dict>
@@ -843,6 +298,7 @@
 			<string>changeReplyMode:</string>
 			<string>insertFile:</string>
 			<string>insertOriginalAttachments:</string>
+			<string>showWritingTools:</string>
 			<string>toggleComposeFormatInspectorBar:</string>
 			<string>insertEmoji:</string>
 			<string>showMediaBrowser:</string>
@@ -861,6 +317,7 @@
 			<string>changeReplyMode:</string>
 			<string>insertFile:</string>
 			<string>insertOriginalAttachments:</string>
+			<string>showWritingTools:</string>
 			<string>toggleComposeFormatInspectorBar:</string>
 			<string>insertEmoji:</string>
 			<string>showMediaBrowser:</string>
@@ -880,12 +337,42 @@
 	</dict>
 	<key>NSToolbar Configuration MainWindow</key>
 	<dict>
+		<key>TB Default Item Identifiers</key>
+		<array>
+			<string>toggleMessageListFilter:</string>
+			<string>messageListViewOptionsFromToolbar:</string>
+			<string>SeparatorToolbarItem</string>
+			<string>checkNewMail:</string>
+			<string>showComposeWindow:</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>archive_delete_junk</string>
+			<string>reply_replyAll_forward</string>
+			<string>FlaggedStatus</string>
+			<string>muteFromToolbar:</string>
+			<string>moveMessagesFromToolbar:</string>
+			<string>Search</string>
+		</array>
 		<key>TB Display Mode</key>
 		<integer>2</integer>
 		<key>TB Icon Size Mode</key>
 		<integer>1</integer>
 		<key>TB Is Shown</key>
 		<true/>
+		<key>TB Item Identifiers</key>
+		<array>
+			<string>toggleMessageListFilter:</string>
+			<string>SeparatorToolbarItem</string>
+			<string>messageListViewOptionsFromToolbar:</string>
+			<string>checkNewMail:</string>
+			<string>showComposeWindow:</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>archive_delete_junk</string>
+			<string>reply_replyAll_forward</string>
+			<string>FlaggedStatus</string>
+			<string>muteFromToolbar:</string>
+			<string>moveMessagesFromToolbar:</string>
+			<string>Search</string>
+		</array>
 		<key>TB Size Mode</key>
 		<integer>1</integer>
 	</dict>
@@ -906,81 +393,25 @@
 		<string>@↩</string>
 	</dict>
 	<key>NSWindow Frame Compose Window</key>
-	<string>323 0 1107 1125 0 0 1800 1125 </string>
+	<string>181 105 836 779 0 0 1512 944 </string>
+	<key>NSWindow Frame Main Window Preview Pane</key>
+	<string>45 0 1467 944 0 0 1512 944 </string>
+	<key>NSWindow Frame Main Window Preview Pane Column</key>
+	<string>45 0 1467 944 0 0 1512 944 </string>
 	<key>NSWindow Frame Main Window Preview Pane Vertical</key>
-	<string>51 0 1749 1125 0 0 1800 1125 </string>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>1266 120 445 239 0 0 1800 1125 </string>
-	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>711 373 430 188 0 0 1800 1125 </string>
+	<string>45 0 1467 944 0 0 1512 944 </string>
+	<key>NSWindow Frame Main Window Preview Pane Vertical Column</key>
+	<string>45 0 1467 944 0 0 1512 944 </string>
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
-	<string>1145 84 425 137 0 0 1800 1125 </string>
+	<string>692 407 425 137 0 0 1512 944 </string>
 	<key>NSWindow Frame SetupAssistant</key>
-	<string>295 524 578 442 0 0 1800 1125 </string>
+	<string>225 385 578 442 0 0 1512 944 </string>
 	<key>NSWindow Frame Torn Off Window</key>
-	<string>1614 161 1107 1125 0 0 5120 1415 </string>
-	<key>NumberOfMessagesMarkedAsJunk</key>
-	<integer>35</integer>
-	<key>NumberOfMessagesMarkedAsNotJunk</key>
-	<integer>40</integer>
-	<key>OutboxViewerAttributes</key>
-	<dict>
-		<key>DisplayInThreadedMode</key>
-		<string>YES</string>
-		<key>FilterEnabled</key>
-		<string>NO</string>
-		<key>FocusEnabled</key>
-		<string>YES</string>
-		<key>MailboxViewingState</key>
-		<dict>
-			<key>ScrollPositionType</key>
-			<integer>0</integer>
-		</dict>
-		<key>ReadLaterEnabled</key>
-		<string>NO</string>
-		<key>SelectedFilters</key>
-		<array>
-			<dict>
-				<key>FilterIdentifier</key>
-				<string>Unread</string>
-			</dict>
-		</array>
-		<key>SortOrder</key>
-		<string>received-date</string>
-		<key>SortedDescending</key>
-		<string>YES</string>
-	</dict>
+	<string>530 0 982 944 0 0 1512 944 </string>
 	<key>PollTime</key>
 	<integer>-1</integer>
-	<key>ReadLaterViewerAttributes</key>
-	<dict>
-		<key>DisplayInThreadedMode</key>
-		<string>YES</string>
-		<key>FilterEnabled</key>
-		<string>NO</string>
-		<key>FocusEnabled</key>
-		<string>YES</string>
-		<key>MailboxViewingState</key>
-		<dict>
-			<key>ScrollPositionType</key>
-			<integer>0</integer>
-		</dict>
-		<key>ReadLaterEnabled</key>
-		<string>NO</string>
-		<key>SelectedFilters</key>
-		<array>
-			<dict>
-				<key>FilterIdentifier</key>
-				<string>Unread</string>
-			</dict>
-		</array>
-		<key>SortOrder</key>
-		<string>read-later-date</string>
-		<key>SortedDescending</key>
-		<string>NO</string>
-	</dict>
 	<key>SelectedPreferencesTabIdentifierKey</key>
-	<string>generalpref</string>
+	<string>viewpref</string>
 	<key>SentMessagesViewerAttributes</key>
 	<dict>
 		<key>DisplayInThreadedMode</key>
@@ -990,14 +421,7 @@
 		<key>FocusEnabled</key>
 		<string>YES</string>
 		<key>MailboxViewingState</key>
-		<dict>
-			<key>ScrollPositionType</key>
-			<integer>0</integer>
-			<key>ThreadIdentifiers</key>
-			<array>
-				<integer>29787</integer>
-			</array>
-		</dict>
+		<dict/>
 		<key>ReadLaterEnabled</key>
 		<string>NO</string>
 		<key>SelectedFilters</key>
@@ -1015,24 +439,24 @@
 	<key>ShouldShowUnreadMessagesInBold</key>
 	<true/>
 	<key>ShowBccHeader</key>
-	<integer>1</integer>
+	<false/>
 	<key>ShowCcHeader</key>
 	<true/>
 	<key>ShowPriorityControl</key>
-	<false/>
+	<integer>0</integer>
 	<key>ShowReplyToHeader</key>
-	<false/>
+	<integer>1</integer>
 	<key>SignatureSelectionMethods</key>
 	<dict>
-		<key>0F322549-5F7C-473D-8269-9DA3332B3760</key>
-		<string>SelectedOnly</string>
-		<key>27BF2E7C-9CA4-421A-88E6-3A92F211DC7D</key>
+		<key>F86DE43D-2B13-4F66-B458-7DB373B6A47E</key>
 		<string>SelectedOnly</string>
 	</dict>
 	<key>SignaturesSelected</key>
+	<dict/>
+	<key>SpecialMailbox-Inbox-UUID</key>
 	<dict>
-		<key>0F322549-5F7C-473D-8269-9DA3332B3760</key>
-		<string>097A29ED-3269-40DE-88E9-18B5EE53A3AE</string>
+		<key>count</key>
+		<integer>0</integer>
 	</dict>
 	<key>SpecialMailbox-Read Later Mailbox-UUID</key>
 	<dict>
@@ -1048,8 +472,6 @@
 	<string>InlineSpellCheckingEnabled</string>
 	<key>SuppressDeliveryFailure</key>
 	<true/>
-	<key>SwipeAction</key>
-	<integer>1</integer>
 	<key>ThreadingDefault</key>
 	<true/>
 	<key>UserDidCollapseFavoritesSectionKey</key>
@@ -1058,23 +480,15 @@
 	<true/>
 	<key>com.apple.email.searchableIndex.scheduler.com.apple.mail.contentIndex</key>
 	<real>300</real>
-	<key>engagementCount-com.apple.Spotlight</key>
-	<integer>0</integer>
-	<key>engagementCount-com.apple.Spotlight.suggestions</key>
-	<integer>0</integer>
-	<key>engagementCount-com.apple.mail</key>
-	<integer>0</integer>
 	<key>expiresAfterSeconds</key>
 	<integer>2592000</integer>
-	<key>junkMailEvaluationAfterRules</key>
-	<false/>
 	<key>kCloudStoreHistoryTokenUserDefaultsKey</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwRGRobIVUkbnVsbNINDg8Q
 	ViRjbGFzc18QIk5TUGVyc2lzdGVudEhpc3RvcnlUb2tlbkRpY3Rpb25hcnmABoAC0xIT
-	DRQWGFdOUy5rZXlzWk5TLm9iamVjdHOhFYADoReABIAFXxAkOTk1QzcyMTItRjZFNC00
-	ODFFLUE5ODctMEQxRTg1MDVFRkU3EALSHB0eH1okY2xhc3NuYW1lWCRjbGFzc2VzXE5T
+	DRQWGFdOUy5rZXlzWk5TLm9iamVjdHOhFYADoReABIAFXxAkMjlCNDRBODktODQ3RS00
+	OEEyLUI4NDItMEY1MEExQjU0MjVDEAPSHB0eH1okY2xhc3NuYW1lWCRjbGFzc2VzXE5T
 	RGljdGlvbmFyeaIeIFhOU09iamVjdNIcHSIjXxAZX05TUGVyc2lzdGVudEhpc3RvcnlU
 	b2tlbqMkJSBfEBlfTlNQZXJzaXN0ZW50SGlzdG9yeVRva2VuXxAYTlNQZXJzaXN0ZW50
 	SGlzdG9yeVRva2VuAAgAEQAaACQAKQAyADcASQBMAFEAUwBbAGEAZgBtAJIAlACWAJ0A
@@ -1082,7 +496,7 @@
 	ACYAAAAAAAAAAAAAAAAAAAFx
 	</data>
 	<key>kDefaultsKeyLastVerifiedMessageID</key>
-	<integer>9509</integer>
+	<integer>3331</integer>
 	<key>maxSizeKB</key>
 	<real>5000000</real>
 	<key>minSizeKB</key>

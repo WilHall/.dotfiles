@@ -8,8 +8,10 @@
 	<real>-71.0715</real>
 	<key>NSCOnboardingCompleted</key>
 	<true/>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>5544</real>
 	<key>NSStatusItem Preferred Position Item-1</key>
-	<real>5722</real>
+	<real>5554</real>
 	<key>appDataCollectionAccepted</key>
 	<true/>
 	<key>appIcon</key>
@@ -27,6 +29,8 @@
 	<integer>0</integer>
 	<key>connection_statistics_longest_streak</key>
 	<integer>1</integer>
+	<key>didShowMFAOnboarding</key>
+	<true/>
 	<key>enableCustomDNS</key>
 	<integer>0</integer>
 	<key>helpUsImprove</key>
@@ -46,15 +50,15 @@
 	<key>keychainMigrationVersionKey</key>
 	<integer>2</integer>
 	<key>lastConnectionDate</key>
-	<date>2025-07-26T02:17:27Z</date>
+	<date>2025-07-26T18:27:48Z</date>
 	<key>lastLoadUpdateTime</key>
-	<date>2025-07-26T02:14:51Z</date>
+	<date>2025-07-26T21:49:08Z</date>
 	<key>lastMapLocation</key>
-	<string>{"long":-71.060278,"lat":42.358333}</string>
+	<string>{"long":-71.06028,"lat":42.358334}</string>
 	<key>lastServerDownloadTimeKey</key>
-	<date>2025-07-26T01:14:25Z</date>
+	<date>2025-07-26T21:10:09Z</date>
 	<key>lastSuccessfulSubscriptionHistoryUpdate</key>
-	<date>2025-07-26T01:17:05Z</date>
+	<date>2025-07-26T21:49:06Z</date>
 	<key>lastTemplatesUpdateTimeKey</key>
 	<date>2025-07-25T18:35:15Z</date>
 	<key>meshnetEnabled</key>
@@ -65,6 +69,14 @@
 	<date>2025-07-26T02:17:29Z</date>
 	<key>startOnBoot</key>
 	<true/>
+	<key>vpnEventsCounter</key>
+	<integer>2</integer>
+	<key>vpnSnoozedName</key>
+	<string>hour</string>
+	<key>vpnSnoozedStart</key>
+	<integer>1753550868</integer>
+	<key>vpnSnoozedUntil</key>
+	<integer>0</integer>
 	<key>wasDashboardOnboardingShownAfterUpdate</key>
 	<false/>
 </dict>

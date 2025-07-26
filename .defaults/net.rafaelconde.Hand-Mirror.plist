@@ -2,14 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSStatusItem Preferred Position Item-1</key>
-	<real>527</real>
+	<key>NSWindow Frame Hand Mirror Smart Window</key>
+	<string>617 620 320 320 0 0 1512 944 </string>
 	<key>NSWindow Frame Preferences Window</key>
 	<string>1090 839 460 319 0 0 2560 1415 </string>
 	<key>NSWindow Frame Settings Window</key>
-	<string>858 586 844 633 0 0 2560 1415 </string>
+	<string>334 233 844 633 0 0 1512 944 </string>
 	<key>NSWindow Frame Welcome Window</key>
 	<string>880 512 800 640 0 0 2560 1440 </string>
+	<key>closeUnfocusedWindow</key>
+	<true/>
 	<key>defaultCameraPreference</key>
 	<string>Logitech BRIO</string>
 	<key>defaultCameraPreferenceKey</key>
@@ -19,15 +21,31 @@
 	<key>hasNewFeatureToHighlight</key>
 	<false/>
 	<key>hasPurchasedHandMirrorPlus</key>
-	<false/>
+	<true/>
+	<key>hideMenuBar</key>
+	<true/>
 	<key>isCameraPermissionsAllowed</key>
 	<true/>
 	<key>isGenerous</key>
 	<false/>
 	<key>isInMiddleOfOnboarding</key>
 	<false/>
+	<key>isMicCheckPreferenceOn</key>
+	<true/>
+	<key>isMicrophonePermissionsAllowed</key>
+	<true/>
 	<key>preferredDisplay</key>
 	<string>2</string>
+	<key>selectedNotchPreference</key>
+	<true/>
+	<key>selectedPopoverSize</key>
+	<string>Medium</string>
+	<key>showReactionEffectsButtons</key>
+	<true/>
+	<key>smartWindowPreference</key>
+	<false/>
+	<key>windowMaskPreference</key>
+	<integer>0</integer>
 	<key>zoomLevel</key>
 	<integer>1</integer>
 </dict>

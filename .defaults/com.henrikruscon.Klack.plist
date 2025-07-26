@@ -9,19 +9,25 @@
 	<key>NSStatusItem Visible Klack</key>
 	<false/>
 	<key>NSWindow Frame com_apple_SwiftUI_Settings_window</key>
-	<string>546 393 462 250 0 0 1512 944 </string>
+	<string>546 250 462 393 0 0 1512 944 </string>
+	<key>SSApp_requestReview</key>
+	<integer>1</integer>
 	<key>SS_hasLaunched</key>
 	<true/>
 	<key>activeSwitchSet</key>
 	<string>japaneseBlack</string>
 	<key>com_apple_SwiftUI_Settings_selectedTabIndex</key>
-	<integer>3</integer>
+	<integer>1</integer>
+	<key>currentVersion</key>
+	<string>1.7.2</string>
+	<key>enableListener</key>
+	<false/>
 	<key>hideMenuBarIcon</key>
 	<true/>
 	<key>isFirstLaunchAfterAuthorization</key>
 	<false/>
 	<key>playDingSoundOnReturnKey</key>
-	<true/>
+	<false/>
 	<key>playMouseClickSounds</key>
 	<false/>
 </dict>

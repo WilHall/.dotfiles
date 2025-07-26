@@ -13,7 +13,7 @@
 	<key>MASPreferences Selected Identifier View</key>
 	<string>PreferencesPreferences</string>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>5554</real>
+	<real>5568</real>
 	<key>askAfterInactivity</key>
 	<real>900</real>
 	<key>deduplicatedActivities</key>
@@ -23,7 +23,7 @@
 	<key>dialogTimeInterval</key>
 	<real>900</real>
 	<key>displayedDashboardBannerLastAt</key>
-	<date>2025-07-26T17:01:26Z</date>
+	<date>2025-07-26T21:45:34Z</date>
 	<key>groupsViewWidth</key>
 	<real>250</real>
 	<key>installationID</key>

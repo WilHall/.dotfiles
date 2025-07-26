@@ -69,6 +69,8 @@
 	<string></string>
 	<key>DefaultBrushCategoryVector</key>
 	<integer>0</integer>
+	<key>DeleteSelectionFromImageNodeAction</key>
+	<integer>0</integer>
 	<key>DevelopAlertOnActions</key>
 	<integer>1</integer>
 	<key>DevelopApplyToneCurve</key>
@@ -91,6 +93,8 @@
 	<integer>0</integer>
 	<key>DocumentDefaultSize</key>
 	<integer>12</integer>
+	<key>DuplicateSelectionFromImageNodeAction</key>
+	<integer>0</integer>
 	<key>EffectOnVectorSelectionAction</key>
 	<integer>0</integer>
 	<key>EmbedAffinityLayers</key>
@@ -184,6 +188,8 @@
 	</data>
 	<key>KnifeToolAutoClose</key>
 	<false/>
+	<key>KnifeToolAutoCloseMode</key>
+	<integer>0</integer>
 	<key>LinkGridColours</key>
 	<true/>
 	<key>ModelSelected</key>
@@ -259,9 +265,15 @@
 	<string>Colors</string>
 	<key>PenToolUsesFill</key>
 	<false/>
+	<key>PenToolUsesLine</key>
+	<false/>
 	<key>PencilToolAutoClose</key>
 	<false/>
+	<key>PencilToolAutoCloseMode</key>
+	<integer>0</integer>
 	<key>PencilToolUsesFill</key>
+	<false/>
+	<key>PencilToolUsesLine</key>
 	<false/>
 	<key>PixelGridColour</key>
 	<data>
@@ -276,10 +288,10 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwTFFUkbnVsbNMNDg8QERJa
-	TlMucmVjdHZhbFYkY2xhc3NaTlMuc3BlY2lhbIACgAMQA18QGXt7MjE0MCwgNDA3fSwg
-	ezg0MCwgNjUwfX3SFRYXGFokY2xhc3NuYW1lWCRjbGFzc2VzV05TVmFsdWWiFxlYTlNP
-	YmplY3QIERokKTI3SUxRU1heZXB3goSGiKSptL3FyAAAAAAAAAEBAAAAAAAAABoAAAAA
-	AAAAAAAAAAAAAADR
+	TlMucmVjdHZhbFYkY2xhc3NaTlMuc3BlY2lhbIACgAMQA18QGHt7NDk5LCAyMjJ9LCB7
+	ODQwLCA2NTB9fdIVFhcYWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNWYWx1ZaIXGVhOU09i
+	amVjdAgRGiQpMjdJTFFTWF5lcHeChIaIo6izvMTHAAAAAAAAAQEAAAAAAAAAGgAAAAAA
+	AAAAAAAAAAAAANA=
 	</data>
 	<key>PreviewAfterPDFExport</key>
 	<false/>
@@ -294,7 +306,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-09-28T16:08:31Z</date>
+	<date>2025-07-26T21:27:07Z</date>
 	<key>SUScheduledCheckInterval</key>
 	<real>86400</real>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -386,12 +398,12 @@
 	AAAAAAAAAAAAAAAAANM=
 	</data>
 	<key>com.seriflabs.SelectedNewDocumentCategory</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>com.seriflabs.StatusBar.HiddenState</key>
 	<false/>
 	<key>com.seriflabs.Studio.CharacterPage.ControllerState</key>
 	<data>
-	AP9LUwIAdHNpdQEAGQAAAINHcHhFBgAAAAUAAAByZ2VkcmdnbHJnYW9yZ3RwcmdwdAA=
+	AP9LUwIAdHNpdQEAGgAAAINHcHhFBgAAAAUAAAByZ2VkcmdnbHJnYW9yZ3RwcmdwdAA=
 	</data>
 	<key>com.seriflabs.Studio.CharacterPage.ExpandedState</key>
 	<dict>
@@ -444,7 +456,7 @@
 	AF0ADgBeAKkAYABhgCmAElp7MjY0LCAyMjV90wBdAA4AXgCtAGAAYYArgBJaezI2NCwg
 	MTUwfdMAXQAOAF4AsQBgAGGALYASWnsyNjQsIDE1MH3TAF0ADgBeALUAYABhgC+AElp7
 	MjY0LCAxMDB90wBdAA4AXgC5AGAAYYAxgBJaezI2NCwgNTM2fV8QFnt7MCwgMjQwfSwg
-	ezQ1MCwgNTQ1fX3aAA4AKQAqACsALAAtAC4ALwAwADEAMgC/AMAAwQDCAMMAOAA4ADsA
+	ezQ1MCwgMzg0fX3aAA4AKQAqACsALAAtAC4ALwAwADEAMgC/AMAAwQDCAMMAOAA4ADsA
 	O4AagDSAP4BAgDeAVQgICQnSABQADgDJAEKqAMoAywDCAM0AzgDPANAA0QDSANOANYA2
 	gDeAOIA5gDqAO4A8gD2APoAMXUNoYXJhY3RlclBhZ2VdUGFyYWdyYXBoUGFnZV1UcmFu
 	c2Zvcm1QYWdlW1N5bWJvbHNQYWdlXU5hdmlnYXRvclBhZ2VfEA9Db25zdHJhaW50c1Bh
@@ -456,7 +468,7 @@
 	gEiAElp7MjY0LCAxNTB90wBdAA4AXgEKAGAAYYBKgBJaezI2NCwgMTkyfdMAXQAOAF4B
 	DgBgAGGATIASWnsyNjQsIDI1Nn3TAF0ADgBeARIAYABhgE6AElp7MjY0LCAxNTB90wBd
 	AA4AXgEWAGAAYYBQgBJaezI2NCwgMTUwfdMAXQAOAF4BGgBgAGGAUoASWnsyNjQsIDI4
-	MH3TAF0ADgBeAR4AYABhgFSAElp7MjY0LCAzNTR9XxAWe3swLCA3ODd9LCB7NDUwLCAx
+	MH3TAF0ADgBeAR4AYABhgFSAElp7MjY0LCAzNTR9XxAWe3swLCA2MjZ9LCB7NDUwLCAx
 	NDh9fdIASABJASMBJF5OU011dGFibGVBcnJheaMBIwBKAEzSAEgASQEmASdfEA9TdHVk
 	aW9TaGVsZkRhdGGiASgATF8QD1N0dWRpb1NoZWxmRGF0YdIAHwAOASoAIYBZgFfSABQA
 	DgEtABehAS6AWoBW2gAOACkAKgArACwALQAuAC8AMAAxADIBMgEzATQBNQE2ADgAOAA4
@@ -491,7 +503,7 @@
 	</data>
 	<key>com.seriflabs.Studio.ParagraphPage.ControllerState</key>
 	<data>
-	AP9LUwIAdHNpdQEAGQAAAINHcHhFBQAAAAQAAAByZ2xicmdzanJncHNyZ2J0AA==
+	AP9LUwIAdHNpdQEAGgAAAINHcHhFBQAAAAQAAAByZ2xicmdzanJncHNyZ2J0AA==
 	</data>
 	<key>com.seriflabs.Studio.ParagraphPage.ExpandedState</key>
 	<dict>
@@ -550,10 +562,10 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwTFFUkbnVsbNMNDg8QERJa
-	TlMucmVjdHZhbFYkY2xhc3NaTlMuc3BlY2lhbIACgAMQA18QG3t7MTY5MiwgMjg1fSwg
-	ezE3MzYsIDEwNDF9fdIVFhcYWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNWYWx1ZaIXGVhO
-	U09iamVjdAgRGiQpMjdJTFFTWF5lcHeChIaIpqu2v8fKAAAAAAAAAQEAAAAAAAAAGgAA
-	AAAAAAAAAAAAAAAAANM=
+	TlMucmVjdHZhbFYkY2xhc3NaTlMuc3BlY2lhbIACgAMQA18QF3t7NzUsIDMyfSwgezE0
+	MDUsIDg4MH190hUWFxhaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU1ZhbHVlohcZWE5TT2Jq
+	ZWN0CBEaJCkyN0lMUVNYXmVwd4KEhoiip7K7w8YAAAAAAAABAQAAAAAAAAAaAAAAAAAA
+	AAAAAAAAAAAAzw==
 	</data>
 </dict>
 </plist>

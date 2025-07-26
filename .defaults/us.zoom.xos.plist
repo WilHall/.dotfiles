@@ -30,12 +30,16 @@
 	<real>400</real>
 	<key>ZMCustomOrderTabsFlags</key>
 	<false/>
+	<key>ZMDisplayNavLastTrackingDate</key>
+	<date>2025-07-25T14:03:47Z</date>
 	<key>ZMJoinMeetingFlowAnchor</key>
 	<string>{{960, 456}, {640, 500}}</string>
 	<key>ZoomAutoUpdateState</key>
 	<string>ZoomAutoUpdateStateReady</string>
 	<key>ZoomAutoUpdateVersion</key>
 	<string>6.1.11.39163</string>
+	<key>_NS_4445425547</key>
+	<false/>
 	<key>_favoriteArray</key>
 	<array>
 		<string>:sparkles:=✨</string>
@@ -64,6 +68,8 @@
 	<string></string>
 	<key>kZMAlreadyShowPMCTip</key>
 	<true/>
+	<key>kZMDirectLinkNewBadgeDefaultsKey</key>
+	<date>2025-08-02T02:33:11Z</date>
 	<key>kZMHadShowFiveMinsCountDown</key>
 	<false/>
 	<key>kZMHadShowOneDayCountDown</key>
@@ -84,8 +90,10 @@
 	<true/>
 	<key>kZMShowNotificationCenter</key>
 	<true/>
+	<key>kZMSidebarStoreWidth</key>
+	<real>302</real>
 	<key>kZMUserDedaultWindowOriginFrame</key>
-	<string>{{285, 123}, {1280, 960}}</string>
+	<string>{{296, 213}, {960, 660}}</string>
 	<key>kZMUserDefaultMainWindowCompressed</key>
 	<false/>
 	<key>kZMUserDefaultSelectedTabType</key>

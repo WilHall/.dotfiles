@@ -24,13 +24,17 @@
 		<string>iCloud</string>
 		<key>account:CC7F5F36-A260-4F88-B030-5AB59B9C4DB5</key>
 		<string>iCloud</string>
+		<key>account:D9E25282-B92D-4AE8-8796-11F5F8CDE8B8</key>
+		<string>wil@wilhall.com</string>
 		<key>account:F194D77B-5E71-4907-BD30-D37425472966</key>
 		<string>On My Mac</string>
 	</dict>
 	<key>AddressFormat</key>
 	<string>us</string>
+	<key>AlwaysShowAccountInGroupSummary</key>
+	<true/>
 	<key>CardhopQuickContactWidgetChangeHash</key>
-	<integer>14705898695116037679</integer>
+	<integer>321030251729305571</integer>
 	<key>ContactListMaximumHeight</key>
 	<real>400</real>
 	<key>ContactTemplate</key>
@@ -82,6 +86,8 @@
 	<string>Wil Hall they/them</string>
 	<key>DarkModeTheme</key>
 	<integer>2</integer>
+	<key>DialActionMethod</key>
+	<string>mac</string>
 	<key>DidShowCardhop1UpgradeWindow</key>
 	<true/>
 	<key>FirstRunSetup</key>
@@ -101,7 +107,7 @@
 	<key>HotKeyFlags</key>
 	<integer>1441792</integer>
 	<key>LastLaunchVersion</key>
-	<string>1306</string>
+	<string>1350</string>
 	<key>LastSelectedContactIdentifiers</key>
 	<array>
 		<string>603C599A-1C50-4F81-A175-5A883BA2B9B2:ABPerson</string>
@@ -173,17 +179,17 @@
 	LAAAAAAAAAAAAAAAAAAAAWQ=
 	</data>
 	<key>MeCardExternalID</key>
-	<string>contact:01719BAA-0B34-43D7-A673-DAF268282465</string>
+	<string>contact:ECEC5A1B-2750-44B8-A5AF-7D43E3DD0652</string>
 	<key>MeCardExternalIDLocal</key>
-	<string>contact:01719BAA-0B34-43D7-A673-DAF268282465</string>
+	<string>contact:ECEC5A1B-2750-44B8-A5AF-7D43E3DD0652</string>
 	<key>MiniWindowAttached</key>
 	<false/>
 	<key>MiniWindowVisible</key>
 	<false/>
 	<key>NSSplitView Subview Frames Group</key>
 	<array>
-		<string>0.000000, 0.000000, 163.000000, 261.000000, NO, NO</string>
-		<string>163.000000, 0.000000, 298.000000, 261.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 163.000000, 648.000000, NO, NO</string>
+		<string>163.000000, 0.000000, 298.000000, 648.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames Notes</key>
 	<array>
@@ -195,7 +201,7 @@
 	<key>NSWindow Frame ContactPopover</key>
 	<string>2349 488 360 404 0 0 1800 1125 </string>
 	<key>NSWindow Frame Main Window</key>
-	<string>1903 524 461 348 0 0 5120 1415 </string>
+	<string>429 0 461 735 0 0 1512 944 </string>
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
 	<string>692 407 425 137 0 0 1440 875 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -220,6 +226,8 @@
 	<true/>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>2254488783</integer>
+	<key>SentryEnabled</key>
+	<true/>
 	<key>ShowActionButtons</key>
 	<true/>
 	<key>ShowActionButtonsInList</key>

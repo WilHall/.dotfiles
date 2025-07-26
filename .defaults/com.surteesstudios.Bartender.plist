@@ -9,7 +9,7 @@
 	<key>AdjustedPrefsForB5P2</key>
 	<true/>
 	<key>FRFeedbackReporter.lastCrashCheckDate</key>
-	<date>2025-07-25T18:17:28Z</date>
+	<date>2025-07-26T16:49:57Z</date>
 	<key>HaveConvertedImageSFUsToTriggers</key>
 	<true/>
 	<key>HaveConvertedSFUsToTriggers</key>
@@ -31,30 +31,30 @@
 	<key>MenuBarColoring-SpaceSettings</key>
 	<data>
 	eyJBMDYzRkYzNS03M0I3LTQzQjYtQUIzRS04NDExNTJGOThGMUIiOnsiaXNOb3RjaGVk
-	Ijp0cnVlLCJzcGFjZU51bWJlciI6Miwic3BhY2VJRCI6IkEwNjNGRjM1LTczQjctNDNC
-	Ni1BQjNFLTg0MTE1MkY5OEYxQiIsInNjcmVlbk5hbWUiOiJCdWlsdC1pbiBSZXRpbmEg
-	RGlzcGxheSIsImRpc3BsYXlJRCI6IjM3RDg4MzJBLTJENjYtMDJDQS1COUY3LThGMzBB
-	MzAxQjIzMCIsImRpc3BsYXlOdW1iZXIiOjEsIm1lbnVCYXJTdHlsaW5nIjp7InJvdW5k
-	QmVsb3dNZW51QmFyIjpmYWxzZSwicm91bmRlZE1lbnVCYXIiOmZhbHNlLCJib3JkZXJD
-	b2xvciI6WzEsMSwxLDFdLCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwiaGlkZGVuSW5hY3Rp
-	dmVNZW51QmFyIjpmYWxzZSwiYm9yZGVyVGhpY2tuZXNzIjowLCJyb3VuZEJvdHRvbU9m
-	U2NyZWVuIjp0cnVlLCJyb3VuZFRvcE9mTWVudUJhciI6dHJ1ZSwiYmFja2dyb3VuZENv
-	bG9ycyI6W3siY29sb3IiOlswLjY1NzUwNzgzNjgxODY5NTEsMC42NjU2ODk3MDY4MDIz
-	NjgyLDAuODczODU1NjUwNDI0OTU3MywxXSwibG9jYXRpb24iOjB9XSwiZGVmYXVsdEZv
-	ck5ld1NwYWNlIjp0cnVlLCJoaWRlTm90Y2giOmZhbHNlLCJyb3VuZGVkQ29ybmVycyI6
-	MjQsInNoYWRvdyI6ZmFsc2V9fSwiRGVmYXVsdC1TcGFjZS1EaXNwbGF5LTEiOnsiaXNO
-	b3RjaGVkIjp0cnVlLCJzcGFjZU51bWJlciI6MSwic3BhY2VJRCI6IkRlZmF1bHQtU3Bh
-	Y2UtRGlzcGxheS0xIiwic2NyZWVuTmFtZSI6IkJ1aWx0LWluIFJldGluYSBEaXNwbGF5
-	IiwiZGlzcGxheUlEIjoiMzdEODgzMkEtMkQ2Ni0wMkNBLUI5RjctOEYzMEEzMDFCMjMw
-	IiwiZGlzcGxheU51bWJlciI6MSwibWVudUJhclN0eWxpbmciOnsicm91bmRCZWxvd01l
-	bnVCYXIiOmZhbHNlLCJyb3VuZGVkTWVudUJhciI6ZmFsc2UsImJvcmRlckNvbG9yIjpb
-	MSwxLDEsMV0sInNlcGVyYXRlUGlsbHMiOmZhbHNlLCJoaWRkZW5JbmFjdGl2ZU1lbnVC
-	YXIiOmZhbHNlLCJib3JkZXJUaGlja25lc3MiOjAsInJvdW5kQm90dG9tT2ZTY3JlZW4i
-	OnRydWUsInJvdW5kVG9wT2ZNZW51QmFyIjp0cnVlLCJiYWNrZ3JvdW5kQ29sb3JzIjpb
-	eyJjb2xvciI6WzAuNjU3NTA3ODM2ODE4Njk1MSwwLjY2NTY4OTcwNjgwMjM2ODIsMC44
-	NzM4NTU2NTA0MjQ5NTczLDFdLCJsb2NhdGlvbiI6MH1dLCJkZWZhdWx0Rm9yTmV3U3Bh
-	Y2UiOnRydWUsImhpZGVOb3RjaCI6ZmFsc2UsInJvdW5kZWRDb3JuZXJzIjoyNCwic2hh
-	ZG93IjpmYWxzZX19fQ==
+	Ijp0cnVlLCJzY3JlZW5OYW1lIjoiQnVpbHQtaW4gUmV0aW5hIERpc3BsYXkiLCJtZW51
+	QmFyU3R5bGluZyI6eyJyb3VuZFRvcE9mTWVudUJhciI6dHJ1ZSwiYm9yZGVyQ29sb3Ii
+	OlsxLDEsMSwxXSwiaGlkZU5vdGNoIjpmYWxzZSwicm91bmRlZE1lbnVCYXIiOmZhbHNl
+	LCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91bmRCZWxvd01lbnVCYXIiOmZhbHNlLCJo
+	aWRkZW5JbmFjdGl2ZU1lbnVCYXIiOmZhbHNlLCJzaGFkb3ciOmZhbHNlLCJkZWZhdWx0
+	Rm9yTmV3U3BhY2UiOnRydWUsImJhY2tncm91bmRDb2xvcnMiOlt7ImNvbG9yIjpbMC42
+	NTc1MDc4MzY4MTg2OTUxLDAuNjY1Njg5NzA2ODAyMzY4MiwwLjg3Mzg1NTY1MDQyNDk1
+	NzMsMV0sImxvY2F0aW9uIjowfV0sInJvdW5kZWRDb3JuZXJzIjoyNCwiYm9yZGVyVGhp
+	Y2tuZXNzIjowLCJyb3VuZEJvdHRvbU9mU2NyZWVuIjp0cnVlfSwiZGlzcGxheU51bWJl
+	ciI6MSwic3BhY2VOdW1iZXIiOjIsImRpc3BsYXlJRCI6IjM3RDg4MzJBLTJENjYtMDJD
+	QS1COUY3LThGMzBBMzAxQjIzMCIsInNwYWNlSUQiOiJBMDYzRkYzNS03M0I3LTQzQjYt
+	QUIzRS04NDExNTJGOThGMUIifSwiRGVmYXVsdC1TcGFjZS1EaXNwbGF5LTEiOnsiaXNO
+	b3RjaGVkIjp0cnVlLCJzY3JlZW5OYW1lIjoiQnVpbHQtaW4gUmV0aW5hIERpc3BsYXki
+	LCJtZW51QmFyU3R5bGluZyI6eyJyb3VuZFRvcE9mTWVudUJhciI6dHJ1ZSwiYm9yZGVy
+	Q29sb3IiOlsxLDEsMSwxXSwiaGlkZU5vdGNoIjpmYWxzZSwicm91bmRlZE1lbnVCYXIi
+	OmZhbHNlLCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91bmRCZWxvd01lbnVCYXIiOmZh
+	bHNlLCJoaWRkZW5JbmFjdGl2ZU1lbnVCYXIiOmZhbHNlLCJzaGFkb3ciOmZhbHNlLCJk
+	ZWZhdWx0Rm9yTmV3U3BhY2UiOnRydWUsImJhY2tncm91bmRDb2xvcnMiOlt7ImNvbG9y
+	IjpbMC42NTc1MDc4MzY4MTg2OTUxLDAuNjY1Njg5NzA2ODAyMzY4MiwwLjg3Mzg1NTY1
+	MDQyNDk1NzMsMV0sImxvY2F0aW9uIjowfV0sInJvdW5kZWRDb3JuZXJzIjoyNCwiYm9y
+	ZGVyVGhpY2tuZXNzIjowLCJyb3VuZEJvdHRvbU9mU2NyZWVuIjp0cnVlfSwiZGlzcGxh
+	eU51bWJlciI6MSwic3BhY2VOdW1iZXIiOjEsImRpc3BsYXlJRCI6IjM3RDg4MzJBLTJE
+	NjYtMDJDQS1COUY3LThGMzBBMzAxQjIzMCIsInNwYWNlSUQiOiJEZWZhdWx0LVNwYWNl
+	LURpc3BsYXktMSJ9fQ==
 	</data>
 	<key>MouseExitDelay</key>
 	<real>0.0</real>
@@ -74,17 +74,17 @@
 		<string>0.000000, 264.000000, 228.000000, 43.000000, NO, NO</string>
 	</array>
 	<key>NSStatusItem Preferred Position EItem</key>
-	<real>15665</real>
+	<real>15683</real>
 	<key>NSStatusItem Preferred Position HISItem</key>
-	<real>462</real>
+	<real>427</real>
 	<key>NSStatusItem Preferred Position RHSItem</key>
-	<real>5603</real>
+	<real>5626</real>
 	<key>NSStatusItem Preferred Position THSItem</key>
-	<real>10659</real>
+	<real>10677</real>
 	<key>NSStatusItem Preferred Position hideSecondaryMonitorItems</key>
 	<real>180</real>
 	<key>NSStatusItem Preferred Position statusItem</key>
-	<real>461</real>
+	<real>426</real>
 	<key>NSStatusItem Visible Item-4</key>
 	<false/>
 	<key>NSStatusItem Visible hideSecondaryMonitorItems</key>
@@ -132,6 +132,9 @@
 				<string>at.obdev.littlesnitch.agent-Item-0</string>
 				<string>com.henrikruscon.Klack-Klack</string>
 				<string>com.IdeaPunch.ColorSlurp-Item-0</string>
+				<string>nl.nielsmouthaan.daily.main-Item-0</string>
+				<string>com.pavelmakhov.pullBar-Item-0</string>
+				<string>com.pavelmakhov.pull-bar-pro-Item-0</string>
 				<string>special.AllOtherItems</string>
 			</array>
 			<key>Show</key>
@@ -146,6 +149,8 @@
 				<string>pl.maketheweb.cleanshotx-Item-0</string>
 				<string>com.iconfactory.Tot-Item-0</string>
 				<string>com.surteesstudios.Bartender-statusItem</string>
+				<string>com.electron.neat-Item-0</string>
+				<string>com.electron.gitify-Item-0</string>
 			</array>
 			<key>description</key>
 			<string></string>
@@ -983,7 +988,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2025-07-26T02:27:33Z</date>
+	<date>2025-07-26T13:16:08Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -1000,6 +1005,8 @@
 		<string>2025-07-25 13:13:42 +0000 Bartender Quitting due to system restart or logout (Not set to Start at Login)</string>
 		<string>2025-07-25 17:52:19 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
 		<string>2025-07-25 17:52:19 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-07-26 16:48:00 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2025-07-26 16:48:00 +0000 Bartender Quitting - Already Completed</string>
 	</array>
 	<key>TestingIdentifierKey</key>
 	<integer>83</integer>
@@ -1112,6 +1119,10 @@
 	<integer>1</integer>
 	<key>isNewUser</key>
 	<true/>
+	<key>license5</key>
+	<string>GAWAE-FD9MK-Y6LP5-K28CQ-V963S-FR478-J7GZQ-2G69C-CRGPN-KPPT7-MALXF-DPA33-5DCNU-JF6ZE-XA3M</string>
+	<key>license5HoldersName</key>
+	<string>WIL HALL</string>
 	<key>showMenuBarIcon</key>
 	<integer>0</integer>
 	<key>statusBarImageNamed</key>

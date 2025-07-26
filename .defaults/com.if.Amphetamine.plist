@@ -47,9 +47,9 @@
 	<key>Enable Triggers</key>
 	<integer>0</integer>
 	<key>End Session On Low Battery</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>End Sessions On Forced Sleep</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>End Sessions when FUS</key>
 	<integer>0</integer>
 	<key>Hide Dock Icon</key>
@@ -77,7 +77,7 @@
 	<key>Mouse Movement Smoothness</key>
 	<integer>1</integer>
 	<key>NSStatusItem Preferred Position Amphetamine</key>
-	<real>748</real>
+	<real>317</real>
 	<key>Notification Sound End</key>
 	<integer>0</integer>
 	<key>Notification Sound Start</key>
@@ -138,6 +138,8 @@
 		<integer>183258</integer>
 		<integer>484270</integer>
 		<integer>579812</integer>
+		<integer>51342</integer>
+		<integer>1</integer>
 	</array>
 	<key>Session End Time Calcuation</key>
 	<integer>0</integer>
@@ -172,7 +174,7 @@
 	<key>Stop Mouse Movement Inactivity Delay</key>
 	<integer>1800</integer>
 	<key>Total Session Run Time</key>
-	<integer>8079479</integer>
+	<integer>8130822</integer>
 	<key>Trigger Data</key>
 	<array/>
 	<key>Use 24 Hour Clock</key>

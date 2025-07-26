@@ -71,23 +71,23 @@
 	<true/>
 	<key>NSSplitView Subview Frames CommitSheet_SidebarSplit</key>
 	<array>
-		<string>0.000000, 0.000000, 478.000000, 836.000000, NO, NO</string>
-		<string>479.000000, 0.000000, 741.000000, 836.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 478.000000, 864.000000, NO, NO</string>
+		<string>479.000000, 0.000000, 741.000000, 864.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames RepositoryController_ContentSplitView</key>
 	<array>
 		<string>0.000000, 0.000000, 1220.000000, 179.000000, NO, NO</string>
-		<string>0.000000, 180.000000, 1220.000000, 656.000000, NO, NO</string>
+		<string>0.000000, 180.000000, 1220.000000, 684.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames RepositoryController_SidebarSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 249.000000, 768.000000, NO, NO</string>
-		<string>250.000000, 0.000000, 774.000000, 768.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 249.000000, 944.000000, NO, NO</string>
+		<string>250.000000, 0.000000, 1220.000000, 944.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames RevisionDetails_ChangesSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 323.000000, 598.000000, NO, NO</string>
-		<string>324.000000, 0.000000, 896.000000, 598.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 323.000000, 626.000000, NO, NO</string>
+		<string>324.000000, 0.000000, 896.000000, 626.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames RevisionDetails_FileTreeSplitView</key>
 	<array>
@@ -96,8 +96,8 @@
 	</array>
 	<key>NSSplitView Subview Frames StageFileViewController_SplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 478.000000, 384.000000, NO, NO</string>
-		<string>0.000000, 385.000000, 478.000000, 430.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 478.000000, 412.000000, NO, NO</string>
+		<string>0.000000, 413.000000, 478.000000, 430.000000, NO, NO</string>
 	</array>
 	<key>NSToolbar Configuration 24452ED6-13D2-4CDE-AD62-2D26B61D3241</key>
 	<dict>
@@ -127,6 +127,8 @@
 	<string>1416 123 1749 1125 0 0 5120 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>997 105 445 235 0 0 1512 944 </string>
+	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
+	<string>692 407 425 137 0 0 1512 944 </string>
 	<key>NSWindow Frame PreferencesWindowFrameAutoSaveName</key>
 	<string>500 445 508 427 0 0 1512 944 </string>
 	<key>NSWindow Frame RevisionDetailsWindow</key>

@@ -4,10 +4,14 @@
 <dict>
 	<key>HSenableSpotlightForNameSearches</key>
 	<true/>
+	<key>MJKeepConsoleOnTopKey</key>
+	<true/>
 	<key>MJShowMenuIconKey</key>
 	<false/>
 	<key>MJSkipDockMenuIconProblemAlertKey</key>
 	<true/>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>10650</real>
 	<key>NSToolbar Configuration Console Default</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -22,7 +26,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>615 545 620 398 0 0 1800 1125 </string>
 	<key>NSWindow Frame console</key>
-	<string>1086 276 1749 1073 0 0 1800 1125 </string>
+	<string>574 236 853 405 0 0 1512 944 </string>
 	<key>NSWindow Frame prefs</key>
 	<string>601 499 365 277 0 0 1512 944 </string>
 	<key>SUEnableAutomaticChecks</key>
@@ -30,7 +34,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-10-04T08:58:37Z</date>
+	<date>2025-07-26T17:43:51Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>

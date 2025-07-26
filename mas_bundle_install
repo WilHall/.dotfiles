@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+while IFS=':' read -r name id; do
+  id=${id// /}
+  id=${id//$'\t'/}
+  id=${id//$'\r'/}
+  [[ -z $id ]] && continue
+
+  mas install "$id"
+done < mas_bundle

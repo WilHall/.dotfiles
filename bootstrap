@@ -43,6 +43,10 @@ install_xcode_cli() {
   fi
 }
 
+mas_install() {
+  mas_bundle_install
+}
+
 pip_install() {
   pip install -r $HOME/.dotfiles/requirements.txt
 }
@@ -274,6 +278,7 @@ bootstrap() {
   fi
 
   pip_install
+  mas_install
   
   set_default_shell
   

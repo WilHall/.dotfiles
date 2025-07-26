@@ -17,9 +17,6 @@ end
 
 hs.hotkey.bind(optshift, "`", function() toggleAppWindow("Finder") end)
 hs.hotkey.bind(cmdshift, "`", function() toggleAppWindow("Mail") end)
-hs.hotkey.bind(hyper, "M", function() toggleAppWindow("Spotify") end)
-hs.hotkey.bind(hyper, "/", function() toggleAppWindow("Linear") end)
-hs.hotkey.bind(hyper, "N", function() toggleAppWindow("Notion") end)
-hs.hotkey.bind(hyper, "T", function() toggleAppWindow("TickTick") end)
-hs.hotkey.bind(hyper, "C", function() toggleAppWindow("WebStorm") end)
+hs.hotkey.bind(hyper, "N", function() toggleAppWindow("Notes") end)
+hs.hotkey.bind(hyper, "T", function() toggleAppWindow("GoodTask") end)
 hs.hotkey.bind(hyper, "E", function() toggleAppWindow("Entity Pro") end)

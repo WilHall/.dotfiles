@@ -12,6 +12,15 @@ windows:
             - sudo mactop --color blue
         - shell:
             - clear
+  - ctw:
+      root: ~/workspace/zus/ctw
+      layout: even-vertical
+      panes:
+        - mprocs:
+          - clear
+        - mactop:
+          - sudo mactop --color blue
+        - shell:
   - general:
       root: ~/workspace
       layout: even-vertical

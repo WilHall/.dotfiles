@@ -49,3 +49,7 @@ gpg-agent --daemon
 if [ "$TMUX" = "" ]; then tmuxinator start workspace; fi
 
 export PATH="/Users/wilhall/.asdf/shims:/opt/homebrew/bin:$PATH"
+
+export _ZO_DOCTOR=0
+# Initialize zoxide (must be at the end)
+eval "$(zoxide init zsh)"

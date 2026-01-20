@@ -120,7 +120,7 @@ end
 function undockedLayout()
   local laptopScreen = getLaptopScreen()
   return {
-    { "Arc", nil, externalScreen, regions.full, nil, nil },
+    { "Chrome", nil, externalScreen, regions.full, nil, nil },
     { "WebStorm", nil, laptopScreen, regions.full, nil, nil },
     { "RubyMine", nil, laptopScreen, regions.full, nil, nil },
     { "Rider", nil, laptopScreen, regions.full, nil, nil },
@@ -132,10 +132,9 @@ function undockedLayout()
     { "OrcaSlicer", nil, laptopScreen, regions.full, nil, nil },
     { "Adobe Lightroom", nil, laptopScreen, regions.full, nil, nil },
     { "Blender", nil, laptopScreen, regions.full, nil, nil },
-    { "Silhouette Studio", nil, laptopScreen, regions.full, nil, nil },
     { "Slack", nil, laptopScreen, regions.right, nil, nil },
     { "Messages", nil, laptopScreen, regions.rightb25, nil, nil },
-      { "Spotify", nil, laptopScreen, regions.modalPrimary, nil, nil },
+      { "Music", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, laptopScreen, regions.modalPrimary, nil, nil },
   }
 end
@@ -158,14 +157,13 @@ function undockedSidecar()
     { "OrcaSlicer", nil, laptopScreen, regions.full, nil, nil },
     { "Adobe Lightroom", nil, laptopScreen, regions.full, nil, nil },
     { "Blender", nil, laptopScreen, regions.full, nil, nil },
-    { "Silhouette Studio", nil, laptopScreen, regions.full, nil, nil },
     { "Slack", nil, laptopScreen, regions.right, nil, nil },
     { "Messages", nil, laptopScreen, regions.rightb25, nil, nil },
-      { "Spotify", nil, laptopScreen, regions.modalPrimary, nil, nil },
+      { "Music", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, laptopScreen, regions.modalPrimary, nil, nil },
 
     -- External
-    { "Arc", nil, externalScreen, regions.full, nil, nil },
+    { "Chrome", nil, externalScreen, regions.full, nil, nil },
   }
 end
 
@@ -177,7 +175,7 @@ function undockedTriScreen()
 
   return {
     -- Left
-    { "Arc", nil, leftScreen, regions.full, nil, nil },
+    { "Chrome", nil, leftScreen, regions.full, nil, nil },
 
     -- Laptop
     { "WebStorm", nil, laptopScreen, regions.full, nil, nil },
@@ -191,8 +189,7 @@ function undockedTriScreen()
     { "OrcaSlicer", nil, laptopScreen, regions.full, nil, nil },
     { "Adobe Lightroom", nil, laptopScreen, regions.full, nil, nil },
     { "Blender", nil, laptopScreen, regions.full, nil, nil },
-    { "Silhouette Studio", nil, laptopScreen, regions.full, nil, nil },
-      { "Spotify", nil, laptopScreen, regions.modalPrimary, nil, nil },
+      { "Music", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, laptopScreen, regions.modalPrimary, nil, nil },
 
     -- Right
@@ -208,8 +205,8 @@ function dockedWithDualVerticalUlrawideLayout()
 
   return {
     -- Ultrawide Lower
-    { "Arc", nil, externalPrimaryScreen, regions.focalSecondary, nil, nil },
-      { "Spotify", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
+    { "Chrome", nil, externalPrimaryScreen, regions.focalSecondary, nil, nil },
+      { "Music", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
     { "WebStorm", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
     { "RubyMine", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
@@ -226,7 +223,6 @@ function dockedWithDualVerticalUlrawideLayout()
     { "OrcaSlicer", nil, externalSecondaryScreen, regions.focalPrimary, nil, nil },
     { "Adobe Lightroom", nil, externalSecondaryScreen, regions.focalPrimary, nil, nil },
     { "Blender", nil, externalSecondaryScreen, regions.focalPrimary, nil, nil },
-    { "Silhouette Studio", nil, externalSecondaryScreen, regions.focalPrimary, nil, nil },
   }
 end
 

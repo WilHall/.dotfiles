@@ -45,12 +45,6 @@
     filelist = diff-tree --no-commit-id --name-status -r
     mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
     root = rev-parse --show-toplevel
-[commit]
-	gpgsign = true
-	template = /Users/wilhall/.gitmessage
-[tag]
-    forceSignAnnotated = true
-	gpgSign = true
 [github]
     user = WilHall
 [filter "lfs"]
@@ -77,8 +71,6 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
-[gpg]
-	program = gpg2
 [merge]
 	tool = fork
 [git-mob-config]

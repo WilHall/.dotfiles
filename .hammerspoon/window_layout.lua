@@ -123,6 +123,7 @@ function undockedLayout()
     { "Chrome", nil, externalScreen, regions.full, nil, nil },
     { "WebStorm", nil, laptopScreen, regions.full, nil, nil },
     { "RubyMine", nil, laptopScreen, regions.full, nil, nil },
+    { "PyCharm", nil, laptopScreen, regions.full, nil, nil },
     { "Rider", nil, laptopScreen, regions.full, nil, nil },
     { "Code", nil, laptopScreen, regions.full, nil, nil },
     { "Fork", nil, laptopScreen, regions.full, nil, nil },
@@ -148,6 +149,7 @@ function undockedSidecar()
     -- Laptop
     { "WebStorm", nil, laptopScreen, regions.full, nil, nil },
     { "RubyMine", nil, laptopScreen, regions.full, nil, nil },
+    { "PyCharm", nil, laptopScreen, regions.full, nil, nil },
     { "Rider", nil, laptopScreen, regions.full, nil, nil },
     { "Code", nil, laptopScreen, regions.full, nil, nil },
     { "Fork", nil, laptopScreen, regions.full, nil, nil },
@@ -180,6 +182,7 @@ function undockedTriScreen()
     -- Laptop
     { "WebStorm", nil, laptopScreen, regions.full, nil, nil },
     { "RubyMine", nil, laptopScreen, regions.full, nil, nil },
+    { "PyCharm", nil, laptopScreen, regions.full, nil, nil },
     { "Rider", nil, laptopScreen, regions.full, nil, nil },
     { "Code", nil, laptopScreen, regions.full, nil, nil },
     { "Fork", nil, laptopScreen, regions.full, nil, nil },
@@ -210,6 +213,7 @@ function dockedWithDualVerticalUlrawideLayout()
       { "Mail", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
     { "WebStorm", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
     { "RubyMine", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
+    { "PyCharm", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
     { "Rider", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
     { "Code", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
       { "Fork", nil, externalPrimaryScreen, regions.modalSecondary, nil, nil },

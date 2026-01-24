@@ -2,7 +2,7 @@
     templatedir = ~/.dotfiles/.git-template
 	defaultBranch = main
 [user]
-	name = WilHall
+	name = Wil Hall
 	email = wil@wilhall.com
 	signingkey = 26C86982F8826802
 [blame]
@@ -45,6 +45,12 @@
     filelist = diff-tree --no-commit-id --name-status -r
     mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
     root = rev-parse --show-toplevel
+[commit]
+	gpgsign = true
+	template = /Users/wilhall/.gitmessage
+[tag]
+    forceSignAnnotated = true
+	gpgSign = true
 [github]
     user = WilHall
 [filter "lfs"]
@@ -71,25 +77,17 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[gpg]
+	program = gpg2
+[diff]
+	tool = fork
+[difftool "fork"]
+	trustExitCode = true
+	cmd = fork --diff $LOCAL $REMOTE
 [merge]
 	tool = fork
+[mergetool "fork"]
+	trustExitCode = true
+	cmd = fork --merge $LOCAL $REMOTE $BASE $MERGED
 [git-mob-config]
 	github-fetch = true
-[credential]
-	helper = osxkeychain
-[url "git@github.com:"]
-	insteadOf = https://github.com/
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool]
-	prompt = false
-[difftool]
-	prompt = false
-[diff]
-	tool = Kaleidoscope
-[mergetool]
-	prompt = false
-[merge]
-	tool = Kaleidoscope

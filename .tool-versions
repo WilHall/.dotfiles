@@ -1,6 +1,5 @@
-python 3.8.3 2.7.18
+python 2.7.18
 ruby 4.0.1
-nodejs 18.19.0
+nodejs 24.13.0
 golang 1.24.5
 pnpm 10.13.1
-rust 1.88.0

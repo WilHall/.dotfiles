@@ -9,7 +9,7 @@ windows:
         - mprocs:
             - clear
         - mactop:
-            - sudo mactop --color blue
+            - sudo mactop
         - shell:
             - clear
   - warbler:
@@ -19,7 +19,7 @@ windows:
         - mprocs:
             - clear
         - mactop:
-            - sudo mactop --color blue
+            - sudo mactop
         - shell:
             - clear
   - general:
@@ -27,7 +27,7 @@ windows:
       layout: even-vertical
       panes:
         - mactop:
-            - sudo mactop --color blue
+            - sudo mactop
         - shell:
             - clear
   - dotfiles:
@@ -35,6 +35,6 @@ windows:
       layout: even-vertical
       panes:
         - mactop:
-            - sudo mactop --color blue
+            - sudo mactop
         - shell:
             - clear

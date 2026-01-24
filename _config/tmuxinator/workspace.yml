@@ -12,15 +12,16 @@ windows:
             - sudo mactop --color blue
         - shell:
             - clear
-  - ctw:
-      root: ~/workspace/zus/ctw
+  - warbler:
+      root: ~/workspace/warbler
       layout: even-vertical
       panes:
         - mprocs:
-          - clear
+            - clear
         - mactop:
-          - sudo mactop --color blue
+            - sudo mactop --color blue
         - shell:
+            - clear
   - general:
       root: ~/workspace
       layout: even-vertical

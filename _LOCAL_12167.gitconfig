@@ -2,7 +2,7 @@
     templatedir = ~/.dotfiles/.git-template
 	defaultBranch = main
 [user]
-	name = WilHall
+	name = Wil Hall
 	email = wil@wilhall.com
 	signingkey = 26C86982F8826802
 [blame]
@@ -75,20 +75,14 @@
 	tool = fork
 [git-mob-config]
 	github-fetch = true
-[credential]
-	helper = osxkeychain
-[url "git@github.com:"]
-	insteadOf = https://github.com/
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool]
-	prompt = false
 [difftool]
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool]
 	prompt = false
 [merge]

@@ -77,8 +77,6 @@
 	github-fetch = true
 [credential]
 	helper = osxkeychain
-[url "git@github.com:"]
-	insteadOf = https://github.com/
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]

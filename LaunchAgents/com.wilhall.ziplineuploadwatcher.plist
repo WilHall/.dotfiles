@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.wilhall.ziplineuploadwatcher</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-c</string>
+    <string>/Users/wilhall/.bin/zipline_upload_watcher</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardErrorPath</key>
+  <string>/tmp/com.wilhall.ziplineuploadwatcher.error.log</string>
+  <key>StandardOutPath</key>
+  <string>/tmp/com.wilhall.ziplineuploadwatcher.standard.log</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+source /Users/wilhall/.auth
+
+for RELATIVE_FILE_PATH in "$@"; do
+  FILE_PATH=$(realpath "$RELATIVE_FILE_PATH")
+  if [ -e "$FILE_PATH" ]; then
+    echo -e "Uploading file $FILE_PATH\n  . . . "
+
+    UPLOAD_VIEW_URL=$(curl -s -H "authorization: $ZIPLINE_TOKEN" https://zipline.wilhall.com/api/upload -F "file=@/$FILE_PATH" -H 'content-type: multipart/form-data' -H "x-zipline-format: random" -H "x-zipline-original-name: true" | /opt/homebrew/bin/jq -r .files[0].url | tr -d '\n')
+    UPLOAD_FILE_NAME=$(basename "$UPLOAD_VIEW_URL")
+    UPLOAD_DOWNLOAD_URL="${UPLOAD_VIEW_URL/u\//raw/}?download=true"
+
+    echo -e "Uploaded file $FILE_PATH\n  View: $UPLOAD_VIEW_URL\n  Download: $UPLOAD_DOWNLOAD_URL\n"
+  else
+    echo "Invalid input file: $FILE_PATH"
+  fi
+done

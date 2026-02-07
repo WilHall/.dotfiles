@@ -1,0 +1,44 @@
+#!/bin/bash
+
+wait_for_cleanshot_to_close() {
+    while osascript -e "tell application \"System Events\" to count every window of (every process whose name is \"CleanShot X\")" | grep -q "[1-9]"; do
+        sleep 0.5
+    done
+}
+osascript -e 'display notification "Zipline uploader started" with title "Screenshots will be automatically uploaded to zipline"' 
+
+source /Users/wilhall/.auth
+
+WATCH_PATH=/Users/wilhall/Pictures/Screenshots
+mkdir -p "$WATCH_PATH"
+
+previously_uploaded_filenames=()
+
+/opt/homebrew/bin/fswatch --event Created "$WATCH_PATH" | while read -r FILE_PATH; do
+  FILE_NAME=$(basename "$FILE_PATH")
+  echo "Received 'Created' event for $FILE_PATH"
+  
+  if [[ ! "${previously_uploaded_filenames[*]}" =~ "$FILE_NAME" ]]; then
+    wait_for_cleanshot_to_close
+    sleep 0.8 # Ensure CleanShot has time to update the file with annotations
+
+    UPLOAD_VIEW_URL=$(curl -H "authorization: $ZIPLINE_TOKEN" https://zipline.wilhall.com/api/upload -F "file=@/$FILE_PATH" -H 'content-type: multipart/form-data' -H "x-zipline-format: random" -H "x-zipline-original-name: true" | /opt/homebrew/bin/jq -r .files[0].url | tr -d '\n')
+    UPLOAD_FILE_NAME=$(basename "$UPLOAD_VIEW_URL")
+    UPLOAD_DOWNLOAD_URL="${UPLOAD_VIEW_URL/u\//raw/}?download=true"
+
+    # Copy view and download URLs to clipboard with a small delay to allow
+    # clipboard managers to persist the first before copying the second
+    echo "$UPLOAD_VIEW_URL" | pbcopy 
+    sleep 0.8
+    echo "$UPLOAD_DOWNLOAD_URL" | pbcopy
+    sleep 0.8
+
+    osascript -e 'display notification "Copied screenshot file and links to clipboard" with title "Screenshot upload complete"' 
+  fi
+
+  previously_uploaded_filenames+=("$FILE_NAME")
+  if [[ ${#previously_uploaded_filenames[@]} -gt 500 ]]; then
+    previously_uploaded_filenames=("${previously_uploaded_filenames[@]:1}")
+  fi
+done
+

@@ -144,4 +144,9 @@ function dsreset() {
   sudo killall -HUP mDNSResponder
 }
 
+function killabiner() {
+  sudo pkill -9 -i karabiner
+  open /Applications/Karabiner-Elements.app
+}
+
 alias update-dev="brew update; brew upgrade; brew upgrade --cask; asdf plugin update --all; antigen update; vim -c 'Lazy sync' -c 'q!' -c 'q!'"

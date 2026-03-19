@@ -1,0 +1,33 @@
+font-family = "Comic Mono Relaxed"
+font-family = "FiraCode Nerd Font Mono"
+font-size = 16
+adjust-cell-width = -2
+font-synthetic-style = false
+font-feature = "calt"
+font-feature = "liga"
+font-feature = "dlig"
+
+theme = "Catppuccin Frappe"
+background-opacity = 0.96
+background-blur = true
+cursor-style = block_hollow
+cursor-style-blink = false
+macos-titlebar-style = hidden
+window-padding-x = 10
+window-padding-y = 14
+
+clipboard-read = "allow"
+clipboard-write = "allow"
+clipboard-paste-protection = true
+clipboard-trim-trailing-spaces = true
+
+shell-integration-features = path, ssh-env, ssh-terminfo, sudo, no-cursor
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+link-url = true
+window-step-resize = 1
+window-save-state = always
+scrollback-limit = 1048576
+
+# Reload config (Cmd+Shift+R on macOS)
+keybind = super+shift+r=reload_config

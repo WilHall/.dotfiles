@@ -2,11 +2,28 @@ ZSH_THEME=""
 COMPLETION_WAITING_DOTS="false"
 CASE_SENSITIVE="true"
 
+# Cursor/VS Code environment probing may spawn an interactive zsh without a real TTY.
+# In that case, skip heavy shell-initialization that can fail due to zle/prompt state.
+if [[ $- == *i* ]] && ! ([[ -t 0 && -t 1 ]]); then
+  return 0
+fi
+
+# Ghostty shell integration (prompt marking, cwd propagation, jump_to_prompt, etc.)
+if [[ -n "${GHOSTTY_RESOURCES_DIR}" ]]; then
+  source "${GHOSTTY_RESOURCES_DIR}/shell-integration/zsh/ghostty-integration"
+  # Ensure ghostty CLI is on PATH (.zshenv overwrites PATH and drops Ghostty's bin dir)
+  [[ "$PLATFORM" == "macos" ]] && path=("${GHOSTTY_RESOURCES_DIR}/../MacOS" $path)
+fi
+
 unset -v GEM_HOME
 
 fpath+=$HOME/.pure
-autoload -U promptinit; promptinit
-prompt pure
+# Cursor/VS Code can spawn shells in non-interactive/non-TTY modes while probing
+# environment variables; pure prompt + zle can then fail and cause non-zero exit.
+if [[ -t 0 && -t 1 && -z "${VSCODE_IPC_HOOK-}" ]]; then
+  autoload -U promptinit; promptinit || true
+  prompt pure 2>/dev/null || true
+fi
 
 if [[ "$PLATFORM" == "macos" ]]; then
   source /opt/homebrew/share/antigen/antigen.zsh
@@ -18,38 +35,55 @@ source ~/.zsh/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 
 antigen use oh-my-zsh
 
+# Ensure oh-my-zsh cache completions dir exists (for asdf and other plugins)
+mkdir -p "${ZSH_CACHE_DIR:-$HOME/.zsh/cache}/completions"
+
 antigen bundle asdf
-antigen bundle fzf
 antigen bundle git
 antigen bundle heroku
 antigen bundle colored-man-pages
 antigen bundle dircycle
-antigen bundle tymm/zsh-directory-history
 antigen bundle mafredri/zsh-async@main
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-autosuggestions
-antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle Aloxaf/fzf-tab
 antigen bundle zdharma-continuum/fast-syntax-highlighting
 
 antigen apply
 
+# Pre-generate asdf completions so they exist before first use (plugin writes async)
+if (( $+commands[asdf] )); then
+  asdf completion zsh >| "${ZSH_CACHE_DIR:-$HOME/.zsh/cache}/completions/_asdf" 2>/dev/null
+fi
+
 for zsh_source in $HOME/.zsh/configs/*.zsh; do
   source $zsh_source
 done
 
-bindkey '\e[A' directory-history-search-backward
-bindkey '\e[B' directory-history-search-forward
+# fzf shell integration (Homebrew fzf)
+source <(fzf --zsh)
+
+# Atuin history (replace shell history UX)
+eval "$(atuin init zsh)"
+# Up-arrow: bind both common keycodes (^[[A = VT100, ^[OA = application cursor)
+bindkey '^[[A' atuin-up-search
+bindkey '^[OA' atuin-up-search
+
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 
-eval $(ssh-agent)
-gpg-agent --daemon
+# Disable zsh built-in history search (Atuin handles it via Up arrow / C-r)
+bindkey -r '^r'  # was history-incremental-search-backward
+bindkey -r '^s'  # was history-incremental-search-forward (also lets tmux receive C-s as prefix)
 
-if [ "$TMUX" = "" ]; then tmuxinator start workspace; fi
-
-export PATH="/Users/wilhall/.asdf/shims:/opt/homebrew/bin:$PATH"
+eval $(ssh-agent -s 2>/dev/null | grep -v '^echo ')
+(gpg-agent --daemon 2>/dev/null)
 
 export _ZO_DOCTOR=0
 # Initialize zoxide (must be at the end)
 eval "$(zoxide init zsh)"
+
+# Auto-start tmux when opening a new terminal (e.g. Ghostty)
+if [[ -o interactive ]] && [[ -z "$TMUX" ]] && (( $+commands[tmux] )); then
+  exec tmux attach-session 2>/dev/null || exec tmux new-session
+fi

@@ -4,6 +4,7 @@ alias ls="lsd -F --group-directories-first"
 alias ll="lsd -alh --group-directories-first"
 alias tree="lsd --tree"
 alias cd="z"
+alias cat="bat"
 
 if [[ "$PLATFORM" == "macos" ]]; then
   alias ctags="`brew --prefix`/bin/ctags"

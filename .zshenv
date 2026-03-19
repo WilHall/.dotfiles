@@ -13,14 +13,11 @@ export TERM="xterm-256color"
 export EDITOR=vim
 export GPG_TTY=$(tty)
 export ZDOTDIR=$HOME/.zsh
-echo "HOME $HOME"
 export PATH="$HOME/.bin:$HOME/.asdf/shims:/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 unsetopt auto_cd
 setopt IGNORE_EOF
 setopt extended_glob
-
-source ~/.asdf/installs/rust/1.83.0/env
 
 fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 autoload -Uz compinit && compinit

@@ -13,7 +13,6 @@ zlib1g-dev
 libncurses-dev
 libffi-dev
 libgdbm-dev
-tmuxinator
 universal-ctags
 chafa
 exiftool
@@ -45,6 +44,7 @@ zsh
 neovim
 bat
 tmux
+atuin
 silversearcher-ag
 watchman
 zsh-syntax-highlighting

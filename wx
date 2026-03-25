@@ -94,7 +94,7 @@ backup_all() {
 restore_all() {
   READBACK=false
 
-  if [ $SCOPE = "Registry" ]; then
+  if [ "$SCOPE" = "Registry" ]; then
     for BACKUP_FILE in $HOME/.dotfiles/.appdata/$SCOPE/*.reg; do
       reg.exe import "$BACKUP_FILE"
     done

@@ -71,6 +71,11 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[diff]
+	tool = fork
+[difftool "fork"]
+	trustExitCode = true
+	cmd = fork --diff $LOCAL $REMOTE
 [merge]
 	tool = fork
 [git-mob-config]

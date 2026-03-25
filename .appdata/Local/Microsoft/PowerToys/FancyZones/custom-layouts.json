@@ -1,3 +1,33 @@
 {
-  "custom-layouts": []
+  "custom-layouts": [
+    {
+      "uuid": "{67881C89-F06C-46C5-8798-6C082CB83336}",
+      "name": "Primary",
+      "type": "grid",
+      "info": {
+        "rows": 1,
+        "columns": 4,
+        "rows-percentage": [
+          10000
+        ],
+        "columns-percentage": [
+          2249,
+          3878,
+          1974,
+          1899
+        ],
+        "cell-child-map": [
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 16,
+        "sensitivity-radius": 20
+      }
+    }
+  ]
 }

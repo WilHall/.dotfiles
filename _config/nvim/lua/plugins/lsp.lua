@@ -6,8 +6,6 @@ return {
       "hrsh7th/nvim-cmp",
       "saadparwaiz1/cmp_luasnip",
       "L3MON4D3/LuaSnip",
-      "fsouza/prettierd",
-      "mattn/efm-langserver",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
       "delphinus/cmp-ctags",
@@ -17,13 +15,13 @@ return {
       "onsails/lspkind.nvim"
     },
     config = function()
-      local lspconfig = require('lspconfig')
       local luasnip = require('luasnip')
       local cmp_buffer = require('cmp_buffer')
       local cmp = require('cmp')
       local lspkind = require("lspkind")
       local copilot = require("copilot")
       local copilot_cmp = require("copilot_cmp")
+      local asdf = "/opt/homebrew/bin/asdf"
 
       copilot.setup({
         suggestion = { enabled = false },
@@ -162,8 +160,18 @@ return {
       -- Mappings.
       -- See `:help vim.diagnostic.*` for documentation on any of the below functions
       local opts = { noremap = true, silent = true }
-      vim.cmd [[ nnoremap <silent> <leader>cr :LspRestart<cr> ]]
+      vim.keymap.set('n', '<leader>cr', function()
+        -- Clear diagnostics first so the UI doesn't show stale diagnostics while servers restart.
+        vim.diagnostic.reset()
+        vim.cmd('LspRestart')
+      end, opts)
       vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, opts)
+      vim.keymap.set('n', ']e', function()
+        vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR })
+      end, opts)
+      vim.keymap.set('n', '[e', function()
+        vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.ERROR })
+      end, opts)
       vim.keymap.set('n', '[g', vim.diagnostic.goto_prev, opts)
       vim.keymap.set('n', ']g', vim.diagnostic.goto_next, opts)
       vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
@@ -185,20 +193,6 @@ return {
         vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
         vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 
-        vim.api.nvim_create_autocmd("CursorHold", {
-          buffer = bufnr,
-          callback = function()
-            local opts = {
-              focusable = false,
-              close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
-              border = 'rounded',
-              source = 'always',
-              prefix = ' ',
-              scope = 'cursor',
-            }
-            vim.diagnostic.open_float(nil, opts)
-          end
-        })
       end
 
       local lsp_flags = {
@@ -208,77 +202,76 @@ return {
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-      require('lspconfig').jsonls.setup({
+      local function setup(server, config)
+        vim.lsp.config(server, config)
+        vim.lsp.enable(server)
+      end
+
+      setup("jsonls", {
         capabilities = capabilities,
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
       })
 
-      lspconfig.tailwindcss.setup({
+      setup("tailwindcss", {
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
       })
-      lspconfig.solargraph.setup({
+      setup("ruby_lsp", {
+        on_attach = on_attach,
+        flags = lsp_flags,
+        handlers = handlers,
+        filetypes = { "ruby" },
+        cmd = { asdf, "exec", "ruby-lsp" },
+        root_markers = { "Gemfile", ".git" },
+        single_file_support = false,
+      })
+      setup("marksman", {
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
       })
-      lspconfig.stylelint_lsp.setup({
+      setup("stylelint_lsp", {
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
       })
-      lspconfig.tsserver.setup({
+      setup("ts_ls", {
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
-        filetypes = { "typescript", "typescriptreact" },
+        filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
       })
-      lspconfig.svelte.setup({
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers,
-      })
-      lspconfig.rust_analyzer.setup({
+      setup("svelte", {
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers,
       })
-      lspconfig.pylsp.setup({
+      setup("rust_analyzer", {
+        on_attach = on_attach,
+        flags = lsp_flags,
+        handlers = handlers,
+      })
+      setup("pylsp", {
         on_attach = on_attach,
         flags = lsp_flags,
         handlers = handlers
       })
-      lspconfig.eslint.setup({
-        flags = lsp_flags,
-        handlers = handlers,
-
-        on_attach = function(client, bufnr)
-          on_attach(client.bufnr)
-          vim.api.nvim_create_autocmd("BufWritePre", {
-            buffer = bufnr,
-            command = "EslintFixAll",
-          })
-        end,
-      })
-      lspconfig.lua_ls.setup({
+      setup("lua_ls", {
         flags = lsp_flags,
         on_attach = on_attach,
         handlers = handlers,
         settings = {
           Lua = {
             runtime = {
-              -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
               version = 'LuaJIT',
             },
             diagnostics = {
-              -- Get the language server to recognize the `vim` global
               globals = { 'vim' },
             },
             workspace = {
-              -- Make the server aware of Neovim runtime files
               library = vim.api.nvim_get_runtime_file("", true),
             },
             telemetry = {
@@ -288,28 +281,15 @@ return {
         },
       })
 
-      local prettier = {
-        formatCommand = 'prettierd "${INPUT}"',
-        formatStdin = true,
+      local diag_sign_text = {
+        [vim.diagnostic.severity.ERROR] = " ",
+        [vim.diagnostic.severity.WARN] = " ",
+        [vim.diagnostic.severity.INFO] = " ",
+        [vim.diagnostic.severity.HINT] = " ",
       }
-      lspconfig.efm.setup {
-        init_options = { documentFormatting = true },
-        settings = {
-          rootMarkers = { ".git/" },
-          languages = {
-            ruby = { prettier },
-            javascript = { prettier },
-            javascriptreact = { prettier },
-            typescript = { prettier },
-            typescriptreact = { prettier },
-            svelte = { prettier },
-          }
-        }
-      }
-      vim.cmd [[ autocmd BufWritePre * lua vim.lsp.buf.format() ]]
 
       vim.diagnostic.config({
-        signs = true,
+        signs = { text = diag_sign_text },
         underline = true,
         update_in_insert = false,
         severity_sort = true,
@@ -319,16 +299,9 @@ return {
         },
       })
 
-      local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
-      for type, icon in pairs(signs) do
-        local hl = "DiagnosticSign" .. type
-        vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-      end
-
       vim.api.nvim_set_hl(0, 'NormalFloat', { bg = "None", fg = "None" })
       vim.api.nvim_set_hl(0, 'FloatBorder', { bg = "None" })
 
-      vim.cmd [[autocmd! CursorHold * lua vim.diagnostic.open_float(nil, {focus=false})]]
       vim.cmd [[
         highlight! DiagnosticLineNrError guibg=#51202A guifg=#FF0000 gui=bold
         highlight! DiagnosticLineNrWarn guibg=#51412A guifg=#FFA500 gui=bold

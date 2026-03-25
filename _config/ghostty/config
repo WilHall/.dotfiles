@@ -9,7 +9,7 @@ font-feature = "dlig"
 
 theme = "Catppuccin Frappe"
 background-opacity = 0.96
-background-blur = true
+background-blur = false
 cursor-style = block_hollow
 cursor-style-blink = false
 macos-titlebar-style = hidden

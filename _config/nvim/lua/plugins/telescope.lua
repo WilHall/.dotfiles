@@ -7,6 +7,30 @@ return {
 
     },
     config = function()
+      local previewers = require("telescope.previewers")
+      require("telescope").setup({
+        defaults = {
+          file_previewer = previewers.new_termopen_previewer({
+            get_command = function(entry)
+              local path = entry.value
+              if not path or path == "" then
+                return { "true" }
+              end
+              if vim.fn.isdirectory(path) == 1 then
+                return { "ls", "-la", path }
+              end
+              return {
+                "bat",
+                "--theme=Catppuccin-mocha",
+                "--style=plain",
+                "--color=always",
+                path,
+              }
+            end,
+          }),
+        },
+      })
+
       vim.cmd [[
         autocmd User TelescopePreviewerLoaded setlocal wrap
         

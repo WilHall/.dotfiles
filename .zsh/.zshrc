@@ -68,12 +68,14 @@ eval "$(atuin init zsh)"
 # Up-arrow: bind both common keycodes (^[[A = VT100, ^[OA = application cursor)
 bindkey '^[[A' atuin-up-search
 bindkey '^[OA' atuin-up-search
+# fzf's `source <(fzf --zsh)` binds ^R to fzf-history-widget; ensure Atuin wins for history search
+bindkey -M emacs '^r' atuin-search
+bindkey -M viins '^r' atuin-search-viins
 
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 
-# Disable zsh built-in history search (Atuin handles it via Up arrow / C-r)
-bindkey -r '^r'  # was history-incremental-search-backward
+# Free C-s for tmux prefix (zsh incremental search forward); Atuin uses C-r and ↑ instead
 bindkey -r '^s'  # was history-incremental-search-forward (also lets tmux receive C-s as prefix)
 
 eval $(ssh-agent -s 2>/dev/null | grep -v '^echo ')
@@ -84,6 +86,8 @@ export _ZO_DOCTOR=0
 eval "$(zoxide init zsh)"
 
 # Auto-start tmux when opening a new terminal (e.g. Ghostty)
+# Use new-session -A so we never exec a failing attach-only client (that would exit
+# the terminal with no shell left to run `|| exec tmux new-session`).
 if [[ -o interactive ]] && [[ -z "$TMUX" ]] && (( $+commands[tmux] )); then
-  exec tmux attach-session 2>/dev/null || exec tmux new-session
+  exec tmux new-session -A -s main
 fi

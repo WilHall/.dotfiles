@@ -82,3 +82,35 @@ vim.cmd [[
         autocmd BufWritePre * if expand("<afile>")!~#'^\w\+:/' && !isdirectory(expand("%:h")) | execute "silent! !mkdir -p ".shellescape(expand('%:h'), 1) | redraw! | endif
     augroup END
 ]]
+
+-- Reinforce filetype detection for session-restored JS/TS buffers.
+vim.filetype.add({
+  extension = {
+    ts = "typescript",
+    tsx = "typescriptreact",
+    js = "javascript",
+    jsx = "javascriptreact",
+  },
+})
+
+local ts_ft_group = vim.api.nvim_create_augroup("ForceTsJsFiletypesOnRestore", { clear = true })
+vim.api.nvim_create_autocmd("BufEnter", {
+  group = ts_ft_group,
+  pattern = { "*.ts", "*.tsx", "*.js", "*.jsx" },
+  callback = function(args)
+    if vim.bo[args.buf].filetype ~= "" then
+      return
+    end
+
+    local name = vim.api.nvim_buf_get_name(args.buf)
+    if name:match("%.tsx$") then
+      vim.bo[args.buf].filetype = "typescriptreact"
+    elseif name:match("%.ts$") then
+      vim.bo[args.buf].filetype = "typescript"
+    elseif name:match("%.jsx$") then
+      vim.bo[args.buf].filetype = "javascriptreact"
+    elseif name:match("%.js$") then
+      vim.bo[args.buf].filetype = "javascript"
+    end
+  end,
+})

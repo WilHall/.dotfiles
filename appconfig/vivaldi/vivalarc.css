@@ -1,0 +1,308 @@
+/*
+version: 1.3.0
+update: 2026-03-26
+vivaldi version: v7.9+
+*/
+
+:root{
+    --window-border:3px; /* window border, recommend 4px~16px */
+    --mac-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --win-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --linux-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --win-title-padding:140px;
+    --linux-title-padding:120px;
+    --footer-height:24px;
+    --window-button-scale:0.8;
+    --window-button-opacity:0.3;
+    --colorArcBg:transparent;
+    --webview-shadow-light:0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 0px var(--window-border) 0px rgba(0, 0, 0, 0.10);
+    --webview-shadow-dark:0px 2px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 8px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1.2px #ffffff18;
+}
+
+* {
+    font-family: "Comic Mono Relaxed" !important;
+}
+
+/* Core layout */
+#browser.break-mode #main{
+    opacity:0;
+}
+
+#modal-bg.default-browser{
+    display:none;
+}
+
+#browser:not(.tabs-bottom):not(.tabs-top) footer#footer,
+#browser:not(.tabs-bottom):not(.tabs-top) > footer,
+#browser > footer > .toolbar-statusbar{
+    background:var(--colorArcBg);
+    color: var(--colorImageBottomFg);
+    height: calc(var(--footer-height) + var(--densityGap) * 2);
+    border:none;
+}
+
+#browser:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header{
+    box-shadow:none;
+    background:var(--colorArcBg);
+    overflow: visible;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) .mainbar{
+    border:none;
+    background: var(--colorArcBg);
+    color:var(--colorImageTopFg, var(--colorFg));
+    -webkit-app-region: drag;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) :is(.UrlBar-SearchField, .UrlBar-AddressField, .SearchField){
+    background-color: var(--colorImageCenterFgAlphaHeavy, var(--colorFgAlpha));
+    border: 1px solid var(--colorImageCenterFgAlphaHeavy, var(--colorFgAlpha));
+    color:var(--colorImageCenterFgAlpha, var(--colorFg));
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) :is(.UrlBar-SearchField, .UrlBar-AddressField, .SearchField):focus-within{
+    background-color: var(--colorBg);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) :is(
+    .UrlFragment-Wrapper:not(.UrlFragment-Wrapper--ShouldHighlight),
+    .UrlFragment-Wrapper--ShouldHighlight,
+    .UrlFragment--Highlight
+){
+    --HighlightColor:var(--colorImageCenterFgAlpha, var(--colorFg));
+    --LowlightColor: var(--colorImageCenterFgAlpha, var(--colorFg));
+}
+
+.button-toolbar > button{
+    border:none;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).density-on .toolbar-mainbar:not(.toolbar-wrap) .button-toolbar:not(:last-of-type),
+#browser:not(.tabs-top):not(.tabs-bottom).density-on .toolbar-statusbar .button-toolbar:not(:last-of-type){
+    padding-right:0;
+    margin-right:var(--densityGap);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) :is(.ExtensionIcon--Hidden, .ExtensionToggleIcon.ExtensionToggleIcon--Expanded){
+    background-color:var(--colorArcBg);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) :is(
+    .ExtensionIcon--Hidden:hover,
+    .ExtensionIcon--Hidden:active,
+    .button-toolbar > button:hover,
+    .button-toolbar > button:active
+){
+    background-color:var(--colorBgAlphaHeavier);
+    border-radius:var(--radius);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off :is(
+    .toolbar-mainbar .toolbar-extensions > .button-toolbar > button:hover,
+    .toolbar-mainbar .page-zoom-controls > .button-toolbar > button:hover,
+    .toolbar-mainbar > .button-toolbar > button:hover,
+    .toolbar-mainbar .toolbar-extensions > .toolbar-group > .button-toolbar > button:hover,
+    .toolbar-mainbar .page-zoom-controls > .toolbar-group > .button-toolbar > button:hover,
+    .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover,
+    .ExtensionIcon:hover,
+    .ExtensionIcon--Hidden:hover,
+    .ExtensionIcon--Hidden:active,
+    .bookmark-bar button:hover
+){
+    background-color: var(--colorImageCenterFgAlphaHeavy, var(--colorFgAlpha));
+    border-radius:var(--radius);
+}
+
+#browser:not(.tabs-top) #titlebar .vivaldi{
+    margin-left:8px;
+}
+
+/*windowButtonGroup-Linux*/
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup{
+    right: calc(var(--window-border) / var(--uiZoomLevel));
+    top: calc(1px / var(--uiZoomLevel));
+}
+
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup button{
+    width:calc((var(--linux-header) - 2px) * 1.32 / var(--uiZoomLevel));
+    height:calc((var(--linux-header) - 2px) / var(--uiZoomLevel));
+    padding:0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup button svg{
+    scale: calc(var(--window-button-scale) / var(--uiZoomLevel));
+    opacity:var(--window-button-opacity);
+}
+
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup button svg:hover{
+    opacity:1;
+}
+
+/* Tab bar */
+:is(.tabs-left, .tabs-right) .tabbar-wrapper,
+#browser.transparent-tabbar #tabs-tabbar-container.left,
+#browser.transparent-tabbar #tabs-tabbar-container.right,
+#browser:not(.transparent-tabbar) #tabs-tabbar-container{
+    background: var(--colorArcBg);
+    border: none;
+    box-shadow:none;
+}
+
+#browser:is(.tabs-left, .tabs-right) .inner > .tabbar-wrapper{
+    padding-bottom:var(--window-border);
+}
+
+.color-behind-tabs-off .tab-indicator{
+    background-color:var(--colorAccentBgAlpha);
+}
+.color-behind-tabs-off .tab-indicator:hover{
+    background-color:var(--colorAccentBg);
+}
+
+.color-behind-tabs-off .tab-indicator.active{
+    background-color:var(--colorAccentBg);
+}
+
+.color-behind-tabs-off .tab.active + .tab-group-indicator .tab-indicator.active{
+    background-color:var(--colorAccentBg);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off :is(#tabs-subcontainer.left, #tabs-subcontainer.right){
+    box-shadow:none;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer,
+#browser:not(.tabs-top):not(.tabs-bottom).transparent-tabbar #tabs-subcontainer{
+    background-color:transparent;
+}
+
+.color-behind-tabs-off#browser .window-buttongroup.on-mainbar{
+    background:none;
+}
+
+/* Panels */
+#browser .manager-editor,
+#browser .toolbar:not(.toolbar-mainbar, .toolbar-statusbar){
+    color:var(--colorImageCenterFgAlpha, var(--colorFg));
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) :is(#panels #switch, #panels, #panels-container){
+    padding-top: 0px;
+    border: 0;
+}
+
+.icons #switch .addwebpanel-wrapper > button,
+.icons #switch > .button-toolbar,
+.icons #switch > * > .button-toolbar,
+.icons #switch > button{
+    border-radius:var(--radiusHalf);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container{
+    margin-bottom:var(--window-border);
+    background:var(--colorArcBg);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) :is(#panels-container.overlay, #panels-container:not(.icons) .panel-group){
+    background:var(--colorBgAlphaBlur);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.icons{
+    background: var(--colorArcBg);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container .panel-group{
+    border-radius:var(--radiusCap);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.overlay .panel-group{
+    border-radius:0;
+}
+
+/* Webview */
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webview-container{
+    margin:0 var(--window-border) var(--window-border);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-left #webview-container{
+    margin-left:0;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-right #webview-container{
+    margin-right:0;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #main.left #panels-container.icons ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-right #main.left #panels-container.icons ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #main.left #panels-container.minimized.overlay ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-right #main.left #panels-container.minimized.overlay ~ #webview-container{
+    margin-left:0;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-left #main.right #panels-container.icons ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #main.right #panels-container.icons ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-left #main.right #panels-container.minimized.overlay ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #main.right #panels-container.minimized.overlay ~ #webview-container{
+    margin-right:0;
+}
+
+#main,
+#main > .inner{
+    overflow:visible;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack{
+    border-radius:var(--radiusCap);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).theme-light #webpage-stack{
+    box-shadow: var(--webview-shadow-light);
+}
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).theme-dark #webpage-stack{
+    box-shadow: var(--webview-shadow-dark);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack:has(.tiled .visible),
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack:has(.mosaic .visible){
+    box-shadow: none;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webview-container:has(#webpage-stack .tiled .visible),
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webview-container:has(#webpage-stack .mosaic .visible){
+    box-shadow: none;
+    padding:0;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line:before,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line:after,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .tile,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen):not(.narrow-tiling) .tiled.visible .tile[data-id]{
+    background:transparent;
+    box-shadow:none;
+}
+
+/* Start page */
+.startpage .startpage-navigation{
+    box-shadow:none !important;
+    background:transparent !important;
+}
+
+.startpage .startpage-navigation .startpage-navigation-group{
+    border:0 !important;
+}
+
+button.button-startpage{
+    box-shadow:none !important;
+}
+
+button.button-startpage:after{
+    background-image:none !important;
+}
+
+button.button-startpage:active{
+    background:none !important;
+}

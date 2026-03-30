@@ -64,13 +64,30 @@ done
 source <(fzf --zsh)
 
 # Atuin history (replace shell history UX)
-eval "$(atuin init zsh)"
-# Up-arrow: bind both common keycodes (^[[A = VT100, ^[OA = application cursor)
-bindkey '^[[A' atuin-up-search
-bindkey '^[OA' atuin-up-search
-# fzf's `source <(fzf --zsh)` binds ^R to fzf-history-widget; ensure Atuin wins for history search
-bindkey -M emacs '^r' atuin-search
-bindkey -M viins '^r' atuin-search-viins
+# WSL/apt often ships Atuin <18, which registers _atuin_up_search_widget / _atuin_search_widget
+# instead of atuin-up-search / atuin-search — binding the new names then yields "No such widget".
+if (( $+commands[atuin] )); then
+  eval "$(atuin init zsh)"
+  # Up-arrow: both VT100 (^[[A) and application-cursor (^[OA); Windows terminals vary.
+  if (( ${+widgets[atuin-up-search]} )); then
+    bindkey '^[[A' atuin-up-search
+    bindkey '^[OA' atuin-up-search
+  elif (( ${+widgets[_atuin_up_search_widget]} )); then
+    bindkey '^[[A' _atuin_up_search_widget
+    bindkey '^[OA' _atuin_up_search_widget
+  fi
+  # fzf's `source <(fzf --zsh)` binds ^R to fzf-history-widget; ensure Atuin wins for history search
+  if (( ${+widgets[atuin-search]} )); then
+    bindkey -M emacs '^r' atuin-search
+  elif (( ${+widgets[_atuin_search_widget]} )); then
+    bindkey -M emacs '^r' _atuin_search_widget
+  fi
+  if (( ${+widgets[atuin-search-viins]} )); then
+    bindkey -M viins '^r' atuin-search-viins
+  elif (( ${+widgets[_atuin_search_widget]} )); then
+    bindkey -M viins '^r' _atuin_search_widget
+  fi
+fi
 
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word

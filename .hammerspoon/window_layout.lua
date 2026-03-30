@@ -57,9 +57,9 @@ local regions = {
   -- By workspace priority
   modalPrimary = { x = 0, y = 0, w = 0.30, h = 1 },
   modalSecondary = { x = 0.30, y = 0, w = 0.50, h = 1 },
-  focalPrimary = { x = 0.25, y = 0, w = 0.40, h = 1 },
-  focalSecondary = { x = 0, y = 0, w = 0.25, h = 1 },
-  peripheralPrimary = { x = 0.65, y = 0, w = 0.15, h = 1 },
+  focalPrimary = { x = 0.28, y = 0, w = 0.32, h = 1 },
+  focalSecondary = { x = 0, y = 0, w = 0.28, h = 1 },
+  peripheralPrimary = { x = 0.60, y = 0, w = 0.20, h = 1 },
   peripheralSecondary = { x = 0.80, y = 0, w = 0.20, h = 1 },
   peripheralTertiary = { x = 0.80, y = 0.5, w = 0.20, h = 0.5 },
 }
@@ -121,6 +121,7 @@ function undockedLayout()
   local laptopScreen = getLaptopScreen()
   return {
     { "Chrome", nil, externalScreen, regions.full, nil, nil },
+    { "Vivaldi", nil, externalScreen, regions.full, nil, nil },
     { "WebStorm", nil, laptopScreen, regions.full, nil, nil },
     { "RubyMine", nil, laptopScreen, regions.full, nil, nil },
     { "PyCharm", nil, laptopScreen, regions.full, nil, nil },
@@ -170,6 +171,7 @@ function undockedSidecar()
 
     -- External
     { "Chrome", nil, externalScreen, regions.full, nil, nil },
+    { "Vivaldi", nil, externalScreen, regions.full, nil, nil },
   }
 end
 
@@ -182,6 +184,7 @@ function undockedTriScreen()
   return {
     -- Left
     { "Chrome", nil, leftScreen, regions.full, nil, nil },
+    { "Vivaldi", nil, leftScreen, regions.full, nil, nil },
 
     -- Laptop
     { "WebStorm", nil, laptopScreen, regions.full, nil, nil },
@@ -215,6 +218,7 @@ function dockedWithDualVerticalUlrawideLayout()
   return {
     -- Ultrawide Lower
     { "Chrome", nil, externalPrimaryScreen, regions.focalSecondary, nil, nil },
+    { "Vivaldi", nil, externalPrimaryScreen, regions.focalSecondary, nil, nil },
       { "Music", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
     { "WebStorm", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },

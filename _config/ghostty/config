@@ -1,7 +1,7 @@
 font-family = "Comic Mono Relaxed"
 font-family = "FiraCode Nerd Font Mono"
 font-size = 16
-adjust-cell-width = -2
+adjust-cell-width = -1
 font-synthetic-style = false
 font-feature = "calt"
 font-feature = "liga"

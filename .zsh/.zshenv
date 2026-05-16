@@ -42,5 +42,5 @@ fi
 
 # Ensure asdf shims win over Homebrew/system binaries.
 # `brew shellenv` can reorder PATH, so do this after it.
-export PATH="$HOME/.bin:$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.bin:$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
 

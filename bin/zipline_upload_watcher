@@ -26,14 +26,27 @@ previously_uploaded_filenames=()
     UPLOAD_FILE_NAME=$(basename "$UPLOAD_VIEW_URL")
     UPLOAD_DOWNLOAD_URL="${UPLOAD_VIEW_URL/u\//raw/}?download=true"
 
-    # Copy view and download URLs to clipboard with a small delay to allow
-    # clipboard managers to persist the first before copying the second
-    echo "$UPLOAD_VIEW_URL" | pbcopy 
+    # Copy view URL, download URL, and the image file itself to the clipboard
+    # with a small delay between each so clipboard managers can persist them
+    echo "$UPLOAD_VIEW_URL" | pbcopy
     sleep 0.8
     echo "$UPLOAD_DOWNLOAD_URL" | pbcopy
     sleep 0.8
 
-    osascript -e 'display notification "Copied screenshot file and links to clipboard" with title "Screenshot upload complete"' 
+    FILE_EXTENSION=$(echo "${FILE_PATH##*.}" | tr '[:upper:]' '[:lower:]')
+    case "$FILE_EXTENSION" in
+      png)        IMAGE_CLIPBOARD_CLASS='«class PNGf»' ;;
+      jpg|jpeg)   IMAGE_CLIPBOARD_CLASS='JPEG picture' ;;
+      gif)        IMAGE_CLIPBOARD_CLASS='GIF picture' ;;
+      tif|tiff)   IMAGE_CLIPBOARD_CLASS='TIFF picture' ;;
+      *)          IMAGE_CLIPBOARD_CLASS='' ;;
+    esac
+    if [[ -n "$IMAGE_CLIPBOARD_CLASS" ]]; then
+      osascript -e "set the clipboard to (read (POSIX file \"$FILE_PATH\") as $IMAGE_CLIPBOARD_CLASS)"
+      sleep 0.8
+    fi
+
+    osascript -e 'display notification "Copied screenshot file and links to clipboard" with title "Screenshot upload complete"'
   fi
 
   previously_uploaded_filenames+=("$FILE_NAME")

@@ -4,16 +4,8 @@
 <dict>
 	<key>autohide</key>
 	<false/>
-	<key>expose-group-apps</key>
-	<true/>
 	<key>largesize</key>
 	<real>51</real>
-	<key>last-analytics-stamp</key>
-	<array>
-		<real>775241400.79016602</real>
-	</array>
-	<key>lastShowIndicatorTime</key>
-	<real>666717712.45329499</real>
 	<key>loc</key>
 	<string>en_US:US</string>
 	<key>magnification</key>
@@ -23,11 +15,13 @@
 	<key>minimize-to-application</key>
 	<true/>
 	<key>mod-count</key>
-	<integer>508</integer>
+	<integer>786</integer>
 	<key>mru-spaces</key>
 	<false/>
 	<key>orientation</key>
 	<string>left</string>
+	<key>recent-apps</key>
+	<array/>
 	<key>region</key>
 	<string>US</string>
 	<key>show-recents</key>
@@ -37,7 +31,7 @@
 	<key>showMissionControlGestureEnabled</key>
 	<true/>
 	<key>tilesize</key>
-	<real>50</real>
+	<real>33</real>
 	<key>trash-full</key>
 	<true/>
 	<key>version</key>

@@ -8,8 +8,10 @@
 	<true/>
 	<key>AdjustedPrefsForB5P2</key>
 	<true/>
+	<key>ClickingMenuBarTogglesBartender</key>
+	<true/>
 	<key>FRFeedbackReporter.lastCrashCheckDate</key>
-	<date>2025-07-26T16:49:57Z</date>
+	<date>2026-02-09T14:14:33Z</date>
 	<key>HaveConvertedImageSFUsToTriggers</key>
 	<true/>
 	<key>HaveConvertedSFUsToTriggers</key>
@@ -19,95 +21,223 @@
 	<key>HideItemsWhenShowingOthers</key>
 	<false/>
 	<key>HideSecondaryMenuBarItems</key>
-	<integer>1</integer>
-	<key>HideShownItemsLeaveItemsToRightOfBartender</key>
-	<integer>0</integer>
-	<key>HideShownItemsWhen</key>
-	<integer>0</integer>
+	<true/>
 	<key>IfScreenIsBiggerDontHide</key>
-	<integer>1</integer>
-	<key>IfScreenIsBiggerThanDontHide</key>
-	<real>2015.8205569461825</real>
+	<true/>
+	<key>ImageIndex</key>
+	<data>
+	W3siaGFzaGVzIjpbeyJoZWlnaHQiOjMwLCJoYXNoIjoxMjMwMDczMDUzNDcwMTc2MTAw
+	MCwid2lkdGgiOjI1fV0sImJ1bmRsZSI6IjM2RkVBQjQzLTBBRjctNDFDMS1CMjdBLUZE
+	MDNGNzQzRjMxNCJ9LHsiaGFzaGVzIjpbeyJoZWlnaHQiOjMwLCJoYXNoIjoxMDQ1NDkw
+	ODUyNzgwMzA5Mzc4OCwid2lkdGgiOjI1fV0sImJ1bmRsZSI6IkM0N0FCODdFLTQzQzIt
+	NERFNy1CMTRCLTJBQkZGNTRGNzA2MiJ9LHsiaGFzaGVzIjpbeyJoZWlnaHQiOjEzMiwi
+	aGFzaCI6MzEzMDAxMjM3NDEyNjY4Nzc0NSwid2lkdGgiOjEwMH1dLCJidW5kbGUiOiIx
+	MjM5RjgyNC1GRTAxLTQzOEEtQUEzMS0yMTM1OEZCRkJCNEQifSx7Imhhc2hlcyI6W3si
+	aGVpZ2h0IjoxMzIsImhhc2giOjYxNTI1ODQ1MDI1OTU4MTM0ODMsIndpZHRoIjoxMDB9
+	XSwiYnVuZGxlIjoiNkQ1NzRDNUYtQTU1MS00MDdELUFCMTYtMURDNEQ0MzUyRDg0In0s
+	eyJoYXNoZXMiOlt7ImhlaWdodCI6MzAsImhhc2giOjExODA2MzI4MzEyMTY2NDI3MDc4
+	LCJ3aWR0aCI6NDJ9XSwiYnVuZGxlIjoiY29tLmFwcGxlLmNvbnRyb2xjZW50ZXIifSx7
+	Imhhc2hlcyI6W3siaGVpZ2h0IjozMCwiaGFzaCI6MTQyMDIyMjQ1NzkxNTY0ODY4MDAs
+	IndpZHRoIjoxOX1dLCJidW5kbGUiOiI5NTNGM0M0Qy0zNDcyLTRCQjEtQjdDRC02QjI0
+	OTQ5MEEzREIifSx7Imhhc2hlcyI6W3siaGVpZ2h0IjozMCwiaGFzaCI6MTEzMzkyMjMz
+	MjE2MjI1NjU1NDQsIndpZHRoIjo1N31dLCJidW5kbGUiOiJDNzJDODIzMS01N0M3LTQ3
+	MDctQkE2QS1GN0IyNEQ0NzcxQTEifSx7Imhhc2hlcyI6W3siaGVpZ2h0IjozMCwiaGFz
+	aCI6NTcwNjU4NzI3MjExNjE2MDE4MCwid2lkdGgiOjE5fV0sImJ1bmRsZSI6IkM4MUQy
+	N0Y2LUY4RUEtNDM1Ri1BNzBBLTc2RUYyOTIzMEJFQyJ9LHsiaGFzaGVzIjpbeyJoZWln
+	aHQiOjMwLCJoYXNoIjoxMjEzNDg2ODExODQ2NDM5NzE2MCwid2lkdGgiOjE5fV0sImJ1
+	bmRsZSI6IjE3REVEQkU3LUJEOUYtNDQwOC04NzE2LTUzM0QzQjk0Mzc1NyJ9LHsiaGFz
+	aGVzIjpbeyJoZWlnaHQiOjEzMiwiaGFzaCI6ODEyMzI1OTI1NDgzMDUxOTIzNiwid2lk
+	dGgiOjc2fV0sImJ1bmRsZSI6IkU0QjQ0NkEwLUMyRjItNEVEOC1CQkY3LUU1Q0RBOUJB
+	RjVCNiJ9LHsiaGFzaGVzIjpbeyJoZWlnaHQiOjEzMiwiaGFzaCI6Mjc4MTU3MTI2MzE0
+	ODIwNjUyMywid2lkdGgiOjc2fV0sImJ1bmRsZSI6IjlCQ0Q2M0VCLUYxN0EtNERDRC04
+	OTI4LTJCMTlFMjVGMzhDQiJ9LHsiaGFzaGVzIjpbeyJoZWlnaHQiOjEzMiwiaGFzaCI6
+	OTU3MjU4MzEzMzYwMjA0ODQ5LCJ3aWR0aCI6NzZ9XSwiYnVuZGxlIjoiMkIxNDA2NzIt
+	MDFBQi00NjU1LTk0MTgtMjY5MkUyODNEMTVBIn0seyJoYXNoZXMiOlt7ImhlaWdodCI6
+	MTMyLCJoYXNoIjoxMDY0Mzg2ODkxMDgwMDkxNjI0Miwid2lkdGgiOjc2fV0sImJ1bmRs
+	ZSI6IkNBQkJGMURBLTgzNEItNDc2MC1CNjU5LTUzRjMxOTk5NTJGOSJ9XQ==
+	</data>
 	<key>MenuBarColoring-SpaceSettings</key>
 	<data>
-	eyJBMDYzRkYzNS03M0I3LTQzQjYtQUIzRS04NDExNTJGOThGMUIiOnsiaXNOb3RjaGVk
-	Ijp0cnVlLCJzY3JlZW5OYW1lIjoiQnVpbHQtaW4gUmV0aW5hIERpc3BsYXkiLCJtZW51
-	QmFyU3R5bGluZyI6eyJyb3VuZFRvcE9mTWVudUJhciI6dHJ1ZSwiYm9yZGVyQ29sb3Ii
-	OlsxLDEsMSwxXSwiaGlkZU5vdGNoIjpmYWxzZSwicm91bmRlZE1lbnVCYXIiOmZhbHNl
-	LCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91bmRCZWxvd01lbnVCYXIiOmZhbHNlLCJo
-	aWRkZW5JbmFjdGl2ZU1lbnVCYXIiOmZhbHNlLCJzaGFkb3ciOmZhbHNlLCJkZWZhdWx0
-	Rm9yTmV3U3BhY2UiOnRydWUsImJhY2tncm91bmRDb2xvcnMiOlt7ImNvbG9yIjpbMC42
-	NTc1MDc4MzY4MTg2OTUxLDAuNjY1Njg5NzA2ODAyMzY4MiwwLjg3Mzg1NTY1MDQyNDk1
-	NzMsMV0sImxvY2F0aW9uIjowfV0sInJvdW5kZWRDb3JuZXJzIjoyNCwiYm9yZGVyVGhp
-	Y2tuZXNzIjowLCJyb3VuZEJvdHRvbU9mU2NyZWVuIjp0cnVlfSwiZGlzcGxheU51bWJl
-	ciI6MSwic3BhY2VOdW1iZXIiOjIsImRpc3BsYXlJRCI6IjM3RDg4MzJBLTJENjYtMDJD
-	QS1COUY3LThGMzBBMzAxQjIzMCIsInNwYWNlSUQiOiJBMDYzRkYzNS03M0I3LTQzQjYt
-	QUIzRS04NDExNTJGOThGMUIifSwiRGVmYXVsdC1TcGFjZS1EaXNwbGF5LTEiOnsiaXNO
-	b3RjaGVkIjp0cnVlLCJzY3JlZW5OYW1lIjoiQnVpbHQtaW4gUmV0aW5hIERpc3BsYXki
-	LCJtZW51QmFyU3R5bGluZyI6eyJyb3VuZFRvcE9mTWVudUJhciI6dHJ1ZSwiYm9yZGVy
-	Q29sb3IiOlsxLDEsMSwxXSwiaGlkZU5vdGNoIjpmYWxzZSwicm91bmRlZE1lbnVCYXIi
-	OmZhbHNlLCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91bmRCZWxvd01lbnVCYXIiOmZh
-	bHNlLCJoaWRkZW5JbmFjdGl2ZU1lbnVCYXIiOmZhbHNlLCJzaGFkb3ciOmZhbHNlLCJk
-	ZWZhdWx0Rm9yTmV3U3BhY2UiOnRydWUsImJhY2tncm91bmRDb2xvcnMiOlt7ImNvbG9y
-	IjpbMC42NTc1MDc4MzY4MTg2OTUxLDAuNjY1Njg5NzA2ODAyMzY4MiwwLjg3Mzg1NTY1
-	MDQyNDk1NzMsMV0sImxvY2F0aW9uIjowfV0sInJvdW5kZWRDb3JuZXJzIjoyNCwiYm9y
-	ZGVyVGhpY2tuZXNzIjowLCJyb3VuZEJvdHRvbU9mU2NyZWVuIjp0cnVlfSwiZGlzcGxh
-	eU51bWJlciI6MSwic3BhY2VOdW1iZXIiOjEsImRpc3BsYXlJRCI6IjM3RDg4MzJBLTJE
-	NjYtMDJDQS1COUY3LThGMzBBMzAxQjIzMCIsInNwYWNlSUQiOiJEZWZhdWx0LVNwYWNl
-	LURpc3BsYXktMSJ9fQ==
+	eyIxMjk0RDI0Mi1CMDkwLTRGRjItOEFGQy0wNTBGMjM5NThCRUQiOnsic3BhY2VOdW1i
+	ZXIiOjIsImlzTm90Y2hlZCI6ZmFsc2UsIm1lbnVCYXJTdHlsaW5nIjp7ImJvcmRlclRo
+	aWNrbmVzcyI6MCwic2VwZXJhdGVQaWxscyI6ZmFsc2UsInJvdW5kQm90dG9tT2ZTY3Jl
+	ZW4iOmZhbHNlLCJib3JkZXJDb2xvciI6WzAsMCwwLDFdLCJyb3VuZGVkQ29ybmVycyI6
+	MCwicm91bmRCZWxvd01lbnVCYXIiOmZhbHNlLCJzaGFkb3ciOmZhbHNlLCJyb3VuZFRv
+	cE9mTWVudUJhciI6ZmFsc2UsImRlZmF1bHRGb3JOZXdTcGFjZSI6ZmFsc2UsImhpZGRl
+	bkluYWN0aXZlTWVudUJhciI6ZmFsc2UsInJvdW5kZWRNZW51QmFyIjpmYWxzZSwiYmFj
+	a2dyb3VuZENvbG9ycyI6W3siY29sb3IiOlswLDAsMCwwXSwibG9jYXRpb24iOjB9XSwi
+	aGlkZU5vdGNoIjpmYWxzZX0sInNjcmVlbk5hbWUiOiJMRyBIRFIgRFFIRCIsImRpc3Bs
+	YXlJRCI6IkUzMTk4Qjk3LUVEN0MtNDhGOC1CQzg2LUIxQjNDOUZDQzk2QiIsImRpc3Bs
+	YXlOdW1iZXIiOjIsInNwYWNlSUQiOiIxMjk0RDI0Mi1CMDkwLTRGRjItOEFGQy0wNTBG
+	MjM5NThCRUQifSwiNEQxRjgzMDMtNkY5Mi00ODQwLTgzNEQtNEJFNEZDMTRGOUQxIjp7
+	InNwYWNlTnVtYmVyIjoyLCJpc05vdGNoZWQiOmZhbHNlLCJtZW51QmFyU3R5bGluZyI6
+	eyJib3JkZXJUaGlja25lc3MiOjAsInNlcGVyYXRlUGlsbHMiOmZhbHNlLCJyb3VuZEJv
+	dHRvbU9mU2NyZWVuIjpmYWxzZSwiYm9yZGVyQ29sb3IiOlswLDAsMCwxXSwicm91bmRl
+	ZENvcm5lcnMiOjAsInJvdW5kQmVsb3dNZW51QmFyIjpmYWxzZSwic2hhZG93IjpmYWxz
+	ZSwicm91bmRUb3BPZk1lbnVCYXIiOmZhbHNlLCJkZWZhdWx0Rm9yTmV3U3BhY2UiOmZh
+	bHNlLCJoaWRkZW5JbmFjdGl2ZU1lbnVCYXIiOmZhbHNlLCJyb3VuZGVkTWVudUJhciI6
+	ZmFsc2UsImJhY2tncm91bmRDb2xvcnMiOlt7ImNvbG9yIjpbMCwwLDAsMF0sImxvY2F0
+	aW9uIjowfV0sImhpZGVOb3RjaCI6ZmFsc2V9LCJzY3JlZW5OYW1lIjoiTEcgVUxUUkFH
+	RUFSKyIsImRpc3BsYXlJRCI6IjMzMTVFREE4LTBERTAtNDAzRS1BMUVGLUExNTM2QTI2
+	MDU1RCIsImRpc3BsYXlOdW1iZXIiOjMsInNwYWNlSUQiOiI0RDFGODMwMy02RjkyLTQ4
+	NDAtODM0RC00QkU0RkMxNEY5RDEifSwiRGVmYXVsdC1TcGFjZS1EaXNwbGF5LTIiOnsi
+	c3BhY2VOdW1iZXIiOjEsImlzTm90Y2hlZCI6ZmFsc2UsIm1lbnVCYXJTdHlsaW5nIjp7
+	ImJvcmRlclRoaWNrbmVzcyI6MCwic2VwZXJhdGVQaWxscyI6ZmFsc2UsInJvdW5kQm90
+	dG9tT2ZTY3JlZW4iOmZhbHNlLCJib3JkZXJDb2xvciI6WzAsMCwwLDFdLCJyb3VuZGVk
+	Q29ybmVycyI6MCwicm91bmRCZWxvd01lbnVCYXIiOmZhbHNlLCJzaGFkb3ciOmZhbHNl
+	LCJyb3VuZFRvcE9mTWVudUJhciI6ZmFsc2UsImRlZmF1bHRGb3JOZXdTcGFjZSI6ZmFs
+	c2UsImhpZGRlbkluYWN0aXZlTWVudUJhciI6ZmFsc2UsInJvdW5kZWRNZW51QmFyIjpm
+	YWxzZSwiYmFja2dyb3VuZENvbG9ycyI6W3siY29sb3IiOlswLDAsMCwwXSwibG9jYXRp
+	b24iOjB9XSwiaGlkZU5vdGNoIjpmYWxzZX0sInNjcmVlbk5hbWUiOiJMRyBIRFIgRFFI
+	RCIsImRpc3BsYXlJRCI6IkUzMTk4Qjk3LUVEN0MtNDhGOC1CQzg2LUIxQjNDOUZDQzk2
+	QiIsImRpc3BsYXlOdW1iZXIiOjIsInNwYWNlSUQiOiJEZWZhdWx0LVNwYWNlLURpc3Bs
+	YXktMiJ9LCIxODA5NDFEQi0wMEUyLTQ1N0MtQkREOS0yNkIwQjVFQUQzMTciOnsic3Bh
+	Y2VOdW1iZXIiOjIsImlzTm90Y2hlZCI6dHJ1ZSwibWVudUJhclN0eWxpbmciOnsiYm9y
+	ZGVyVGhpY2tuZXNzIjowLCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91bmRCb3R0b21P
+	ZlNjcmVlbiI6ZmFsc2UsImJvcmRlckNvbG9yIjpbMCwwLDAsMV0sInJvdW5kZWRDb3Ju
+	ZXJzIjowLCJyb3VuZEJlbG93TWVudUJhciI6ZmFsc2UsInNoYWRvdyI6ZmFsc2UsInJv
+	dW5kVG9wT2ZNZW51QmFyIjpmYWxzZSwiZGVmYXVsdEZvck5ld1NwYWNlIjpmYWxzZSwi
+	aGlkZGVuSW5hY3RpdmVNZW51QmFyIjpmYWxzZSwicm91bmRlZE1lbnVCYXIiOmZhbHNl
+	LCJiYWNrZ3JvdW5kQ29sb3JzIjpbeyJjb2xvciI6WzAsMCwwLDBdLCJsb2NhdGlvbiI6
+	MH1dLCJoaWRlTm90Y2giOmZhbHNlfSwic2NyZWVuTmFtZSI6IkJ1aWx0LWluIFJldGlu
+	YSBEaXNwbGF5IiwiZGlzcGxheUlEIjoiMzdEODgzMkEtMkQ2Ni0wMkNBLUI5RjctOEYz
+	MEEzMDFCMjMwIiwiZGlzcGxheU51bWJlciI6MSwic3BhY2VJRCI6IjE4MDk0MURCLTAw
+	RTItNDU3Qy1CREQ5LTI2QjBCNUVBRDMxNyJ9LCJEZWZhdWx0LVNwYWNlLURpc3BsYXkt
+	NCI6eyJzcGFjZU51bWJlciI6MSwiaXNOb3RjaGVkIjpmYWxzZSwibWVudUJhclN0eWxp
+	bmciOnsiYm9yZGVyVGhpY2tuZXNzIjowLCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91
+	bmRCb3R0b21PZlNjcmVlbiI6ZmFsc2UsImJvcmRlckNvbG9yIjpbMCwwLDAsMV0sInJv
+	dW5kZWRDb3JuZXJzIjowLCJyb3VuZEJlbG93TWVudUJhciI6ZmFsc2UsInNoYWRvdyI6
+	ZmFsc2UsInJvdW5kVG9wT2ZNZW51QmFyIjpmYWxzZSwiZGVmYXVsdEZvck5ld1NwYWNl
+	IjpmYWxzZSwiaGlkZGVuSW5hY3RpdmVNZW51QmFyIjpmYWxzZSwicm91bmRlZE1lbnVC
+	YXIiOmZhbHNlLCJiYWNrZ3JvdW5kQ29sb3JzIjpbeyJjb2xvciI6WzAsMCwwLDBdLCJs
+	b2NhdGlvbiI6MH1dLCJoaWRlTm90Y2giOmZhbHNlfSwic2NyZWVuTmFtZSI6IiIsImRp
+	c3BsYXlJRCI6IkM4NzZBQ0IwLUVGQTYtNDYyNi1CNTk3LUU3MkJEMkVCQURFMCIsImRp
+	c3BsYXlOdW1iZXIiOjQsInNwYWNlSUQiOiJEZWZhdWx0LVNwYWNlLURpc3BsYXktNCJ9
+	LCIwNDY2MzFCNC1GQjcyLTQ1NDktOThCQi0yREFFMDRGNTU0OUEiOnsic3BhY2VOdW1i
+	ZXIiOjIsImlzTm90Y2hlZCI6dHJ1ZSwibWVudUJhclN0eWxpbmciOnsiYm9yZGVyVGhp
+	Y2tuZXNzIjowLCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91bmRCb3R0b21PZlNjcmVl
+	biI6ZmFsc2UsImJvcmRlckNvbG9yIjpbMCwwLDAsMV0sInJvdW5kZWRDb3JuZXJzIjow
+	LCJyb3VuZEJlbG93TWVudUJhciI6ZmFsc2UsInNoYWRvdyI6ZmFsc2UsInJvdW5kVG9w
+	T2ZNZW51QmFyIjpmYWxzZSwiZGVmYXVsdEZvck5ld1NwYWNlIjpmYWxzZSwiaGlkZGVu
+	SW5hY3RpdmVNZW51QmFyIjpmYWxzZSwicm91bmRlZE1lbnVCYXIiOmZhbHNlLCJiYWNr
+	Z3JvdW5kQ29sb3JzIjpbeyJjb2xvciI6WzAsMCwwLDBdLCJsb2NhdGlvbiI6MH1dLCJo
+	aWRlTm90Y2giOmZhbHNlfSwic2NyZWVuTmFtZSI6IkJ1aWx0LWluIFJldGluYSBEaXNw
+	bGF5IiwiZGlzcGxheUlEIjoiMzdEODgzMkEtMkQ2Ni0wMkNBLUI5RjctOEYzMEEzMDFC
+	MjMwIiwiZGlzcGxheU51bWJlciI6MSwic3BhY2VJRCI6IjA0NjYzMUI0LUZCNzItNDU0
+	OS05OEJCLTJEQUUwNEY1NTQ5QSJ9LCJEZWZhdWx0LVNwYWNlLURpc3BsYXktMSI6eyJz
+	cGFjZU51bWJlciI6MSwiaXNOb3RjaGVkIjp0cnVlLCJtZW51QmFyU3R5bGluZyI6eyJi
+	b3JkZXJUaGlja25lc3MiOjAsInNlcGVyYXRlUGlsbHMiOnRydWUsInJvdW5kQm90dG9t
+	T2ZTY3JlZW4iOmZhbHNlLCJib3JkZXJDb2xvciI6WzEsMSwxLDFdLCJyb3VuZGVkQ29y
+	bmVycyI6MCwicm91bmRCZWxvd01lbnVCYXIiOmZhbHNlLCJzaGFkb3ciOmZhbHNlLCJy
+	b3VuZFRvcE9mTWVudUJhciI6ZmFsc2UsImRlZmF1bHRGb3JOZXdTcGFjZSI6dHJ1ZSwi
+	aGlkZGVuSW5hY3RpdmVNZW51QmFyIjpmYWxzZSwicm91bmRlZE1lbnVCYXIiOmZhbHNl
+	LCJiYWNrZ3JvdW5kQ29sb3JzIjpbeyJjb2xvciI6WzAsMCwwLDBdLCJsb2NhdGlvbiI6
+	MH1dLCJoaWRlTm90Y2giOmZhbHNlfSwic2NyZWVuTmFtZSI6IkJ1aWx0LWluIFJldGlu
+	YSBEaXNwbGF5IiwiZGlzcGxheUlEIjoiMzdEODgzMkEtMkQ2Ni0wMkNBLUI5RjctOEYz
+	MEEzMDFCMjMwIiwiZGlzcGxheU51bWJlciI6MSwic3BhY2VJRCI6IkRlZmF1bHQtU3Bh
+	Y2UtRGlzcGxheS0xIn0sIkRlZmF1bHQtU3BhY2UtRGlzcGxheS0xMCI6eyJzcGFjZU51
+	bWJlciI6MSwiaXNOb3RjaGVkIjpmYWxzZSwibWVudUJhclN0eWxpbmciOnsiYm9yZGVy
+	VGhpY2tuZXNzIjowLCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91bmRCb3R0b21PZlNj
+	cmVlbiI6ZmFsc2UsImJvcmRlckNvbG9yIjpbMCwwLDAsMV0sInJvdW5kZWRDb3JuZXJz
+	IjowLCJyb3VuZEJlbG93TWVudUJhciI6ZmFsc2UsInNoYWRvdyI6ZmFsc2UsInJvdW5k
+	VG9wT2ZNZW51QmFyIjpmYWxzZSwiZGVmYXVsdEZvck5ld1NwYWNlIjpmYWxzZSwiaGlk
+	ZGVuSW5hY3RpdmVNZW51QmFyIjpmYWxzZSwicm91bmRlZE1lbnVCYXIiOmZhbHNlLCJi
+	YWNrZ3JvdW5kQ29sb3JzIjpbeyJjb2xvciI6WzAsMCwwLDBdLCJsb2NhdGlvbiI6MH1d
+	LCJoaWRlTm90Y2giOmZhbHNlfSwic2NyZWVuTmFtZSI6IiIsImRpc3BsYXlJRCI6IjEx
+	QkQ0OUE0LTdDMDEtNDFERi1CQkM0LTVGRjZFRTk0Mzk3NCIsImRpc3BsYXlOdW1iZXIi
+	OjEwLCJzcGFjZUlEIjoiRGVmYXVsdC1TcGFjZS1EaXNwbGF5LTEwIn0sIkRlZmF1bHQt
+	U3BhY2UtRGlzcGxheS02Ijp7InNwYWNlTnVtYmVyIjoxLCJpc05vdGNoZWQiOmZhbHNl
+	LCJtZW51QmFyU3R5bGluZyI6eyJib3JkZXJUaGlja25lc3MiOjAsInNlcGVyYXRlUGls
+	bHMiOmZhbHNlLCJyb3VuZEJvdHRvbU9mU2NyZWVuIjpmYWxzZSwiYm9yZGVyQ29sb3Ii
+	OlswLDAsMCwxXSwicm91bmRlZENvcm5lcnMiOjAsInJvdW5kQmVsb3dNZW51QmFyIjpm
+	YWxzZSwic2hhZG93IjpmYWxzZSwicm91bmRUb3BPZk1lbnVCYXIiOmZhbHNlLCJkZWZh
+	dWx0Rm9yTmV3U3BhY2UiOmZhbHNlLCJoaWRkZW5JbmFjdGl2ZU1lbnVCYXIiOmZhbHNl
+	LCJyb3VuZGVkTWVudUJhciI6ZmFsc2UsImJhY2tncm91bmRDb2xvcnMiOlt7ImNvbG9y
+	IjpbMCwwLDAsMF0sImxvY2F0aW9uIjowfV0sImhpZGVOb3RjaCI6ZmFsc2V9LCJzY3Jl
+	ZW5OYW1lIjoiIiwiZGlzcGxheUlEIjoiMTFCRDQ5QTQtN0MwMS00MURGLUJCQzQtNUZG
+	NkVFOTQzOTc0IiwiZGlzcGxheU51bWJlciI6Niwic3BhY2VJRCI6IkRlZmF1bHQtU3Bh
+	Y2UtRGlzcGxheS02In0sIkU2RUM4NDRBLUUzMTctNDY3Qi05MkUzLTE3NUJDMTJFNzVC
+	MCI6eyJzcGFjZU51bWJlciI6MiwiaXNOb3RjaGVkIjpmYWxzZSwibWVudUJhclN0eWxp
+	bmciOnsiYm9yZGVyVGhpY2tuZXNzIjowLCJzZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91
+	bmRCb3R0b21PZlNjcmVlbiI6ZmFsc2UsImJvcmRlckNvbG9yIjpbMCwwLDAsMV0sInJv
+	dW5kZWRDb3JuZXJzIjowLCJyb3VuZEJlbG93TWVudUJhciI6ZmFsc2UsInNoYWRvdyI6
+	ZmFsc2UsInJvdW5kVG9wT2ZNZW51QmFyIjpmYWxzZSwiZGVmYXVsdEZvck5ld1NwYWNl
+	IjpmYWxzZSwiaGlkZGVuSW5hY3RpdmVNZW51QmFyIjpmYWxzZSwicm91bmRlZE1lbnVC
+	YXIiOmZhbHNlLCJiYWNrZ3JvdW5kQ29sb3JzIjpbeyJjb2xvciI6WzAsMCwwLDBdLCJs
+	b2NhdGlvbiI6MH1dLCJoaWRlTm90Y2giOmZhbHNlfSwic2NyZWVuTmFtZSI6IkxHIFVM
+	VFJBR0VBUisiLCJkaXNwbGF5SUQiOiIzMzE1RURBOC0wREUwLTQwM0UtQTFFRi1BMTUz
+	NkEyNjA1NUQiLCJkaXNwbGF5TnVtYmVyIjoyLCJzcGFjZUlEIjoiRTZFQzg0NEEtRTMx
+	Ny00NjdCLTkyRTMtMTc1QkMxMkU3NUIwIn0sIjEyQjMyMjk4LUNBMzItNDk5OS04RTFB
+	LTY0MTY2QjdBNUJCNyI6eyJzcGFjZU51bWJlciI6MiwiaXNOb3RjaGVkIjpmYWxzZSwi
+	bWVudUJhclN0eWxpbmciOnsiYm9yZGVyVGhpY2tuZXNzIjowLCJzZXBlcmF0ZVBpbGxz
+	IjpmYWxzZSwicm91bmRCb3R0b21PZlNjcmVlbiI6ZmFsc2UsImJvcmRlckNvbG9yIjpb
+	MCwwLDAsMV0sInJvdW5kZWRDb3JuZXJzIjowLCJyb3VuZEJlbG93TWVudUJhciI6ZmFs
+	c2UsInNoYWRvdyI6ZmFsc2UsInJvdW5kVG9wT2ZNZW51QmFyIjpmYWxzZSwiZGVmYXVs
+	dEZvck5ld1NwYWNlIjpmYWxzZSwiaGlkZGVuSW5hY3RpdmVNZW51QmFyIjpmYWxzZSwi
+	cm91bmRlZE1lbnVCYXIiOmZhbHNlLCJiYWNrZ3JvdW5kQ29sb3JzIjpbeyJjb2xvciI6
+	WzAsMCwwLDBdLCJsb2NhdGlvbiI6MH1dLCJoaWRlTm90Y2giOmZhbHNlfSwic2NyZWVu
+	TmFtZSI6IkxHIFVMVFJBR0VBUisiLCJkaXNwbGF5SUQiOiIzMzE1RURBOC0wREUwLTQw
+	M0UtQTFFRi1BMTUzNkEyNjA1NUQiLCJkaXNwbGF5TnVtYmVyIjoyLCJzcGFjZUlEIjoi
+	MTJCMzIyOTgtQ0EzMi00OTk5LThFMUEtNjQxNjZCN0E1QkI3In0sIjlCNThGRTg2LTI5
+	MjQtNDFBOS04MjhDLUNBQjJBOEFBN0Y5MiI6eyJzcGFjZU51bWJlciI6MiwiaXNOb3Rj
+	aGVkIjpmYWxzZSwibWVudUJhclN0eWxpbmciOnsiYm9yZGVyVGhpY2tuZXNzIjowLCJz
+	ZXBlcmF0ZVBpbGxzIjpmYWxzZSwicm91bmRCb3R0b21PZlNjcmVlbiI6ZmFsc2UsImJv
+	cmRlckNvbG9yIjpbMCwwLDAsMV0sInJvdW5kZWRDb3JuZXJzIjowLCJyb3VuZEJlbG93
+	TWVudUJhciI6ZmFsc2UsInNoYWRvdyI6ZmFsc2UsInJvdW5kVG9wT2ZNZW51QmFyIjpm
+	YWxzZSwiZGVmYXVsdEZvck5ld1NwYWNlIjpmYWxzZSwiaGlkZGVuSW5hY3RpdmVNZW51
+	QmFyIjpmYWxzZSwicm91bmRlZE1lbnVCYXIiOmZhbHNlLCJiYWNrZ3JvdW5kQ29sb3Jz
+	IjpbeyJjb2xvciI6WzAsMCwwLDBdLCJsb2NhdGlvbiI6MH1dLCJoaWRlTm90Y2giOmZh
+	bHNlfSwic2NyZWVuTmFtZSI6IkxHIEhEUiBEUUhEIiwiZGlzcGxheUlEIjoiRTMxOThC
+	OTctRUQ3Qy00OEY4LUJDODYtQjFCM0M5RkNDOTZCIiwiZGlzcGxheU51bWJlciI6Miwi
+	c3BhY2VJRCI6IjlCNThGRTg2LTI5MjQtNDFBOS04MjhDLUNBQjJBOEFBN0Y5MiJ9LCJE
+	ZWZhdWx0LVNwYWNlLURpc3BsYXktMyI6eyJzcGFjZU51bWJlciI6MSwiaXNOb3RjaGVk
+	IjpmYWxzZSwibWVudUJhclN0eWxpbmciOnsiYm9yZGVyVGhpY2tuZXNzIjowLCJzZXBl
+	cmF0ZVBpbGxzIjpmYWxzZSwicm91bmRCb3R0b21PZlNjcmVlbiI6ZmFsc2UsImJvcmRl
+	ckNvbG9yIjpbMCwwLDAsMV0sInJvdW5kZWRDb3JuZXJzIjowLCJyb3VuZEJlbG93TWVu
+	dUJhciI6ZmFsc2UsInNoYWRvdyI6ZmFsc2UsInJvdW5kVG9wT2ZNZW51QmFyIjpmYWxz
+	ZSwiZGVmYXVsdEZvck5ld1NwYWNlIjpmYWxzZSwiaGlkZGVuSW5hY3RpdmVNZW51QmFy
+	IjpmYWxzZSwicm91bmRlZE1lbnVCYXIiOmZhbHNlLCJiYWNrZ3JvdW5kQ29sb3JzIjpb
+	eyJjb2xvciI6WzAsMCwwLDBdLCJsb2NhdGlvbiI6MH1dLCJoaWRlTm90Y2giOmZhbHNl
+	fSwic2NyZWVuTmFtZSI6IkxHIFVMVFJBR0VBUisiLCJkaXNwbGF5SUQiOiIzMzE1RURB
+	OC0wREUwLTQwM0UtQTFFRi1BMTUzNkEyNjA1NUQiLCJkaXNwbGF5TnVtYmVyIjozLCJz
+	cGFjZUlEIjoiRGVmYXVsdC1TcGFjZS1EaXNwbGF5LTMifSwiN0Q5MzU0OUUtQTAxMi00
+	Q0Q5LUE3MTgtNDhCNkFGNjE3RTY3Ijp7InNwYWNlTnVtYmVyIjoyLCJpc05vdGNoZWQi
+	OnRydWUsIm1lbnVCYXJTdHlsaW5nIjp7ImJvcmRlclRoaWNrbmVzcyI6MCwic2VwZXJh
+	dGVQaWxscyI6ZmFsc2UsInJvdW5kQm90dG9tT2ZTY3JlZW4iOmZhbHNlLCJib3JkZXJD
+	b2xvciI6WzAsMCwwLDFdLCJyb3VuZGVkQ29ybmVycyI6MCwicm91bmRCZWxvd01lbnVC
+	YXIiOmZhbHNlLCJzaGFkb3ciOmZhbHNlLCJyb3VuZFRvcE9mTWVudUJhciI6ZmFsc2Us
+	ImRlZmF1bHRGb3JOZXdTcGFjZSI6ZmFsc2UsImhpZGRlbkluYWN0aXZlTWVudUJhciI6
+	ZmFsc2UsInJvdW5kZWRNZW51QmFyIjpmYWxzZSwiYmFja2dyb3VuZENvbG9ycyI6W3si
+	Y29sb3IiOlswLDAsMCwwXSwibG9jYXRpb24iOjB9XSwiaGlkZU5vdGNoIjpmYWxzZX0s
+	InNjcmVlbk5hbWUiOiJCdWlsdC1pbiBSZXRpbmEgRGlzcGxheSIsImRpc3BsYXlJRCI6
+	IjM3RDg4MzJBLTJENjYtMDJDQS1COUY3LThGMzBBMzAxQjIzMCIsImRpc3BsYXlOdW1i
+	ZXIiOjEsInNwYWNlSUQiOiI3RDkzNTQ5RS1BMDEyLTRDRDktQTcxOC00OEI2QUY2MTdF
+	NjcifX0=
 	</data>
 	<key>MouseExitDelay</key>
-	<real>0.0</real>
-	<key>MouseOverDelay</key>
-	<real>0.0</real>
+	<real>0.40000000000000002</real>
 	<key>MouseOverMenuBarTogglesBartender</key>
-	<integer>1</integer>
-	<key>NSColorPanelMode</key>
-	<string>1</string>
-	<key>NSColorPickerPreferredRGBEntryMode</key>
-	<integer>2</integer>
-	<key>NSColorPickerSlidersDefaults</key>
-	<string>1</string>
-	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 228.000000, 263.000000, NO, NO</string>
-		<string>0.000000, 264.000000, 228.000000, 43.000000, NO, NO</string>
-	</array>
-	<key>NSStatusItem Preferred Position EItem</key>
-	<real>15683</real>
-	<key>NSStatusItem Preferred Position HISItem</key>
-	<real>427</real>
-	<key>NSStatusItem Preferred Position RHSItem</key>
-	<real>5626</real>
-	<key>NSStatusItem Preferred Position THSItem</key>
-	<real>10677</real>
-	<key>NSStatusItem Preferred Position hideSecondaryMonitorItems</key>
-	<real>180</real>
-	<key>NSStatusItem Preferred Position statusItem</key>
-	<real>426</real>
-	<key>NSStatusItem Visible Item-4</key>
-	<false/>
-	<key>NSStatusItem Visible hideSecondaryMonitorItems</key>
 	<true/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>1096 599 228 283 0 0 1512 944 </string>
-	<key>NSWindow Frame SU5AlertMessages</key>
-	<real>1753449206.696197</real>
+	<key>NSStatusItem Preferred Position EItem</key>
+	<real>60000</real>
+	<key>NSStatusItem Preferred Position HISItem</key>
+	<real>488</real>
+	<key>NSStatusItem Preferred Position RHSItem</key>
+	<real>736</real>
+	<key>NSStatusItem Preferred Position hideSecondaryMonitorItems</key>
+	<real>-100</real>
+	<key>NSStatusItem Preferred Position statusItem</key>
+	<real>465</real>
+	<key>NSStatusItem Visible Item-0</key>
+	<true/>
+	<key>NSStatusItem VisibleCC hideSecondaryMonitorItems</key>
+	<true/>
 	<key>ProfileSettings</key>
 	<dict>
 		<key>activeProfile</key>
 		<dict>
 			<key>AlwaysHide</key>
-			<array>
-				<string>com.koolesache.ColorSnapper2-Item-0</string>
-				<string>com.unity3d.unityhub-Item-0</string>
-				<string>org.hammerspoon.Hammerspoon-Item-0</string>
-			</array>
+			<array/>
 			<key>BartenderBarStyling</key>
 			<data>
 			bnVsbA==
@@ -118,39 +248,22 @@
 			<dict/>
 			<key>Hide</key>
 			<array>
-				<string>com.apple.controlcenter-AccessibilityShortcuts</string>
-				<string>com.apple.controlcenter-Display</string>
 				<string>com.apple.controlcenter-ScreenMirroring</string>
-				<string>com.1password.1password-Item-0</string>
-				<string>com.adobe.acc.AdobeCreativeCloud-Item-0</string>
+				<string>pl.maketheweb.cleanshotx-Item-0</string>
+				<string>com.if.Amphetamine-Amphetamine</string>
 				<string>pl.maketheweb.pixelsnap2-Item-0</string>
-				<string>us.zoom.xos-Item-0</string>
-				<string>app.kaleidoscope.v4.KaleidoscopePrism-Item-0</string>
-				<string>com.nordvpn.NordVPN-Item-0</string>
-				<string>com.hnc.Discord-Item-0</string>
-				<string>com.nordvpn.NordVPN-Item-1</string>
-				<string>at.obdev.littlesnitch.agent-Item-0</string>
-				<string>com.henrikruscon.Klack-Klack</string>
-				<string>com.IdeaPunch.ColorSlurp-Item-0</string>
-				<string>nl.nielsmouthaan.daily.main-Item-0</string>
-				<string>com.pavelmakhov.pullBar-Item-0</string>
-				<string>com.pavelmakhov.pull-bar-pro-Item-0</string>
+				<string>com.koolesache.ColorSnapper2-Item-0</string>
+				<string>net.rafaelconde.Hand-Mirror-Item-1</string>
 				<string>special.AllOtherItems</string>
 			</array>
 			<key>Show</key>
 			<array>
 				<string>com.apple.controlcenter-Battery</string>
-				<string>com.apple.controlcenter-FocusModes</string>
 				<string>com.apple.controlcenter-WiFi</string>
 				<string>com.apple.controlcenter-Bluetooth</string>
 				<string>com.apple.controlcenter-Sound</string>
-				<string>com.if.Amphetamine-Amphetamine</string>
 				<string>85C27NK92C.com.flexibits.fantastical2.mac.helper-Fantastical</string>
-				<string>pl.maketheweb.cleanshotx-Item-0</string>
-				<string>com.iconfactory.Tot-Item-0</string>
 				<string>com.surteesstudios.Bartender-statusItem</string>
-				<string>com.electron.neat-Item-0</string>
-				<string>com.electron.gitify-Item-0</string>
 			</array>
 			<key>description</key>
 			<string></string>
@@ -978,38 +1091,59 @@
 		</dict>
 	</dict>
 	<key>ReduceMenuItemSpacing</key>
-	<integer>1</integer>
+	<integer>3</integer>
 	<key>ResetPermissionCountKey</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>SUAutomaticallyUpdate</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
-	<key>SULastCheckTime</key>
-	<date>2025-07-26T13:16:08Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
-	<key>SUUpdateGroupIdentifier</key>
-	<integer>2369335813</integer>
 	<key>ShowAllItemsWhenDragging</key>
 	<true/>
 	<key>ShowDivider</key>
-	<integer>1</integer>
+	<true/>
 	<key>TerminationReason</key>
 	<string>Bartender Quitting due to system restart or logout (POWER OFF)</string>
 	<key>TerminationReasons</key>
 	<array>
-		<string>2025-07-25 13:13:42 +0000 Bartender Quitting due to system restart or logout (POWER OFF) (Not set to Start at Login)</string>
-		<string>2025-07-25 13:13:42 +0000 Bartender Quitting due to system restart or logout (Not set to Start at Login)</string>
-		<string>2025-07-25 17:52:19 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
-		<string>2025-07-25 17:52:19 +0000 Bartender Quitting - Already Completed</string>
-		<string>2025-07-26 16:48:00 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
-		<string>2025-07-26 16:48:00 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-10-23 17:23:43 +0000 Bartender Quitting due to system restart or logout (Not set to Start at Login)</string>
+		<string>2025-11-03 17:53:21 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2025-11-03 17:53:21 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-11-04 14:05:13 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2025-11-04 14:05:13 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-11-12 14:09:47 +0000 Bartender Quitting due to update</string>
+		<string>2025-11-25 14:25:54 +0000 Bartender Quitting due to update</string>
+		<string>2025-12-09 16:38:22 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2025-12-09 16:38:22 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-12-09 16:38:22 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-12-11 16:39:09 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2025-12-11 16:39:09 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-12-11 16:39:10 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-12-11 17:01:38 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2025-12-11 17:01:38 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-12-11 17:01:38 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-12-12 15:59:39 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2025-12-12 15:59:39 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-12-12 15:59:40 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-12-12 16:02:38 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2025-12-12 16:02:38 +0000 Bartender Quitting - Already Completed</string>
+		<string>2025-12-12 16:04:53 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2025-12-12 16:04:53 +0000 Bartender Quitting - Already Completed</string>
+		<string>2026-01-06 12:44:56 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2026-01-06 12:44:56 +0000 Bartender Quitting - Already Completed</string>
+		<string>2026-01-06 12:44:56 +0000 Bartender Quitting - Already Completed</string>
+		<string>2026-01-13 13:20:57 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2026-01-13 13:20:57 +0000 Bartender Quitting - Already Completed</string>
+		<string>2026-02-02 21:29:38 +0000 Bartender Quitting due to update</string>
+		<string>2026-02-09 13:35:14 +0000 Bartender Quitting due to system restart or logout (POWER OFF)</string>
+		<string>2026-02-09 13:35:14 +0000 Bartender Quitting - Already Completed</string>
 	</array>
 	<key>TestingIdentifierKey</key>
-	<integer>83</integer>
+	<integer>6</integer>
 	<key>TriggerSettings</key>
 	<dict>
 		<key>Battery1</key>
@@ -1058,15 +1192,13 @@
 				<true/>
 			</dict>
 			<key>isActive</key>
-			<true/>
+			<false/>
 			<key>isSpecial</key>
 			<false/>
 			<key>menuBarItemsToActivate</key>
 			<dict>
 				<key>com.apple.systemuiserver-TimeMachine.TMMenuExtraHost</key>
 				<string>SystemUIServer</string>
-				<key>com.apple.systemuiserver-TimeMachineMenuExtra.TMMenuExtraHost</key>
-				<string>Time Machine</string>
 			</dict>
 			<key>name</key>
 			<string>Show Time Machine when time machine is backing up.</string>
@@ -1113,21 +1245,825 @@
 			</array>
 		</dict>
 	</dict>
-	<key>UpdateWelcomeMessageShowAgainB5</key>
-	<true/>
 	<key>UseBartenderBar</key>
-	<integer>1</integer>
+	<false/>
+	<key>bartenderdixmigration</key>
+	<true/>
+	<key>bartendersixmigration</key>
+	<true/>
+	<key>com.bartender.windowmap.persistence</key>
+	<dict>
+		<key>100</key>
+		<string>36FEAB43-0AF7-41C1-B27A-FD03F743F314</string>
+		<key>101</key>
+		<string>1138F9A6-46D4-4309-B63E-BFBBFD27A6A4</string>
+		<key>102</key>
+		<string>02C88BB0-88DC-4548-BA86-D274A8A61D1E</string>
+		<key>103</key>
+		<string>402F3EA0-E8ED-4953-A490-5AAF0CE6E652</string>
+		<key>104</key>
+		<string>BBB58FB5-7BB4-4D8A-879E-47812D376579</string>
+		<key>105</key>
+		<string>D85381F6-F691-41AA-82BA-09A5EFA9FD01</string>
+		<key>106</key>
+		<string>B83AD27C-6952-42C8-888F-53B60C17709C</string>
+		<key>10645</key>
+		<string>C1BF4591-AC52-42F8-A302-16FE4AF9EF92</string>
+		<key>107</key>
+		<string>36F6000D-682C-4E89-9D6F-06112A073376</string>
+		<key>10711</key>
+		<string>332E5DEC-9EA1-4D57-8D40-C0DF37C03B2F</string>
+		<key>108</key>
+		<string>C3ED9FFA-F485-4A4F-AD0A-E9C569906426</string>
+		<key>109</key>
+		<string>2FB9F4F1-F41F-4844-8FCF-769B76AFA192</string>
+		<key>110</key>
+		<string>0E92C303-8845-40B7-A4A9-3BFD350295B9</string>
+		<key>111</key>
+		<string>203B3143-41CA-4F15-AE97-C930AFEF0A30</string>
+		<key>11193</key>
+		<string>C81D27F6-F8EA-435F-A70A-76EF29230BEC</string>
+		<key>113</key>
+		<string>708FE51A-FFFF-49E5-BC50-D87247A3111B</string>
+		<key>11369</key>
+		<string>17DEDBE7-BD9F-4408-8716-533D3B943757</string>
+		<key>11425</key>
+		<string>0067726B-F704-4CF4-B93A-6E9D2C6D288B</string>
+		<key>115</key>
+		<string>7BA08B46-79EC-4922-8FA3-EBD4EF97B9E2</string>
+		<key>11551</key>
+		<string>26104B9E-9533-41AA-8A50-643E2C03E1E0</string>
+		<key>117</key>
+		<string>48E71E8D-712E-42E1-9371-7502566FEAFA</string>
+		<key>11727</key>
+		<string>CE916529-25CB-40DA-83B5-B2A0AF99DF52</string>
+		<key>118</key>
+		<string>6A26B99B-1325-4694-B215-DF7CF663809D</string>
+		<key>119</key>
+		<string>FA518DB0-1AE1-41D1-B785-AEF33CE1FA82</string>
+		<key>121</key>
+		<string>DF6D4C5C-1AEE-4EE9-88D4-1FFBF835CC73</string>
+		<key>122</key>
+		<string>EBAC8F12-0AE7-45A4-BF53-707FBE61E7FD</string>
+		<key>12244</key>
+		<string>EE3C1E12-C497-42C7-AC9D-ED45EE8A5744</string>
+		<key>123</key>
+		<string>6D574C5F-A551-407D-AB16-1DC4D4352D84</string>
+		<key>124</key>
+		<string>348635C6-49A6-4C0A-B067-8AD43B654766</string>
+		<key>12497</key>
+		<string>0C822EC3-5807-48E2-BD46-A1B83605D7EB</string>
+		<key>126</key>
+		<string>853EAEEC-A9B3-44CF-A9A5-133C9CE6FCD7</string>
+		<key>127</key>
+		<string>116E2C51-9D4C-41D8-9D6D-58D575814EEF</string>
+		<key>128</key>
+		<string>EFF97010-5972-414D-8551-7097FA99003B</string>
+		<key>129</key>
+		<string>E05D8426-78B9-4C38-BBB0-C65434BBEE98</string>
+		<key>130</key>
+		<string>9C5DB6F4-7147-4D62-8175-18FDA6E6D992</string>
+		<key>131</key>
+		<string>1239F824-FE01-438A-AA31-21358FBFBB4D</string>
+		<key>132</key>
+		<string>75345A90-347A-4B03-9EF0-58B2A494C20C</string>
+		<key>133</key>
+		<string>135A3D4E-7A57-4C1E-9757-7D343C5BE660</string>
+		<key>13323</key>
+		<string>AC02F89E-D5C0-4A78-84BA-C763A13FC475</string>
+		<key>13435</key>
+		<string>D36A61C8-F633-4F5B-A770-6CB6F922A6B3</string>
+		<key>1368</key>
+		<string>DC19D8EA-1F20-47C6-9571-17F43922DF51</string>
+		<key>13759</key>
+		<string>0277A864-21A3-4CED-927B-E151C18DC691</string>
+		<key>139</key>
+		<string>2D7E887B-0792-4D2C-9D58-3DF984CB25B5</string>
+		<key>14</key>
+		<string>F194D00E-404A-4193-AFD1-18C66313AE40</string>
+		<key>141</key>
+		<string>8309CE39-6AE4-485B-BB66-F5AAAADC2E89</string>
+		<key>143</key>
+		<string>9FB20AAD-18D1-48E3-A90E-729FFB7C86AF</string>
+		<key>14414</key>
+		<string>98FEDA9B-ABA2-42CA-9FDA-8886FA259C5A</string>
+		<key>14418</key>
+		<string>DABFCA44-61AE-400F-B4DB-A4532A3643EC</string>
+		<key>14422</key>
+		<string>C52A169F-6BA2-406B-BD4E-1682D759E5F1</string>
+		<key>14426</key>
+		<string>6CC408C8-8565-431F-980C-788216ABB17D</string>
+		<key>14430</key>
+		<string>EB46AB4C-07BD-4D23-82E7-8B06FE6042D6</string>
+		<key>14438</key>
+		<string>E4B446A0-C2F2-4ED8-BBF7-E5CDA9BAF5B6</string>
+		<key>151</key>
+		<string>D4069E36-2FCF-4607-83FA-7CA1586DC007</string>
+		<key>152</key>
+		<string>140F3240-94B3-40A8-8032-38B66638A8AE</string>
+		<key>153</key>
+		<string>3D36A9E8-2D5B-4E46-9771-80461AB9490A</string>
+		<key>155</key>
+		<string>63B23599-5B25-4BE8-A4D5-D05BB1A39019</string>
+		<key>15662</key>
+		<string>DACF2A8A-01BA-44FA-B531-26CA44144AC3</string>
+		<key>159</key>
+		<string>69CBA19E-7632-4851-B479-48084D87C5B8</string>
+		<key>16</key>
+		<string>6B3D94A0-5EF2-4769-BA76-378ABEE3B56F</string>
+		<key>162</key>
+		<string>A489AB10-05C1-4560-A412-0E0143208D1F</string>
+		<key>165</key>
+		<string>F06DAB49-E35D-4266-9595-6E7AF8127F70</string>
+		<key>1676</key>
+		<string>18503BD8-07DD-473F-97D8-8359D3CC9D3F</string>
+		<key>16976</key>
+		<string>5DD1FC98-5BC0-4DE1-98F4-824F50C6D6FE</string>
+		<key>171</key>
+		<string>E9438561-45FD-4880-8E93-A13B3A876BC7</string>
+		<key>17475</key>
+		<string>9BCD63EB-F17A-4DCD-8928-2B19E25F38CB</string>
+		<key>179</key>
+		<string>565B956A-51D1-4265-9065-369DF9C95C6F</string>
+		<key>182</key>
+		<string>268BEAA5-1438-4AAF-9203-D86534013B8E</string>
+		<key>18243</key>
+		<string>1411DC13-171B-4943-842B-D37D9D9BE2E1</string>
+		<key>183</key>
+		<string>C623D869-126E-4C7A-99B4-9B718DD5F118</string>
+		<key>184</key>
+		<string>F933444D-4232-46FD-9078-86E77B3E28B5</string>
+		<key>18436</key>
+		<string>2B140672-01AB-4655-9418-2692E283D15A</string>
+		<key>189</key>
+		<string>4419A4E7-BB42-4117-B5E7-699B2302E37D</string>
+		<key>191</key>
+		<string>9C97268B-CFDC-4671-B22B-C438A9FA7ED8</string>
+		<key>193</key>
+		<string>B9155153-9E8F-430B-8D9B-FB8627848DA9</string>
+		<key>197</key>
+		<string>A9C3575A-B9C9-4801-A911-6EAD4D3B3819</string>
+		<key>20</key>
+		<string>C37C7CBB-BBA9-4668-A85F-B71F15B253CD</string>
+		<key>20030</key>
+		<string>90B06C4E-9231-4338-95B8-CC85C395ABDE</string>
+		<key>2033</key>
+		<string>3238DF1A-B3F5-4D3C-BAB3-50F93A4E87CA</string>
+		<key>2034</key>
+		<string>41DF47DA-00E8-4AD8-B4AF-5F82871DECF1</string>
+		<key>2035</key>
+		<string>0AD913C0-7443-42AE-BED9-AD59FAF2D2CB</string>
+		<key>2037</key>
+		<string>289E9E98-0953-4BBC-AABC-15F3D37043C7</string>
+		<key>2038</key>
+		<string>354D15B4-5887-4250-B1E9-C53F6F854E40</string>
+		<key>204</key>
+		<string>40AEDAE3-52E7-41AC-B233-2EE80C703FB7</string>
+		<key>2040</key>
+		<string>1BD3087E-3DB7-4333-83BF-67BD5A38F2A8</string>
+		<key>2041</key>
+		<string>4A608E0A-C86B-4B2F-807E-7173459694EC</string>
+		<key>2042</key>
+		<string>B8F11C5B-8B99-45E3-99E3-E715E1BA1AD4</string>
+		<key>2043</key>
+		<string>5230BF24-4615-4576-91BD-A40CC57E61BB</string>
+		<key>2044</key>
+		<string>B089A139-5B9B-488C-B8DC-F3ACB3293DCB</string>
+		<key>2045</key>
+		<string>16C0A238-FCB8-4D45-A237-4C454AF25B18</string>
+		<key>2046</key>
+		<string>4852CFEF-8DE0-455A-9D1F-905867293F11</string>
+		<key>2047</key>
+		<string>3F949127-39C4-4E3A-9D31-74B7361125BF</string>
+		<key>2048</key>
+		<string>9E3F7401-03A9-4B33-A982-5352E88E0923</string>
+		<key>2049</key>
+		<string>E8B2B297-7F98-4291-A0EC-60A01E64E119</string>
+		<key>2050</key>
+		<string>3420FB8C-5106-48E6-91EA-233FE13E3F8C</string>
+		<key>2051</key>
+		<string>7452021B-FD56-44D3-9481-93F7C1E62DA3</string>
+		<key>2052</key>
+		<string>EE1F5006-5846-4CBD-A543-86CD787AA306</string>
+		<key>2053</key>
+		<string>A9335D81-C685-49E2-A740-7F354B0D5260</string>
+		<key>212</key>
+		<string>6F9F7C72-824E-4454-9D09-6EE9598E2F8C</string>
+		<key>21241</key>
+		<string>CABBF1DA-834B-4760-B659-53F3199952F9</string>
+		<key>216</key>
+		<string>66C77F46-EDA7-4B5B-B20A-C794FB29364E</string>
+		<key>22</key>
+		<string>C4DEEF9B-2EFA-4213-90E6-975F1EF39D19</string>
+		<key>22593</key>
+		<string>29C4BE82-9715-43EC-BC10-20A20C1AE85C</string>
+		<key>22850</key>
+		<string>D4CB7570-186E-496B-80B8-2A580C09359B</string>
+		<key>23358</key>
+		<string>86697A3E-9FC4-484C-BA90-86D4A05431A6</string>
+		<key>23362</key>
+		<string>BFEC8A94-5814-472E-B792-BC2680E0FB89</string>
+		<key>23368</key>
+		<string>AF3ACA5E-E3B0-4D53-AFEB-AE89B0A38246</string>
+		<key>23381</key>
+		<string>A8EC9F90-AA72-4883-B859-3CC5C10D2738</string>
+		<key>23383</key>
+		<string>48BBFA75-0581-4A1F-AAEB-36E782C67023</string>
+		<key>23541</key>
+		<string>D827920B-7935-49E3-BB67-398FF0D44FBC</string>
+		<key>23631</key>
+		<string>296639F1-37A4-46A6-80FF-004C780C591F</string>
+		<key>23632</key>
+		<string>D03E44C4-1877-4E8F-9808-0A2F0C6193B9</string>
+		<key>23633</key>
+		<string>E180FCA9-56A9-4DDF-A3DA-030CE90FBAAF</string>
+		<key>23634</key>
+		<string>0F30C736-4A9B-4355-AD2F-92CE0B59ADE5</string>
+		<key>23635</key>
+		<string>C551DF53-DF2A-4FBB-80A5-9F36C144E489</string>
+		<key>23636</key>
+		<string>93BAA1D1-C2B9-46CB-9FA9-644726C9967D</string>
+		<key>23637</key>
+		<string>A63BE6F9-5688-4851-A133-E87075C5BC5A</string>
+		<key>23638</key>
+		<string>E2D8CFD8-2E03-4A8E-9819-2181C159F59E</string>
+		<key>23639</key>
+		<string>8C5BB3E1-8EAE-4060-8249-1EB3DD1EC6C4</string>
+		<key>23640</key>
+		<string>EB6D9894-EEE6-48BC-B96F-D4A4AA9224BB</string>
+		<key>23641</key>
+		<string>6211F022-ED43-452F-A622-3BC6E28C21DB</string>
+		<key>23642</key>
+		<string>EAAB8977-C5EA-4EDD-A1FA-8678E4B09FB5</string>
+		<key>23643</key>
+		<string>9759EB89-A33F-4E5B-BA88-03A87951B814</string>
+		<key>23644</key>
+		<string>01263731-79F2-49FF-B90E-B1B1D84DB1ED</string>
+		<key>23645</key>
+		<string>3DE9FA4F-C56F-474A-BB33-1B841B9D59B8</string>
+		<key>23646</key>
+		<string>B7FF82B2-ED2B-4EC9-B340-1769D9521C58</string>
+		<key>23647</key>
+		<string>02F03ACB-BE24-4D08-97CB-6A6C6C8C278F</string>
+		<key>23648</key>
+		<string>2E774D4F-DA8C-48CA-A082-81DFF898B0EF</string>
+		<key>23649</key>
+		<string>88238CC3-D137-47B4-B9E4-FC3CEEFF461C</string>
+		<key>23650</key>
+		<string>10C6BE7E-A4EA-49FD-AA07-0DD7D4AA378F</string>
+		<key>23651</key>
+		<string>DD0C247D-9AF5-472F-A237-369061E37DF9</string>
+		<key>23652</key>
+		<string>22CA13F3-E21D-439D-A2A2-7B590ECAE908</string>
+		<key>23653</key>
+		<string>5C192381-016F-4968-9693-0C4252967FC2</string>
+		<key>23654</key>
+		<string>E1ABBF57-3381-47D6-ADA6-8D55BFC62E1F</string>
+		<key>23655</key>
+		<string>B34B5707-AD8C-44D5-865B-CFACC62867D9</string>
+		<key>23999</key>
+		<string>36BBB578-4762-48F1-B8E3-AD1CC5F43664</string>
+		<key>24</key>
+		<string>B1DD05D7-8EC8-4EB9-9D06-02DE5ADD4B2D</string>
+		<key>25</key>
+		<string>FA931DDD-59BE-4FD0-9379-943F072CBC52</string>
+		<key>25037</key>
+		<string>405533E7-2A73-4489-A7B8-7CE117C0373D</string>
+		<key>26</key>
+		<string>47711C98-F7A0-4493-A901-31FA860E1EE9</string>
+		<key>26018</key>
+		<string>83A73AC5-8F03-474F-9F78-D9E2AEE7952F</string>
+		<key>26097</key>
+		<string>2139A2F2-951D-4BA6-979D-15FA18322BE0</string>
+		<key>26206</key>
+		<string>0D0E7898-DBDB-41BC-B2EB-3060795A728B</string>
+		<key>26885</key>
+		<string>F91CB9A2-9C7B-4095-9DD6-B0DD1D185F14</string>
+		<key>26916</key>
+		<string>4605AF4C-3740-4934-BB9E-85A19DD90C17</string>
+		<key>26917</key>
+		<string>D0D1AE2C-C0F3-40D6-B073-F126181063B8</string>
+		<key>26918</key>
+		<string>B94AA17B-9FE5-4112-B99C-D6B21C95C42D</string>
+		<key>26919</key>
+		<string>449FBEB1-DC8D-48C7-8E9E-A579538BFEF4</string>
+		<key>26920</key>
+		<string>B88B1C5C-170A-459E-8D91-D36808D33F56</string>
+		<key>26921</key>
+		<string>8DDD38AD-D0CD-47FF-952E-8BA5F21EF1B7</string>
+		<key>26922</key>
+		<string>7284D8FC-F5DE-483D-9084-4220ACEB27EF</string>
+		<key>26923</key>
+		<string>3222EE5E-001B-4C74-AD84-F13290B7C048</string>
+		<key>26924</key>
+		<string>3CB3DF03-C6F0-4861-BACF-D170C62382CA</string>
+		<key>26925</key>
+		<string>431C2ABD-DB3F-4B78-BD2F-B35949086063</string>
+		<key>26926</key>
+		<string>D5E85236-44C7-4741-B892-E3634C5217A7</string>
+		<key>26927</key>
+		<string>F301F839-B699-4EB1-9173-E25325BB341A</string>
+		<key>26928</key>
+		<string>EE19CEB7-A1A8-4B68-825C-5216936A4C5A</string>
+		<key>26929</key>
+		<string>FDA15FAF-A2B1-49FA-A183-5C0C2F0587CB</string>
+		<key>26930</key>
+		<string>C94769AB-681B-4891-B4CE-59A7EAC5A363</string>
+		<key>26931</key>
+		<string>0E54534A-9552-41E2-85A6-1D465F67691E</string>
+		<key>26932</key>
+		<string>6B7FEC6A-37FF-4626-A53A-0045F162C9BE</string>
+		<key>26933</key>
+		<string>7FBB8B23-672D-4A99-8D93-8C5CCCB23A68</string>
+		<key>26934</key>
+		<string>8869F24A-FA1A-49B2-A389-50F67BE794BA</string>
+		<key>26935</key>
+		<string>A0744D32-0DC6-4F13-8EDA-CA650AB06F47</string>
+		<key>26936</key>
+		<string>591485CC-D988-43F9-910F-758E8BA649D1</string>
+		<key>26937</key>
+		<string>95584224-DF28-4EC3-A114-B418E3AD5B78</string>
+		<key>26938</key>
+		<string>CCDF7256-0664-4620-B647-B8A8A20FBEEC</string>
+		<key>26997</key>
+		<string>97CF22EC-7C97-4434-93BE-0CA922BBBA67</string>
+		<key>26998</key>
+		<string>0A3D240A-B5CF-4E80-8545-EE18349C743E</string>
+		<key>26999</key>
+		<string>FFFC3D73-E1E0-464F-8019-70F5F42B3D92</string>
+		<key>27</key>
+		<string>4F663259-FEC4-40C0-84C5-EAB0CF0612D7</string>
+		<key>27000</key>
+		<string>21722810-EFAC-40D1-970A-FBBB77B0AA1B</string>
+		<key>27001</key>
+		<string>2A9B185C-24D8-4378-B3E1-77471EB846F2</string>
+		<key>27002</key>
+		<string>3D6B21C1-1DEC-4F2F-9A37-4A6B9503772C</string>
+		<key>27003</key>
+		<string>BB246287-4E7F-410B-9935-65B8965ADF5D</string>
+		<key>27004</key>
+		<string>E521CE6F-33CA-45F9-937C-EAEF6BC16687</string>
+		<key>27005</key>
+		<string>F409E7D2-D4C0-4273-B164-B6C8E2FE1079</string>
+		<key>27006</key>
+		<string>AD2F7E22-3284-46C0-BEB0-F0DCCF62F4D7</string>
+		<key>27007</key>
+		<string>53602E99-2088-4CC5-9CA6-79F8FD08A134</string>
+		<key>27008</key>
+		<string>C64C3606-66A6-441A-A6C5-AE00F246DCD1</string>
+		<key>27009</key>
+		<string>9E4B9539-FACC-4293-A6C1-A66C43FCB4F7</string>
+		<key>27010</key>
+		<string>B35E15EF-6739-45FC-A25B-C6E2E6ADBC36</string>
+		<key>27011</key>
+		<string>F540A063-B10E-465D-895B-B91D154848BF</string>
+		<key>27012</key>
+		<string>C1F72FF5-5414-4ED0-ADF8-DFBE8FCEC843</string>
+		<key>27013</key>
+		<string>7290A93D-70F3-4412-B279-89C3CCB7370C</string>
+		<key>27014</key>
+		<string>EBF8EA39-AB99-468D-919B-CAC672FDFBCA</string>
+		<key>27015</key>
+		<string>CD7E01FD-9335-4F1B-BA7F-F2A95BACAA81</string>
+		<key>27016</key>
+		<string>A31E74BE-FEAB-4F44-9C45-2A89E8A74095</string>
+		<key>27017</key>
+		<string>046A56C3-1A2A-44FF-BEF8-5E15445D74EE</string>
+		<key>27055</key>
+		<string>B18FA028-3C96-4819-88D1-5997B03F6CBB</string>
+		<key>27131</key>
+		<string>765F114A-834E-4388-A16D-7571B551C3FE</string>
+		<key>27132</key>
+		<string>1CD9908C-9151-4A87-B9D4-05BBADF0C325</string>
+		<key>27133</key>
+		<string>B880D0F4-4FA5-4755-BF0B-39E62FBDB972</string>
+		<key>27134</key>
+		<string>F66A8287-E42D-44C1-8441-AC8E0C165A86</string>
+		<key>27135</key>
+		<string>6CDADDD6-12AF-4AF0-B6CF-3C1769695942</string>
+		<key>27136</key>
+		<string>91242E8F-1EF6-4FA4-BC71-40C34585AEE9</string>
+		<key>27137</key>
+		<string>2AEE902B-17CB-494D-B3EA-6355D118D40E</string>
+		<key>27138</key>
+		<string>4D7B9163-4B1B-4F13-B2E1-38345CC36DFB</string>
+		<key>27139</key>
+		<string>2D4E32B1-55DA-4259-870B-891D3635A894</string>
+		<key>27140</key>
+		<string>1B808A3C-A955-405F-B848-9AD3D2F5D33B</string>
+		<key>27141</key>
+		<string>CAE2FA06-2AD1-4739-83EC-3C687E218E0C</string>
+		<key>27142</key>
+		<string>E8DF96D2-FBDE-44D9-ADC6-111B71884163</string>
+		<key>27143</key>
+		<string>CFE874D4-828B-49F2-8CC0-B1E7F2D6E05C</string>
+		<key>27144</key>
+		<string>A3EBF5DA-92A1-4B47-83B7-7336FFB62F4E</string>
+		<key>27145</key>
+		<string>A994AD7E-3B23-48D8-B728-C08651AE9142</string>
+		<key>27146</key>
+		<string>D78D4F33-7A1F-4DBE-8D60-AFD0659660C0</string>
+		<key>27147</key>
+		<string>5F8F9B5C-7FB6-4725-A5D7-98E64DCD3E52</string>
+		<key>27148</key>
+		<string>10D19D2D-5887-4AA4-9E46-B912D7A6B5FE</string>
+		<key>27149</key>
+		<string>7761D90F-4418-459D-8001-A265EB931880</string>
+		<key>27150</key>
+		<string>F14A4F73-2FB1-491C-9314-ED552605BED5</string>
+		<key>27151</key>
+		<string>C19A9D43-8B21-458C-84EE-981B7C6C8B39</string>
+		<key>27152</key>
+		<string>173C9851-5B62-45F2-891D-F883197FEF16</string>
+		<key>27153</key>
+		<string>881BF2C0-DD43-4034-B3AE-226A360D9B1B</string>
+		<key>27181</key>
+		<string>A8B8AEA6-752E-4E5C-A8AB-E7F7A93CCF2C</string>
+		<key>27182</key>
+		<string>68EAF314-41F1-4503-85A6-9D4E2B84040E</string>
+		<key>27183</key>
+		<string>E2A44617-8586-4AF4-8E9A-5AE1071181EC</string>
+		<key>27184</key>
+		<string>0A40BEA7-96DB-4508-B42B-6370DC9F8D08</string>
+		<key>27185</key>
+		<string>11EFEE6C-D430-418A-AE56-97CB9F0FE8F2</string>
+		<key>27186</key>
+		<string>445F3C24-BEBD-4FAC-B23A-31D8DA9C44DD</string>
+		<key>27187</key>
+		<string>2DD55605-A6FC-4353-AA78-6570AD2189CA</string>
+		<key>27188</key>
+		<string>BD61701D-2E76-447B-8CE2-003252B95EA3</string>
+		<key>27189</key>
+		<string>5BF5BA6D-F4FD-4ADD-BE3B-6801C1A2D03E</string>
+		<key>27190</key>
+		<string>2C7BE481-9F6E-4EC5-A2F9-0177C60D13FD</string>
+		<key>27191</key>
+		<string>FB854A2A-5092-4B65-9CA9-34685CA4EE99</string>
+		<key>27192</key>
+		<string>6DDEF115-AEEF-48A6-8B8F-E62B00EF02C7</string>
+		<key>27193</key>
+		<string>AE92ED55-8C10-4E4B-827C-54549AB99A8F</string>
+		<key>27194</key>
+		<string>F19E3D7A-6179-4616-BDF0-C1ECC019E6B9</string>
+		<key>27195</key>
+		<string>C96E314F-C102-4224-B7B0-4331D8F127F9</string>
+		<key>27196</key>
+		<string>4AB8C428-3CEA-4285-A6B8-34B2A8AFD414</string>
+		<key>27197</key>
+		<string>A9621BD6-8593-404F-BD08-3A35F9EDF45C</string>
+		<key>27198</key>
+		<string>B38AE2FA-3D20-4641-A397-9649477760EA</string>
+		<key>27199</key>
+		<string>14FFBBCA-650D-452F-B579-9735B0F32B9F</string>
+		<key>27200</key>
+		<string>BAAF1888-D290-466E-BE09-694B630A4AD4</string>
+		<key>27201</key>
+		<string>2AE914AB-FC11-47B6-8DFC-F304B14F6AA3</string>
+		<key>27202</key>
+		<string>ECEF07FF-81BD-4912-9BD5-E291CA1D3944</string>
+		<key>27203</key>
+		<string>BD194B25-798E-471C-B950-932AB8AA2D5E</string>
+		<key>27231</key>
+		<string>3A335088-EB16-4AF2-87C6-B8346C188A72</string>
+		<key>27232</key>
+		<string>9E3763C8-F16F-4A2D-BF8C-70401996616C</string>
+		<key>27233</key>
+		<string>2AF8FEB2-6588-46EE-A86B-827CF0538D60</string>
+		<key>27234</key>
+		<string>C2BA04B9-2A6F-4F08-B6C3-B8E976215510</string>
+		<key>27235</key>
+		<string>9BF40DAC-67AF-4485-AF2D-FC01BB9C979E</string>
+		<key>27236</key>
+		<string>64C1DEC3-ABE5-49E4-9E45-D7B3DC473859</string>
+		<key>27237</key>
+		<string>D353249C-33BA-47F6-8783-5EB6F0905170</string>
+		<key>27238</key>
+		<string>094D629E-5FC9-487E-958F-B7224EC3BBD9</string>
+		<key>27239</key>
+		<string>8AD28C9D-B5E3-4632-A1E1-BC13171375F0</string>
+		<key>27240</key>
+		<string>3C8B3ECC-D181-4EE8-BB92-0648B7456E64</string>
+		<key>27241</key>
+		<string>D08EEBF1-60F7-41D5-A31F-CBCC93847376</string>
+		<key>27242</key>
+		<string>FD09F775-803D-4019-9E21-26A6531FC011</string>
+		<key>27243</key>
+		<string>ADFB1D4C-F3A8-48F3-AFF9-95BFDAFD34CE</string>
+		<key>27244</key>
+		<string>175B27D0-FD89-4195-874F-979880A93B07</string>
+		<key>27245</key>
+		<string>EFAADFBD-DDA3-43F6-9E9E-68A1C4E4F41F</string>
+		<key>27246</key>
+		<string>9189CBE8-5AB7-4DC5-8246-75E54D828881</string>
+		<key>27247</key>
+		<string>BF3679F3-5819-4124-BE51-A07051D2B274</string>
+		<key>27248</key>
+		<string>7CE3C5B3-8C21-4ADD-BAE8-BDF06E77E6B2</string>
+		<key>27249</key>
+		<string>31642C77-B3A7-4CAF-A768-9BB2CD888878</string>
+		<key>27250</key>
+		<string>709023A8-1BA1-4E7B-A2CE-8B7618BE74E6</string>
+		<key>27251</key>
+		<string>C864F252-9B89-4605-A0B5-D91651E46B07</string>
+		<key>27252</key>
+		<string>E570FF14-52AD-45B2-8EB7-40D76CC728E3</string>
+		<key>27253</key>
+		<string>B1D9BC0E-F0DF-41BB-B399-DE65D14D29A1</string>
+		<key>27279</key>
+		<string>D0C0C126-26F2-4490-90C4-7CF541BF1CA6</string>
+		<key>27280</key>
+		<string>5F9BB667-4E50-4F42-9A69-11A1FFD6243E</string>
+		<key>27281</key>
+		<string>BDEE5B34-62C9-4F03-BCBB-DCDE75341BDB</string>
+		<key>27282</key>
+		<string>3D24C9BC-1076-4D44-9FCA-18B8C07F9C8E</string>
+		<key>27283</key>
+		<string>EF587B69-BDDA-4175-BF31-715E9BD451E8</string>
+		<key>27284</key>
+		<string>0821EED7-B8BF-45CA-9C9A-F23B1CF4D0D2</string>
+		<key>27285</key>
+		<string>CE9AEC43-6451-433B-851A-6A6A5249AFB1</string>
+		<key>27286</key>
+		<string>585AB15F-8DE0-46C3-A462-B96EBC89643C</string>
+		<key>27287</key>
+		<string>BB86C5E4-7F54-4ACC-8CDB-25ED826539A9</string>
+		<key>27288</key>
+		<string>52810A0F-C847-421D-B6D7-A7A633D37D62</string>
+		<key>27289</key>
+		<string>03E0C631-2AEE-4D87-9D87-ADC6B48BD957</string>
+		<key>27290</key>
+		<string>F12A1B83-6F16-4D00-A113-B1F85663B92C</string>
+		<key>27291</key>
+		<string>77C3C2B1-7936-44E1-B4CF-8BA9E2589B12</string>
+		<key>27292</key>
+		<string>FA538173-95D3-453B-8FD1-74EBABB027A3</string>
+		<key>27293</key>
+		<string>5D04AC68-D75C-4892-A919-A3CC878B676D</string>
+		<key>27294</key>
+		<string>23FC4C41-252A-4EB7-BB12-55350DD643F2</string>
+		<key>27295</key>
+		<string>3CA9E8AB-1FA5-48FE-AB88-B1465D0248CE</string>
+		<key>27296</key>
+		<string>EDBAFD58-838E-4A61-85CD-88B51AE588BA</string>
+		<key>27297</key>
+		<string>1C6407D1-AF65-420D-A124-3896FE576F09</string>
+		<key>27298</key>
+		<string>86E542B5-8224-4921-9879-E5EDF032AFA8</string>
+		<key>27299</key>
+		<string>80EBFD6E-9A2E-49EA-A7E0-2B26F5A14AB3</string>
+		<key>27300</key>
+		<string>9201B8B6-4BDD-4642-B2EC-3F2E84F65251</string>
+		<key>27301</key>
+		<string>03F2C443-E463-4EBD-A1AA-B03F109F4137</string>
+		<key>27440</key>
+		<string>AB737CB7-C9EF-4277-A92F-E66A097B9F5E</string>
+		<key>28351</key>
+		<string>7F89817A-E211-4AE1-9CE8-CD65974E5885</string>
+		<key>28360</key>
+		<string>0D6C2A11-35CA-4DF3-A42A-42E564C3627F</string>
+		<key>28406</key>
+		<string>DE7DD4B5-3956-4A84-806F-773ED3E8FF3E</string>
+		<key>29332</key>
+		<string>6819F562-FBA5-4A52-8509-C15CB4D60219</string>
+		<key>29755</key>
+		<string>7696C124-7EBE-4F48-BDAE-A906B7031259</string>
+		<key>29771</key>
+		<string>D9135B1E-DB67-4CAC-8989-0C8EE31FB880</string>
+		<key>30795</key>
+		<string>DFFF5514-8F01-477E-BE7B-88E2ACE0B3B5</string>
+		<key>31907</key>
+		<string>3D783B54-4AEF-4337-BF74-C8243BB911A0</string>
+		<key>33</key>
+		<string>1EE41739-A341-4310-BA8B-EDF5F79BCB43</string>
+		<key>33464</key>
+		<string>DE86DE61-B994-4EFB-AA39-9B2E7B9267D0</string>
+		<key>33470</key>
+		<string>D194DD14-487D-4F2D-A6DD-F506AC4FAA42</string>
+		<key>33478</key>
+		<string>CA3DEEDA-A5CA-48B8-A235-4BE93BAA27C4</string>
+		<key>34968</key>
+		<string>F697812E-F25F-4B7B-9A13-B72EE7821018</string>
+		<key>35</key>
+		<string>DB6578E0-44F5-467E-B97D-E4EC3A11F399</string>
+		<key>351</key>
+		<string>D862B956-A727-4052-B274-F77B7AB5324D</string>
+		<key>35499</key>
+		<string>61E59897-74FF-407F-AF72-D5FFFE870287</string>
+		<key>35547</key>
+		<string>D9544AFF-0EFD-4487-868E-30CAA345A1B1</string>
+		<key>35548</key>
+		<string>625487F2-57D8-4E20-AE08-E6B268176940</string>
+		<key>35549</key>
+		<string>FD110EE5-2305-42EE-93D6-5612EB3DDCE4</string>
+		<key>35550</key>
+		<string>A8BDFD9C-55A0-4374-AA2A-7D0327109F6C</string>
+		<key>35552</key>
+		<string>9A153EA9-CD38-458F-80DD-E435A45D9182</string>
+		<key>36</key>
+		<string>BE950581-CC9C-41A3-BE9A-39A3F2AE465D</string>
+		<key>39</key>
+		<string>519E6DA4-419A-4DEC-87F1-FF90E37734DE</string>
+		<key>40</key>
+		<string>72B16F8E-67B9-49D8-A6CD-5731615B5E70</string>
+		<key>4291</key>
+		<string>F8096A9C-319E-44BF-AB23-06193127033B</string>
+		<key>45</key>
+		<string>74274C0D-CD60-43C3-95FB-46F8C245C690</string>
+		<key>47</key>
+		<string>2C76CA66-F7E9-4AC3-8278-E0C3B7A11338</string>
+		<key>48</key>
+		<string>86A479CF-F92B-4873-A02F-8084CC2F001C</string>
+		<key>49</key>
+		<string>1348E57A-C5E8-4983-ACE3-E08DB56BE7AF</string>
+		<key>51</key>
+		<string>B85C07D5-B35A-42A2-88A1-B4DEB538C5B5</string>
+		<key>52</key>
+		<string>52856F11-856B-471D-B4D3-75793BC751D9</string>
+		<key>54</key>
+		<string>1BD48D4B-D053-4228-A768-2FFBB62AEB25</string>
+		<key>57</key>
+		<string>D44D6072-4CED-459B-891D-1DF5F9E0696F</string>
+		<key>59</key>
+		<string>B0B16DF4-2746-42B0-8696-47D04123E09A</string>
+		<key>61</key>
+		<string>665E865E-5CCE-49ED-991B-921A84FF3021</string>
+		<key>6216</key>
+		<string>2A3EFFB4-5E10-4C6E-96C0-1408DE424407</string>
+		<key>6217</key>
+		<string>76864A9E-5A3A-4C91-ABAF-EFC104EEBCF2</string>
+		<key>6218</key>
+		<string>15F44E45-7972-43BF-97AA-5E3489B43839</string>
+		<key>6220</key>
+		<string>9E0108FF-7A5B-438A-9AC9-7590A6337467</string>
+		<key>6221</key>
+		<string>CF569716-ACD8-4C22-BCB8-0DF796066D6C</string>
+		<key>6223</key>
+		<string>0B97E5FC-BB9A-4C6F-9358-FC13ED2659EA</string>
+		<key>6224</key>
+		<string>509CD87C-C0A2-4303-9D0E-744058D1F0C7</string>
+		<key>6225</key>
+		<string>D4A3078D-D7B1-4CDF-84F7-78032DAB4F18</string>
+		<key>6226</key>
+		<string>46BB309C-C7CA-4138-A05B-718438B1BDC9</string>
+		<key>6227</key>
+		<string>E0B0DEC9-03B9-4329-94F8-DE74E4F8B505</string>
+		<key>6228</key>
+		<string>82C5F6F4-FF1A-4BF5-A8BE-A0A6B5A79A16</string>
+		<key>6229</key>
+		<string>6A0A1286-2713-40DC-8D80-5C39242FABAF</string>
+		<key>6230</key>
+		<string>B147533C-CB1D-438F-B79E-9706B9A09658</string>
+		<key>6231</key>
+		<string>6AEE401E-7AFF-4C75-9CD5-FA42982F58C4</string>
+		<key>6232</key>
+		<string>7D85D756-5D65-40CE-A6DF-ED44699D9186</string>
+		<key>6233</key>
+		<string>C9E5B2A3-E41E-404B-9A48-DFEB07454A4F</string>
+		<key>6234</key>
+		<string>282F9EEF-B019-4F3D-8A35-43A51862D8C9</string>
+		<key>6235</key>
+		<string>13340763-B872-4F32-84A2-112E4C11576F</string>
+		<key>6236</key>
+		<string>71ADF256-EBDF-4C75-81AA-ABBF923B9700</string>
+		<key>6237</key>
+		<string>B378CBAA-EF24-4D70-8998-DEA47AD9F9A7</string>
+		<key>6238</key>
+		<string>07EC396C-EEF9-44E0-AEBF-79FCABFAC502</string>
+		<key>6308</key>
+		<string>41F351E2-77B5-469B-879D-525F7F785C37</string>
+		<key>65</key>
+		<string>E1C9ADC7-56D1-4922-912D-D0CD8572DFFF</string>
+		<key>66</key>
+		<string>0C3ADFAF-2890-4849-8F3B-C244CFD2F4C6</string>
+		<key>67</key>
+		<string>BD5EBE49-B930-4C6D-84FD-AAF936ADA3C8</string>
+		<key>68</key>
+		<string>4F249455-7CBA-4A6C-BB22-12730A7EE2AE</string>
+		<key>6808</key>
+		<string>1AB21B3C-8E30-4AAC-A69F-D6249DC0BC8C</string>
+		<key>69</key>
+		<string>17239782-008E-4D9D-83DE-E3BDE5F33BC1</string>
+		<key>70</key>
+		<string>AD603AEB-1413-487B-856C-382A9AD0905B</string>
+		<key>7010</key>
+		<string>DEEF3E81-946B-4BD5-B9AB-8360F63C820C</string>
+		<key>7011</key>
+		<string>A3513E24-4F8B-4C95-A225-D3613AFBAF32</string>
+		<key>7012</key>
+		<string>72E14032-9A47-4A49-8D0D-CC96AD2C68B4</string>
+		<key>7014</key>
+		<string>741C93DC-B9AE-4710-8372-4673EA49D62D</string>
+		<key>7015</key>
+		<string>29725173-34D3-41E3-977A-65CAF7D0BA9E</string>
+		<key>7017</key>
+		<string>BEA0D404-8262-4E5A-A008-C37114E65279</string>
+		<key>7018</key>
+		<string>3BAD9B21-17C9-4949-97F8-3710BB36DB10</string>
+		<key>7019</key>
+		<string>363485FB-485D-4451-B511-DBD2F8FEA234</string>
+		<key>7020</key>
+		<string>F1207F6C-A6E2-4063-AD7D-C92DB9E80026</string>
+		<key>7021</key>
+		<string>916C2DAC-57AA-403A-99B0-F345AF84DE31</string>
+		<key>7022</key>
+		<string>615A64DC-FE98-473F-8EB9-496B27F8C4D0</string>
+		<key>7023</key>
+		<string>D5FECADB-73BF-4253-9F4C-01509BC06A63</string>
+		<key>7024</key>
+		<string>358BFDF9-C1EC-4643-83FB-123C97273CCE</string>
+		<key>7025</key>
+		<string>B92A2A9C-0D31-41FF-922B-8192C697554C</string>
+		<key>7026</key>
+		<string>5F25CDDB-ECB8-43EC-9082-01B526BD394F</string>
+		<key>7027</key>
+		<string>8B8460FF-04C6-4976-8704-B1BEE303FED0</string>
+		<key>7028</key>
+		<string>420C92CC-0B28-4A2A-96DC-BD8A6B113BBA</string>
+		<key>7029</key>
+		<string>A88D33A3-A893-49BC-B2D7-E5E312CF0C81</string>
+		<key>74</key>
+		<string>4E25A29B-E6E8-4C5A-9BD2-58D2FC33FCB6</string>
+		<key>75</key>
+		<string>AC7D44C5-B2FE-4525-8EA1-E1AA494EB71B</string>
+		<key>7599</key>
+		<string>953F3C4C-3472-4BB1-B7CD-6B249490A3DB</string>
+		<key>76</key>
+		<string>31B63C7B-BE22-462A-8332-7531AD826161</string>
+		<key>768</key>
+		<string>60D83724-EF5A-40C9-A62B-DDAA3A71A3AD</string>
+		<key>78</key>
+		<string>3533786D-B2B0-4B92-9069-A70CA7934C36</string>
+		<key>79</key>
+		<string>65B0DF13-16B0-409A-AE8E-E4CF051B33C9</string>
+		<key>80</key>
+		<string>214CAE78-8444-41E7-B48F-A705EABFC426</string>
+		<key>8090</key>
+		<string>9D67400A-E767-4BAC-8FC9-02FF98EA93D2</string>
+		<key>81</key>
+		<string>7369E8F1-0431-4313-9C67-543BD8776C78</string>
+		<key>82</key>
+		<string>766F16D2-290B-4BDE-B9B9-A8866EAB5159</string>
+		<key>83</key>
+		<string>6D2AE59D-A90C-47F8-8F0D-7006345673BF</string>
+		<key>85</key>
+		<string>16F555E2-A72F-41E9-9F11-2B98F4983340</string>
+		<key>86</key>
+		<string>EB58B7CB-F1E8-4F32-A192-055903EF557E</string>
+		<key>8603</key>
+		<string>C72C8231-57C7-4707-BA6A-F7B24D4771A1</string>
+		<key>87</key>
+		<string>42401108-9A1C-4A13-8753-8827DD8BACF2</string>
+		<key>8865</key>
+		<string>E6E7D530-CAF6-4AB8-A7B6-49362BC29800</string>
+		<key>89</key>
+		<string>A8D2B063-1B6B-403A-B471-6C74E8A4BABF</string>
+		<key>9011</key>
+		<string>2B51132C-9931-4830-8601-69235F271F3E</string>
+		<key>92</key>
+		<string>C1DBCBEE-895C-410C-80DC-B95E867F9991</string>
+		<key>95</key>
+		<string>C47AB87E-43C2-4DE7-B14B-2ABFF54F7062</string>
+		<key>9541</key>
+		<string>E65FB972-679F-4328-81F3-B0B18099F3CA</string>
+		<key>96</key>
+		<string>C71103B2-0E35-4F21-8F7D-BF96D7B4081E</string>
+		<key>97</key>
+		<string>8C654575-69BB-4150-B5FE-6E29CCF33F3F</string>
+		<key>9762</key>
+		<string>8DA5787A-AC43-4D9E-9915-F187AA68A86B</string>
+		<key>98</key>
+		<string>F0FAD2DE-4D9F-4BC5-A076-D079D2E42A55</string>
+	</dict>
+	<key>com.sureteesstudios.bartender.defaultsInitialized</key>
+	<true/>
+	<key>com.sureteesstudios.bartender.shortcuts</key>
+	<dict>
+		<key>apple</key>
+		<string></string>
+		<key>bt</key>
+		<string>Bartender</string>
+	</dict>
 	<key>isNewUser</key>
 	<true/>
-	<key>license5</key>
-	<string>GAWAE-FD9MK-Y6LP5-K28CQ-V963S-FR478-J7GZQ-2G69C-CRGPN-KPPT7-MALXF-DPA33-5DCNU-JF6ZE-XA3M</string>
-	<key>license5HoldersName</key>
-	<string>WIL HALL</string>
+	<key>launchAtLogin.isEnabled</key>
+	<true/>
+	<key>license6HoldersName</key>
+	<string>wil@wilhall.com</string>
+	<key>onboarding_temp_bt8</key>
+	<true/>
+	<key>shouldShowSixOnboarding</key>
+	<true/>
 	<key>showMenuBarIcon</key>
-	<integer>0</integer>
+	<true/>
 	<key>statusBarImageNamed</key>
-	<string>Arrow</string>
+	<string>More</string>
+	<key>stored_style</key>
+	<data>
+	eyJzaGFwZSI6ImJhciIsImJhc2VTdHlsZSI6eyJzdGFuZGFyZCI6e319LCJjb2xvcnMi
+	OltdLCJyb3VuZEJvdHRvbU9mU2NyZWVuIjpmYWxzZSwic2hhZG93IjpmYWxzZSwic2Vw
+	ZXJhdGVQaWxscyI6ZmFsc2UsInJvdW5kQm90dG9tb2ZCYXIiOmZhbHNlfQ==
+	</data>
 	<key>trial5Start</key>
-	<date>2025-07-25T13:13:26Z</date>
+	<date>2025-10-23T17:23:25Z</date>
 </dict>
 </plist>

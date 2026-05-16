@@ -118,10 +118,10 @@ end
 
 -- Macbook Pro undocked with no external screens
 function undockedLayout()
-  local laptopScreen = getLaptopScreen()
+  local laptopScreen = findLaptopScreen()
   return {
-    { "Chrome", nil, externalScreen, regions.full, nil, nil },
-    { "Vivaldi", nil, externalScreen, regions.full, nil, nil },
+    { "Chrome", nil, laptopScreen, regions.full, nil, nil },
+    { "Vivaldi", nil, laptopScreen, regions.full, nil, nil },
     { "WebStorm", nil, laptopScreen, regions.full, nil, nil },
     { "RubyMine", nil, laptopScreen, regions.full, nil, nil },
     { "PyCharm", nil, laptopScreen, regions.full, nil, nil },
@@ -136,8 +136,8 @@ function undockedLayout()
     { "OrcaSlicer", nil, laptopScreen, regions.full, nil, nil },
     { "Adobe Lightroom", nil, laptopScreen, regions.full, nil, nil },
     { "Blender", nil, laptopScreen, regions.full, nil, nil },
-    { "Slack", nil, laptopScreen, regions.right, nil, nil },
-    { "Messages", nil, laptopScreen, regions.rightb25, nil, nil },
+    { "Slack", nil, laptopScreen, regions.right25, nil, nil },
+    { "Messages", nil, laptopScreen, regions.right25b, nil, nil },
       { "Music", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Pocket Casts", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, laptopScreen, regions.modalPrimary, nil, nil },
@@ -165,8 +165,8 @@ function undockedSidecar()
     { "OrcaSlicer", nil, laptopScreen, regions.full, nil, nil },
     { "Adobe Lightroom", nil, laptopScreen, regions.full, nil, nil },
     { "Blender", nil, laptopScreen, regions.full, nil, nil },
-    { "Slack", nil, laptopScreen, regions.right, nil, nil },
-    { "Messages", nil, laptopScreen, regions.rightb25, nil, nil },
+    { "Slack", nil, laptopScreen, regions.right25, nil, nil },
+    { "Messages", nil, laptopScreen, regions.right25b, nil, nil },
       { "Music", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Pocket Casts", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, laptopScreen, regions.modalPrimary, nil, nil },
@@ -180,8 +180,8 @@ end
 -- Macbook Pro undocked with two external screens, typically one to each side of the laptop screen
 function undockedTriScreen()
   local laptopScreen = findLaptopScreen();
-  local leftScreen = findSCreenLef();
-  local rightScreen = getScreenRightOfPrimary();
+  local leftScreen = findScreenLeftOfPrimary();
+  local rightScreen = findScreenRightOfPrimary();
 
   return {
     -- Left
@@ -209,7 +209,7 @@ function undockedTriScreen()
 
     -- Right
     { "Slack", nil, rightScreen, regions.full, nil, nil },
-    { "Messages", nil, rightScreen, regions.right, nil, nil },
+    { "Messages", nil, rightScreen, regions.right25, nil, nil },
   }
 end
 
@@ -257,7 +257,7 @@ function applyLayout()
   elseif numScreens == 2 then
     local undocked = find(hs.screen.allScreens(), function(screen) return (screen:name() == laptopScreenName) end)
 
-    if unocked then
+    if undocked then
       hs.alert.show("⇝ Layout: Undocked Sidecar")
       layout = undockedSidecar()
     else

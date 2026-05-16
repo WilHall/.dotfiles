@@ -1,0 +1,96 @@
+# Keys stripped from every domain.
+#
+# Format: see README.md. Literal lines = exact KVC path; `~`-prefix lines =
+# Python regex (fullmatch) against the key NAME at any depth in the plist.
+
+# ─── Crash-reporter / analytics identifiers ────────────────────────────
+BugsnagUserUserId
+SentryUserId
+AmplitudeDeviceId
+MixpanelDistinctId
+GoogleAnalyticsClientID
+FirebaseInstallationID
+
+# Microsoft App Center (1Password, Fork, Cardhop, Fantastical, …)
+~^MSAppCenter.*$
+
+# Firebase telemetry / session caches
+~^firebase-.*$
+
+# Generic crash-report contact keys
+~^CrashReport(Email|Name|UserName|UserEmail).*$
+~^CrashDiagnosticId$
+
+# ─── UUID-named keys at any depth ──────────────────────────────────────
+# Canonical UUID alone
+~^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$
+# Prefixed UUIDs (e.g. Cardhop's `account:<UUID>`)
+~^[A-Za-z][A-Za-z0-9_-]*:[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$
+
+# ─── Hardware / machine fingerprints ───────────────────────────────────
+~^.*[Mm]achineID$
+~^.*[Dd]eviceID$
+~^.*[Dd]eviceIdentifier$
+~^.*videoDeviceID$
+
+# ─── Apple Account / authentication markers ────────────────────────────
+~^_AK.*$
+
+# ─── Apple GMS / Apple Intelligence availability ───────────────────────
+~^com\.apple\.gms\.availability\..*$
+
+# ─── CloudKit account/state ────────────────────────────────────────────
+~^CloudKit.*$
+~^CK[A-Z][a-zA-Z]*Time$
+~^CKAccount.*$
+
+# ─── Sparkle (auto-updater) ─────────────────────────────────────────────
+~^SU(Last|UpdateGroup).*$
+
+# ─── Zoom XMPP account-prefixed keys ────────────────────────────────────
+~^[a-z0-9_-]+@xmpp\.zoom\.us.*$
+
+# ─── 1Password update-service timestamps ────────────────────────────────
+~^OPPeriodicUpdateService-Timestamp-.*$
+
+# ─── "Last X" timestamps and references ─────────────────────────────────
+~^[Ll]ast.*$
+~^.*Last[A-Z].*$
+
+# ─── License / receipt / token state ────────────────────────────────────
+~^.*[Ll]icense(Code|Number|Key|Token|HoldersName|Email).*$
+~^receipt[A-Z].*$
+~^.*-cache-key$
+
+# ─── Misc app state / hashes ────────────────────────────────────────────
+~^.*ChangeHash$
+History
+sttys
+fixedViewsArray
+
+# ─── Username-leaking default-folder paths ─────────────────────────────
+# Affinity (Designer, Photo, Publisher) use this exact pattern.
+~^com\.seriflabs\..*\.startupdir$
+
+# ─── Window / pane / panel geometry ────────────────────────────────────
+# Cocoa autosave
+~^NS(Window|SplitView|Toolbar|TableView|NavPanel|OSP).* .*$
+~^NS(Window|SplitView|Toolbar|TableView|NavPanel|OSP)[A-Z][a-zA-Z]*$
+~^NSTableView Columns .*$
+~^NSTableView Hidden Columns .*$
+~^NSTableView Sort Ordering .*$
+
+# Vadim Shpakovski's MASPreferences (Fantastical, Cardhop, etc.)
+~^MASPreferences .* Frame.*$
+~^MASPreferences Frame.*$
+~^MASPreferences Selected Identifier View$
+
+# Generic geometry by name
+~^.*Window(Frame|Origin|Size|State|SaveState|Location|Position|Geometry).*$
+~^.*ScreenIdentifier.*$
+~^.*ScreenId.*$
+~^.*Panel-?Frame.*$
+~^scrollPosition.*$
+
+# Hex-float-suffixed keys (Affinity uses these for window state)
+~^.*_0x[0-9a-fA-Fp+\-.]+$

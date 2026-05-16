@@ -54,14 +54,121 @@ resolve_domain() {
 
 backup() {
   BACKUP_FILE="$HOME/.defaults/$1.plist"
-  defaults export "$1" "$BACKUP_FILE" && plutil -convert xml1 "$BACKUP_FILE" 
+  mkdir -p "$HOME/.defaults"
+  defaults export "$1" "$BACKUP_FILE" && plutil -convert xml1 "$BACKUP_FILE"
   if [[ $? == 0 ]]; then
-    echo "Exported domain '$1' to $BACKUP_FILE"
-    if [ "$READBACK" = true ]; then plutil -p "$BACKUP_FILE"; fi
+    apply_filter "$1" "$BACKUP_FILE"
+    if is_empty_plist "$BACKUP_FILE"; then
+      rm -f "$BACKUP_FILE"
+      echo "Skipped backup of '$1' — empty after filtering"
+    else
+      echo "Exported domain '$1' to $BACKUP_FILE"
+      if [ "$READBACK" = true ]; then plutil -p "$BACKUP_FILE"; fi
+    fi
   else
     echo "Failed to export domain '$1'"
     exit 1
   fi
+}
+
+# True (exit 0) when the plist contains no top-level entries — i.e. there is
+# nothing left to restore. Used after apply_filter to suppress backups whose
+# content has been entirely scrubbed.
+is_empty_plist() {
+  /usr/bin/python3 -c '
+import plistlib, sys
+with open(sys.argv[1], "rb") as fh:
+    data = plistlib.load(fh)
+if (isinstance(data, dict) and not data) or (isinstance(data, list) and not data):
+    sys.exit(0)
+sys.exit(1)
+' "$1"
+}
+
+# Strip PII / machine-specific keys from a backed-up plist.
+#
+# Filters live in ~/.defaults/.filters/:
+#   _global       — applied to every domain
+#   <domain>      — applied only to that domain (e.g. com.apple.mail)
+#
+# Filter file format (one entry per line, blank lines and `#` comments ignored):
+#   AccountOrdering              — literal KVC path from root (dot-separated)
+#   ~^NSWindow Frame .*$         — `~`-prefix marks a Python regex that
+#                                  matches keys by name at ANY depth
+#
+# Literals are precise; patterns walk the whole plist tree. Missing keys are
+# silently skipped, so filters can be over-specified safely.
+apply_filter() {
+  local domain="$1"
+  local backup_file="$2"
+  local filter_dir="$HOME/.defaults/.filters"
+
+  for f in "$filter_dir/_global" "$filter_dir/$domain"; do
+    [ -f "$f" ] || continue
+    local stripped_this
+    stripped_this=$(/usr/bin/python3 - "$backup_file" "$f" <<'PY'
+import plistlib, re, sys
+
+plist_path, filter_path = sys.argv[1], sys.argv[2]
+literals, patterns = [], []
+with open(filter_path) as fh:
+    for line in fh:
+        s = line.split("#", 1)[0].strip()
+        if not s:
+            continue
+        if s.startswith("~"):
+            patterns.append(re.compile(s[1:]))
+        else:
+            literals.append(s)
+
+with open(plist_path, "rb") as fh:
+    data = plistlib.load(fh)
+
+removed = 0
+
+# Literals: dotted KVC paths from root.
+for lit in literals:
+    parts = lit.split(".")
+    node = data
+    try:
+        for p in parts[:-1]:
+            node = node[p]
+        if isinstance(node, dict) and parts[-1] in node:
+            del node[parts[-1]]
+            removed += 1
+    except (KeyError, TypeError):
+        pass
+
+# Patterns: regex against key name at any depth (anchored / fullmatch).
+def strip(node):
+    global removed
+    if isinstance(node, dict):
+        for key in list(node.keys()):
+            if any(p.fullmatch(key) for p in patterns):
+                del node[key]
+                removed += 1
+            else:
+                strip(node[key])
+    elif isinstance(node, list):
+        for item in node:
+            strip(item)
+
+if patterns:
+    strip(data)
+
+with open(plist_path, "wb") as fh:
+    plistlib.dump(data, fh)
+
+print(removed)
+PY
+)
+    if [ "${stripped_this:-0}" -gt 0 ]; then
+      echo "  filter $(basename "$f"): stripped $stripped_this key(s)"
+    fi
+  done
+
+  # Re-emit as XML so the committed file stays text-diffable.
+  plutil -convert xml1 "$backup_file"
 }
 
 restore() {

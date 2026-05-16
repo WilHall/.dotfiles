@@ -1,0 +1,8 @@
+# Mail.app — values that remain after _global runs.
+#
+# NOTE: account UUIDs as top-level keys, CloudKit cache, "Last X" timestamps,
+# and CK*Time are all stripped by _global patterns.
+
+AccountOrdering
+DefaultViewerState.SelectedMailboxOutlineItems
+DefaultWindowState.dictionaryRepresentation.SelectedMailboxOutlineItems

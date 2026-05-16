@@ -1,0 +1,31 @@
+# Atuin — shell history manager (https://docs.atuin.sh)
+
+# UI
+dialect = "us"
+search_mode = "fuzzy"
+filter_mode = "global"
+inline_height = 25
+style = "compact"
+show_preview = true
+
+# When invoking ^R, search by prefix first, fall back to fuzzy.
+filter_mode_shell_up_key_binding = "session"
+
+# Don't record secrets-y commands automatically.
+history_filter = [
+  "^secret",
+  "^export .*TOKEN",
+  "^export .*SECRET",
+  "^export .*PASSWORD",
+  "^export .*API_KEY",
+]
+
+# Sync is opt-in. To enable against a self-hosted server:
+#   1. Set `sync_address = "https://atuin.example.com"` below
+#   2. `atuin register -u <username> -e <email> -p <password>`
+#   3. `atuin import auto`
+#   4. `atuin sync`
+# Or flip `auto_sync = true` to have the shell sync periodically.
+# sync_address = "https://api.atuin.sh"
+auto_sync = false
+sync_frequency = "10m"

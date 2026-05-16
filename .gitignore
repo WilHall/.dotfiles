@@ -1,11 +1,9 @@
-~
 .gnupg/*
 *~HEAD
 *.swp
 tmp/
 tags
 .env
-.config/yarn/global/yarn.lock
 test/support/**/*
 **/automatic_backups/
 **/node_modules/
@@ -13,14 +11,29 @@ yarn-error.json
 scratch/
 *.com
 *.zwc
-yalc.lock
 .yalc
 .npmrc
 .yarnrc
-_config/yarn/global/yarn.lock
 .elixir_ls/
-.tool-versions
-lazy-lock.json
+
+# Lock files — dotfiles repo shouldn't carry any app-level locks
+*.lock
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+bun.lockb
+deno.lock
+Gemfile.lock
+Pipfile.lock
+poetry.lock
+composer.lock
+flake.lock
+Cargo.lock
+*-lock.json
+*-lock.yaml
+*.lock.json
+*.lock.yaml
+
 *.class
 *.o
 *.so
@@ -47,6 +60,8 @@ lazy-lock.json
 **/*.user-ca-bundle
 **/*.merged-ca-bundle
 .vscode/extensions/**/*
+.vscode/argv.json
+.vscode/cli/
 plug.vim
 .vim/bundle/
 .vim/undo/
@@ -62,7 +77,46 @@ appconfig/Alfred/preferences/Alfred.alfredpreferences/snippets
 appconfig/Alfred/preferences/Alfred.alfredpreferences/workflows
 appconfig/Alfred/preferences/Alfred.alfredpreferences/remote
 appconfig/Trailer/Trailer Settings.trailerSettings
-Brewfile.lock.json
 .zsh/pure
 *.msix
 *.orig
+*.rej
+*.bak
+
+# Claude Code — auto-generated per-project state
+**/.claude/settings.local.json
+**/.claude/sessions/
+**/.claude/cache/
+**/.claude/file-history/
+**/.claude/paste-cache/
+**/.claude/projects/
+**/.claude/shell-snapshots/
+**/.claude/session-env/
+**/.claude/tasks/
+**/.claude/backups/
+**/.claude/downloads/
+**/.claude/ide/
+**/.claude/plugins/
+**/.claude/skills/
+**/.claude/telemetry/
+**/.claude/history.jsonl
+**/.claude/mcp-needs-auth-cache.json
+**/.claude/policy-limits.json
+**/.claude/remote-settings.json
+**/.claude/.last-cleanup
+
+# gh CLI — hosts.yml has the OAuth token
+**/.config/gh/hosts.yml
+
+# PowerToys — telemetry, cache, and MRU files that shouldn't be synced
+**/PowerToys/settings-telemetry.json
+**/PowerToys/experimentation.json
+**/PowerToys/UpdateState.json
+**/PowerToys/last_version_run.json
+**/PowerToys/oobe_settings.json
+**/PowerToys/PowerToys Run/Settings/QueryHistory.json
+**/PowerToys/PowerToys Run/Settings/ImageCache.json
+**/PowerToys/PowerToys Run/Settings/UserSelectedRecord.json
+**/PowerRename/replace-mru.json
+**/PowerRename/search-mru.json
+**/PowerRename/power-rename-last-run-data.json

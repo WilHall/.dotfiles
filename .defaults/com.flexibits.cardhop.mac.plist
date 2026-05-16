@@ -2,41 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AccountNamesExternalIDs</key>
-	<dict>
-		<key>account:0CA54B84-FCA9-4BA2-9653-58D405D25291</key>
-		<string>iCloud</string>
-		<key>account:3BED0317-C119-4DCA-9088-7AD4FAED1086</key>
-		<string>On My Mac</string>
-		<key>account:5EE13A91-B4C1-48FC-84BB-8BB2F39316A5</key>
-		<string>iCloud</string>
-		<key>account:6D61299C-876F-4352-B60C-E9294A7C2156</key>
-		<string>On My Mac</string>
-		<key>account:76C64EB9-BA94-4E71-BBEE-F474972CAECB</key>
-		<string>On My Mac</string>
-		<key>account:9721CA1F-C6BC-41E0-9B1B-7D2EA5010388</key>
-		<string>On My Mac</string>
-		<key>account:A5BC081E-0B28-42E5-9BC9-5830E7C9AA08</key>
-		<string>iCloud</string>
-		<key>account:B9031D95-3E53-4F82-ABD9-5C2C2CF5D7A3</key>
-		<string>iCloud</string>
-		<key>account:C648D998-BA80-4CA7-A025-8F48C34D1DB7</key>
-		<string>iCloud</string>
-		<key>account:CC7F5F36-A260-4F88-B030-5AB59B9C4DB5</key>
-		<string>iCloud</string>
-		<key>account:D9E25282-B92D-4AE8-8796-11F5F8CDE8B8</key>
-		<string>wil@wilhall.com</string>
-		<key>account:F194D77B-5E71-4907-BD30-D37425472966</key>
-		<string>On My Mac</string>
-	</dict>
 	<key>AddressFormat</key>
 	<string>us</string>
-	<key>AlwaysShowAccountInGroupSummary</key>
-	<true/>
-	<key>CardhopQuickContactWidgetChangeHash</key>
-	<integer>321030251729305571</integer>
 	<key>ContactListMaximumHeight</key>
-	<real>400</real>
+	<real>803</real>
 	<key>ContactTemplate</key>
 	<array>
 		<dict>
@@ -80,14 +49,8 @@
 			<string>addresses</string>
 		</dict>
 	</array>
-	<key>CrashReportEmail</key>
-	<string>wil@wilhall.com</string>
-	<key>CrashReportName</key>
-	<string>Wil Hall they/them</string>
 	<key>DarkModeTheme</key>
 	<integer>2</integer>
-	<key>DialActionMethod</key>
-	<string>mac</string>
 	<key>DidShowCardhop1UpgradeWindow</key>
 	<true/>
 	<key>FirstRunSetup</key>
@@ -106,78 +69,8 @@
 	<false/>
 	<key>HotKeyFlags</key>
 	<integer>1441792</integer>
-	<key>LastLaunchVersion</key>
-	<string>1350</string>
-	<key>LastSelectedContactIdentifiers</key>
-	<array>
-		<string>603C599A-1C50-4F81-A175-5A883BA2B9B2:ABPerson</string>
-	</array>
-	<key>LastSelectedTab</key>
-	<integer>2</integer>
-	<key>LastSelectedWidgetType</key>
-	<string>small</string>
 	<key>LightModeTheme</key>
 	<integer>0</integer>
-	<key>MSAppCenter310AppCenterUserDefaultsMigratedKey</key>
-	<true/>
-	<key>MSAppCenter310CrashesUserDefaultsMigratedKey</key>
-	<true/>
-	<key>MSAppCenterInstallId</key>
-	<string>3871956C-83E2-47ED-BE86-067992D80575</string>
-	<key>MSAppCenterNetworkRequestsAllowed</key>
-	<false/>
-	<key>MSAppCenterPastDevices</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBIYHCJQUVJTVFVWV1hZ
-	WltcXWJnVSRudWxs0g0ODxFaTlMub2JqZWN0c1YkY2xhc3OhEIACgBXTExQOFRYXXHRp
-	bWVzdGFtcEtleVlkZXZpY2VLZXmAA4AFgBTSGQ4aG1dOUy50aW1lI0HGOxmhrKwZgATS
-	HR4fIFokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRGF0ZaIfIVhOU09iamVjdN8QFyMkJSYO
-	JygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PDxBQjw8PDxHSElKPDxNTk9Zb3NWZXJzaW9u
-	XnRpbWVab25lT2Zmc2V0WGFwcEJ1aWxkXxAVbGl2ZVVwZGF0ZVBhY2thZ2VIYXNoWmFw
-	cFZlcnNpb25fEBF3cmFwcGVyU2RrVmVyc2lvbltjYXJyaWVyTmFtZVdzZGtOYW1lVmxv
-	Y2FsZV8QF2xpdmVVcGRhdGVEZXBsb3ltZW50S2V5XmNhcnJpZXJDb3VudHJ5Wm9zQXBp
-	TGV2ZWxed3JhcHBlclNka05hbWVXb2VtTmFtZVpzZGtWZXJzaW9uXGFwcE5hbWVzcGFj
-	ZVVtb2RlbF8QFXdyYXBwZXJSdW50aW1lVmVyc2lvbl8QFmxpdmVVcGRhdGVSZWxlYXNl
-	TGFiZWxac2NyZWVuU2l6ZVZvc05hbWVXb3NCdWlsZIALgA6AEYAAgBOAEIAAgACABoAN
-	gACAAIAAgACACYAHgBKACIAAgACAD4AKgAxfEA9hcHBjZW50ZXIubWFjb3NVNS4wLjJe
-	TWFjQm9va1BybzE4LDRVQXBwbGVVbWFjT1NWMTQuNi4xVTIzRzkzVWVuX1VTE///////
-	//8QWTUxMjB4MTQ0MFYyLjIuMTRUMTE4NF8QGWNvbS5mbGV4aWJpdHMuY2FyZGhvcC5t
-	YWPSHR5eX1pNU0FDRGV2aWNlo2BhIVpNU0FDRGV2aWNlXk1TQUNXcmFwcGVyU2Rr0h0e
-	Y2RfEBVNU0FDRGV2aWNlSGlzdG9yeUluZm+jZWYhXxAVTVNBQ0RldmljZUhpc3RvcnlJ
-	bmZvXxAPTVNBQ0hpc3RvcnlJbmZv0h0eaGleTlNNdXRhYmxlQXJyYXmjaGohV05TQXJy
-	YXkACAARABoAJAApADIANwBJAEwAUQBTAGwAcgB3AIIAiQCLAI0AjwCWAKMArQCvALEA
-	swC4AMAAyQDLANAA2wDkAOsA7gD3ASgBMgFBAUoBYgFtAYEBjQGVAZwBtgHFAdAB3wHn
-	AfIB/wIFAh0CNgJBAkgCUAJSAlQCVgJYAloCXAJeAmACYgJkAmYCaAJqAmwCbgJwAnIC
-	dAJ2AngCegJ8An4CkAKWAqUCqwKxArgCvgLEAs0C1wLeAuMC/wMEAw8DEwMeAy0DMgNK
-	A04DZgN4A30DjAOQAAAAAAAAAgEAAAAAAAAAawAAAAAAAAAAAAAAAAAAA5g=
-	</data>
-	<key>MSAppCenterSessionIdHistory</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
-	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
-	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxjsZoanOU4AE0h0eHyBaJGNsYXNzbmFt
-	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
-	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
-	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
-	SQBMAFEAUwBbAGEAZgBxAHgAegB8AH4AhQCSAJ8AoQCjAKUAqgCyALsAvQDCAM0A1gDd
-	AOAA6QDuAQcBCwEkATYBOwFKAU4AAAAAAAACAQAAAAAAAAArAAAAAAAAAAAAAAAAAAAB
-	Vg==
-	</data>
-	<key>MSAppCenterUserIdHistory</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGoCwwSGBwiIyhVJG51bGzSDQ4P
-	EVpOUy5vYmplY3RzViRjbGFzc6EQgAKAB9MTFA4VFhdcdGltZXN0YW1wS2V5WXVzZXJJ
-	ZEtleYADgAWABtIZDhobV05TLnRpbWUjQcY7GaGt522ABNIdHh8gWiRjbGFzc25hbWVY
-	JGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN0XxAPd2lsQHdpbGhhbGwuY29t0h0eJCVf
-	EBVNU0FDVXNlcklkSGlzdG9yeUluZm+jJichXxAVTVNBQ1VzZXJJZEhpc3RvcnlJbmZv
-	XxAPTVNBQ0hpc3RvcnlJbmZv0h0eKSpeTlNNdXRhYmxlQXJyYXmjKSshV05TQXJyYXkA
-	CAARABoAJAApADIANwBJAEwAUQBTAFwAYgBnAHIAeQB7AH0AfwCGAJMAnQCfAKEAowCo
-	ALAAuQC7AMAAywDUANsA3gDnAPkA/gEWARoBMgFEAUkBWAFcAAAAAAAAAgEAAAAAAAAA
-	LAAAAAAAAAAAAAAAAAAAAWQ=
-	</data>
 	<key>MeCardExternalID</key>
 	<string>contact:ECEC5A1B-2750-44B8-A5AF-7D43E3DD0652</string>
 	<key>MeCardExternalIDLocal</key>
@@ -185,31 +78,11 @@
 	<key>MiniWindowAttached</key>
 	<false/>
 	<key>MiniWindowVisible</key>
-	<false/>
-	<key>NSSplitView Subview Frames Group</key>
-	<array>
-		<string>0.000000, 0.000000, 163.000000, 648.000000, NO, NO</string>
-		<string>163.000000, 0.000000, 298.000000, 648.000000, NO, NO</string>
-	</array>
-	<key>NSSplitView Subview Frames Notes</key>
-	<array>
-		<string>0.000000, 0.000000, 350.000000, 294.000000, NO, NO</string>
-		<string>0.000000, 294.000000, 350.000000, 110.000000, NO, NO</string>
-	</array>
-	<key>NSTableViewCanEstimateRowHeights</key>
-	<false/>
-	<key>NSWindow Frame ContactPopover</key>
-	<string>2349 488 360 404 0 0 1800 1125 </string>
-	<key>NSWindow Frame Main Window</key>
-	<string>429 0 461 735 0 0 1512 944 </string>
-	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
-	<string>692 407 425 137 0 0 1440 875 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1073 762 620 398 0 0 2560 1415 </string>
+	<true/>
 	<key>OpenCallsIn</key>
-	<string>com.apple.FaceTime</string>
+	<string>com.apple.mobilephone</string>
 	<key>OpenMapsIn</key>
-	<string>google</string>
+	<string>apple</string>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<true/>
 	<key>PlaySounds</key>
@@ -218,15 +91,7 @@
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
-	<key>SULastCheckTime</key>
-	<date>2023-05-25T00:43:53Z</date>
-	<key>SULastProfileSubmissionDate</key>
-	<date>2023-05-21T22:24:59Z</date>
 	<key>SUSendProfileInfo</key>
-	<true/>
-	<key>SUUpdateGroupIdentifier</key>
-	<integer>2254488783</integer>
-	<key>SentryEnabled</key>
 	<true/>
 	<key>ShowActionButtons</key>
 	<true/>
@@ -240,5 +105,7 @@
 	<true/>
 	<key>VCardExportPhotos</key>
 	<true/>
+	<key>kAOSUIProfilePictureCropRect</key>
+	<string>{{0, 16}, {384, 384}}</string>
 </dict>
 </plist>

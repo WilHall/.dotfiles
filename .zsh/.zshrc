@@ -17,7 +17,6 @@ fi
 
 unset -v GEM_HOME
 
-fpath+=$HOME/.pure
 # Cursor/VS Code can spawn shells in non-interactive/non-TTY modes while probing
 # environment variables; pure prompt + zle can then fail and cause non-zero exit.
 if [[ -t 0 && -t 1 && -z "${VSCODE_IPC_HOOK-}" ]]; then
@@ -25,31 +24,40 @@ if [[ -t 0 && -t 1 && -z "${VSCODE_IPC_HOOK-}" ]]; then
   prompt pure 2>/dev/null || true
 fi
 
-if [[ "$PLATFORM" == "macos" ]]; then
-  source /opt/homebrew/share/antigen/antigen.zsh
-elif [[ "$PLATFORM" == "wsl" ]]; then
-  source /usr/share/zsh-antigen/antigen.zsh
+# ─── zinit (plugin manager) ──────────────────────────────────────────────
+ZINIT_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/zinit/zinit.git"
+if [[ ! -d "$ZINIT_HOME" ]]; then
+  mkdir -p "${ZINIT_HOME%/*}"
+  git clone --depth=1 https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
+source "$ZINIT_HOME/zinit.zsh"
 
-source ~/.zsh/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
-
-antigen use oh-my-zsh
-
-# Ensure oh-my-zsh cache completions dir exists (for asdf and other plugins)
+# Cache dir for compinit / completions
 mkdir -p "${ZSH_CACHE_DIR:-$HOME/.zsh/cache}/completions"
 
-antigen bundle asdf
-antigen bundle git
-antigen bundle heroku
-antigen bundle colored-man-pages
-antigen bundle dircycle
-antigen bundle mafredri/zsh-async@main
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-autosuggestions
-antigen bundle Aloxaf/fzf-tab
-antigen bundle zdharma-continuum/fast-syntax-highlighting
+# oh-my-zsh library + plugins (snippets — no oh-my-zsh framework needed)
+zinit snippet OMZL::completion.zsh
+zinit snippet OMZL::history.zsh
+zinit snippet OMZL::key-bindings.zsh
+zinit snippet OMZP::asdf
+zinit snippet OMZP::git
+zinit snippet OMZP::heroku
+zinit snippet OMZP::colored-man-pages
+zinit snippet OMZP::dircycle
 
-antigen apply
+# Standalone plugins
+zinit light mafredri/zsh-async
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+zinit light zdharma-continuum/fast-syntax-highlighting
+
+# Theme colors for fast-syntax-highlighting (must follow the plugin)
+source ~/.zsh/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+
+# Apply completions once after everything is loaded
+autoload -Uz compinit && compinit
+zinit cdreplay -q
 
 # Pre-generate asdf completions so they exist before first use (plugin writes async)
 if (( $+commands[asdf] )); then
@@ -95,7 +103,14 @@ bindkey "^[[1;3C" forward-word
 # Free C-s for tmux prefix (zsh incremental search forward); Atuin uses C-r and ↑ instead
 bindkey -r '^s'  # was history-incremental-search-forward (also lets tmux receive C-s as prefix)
 
-eval $(ssh-agent -s 2>/dev/null | grep -v '^echo ')
+# ssh-agent: macOS has a launchd-managed agent + Keychain integration via
+# `UseKeychain` in ~/.ssh/config — don't spawn a duplicate per shell. On other
+# platforms, only spawn if no usable agent is already attached.
+if [[ "$PLATFORM" != "macos" ]]; then
+  if [[ -z "${SSH_AUTH_SOCK:-}" ]] || ! ssh-add -l >/dev/null 2>&1; then
+    eval $(ssh-agent -s 2>/dev/null | grep -v '^echo ')
+  fi
+fi
 (gpg-agent --daemon 2>/dev/null)
 
 export _ZO_DOCTOR=0

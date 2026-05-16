@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BugsnagUserUserId</key>
-	<string>6ce54835f1f633fff61202b9e058fea6edbd26f8</string>
 	<key>ColorsAndFormatsShortCut</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -14,125 +12,113 @@
 	<array/>
 	<key>HistoryColors</key>
 	<array>
+		<string>FFFFFFFF</string>
+		<string>FFFBFBFF</string>
+		<string>F9FAFBFF</string>
+		<string>F3F4F6FF</string>
+		<string>303446FF</string>
 		<string>9797D7FF</string>
-		<string>F69F2BFF</string>
-		<string>9797D7FF</string>
-		<string>9A1F2FFF</string>
-		<string>F69F2BFF</string>
-		<string>257294FF</string>
-		<string>9999D8FF</string>
-		<string>9897D7FF</string>
-		<string>184E65FF</string>
-		<string>257295FF</string>
-		<string>8695C9FF</string>
-		<string>8694C9FF</string>
-		<string>E8CCBDFF</string>
-		<string>F7A736FF</string>
-		<string>F69F2BFF</string>
-		<string>E2A9AFFF</string>
-		<string>D05517FF</string>
-		<string>E2AAAEFF</string>
-		<string>EDA377FF</string>
-		<string>3A85A5FF</string>
-		<string>F5A030FF</string>
-		<string>3A85A5FF</string>
-		<string>D05517FF</string>
-		<string>D1541BFF</string>
-		<string>F6A02FFF</string>
-		<string>E2A9AEFF</string>
-		<string>3984A5FF</string>
-		<string>F69F2BFF</string>
-		<string>3984A5FF</string>
-		<string>CF5516FF</string>
-		<string>E2A9AEFF</string>
-		<string>F6A02FFF</string>
-		<string>E2A9AEFF</string>
-		<string>3984A5FF</string>
-		<string>CF5516FF</string>
-		<string>F6A02FFF</string>
-		<string>E2A9AEFF</string>
-		<string>CF5516FF</string>
-		<string>F6A02FFF</string>
-		<string>EDA276FF</string>
-		<string>CF5516FF</string>
-		<string>E2A9AEFF</string>
-		<string>F6A02FFF</string>
-		<string>E2A9AEFF</string>
-		<string>8694C9FF</string>
-		<string>8695C9FF</string>
-		<string>8694C9FF</string>
-		<string>666666FF</string>
-		<string>8695C9FF</string>
-		<string>257294FF</string>
-		<string>EFB16BFF</string>
-		<string>257294FF</string>
-		<string>8695C9FF</string>
-		<string>194E66FF</string>
-		<string>257294FF</string>
-		<string>F5B400FF</string>
-		<string>FBBC00FF</string>
-		<string>F5B400FF</string>
-		<string>444444FF</string>
-		<string>277293FF</string>
-		<string>EDB16BFF</string>
-		<string>8695CAFF</string>
-		<string>277293FF</string>
-		<string>8793C8FF</string>
+		<string>DAFBEAFF</string>
+		<string>EAFEF5FF</string>
+		<string>FCFCFCFF</string>
+		<string>EDB06BFF</string>
+		<string>008050FF</string>
+		<string>008052FF</string>
+		<string>EAEDF0FF</string>
+		<string>FFFFFFFF</string>
+		<string>6C7180FF</string>
+		<string>F74F9EFF</string>
+		<string>FEFF05FF</string>
+		<string>FF9631FF</string>
+		<string>81A975FF</string>
+		<string>0FA5EAFF</string>
+		<string>21668EFF</string>
+		<string>D4D4D4FF</string>
+		<string>D1D5DBFF</string>
+		<string>101827FF</string>
+		<string>6B7280FF</string>
+		<string>F9FAFBFF</string>
+		<string>E5E7EBFF</string>
+		<string>E5E7EAFF</string>
+		<string>6B7280FF</string>
+		<string>E6E7EBFF</string>
+		<string>E5E7EAFF</string>
+		<string>6B7280FF</string>
+		<string>F59E0CFF</string>
+		<string>F9FAFBFF</string>
+		<string>6B7280FF</string>
+		<string>D1D5DBFF</string>
+		<string>E5E7EBFF</string>
+		<string>D1D5DBFF</string>
+		<string>6B7280FF</string>
+		<string>008052FF</string>
+		<string>9CA3AFFF</string>
+		<string>6B7280FF</string>
+		<string>D1D5DBFF</string>
+		<string>D0D4DAFF</string>
+		<string>D1D5DBFF</string>
+		<string>6B7280FF</string>
+		<string>F9FAFBFF</string>
+		<string>6B7280FF</string>
+		<string>D1D5DBFF</string>
+		<string>9CA3AFFF</string>
+		<string>6B7280FF</string>
+		<string>10B981FF</string>
+		<string>6B7280FF</string>
+		<string>D1D5DBFF</string>
+		<string>D1D5DCFF</string>
+		<string>6B7280FF</string>
+		<string>111827FF</string>
+		<string>D1D5DBFF</string>
+		<string>F9FAFBFF</string>
+		<string>6B7280FF</string>
+		<string>F3F4F6FF</string>
+		<string>10B981FF</string>
+		<string>ECFDF5FF</string>
+		<string>F3F4F6FF</string>
+		<string>E5E7EBFF</string>
+		<string>9CA3AFFF</string>
+		<string>0D663AFF</string>
+		<string>0F663AFF</string>
+		<string>3296C3FF</string>
 		<string>027DB5FF</string>
-		<string>040404FF</string>
-		<string>2865ACFF</string>
-		<string>EA3E45FF</string>
-		<string>EFEFF0FF</string>
-		<string>010100FF</string>
-		<string>EDB16BFF</string>
-		<string>194F67FF</string>
+		<string>6DC9FFFF</string>
+		<string>F7AD31FF</string>
+		<string>10DD9AFF</string>
+		<string>F26868FF</string>
+		<string>FBF5F5FF</string>
+		<string>FEFEFEFF</string>
+		<string>F5F3F3FF</string>
+		<string>475569FF</string>
+		<string>E5E7EBFF</string>
+		<string>6B7280FF</string>
+		<string>111827FF</string>
+		<string>4F46E5FF</string>
+		<string>111827FF</string>
+		<string>1E293BFF</string>
+		<string>888B93FF</string>
+		<string>CC73E1FF</string>
+		<string>017E50FF</string>
+		<string>6EADC3FF</string>
+		<string>FFD2D7FF</string>
+		<string>BDC1C9FF</string>
+		<string>8694C9FF</string>
+		<string>C2C2E7FF</string>
+		<string>6D6DC7FF</string>
+		<string>9797D7FF</string>
+		<string>FFDAC1FF</string>
+		<string>FFA05FFF</string>
+		<string>FFB786FF</string>
+		<string>3196C3FF</string>
+		<string>194E65FF</string>
 		<string>257294FF</string>
-		<string>8694C9FF</string>
-		<string>267294FF</string>
-		<string>8794C9FF</string>
-		<string>267294FF</string>
-		<string>194F67FF</string>
-		<string>5075B7FF</string>
-		<string>194F67FF</string>
-		<string>194F66FF</string>
-		<string>257295FF</string>
-		<string>194F66FF</string>
-		<string>8694C9FF</string>
-		<string>3F5263FF</string>
-		<string>758F98FF</string>
-		<string>194F66FF</string>
-		<string>257295FF</string>
-		<string>194F66FF</string>
-		<string>257295FF</string>
-		<string>EEB06BFF</string>
-		<string>194F66FF</string>
-		<string>8694C9FF</string>
-		<string>758E96FF</string>
-		<string>1CD760FF</string>
-		<string>262625FF</string>
-		<string>807E7CFF</string>
-		<string>027580FF</string>
-		<string>807E7CFF</string>
-		<string>262625FF</string>
 	</array>
 	<key>NSColorPanelMode</key>
 	<string>6</string>
-	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 480.000000, 318.000000, NO, NO</string>
-		<string>0.000000, 319.000000, 480.000000, 48.000000, NO, NO</string>
-	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>10632</real>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>48 81 480 347 0 0 1440 875 </string>
+	<real>610</real>
 	<key>Paddle-ColorSnapper2-499167-SD</key>
-	<string>de178b5a9a00b1f6141720bfad1eb7f468c9750ad5ff1a6c84db956b6eec3af7</string>
+	<string>cc6a1f19fca4a2e8320c24687c25d198454175de3ca57745d5a9d9441bed8e11</string>
 	<key>PickColorShortCut</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -146,16 +132,12 @@
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
-	<key>SULastCheckTime</key>
-	<date>2025-07-26T14:25:18Z</date>
-	<key>SULastProfileSubmissionDate</key>
-	<date>2025-07-26T14:25:17Z</date>
 	<key>SUScheduledCheckInterval</key>
 	<real>43200</real>
 	<key>SUSendProfileInfo</key>
 	<true/>
 	<key>captureValue</key>
-	<real>32.775070190429688</real>
+	<real>51.35015869140625</real>
 	<key>codeStyle</key>
 	<dict>
 		<key>css</key>
@@ -204,7 +186,7 @@
 	<key>exportColorObject</key>
 	<false/>
 	<key>exportFormat</key>
-	<string>Generic Hex</string>
+	<string>CSS Hex</string>
 	<key>magnificationValue</key>
 	<real>4</real>
 	<key>openFormatsAfterPick</key>

@@ -1,0 +1,4 @@
+# Dock layout — apps and folders pinned. Machine-specific (depends on what's
+# installed). Strip to avoid restoring a layout referring to apps that may not
+# exist on the target machine.
+~^persistent-(apps|others)$

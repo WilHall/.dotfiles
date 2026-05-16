@@ -7,7 +7,7 @@ case "${UNAME}" in
   *)           export PLATFORM=unknown;;
 esac
 
-source ~/.auth
+[ -f ~/.auth ] && source ~/.auth
 
 # Do not override the emulator's TERM: forcing xterm-256color breaks true-color TUIs
 # (e.g. Atuin themes that use #hex — see https://github.com/atuinsh/atuin/issues/2827).
@@ -43,4 +43,6 @@ fi
 # Ensure asdf shims win over Homebrew/system binaries.
 # `brew shellenv` can reorder PATH, so do this after it.
 export PATH="$HOME/.local/bin:$HOME/.bin:$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
+
+typeset -U path PATH
 

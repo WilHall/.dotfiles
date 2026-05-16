@@ -23,41 +23,14 @@
 	<false/>
 	<key>NSStatusItem Visible TupleStatusBarItem</key>
 	<true/>
-	<key>NSWindow Frame webcamFrame</key>
-	<string>3625 1103 225 225 0 0 5120 1415 </string>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
-	<key>SULastCheckTime</key>
-	<date>2024-09-18T13:33:18Z</date>
-	<key>SUUpdateGroupIdentifier</key>
-	<integer>1943549101</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<true/>
-	<key>analyticsProfile</key>
-	<dict>
-		<key>email</key>
-		<string>wil@wilhall.com</string>
-		<key>id</key>
-		<integer>1598</integer>
-		<key>is_guest</key>
-		<true/>
-		<key>name</key>
-		<string>Wil Hall</string>
-		<key>paid</key>
-		<false/>
-		<key>sfu_support</key>
-		<string>enabled</string>
-		<key>team_id</key>
-		<integer>1244</integer>
-		<key>team_name</key>
-		<string>Tuple Guests</string>
-		<key>team_owner_email</key>
-		<string>joel+guest@tuple.app</string>
-	</dict>
 	<key>annotationMode</key>
 	<string>paint</string>
 	<key>audioDeviceManager</key>
@@ -101,20 +74,6 @@
 	<string>on</string>
 	<key>keyboardOffNotification</key>
 	<true/>
-	<key>lastPartialScreenRects</key>
-	<dict>
-		<key>7789-40571-490766</key>
-		<string>((0.257422, 0.000000), (0.495117, 1.000000))</string>
-	</dict>
-	<key>lastPreferencePane</key>
-	<string>general</string>
-	<key>lastUserSignalMessageDate</key>
-	<dict>
-		<key>clientID</key>
-		<string>54717</string>
-		<key>date</key>
-		<date>2022-04-12T15:12:53Z</date>
-	</dict>
 	<key>noiseSuppressionEnabled</key>
 	<false/>
 	<key>seenCameraPreview</key>
@@ -144,8 +103,6 @@
 			<string>Messages</string>
 		</dict>
 	</array>
-	<key>videoDeviceID</key>
-	<string>47B4B64B70674B9CAD2BAE273A71F4B5</string>
 	<key>webcam</key>
 	<dict>
 		<key>id</key>

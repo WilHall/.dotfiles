@@ -2,65 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>MSAppCenter310AppCenterUserDefaultsMigratedKey</key>
-	<true/>
-	<key>MSAppCenter310CrashesUserDefaultsMigratedKey</key>
-	<true/>
-	<key>MSAppCenterInstallId</key>
-	<string>3EE35F3E-6870-4B1A-B004-B3CE91BDC423</string>
-	<key>MSAppCenterPastDevices</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBULDBIYHCJQUVJTVFVWV1hZ
-	WltcYWZVJG51bGzSDQ4PEVpOUy5vYmplY3RzViRjbGFzc6EQgAKAFNMTFA4VFhdcdGlt
-	ZXN0YW1wS2V5WWRldmljZUtleYADgAWAE9IZDhobV05TLnRpbWUjQca/hwmsmTmABNId
-	Hh8gWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNEYXRloh8hWE5TT2JqZWN03xAXIyQlJg4n
-	KCkqKywtLi8wMTIzNDU2Nzg5Ojs8PTs8PEFCPDw8PEdISUo8PE1OT1lvc1ZlcnNpb25e
-	dGltZVpvbmVPZmZzZXRYYXBwQnVpbGRfEBVsaXZlVXBkYXRlUGFja2FnZUhhc2haYXBw
-	VmVyc2lvbl8QEXdyYXBwZXJTZGtWZXJzaW9uW2NhcnJpZXJOYW1lV3Nka05hbWVWbG9j
-	YWxlXxAXbGl2ZVVwZGF0ZURlcGxveW1lbnRLZXleY2FycmllckNvdW50cnlab3NBcGlM
-	ZXZlbF53cmFwcGVyU2RrTmFtZVdvZW1OYW1lWnNka1ZlcnNpb25cYXBwTmFtZXNwYWNl
-	VW1vZGVsXxAVd3JhcHBlclJ1bnRpbWVWZXJzaW9uXxAWbGl2ZVVwZGF0ZVJlbGVhc2VM
-	YWJlbFpzY3JlZW5TaXplVm9zTmFtZVdvc0J1aWxkgAuADoAQgACAEoAQgACAAIAGgA2A
-	AIAAgACAAIAJgAeAEYAIgACAAIAPgAqADF8QD2FwcGNlbnRlci5tYWNvc1U1LjAuNVdN
-	YWMxNiw4VUFwcGxlVW1hY09TVjE1LjMuMVUyNEQ3MFVlbl9VUxP/////////EFk1MTIw
-	eDE0NDBWMi41MC4xXxAVY29tLkRhblByaXN0dXBvdi5Gb3Jr0h0eXV5aTVNBQ0Rldmlj
-	ZaNfYCFaTVNBQ0RldmljZV5NU0FDV3JhcHBlclNka9IdHmJjXxAVTVNBQ0RldmljZUhp
-	c3RvcnlJbmZvo2RlIV8QFU1TQUNEZXZpY2VIaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
-	SW5mb9IdHmdoXk5TTXV0YWJsZUFycmF5o2dpIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
-	SQBMAFEAUwBrAHEAdgCBAIgAigCMAI4AlQCiAKwArgCwALIAtwC/AMgAygDPANoA4wDq
-	AO0A9gEnATEBQAFJAWEBbAGAAYwBlAGbAbUBxAHPAd4B5gHxAf4CBAIcAjUCQAJHAk8C
-	UQJTAlUCVwJZAlsCXQJfAmECYwJlAmcCaQJrAm0CbwJxAnMCdQJ3AnkCewJ9Ao8ClQKd
-	AqMCqQKwArYCvALFAs8C1gLuAvMC/gMCAw0DHAMhAzkDPQNVA2cDbAN7A38AAAAAAAAC
-	AQAAAAAAAABqAAAAAAAAAAAAAAAAAAADhw==
-	</data>
-	<key>MSAppCenterSessionIdHistory</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
-	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlcc2Vzc2lv
-	bklkS2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxr+HCathkYAE0h0eHyBaJGNsYXNzbmFt
-	ZVgkY2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFk1TQUNTZXNzaW9uSGlz
-	dG9yeUluZm+jJSYhXxAWTVNBQ1Nlc3Npb25IaXN0b3J5SW5mb18QD01TQUNIaXN0b3J5
-	SW5mb9IdHigpXk5TTXV0YWJsZUFycmF5oygqIVdOU0FycmF5AAgAEQAaACQAKQAyADcA
-	SQBMAFEAUwBbAGEAZgBxAHgAegB8AH4AhQCSAJ8AoQCjAKUAqgCyALsAvQDCAM0A1gDd
-	AOAA6QDuAQcBCwEkATYBOwFKAU4AAAAAAAACAQAAAAAAAAArAAAAAAAAAAAAAAAAAAAB
-	Vg==
-	</data>
-	<key>MSAppCenterUserIdHistory</key>
-	<data>
-	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGnCwwSGBwiJ1UkbnVsbNINDg8R
-	Wk5TLm9iamVjdHNWJGNsYXNzoRCAAoAG0xMUDhUWF1x0aW1lc3RhbXBLZXlZdXNlcklk
-	S2V5gAOAAIAF0hkOGhtXTlMudGltZSNBxr+HCatt0oAE0h0eHyBaJGNsYXNzbmFtZVgk
-	Y2xhc3Nlc1ZOU0RhdGWiHyFYTlNPYmplY3TSHR4jJF8QFU1TQUNVc2VySWRIaXN0b3J5
-	SW5mb6MlJiFfEBVNU0FDVXNlcklkSGlzdG9yeUluZm9fEA9NU0FDSGlzdG9yeUluZm/S
-	HR4oKV5OU011dGFibGVBcnJheaMoKiFXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABR
-	AFMAWwBhAGYAcQB4AHoAfAB+AIUAkgCcAJ4AoACiAKcArwC4ALoAvwDKANMA2gDdAOYA
-	6wEDAQcBHwExATYBRQFJAAAAAAAAAgEAAAAAAAAAKwAAAAAAAAAAAAAAAAAAAVE=
-	</data>
-	<key>NSNavLastUserSetHideExtensionButtonState</key>
-	<false/>
 	<key>NSOutlineView Items Sidebar_sagewell</key>
 	<array>
 		<string>Branches &gt; feature</string>
@@ -69,86 +10,12 @@
 	</array>
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<true/>
-	<key>NSSplitView Subview Frames CommitSheet_SidebarSplit</key>
-	<array>
-		<string>0.000000, 0.000000, 478.000000, 864.000000, NO, NO</string>
-		<string>479.000000, 0.000000, 741.000000, 864.000000, NO, NO</string>
-	</array>
-	<key>NSSplitView Subview Frames RepositoryController_ContentSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 1220.000000, 179.000000, NO, NO</string>
-		<string>0.000000, 180.000000, 1220.000000, 684.000000, NO, NO</string>
-	</array>
-	<key>NSSplitView Subview Frames RepositoryController_SidebarSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 249.000000, 944.000000, NO, NO</string>
-		<string>250.000000, 0.000000, 1220.000000, 944.000000, NO, NO</string>
-	</array>
-	<key>NSSplitView Subview Frames RevisionDetails_ChangesSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 323.000000, 626.000000, NO, NO</string>
-		<string>324.000000, 0.000000, 896.000000, 626.000000, NO, NO</string>
-	</array>
-	<key>NSSplitView Subview Frames RevisionDetails_FileTreeSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 243.000000, 1097.000000, NO, NO</string>
-		<string>244.000000, 0.000000, 2032.000000, 1097.000000, NO, NO</string>
-	</array>
-	<key>NSSplitView Subview Frames StageFileViewController_SplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 478.000000, 412.000000, NO, NO</string>
-		<string>0.000000, 413.000000, 478.000000, 430.000000, NO, NO</string>
-	</array>
-	<key>NSToolbar Configuration 24452ED6-13D2-4CDE-AD62-2D26B61D3241</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>2</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<true/>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSToolbar Configuration PreferencesMainToolbar</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>1</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame DiffPopUpWindowFrame</key>
-	<string>105 159 1000 600 0 0 1512 944 </string>
-	<key>NSWindow Frame ForkWindow</key>
-	<string>1416 123 1749 1125 0 0 5120 1415 </string>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>997 105 445 235 0 0 1512 944 </string>
-	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
-	<string>692 407 425 137 0 0 1512 944 </string>
-	<key>NSWindow Frame PreferencesWindowFrameAutoSaveName</key>
-	<string>500 445 508 427 0 0 1512 944 </string>
-	<key>NSWindow Frame RevisionDetailsWindow</key>
-	<string>1568 611 1024 600 0 0 5120 1415 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>933 990 400 135 0 0 1800 1125 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>470 409 620 398 0 0 1512 944 </string>
-	<key>NSWindow Frame SideBySideMergeController</key>
-	<string>2102 571 1026 592 0 0 5120 1415 </string>
 	<key>NSWindowTabbingShoudShowTabBarKey-NSWindow-Fork.ForkWindowController-Fork.ForkWindowController-HT-FS</key>
 	<true/>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
-	<key>SULastCheckTime</key>
-	<date>2025-07-26T15:21:45Z</date>
-	<key>SUUpdateGroupIdentifier</key>
-	<integer>553371983</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<true/>
 	<key>congratulationsDone2023</key>
@@ -157,22 +24,12 @@
 	<string>/Users/wilhall</string>
 	<key>deleteStashAfterApply</key>
 	<true/>
-	<key>diffFontName</key>
-	<string>ComicMonoRelaxedRegular</string>
-	<key>diffFontSize</key>
-	<real>12</real>
 	<key>diffShowChangeMarks</key>
 	<true/>
 	<key>enabledTabsOnFirstRun</key>
 	<true/>
 	<key>expandedRepositoryManagerItems</key>
 	<array>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>title</key>
-			<string>Services</string>
-		</dict>
 		<dict>
 			<key>children</key>
 			<array/>
@@ -200,6 +57,8 @@
 	<true/>
 	<key>migratedToFork2_41</key>
 	<true/>
+	<key>migratedToFork2_64</key>
+	<true/>
 	<key>migratedToMacOs111</key>
 	<true/>
 	<key>migratedToNewRepositoryManager</key>
@@ -208,12 +67,8 @@
 	<string>AB6A1A55-8DDC-4659-9913-470CA9E181E2</string>
 	<key>pushSheetPushAllTags</key>
 	<false/>
-	<key>recentPatchDirectory</key>
-	<string>/Users/wilhall/Downloads</string>
 	<key>revisionDetailsActiveTab</key>
 	<integer>1</integer>
-	<key>spaceCharacter</key>
-	<string>hyphen</string>
 	<key>terminalClient</key>
 	<integer>1</integer>
 	<key>theme</key>

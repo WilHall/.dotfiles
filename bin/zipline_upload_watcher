@@ -5,11 +5,11 @@ wait_for_cleanshot_to_close() {
         sleep 0.5
     done
 }
-osascript -e 'display notification "Zipline uploader started" with title "Screenshots will be automatically uploaded to zipline"' 
+osascript -e 'display notification "Zipline uploader started" with title "Screenshots will be automatically uploaded to zipline"'
 
-source /Users/wilhall/.auth
+source "$HOME/.auth"
 
-WATCH_PATH=/Users/wilhall/Pictures/Screenshots
+WATCH_PATH="$HOME/Pictures/Screenshots"
 mkdir -p "$WATCH_PATH"
 
 previously_uploaded_filenames=()

@@ -1,0 +1,307 @@
+#!/bin/zsh
+# dotctor — health-check the dotfiles installation.
+#
+#   dotctor                Read-only audit. Exits 0 on success, 1 if any errors.
+#   dotctor --fix          Apply safe auto-fixes (missing symlinks, .orig cleanup).
+#   dotctor -h | --help    Show this help.
+#
+# Checks:
+#   symlinks    — every tracked file/dir is symlinked into $HOME correctly
+#   brewfile    — Brewfile in sync with installed taps/brews/casks/mas
+#   asdf        — .tool-versions matches what's installed
+#   auth        — ~/.auth present, mode 600, exports required vars
+#   shell       — $SHELL is the configured target
+#   repo        — working tree clean, no stray .orig/.rej files
+#   secrets     — no plaintext private-key files lurking in the working tree
+
+set -u
+
+DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
+FIX=false
+
+if [ -t 1 ]; then
+  C_RED=$'\e[31m'; C_YELLOW=$'\e[33m'; C_GREEN=$'\e[32m'; C_DIM=$'\e[2m'; C_RESET=$'\e[0m'
+else
+  C_RED=''; C_YELLOW=''; C_GREEN=''; C_DIM=''; C_RESET=''
+fi
+
+usage() {
+  sed -n '2,/^$/p' "$0" | sed 's/^# \{0,1\}//'
+  exit ${1:-0}
+}
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --fix|-f)   FIX=true ;;
+    --help|-h)  usage 0 ;;
+    *)          echo "Unknown option: $1" >&2; usage 1 ;;
+  esac
+  shift
+done
+
+# ─── Result tracking ──────────────────────────────────────────────────────
+typeset -A LABELS
+typeset -a CHECK_ORDER
+typeset -A STATES MESSAGES FIX_HINTS
+
+result() {
+  # result <check> <state: ok|warn|err> [message] [fix_hint]
+  local check="$1" state="$2" msg="${3:-}" hint="${4:-}"
+  STATES[$check]="$state"
+  MESSAGES[$check]="$msg"
+  [ -n "$hint" ] && FIX_HINTS[$check]="$hint"
+}
+
+run_check() {
+  local check="$1" label="$2" fn="$3"
+  CHECK_ORDER+=("$check")
+  LABELS[$check]="$label"
+  "$fn"
+}
+
+# ─── check: symlinks ──────────────────────────────────────────────────────
+# Expected symlinks, mirroring bootstrap.d/60-symlinks.sh.
+
+EXPECTED_SYMLINKS=()
+# Top-level dotfiles (excluding .git, .gitignore, .claude per the bootstrap glob)
+for src in "$DOTFILES"/.*; do
+  name="${src##*/}"
+  case "$name" in
+    .|..|.git|.gitignore|.claude) continue ;;
+  esac
+  EXPECTED_SYMLINKS+=("$HOME/$name|$src")
+done
+# _config subdirs (excluding gh — file-level)
+for src in "$DOTFILES"/_config/*; do
+  name="${src##*/}"
+  [ "$name" = "gh" ] && continue
+  EXPECTED_SYMLINKS+=("$HOME/.config/$name|$src")
+done
+# Claude — file-level
+for name in CLAUDE.md settings.json rules; do
+  EXPECTED_SYMLINKS+=("$HOME/.claude/$name|$DOTFILES/.claude/$name")
+done
+# gh — file-level (config.yml only)
+EXPECTED_SYMLINKS+=("$HOME/.config/gh/config.yml|$DOTFILES/_config/gh/config.yml")
+# atuin — file-level (config.toml only)
+EXPECTED_SYMLINKS+=("$HOME/.config/atuin/config.toml|$DOTFILES/_config/atuin/config.toml")
+
+check_symlinks() {
+  local target src missing=0 mismatched=0 fixed=0
+  for entry in "${EXPECTED_SYMLINKS[@]}"; do
+    target="${entry%%|*}"
+    src="${entry##*|}"
+    if [ -L "$target" ] && [ "$(readlink "$target")" = "$src" ]; then
+      continue
+    fi
+    if [ -L "$target" ]; then
+      ((mismatched++))
+    elif [ ! -e "$target" ]; then
+      ((missing++))
+    else
+      ((mismatched++))  # exists as a real file/dir — conflict
+    fi
+    if $FIX && [ ! -e "$target" ] || [ -L "$target" ]; then
+      mkdir -p "$(dirname "$target")"
+      ln -sfn "$src" "$target" && ((fixed++))
+    fi
+  done
+
+  local total=$missing+$mismatched
+  if [ $((missing + mismatched)) -eq 0 ]; then
+    result symlinks ok "all ${#EXPECTED_SYMLINKS[@]} dotfile links healthy"
+  else
+    local msg=""
+    [ $missing -gt 0 ]    && msg="${msg}${missing} missing"
+    [ $mismatched -gt 0 ] && msg="${msg:+$msg, }${mismatched} mismatched"
+    if [ $fixed -gt 0 ]; then
+      result symlinks warn "$msg ($fixed auto-fixed)"
+    else
+      result symlinks err "$msg" "dotctor --fix"
+    fi
+  fi
+}
+
+# ─── check: brewfile ──────────────────────────────────────────────────────
+check_brewfile() {
+  if [ "$(uname)" != "Darwin" ]; then
+    result brewfile ok "skipped (not macOS)"
+    return
+  fi
+  if ! command -v brew >/dev/null; then
+    result brewfile err "brew not installed"
+    return
+  fi
+  local out rc
+  out=$(cd "$DOTFILES" && brew bundle check --verbose --file Brewfile 2>&1); rc=$?
+  if [ $rc -eq 0 ]; then
+    result brewfile ok "Brewfile in sync"
+  else
+    # Lines like "Casks not installed: foo, bar" or "X dependencies need to be installed."
+    local summary
+    summary=$(echo "$out" | grep -E 'not installed|need to be installed' | head -3 | tr '\n' ';' | sed 's/;$//')
+    result brewfile warn "${summary:-Brewfile drift detected}" "cd $DOTFILES && brew bundle"
+  fi
+}
+
+# ─── check: asdf ──────────────────────────────────────────────────────────
+check_asdf() {
+  if ! command -v asdf >/dev/null; then
+    result asdf err "asdf not installed"
+    return
+  fi
+  local versions_file="$DOTFILES/.tool-versions"
+  [ -f "$versions_file" ] || { result asdf warn "no .tool-versions"; return; }
+
+  local mismatches=()
+  while IFS=' ' read -r tool version _; do
+    [ -z "$tool" ] && continue
+    [[ "$tool" == \#* ]] && continue
+    if ! asdf where "$tool" "$version" >/dev/null 2>&1; then
+      mismatches+=("$tool $version")
+    fi
+  done < "$versions_file"
+
+  if [ ${#mismatches[@]} -eq 0 ]; then
+    result asdf ok "all .tool-versions installed"
+  else
+    result asdf err "${#mismatches[@]} tool(s) not installed at the pinned version: ${mismatches[*]}" "cd $DOTFILES && asdf install"
+  fi
+}
+
+# ─── check: auth ──────────────────────────────────────────────────────────
+check_auth() {
+  local auth="$HOME/.auth"
+  if [ ! -f "$auth" ]; then
+    result auth err "~/.auth does not exist" "./bootstrap <GH_TOKEN>"
+    return
+  fi
+  local mode
+  mode=$(stat -f '%Lp' "$auth" 2>/dev/null || stat -c '%a' "$auth" 2>/dev/null)
+  local issues=()
+  [ "$mode" != "600" ] && issues+=("mode is $mode (expect 600)")
+  for var in HOMEBREW_GITHUB_API_TOKEN ZIPLINE_TOKEN; do
+    grep -q "^export $var=" "$auth" || issues+=("missing export $var")
+  done
+  if [ ${#issues[@]} -eq 0 ]; then
+    result auth ok "present, mode 600, required vars exported"
+  else
+    result auth warn "${(j:; :)issues}" "chmod 600 ~/.auth; edit to add missing exports"
+  fi
+}
+
+# ─── check: shell ─────────────────────────────────────────────────────────
+check_shell() {
+  local expected
+  case "$(uname)" in
+    Darwin) expected="/opt/homebrew/bin/zsh" ;;
+    Linux)  expected="/usr/bin/zsh" ;;
+    *)      result shell warn "unknown platform: $(uname)"; return ;;
+  esac
+  local actual
+  actual=$(dscl . -read "/Users/$USER" UserShell 2>/dev/null | awk '{print $2}')
+  [ -z "$actual" ] && actual="$SHELL"
+  if [ "$actual" = "$expected" ]; then
+    result shell ok "default shell is $expected"
+  else
+    result shell warn "default shell is $actual, expected $expected" "sudo dscl . -create /Users/$USER UserShell $expected"
+  fi
+}
+
+# ─── check: repo ──────────────────────────────────────────────────────────
+check_repo() {
+  local issues=()
+
+  # Stray .orig / .rej files
+  local stray
+  stray=$(find "$DOTFILES" -type f \( -name '*.orig' -o -name '*.rej' \) -not -path '*/.git/*' 2>/dev/null)
+  if [ -n "$stray" ]; then
+    local n=$(echo "$stray" | wc -l | tr -d ' ')
+    issues+=("$n stray .orig/.rej file(s)")
+    if $FIX; then
+      echo "$stray" | xargs rm -f
+    fi
+  fi
+
+  # Working tree status
+  if ! git -C "$DOTFILES" diff --quiet || ! git -C "$DOTFILES" diff --cached --quiet; then
+    local n=$(git -C "$DOTFILES" status --porcelain | wc -l | tr -d ' ')
+    issues+=("$n uncommitted change(s)")
+  fi
+
+  if [ ${#issues[@]} -eq 0 ]; then
+    result repo ok "working tree clean"
+  else
+    result repo warn "${(j:; :)issues}" "cd $DOTFILES; review with 'git status'"
+  fi
+}
+
+# ─── check: secrets-in-tree (informational warning) ───────────────────────
+check_secrets() {
+  local found=()
+  while IFS= read -r f; do
+    found+=("$f")
+  done < <(find "$DOTFILES" \
+    \( -name '*.key' -o -name 'id_rsa' -o -name 'id_ed25519' -o -name 'credentials' -o -name 'credentials.json' \) \
+    -not -path '*/.git/*' \
+    -not -path '*/node_modules/*' 2>/dev/null)
+
+  if [ ${#found[@]} -eq 0 ]; then
+    result secrets ok "no private-key files in working tree"
+  else
+    local n=${#found[@]}
+    # Are they gitignored?
+    local all_ignored=true
+    for f in "${found[@]}"; do
+      git -C "$DOTFILES" check-ignore -q "$f" 2>/dev/null || all_ignored=false
+    done
+    if $all_ignored; then
+      result secrets warn "$n secret-like file(s) in tree (gitignored — defense-in-depth signal only)"
+    else
+      result secrets err "$n secret-like file(s) present and NOT gitignored — investigate before next git add"
+    fi
+  fi
+}
+
+# ─── Run all ──────────────────────────────────────────────────────────────
+run_check symlinks "symlinks"     check_symlinks
+run_check brewfile "brewfile"     check_brewfile
+run_check asdf     "asdf"         check_asdf
+run_check auth     "auth file"    check_auth
+run_check shell    "shell"        check_shell
+run_check repo     "repo"         check_repo
+run_check secrets  "secrets"      check_secrets
+
+# ─── Render report ────────────────────────────────────────────────────────
+n_ok=0; n_warn=0; n_err=0
+for check in "${CHECK_ORDER[@]}"; do
+  state="${STATES[$check]}"
+  label="${(r:18:)LABELS[$check]}"
+  msg="${MESSAGES[$check]:-}"
+  hint="${FIX_HINTS[$check]:-}"
+  case "$state" in
+    ok)
+      echo "${C_GREEN}✓${C_RESET} $label  $msg"
+      ((n_ok++))
+      ;;
+    warn)
+      echo "${C_YELLOW}⚠${C_RESET} $label  $msg"
+      [ -n "$hint" ] && echo "${C_DIM}                   → $hint${C_RESET}"
+      ((n_warn++))
+      ;;
+    err)
+      echo "${C_RED}✗${C_RESET} $label  $msg"
+      [ -n "$hint" ] && echo "${C_DIM}                   → $hint${C_RESET}"
+      ((n_err++))
+      ;;
+  esac
+done
+
+echo
+echo "${C_GREEN}$n_ok ok${C_RESET} · ${C_YELLOW}$n_warn warn${C_RESET} · ${C_RED}$n_err error${C_RESET}"
+
+if ! $FIX && [ $n_warn -gt 0 ]; then
+  echo "${C_DIM}Run 'dotctor --fix' to auto-apply safe fixes.${C_RESET}"
+fi
+
+[ $n_err -eq 0 ] && exit 0 || exit 1

@@ -17,7 +17,7 @@
 	<key>AppearanceDifferentiateTasksCountInDock</key>
 	<true/>
 	<key>AppearanceShowDockIcon</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>AppearanceSquishFaceInDock</key>
 	<true/>
 	<key>ApplyQuarantineAfterExtraction</key>
@@ -28,36 +28,6 @@
 	<true/>
 	<key>BackgroundQoSOnBattery</key>
 	<false/>
-	<key>Bookmarks</key>
-	<array>
-		<dict>
-			<key>Data</key>
-			<data>
-			Ym9va2QCAAAAAAQQMAAAAKIfwb0iED0N7sZcyU5Az62zOK7Bjt77
-			pcsVWRzV1+lrYAEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
-			AAAHAAAAAQEAAHdpbGhhbGwACAAAAAEGAAAQAAAAIAAAAAgAAAAE
-			AwAATE8AAAAAAAAIAAAABAMAAO97AAAAAAAACAAAAAEGAABAAAAA
-			UAAAAAgAAAAABAAAQcbyaAN53tAYAAAAAQIAAAIAAAAAAAAADwAA
-			AAAAAAAAAAAAAAAAAAgAAAAEAwAAAAAAAAAAAAAEAAAAAwMAAPUB
-			AAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
-			AAAABAMAAACQgpbnAAAACAAAAAAEAABBxuJWIQAAACQAAAABAQAA
-			MzQ2RjBBN0ItQzY2Qy00MjUyLTlFMDEtMDU0RjM3NTg5OEZBGAAA
-			AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8A
-			AAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAADAAAAAA
-			AAAABRAAAGAAAAAAAAAAEBAAAIAAAAAAAAAAQBAAAHAAAAAAAAAA
-			AiAAAEwBAAAAAAAABSAAALwAAAAAAAAAECAAAMwAAAAAAAAAESAA
-			AAABAAAAAAAAEiAAAOAAAAAAAAAAEyAAAPAAAAAAAAAAICAAACwB
-			AAAAAAAAMCAAAFgBAAAAAAAAAcAAAKAAAAAAAAAAEcAAACAAAAAA
-			AAAAEsAAALAAAAAAAAAAENAAAAQAAAAAAAAA
-			</data>
-			<key>External</key>
-			<false/>
-			<key>Path</key>
-			<string>/Users/wilhall</string>
-			<key>Stale</key>
-			<false/>
-		</dict>
-	</array>
 	<key>CalculateMD5</key>
 	<false/>
 	<key>CloseController</key>
@@ -81,7 +51,7 @@
 	<key>DefaultFormat</key>
 	<string>ZIP</string>
 	<key>DefaultMethod</key>
-	<integer>4</integer>
+	<integer>3</integer>
 	<key>DefaultNameController</key>
 	<integer>1</integer>
 	<key>DefaultSaveLocationController</key>
@@ -113,15 +83,13 @@
 	<key>ExportPassword</key>
 	<false/>
 	<key>ExtractOnIntermediateFolder</key>
-	<true/>
+	<false/>
 	<key>ExtractionExcludeMacForks</key>
-	<true/>
+	<false/>
 	<key>ExtractionFolderRenameExtension</key>
 	<true/>
-	<key>FallbackCustomPath</key>
-	<string>/Users/wilhall/Downloads</string>
 	<key>FallbackOption</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>FinderAfterCompression</key>
 	<true/>
 	<key>FinderAfterExtraction</key>
@@ -139,9 +107,7 @@
 	<key>KekaAskBeforeCancel</key>
 	<true/>
 	<key>KekaLaunchTimes</key>
-	<integer>2</integer>
-	<key>LastLogsCompressionDate</key>
-	<date>2025-07-25T13:08:31Z</date>
+	<integer>1</integer>
 	<key>Legacy19007zSupport</key>
 	<true/>
 	<key>LetsMoveDialog</key>
@@ -150,40 +116,6 @@
 	<false/>
 	<key>MaximumThreads</key>
 	<integer>0</integer>
-	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{800, 448}</string>
-	<key>NSToolbar Configuration AdvancedWindowToolbar</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>2</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<true/>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSToolbar Configuration PreferencesWindowToolbar</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>1</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<true/>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame AdvancedWindow</key>
-	<string>{{566, 482}, {336, 408}}</string>
-	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>397 307 800 448 0 0 1512 944 </string>
-	<key>NSWindow Frame PreferencesWindow</key>
-	<string>456 453 679 382 0 0 1512 944 </string>
-	<key>NSWindow Frame TasksWindow</key>
-	<string>577 636 404 96 0 0 1512 944 </string>
 	<key>OccasionallyRequestReview</key>
 	<true/>
 	<key>OldServicesChecked</key>
@@ -223,11 +155,11 @@
 	<key>SelectedTab</key>
 	<string>ZIP</string>
 	<key>SelectedTabDefaults</key>
-	<integer>1006</integer>
+	<integer>1005</integer>
 	<key>SetAsDefaultApp</key>
 	<false/>
 	<key>SetModificationDateAfterExtraction</key>
-	<true/>
+	<false/>
 	<key>ShowCompressionPassword</key>
 	<false/>
 	<key>ShowExtractionPassword</key>
@@ -271,7 +203,7 @@
 	<key>UseParentName</key>
 	<false/>
 	<key>VerifyCompression</key>
-	<true/>
+	<false/>
 	<key>Version</key>
 	<integer>5613</integer>
 	<key>WelcomeWindowSafeDelay</key>

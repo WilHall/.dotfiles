@@ -6,426 +6,276 @@
 	<array>
 		<string>CKAccountInfoCacheReset</string>
 	</array>
-	<key>CKStartupTime</key>
-	<integer>1753466134</integer>
-	<key>ExternalProtocolDialogShowAlwaysOpenCheckbox</key>
-	<true/>
 	<key>KronosStableTime</key>
 	<dict>
 		<key>Offset</key>
-		<real>-0.0073257684707641602</real>
+		<real>0.37887477874755859</real>
 		<key>Timestamp</key>
-		<real>1753562956.1484251</real>
+		<real>1762186708.993154</real>
 		<key>Uptime</key>
-		<real>14436.38164305687</real>
+		<real>34.742785930633545</real>
 	</dict>
-	<key>LastPiPPosition</key>
-	<data>
-	eyJhYnNvbHV0ZSI6eyJfMCI6W1sxMDkwLDE4Nl0sWzI1MiwxMjZdXX19
-	</data>
 	<key>LittleBrowserWindow_size</key>
 	<string>{1878, 1375}</string>
 	<key>ModalWindowController_rect</key>
-	<string>{{2903, 40}, {1878, 1375}}</string>
+	<string>{{42, 16}, {735, 928}}</string>
 	<key>NSAppSleepDisabled</key>
 	<true/>
-	<key>NSNavLastUserSetHideExtensionButtonState</key>
-	<false/>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{800, 448}</string>
-	<key>NSOSPLastRootDirectory</key>
-	<data>
-	Ym9va+gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAEA
-	AAQAAAADAwAAAAQAAAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAHdpbGhhbGwACAAAAAEB
-	AABQaWN0dXJlcwwAAAABBgAAEAAAACAAAAAwAAAACAAAAAQDAABMTwAAAAAAAAgAAAAE
-	AwAA73sAAAAAAAAIAAAABAMAAPJ7AAAAAAAADAAAAAEGAABUAAAAZAAAAHQAAAAIAAAA
-	AAQAAEHG4lYhAAAAGAAAAAECAAACAAAAAAAAAB8CAAAAAAAAHwIAAAAAAAAAAAAAAQUA
-	AAgAAAAEAwAAAQAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEB
-	AABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBxuOahQAAACQAAAAB
-	AQAAMzQ2RjBBN0ItQzY2Qy00MjUyLTlFMDEtMDU0RjM3NTg5OEZBGAAAAAECAACBAAAA
-	AQAAAO8TAAABAAAA7xMAAAEAAAABAAAAAQEAAC8AAAAwAAAAAQIAAGRuaWIAAAAAAQAA
-	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMRyb20CAAAAAAAAAPAAAAD+////AQAAAAAA
-	AAATAAAABBAAAEAAAAAAAAAABRAAAIQAAAAAAAAAEBAAAKgAAAAAAAAAQBAAAJgAAAAA
-	AAAAAiAAAHwBAAAAAAAABSAAAOwAAAAAAAAAECAAAPwAAAAAAAAAESAAADABAAAAAAAA
-	EiAAABABAAAAAAAAEyAAACABAAAAAAAAICAAAFwBAAAAAAAAMCAAAMgAAAAAAAAAAcAA
-	ANAAAAAAAAAAEcAAACAAAAAAAAAAEsAAAOAAAAAAAAAAAdAAAMgAAAAAAAAAENAAAAQA
-	AAAAAAAAF/AAADAAAAAAAAAAIvAAAIgBAAAAAAAA
-	</data>
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<true/>
-	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>378 248 800 408 0 0 1512 944 </string>
-	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
-	<string>692 407 425 137 0 0 1512 944 </string>
-	<key>NSWindow Frame Optional("company.thebrowser.Browser").browserExtensionWindowAutosaveFrame</key>
-	<string>1209 513 252 421 0 0 1512 944 </string>
-	<key>NSWindow Frame Optional("company.thebrowser.Browser").devToolsWindowAutosaveFrame</key>
-	<string>1758 37 1421 1378 0 0 5120 1415 </string>
-	<key>NSWindow Frame Optional("company.thebrowser.Browser").mainWindowAutosaveFrame</key>
-	<string>42 0 1469 944 0 0 1512 944 </string>
-	<key>NSWindow Frame Optional("company.thebrowser.Browser").webDialogWindowAutosaveFrame</key>
-	<string>274 142 1000 660 0 0 1512 944 </string>
-	<key>NSWindow Frame com.sindresorhus.Settings.FrameAutosaveName</key>
-	<string>421 276 684 590 0 0 1512 944 </string>
-	<key>NSWindow Frame company.browser.Settings.FrameAutosaveName</key>
-	<string>1387 576 684 590 0 0 5120 1415 </string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
-	<key>SULastCheckTime</key>
-	<date>2025-07-26T18:16:40Z</date>
-	<key>SUUpdateGroupIdentifier</key>
-	<integer>1501404373</integer>
 	<key>TopBarColorCache</key>
 	<dict>
-		<key>1198263548908535949</key>
-		<dict>
-			<key>Color</key>
-			<string>303032</string>
-			<key>LastUsed</key>
-			<real>775255988.20651495</real>
-		</dict>
-		<key>1321717861188068829</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F1</string>
-			<key>LastUsed</key>
-			<real>775247383.345837</real>
-		</dict>
-		<key>133934532827344359</key>
-		<dict>
-			<key>Color</key>
-			<string>F0F0F2</string>
-			<key>LastUsed</key>
-			<real>775246309.76830196</real>
-		</dict>
-		<key>1387728683328487149</key>
+		<key>1096344309743030035</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775246585.93211496</real>
 		</dict>
-		<key>154708870530561090</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775257963.01020098</real>
-		</dict>
-		<key>2101460838140232929</key>
+		<key>116304250515459946</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775247368.00799298</real>
 		</dict>
-		<key>2319908682000466691</key>
+		<key>1165245593960826075</key>
+		<dict>
+			<key>Color</key>
+			<string>FEFEFE</string>
+		</dict>
+		<key>1387678826868248665</key>
+		<dict>
+			<key>Color</key>
+			<string>F2F4F3</string>
+		</dict>
+		<key>1396778313188634969</key>
 		<dict>
 			<key>Color</key>
 			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775255842.316926</real>
 		</dict>
-		<key>2399979772956849180</key>
+		<key>1470550758948692072</key>
+		<dict>
+			<key>Color</key>
+			<string>F4F4F4</string>
+		</dict>
+		<key>1524855565953147864</key>
+		<dict>
+			<key>Color</key>
+			<string>FFFFFF</string>
+		</dict>
+		<key>1608213545493585094</key>
+		<dict>
+			<key>Color</key>
+			<string>F4F4F4</string>
+		</dict>
+		<key>1780387862583734402</key>
+		<dict>
+			<key>Color</key>
+			<string>575F6A</string>
+		</dict>
+		<key>1836313521031011940</key>
+		<dict>
+			<key>Color</key>
+			<string>FDFFFE</string>
+		</dict>
+		<key>1840104353773384632</key>
+		<dict>
+			<key>Color</key>
+			<string>F3F1F2</string>
+		</dict>
+		<key>1997146598496035749</key>
+		<dict>
+			<key>Color</key>
+			<string>F4F4F4</string>
+		</dict>
+		<key>2250766377637742512</key>
 		<dict>
 			<key>Color</key>
 			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775247657.318578</real>
 		</dict>
 		<key>246248198812101869</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775257648.72747898</real>
 		</dict>
-		<key>2777842798169383563</key>
+		<key>2488653144861539352</key>
 		<dict>
 			<key>Color</key>
 			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775241521.30451202</real>
 		</dict>
-		<key>282080618331905504</key>
+		<key>2558208313960099838</key>
 		<dict>
 			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775246003.427163</real>
+			<string>444444</string>
 		</dict>
-		<key>2905840578436179465</key>
+		<key>259263606069217139</key>
 		<dict>
 			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775247555.29335201</real>
+			<string>F4F4F4</string>
 		</dict>
-		<key>3235509647268543165</key>
-		<dict>
-			<key>Color</key>
-			<string>F6F6F6</string>
-			<key>LastUsed</key>
-			<real>775248056.57769096</real>
-		</dict>
-		<key>3468012832868811670</key>
-		<dict>
-			<key>Color</key>
-			<string>27282C</string>
-			<key>LastUsed</key>
-			<real>775256900.62571394</real>
-		</dict>
-		<key>4120951427347291751</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775246033.87674499</real>
-		</dict>
-		<key>461608616710679076</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775248293.23223805</real>
-		</dict>
-		<key>4633411297048693513</key>
+		<key>2878352750817986690</key>
 		<dict>
 			<key>Color</key>
 			<string>FFFFFF</string>
-			<key>LastUsed</key>
-			<real>775257942.27355504</real>
 		</dict>
-		<key>4998911637649088916</key>
+		<key>3377253662637102293</key>
 		<dict>
 			<key>Color</key>
-			<string>F5F5F5</string>
-			<key>LastUsed</key>
-			<real>775248493.97376394</real>
+			<string>E6E7EB</string>
 		</dict>
-		<key>500210320738932208</key>
+		<key>3492409115342541441</key>
 		<dict>
 			<key>Color</key>
-			<string>F2F4F3</string>
-			<key>LastUsed</key>
-			<real>775246614.52810502</real>
+			<string>FFFFFF</string>
 		</dict>
-		<key>5141322598173255830</key>
+		<key>3595087377823073381</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775246300.61164701</real>
 		</dict>
-		<key>5356239773935251773</key>
+		<key>3871552492025838935</key>
 		<dict>
 			<key>Color</key>
-			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775245884.79564297</real>
+			<string>F8FAF9</string>
 		</dict>
-		<key>5440893847294764786</key>
+		<key>4183981722340792924</key>
 		<dict>
 			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775245909.20044398</real>
+			<string>F5F3F4</string>
+		</dict>
+		<key>4286386762951079324</key>
+		<dict>
+			<key>Color</key>
+			<string>FFFFFF</string>
+		</dict>
+		<key>4364872304777383532</key>
+		<dict>
+			<key>Color</key>
+			<string>282828</string>
+		</dict>
+		<key>4916052868615602437</key>
+		<dict>
+			<key>Color</key>
+			<string>FFFFFF</string>
+		</dict>
+		<key>5032416154052780104</key>
+		<dict>
+			<key>Color</key>
+			<string>FAFAFA</string>
+		</dict>
+		<key>5277705240327219107</key>
+		<dict>
+			<key>Color</key>
+			<string>FFFFFF</string>
+		</dict>
+		<key>5292017979360138959</key>
+		<dict>
+			<key>Color</key>
+			<string>F1F4F9</string>
+		</dict>
+		<key>5406065223916377426</key>
+		<dict>
+			<key>Color</key>
+			<string>FFFFFF</string>
 		</dict>
 		<key>5580699352535044206</key>
 		<dict>
 			<key>Color</key>
-			<string>F3F5F4</string>
-			<key>LastUsed</key>
-			<real>775255338.86411095</real>
+			<string>F4F4F6</string>
 		</dict>
-		<key>5582661741157601123</key>
+		<key>5951555092195730938</key>
+		<dict>
+			<key>Color</key>
+			<string>FFFEFF</string>
+		</dict>
+		<key>6004894195629122122</key>
 		<dict>
 			<key>Color</key>
 			<string>FFFFFF</string>
-			<key>LastUsed</key>
-			<real>775257704.68941402</real>
-		</dict>
-		<key>5609216974508970287</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F5F4</string>
-			<key>LastUsed</key>
-			<real>775245830.41299999</real>
-		</dict>
-		<key>5703311564537303996</key>
-		<dict>
-			<key>Color</key>
-			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775254000.63001597</real>
 		</dict>
 		<key>6021518617690636187</key>
 		<dict>
 			<key>Color</key>
-			<string>F3F3F1</string>
-			<key>LastUsed</key>
-			<real>775257806.55418801</real>
+			<string>F3F4F6</string>
 		</dict>
-		<key>6224896247326642778</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775245925.68976796</real>
-		</dict>
-		<key>6291904555895830250</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F1</string>
-			<key>LastUsed</key>
-			<real>775246515.25024295</real>
-		</dict>
-		<key>6371631710171250923</key>
+		<key>6369940791051519091</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775258336.02083695</real>
 		</dict>
-		<key>6454985835545465462</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775247744.90287006</real>
-		</dict>
-		<key>6693859857623701520</key>
-		<dict>
-			<key>Color</key>
-			<string>F7F7F7</string>
-			<key>LastUsed</key>
-			<real>775241522.82718694</real>
-		</dict>
-		<key>6760162824608261292</key>
+		<key>6567534790216982097</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775246244.50812602</real>
 		</dict>
-		<key>6883673725645067282</key>
+		<key>6714475523399077067</key>
+		<dict>
+			<key>Color</key>
+			<string>F3F5F2</string>
+		</dict>
+		<key>6810154633346605265</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775246055.00657403</real>
 		</dict>
-		<key>6943301335518763329</key>
+		<key>6839192178083984485</key>
 		<dict>
 			<key>Color</key>
-			<string>F3F5F4</string>
-			<key>LastUsed</key>
-			<real>775246420.85296595</real>
+			<string>F4F4F4</string>
+		</dict>
+		<key>6899998750159442031</key>
+		<dict>
+			<key>Color</key>
+			<string>471888</string>
 		</dict>
 		<key>7051031494797743720</key>
 		<dict>
 			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775258318.03683305</real>
+			<string>FEFEFE</string>
 		</dict>
-		<key>7280418700676234326</key>
+		<key>7099202271261239417</key>
+		<dict>
+			<key>Color</key>
+			<string>B4C7FF</string>
+		</dict>
+		<key>7445887365873000502</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775247298.07842398</real>
 		</dict>
-		<key>7281215508658657084</key>
+		<key>7446796646598301177</key>
 		<dict>
 			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775253129.25645196</real>
+			<string>FFFFFF</string>
 		</dict>
-		<key>7318215543842810700</key>
+		<key>7672836840494622765</key>
 		<dict>
 			<key>Color</key>
-			<string>000000</string>
-			<key>LastUsed</key>
-			<real>775248003.53265905</real>
+			<string>FFFFFF</string>
 		</dict>
-		<key>7387785955376901881</key>
-		<dict>
-			<key>Color</key>
-			<string>C2DCEB</string>
-			<key>LastUsed</key>
-			<real>775258333.97174096</real>
-		</dict>
-		<key>7466430158797105152</key>
-		<dict>
-			<key>Color</key>
-			<string>3D3D3B</string>
-			<key>LastUsed</key>
-			<real>775248232.90661204</real>
-		</dict>
-		<key>7479179370429110317</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775246061.53147495</real>
-		</dict>
-		<key>7685097015077915686</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775246252.17902005</real>
-		</dict>
-		<key>7712089332050673898</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775259285.64756405</real>
-		</dict>
-		<key>798929294758896224</key>
+		<key>7930435315086739567</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775254052.71091604</real>
 		</dict>
 		<key>8149753705376996377</key>
 		<dict>
 			<key>Color</key>
 			<string>FFFFFF</string>
-			<key>LastUsed</key>
-			<real>775255351.41220403</real>
 		</dict>
-		<key>8179045515244919617</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775246004.96215403</real>
-		</dict>
-		<key>8391295757310170302</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775245961.94031703</real>
-		</dict>
-		<key>8494253917839145310</key>
-		<dict>
-			<key>Color</key>
-			<string>F3F3F3</string>
-			<key>LastUsed</key>
-			<real>775255930.01066697</real>
-		</dict>
-		<key>8705824760589146164</key>
+		<key>8583934062352438120</key>
 		<dict>
 			<key>Color</key>
 			<string>F4F4F4</string>
-			<key>LastUsed</key>
-			<real>775245987.67180097</real>
+		</dict>
+		<key>8817357798426151408</key>
+		<dict>
+			<key>Color</key>
+			<string>F4F4F4</string>
+		</dict>
+		<key>8830237205691206615</key>
+		<dict>
+			<key>Color</key>
+			<string>F4F4F2</string>
 		</dict>
 	</dict>
 	<key>appearance</key>
@@ -440,13 +290,17 @@
 		<array>
 			<string>com.todoist</string>
 		</array>
-		<key>apps.apple.com</key>
+		<key>betterhealthconnector.com</key>
 		<array>
-			<string>macappstores</string>
+			<string>tel</string>
 		</array>
 		<key>copilot.money</key>
 		<array>
 			<string>com.copilot.production</string>
+		</array>
+		<key>cursor.com</key>
+		<array>
+			<string>cursor</string>
 		</array>
 		<key>docs.github.com</key>
 		<array>
@@ -458,7 +312,6 @@
 		</array>
 		<key>github.com</key>
 		<array>
-			<string>neatapp</string>
 			<string>gitify</string>
 		</array>
 		<key>gitkraken.dev</key>
@@ -472,6 +325,10 @@
 		<key>marketplace.visualstudio.com</key>
 		<array>
 			<string>vscode</string>
+		</array>
+		<key>my.embracepetinsurance.com</key>
+		<array>
+			<string>tel</string>
 		</array>
 		<key>nordaccount.com</key>
 		<array>
@@ -502,6 +359,7 @@
 			<string>tel</string>
 			<string>tel</string>
 			<string>tel</string>
+			<string>tel</string>
 		</array>
 		<key>www.pumpkin.care</key>
 		<array>
@@ -516,7 +374,10 @@
 			<string>raycast</string>
 			<string>raycast</string>
 			<string>raycast</string>
-			<string>raycast</string>
+		</array>
+		<key>www.teva.com</key>
+		<array>
+			<string>tel</string>
 		</array>
 		<key>www.ups.com</key>
 		<array>
@@ -540,11 +401,11 @@
 		</array>
 	</dict>
 	<key>arcMaxAutoOptInEnabled</key>
-	<false/>
+	<true/>
 	<key>arc_quitAlwaysKeepsWindows</key>
 	<true/>
 	<key>askOnPageEnabled</key>
-	<false/>
+	<true/>
 	<key>autoArchiveTimeThreshold</key>
 	<string>thirtyDays</string>
 	<key>autoArchiveTimeThresholdsPerProfile</key>
@@ -555,7 +416,7 @@
 		<string>Profile 1</string>
 	</array>
 	<key>autoUpdateBannerDismissalCount</key>
-	<integer>5</integer>
+	<integer>9</integer>
 	<key>automaticUpdateWillRelaunchApp</key>
 	<false/>
 	<key>availableAppIconNames</key>
@@ -571,130 +432,26 @@
 	<false/>
 	<key>com.launchDarkly.ConnectionInformationStore.connectionInformationKey</key>
 	<data>
-	eyJjdXJyZW50Q29ubmVjdGlvbk1vZGUiOiJzdHJlYW1pbmciLCJsYXN0Q29ubmVjdGlv
-	bkZhaWx1cmVSZWFzb24iOnsidHlwZSI6Im5vbmUifSwibGFzdEZhaWxlZENvbm5lY3Rp
-	b24iOjc3NTI1MjcxNi42MDMxODV9
+	eyJjdXJyZW50Q29ubmVjdGlvbk1vZGUiOiJzdHJlYW1pbmciLCJsYXN0RmFpbGVkQ29u
+	bmVjdGlvbiI6NzgzODc5NTAwLjUzMjcxOSwibGFzdENvbm5lY3Rpb25GYWlsdXJlUmVh
+	c29uIjp7InR5cGUiOiJ1bmtub3duRXJyb3IiLCJwYXlsb2FkIjoiVGhlIHJlcXVlc3Qg
+	dGltZWQgb3V0LiJ9fQ==
 	</data>
 	<key>com.launchdarkly.DiagnosticCache.diagnosticData.mob-eb7cd033-956d-453a-ad51-8619c156cfee</key>
 	<data>
-	eyJkcm9wcGVkRXZlbnRzIjowLCJldmVudHNJbkxhc3RCYXRjaCI6Mywic3RyZWFtSW5p
-	dHMiOlt7ImR1cmF0aW9uTWlsbGlzIjoxMTQsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFt
-	cCI6MTc1MzU2Mjk1NTA5MH0seyJkdXJhdGlvbk1pbGxpcyI6MTM1LCJmYWlsZWQiOmZh
-	bHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjI5NTcwODh9LHsiZHVyYXRpb25NaWxsaXMiOjEy
-	OSwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTYzMDAwMjI1fSx7ImR1cmF0
-	aW9uTWlsbGlzIjoxNTksImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1MzU2MzA0
-	NzI4NX0seyJkdXJhdGlvbk1pbGxpcyI6MTYwLCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3Rh
-	bXAiOjE3NTM1NjMwOTI3OTB9LHsiZHVyYXRpb25NaWxsaXMiOjE2OCwiZmFpbGVkIjpm
-	YWxzZSwidGltZXN0YW1wIjoxNzUzNTYzMTI5Mjk4fSx7ImR1cmF0aW9uTWlsbGlzIjox
-	NDIsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1MzU2MzE1NDY3MH0seyJkdXJh
-	dGlvbk1pbGxpcyI6MTYzLCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjMx
-	OTMwMzl9LHsiZHVyYXRpb25NaWxsaXMiOjE0OSwiZmFpbGVkIjpmYWxzZSwidGltZXN0
-	YW1wIjoxNzUzNTYzMjE2MzEzfSx7ImR1cmF0aW9uTWlsbGlzIjoxMzQsImZhaWxlZCI6
-	ZmFsc2UsInRpbWVzdGFtcCI6MTc1MzU2MzI2Mjk2MH0seyJkdXJhdGlvbk1pbGxpcyI6
-	NjA5OTEsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1MzU2MzMyMzgxN30seyJk
-	dXJhdGlvbk1pbGxpcyI6MTIxNzk3LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3
-	NTM1NjMzODQ2MjN9LHsiZHVyYXRpb25NaWxsaXMiOjE4MjYxOCwiZmFpbGVkIjpmYWxz
-	ZSwidGltZXN0YW1wIjoxNzUzNTYzNDQ1NDQ0fSx7ImR1cmF0aW9uTWlsbGlzIjoyNDM3
-	NDYsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1MzU2MzUwNjU3Mn0seyJkdXJh
-	dGlvbk1pbGxpcyI6MTQ3LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjM1
-	MzIzNzJ9LHsiZHVyYXRpb25NaWxsaXMiOjE1NywiZmFpbGVkIjpmYWxzZSwidGltZXN0
-	YW1wIjoxNzUzNTYzNTU2NzAyfSx7ImR1cmF0aW9uTWlsbGlzIjo2MTA2NywiZmFpbGVk
-	IjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTYzNjE3NjEyfSx7ImR1cmF0aW9uTWlsbGlz
-	IjoxMjE5NjEsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1MzU2MzY3ODUwNn0s
-	eyJkdXJhdGlvbk1pbGxpcyI6MTI3LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3
-	NTM1NjM2OTM3NTJ9LHsiZHVyYXRpb25NaWxsaXMiOjExNCwiZmFpbGVkIjpmYWxzZSwi
-	dGltZXN0YW1wIjoxNzUzNTYzNjk2NDcyfSx7ImR1cmF0aW9uTWlsbGlzIjo2MTE4Niwi
-	ZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTYzNzU3NTQ0fSx7ImR1cmF0aW9u
-	TWlsbGlzIjoxNDIsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1MzU2Mzc2MTgw
-	NH0seyJkdXJhdGlvbk1pbGxpcyI6MTA3LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAi
-	OjE3NTM1NjM3NjIxNzl9LHsiZHVyYXRpb25NaWxsaXMiOjYxMjQ3LCJmYWlsZWQiOmZh
-	bHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjM4MjMzMTl9LHsiZHVyYXRpb25NaWxsaXMiOjEy
-	MjM0NywiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTYzODg0NDE5fSx7ImR1
-	cmF0aW9uTWlsbGlzIjoxODM1NDQsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1
-	MzU2Mzk0NTYxNn0seyJkdXJhdGlvbk1pbGxpcyI6MjQ0MzA3LCJmYWlsZWQiOmZhbHNl
-	LCJ0aW1lc3RhbXAiOjE3NTM1NjQwMDYzNzl9LHsiZHVyYXRpb25NaWxsaXMiOjMwNTE2
-	NiwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY0MDY3MjM4fSx7ImR1cmF0
-	aW9uTWlsbGlzIjoxMzAsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1MzU2NDA5
-	OTE5OX0seyJkdXJhdGlvbk1pbGxpcyI6MTQ3LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3Rh
-	bXAiOjE3NTM1NjQxMDg1Nzl9LHsiZHVyYXRpb25NaWxsaXMiOjYwOTI2LCJmYWlsZWQi
-	OmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjQxNjkzNTh9LHsiZHVyYXRpb25NaWxsaXMi
-	OjEyMTgwNSwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY0MjMwMjM3fSx7
-	ImR1cmF0aW9uTWlsbGlzIjoxMzgsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1
-	MzU2NDI2MTcwM30seyJkdXJhdGlvbk1pbGxpcyI6MTkzLCJmYWlsZWQiOmZhbHNlLCJ0
-	aW1lc3RhbXAiOjE3NTM1NjQyNzAxNTJ9LHsiZHVyYXRpb25NaWxsaXMiOjYxMzA1LCJm
-	YWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjQzMzEyNjR9LHsiZHVyYXRpb25N
-	aWxsaXMiOjEyMjI4NSwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY0Mzky
-	MjQ0fSx7ImR1cmF0aW9uTWlsbGlzIjoxODMzMTksImZhaWxlZCI6ZmFsc2UsInRpbWVz
-	dGFtcCI6MTc1MzU2NDQ1MzI3OH0seyJkdXJhdGlvbk1pbGxpcyI6MjQ0NDc3LCJmYWls
-	ZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjQ1MTQ0MzZ9LHsiZHVyYXRpb25NaWxs
-	aXMiOjMwNTcyMCwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY0NTc1Njc5
-	fSx7ImR1cmF0aW9uTWlsbGlzIjozNjY1MzUsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFt
-	cCI6MTc1MzU2NDYzNjQ5NH0seyJkdXJhdGlvbk1pbGxpcyI6NDI3NzgxLCJmYWlsZWQi
-	OmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjQ2OTc3NDB9LHsiZHVyYXRpb25NaWxsaXMi
-	OjQ4ODY1OCwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY0NzU4NjE3fSx7
-	ImR1cmF0aW9uTWlsbGlzIjo1NDk4MzgsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6
-	MTc1MzU2NDgxOTc5N30seyJkdXJhdGlvbk1pbGxpcyI6MTMwLCJmYWlsZWQiOmZhbHNl
-	LCJ0aW1lc3RhbXAiOjE3NTM1NjQ4MjM2OTh9LHsiZHVyYXRpb25NaWxsaXMiOjYwODk3
-	LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjQ4ODQ0NjV9LHsiZHVyYXRp
-	b25NaWxsaXMiOjEyMTczMSwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY0
-	OTQ1Mjk5fSx7ImR1cmF0aW9uTWlsbGlzIjoxNDAsImZhaWxlZCI6ZmFsc2UsInRpbWVz
-	dGFtcCI6MTc1MzU2NDk4NDk5N30seyJkdXJhdGlvbk1pbGxpcyI6MTM0LCJmYWlsZWQi
-	OmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjUwMzkzMjV9LHsiZHVyYXRpb25NaWxsaXMi
-	OjYxMTgwLCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjUxMDAzNzF9LHsi
-	ZHVyYXRpb25NaWxsaXMiOjE4NiwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUz
-	NTY1MTExMTM5fSx7ImR1cmF0aW9uTWlsbGlzIjoxMjUsImZhaWxlZCI6ZmFsc2UsInRp
-	bWVzdGFtcCI6MTc1MzU2NTE0MjkxOX0seyJkdXJhdGlvbk1pbGxpcyI6MjE3LCJmYWls
-	ZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjUxNTc5Mzd9LHsiZHVyYXRpb25NaWxs
-	aXMiOjE0MiwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY1MTgxMjQwfSx7
-	ImR1cmF0aW9uTWlsbGlzIjo2MTM1MiwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjox
-	NzUzNTY1MjQyNDUwfSx7ImR1cmF0aW9uTWlsbGlzIjoxMjIzNjEsImZhaWxlZCI6ZmFs
-	c2UsInRpbWVzdGFtcCI6MTc1MzU2NTMwMzQ1OX0seyJkdXJhdGlvbk1pbGxpcyI6MTgz
-	MTc5LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjUzNjQyNzd9LHsiZHVy
-	YXRpb25NaWxsaXMiOjI0NDM5OCwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUz
-	NTY1NDI1NDk2fSx7ImR1cmF0aW9uTWlsbGlzIjoxODcsImZhaWxlZCI6ZmFsc2UsInRp
-	bWVzdGFtcCI6MTc1MzU2NTQzNTY1Nn0seyJkdXJhdGlvbk1pbGxpcyI6MjMzLCJmYWls
-	ZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjU0Mzc3NDh9LHsiZHVyYXRpb25NaWxs
-	aXMiOjYyNDI1LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjU0OTk5NDB9
-	LHsiZHVyYXRpb25NaWxsaXMiOjE0NCwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjox
-	NzUzNTY1NTA3NzkxfSx7ImR1cmF0aW9uTWlsbGlzIjoyMjIsImZhaWxlZCI6ZmFsc2Us
-	InRpbWVzdGFtcCI6MTc1MzU2NTUzNzA1N30seyJkdXJhdGlvbk1pbGxpcyI6MTMwLCJm
-	YWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjU1Mzc5NjV9LHsiZHVyYXRpb25N
-	aWxsaXMiOjEzNywiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY1NTM5OTc1
-	fSx7ImR1cmF0aW9uTWlsbGlzIjo2MTEzNywiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1w
-	IjoxNzUzNTY1NjAwOTc1fSx7ImR1cmF0aW9uTWlsbGlzIjoxMjIxMDQsImZhaWxlZCI6
-	ZmFsc2UsInRpbWVzdGFtcCI6MTc1MzU2NTY2MTk0Mn0seyJkdXJhdGlvbk1pbGxpcyI6
-	MTgyOTY1LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjU3MjI4MDN9LHsi
-	ZHVyYXRpb25NaWxsaXMiOjI0NDAxMSwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjox
-	NzUzNTY1NzgzODQ5fSx7ImR1cmF0aW9uTWlsbGlzIjozMDUwOTYsImZhaWxlZCI6ZmFs
-	c2UsInRpbWVzdGFtcCI6MTc1MzU2NTg0NDkzNH0seyJkdXJhdGlvbk1pbGxpcyI6MzY2
-	MTE3LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjU5MDU5NTV9LHsiZHVy
-	YXRpb25NaWxsaXMiOjQyNzQxMiwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUz
-	NTY1OTY3MjUwfSx7ImR1cmF0aW9uTWlsbGlzIjo0ODg0OTgsImZhaWxlZCI6ZmFsc2Us
-	InRpbWVzdGFtcCI6MTc1MzU2NjAyODMzNn0seyJkdXJhdGlvbk1pbGxpcyI6NTQ5NzYy
-	LCJmYWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjYwODk2MDB9LHsiZHVyYXRp
-	b25NaWxsaXMiOjYxMTM3NCwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY2
-	MTUxMjEyfSx7ImR1cmF0aW9uTWlsbGlzIjo2NzI0NDIsImZhaWxlZCI6ZmFsc2UsInRp
-	bWVzdGFtcCI6MTc1MzU2NjIxMjI4MH0seyJkdXJhdGlvbk1pbGxpcyI6NzM0NTUwLCJm
-	YWlsZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjYyNzQzODh9LHsiZHVyYXRpb25N
-	aWxsaXMiOjc5NTc2OCwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY2MzM1
-	NjA2fSx7ImR1cmF0aW9uTWlsbGlzIjo4NTY3NjcsImZhaWxlZCI6ZmFsc2UsInRpbWVz
-	dGFtcCI6MTc1MzU2NjM5NjYwNX0seyJkdXJhdGlvbk1pbGxpcyI6OTE3NTIxLCJmYWls
-	ZWQiOmZhbHNlLCJ0aW1lc3RhbXAiOjE3NTM1NjY0NTczNTl9LHsiZHVyYXRpb25NaWxs
-	aXMiOjIzMiwiZmFpbGVkIjpmYWxzZSwidGltZXN0YW1wIjoxNzUzNTY2NDg0MzcxfSx7
-	ImR1cmF0aW9uTWlsbGlzIjoyMTgsImZhaWxlZCI6ZmFsc2UsInRpbWVzdGFtcCI6MTc1
-	MzU2NjQ5MjI4OH0seyJkdXJhdGlvbk1pbGxpcyI6MTQwLCJmYWlsZWQiOmZhbHNlLCJ0
-	aW1lc3RhbXAiOjE3NTM1NjY0OTU0OTV9XSwiZGF0YVNpbmNlRGF0ZSI6MTc1MzU2Mjk1
-	NDk2MywiaW5zdGFuY2VJZCI6IjE1RkQxMzFCLUQ1RUUtNEJGNS1BOEQxLUI3OEI4QjFD
-	OUI3MSJ9
+	eyJkYXRhU2luY2VEYXRlIjoxNzYyMTg4NzIzNDQxLCJkcm9wcGVkRXZlbnRzIjowLCJl
+	dmVudHNJbkxhc3RCYXRjaCI6MCwiaW5zdGFuY2VJZCI6IkQwMzkxMDAxLTc1QzktNDRD
+	MS05QkU5LUVFRThEODREMkJENiIsInN0cmVhbUluaXRzIjpbeyJmYWlsZWQiOmZhbHNl
+	LCJ0aW1lc3RhbXAiOjE3NjIxODg3MjM1NzYsImR1cmF0aW9uTWlsbGlzIjoxMjh9XX0=
 	</data>
 	<key>cronPreviewEnabled</key>
 	<false/>
 	<key>currentAppIconName</key>
 	<string>arc.candy</string>
 	<key>currentUpdateAvailableSince</key>
-	<date>2025-07-24T21:25:17Z</date>
+	<date>2025-10-31T21:09:56Z</date>
 	<key>currentUpdateDownloadedSince</key>
-	<date>2025-07-24T21:25:21Z</date>
+	<date>2025-10-31T21:10:00Z</date>
 	<key>devModeReloadState</key>
 	<string>reload</string>
 	<key>didSetDefaultGoogleMeetRoute</key>
@@ -702,8 +459,6 @@
 	<key>didSyncArchiveTime</key>
 	<true/>
 	<key>didSyncArchiveTimesPerProfile</key>
-	<true/>
-	<key>disableHistoryClusters</key>
 	<true/>
 	<key>eligibleToSeeAutoArchiveEducationBanner</key>
 	<false/>
@@ -714,14 +469,9 @@
 	<key>firebaseUpgradeKeychain10_4_0_to_10_5_0</key>
 	<true/>
 	<key>githubLiveFolderSSOPreferences</key>
-	<dict>
-		<key>118B6E6C-72FF-4AA9-A6F3-87F4ECCEF0C0</key>
-		<true/>
-		<key>297CC7F4-437C-4393-AC79-51FBA784C282</key>
-		<true/>
-	</dict>
+	<dict/>
 	<key>globalLittleBrowserHotkeyEnabled</key>
-	<true/>
+	<false/>
 	<key>gptSiteSearchEnabled</key>
 	<false/>
 	<key>hasAutoInstalledJsonFormatterExtension</key>
@@ -737,17 +487,13 @@
 	<key>hasTurnedOffGithubLiveFolder</key>
 	<true/>
 	<key>hoverCardsEnabled</key>
-	<false/>
+	<true/>
 	<key>instantLinksEnabled</key>
-	<false/>
-	<key>ldDeviceIdentifier</key>
-	<string>1C41FF8B-91EA-426D-AF9D-DE91EEEBF44B</string>
+	<true/>
 	<key>ldGeneratedContextKey:ld_device</key>
 	<string>C95C4A10-A8B1-4FA1-8BEE-B694DE575008</string>
 	<key>littleBrowserNUXPresentationCount</key>
 	<integer>2</integer>
-	<key>machineID</key>
-	<string>EBA5E4B4-BCA3-426F-9C8C-B8B3AE81AD7C</string>
 	<key>migratedToTabOnlySiteSearchTrigger</key>
 	<true/>
 	<key>nativeAdBlockEnabled</key>
@@ -765,7 +511,7 @@
 	<key>renameDownloadsEnabled</key>
 	<false/>
 	<key>renamePinnedTabsEnabled</key>
-	<false/>
+	<true/>
 	<key>restartClientServiceShouldBeAllowed</key>
 	<false/>
 	<key>seededPopularSiteSearches</key>
@@ -776,12 +522,8 @@
 	<true/>
 	<key>shouldWarnBeforeQuitting</key>
 	<false/>
-	<key>siteSearchUpsellLastSeen</key>
-	<date>2025-07-26T16:42:15Z</date>
-	<key>superCopyUpsellLastSeen</key>
-	<date>2025-07-24T19:20:31Z</date>
 	<key>tidyTabsEnabled</key>
-	<false/>
+	<true/>
 	<key>toolbarShowFullURLsEnabledPreference</key>
 	<true/>
 	<key>topAppsEmptyStateDismissedForProfiles</key>
@@ -790,8 +532,6 @@
 		<string>Profile 1</string>
 	</array>
 	<key>topBarURLEnabled</key>
-	<true/>
-	<key>wasFirebaseUserAvailableLastSession</key>
 	<true/>
 </dict>
 </plist>

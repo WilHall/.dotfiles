@@ -37,7 +37,7 @@ vim.cmd [[
 
     " undo
     set undofile
-    set undodir=$HOME/.configs/undo
+    set undodir=$HOME/.config/undo
     set undolevels=10000
     set undoreload=20000
 

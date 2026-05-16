@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AKLastIDMSEnvironment</key>
-	<integer>0</integer>
-	<key>AKLastLocale</key>
-	<string>en_US</string>
 	<key>AppleAccentColor</key>
 	<integer>6</integer>
 	<key>AppleAntiAliasingThreshold</key>
@@ -14,6 +10,10 @@
 	<integer>1</integer>
 	<key>AppleHighlightColor</key>
 	<string>1.000000 0.749020 0.823529 Pink</string>
+	<key>AppleIconAppearanceCustomTintColor</key>
+	<string>1.000000 0.475000 0.721851 1.000000</string>
+	<key>AppleIconAppearanceTintColor</key>
+	<string>Other</string>
 	<key>AppleKeyboardUIMode</key>
 	<integer>2</integer>
 	<key>AppleLanguages</key>
@@ -23,13 +23,11 @@
 	<key>AppleLanguagesDidMigrate</key>
 	<string>13.4.1</string>
 	<key>AppleLanguagesSchemaVersion</key>
-	<integer>4000</integer>
+	<integer>5400</integer>
 	<key>AppleLocale</key>
 	<string>en_US</string>
 	<key>AppleMeasurementUnits</key>
 	<string>Inches</string>
-	<key>AppleMenuBarVisibleInFullscreen</key>
-	<true/>
 	<key>AppleMetricUnits</key>
 	<false/>
 	<key>AppleMiniaturizeOnDoubleClick</key>
@@ -37,7 +35,7 @@
 	<key>ApplePressAndHoldEnabled</key>
 	<string>0</string>
 	<key>AppleReduceDesktopTinting</key>
-	<true/>
+	<false/>
 	<key>AppleScrollerPagingBehavior</key>
 	<true/>
 	<key>AppleShowAllExtensions</key>
@@ -48,11 +46,6 @@
 	<string>Fahrenheit</string>
 	<key>AppleWindowTabbingMode</key>
 	<string>always</string>
-	<key>CFRKS</key>
-	<dict>
-		<key>DomainCategory</key>
-		<real>9310500</real>
-	</dict>
 	<key>CGDisableCursorLocationMagnification</key>
 	<true/>
 	<key>KB_DoubleQuoteOption</key>
@@ -76,35 +69,36 @@
 	<false/>
 	<key>NSAutomaticTextCompletionEnabled</key>
 	<true/>
-	<key>NSLinguisticDataAssetsRequestLastInterval</key>
-	<real>86400</real>
+	<key>NSFKS</key>
+	<dict>
+		<key>DomainCategory</key>
+		<real>9103900</real>
+	</dict>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2025-07-26T16:50:06Z</date>
+	<date>2026-05-16T20:10:02Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>en</string>
-		<string>nb</string>
-		<string>nn</string>
-		<string>nl</string>
-		<string>de</string>
-		<string>fr</string>
-		<string>it</string>
-		<string>vi</string>
 		<string>en_US</string>
+		<string>de</string>
+		<string>vi</string>
+		<string>nl</string>
+		<string>it</string>
+		<string>pl</string>
+		<string>mul</string>
+		<string>mul_Latn</string>
+		<string>es</string>
 	</array>
 	<key>NSLinguisticDataAssetsRequestedByChecker</key>
 	<array>
 		<string>en</string>
-		<string>nb</string>
-		<string>nn</string>
-		<string>nl</string>
 		<string>de</string>
-		<string>fr</string>
-		<string>it</string>
 		<string>vi</string>
+		<string>nl</string>
+		<string>it</string>
+		<string>pl</string>
+		<string>es</string>
 	</array>
-	<key>NSNavPanelFileLastListModeForOpenModeKey</key>
-	<integer>1</integer>
 	<key>NSNavPanelFileListModeForOpenMode2</key>
 	<integer>1</integer>
 	<key>NSPreferredWebServices</key>
@@ -123,8 +117,6 @@
 	<true/>
 	<key>NSSpellCheckerInputAnalyticsTime</key>
 	<date>2024-09-16T21:44:54Z</date>
-	<key>NSTableViewDefaultSizeMode</key>
-	<integer>2</integer>
 	<key>NSUserDictionaryReplacementItems</key>
 	<array>
 		<dict>
@@ -209,7 +201,10 @@
 		</dict>
 	</array>
 	<key>NSUserKeyEquivalents</key>
-	<dict/>
+	<dict>
+		<key>Auto-call with iPhone</key>
+		<string>@~^=</string>
+	</dict>
 	<key>NSUserQuotesArray</key>
 	<array>
 		<string>“</string>
@@ -221,6 +216,8 @@
 	<integer>1</integer>
 	<key>PKOrderManagementDisabled</key>
 	<true/>
+	<key>UIPreferredContentSizeCategoryName</key>
+	<string>UICTContentSizeCategoryXL</string>
 	<key>WebAutomaticSpellingCorrectionEnabled</key>
 	<false/>
 	<key>com.apple.finder.SyncExtensions</key>
@@ -245,17 +242,13 @@
 				<string>file:///Users/wilhall/Pictures/</string>
 				<string>file:///Users/wilhall/Documents/</string>
 				<string>file:///Users/wilhall/Desktop/</string>
+				<string>file:///System/Volumes/Update/SFR/mnt1/</string>
+				<string>file:///System/Volumes/Update/mnt1/</string>
+				<string>file:///Library/Developer/CoreSimulator/Cryptex/Images/bundle/SimRuntimeBundle-C161922F-44DA-4F82-A4DA-12C30A5F6DA3/</string>
+				<string>file:///Library/Developer/CoreSimulator/Volumes/iOS_22E238/</string>
 			</array>
 		</dict>
 	</dict>
-	<key>com.apple.gms.availability.key</key>
-	<data>
-	YnBsaXN0MDChARACCAoAAAAAAAABAQAAAAAAAAACAAAAAAAAAAAAAAAAAAAADA==
-	</data>
-	<key>com.apple.gms.availability.osEligibilityReasons</key>
-	<array>
-		<integer>1</integer>
-	</array>
 	<key>com.apple.mouse.scaling</key>
 	<real>0.875</real>
 	<key>com.apple.sound.beep.feedback</key>
@@ -270,5 +263,7 @@
 	<true/>
 	<key>com.apple.trackpad.scaling</key>
 	<real>1</real>
+	<key>shouldShowRSVPDataDetectors</key>
+	<false/>
 </dict>
 </plist>

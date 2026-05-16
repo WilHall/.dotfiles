@@ -6,41 +6,98 @@
 	<array>
 		<string>CKAccountInfoCacheReset</string>
 	</array>
-	<key>CKStartupTime</key>
-	<integer>1753548519</integer>
-	<key>MASPreferences Frame Top Left</key>
-	<string>{497, 835}</string>
-	<key>MASPreferences Selected Identifier View</key>
-	<string>PreferencesPreferences</string>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>5568</real>
-	<key>askAfterInactivity</key>
-	<real>900</real>
+	<real>654</real>
+	<key>cachedUserRecordID</key>
+	<string>_f6022dd8d00a83b38d9a295fe51ebfc8</string>
+	<key>dataRetention</key>
+	<string>90</string>
 	<key>deduplicatedActivities</key>
 	<true/>
 	<key>deduplicatedDays</key>
 	<true/>
-	<key>dialogTimeInterval</key>
-	<real>900</real>
-	<key>displayedDashboardBannerLastAt</key>
-	<date>2025-07-26T21:45:34Z</date>
+	<key>defaultDashboardType</key>
+	<integer>4</integer>
 	<key>groupsViewWidth</key>
 	<real>250</real>
+	<key>hasSeen2025InReviewMAW</key>
+	<true/>
 	<key>installationID</key>
-	<string>E14D9B6B-7B9B-42EC-9A45-6D4F495C66B3</string>
+	<string>FBB38817-846B-4854-A580-A49DB3FE1273</string>
 	<key>introductionShown</key>
 	<true/>
-	<key>lastAppVersionWhenOpeningDashboard</key>
-	<string>1.24.0</string>
 	<key>migratedEnabledAndHiddenToArchived</key>
 	<true/>
+	<key>previousRatedVersion</key>
+	<string>1.25.0</string>
+	<key>previouslyDenied</key>
+	<date>2025-12-09T17:01:34Z</date>
 	<key>previouslyDeniedForNewsletterSubscription</key>
-	<date>2025-07-26T16:51:45Z</date>
-	<key>promotionalOfferLastDisplayedAsDialog_Year_Subscription_Extended_Trial_1W_Yearly</key>
-	<date>2025-07-26T16:01:15Z</date>
-	<key>timeRounding</key>
-	<integer>15</integer>
+	<date>2025-11-19T20:01:15Z</date>
+	<key>queuedDatesForUpload</key>
+	<array/>
+	<key>schedulerData</key>
+	<array>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>endTime</key>
+			<date>2025-11-19T17:30:00Z</date>
+			<key>startTime</key>
+			<date>2025-11-19T09:00:00Z</date>
+		</dict>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>endTime</key>
+			<date>2025-11-19T17:30:00Z</date>
+			<key>startTime</key>
+			<date>2025-11-19T09:00:00Z</date>
+		</dict>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>endTime</key>
+			<date>2025-11-19T17:30:00Z</date>
+			<key>startTime</key>
+			<date>2025-11-19T09:00:00Z</date>
+		</dict>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>endTime</key>
+			<date>2025-11-19T17:30:00Z</date>
+			<key>startTime</key>
+			<date>2025-11-19T09:00:00Z</date>
+		</dict>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>endTime</key>
+			<date>2025-11-19T17:30:00Z</date>
+			<key>startTime</key>
+			<date>2025-11-19T09:00:00Z</date>
+		</dict>
+		<dict>
+			<key>enabled</key>
+			<false/>
+			<key>endTime</key>
+			<date>2025-11-19T17:30:00Z</date>
+			<key>startTime</key>
+			<date>2025-11-19T09:00:00Z</date>
+		</dict>
+		<dict>
+			<key>enabled</key>
+			<false/>
+			<key>endTime</key>
+			<date>2025-11-19T17:30:00Z</date>
+			<key>startTime</key>
+			<date>2025-11-19T09:00:00Z</date>
+		</dict>
+	</array>
 	<key>translucentEffect</key>
 	<true/>
+	<key>webApi</key>
+	<false/>
 </dict>
 </plist>

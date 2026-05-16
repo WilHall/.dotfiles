@@ -1,0 +1,4 @@
+# Personal home-dir paths in Finder sync extensions array.
+# (All other globalDomain PII — UUIDs, CK state, gms availability — is covered
+# by _global patterns.)
+com.apple.finder.SyncExtensions

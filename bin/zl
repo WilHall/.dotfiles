@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /Users/wilhall/.auth
+source "$HOME/.auth"
 
 for RELATIVE_FILE_PATH in "$@"; do
   FILE_PATH=$(realpath "$RELATIVE_FILE_PATH")

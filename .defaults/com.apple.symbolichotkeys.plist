@@ -627,8 +627,8 @@
 			<dict>
 				<key>parameters</key>
 				<array>
-					<integer>53</integer>
-					<integer>23</integer>
+					<integer>57</integer>
+					<integer>25</integer>
 					<integer>1048576</integer>
 				</array>
 				<key>type</key>

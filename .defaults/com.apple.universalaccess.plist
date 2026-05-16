@@ -2,123 +2,42 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>History</key>
+	<key>AccessibilityReaderHotkey</key>
 	<dict>
-		<key>MouseKeys</key>
-		<array>
-			<dict>
-				<key>Date</key>
-				<string>2025-05-26 09:36:36</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-05-26 09:36:39</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-05-26 09:36:39</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-05-26 12:37:32</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-05-26 12:37:33</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-05-26 12:37:33</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-07-21 10:48:10</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-07-24 15:36:53</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-07-24 16:06:28</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-07-25 13:57:22</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-07-25 13:58:05</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-07-25 13:58:05</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-07-25 14:16:29</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<string>2025-07-26 12:49:53</string>
-				<key>Reason</key>
-				<string>Reset</string>
-				<key>State</key>
-				<false/>
-			</dict>
-		</array>
+		<key>AX_READER_HOTKEY_VIEW_IN_READER</key>
+		<dict>
+			<key>charCode</key>
+			<integer>65535</integer>
+			<key>keyCode</key>
+			<integer>53</integer>
+			<key>modifiers</key>
+			<integer>1048576</integer>
+		</dict>
+	</dict>
+	<key>FontSizeCategory</key>
+	<dict>
+		<key>com.apple.MobileSMS</key>
+		<string>UseGlobal</string>
+		<key>com.apple.Notes</key>
+		<string>UseGlobal</string>
+		<key>com.apple.finder</key>
+		<string>Custom</string>
+		<key>com.apple.iBooksX</key>
+		<string>UseGlobal</string>
+		<key>com.apple.iCal</key>
+		<string>UseGlobal</string>
+		<key>com.apple.mail</key>
+		<string>UseGlobal</string>
+		<key>com.apple.news</key>
+		<string>UseGlobal</string>
+		<key>com.apple.stocks</key>
+		<string>UseGlobal</string>
+		<key>com.apple.weather</key>
+		<string>UseGlobal</string>
+		<key>global</key>
+		<string>L</string>
+		<key>version</key>
+		<string>3.0</string>
 	</dict>
 	<key>closeViewCustomHotkeyKey</key>
 	<dict>
@@ -168,8 +87,12 @@
 			<integer>1572864</integer>
 		</dict>
 	</dict>
+	<key>closeViewDesiredZoomFactor</key>
+	<real>1.0263162851333618</real>
 	<key>closeViewHotkeysEnabled</key>
 	<true/>
+	<key>closeViewSmoothImages</key>
+	<false/>
 	<key>closeViewSplitScreenRatio</key>
 	<real>0.20000000000000001</real>
 	<key>closeViewZoomDisplayID</key>
@@ -178,24 +101,61 @@
 	<real>1</real>
 	<key>closeViewZoomFactorBeforeTermination</key>
 	<real>1</real>
+	<key>closeViewZoomScreenShareEnabledKey</key>
+	<false/>
+	<key>closeViewZoomedIn</key>
+	<false/>
 	<key>com.apple.custommenu.apps</key>
 	<array>
+		<string>com.google.Chrome</string>
 		<string>com.apple.mail</string>
 		<string>NSGlobalDomain</string>
 	</array>
-	<key>displaysLastCursorLocation</key>
+	<key>cursorFill</key>
 	<dict>
-		<key>1</key>
-		<dict>
-			<key>X</key>
-			<real>530.64453125</real>
-			<key>Y</key>
-			<real>42.359375</real>
-		</dict>
+		<key>alpha</key>
+		<real>1</real>
+		<key>blue</key>
+		<real>0.83225953578948975</real>
+		<key>green</key>
+		<real>0.79041457176208496</real>
+		<key>red</key>
+		<real>0.9422113299369812</real>
 	</dict>
+	<key>cursorIsCustomized</key>
+	<true/>
+	<key>cursorOutline</key>
+	<dict>
+		<key>alpha</key>
+		<real>1</real>
+		<key>blue</key>
+		<real>0.0</real>
+		<key>green</key>
+		<real>0.0</real>
+		<key>red</key>
+		<real>0.0</real>
+	</dict>
+	<key>customFonts</key>
+	<true/>
+	<key>differentiateWithoutColor</key>
+	<true/>
+	<key>grayscale</key>
+	<false/>
+	<key>grayscaleMigrated</key>
+	<true/>
+	<key>headMouseSensitivity</key>
+	<real>0.5</real>
+	<key>headMouseTolerance</key>
+	<real>0.0</real>
+	<key>hoverColorEnabled</key>
+	<false/>
 	<key>hoverTextEnabled</key>
 	<false/>
 	<key>hoverTypingEnabled</key>
+	<false/>
+	<key>hudNotifiedConstrast</key>
+	<real>0.0</real>
+	<key>increaseContrast</key>
 	<false/>
 	<key>keyboardAccessCommandMap</key>
 	<data>
@@ -212,9 +172,29 @@
 	<real>15</real>
 	<key>keyboardAccessPassthroughMode</key>
 	<false/>
+	<key>liveSpeechEnabled</key>
+	<false/>
 	<key>login</key>
 	<false/>
+	<key>reduceTransparency</key>
+	<false/>
 	<key>sessionChange</key>
+	<false/>
+	<key>showToolbarButtonShapes</key>
+	<true/>
+	<key>showWindowTitlebarIcons</key>
+	<true/>
+	<key>slowKey</key>
+	<false/>
+	<key>slowKeyDelay</key>
+	<integer>250</integer>
+	<key>speakSelectionEnabled</key>
+	<true/>
+	<key>stickyKey</key>
+	<false/>
+	<key>useStickyKeysShortcutKeys</key>
+	<false/>
+	<key>voiceOverOnOffKey</key>
 	<false/>
 </dict>
 </plist>

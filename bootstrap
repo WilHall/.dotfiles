@@ -1,297 +1,70 @@
 #!/bin/zsh
+#
+# Modular bootstrap — sources every step under bootstrap.d/ and runs them in
+# the order shown in `bootstrap()` below. Re-runnable (most steps are
+# idempotent); pass a GitHub PAT on first run only.
 
 if [ "$#" -ne 1 ] && [ ! -f "$HOME/.auth" ]; then
-	echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>"
-	exit 1
+  echo "Usage: ./bootstrap <DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN>"
+  exit 1
 fi
 
 DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN=$1
 SETUP_HOMEBREW=false
-detect_platform() {
-	UNAME=$(uname -a)
-	case "${UNAME}" in
-		*microsoft*) PLATFORM=wsl;;
-		*Darwin*)    PLATFORM=macos;;
-		*Linux*)     PLATFORM=linux;;
-		*)           PLATFORM=unknown;;
-	esac
-}
+DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd -P)"
 
-configure_shell_options() {
-	if [ -n "$ZSH_VERSION" ]; then
-		setopt extended_glob
-	elif [ -n "$BASH_VERSION" ];
-	then shopt -s extglob
-		fi
-	}
-
-create_auth_dotfile() {
-  if [ ! -f "$HOME/.auth" ]; then
-    SETUP_HOMEBREW=true
-  cat > "$HOME/.auth" <<- OUT
-export HOMEBREW_GITHUB_API_TOKEN=$DOTFILES_GITHUB_PERSONAL_ACCESS_TOKEN
-OUT
-  fi
-}
-
-install_xcode_cli() {
-  if [ $PLATFORM = 'macos' ]; then
-    xcode-select -p 1>/dev/null
-    if [[ $? != 0 ]]; then
-      xcode-select --install
-    fi
-  fi
-}
-
-mas_install() {
-  mas_bundle_install
-}
-
-pip_install() {
-  pip install -r $HOME/.dotfiles/requirements.txt
-}
-
-winget_install() {
-  winget.exe install $(<$HOME/.dotfiles/wingetpkgs) --disable-interactivity --accept-package-agreements --accept-source-agreements
-}
-
-aptitude_install() {
-sudo add-apt-repository ppa:wslutilities/wslu
-  curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
-  sudo add-apt-repository ppa:neovim-ppa/unstable -y
-  source /etc/os-release
-  wget -O $HOME/tmp/packages-microsoft-prod.deb https://packages.microsoft.com/config/ubuntu/$VERSION_ID/packages-microsoft-prod.deb
-  sudo dpkg -i $HOME/tmp/packages-microsoft-prod.deb
-
-  sudo apt-get install ca-certificates curl gnupg
-  sudo install -m 0755 -d /etc/apt/keyrings
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-  sudo chmod a+r /etc/apt/keyrings/docker.gpg
-  echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-  echo 'deb http://download.opensuse.org/repositories/shells:/zsh-users:/zsh-completions/xUbuntu_22.04/ /' | sudo tee /etc/apt/sources.list.d/shells:zsh-users:zsh-completions.list
-  curl -fsSL https://download.opensuse.org/repositories/shells:zsh-users:zsh-completions/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_zsh-users_zsh-completions.gpg > /dev/null
-
-  sudo apt-get update
-  xargs sudo apt-get -y install < $HOME/.dotfiles/aptpkglist
-}
-
-manual_install() {
-  powershell.exe -C "Add-AppxPackage -Path $(wslpath -w $HOME/.dotfiles/msix)/affinity-photo-2.3.1.msix"
-  powershell.exe -C "Add-AppxPackage -Path $(wslpath -w $HOME/.dotfiles/msix)/affinity-designer-2.3.1.msix"
-  powershell.exe -C "Add-AppxPackage -Path $(wslpath -w $HOME/.dotfiles/msix)/affinity-publisher-2.3.1.msix"
-  wget https://dl.todesktop.com/210203cqcj00tw1/windows/nsis/x64 -O $HOME/.tmp/morgen.exe && chmod +x $HOME/tmp/morgen.exe && $HOME/tmp/morgen.exe
-
-  if [ ! -f /usr/local/bin/fx ]; then
-    curl https://fx.wtf/install.sh | sudo sh
-  fi
-
-  if [ ! -f $HOME/bin/unused ]; then
-    wget -O $HOME/tmp/unused.tar.gz https://github.com/unused-code/unused/releases/download/0.4.0/unused-0.4.0-x86_64-unknown-linux-musl.tar.gz
-    tar -xf $HOME/tmp/unused.tar.gz --strip-components=1 -C $HOME/bin
-  fi
-
-  if [ ! -d $HOME/.pure ]; then
-    git clone https://github.com/sindresorhus/pure.git "$HOME/.pure"
-  fi
-
-  chmod +x $HOME/bin/*
-}
-
-configure_gpg() {
-  echo "----------"
-  echo "INSTRUCTIONS:"
-  echo "1. Select pinentry-tty from the prompt"
-  echo "2. Complete the rest of the prompts"
-  echo "3. Run 'gpg --list-secret-keys --keyid-format LONG'"
-  echo "4. From the output line 'sec   XXXXX/<LONG_KEY> XXXX-XX-XX [expires: XXXX-XX-XX]' copy <LINK_KEY>"
-  echo "5. Run 'gpg --armor --export <LONG_KEY> > gpg-key.txt'"
-  echo "6. Run 'git config --global user.signingkey <LONG_KEY>'"
-  echo "7. Add the contents of the file to GitHub"
-  echo "----------"
-  sudo update-alternatives --config pinentry
-  export GPG_TTY=$(tty)
-  gpg --gen-key
-  gpg-agent --daemon
-}
-
-configure_wsl_windows_crossover_paths() {
-  WINDOWS_PROFILE_PATH=$(wslpath "$(wslvar USERPROFILE)")
-  WINDOWS_USER_BIN_PATH="$(wslpath "$(wslvar USERPROFILE)")/bin"
-  WINDOWS_POWERSHELL_BIN_PATH="$(wslpath "$(wslvar WINDIR)")/System32/WindowsPowerShell/v1.0"
-  WINDOWS_APPS_PATH="$(wslpath "$(wslvar USERPROFILE)")/AppData/Local/Microsoft/WindowsApps"
-  WINDOWS_CROSSOVER_PATHS="$WINDOWS_USER_BIN_PATH:$WINDOWS_APPS_PATH:$WINDOWS_POWERSHELL_BIN_PATH"
-  sudo grep -qF "$WINDOWS_CROSSOVER_PATHS" /etc/zsh/zshenv || echo "export
-  PATH=\"$WINDOWS_CROSSOVER_PATHS:\$PATH\"" | sudo tee -a /etc/zsh/zshenv
-}
-
-install_homebrew() {
-  if [ $PLATFORM = 'macos' ]; then
-    which -s brew
-    if [[ $? != 0 ]]; then
-      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-    fi
-  fi
-}
-
-install_homebrew_bundle() { 
-  if [ $PLATFORM = 'macos' ]; then
-    if [[ $SETUP_HOMEBREW == true ]]; then
-      /opt/homebrew/bin/brew tap homebrew/bundle
-      /opt/homebrew/bin/brew bundle
-    fi
-  fi
-}
-
-copy_userprofile_files() {
-  WINDOWS_PROFILE_PATH=$(wslpath "$(wslvar USERPROFILE)")
-  cp $HOME/.dotfiles/userprofile/* "$WINDOWS_PROFILE_PATH"
-}
-
-symlink_dotfiles() {
-  ln -sfn $HOME/.dotfiles/.^(gitignore|git) $HOME/
-  mkdir -p $HOME/.config && ln -sfn $HOME/.dotfiles/_config/* $HOME/.config
-}
-
-configure_paths() {
-  if [ $PLATFORM = "macos" ]; then
-    sudo cp $HOME/.dotfiles/_etc_paths/* /etc/paths.d
-  elif [ $PLATFORM = "wsl" ]; then
-    PATH_AMENDMENT="$HOME/bin:$HOME/.asdf/bin"
-    sudo grep -qF "$PATH_AMENDMENT" /etc/zsh/zshenv || echo "export PATH=\"$PATH_AMENDMENT:\$PATH\"" | sudo tee -a /etc/zsh/zshenv
-  fi
-}
-
-configure_ssh() {
-  mkdir -p $HOME/.ssh && rsync -u $HOME/.dotfiles/_ssh/* $HOME/.ssh
-}
-
-make_workspace() {
-  mkdir -p $HOME/workspace/utils
-}
-
-make_user_bin() {
-  mkdir -p $HOME/bin
-  rsync -u $HOME/.dotfiles/bin/* $HOME/bin
-}
-
-restore_user_defaults() {
-  $HOME/.dotfiles/dx --restore-all
-}
-
-setup_vim() {
- vim -c 'PlugUpdate' -c 'CocUpdate' -c 'q!' -c 'q!'
-}
-
-set_default_shell() {
-  if [ $PLATFORM = "macos" ]; then
-    sudo dscl . -create /Users/$USER UserShell /opt/homebrew/bin/zsh
-  elif [ $PLATFORM = "wsl" ]; then
-    chsh -s /usr/bin/zsh
-  fi
-}
-
-install_fonts() {
-  if [ $PLATFORM = "macos" ]; then
-    find . -name "*.[ot]tf" -type f -exec cp {} "$HOME/Library/Fonts" \; 
-  elif [ $PLATFORM = "wsl" ]; then
-    echo "Installing fonts via Ubuntu & Powershell"
-    find . -name "*.[ot]tf" -type f -exec sudo cp {} "/usr/local/share/fonts" \;
-    sudo fc-cache -fv
-    powershell.exe -Command "Get-ChildItem -Path $(wslpath -w $HOME/.dotfiles/fonts)* -Recurse -include *.ttf,*.otf | % { (New-Object -ComObject Shell.Application).Namespace(0x14).CopyHere(\"$_.fullname\") }"
-  fi
-}
-
-configure_sublime_merge() {
-  if [ ! -L "/usr/local/bin/smerge" ]; then
-    sudo ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" /usr/local/bin/smerge
-  fi
-}
-
-install_rosetta() {
-  sudo softwareupdate --install-rosetta
-}
-
-configure_asdf() {
-  if [ $PLATFORM = "wsl" ]; then
-    if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
-      # Not available via aptitude
-      git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.13.1
-    fi
-  fi
-
-  asdf plugin add python https://github.com/asdf-community/asdf-python.git
-  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-  asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-  asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
-  asdf plugin add pnpm https://github.com/jonathanmorley/asdf-pnpm
-
-  if [ $PLATFORM = 'macos' ]; then
-    export PATH=/opt/homebrew/bin:$PATH
-    export PATH="/opt/homebrew/sbin:$PATH"
-    export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
-    export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
-    export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
-    export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
-    export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/opt/homebrew/opt/openssl@1.1"
-    export RUBY_CFLAGS="-w"
-
-    # python@2 must be installed explicitly using Rosetta on macOS
-    export ASDF_PYTHON2_INSTALL_VERSION=$(awk '$1 == "python" { for (i=2; i<=NF; i++) if ($i ~ /^2/) print $i }' .tool-versions)
-    ARCHFLAGS="-arch x86_6" asdf install python "$ASDF_PYTHON2_INSTALL_VERSION"
-  fi
-
-  asdf install
-}
-
-install_tpm() {
-  if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
-    git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
-  fi
-}
+# Source every step module
+for step in "$DOTFILES_DIR"/bootstrap.d/*.sh; do
+  source "$step"
+done
 
 bootstrap() {
-  mkdir -p $HOME/tmp
+  mkdir -p "$HOME/tmp"
+
+  # Phase 1 — environment
   detect_platform
   configure_shell_options
+
+  # Phase 2 — paths, secrets, symlinks
   make_workspace
   configure_paths
   configure_ssh
   install_fonts
   create_auth_dotfile
   symlink_dotfiles
+  symlink_claude_config
+  symlink_gh_config
+  symlink_atuin_config
   make_user_bin
-  
-  if [ $PLATFORM = "wsl" ]; then
+
+  # Phase 3 — platform packages
+  if [ "$PLATFORM" = "wsl" ]; then
     copy_userprofile_files
     winget_install
     aptitude_install
     manual_install
     # configure_gpg
     configure_wsl_windows_crossover_paths
-  elif [ $PLATFORM = "macos" ]; then
+  elif [ "$PLATFORM" = "macos" ]; then
     install_xcode_cli
     install_rosetta
     install_homebrew
     install_homebrew_bundle
   fi
 
+  # Phase 4 — universal (Mac App Store apps install via `brew bundle` now)
   pip_install
-  mas_install
-  
   set_default_shell
-  
-  if [ $PLATFORM = "macos" ]; then
+
+  # Phase 5 — macOS end caps
+  if [ "$PLATFORM" = "macos" ]; then
     restore_user_defaults
   fi
 
-  setup_vim
-  configure_sublime_merge
+  # Phase 6 — plugin managers / runtimes / agents
   configure_asdf
   install_tpm
+  install_launch_agents
 }
 
 bootstrap

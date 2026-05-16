@@ -139,6 +139,7 @@ function undockedLayout()
     { "Slack", nil, laptopScreen, regions.right, nil, nil },
     { "Messages", nil, laptopScreen, regions.rightb25, nil, nil },
       { "Music", nil, laptopScreen, regions.modalPrimary, nil, nil },
+      { "Pocket Casts", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, laptopScreen, regions.modalPrimary, nil, nil },
   }
 end
@@ -167,6 +168,7 @@ function undockedSidecar()
     { "Slack", nil, laptopScreen, regions.right, nil, nil },
     { "Messages", nil, laptopScreen, regions.rightb25, nil, nil },
       { "Music", nil, laptopScreen, regions.modalPrimary, nil, nil },
+      { "Pocket Casts", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, laptopScreen, regions.modalPrimary, nil, nil },
 
     -- External
@@ -202,6 +204,7 @@ function undockedTriScreen()
     { "Adobe Lightroom", nil, laptopScreen, regions.full, nil, nil },
     { "Blender", nil, laptopScreen, regions.full, nil, nil },
       { "Music", nil, laptopScreen, regions.modalPrimary, nil, nil },
+      { "Pocket Casts", nil, laptopScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, laptopScreen, regions.modalPrimary, nil, nil },
 
     -- Right
@@ -220,6 +223,7 @@ function dockedWithDualVerticalUlrawideLayout()
     { "Chrome", nil, externalPrimaryScreen, regions.focalSecondary, nil, nil },
     { "Vivaldi", nil, externalPrimaryScreen, regions.focalSecondary, nil, nil },
       { "Music", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
+      { "Pocket Casts", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
     { "WebStorm", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
     { "RubyMine", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },

@@ -7,7 +7,9 @@
 		<string>CKAccountInfoCacheReset</string>
 	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>654</real>
+	<real>2050</real>
+	<key>askAfterInactivity</key>
+	<real>900</real>
 	<key>cachedUserRecordID</key>
 	<string>_f6022dd8d00a83b38d9a295fe51ebfc8</string>
 	<key>dataRetention</key>
@@ -17,23 +19,25 @@
 	<key>deduplicatedDays</key>
 	<true/>
 	<key>defaultDashboardType</key>
-	<integer>4</integer>
+	<integer>1</integer>
+	<key>dialogTimeInterval</key>
+	<real>900</real>
 	<key>groupsViewWidth</key>
-	<real>250</real>
+	<real>200</real>
+	<key>hasDismissedOffer_New Year Discount_1768175999.0</key>
+	<true/>
 	<key>hasSeen2025InReviewMAW</key>
 	<true/>
 	<key>installationID</key>
-	<string>FBB38817-846B-4854-A580-A49DB3FE1273</string>
+	<string>E14D9B6B-7B9B-42EC-9A45-6D4F495C66B3</string>
 	<key>introductionShown</key>
 	<true/>
 	<key>migratedEnabledAndHiddenToArchived</key>
 	<true/>
-	<key>previousRatedVersion</key>
-	<string>1.25.0</string>
 	<key>previouslyDenied</key>
-	<date>2025-12-09T17:01:34Z</date>
+	<date>2026-03-06T17:25:01Z</date>
 	<key>previouslyDeniedForNewsletterSubscription</key>
-	<date>2025-11-19T20:01:15Z</date>
+	<date>2025-07-26T16:51:45Z</date>
 	<key>queuedDatesForUpload</key>
 	<array/>
 	<key>schedulerData</key>
@@ -42,59 +46,63 @@
 			<key>enabled</key>
 			<true/>
 			<key>endTime</key>
-			<date>2025-11-19T17:30:00Z</date>
+			<date>2025-07-26T19:00:00Z</date>
 			<key>startTime</key>
-			<date>2025-11-19T09:00:00Z</date>
+			<date>2025-07-26T07:00:00Z</date>
 		</dict>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>endTime</key>
-			<date>2025-11-19T17:30:00Z</date>
+			<date>2025-07-26T17:30:00Z</date>
 			<key>startTime</key>
-			<date>2025-11-19T09:00:00Z</date>
+			<date>2025-07-26T07:00:00Z</date>
 		</dict>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>endTime</key>
-			<date>2025-11-19T17:30:00Z</date>
+			<date>2025-07-26T17:30:00Z</date>
 			<key>startTime</key>
-			<date>2025-11-19T09:00:00Z</date>
+			<date>2025-07-26T07:00:00Z</date>
 		</dict>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>endTime</key>
-			<date>2025-11-19T17:30:00Z</date>
+			<date>2025-07-26T17:30:00Z</date>
 			<key>startTime</key>
-			<date>2025-11-19T09:00:00Z</date>
+			<date>2025-07-26T07:00:00Z</date>
 		</dict>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>endTime</key>
-			<date>2025-11-19T17:30:00Z</date>
+			<date>2025-07-26T17:30:00Z</date>
 			<key>startTime</key>
-			<date>2025-11-19T09:00:00Z</date>
+			<date>2025-07-26T07:00:00Z</date>
 		</dict>
 		<dict>
 			<key>enabled</key>
-			<false/>
+			<true/>
 			<key>endTime</key>
-			<date>2025-11-19T17:30:00Z</date>
+			<date>2025-07-26T17:30:00Z</date>
 			<key>startTime</key>
-			<date>2025-11-19T09:00:00Z</date>
+			<date>2025-07-26T07:00:00Z</date>
 		</dict>
 		<dict>
 			<key>enabled</key>
-			<false/>
+			<true/>
 			<key>endTime</key>
-			<date>2025-11-19T17:30:00Z</date>
+			<date>2025-07-26T17:30:00Z</date>
 			<key>startTime</key>
-			<date>2025-11-19T09:00:00Z</date>
+			<date>2025-07-26T07:00:00Z</date>
 		</dict>
 	</array>
+	<key>schedulerIsActive</key>
+	<false/>
+	<key>timeRounding</key>
+	<integer>15</integer>
 	<key>translucentEffect</key>
 	<true/>
 	<key>webApi</key>

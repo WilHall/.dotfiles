@@ -19,9 +19,9 @@
 	</data>
 	<key>NSStatusItem Preferred Position TupleStatusBarItem</key>
 	<real>498</real>
-	<key>NSStatusItem Visible Item-0</key>
+	<key>NSStatusItem VisibleCC Item-0</key>
 	<false/>
-	<key>NSStatusItem Visible TupleStatusBarItem</key>
+	<key>NSStatusItem VisibleCC TupleStatusBarItem</key>
 	<true/>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
@@ -58,11 +58,15 @@
 	<string>tagTeam</string>
 	<key>enableNewSignaler</key>
 	<true/>
+	<key>hasLoggedIn</key>
+	<true/>
 	<key>hasPromptedForCamera</key>
 	<true/>
 	<key>hasPromptedForMicrophone</key>
 	<true/>
 	<key>hasPromptedForScreenrecording</key>
+	<true/>
+	<key>hasResolvedOpenAtLogin</key>
 	<true/>
 	<key>hasSeenVeilAlert</key>
 	<true/>
@@ -81,7 +85,7 @@
 	<key>startCallsWithWebcam</key>
 	<true/>
 	<key>transmitResolution</key>
-	<string>High</string>
+	<string>VeryHigh</string>
 	<key>veiledApplications</key>
 	<array>
 		<dict>

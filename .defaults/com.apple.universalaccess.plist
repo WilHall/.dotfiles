@@ -2,23 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AccessibilityReaderHotkey</key>
-	<dict>
-		<key>AX_READER_HOTKEY_VIEW_IN_READER</key>
-		<dict>
-			<key>charCode</key>
-			<integer>65535</integer>
-			<key>keyCode</key>
-			<integer>53</integer>
-			<key>modifiers</key>
-			<integer>1048576</integer>
-		</dict>
-	</dict>
 	<key>FontSizeCategory</key>
 	<dict>
-		<key>com.apple.MobileSMS</key>
+		<key>com.apple.Magnifier</key>
 		<string>UseGlobal</string>
+		<key>com.apple.MobileSMS</key>
+		<string>S</string>
 		<key>com.apple.Notes</key>
+		<string>UseGlobal</string>
+		<key>com.apple.accessibility.AccessibilityReader</key>
 		<string>UseGlobal</string>
 		<key>com.apple.finder</key>
 		<string>Custom</string>
@@ -26,16 +18,20 @@
 		<string>UseGlobal</string>
 		<key>com.apple.iCal</key>
 		<string>UseGlobal</string>
+		<key>com.apple.journal</key>
+		<string>UseGlobal</string>
 		<key>com.apple.mail</key>
 		<string>UseGlobal</string>
 		<key>com.apple.news</key>
+		<string>UseGlobal</string>
+		<key>com.apple.reminders</key>
 		<string>UseGlobal</string>
 		<key>com.apple.stocks</key>
 		<string>UseGlobal</string>
 		<key>com.apple.weather</key>
 		<string>UseGlobal</string>
 		<key>global</key>
-		<string>L</string>
+		<string>DEFAULT</string>
 		<key>version</key>
 		<string>3.0</string>
 	</dict>
@@ -88,65 +84,49 @@
 		</dict>
 	</dict>
 	<key>closeViewDesiredZoomFactor</key>
-	<real>1.0263162851333618</real>
+	<real>1.0201</real>
+	<key>closeViewDisableUniversalControl</key>
+	<false/>
 	<key>closeViewHotkeysEnabled</key>
 	<true/>
+	<key>closeViewPanningMode</key>
+	<integer>0</integer>
+	<key>closeViewQuickSwitchHotKeysEnabled</key>
+	<true/>
+	<key>closeViewResizeHotKeysEnabled</key>
+	<true/>
+	<key>closeViewScrollWheelToggle</key>
+	<true/>
 	<key>closeViewSmoothImages</key>
-	<false/>
+	<true/>
 	<key>closeViewSplitScreenRatio</key>
 	<real>0.20000000000000001</real>
+	<key>closeViewTrackpadGestureZoomEnabled</key>
+	<false/>
 	<key>closeViewZoomDisplayID</key>
 	<integer>0</integer>
 	<key>closeViewZoomFactor</key>
 	<real>1</real>
 	<key>closeViewZoomFactorBeforeTermination</key>
 	<real>1</real>
+	<key>closeViewZoomMode</key>
+	<integer>1</integer>
 	<key>closeViewZoomScreenShareEnabledKey</key>
 	<false/>
 	<key>closeViewZoomedIn</key>
 	<false/>
 	<key>com.apple.custommenu.apps</key>
 	<array>
-		<string>com.google.Chrome</string>
-		<string>com.apple.mail</string>
 		<string>NSGlobalDomain</string>
+		<string>com.apple.mail</string>
+		<string>com.google.Chrome</string>
 	</array>
-	<key>cursorFill</key>
-	<dict>
-		<key>alpha</key>
-		<real>1</real>
-		<key>blue</key>
-		<real>0.83225953578948975</real>
-		<key>green</key>
-		<real>0.79041457176208496</real>
-		<key>red</key>
-		<real>0.9422113299369812</real>
-	</dict>
-	<key>cursorIsCustomized</key>
-	<true/>
-	<key>cursorOutline</key>
-	<dict>
-		<key>alpha</key>
-		<real>1</real>
-		<key>blue</key>
-		<real>0.0</real>
-		<key>green</key>
-		<real>0.0</real>
-		<key>red</key>
-		<real>0.0</real>
-	</dict>
+	<key>contrast</key>
+	<real>0.0</real>
 	<key>customFonts</key>
-	<true/>
-	<key>differentiateWithoutColor</key>
 	<true/>
 	<key>grayscale</key>
 	<false/>
-	<key>grayscaleMigrated</key>
-	<true/>
-	<key>headMouseSensitivity</key>
-	<real>0.5</real>
-	<key>headMouseTolerance</key>
-	<real>0.0</real>
 	<key>hoverColorEnabled</key>
 	<false/>
 	<key>hoverTextEnabled</key>
@@ -155,8 +135,6 @@
 	<false/>
 	<key>hudNotifiedConstrast</key>
 	<real>0.0</real>
-	<key>increaseContrast</key>
-	<false/>
 	<key>keyboardAccessCommandMap</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -176,20 +154,12 @@
 	<false/>
 	<key>login</key>
 	<false/>
-	<key>reduceTransparency</key>
-	<false/>
 	<key>sessionChange</key>
 	<false/>
-	<key>showToolbarButtonShapes</key>
-	<true/>
-	<key>showWindowTitlebarIcons</key>
-	<true/>
 	<key>slowKey</key>
 	<false/>
 	<key>slowKeyDelay</key>
 	<integer>250</integer>
-	<key>speakSelectionEnabled</key>
-	<true/>
 	<key>stickyKey</key>
 	<false/>
 	<key>useStickyKeysShortcutKeys</key>

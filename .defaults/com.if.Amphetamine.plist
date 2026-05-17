@@ -14,8 +14,6 @@
 	<integer>0</integer>
 	<key>Always Ask to End For Low Battery</key>
 	<integer>0</integer>
-	<key>Ask To Install Power Protect</key>
-	<false/>
 	<key>Auto Remove Notifications</key>
 	<integer>1</integer>
 	<key>Default Duration</key>
@@ -49,9 +47,9 @@
 	<key>Enable Triggers</key>
 	<integer>0</integer>
 	<key>End Session On Low Battery</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>End Sessions On Forced Sleep</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>End Sessions when FUS</key>
 	<integer>0</integer>
 	<key>Hide Dock Icon</key>
@@ -79,7 +77,7 @@
 	<key>Mouse Movement Smoothness</key>
 	<integer>1</integer>
 	<key>NSStatusItem Preferred Position Amphetamine</key>
-	<real>565</real>
+	<real>1892</real>
 	<key>Notification Sound End</key>
 	<integer>0</integer>
 	<key>Notification Sound Start</key>
@@ -140,34 +138,205 @@
 		<integer>183258</integer>
 		<integer>484270</integer>
 		<integer>579812</integer>
-		<integer>293991</integer>
-		<integer>29645</integer>
-		<integer>350580</integer>
-		<integer>32275</integer>
-		<integer>26991</integer>
-		<integer>66</integer>
-		<integer>25030</integer>
-		<integer>39705</integer>
-		<integer>30722</integer>
-		<integer>22298</integer>
-		<integer>2021</integer>
-		<integer>16642</integer>
-		<integer>6837</integer>
-		<integer>725456</integer>
-		<integer>940</integer>
-		<integer>504430</integer>
-		<integer>82420</integer>
-		<integer>582657</integer>
-		<integer>197701</integer>
-		<integer>523485</integer>
-		<integer>13145</integer>
-		<integer>5</integer>
-		<integer>30116</integer>
-		<integer>91001</integer>
-		<integer>304019</integer>
-		<integer>53307</integer>
-		<integer>25997</integer>
-		<integer>26941</integer>
+		<integer>51342</integer>
+		<integer>1</integer>
+		<integer>1851</integer>
+		<integer>21811</integer>
+		<integer>1</integer>
+		<integer>65510</integer>
+		<integer>1207</integer>
+		<integer>1</integer>
+		<integer>1181</integer>
+		<integer>12880</integer>
+		<integer>3895</integer>
+		<integer>13802</integer>
+		<integer>3687</integer>
+		<integer>35526</integer>
+		<integer>2046</integer>
+		<integer>4235</integer>
+		<integer>1680</integer>
+		<integer>1451</integer>
+		<integer>1057</integer>
+		<integer>4793</integer>
+		<integer>16998</integer>
+		<integer>3114</integer>
+		<integer>7759</integer>
+		<integer>1</integer>
+		<integer>1</integer>
+		<integer>14671</integer>
+		<integer>3270</integer>
+		<integer>4688</integer>
+		<integer>216</integer>
+		<integer>7177</integer>
+		<integer>34101</integer>
+		<integer>5705</integer>
+		<integer>12</integer>
+		<integer>7977</integer>
+		<integer>1223</integer>
+		<integer>923</integer>
+		<integer>6384</integer>
+		<integer>19016</integer>
+		<integer>25682</integer>
+		<integer>1</integer>
+		<integer>5903</integer>
+		<integer>8245</integer>
+		<integer>464</integer>
+		<integer>8743</integer>
+		<integer>5430</integer>
+		<integer>18220</integer>
+		<integer>546</integer>
+		<integer>98</integer>
+		<integer>471</integer>
+		<integer>2340</integer>
+		<integer>795</integer>
+		<integer>34784</integer>
+		<integer>5103</integer>
+		<integer>3773</integer>
+		<integer>5992</integer>
+		<integer>2214</integer>
+		<integer>12005</integer>
+		<integer>4151</integer>
+		<integer>24934</integer>
+		<integer>1382</integer>
+		<integer>15828</integer>
+		<integer>30634</integer>
+		<integer>3126</integer>
+		<integer>25555</integer>
+		<integer>12043</integer>
+		<integer>7559</integer>
+		<integer>12209</integer>
+		<integer>733</integer>
+		<integer>4860</integer>
+		<integer>5046</integer>
+		<integer>3812</integer>
+		<integer>6716</integer>
+		<integer>13014</integer>
+		<integer>4461</integer>
+		<integer>8168</integer>
+		<integer>1767</integer>
+		<integer>3029</integer>
+		<integer>424</integer>
+		<integer>11601</integer>
+		<integer>1041</integer>
+		<integer>13131</integer>
+		<integer>7835</integer>
+		<integer>8346</integer>
+		<integer>2958</integer>
+		<integer>18712</integer>
+		<integer>9994</integer>
+		<integer>17386</integer>
+		<integer>8453</integer>
+		<integer>21957</integer>
+		<integer>3459</integer>
+		<integer>43196</integer>
+		<integer>3865</integer>
+		<integer>19862</integer>
+		<integer>14873</integer>
+		<integer>7911</integer>
+		<integer>3811</integer>
+		<integer>17879</integer>
+		<integer>11316</integer>
+		<integer>2218</integer>
+		<integer>21911</integer>
+		<integer>1</integer>
+		<integer>86</integer>
+		<integer>4728</integer>
+		<integer>21054</integer>
+		<integer>18999</integer>
+		<integer>13981</integer>
+		<integer>713</integer>
+		<integer>6167</integer>
+		<integer>18711</integer>
+		<integer>4317</integer>
+		<integer>22999</integer>
+		<integer>2998</integer>
+		<integer>8354</integer>
+		<integer>2453</integer>
+		<integer>876</integer>
+		<integer>23583</integer>
+		<integer>18601</integer>
+		<integer>13325</integer>
+		<integer>8186</integer>
+		<integer>18458</integer>
+		<integer>1598</integer>
+		<integer>10738</integer>
+		<integer>666</integer>
+		<integer>9442</integer>
+		<integer>833</integer>
+		<integer>11101</integer>
+		<integer>2635</integer>
+		<integer>36</integer>
+		<integer>1118</integer>
+		<integer>7321</integer>
+		<integer>1028</integer>
+		<integer>10291</integer>
+		<integer>1389</integer>
+		<integer>1253</integer>
+		<integer>4634</integer>
+		<integer>16845</integer>
+		<integer>26888</integer>
+		<integer>629</integer>
+		<integer>8748</integer>
+		<integer>23246</integer>
+		<integer>7</integer>
+		<integer>18863</integer>
+		<integer>626</integer>
+		<integer>3076</integer>
+		<integer>7095</integer>
+		<integer>14932</integer>
+		<integer>68</integer>
+		<integer>1502</integer>
+		<integer>721</integer>
+		<integer>4133</integer>
+		<integer>3038</integer>
+		<integer>6328</integer>
+		<integer>3580</integer>
+		<integer>381</integer>
+		<integer>12272</integer>
+		<integer>2585</integer>
+		<integer>1839</integer>
+		<integer>2494</integer>
+		<integer>2053</integer>
+		<integer>10705</integer>
+		<integer>8355</integer>
+		<integer>6816</integer>
+		<integer>8249</integer>
+		<integer>837</integer>
+		<integer>15661</integer>
+		<integer>14395</integer>
+		<integer>11456</integer>
+		<integer>5523</integer>
+		<integer>5776</integer>
+		<integer>5921</integer>
+		<integer>9776</integer>
+		<integer>18249</integer>
+		<integer>152</integer>
+		<integer>16996</integer>
+		<integer>46</integer>
+		<integer>3599</integer>
+		<integer>11425</integer>
+		<integer>18693</integer>
+		<integer>17239</integer>
+		<integer>19830</integer>
+		<integer>4251</integer>
+		<integer>50707</integer>
+		<integer>2077</integer>
+		<integer>16875</integer>
+		<integer>2033</integer>
+		<integer>26428</integer>
+		<integer>5810</integer>
+		<integer>1449</integer>
+		<integer>8731</integer>
+		<integer>8333</integer>
+		<integer>20910</integer>
+		<integer>18629</integer>
+		<integer>5156</integer>
+		<integer>10789</integer>
+		<integer>3965</integer>
+		<integer>1438</integer>
+		<integer>8281</integer>
+		<integer>8966</integer>
+		<integer>4408</integer>
 	</array>
 	<key>Session End Time Calcuation</key>
 	<integer>0</integer>
@@ -202,7 +371,7 @@
 	<key>Stop Mouse Movement Inactivity Delay</key>
 	<integer>1800</integer>
 	<key>Total Session Run Time</key>
-	<integer>12117902</integer>
+	<integer>9896204</integer>
 	<key>Trigger Data</key>
 	<array/>
 	<key>Use 24 Hour Clock</key>

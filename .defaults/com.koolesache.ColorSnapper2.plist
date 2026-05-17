@@ -12,113 +12,113 @@
 	<array/>
 	<key>HistoryColors</key>
 	<array>
-		<string>FFFFFFFF</string>
-		<string>FFFBFBFF</string>
-		<string>F9FAFBFF</string>
-		<string>F3F4F6FF</string>
-		<string>303446FF</string>
-		<string>9797D7FF</string>
-		<string>DAFBEAFF</string>
-		<string>EAFEF5FF</string>
-		<string>FCFCFCFF</string>
-		<string>EDB06BFF</string>
-		<string>008050FF</string>
-		<string>008052FF</string>
-		<string>EAEDF0FF</string>
-		<string>FFFFFFFF</string>
-		<string>6C7180FF</string>
-		<string>F74F9EFF</string>
-		<string>FEFF05FF</string>
-		<string>FF9631FF</string>
-		<string>81A975FF</string>
-		<string>0FA5EAFF</string>
-		<string>21668EFF</string>
-		<string>D4D4D4FF</string>
-		<string>D1D5DBFF</string>
-		<string>101827FF</string>
-		<string>6B7280FF</string>
-		<string>F9FAFBFF</string>
-		<string>E5E7EBFF</string>
-		<string>E5E7EAFF</string>
-		<string>6B7280FF</string>
-		<string>E6E7EBFF</string>
-		<string>E5E7EAFF</string>
-		<string>6B7280FF</string>
-		<string>F59E0CFF</string>
-		<string>F9FAFBFF</string>
-		<string>6B7280FF</string>
-		<string>D1D5DBFF</string>
-		<string>E5E7EBFF</string>
-		<string>D1D5DBFF</string>
-		<string>6B7280FF</string>
-		<string>008052FF</string>
-		<string>9CA3AFFF</string>
-		<string>6B7280FF</string>
-		<string>D1D5DBFF</string>
-		<string>D0D4DAFF</string>
-		<string>D1D5DBFF</string>
-		<string>6B7280FF</string>
-		<string>F9FAFBFF</string>
-		<string>6B7280FF</string>
-		<string>D1D5DBFF</string>
-		<string>9CA3AFFF</string>
-		<string>6B7280FF</string>
-		<string>10B981FF</string>
-		<string>6B7280FF</string>
-		<string>D1D5DBFF</string>
-		<string>D1D5DCFF</string>
-		<string>6B7280FF</string>
-		<string>111827FF</string>
-		<string>D1D5DBFF</string>
-		<string>F9FAFBFF</string>
-		<string>6B7280FF</string>
-		<string>F3F4F6FF</string>
-		<string>10B981FF</string>
-		<string>ECFDF5FF</string>
-		<string>F3F4F6FF</string>
-		<string>E5E7EBFF</string>
-		<string>9CA3AFFF</string>
-		<string>0D663AFF</string>
-		<string>0F663AFF</string>
-		<string>3296C3FF</string>
-		<string>027DB5FF</string>
-		<string>6DC9FFFF</string>
-		<string>F7AD31FF</string>
-		<string>10DD9AFF</string>
-		<string>F26868FF</string>
-		<string>FBF5F5FF</string>
-		<string>FEFEFEFF</string>
-		<string>F5F3F3FF</string>
-		<string>475569FF</string>
-		<string>E5E7EBFF</string>
-		<string>6B7280FF</string>
-		<string>111827FF</string>
-		<string>4F46E5FF</string>
-		<string>111827FF</string>
-		<string>1E293BFF</string>
-		<string>888B93FF</string>
-		<string>CC73E1FF</string>
-		<string>017E50FF</string>
-		<string>6EADC3FF</string>
-		<string>FFD2D7FF</string>
-		<string>BDC1C9FF</string>
-		<string>8694C9FF</string>
-		<string>C2C2E7FF</string>
-		<string>6D6DC7FF</string>
-		<string>9797D7FF</string>
-		<string>FFDAC1FF</string>
-		<string>FFA05FFF</string>
-		<string>FFB786FF</string>
-		<string>3196C3FF</string>
-		<string>194E65FF</string>
+		<string>E87BA8FF</string>
+		<string>EBAF9DFF</string>
+		<string>CFA5E4FF</string>
+		<string>E2CBDDFF</string>
+		<string>0089E9FF</string>
+		<string>0073C1FF</string>
+		<string>FFA3A8FF</string>
+		<string>0089EAFF</string>
 		<string>257294FF</string>
+		<string>257394FF</string>
+		<string>9797D7FF</string>
+		<string>6C6C6CFF</string>
+		<string>636363FF</string>
+		<string>4F4F4FFF</string>
+		<string>454545FF</string>
+		<string>3B3B3BFF</string>
+		<string>323232FF</string>
+		<string>1E1E1EFF</string>
+		<string>141414FF</string>
+		<string>0A0A0AFF</string>
+		<string>141414FF</string>
+		<string>141314FF</string>
+		<string>0A0A0AFF</string>
+		<string>141414FF</string>
+		<string>1E1E1EFF</string>
+		<string>323232FF</string>
+		<string>3B3B3BFF</string>
+		<string>454545FF</string>
+		<string>4F4F4FFF</string>
+		<string>636363FF</string>
+		<string>0A0A0AFF</string>
+		<string>141414FF</string>
+		<string>1D1E1EFF</string>
+		<string>323332FF</string>
+		<string>3B3B3BFF</string>
+		<string>454545FF</string>
+		<string>4F4F4FFF</string>
+		<string>6C6C6CFF</string>
+		<string>636363FF</string>
+		<string>0A0A0AFF</string>
+		<string>000000FF</string>
+		<string>282828FF</string>
+		<string>767676FF</string>
+		<string>636363FF</string>
+		<string>6C6C6CFF</string>
+		<string>767676FF</string>
+		<string>2883A5FF</string>
+		<string>ECB16BFF</string>
+		<string>2A7EA4FF</string>
+		<string>9797D7FF</string>
+		<string>58D3FBFF</string>
+		<string>E0FF46FF</string>
+		<string>E1E7F1FF</string>
+		<string>C0C0E5FF</string>
+		<string>4283C0FF</string>
+		<string>FFDB01FF</string>
+		<string>8694C9FF</string>
+		<string>F47848FF</string>
+		<string>40946CFF</string>
+		<string>FFF9EAFF</string>
+		<string>F4B848FF</string>
+		<string>9797D7FF</string>
+		<string>D9D9D9FF</string>
+		<string>F2F2F2FF</string>
+		<string>A7D8FFFF</string>
+		<string>FD8A9FFF</string>
+		<string>E47A8DFF</string>
+		<string>E88C9DFF</string>
+		<string>E16B81FF</string>
+		<string>FDE794FF</string>
+		<string>E4A2F7FF</string>
+		<string>9FBCEBFF</string>
+		<string>A8F5B4FF</string>
+		<string>A7D8FFFF</string>
+		<string>FF8100FF</string>
+		<string>3178C6FF</string>
+		<string>CE0003FF</string>
+		<string>FCD233FF</string>
+		<string>80C6FFFF</string>
+		<string>738FF9FF</string>
+		<string>50EA69FF</string>
+		<string>1ED33AFF</string>
+		<string>6D6DC6FF</string>
+		<string>64DBF8FF</string>
+		<string>9797D7FF</string>
+		<string>2E7251FF</string>
+		<string>B15651FF</string>
+		<string>AF5751FF</string>
+		<string>BA2128FF</string>
+		<string>FFFFFFFF</string>
+		<string>2D7252FF</string>
+		<string>B82329FF</string>
+		<string>004928FF</string>
+		<string>1B3419FF</string>
+		<string>8A0206FF</string>
+		<string>3D996FFF</string>
+		<string>00361DFF</string>
+		<string>2D7152FF</string>
+		<string>B82328FF</string>
+		<string>F74F9EFF</string>
 	</array>
 	<key>NSColorPanelMode</key>
 	<string>6</string>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>610</real>
+	<real>2088</real>
 	<key>Paddle-ColorSnapper2-499167-SD</key>
-	<string>cc6a1f19fca4a2e8320c24687c25d198454175de3ca57745d5a9d9441bed8e11</string>
+	<string>de178b5a9a00b1f6141720bfad1eb7f468c9750ad5ff1a6c84db956b6eec3af7</string>
 	<key>PickColorShortCut</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -137,7 +137,7 @@
 	<key>SUSendProfileInfo</key>
 	<true/>
 	<key>captureValue</key>
-	<real>51.35015869140625</real>
+	<real>32.775070190429688</real>
 	<key>codeStyle</key>
 	<dict>
 		<key>css</key>
@@ -186,9 +186,9 @@
 	<key>exportColorObject</key>
 	<false/>
 	<key>exportFormat</key>
-	<string>CSS Hex</string>
+	<string>Generic Hex</string>
 	<key>magnificationValue</key>
-	<real>4</real>
+	<real>8.0210628509521484</real>
 	<key>openFormatsAfterPick</key>
 	<integer>0</integer>
 	<key>showMenubarIcon</key>

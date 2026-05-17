@@ -4,19 +4,17 @@
 <dict>
 	<key>HSenableSpotlightForNameSearches</key>
 	<true/>
-	<key>MJShowMenuIconKey</key>
+	<key>MJKeepConsoleOnTopKey</key>
 	<true/>
+	<key>MJShowMenuIconKey</key>
+	<false/>
 	<key>MJSkipDockMenuIconProblemAlertKey</key>
 	<true/>
-	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>673</real>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SUSendProfileInfo</key>
 	<false/>
-	<key>com.apple.WebPrivacy.ResourceMonitorURLsVersion</key>
-	<string>qrsAAAGXnXBrwGxMO6s=</string>
 </dict>
 </plist>

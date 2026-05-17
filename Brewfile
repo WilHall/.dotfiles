@@ -111,29 +111,21 @@ cask "polypane"
 cask "handbrake-app"
 cask "typora"
 cask "rider"
-cask "silhouette-studio"
 
 # Mac App Store apps — installed via `mas` (https://github.com/mas-cli/mas).
 mas "Amphetamine",              id: 937984704
 mas "Apple Configurator",       id: 1037126344
 mas "Boop",                     id: 1518425043
 mas "Cardhop",                  id: 1290358394
-mas "Copilot",                  id: 1447330651
-mas "Daily",                    id: 686910553
 mas "DaisyDisk",                id: 411643860
 mas "Entity Pro",               id: 1503988785
-mas "GoodTask",                 id: 1143437985
 mas "Hand Mirror",              id: 1502839586
 mas "Keka",                     id: 470158793
 mas "Keynote",                  id: 409183694
-mas "Klack",                    id: 6446206067
 mas "Microsoft Word",           id: 462054704
 mas "MultiTimer",               id: 973421278
-mas "NordVPN",                  id: 905953485
 mas "OK JSON",                  id: 1576121509
-mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Patterns",                 id: 429449079
 mas "Soulver 3",                id: 1508732804
 mas "Text Workflow",            id: 1600520682
-mas "Tot",                      id: 1491071483
 mas "Unread",                   id: 1363637349

@@ -4,6 +4,8 @@
 <dict>
 	<key>autohide</key>
 	<false/>
+	<key>expose-group-apps</key>
+	<true/>
 	<key>largesize</key>
 	<real>51</real>
 	<key>loc</key>
@@ -15,7 +17,7 @@
 	<key>minimize-to-application</key>
 	<true/>
 	<key>mod-count</key>
-	<integer>786</integer>
+	<integer>605</integer>
 	<key>mru-spaces</key>
 	<false/>
 	<key>orientation</key>
@@ -31,7 +33,7 @@
 	<key>showMissionControlGestureEnabled</key>
 	<true/>
 	<key>tilesize</key>
-	<real>33</real>
+	<real>50</real>
 	<key>trash-full</key>
 	<true/>
 	<key>version</key>

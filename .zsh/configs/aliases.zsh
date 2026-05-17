@@ -3,7 +3,7 @@
 alias vim="nvim"
 alias vi="vim"
 alias ls="lsd -AF --group-directories-first"
-alias ll="lsd -Alh --group-directories-first"
+alias ll="lsd -Alh --group-directories-first --date=relative"
 alias tree="lsd --tree"
 alias cd="z"
 alias cat="bat"

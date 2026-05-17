@@ -20,16 +20,30 @@
 	<true/>
 	<key>congratulationsDone2023</key>
 	<true/>
+	<key>congratulationsDone2026</key>
+	<true/>
 	<key>defaultSourceFolder</key>
 	<string>/Users/wilhall</string>
 	<key>deleteStashAfterApply</key>
 	<true/>
+	<key>diffFontName</key>
+	<string>ComicMonoRelaxedRegular</string>
+	<key>diffFontSize</key>
+	<real>12</real>
 	<key>diffShowChangeMarks</key>
+	<true/>
+	<key>diffShowEntireFile</key>
 	<true/>
 	<key>enabledTabsOnFirstRun</key>
 	<true/>
 	<key>expandedRepositoryManagerItems</key>
 	<array>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>title</key>
+			<string>Services</string>
+		</dict>
 		<dict>
 			<key>children</key>
 			<array/>
@@ -46,7 +60,7 @@
 	<key>fetchAllTags</key>
 	<false/>
 	<key>gitInstanceType</key>
-	<integer>3</integer>
+	<integer>1</integer>
 	<key>maxCommitCount</key>
 	<integer>100000</integer>
 	<key>migratedToFork2_12</key>
@@ -69,6 +83,10 @@
 	<false/>
 	<key>revisionDetailsActiveTab</key>
 	<integer>1</integer>
+	<key>revisionDiffLayoutMode</key>
+	<integer>1</integer>
+	<key>spaceCharacter</key>
+	<string>hyphen</string>
 	<key>terminalClient</key>
 	<integer>1</integer>
 	<key>theme</key>

@@ -2,10 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>629</real>
-	<key>NSStatusItem Preferred Position Item-1</key>
-	<real>869</real>
+	<key>closeUnfocusedWindow</key>
+	<true/>
 	<key>defaultCameraPreference</key>
 	<string>Logitech BRIO</string>
 	<key>defaultCameraPreferenceKey</key>
@@ -16,20 +14,34 @@
 	<false/>
 	<key>hasPurchasedHandMirrorPlus</key>
 	<true/>
+	<key>hideMenuBar</key>
+	<true/>
 	<key>isCameraPermissionsAllowed</key>
 	<true/>
 	<key>isGenerous</key>
 	<false/>
 	<key>isInMiddleOfOnboarding</key>
 	<false/>
+	<key>isMicCheckPreferenceOn</key>
+	<true/>
+	<key>isMicrophonePermissionsAllowed</key>
+	<true/>
 	<key>isSnapsPreferenceOn</key>
 	<true/>
 	<key>openCountSinceVersionChange</key>
 	<integer>0</integer>
 	<key>preferredDisplay</key>
 	<string>1</string>
+	<key>selectedNotchPreference</key>
+	<true/>
+	<key>selectedPopoverSize</key>
+	<string>Medium</string>
 	<key>showReactionEffectsButtons</key>
 	<false/>
+	<key>smartWindowPreference</key>
+	<false/>
+	<key>windowMaskPreference</key>
+	<integer>0</integer>
 	<key>zoomLevel</key>
 	<integer>1</integer>
 </dict>

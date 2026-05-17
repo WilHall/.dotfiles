@@ -63,62 +63,108 @@ run_check() {
 # Expected symlinks, mirroring bootstrap.d/60-symlinks.sh.
 
 EXPECTED_SYMLINKS=()
-# Top-level dotfiles (excluding .git, .gitignore, .claude per the bootstrap glob)
+# Top-level dotfiles, mirroring bootstrap.d/60-symlinks.sh `.^(gitignore|git|claude)`.
+# .DS_Store is excluded because it's macOS Finder junk, not tracked config.
 for src in "$DOTFILES"/.*; do
   name="${src##*/}"
   case "$name" in
-    .|..|.git|.gitignore|.claude) continue ;;
+    .|..|.git|.gitignore|.claude|.DS_Store) continue ;;
   esac
   EXPECTED_SYMLINKS+=("$HOME/$name|$src")
 done
-# _config subdirs (excluding gh — file-level)
+# _config subdirs, mirroring bootstrap.d/60-symlinks.sh `_config/^(gh|atuin)`.
 for src in "$DOTFILES"/_config/*; do
   name="${src##*/}"
-  [ "$name" = "gh" ] && continue
+  case "$name" in
+    gh|atuin) continue ;;
+  esac
   EXPECTED_SYMLINKS+=("$HOME/.config/$name|$src")
 done
-# Claude — file-level
-for name in CLAUDE.md settings.json rules; do
-  EXPECTED_SYMLINKS+=("$HOME/.claude/$name|$DOTFILES/.claude/$name")
+# File-level entries — only include if the repo source exists.
+for entry in \
+  "$HOME/.claude/CLAUDE.md|$DOTFILES/.claude/CLAUDE.md" \
+  "$HOME/.claude/settings.json|$DOTFILES/.claude/settings.json" \
+  "$HOME/.claude/rules|$DOTFILES/.claude/rules" \
+  "$HOME/.config/gh/config.yml|$DOTFILES/_config/gh/config.yml" \
+  "$HOME/.config/atuin/config.toml|$DOTFILES/_config/atuin/config.toml"
+do
+  [ -e "${entry##*|}" ] && EXPECTED_SYMLINKS+=("$entry")
 done
-# gh — file-level (config.yml only)
-EXPECTED_SYMLINKS+=("$HOME/.config/gh/config.yml|$DOTFILES/_config/gh/config.yml")
-# atuin — file-level (config.toml only)
-EXPECTED_SYMLINKS+=("$HOME/.config/atuin/config.toml|$DOTFILES/_config/atuin/config.toml")
+
+# True if a real file/dir at $1 is byte-identical to the repo source at $2
+# (directories compared recursively, ignoring .DS_Store). Used to decide
+# whether a conflict can be safely auto-replaced with a symlink.
+_target_matches_source() {
+  local target="$1" src="$2"
+  if [ -d "$target" ] && [ -d "$src" ]; then
+    diff -rq --exclude=.DS_Store "$target" "$src" >/dev/null 2>&1
+  elif [ -f "$target" ] && [ -f "$src" ]; then
+    cmp -s "$target" "$src"
+  else
+    return 1
+  fi
+}
 
 check_symlinks() {
-  local target src missing=0 mismatched=0 fixed=0
+  local target src missing=0 mismatched=0 safe_conflict=0 drift_conflict=0 fixed=0
+  local -a drift_targets
   for entry in "${EXPECTED_SYMLINKS[@]}"; do
     target="${entry%%|*}"
     src="${entry##*|}"
+
+    # Already correctly linked.
     if [ -L "$target" ] && [ "$(readlink "$target")" = "$src" ]; then
       continue
     fi
+
+    local action=""
     if [ -L "$target" ]; then
-      ((mismatched++))
+      action=relink; ((mismatched++))
     elif [ ! -e "$target" ]; then
-      ((missing++))
+      action=create; ((missing++))
+    elif _target_matches_source "$target" "$src"; then
+      action=replace; ((safe_conflict++))
     else
-      ((mismatched++))  # exists as a real file/dir — conflict
+      ((drift_conflict++))
+      drift_targets+=("${target/#$HOME/~}")
+      continue  # never auto-fix drift — would clobber local changes
     fi
-    if $FIX && [ ! -e "$target" ] || [ -L "$target" ]; then
+
+    if $FIX; then
       mkdir -p "$(dirname "$target")"
+      [ "$action" = "replace" ] && rm -rf "$target"
       ln -sfn "$src" "$target" && ((fixed++))
     fi
   done
 
-  local total=$missing+$mismatched
-  if [ $((missing + mismatched)) -eq 0 ]; then
+  local fixable=$((missing + mismatched + safe_conflict))
+  if [ $((fixable + drift_conflict)) -eq 0 ]; then
     result symlinks ok "all ${#EXPECTED_SYMLINKS[@]} dotfile links healthy"
-  else
-    local msg=""
-    [ $missing -gt 0 ]    && msg="${msg}${missing} missing"
-    [ $mismatched -gt 0 ] && msg="${msg:+$msg, }${mismatched} mismatched"
-    if [ $fixed -gt 0 ]; then
-      result symlinks warn "$msg ($fixed auto-fixed)"
-    else
-      result symlinks err "$msg" "dotctor --fix"
+    return
+  fi
+
+  local parts=()
+  [ $missing -gt 0 ]        && parts+=("$missing missing")
+  [ $mismatched -gt 0 ]     && parts+=("$mismatched mismatched")
+  [ $safe_conflict -gt 0 ]  && parts+=("$safe_conflict conflict")
+  [ $drift_conflict -gt 0 ] && parts+=("$drift_conflict diverged")
+  local msg="${(j:, :)parts}"
+  [ $fixed -gt 0 ] && msg="$msg ($fixed auto-fixed)"
+
+  if [ $drift_conflict -gt 0 ]; then
+    local hint="reconcile then re-link: ${(j:, :)drift_targets}"
+    if [ $fixable -gt 0 ] && ! $FIX; then
+      hint="dotctor --fix; then $hint"
     fi
+    result symlinks err "$msg" "$hint"
+  elif $FIX; then
+    if [ $fixed -eq $fixable ]; then
+      result symlinks ok "fixed $fixed dotfile link(s)"
+    else
+      result symlinks warn "$msg"
+    fi
+  else
+    result symlinks warn "$msg" "dotctor --fix"
   fi
 }
 

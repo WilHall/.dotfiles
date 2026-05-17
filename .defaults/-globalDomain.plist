@@ -11,7 +11,7 @@
 	<key>AppleHighlightColor</key>
 	<string>1.000000 0.749020 0.823529 Pink</string>
 	<key>AppleIconAppearanceCustomTintColor</key>
-	<string>1.000000 0.475000 0.721851 1.000000</string>
+	<string>1.000000 0.475000 0.722117 1.000000</string>
 	<key>AppleIconAppearanceTintColor</key>
 	<string>Other</string>
 	<key>AppleKeyboardUIMode</key>
@@ -28,6 +28,8 @@
 	<string>en_US</string>
 	<key>AppleMeasurementUnits</key>
 	<string>Inches</string>
+	<key>AppleMenuBarVisibleInFullscreen</key>
+	<true/>
 	<key>AppleMetricUnits</key>
 	<false/>
 	<key>AppleMiniaturizeOnDoubleClick</key>
@@ -35,7 +37,7 @@
 	<key>ApplePressAndHoldEnabled</key>
 	<string>0</string>
 	<key>AppleReduceDesktopTinting</key>
-	<false/>
+	<true/>
 	<key>AppleScrollerPagingBehavior</key>
 	<true/>
 	<key>AppleShowAllExtensions</key>
@@ -46,12 +48,22 @@
 	<string>Fahrenheit</string>
 	<key>AppleWindowTabbingMode</key>
 	<string>always</string>
+	<key>CFKAL</key>
+	<dict>
+		<key>DomainCategory</key>
+		<real>9500315</real>
+	</dict>
+	<key>CFRKS</key>
+	<dict>
+		<key>DomainCategory</key>
+		<real>9310500</real>
+	</dict>
 	<key>CGDisableCursorLocationMagnification</key>
 	<true/>
 	<key>KB_DoubleQuoteOption</key>
-	<string>“abc”</string>
+	<string>"abc"</string>
 	<key>KB_SingleQuoteOption</key>
-	<string>‘abc’</string>
+	<string>'abc'</string>
 	<key>KB_SpellingLanguage</key>
 	<dict>
 		<key>KB_SpellingLanguageIsAutomatic</key>
@@ -61,6 +73,8 @@
 	<false/>
 	<key>NSAutomaticDashSubstitutionEnabled</key>
 	<false/>
+	<key>NSAutomaticInlinePredictionEnabled</key>
+	<false/>
 	<key>NSAutomaticPeriodSubstitutionEnabled</key>
 	<false/>
 	<key>NSAutomaticQuoteSubstitutionEnabled</key>
@@ -69,35 +83,34 @@
 	<false/>
 	<key>NSAutomaticTextCompletionEnabled</key>
 	<true/>
-	<key>NSFKS</key>
-	<dict>
-		<key>DomainCategory</key>
-		<real>9103900</real>
-	</dict>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2026-05-16T20:10:02Z</date>
+	<date>2026-05-16T21:02:38Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>en</string>
-		<string>en_US</string>
-		<string>de</string>
-		<string>vi</string>
+		<string>nb</string>
+		<string>nn</string>
 		<string>nl</string>
+		<string>de</string>
+		<string>fr</string>
 		<string>it</string>
-		<string>pl</string>
-		<string>mul</string>
-		<string>mul_Latn</string>
-		<string>es</string>
+		<string>vi</string>
+		<string>en_US</string>
+		<string>fi</string>
+		<string>tr</string>
 	</array>
 	<key>NSLinguisticDataAssetsRequestedByChecker</key>
 	<array>
 		<string>en</string>
-		<string>de</string>
-		<string>vi</string>
+		<string>nb</string>
+		<string>nn</string>
 		<string>nl</string>
+		<string>de</string>
+		<string>fr</string>
 		<string>it</string>
-		<string>pl</string>
-		<string>es</string>
+		<string>vi</string>
+		<string>fi</string>
+		<string>tr</string>
 	</array>
 	<key>NSNavPanelFileListModeForOpenMode2</key>
 	<integer>1</integer>
@@ -111,6 +124,8 @@
 			<string>com.google.www</string>
 		</dict>
 	</dict>
+	<key>NSSmartReplyEnabled</key>
+	<false/>
 	<key>NSSpellCheckerContainerTransitionComplete</key>
 	<true/>
 	<key>NSSpellCheckerDictionaryContainerTransitionComplete</key>
@@ -119,6 +134,14 @@
 	<date>2024-09-16T21:44:54Z</date>
 	<key>NSUserDictionaryReplacementItems</key>
 	<array>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>omw</string>
+			<key>with</key>
+			<string>On my way!</string>
+		</dict>
 		<dict>
 			<key>on</key>
 			<integer>1</integer>
@@ -201,23 +224,18 @@
 		</dict>
 	</array>
 	<key>NSUserKeyEquivalents</key>
-	<dict>
-		<key>Auto-call with iPhone</key>
-		<string>@~^=</string>
-	</dict>
+	<dict/>
 	<key>NSUserQuotesArray</key>
 	<array>
-		<string>“</string>
-		<string>”</string>
-		<string>‘</string>
-		<string>’</string>
+		<string>"</string>
+		<string>"</string>
+		<string>'</string>
+		<string>'</string>
 	</array>
 	<key>NavPanelFileListModeForOpenMode</key>
 	<integer>1</integer>
 	<key>PKOrderManagementDisabled</key>
 	<true/>
-	<key>UIPreferredContentSizeCategoryName</key>
-	<string>UICTContentSizeCategoryXL</string>
 	<key>WebAutomaticSpellingCorrectionEnabled</key>
 	<false/>
 	<key>com.apple.finder.SyncExtensions</key>
@@ -242,10 +260,6 @@
 				<string>file:///Users/wilhall/Pictures/</string>
 				<string>file:///Users/wilhall/Documents/</string>
 				<string>file:///Users/wilhall/Desktop/</string>
-				<string>file:///System/Volumes/Update/SFR/mnt1/</string>
-				<string>file:///System/Volumes/Update/mnt1/</string>
-				<string>file:///Library/Developer/CoreSimulator/Cryptex/Images/bundle/SimRuntimeBundle-C161922F-44DA-4F82-A4DA-12C30A5F6DA3/</string>
-				<string>file:///Library/Developer/CoreSimulator/Volumes/iOS_22E238/</string>
 			</array>
 		</dict>
 	</dict>
@@ -255,6 +269,8 @@
 	<integer>1</integer>
 	<key>com.apple.sound.beep.flash</key>
 	<integer>0</integer>
+	<key>com.apple.sound.uiaudio.enabled</key>
+	<integer>1</integer>
 	<key>com.apple.springing.delay</key>
 	<real>0.5</real>
 	<key>com.apple.springing.enabled</key>

@@ -4,6 +4,8 @@
 <dict>
 	<key>AddressFormat</key>
 	<string>us</string>
+	<key>AlwaysShowAccountInGroupSummary</key>
+	<true/>
 	<key>ContactListMaximumHeight</key>
 	<real>803</real>
 	<key>ContactTemplate</key>
@@ -51,6 +53,8 @@
 	</array>
 	<key>DarkModeTheme</key>
 	<integer>2</integer>
+	<key>DialActionMethod</key>
+	<string>mac</string>
 	<key>DidShowCardhop1UpgradeWindow</key>
 	<true/>
 	<key>FirstRunSetup</key>
@@ -78,11 +82,11 @@
 	<key>MiniWindowAttached</key>
 	<false/>
 	<key>MiniWindowVisible</key>
-	<true/>
+	<false/>
 	<key>OpenCallsIn</key>
 	<string>com.apple.mobilephone</string>
 	<key>OpenMapsIn</key>
-	<string>apple</string>
+	<string>google</string>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<true/>
 	<key>PlaySounds</key>
@@ -92,6 +96,8 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SUSendProfileInfo</key>
+	<true/>
+	<key>SentryEnabled</key>
 	<true/>
 	<key>ShowActionButtons</key>
 	<true/>
@@ -105,7 +111,5 @@
 	<true/>
 	<key>VCardExportPhotos</key>
 	<true/>
-	<key>kAOSUIProfilePictureCropRect</key>
-	<string>{{0, 16}, {384, 384}}</string>
 </dict>
 </plist>

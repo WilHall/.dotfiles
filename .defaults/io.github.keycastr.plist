@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>276</real>
+	<real>5641</real>
 	<key>SUAutomaticallyUpdate</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
@@ -12,9 +12,11 @@
 	<true/>
 	<key>SUSendProfileInfo</key>
 	<true/>
+	<key>alwaysShowPrefs</key>
+	<false/>
 	<key>capturingHotKey</key>
 	<data>
-	AAAcACgAAAA=
+	AAAeACgAAAA=
 	</data>
 	<key>default.allKeys</key>
 	<false/>

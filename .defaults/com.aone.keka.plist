@@ -17,17 +17,47 @@
 	<key>AppearanceDifferentiateTasksCountInDock</key>
 	<true/>
 	<key>AppearanceShowDockIcon</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>AppearanceSquishFaceInDock</key>
 	<true/>
 	<key>ApplyQuarantineAfterExtraction</key>
-	<true/>
+	<false/>
 	<key>ArchiveSingle</key>
 	<false/>
 	<key>AskZipUsingAES</key>
 	<true/>
 	<key>BackgroundQoSOnBattery</key>
 	<false/>
+	<key>Bookmarks</key>
+	<array>
+		<dict>
+			<key>Data</key>
+			<data>
+			Ym9va2QCAAAAAAQQMAAAAKIfwb0iED0N7sZcyU5Az62zOK7Bjt77
+			pcsVWRzV1+lrYAEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMA
+			AAAHAAAAAQEAAHdpbGhhbGwACAAAAAEGAAAQAAAAIAAAAAgAAAAE
+			AwAATE8AAAAAAAAIAAAABAMAAO97AAAAAAAACAAAAAEGAABAAAAA
+			UAAAAAgAAAAABAAAQcbyaAN53tAYAAAAAQIAAAIAAAAAAAAADwAA
+			AAAAAAAAAAAAAAAAAAgAAAAEAwAAAAAAAAAAAAAEAAAAAwMAAPUB
+			AAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
+			AAAABAMAAACQgpbnAAAACAAAAAAEAABBxuJWIQAAACQAAAABAQAA
+			MzQ2RjBBN0ItQzY2Qy00MjUyLTlFMDEtMDU0RjM3NTg5OEZBGAAA
+			AAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8A
+			AAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAADAAAAAA
+			AAAABRAAAGAAAAAAAAAAEBAAAIAAAAAAAAAAQBAAAHAAAAAAAAAA
+			AiAAAEwBAAAAAAAABSAAALwAAAAAAAAAECAAAMwAAAAAAAAAESAA
+			AAABAAAAAAAAEiAAAOAAAAAAAAAAEyAAAPAAAAAAAAAAICAAACwB
+			AAAAAAAAMCAAAFgBAAAAAAAAAcAAAKAAAAAAAAAAEcAAACAAAAAA
+			AAAAEsAAALAAAAAAAAAAENAAAAQAAAAAAAAA
+			</data>
+			<key>External</key>
+			<false/>
+			<key>Path</key>
+			<string>/Users/wilhall</string>
+			<key>Stale</key>
+			<false/>
+		</dict>
+	</array>
 	<key>CalculateMD5</key>
 	<false/>
 	<key>CloseController</key>
@@ -51,7 +81,7 @@
 	<key>DefaultFormat</key>
 	<string>ZIP</string>
 	<key>DefaultMethod</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>DefaultNameController</key>
 	<integer>1</integer>
 	<key>DefaultSaveLocationController</key>
@@ -85,11 +115,13 @@
 	<key>ExtractOnIntermediateFolder</key>
 	<false/>
 	<key>ExtractionExcludeMacForks</key>
-	<false/>
+	<true/>
 	<key>ExtractionFolderRenameExtension</key>
 	<true/>
+	<key>FallbackCustomPath</key>
+	<string>/Users/wilhall/Downloads</string>
 	<key>FallbackOption</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>FinderAfterCompression</key>
 	<true/>
 	<key>FinderAfterExtraction</key>
@@ -107,7 +139,7 @@
 	<key>KekaAskBeforeCancel</key>
 	<true/>
 	<key>KekaLaunchTimes</key>
-	<integer>1</integer>
+	<integer>99</integer>
 	<key>Legacy19007zSupport</key>
 	<true/>
 	<key>LetsMoveDialog</key>
@@ -141,9 +173,11 @@
 	<key>RemoveKekaQuarantineIfPossible</key>
 	<true/>
 	<key>RequestedReviewForVersion</key>
-	<integer>0</integer>
+	<integer>5665</integer>
+	<key>RequestedReviewOnDate</key>
+	<date>2026-04-04T14:37:31Z</date>
 	<key>RequestedReviewOnLaunch</key>
-	<integer>0</integer>
+	<integer>94</integer>
 	<key>ResizableWindows</key>
 	<false/>
 	<key>RetryPassword</key>
@@ -155,11 +189,11 @@
 	<key>SelectedTab</key>
 	<string>ZIP</string>
 	<key>SelectedTabDefaults</key>
-	<integer>1005</integer>
+	<integer>1002</integer>
 	<key>SetAsDefaultApp</key>
 	<false/>
 	<key>SetModificationDateAfterExtraction</key>
-	<false/>
+	<true/>
 	<key>ShowCompressionPassword</key>
 	<false/>
 	<key>ShowExtractionPassword</key>
@@ -203,9 +237,9 @@
 	<key>UseParentName</key>
 	<false/>
 	<key>VerifyCompression</key>
-	<false/>
+	<true/>
 	<key>Version</key>
-	<integer>5613</integer>
+	<integer>5707</integer>
 	<key>WelcomeWindowSafeDelay</key>
 	<real>0.029999999999999999</real>
 	<key>ZipUsingAES</key>

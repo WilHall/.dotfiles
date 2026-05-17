@@ -8,8 +8,6 @@
 	</data>
 	<key>LaunchAtLogin__hasMigrated</key>
 	<true/>
-	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>591</real>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -100,7 +98,7 @@
 	<key>cleanshotIntegration</key>
 	<true/>
 	<key>defaultWallpaperPlainNSColor</key>
-	<string>17c0bf6877c937e12363aad1b660c3e4</string>
+	<string>cfa59ed8d549d369bcada2f599f7b432</string>
 	<key>displayUnits</key>
 	<true/>
 	<key>displayWidthHeightIndicators</key>
@@ -265,9 +263,9 @@
 	AAAADbY=
 	</data>
 	<key>s000</key>
-	<integer>117</integer>
+	<integer>89</integer>
 	<key>showMenubarIcon</key>
-	<true/>
+	<false/>
 	<key>usedInactiveMode</key>
 	<true/>
 </dict>

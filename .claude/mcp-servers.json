@@ -1,0 +1,9 @@
+{
+  "onshape": {
+    "args": [
+      "-m",
+      "onshape_mcp.server"
+    ],
+    "command": "/Users/wilhall/workspace/skills/onshape-mcp/venv/bin/python"
+  }
+}

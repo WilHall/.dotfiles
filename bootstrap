@@ -35,6 +35,7 @@ bootstrap() {
   symlink_claude_config
   symlink_gh_config
   symlink_atuin_config
+  restore_claude_mcp_servers
   make_user_bin
 
   # Phase 3 — platform packages

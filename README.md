@@ -33,6 +33,7 @@ Top-level directories serve distinct roles; the bootstrap reconciles them with `
 | `./_config/<x>`                             | Symlink into `$HOME/.config/<x>`                                           | `symlink_dotfiles`          |
 | `./.claude/{CLAUDE.md, settings.json, rules}` | File-level symlinks (per-project Claude Code state stays machine-local)  | `symlink_claude_config`     |
 | `./_config/gh/config.yml`                   | File-level symlink — `hosts.yml` (OAuth token) stays machine-local          | `symlink_gh_config`         |
+| `./.claude/mcp-servers.json`                | Merged into `~/.claude.json`'s `mcpServers` (can't symlink — file mixes config with machine state) | `restore_claude_mcp_servers` |
 | `./bin/`                                    | `rsync` copy into `$HOME/.bin/`                                            | `make_user_bin`             |
 | `./_ssh/`                                   | `rsync` copy into `$HOME/.ssh/`                                            | `configure_ssh`             |
 | `./.defaults/`                              | macOS user-defaults snapshots, managed via `dx`                            | `restore_user_defaults`     |

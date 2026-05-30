@@ -168,6 +168,49 @@ check_symlinks() {
   fi
 }
 
+# ─── check: mcp ───────────────────────────────────────────────────────────
+# ~/.claude.json isn't symlinked (it mixes tracked mcpServers with machine
+# state), so check drift between the tracked subset and the live file instead.
+check_mcp() {
+  local repo="$DOTFILES/.claude/mcp-servers.json"
+  local live="$HOME/.claude.json"
+  if [ ! -f "$repo" ]; then
+    result mcp ok "no tracked MCP servers"
+    return
+  fi
+  if ! command -v jq >/dev/null; then
+    result mcp warn "jq not installed — cannot check MCP server drift"
+    return
+  fi
+  if [ ! -f "$live" ]; then
+    result mcp warn "~/.claude.json not found"
+    return
+  fi
+
+  local n_tracked drift=0 uncaptured
+  n_tracked=$(jq -r '. | keys | length' "$repo")
+  # The live mcpServers restricted to the keys the repo tracks, normalised the
+  # same way as the repo file — drift if these differ.
+  local repo_norm live_subset
+  repo_norm=$(jq -S '.' "$repo")
+  live_subset=$(jq -S --slurpfile r "$repo" \
+    '(.mcpServers // {}) | with_entries(select(.key as $k | $r[0] | has($k)))' "$live")
+  [ "$repo_norm" != "$live_subset" ] && drift=1
+  # Servers configured live (user scope) but not yet captured in the repo.
+  uncaptured=$(jq --slurpfile r "$repo" \
+    '((.mcpServers // {}) | keys) - ($r[0] | keys) | length' "$live")
+
+  if [ "$drift" -eq 0 ] && [ "$uncaptured" -eq 0 ]; then
+    result mcp ok "$n_tracked tracked MCP server(s) in sync"
+    return
+  fi
+  local parts=()
+  [ "$drift" -ne 0 ]       && parts+=("tracked servers differ from ~/.claude.json")
+  [ "$uncaptured" -gt 0 ]  && parts+=("$uncaptured live server(s) not captured")
+  result mcp warn "${(j:; :)parts}" \
+    "re-extract: jq -S '.mcpServers' ~/.claude.json > $repo  ·  restore: re-run ./bootstrap"
+}
+
 # ─── check: brewfile ──────────────────────────────────────────────────────
 check_brewfile() {
   if [ "$(uname)" != "Darwin" ]; then
@@ -311,6 +354,7 @@ check_secrets() {
 
 # ─── Run all ──────────────────────────────────────────────────────────────
 run_check symlinks "symlinks"     check_symlinks
+run_check mcp      "mcp servers"  check_mcp
 run_check brewfile "brewfile"     check_brewfile
 run_check asdf     "asdf"         check_asdf
 run_check auth     "auth file"    check_auth

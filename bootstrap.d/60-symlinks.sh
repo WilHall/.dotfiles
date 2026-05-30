@@ -35,3 +35,23 @@ symlink_atuin_config() {
   mkdir -p "$HOME/.config/atuin"
   ln -sfn "$HOME/.dotfiles/_config/atuin/config.toml" "$HOME/.config/atuin/config.toml"
 }
+
+# Merge tracked MCP servers into ~/.claude.json. ~/.claude.json can't be
+# symlinked — it interleaves the mcpServers config we track with machine-local
+# state (oauthAccount, caches, per-project history), so we reconcile just the
+# one key and leave the file writable for Claude Code. Tracked servers win on
+# key conflicts; servers added live but not yet captured in the repo are kept.
+restore_claude_mcp_servers() {
+  local repo="$HOME/.dotfiles/.claude/mcp-servers.json"
+  local live="$HOME/.claude.json"
+  [ -f "$repo" ] || return 0
+  [ -f "$live" ] || return 0
+  local tmp; tmp=$(mktemp)
+  if jq --slurpfile mcp "$repo" \
+      '.mcpServers = ((.mcpServers // {}) + $mcp[0])' "$live" > "$tmp"; then
+    mv "$tmp" "$live"
+  else
+    rm -f "$tmp"
+    echo "restore_claude_mcp_servers: failed to merge $repo into $live" >&2
+  fi
+}

@@ -1,0 +1,93 @@
+<application>
+  <component name="CodeVisionSettings">
+    <option name="codeVisionGroupToPosition">
+      <map>
+        <entry key="LSPCodeLens" value="Default" />
+        <entry key="component.usage" value="Default" />
+        <entry key="inheritors" value="Default" />
+        <entry key="llm" value="Default" />
+        <entry key="references" value="Default" />
+        <entry key="vcs.code.vision" value="Default" />
+      </map>
+    </option>
+    <option name="defaultPosition" value="Right" />
+    <option name="disabledCodeVisionProviderIds">
+      <set>
+        <option value="LSPCodeLens" />
+        <option value="component.usage" />
+        <option value="inheritors" />
+        <option value="llm" />
+        <option value="references" />
+        <option value="vcs.code.vision" />
+      </set>
+    </option>
+    <option name="enabled" value="false" />
+  </component>
+  <component name="DaemonCodeAnalyzerSettings">
+    <option name="SHOW_METHOD_SEPARATORS" value="true" />
+  </component>
+  <component name="DeclarativeInlayHintsSettings">
+    <option name="enabledOptions">
+      <map>
+        <entry key="js.type.hints#function.returns" value="false" />
+        <entry key="js.type.hints#non.paren.single.param" value="false" />
+        <entry key="js.type.hints#parameters.in.parens" value="false" />
+        <entry key="js.type.hints#variables.and.fields" value="false" />
+        <entry key="sql.column.names.inlay.hints#sql.show.column.names.for.asterisk" value="true" />
+        <entry key="sql.column.names.inlay.hints#sql.show.column.names.for.set.operations" value="true" />
+        <entry key="sql.column.names.inlay.hints#sql.show.column.names.in.insert.values" value="true" />
+        <entry key="sql.column.names.inlay.hints#sql.show.column.names.in.select" value="true" />
+        <entry key="sql.join.cardinality.hints#full.join" value="false" />
+        <entry key="sql.join.cardinality.hints#inner.join" value="false" />
+        <entry key="sql.join.cardinality.hints#left.join" value="false" />
+        <entry key="sql.join.cardinality.hints#right.join" value="false" />
+        <entry key="ts.type.hints#function.returns" value="false" />
+        <entry key="ts.type.hints#non.paren.single.param" value="false" />
+        <entry key="ts.type.hints#parameters.in.parens" value="false" />
+        <entry key="ts.type.hints#variables.and.fields" value="false" />
+      </map>
+    </option>
+    <option name="providerIdToEnabled">
+      <map>
+        <entry key="js.chain.hints" value="false" />
+        <entry key="js.type.hints" value="false" />
+        <entry key="rbs.ruby.attribute.type.hints" value="false" />
+        <entry key="rbs.ruby.block.parameter.type.hints" value="false" />
+        <entry key="rbs.ruby.block.self.type.hints" value="false" />
+        <entry key="rbs.ruby.constant.type.hints" value="false" />
+        <entry key="rbs.ruby.container.type.hints" value="false" />
+        <entry key="rbs.ruby.global.variable.type.hints" value="false" />
+        <entry key="rbs.ruby.method.parameter.type.hints" value="false" />
+        <entry key="rbs.ruby.method.return.type.hints" value="false" />
+        <entry key="sql.column.names.inlay.hints" value="true" />
+        <entry key="sql.join.cardinality.hints" value="false" />
+        <entry key="ts.chain.hints" value="false" />
+        <entry key="ts.enum.hints" value="false" />
+        <entry key="ts.type.hints" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="EditorSettings">
+    <option name="USE_SOFT_WRAPS" value="MAIN_EDITOR" />
+    <option name="SOFT_WRAP_FILE_MASKS" value="*" />
+    <option name="CUSTOM_SOFT_WRAP_INDENT" value="2" />
+    <option name="ADDITIONAL_PAGE_AT_BOTTOM" value="true" />
+  </component>
+  <component name="InlayHintsSettings">
+    <option name="disabledHintProviderIds">
+      <set>
+        <option value="Dockerfile.docker.inlay.hints" />
+        <option value="Markdown.MarkdownTableInlayProviderSettingsKey" />
+        <option value="TEXT.LSP.hints" />
+        <option value="textmate.LSP.hints" />
+      </set>
+    </option>
+    <option name="lastViewedProviderKeyId" value="" />
+  </component>
+  <component name="InlineCompletionOnboarding">
+    <option name="onboardingFinished" value="true" />
+  </component>
+  <component name="XmlEditorOptions">
+    <option name="showCssInlineColorPreview" value="true" />
+  </component>
+</application>

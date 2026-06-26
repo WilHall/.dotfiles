@@ -1,0 +1,17 @@
+<application>
+  <component name="FileTypeManager" version="19">
+    <extensionMap>
+      <mapping pattern="watch-locals" type="AUTO_DETECTED" />
+      <mapping ext="mdc" type="Markdown" />
+      <mapping ext="toml" type="PLAIN_TEXT" />
+      <mapping ext="sdef" type="XML" />
+      <removed_mapping ext="csv" approved="true" type="CSV/TSV" />
+      <removed_mapping ext="dockerignore" approved="true" type="DockerIgnore file" />
+      <removed_mapping ext="ignore" approved="true" type="IgnoreLang file" />
+      <removed_mapping ext="mdc" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="toml" approved="true" type="TOML" />
+      <removed_mapping ext="tsv" approved="true" type="CSV/TSV" />
+      <removed_mapping pattern=".prettierrc" approved="true" type="JSON" />
+    </extensionMap>
+  </component>
+</application>

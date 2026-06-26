@@ -1,0 +1,14 @@
+<application>
+  <component name="DownloadModelConsentState">
+    <option name="lastNotificationTimestamps">
+      <map>
+        <entry language="CSS" lastNotificationTimestamp="1778938137590" />
+        <entry language="HTML" lastNotificationTimestamp="1778881588182" />
+        <entry language="JavaScript" lastNotificationTimestamp="1777905676592" />
+      </map>
+    </option>
+  </component>
+  <component name="InlineShortcutChoice">
+    <option name="choiceShownTimes" value="50" />
+  </component>
+</application>

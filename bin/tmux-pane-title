@@ -1,0 +1,52 @@
+#!/bin/sh
+# Render a tmux pane-border title from a pane's tty: the foreground command's
+# name and how long it has been running.
+#
+# Why not just use #{pane_current_command}? Some programs set their own arg0
+# (Claude Code, for instance, reports its version string like "2.1.158"), so
+# tmux's idea of the command can be unhelpful. Here we read the tty's process
+# table directly and report the foreground process-GROUP LEADER — the command
+# you actually launched — along with its elapsed run time (ps etime).
+#
+# When a pane is idle the login shell is itself the foreground leader, so it
+# shows e.g. "zsh 03:12:45" — the shell's own uptime.
+#
+# Invoked by tmux (see pane-border-format in ~/.tmux.conf) as:
+#   tmux-pane-title "#{pane_tty}"
+#
+# tmux runs #() jobs via /bin/sh with a sparse PATH, so ps and awk are called
+# by absolute path rather than relying on PATH.
+
+tty="${1#/dev/}"
+[ -z "$tty" ] && exit 0
+
+# Among this tty's processes, prefer the foreground (stat has '+') process-group
+# leader (pid == pgid). Fall back to any foreground process, then to anything,
+# so a title is always produced. Basename the command and drop the leading '-'
+# that login shells carry (e.g. "-zsh" -> "zsh").
+/bin/ps -t "$tty" -o pid=,pgid=,stat=,etime=,comm= 2>/dev/null | /usr/bin/awk '
+  function clean(name) { sub(/.*\//, "", name); sub(/^-/, "", name); return name }
+  # ps etime is [[DD-]HH:]MM:SS. Reformat to "5m" / "1h 10m" / "10d 2h 43m",
+  # dropping seconds and capping the largest unit at days.
+  function humanize(et,   days, hours, mins, dayparts, parts, count) {
+    days = 0
+    if (et ~ /-/) { split(et, dayparts, "-"); days = dayparts[1] + 0; et = dayparts[2] }
+    count = split(et, parts, ":")
+    if (count == 3)      { hours = parts[1] + 0; mins = parts[2] + 0 }   # HH:MM:SS
+    else if (count == 2) { hours = 0;            mins = parts[1] + 0 }   # MM:SS
+    else                 { hours = 0;            mins = 0 }
+    if      (days > 0)  return days "d " hours "h " mins "m"
+    else if (hours > 0) return hours "h " mins "m"
+    else                return mins "m"
+  }
+  {
+    if ($3 ~ /\+/ && $1 == $2 && leader == "")    { leader = clean($5); leader_etime = $4 }
+    else if ($3 ~ /\+/ && foreground == "")       { foreground = clean($5); foreground_etime = $4 }
+    if (any == "")                                { any = clean($5); any_etime = $4 }
+  }
+  END {
+    if      (leader != "")     print leader " ❧ " humanize(leader_etime)
+    else if (foreground != "") print foreground " ❧ " humanize(foreground_etime)
+    else if (any != "")        print any " ❧ " humanize(any_etime)
+  }
+'

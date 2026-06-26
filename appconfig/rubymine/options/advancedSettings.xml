@@ -1,0 +1,10 @@
+<application>
+  <component name="AdvancedSettings">
+    <option name="settings">
+      <map>
+        <entry key="editor.soft.wrap.force.limit" value="375" />
+        <entry key="floating.codeToolbar.hide" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

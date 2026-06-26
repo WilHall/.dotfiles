@@ -1,0 +1,10 @@
+<application>
+  <component name="LafManager">
+    <laf themeId="com.github.catppuccin.frappe.jetbrains" />
+    <lafs-to-previous-schemes>
+      <laf-to-scheme laf="ExperimentalDark" scheme="Catppuccin Frappe PrideCat" />
+      <laf-to-scheme laf="com.github.catppuccin.frappe.jetbrains" scheme="Catppuccin Frappe PrideCat" />
+      <laf-to-scheme laf="com.github.catppuccin.macchiato.jetbrains" scheme="_@user_Default" />
+    </lafs-to-previous-schemes>
+  </component>
+</application>

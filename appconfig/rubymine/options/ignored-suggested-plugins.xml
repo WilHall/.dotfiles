@@ -1,0 +1,10 @@
+<application>
+  <component name="IgnoredPluginSuggestions">
+    <option name="pluginIds">
+      <list>
+        <option value="intellij.prettierJS" />
+        <option value="intellij.nextjs" />
+      </list>
+    </option>
+  </component>
+</application>

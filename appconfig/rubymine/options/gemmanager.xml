@@ -1,0 +1,30 @@
+<application>
+  <component name="RubySdkGemsetsSettings">
+    <moduleSdks>
+      <map>
+        <entry key="wilhall.com">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.asdf/installs/ruby/3.4.1/bin/ruby" />
+              <option value="$USER_HOME$/.asdf/installs/ruby/3.4.5/bin/ruby" />
+            </list>
+          </value>
+        </entry>
+      </map>
+    </moduleSdks>
+    <sdkGemsets>
+      <map>
+        <entry key="$USER_HOME$/.asdf/installs/ruby/3.4.1/bin/ruby">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.asdf/installs/ruby/3.4.5/bin/ruby">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </sdkGemsets>
+  </component>
+</application>

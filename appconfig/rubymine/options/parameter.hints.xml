@@ -1,0 +1,20 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <option id="ruby.non.literals" value="false" />
+    <option id="js.only.show.names.for.tagged" value="false" />
+    <option id="vuejs.show.names.for.filters" value="false" />
+    <option id="js.only.show.names.for.pipes" value="false" />
+    <option id="js.only.show.names.for.literal.args" value="false" />
+    <option id="ts.param.hints.show.names.for.literal.args" value="false" />
+    <option id="js.param.hints.show.names.for.tagged" value="false" />
+    <option id="angular.show.names.for.pipes" value="false" />
+    <option id="ruby.show.param.grouping" value="false" />
+    <disabledLanguages>
+      <language id="TypeScript" />
+      <language id="Angular2Html" />
+      <language id="Vue" />
+      <language id="JavaScript" />
+      <language id="ruby" />
+    </disabledLanguages>
+  </component>
+</application>

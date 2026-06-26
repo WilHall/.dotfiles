@@ -1,0 +1,6 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="JavaScript/Declaration/Split declaration and initialization" />
+    <ignoreAction name="React/Convert to class component" />
+  </component>
+</application>

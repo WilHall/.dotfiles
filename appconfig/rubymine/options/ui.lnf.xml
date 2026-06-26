@@ -1,0 +1,80 @@
+<application>
+  <component name="ProjectViewFileNesting">
+    <nesting-rules>
+      <NestingRule child-file-suffix=".cjs.map" parent-file-suffix=".cjs" />
+      <NestingRule child-file-suffix=".css.map" parent-file-suffix=".css" />
+      <NestingRule child-file-suffix=".min.css" parent-file-suffix=".css" />
+      <NestingRule child-file-suffix=".min.css.map" parent-file-suffix=".css" />
+      <NestingRule child-file-suffix=".cjs" parent-file-suffix=".cts" />
+      <NestingRule child-file-suffix=".cjs.map" parent-file-suffix=".cts" />
+      <NestingRule child-file-suffix=".d.cts" parent-file-suffix=".cts" />
+      <NestingRule child-file-suffix=".d.cts.map" parent-file-suffix=".cts" />
+      <NestingRule child-file-suffix=".js" parent-file-suffix=".cts" />
+      <NestingRule child-file-suffix=".js.map" parent-file-suffix=".cts" />
+      <NestingRule child-file-suffix=".js" parent-file-suffix=".es6" />
+      <NestingRule child-file-suffix=".js.map" parent-file-suffix=".es6" />
+      <NestingRule child-file-suffix="-compiled.js" parent-file-suffix=".js" />
+      <NestingRule child-file-suffix="-compiled.js.map" parent-file-suffix=".js" />
+      <NestingRule child-file-suffix=".js.map" parent-file-suffix=".js" />
+      <NestingRule child-file-suffix=".map" parent-file-suffix=".js" />
+      <NestingRule child-file-suffix=".min.js" parent-file-suffix=".js" />
+      <NestingRule child-file-suffix=".min.js.map" parent-file-suffix=".js" />
+      <NestingRule child-file-suffix=".json.graphql" parent-file-suffix=".json" />
+      <NestingRule child-file-suffix=".js" parent-file-suffix=".jsx" />
+      <NestingRule child-file-suffix=".js.map" parent-file-suffix=".jsx" />
+      <NestingRule child-file-suffix=".mjs.map" parent-file-suffix=".mjs" />
+      <NestingRule child-file-suffix=".d.mts" parent-file-suffix=".mts" />
+      <NestingRule child-file-suffix=".d.mts.map" parent-file-suffix=".mts" />
+      <NestingRule child-file-suffix=".js" parent-file-suffix=".mts" />
+      <NestingRule child-file-suffix=".js.map" parent-file-suffix=".mts" />
+      <NestingRule child-file-suffix=".mjs" parent-file-suffix=".mts" />
+      <NestingRule child-file-suffix=".mjs.map" parent-file-suffix=".mts" />
+      <NestingRule child-file-suffix=".css" parent-file-suffix=".sass" />
+      <NestingRule child-file-suffix=".css.map" parent-file-suffix=".sass" />
+      <NestingRule child-file-suffix=".css" parent-file-suffix=".scss" />
+      <NestingRule child-file-suffix=".css.map" parent-file-suffix=".scss" />
+      <NestingRule child-file-suffix=".config.ts" parent-file-suffix=".spec.ts" />
+      <NestingRule child-file-suffix=".config.tsx" parent-file-suffix=".spec.tsx" />
+      <NestingRule child-file-suffix=".cjs" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".cjs.map" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".config.ts" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".d.ts" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".d.ts.map" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".js" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".js.map" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".mjs" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".mjs.map" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".stories.ts" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".story.ts" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".test.ts" parent-file-suffix=".ts" />
+      <NestingRule child-file-suffix=".config.tsx" parent-file-suffix=".tsx" />
+      <NestingRule child-file-suffix=".d.ts" parent-file-suffix=".tsx" />
+      <NestingRule child-file-suffix=".d.ts.map" parent-file-suffix=".tsx" />
+      <NestingRule child-file-suffix=".js" parent-file-suffix=".tsx" />
+      <NestingRule child-file-suffix=".js.map" parent-file-suffix=".tsx" />
+      <NestingRule child-file-suffix=".jsx" parent-file-suffix=".tsx" />
+      <NestingRule child-file-suffix=".jsx.map" parent-file-suffix=".tsx" />
+      <NestingRule child-file-suffix=".stories.tsx" parent-file-suffix=".tsx" />
+      <NestingRule child-file-suffix=".story.tsx" parent-file-suffix=".tsx" />
+      <NestingRule child-file-suffix=".test.tsx" parent-file-suffix=".tsx" />
+    </nesting-rules>
+  </component>
+  <component name="UISettings">
+    <option name="ACTIVATE_MRU_EDITOR_ON_CLOSE" value="true" />
+    <option name="compactTreeIndents" value="true" />
+    <option name="DISABLE_MNEMONICS" value="false" />
+    <option name="DND_WITH_PRESSED_ALT_ONLY" value="true" />
+    <option name="EDITOR_TAB_LIMIT" value="100" />
+    <option name="FULL_PATHS_IN_TITLE_BAR" value="true" />
+    <option name="MARK_MODIFIED_TABS_WITH_ASTERISK" value="true" />
+    <option name="MAX_LOOKUP_LIST_HEIGHT" value="12" />
+    <option name="NAVIGATION_BAR_LOCATION" value="TOP" />
+    <option name="OPEN_TABS_AT_THE_END" value="true" />
+    <option name="REMEMBER_SIZE_FOR_EACH_TOOL_WINDOW_NEW_UI" value="true" />
+    <option name="SCROLL_TAB_LAYOUT_IN_EDITOR" value="false" />
+    <option name="SHOW_INPLACE_COMMENTS" value="true" />
+    <option name="SHOW_PINNED_TABS_IN_A_SEPARATE_ROW" value="true" />
+    <option name="showTreeIndentGuides" value="true" />
+    <option name="UI_DENSITY" value="COMPACT" />
+  </component>
+</application>

@@ -8,7 +8,10 @@
       "WebFetch(*)",
       "WebSearch(*)",
       "Write(*)",
-      "Skill(*)"
+      "Skill(*)",
+      "mcp__honeybadger__*",
+      "mcp__onshape__*",
+      "mcp__gitmcp__*"
     ],
     "deny": [
       "Read(**/*.key)",
@@ -19,15 +22,25 @@
       "Read(**/credentials.json)",
       "Read(**/id_rsa)",
       "Read(**/secrets.json)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "model": "opus",
+  "worktree": {
+    "baseRef": "fresh"
+  },
   "enabledPlugins": {
     "typescript-lsp@claude-plugins-official": true,
     "ruby-lsp@claude-plugins-official": true,
     "cloudflare@cloudflare": true,
     "superpowers@superpowers-marketplace": true,
-    "frontend-design@claude-plugins-official": true
+    "frontend-design@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "plugin-dev@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "cloudflare": {
@@ -49,5 +62,10 @@
       }
     }
   },
-  "theme": "dark-ansi"
+  "promptSuggestionEnabled": false,
+  "theme": "dark-ansi",
+  "editorMode": "normal",
+  "remoteControlAtStartup": true,
+  "skipAutoPermissionPrompt": true,
+  "skipWorkflowUsageWarning": true
 }

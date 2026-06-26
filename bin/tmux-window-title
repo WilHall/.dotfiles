@@ -1,0 +1,38 @@
+#!/bin/sh
+# Format a tmux window/tab title from a pane's current path.
+#
+# Rules:
+#   * Paths under $HOME are shown home-relative with a leading "~".
+#   * Three segments or fewer are shown in full   ->  ~/workspace/folder_name
+#   * More than three segments collapse to the     ->  …folder_name/foop
+#     last two, prefixed with an ellipsis.
+#
+# Invoked by tmux (via catppuccin's window text) as:
+#   tmux-window-title "#{pane_current_path}"
+
+path="$1"
+
+# Make the path home-relative.
+case "$path" in
+  "$HOME")   printf '~';   exit 0 ;;
+  "$HOME"/*) rel="~/${path#"$HOME"/}" ;;
+  *)         rel="$path" ;;
+esac
+
+# Count path separators with pure shell builtins — tmux runs #() jobs via /bin/sh
+# with a sparse PATH, so external tools like tr/wc can't be relied on here.
+# "~/workspace/folder_name" has two separators — three segments. Three or more
+# separators means more than three segments: collapse it.
+separator_count=0
+remainder="$rel"
+while [ "$remainder" != "${remainder#*/}" ]; do
+  remainder="${remainder#*/}"
+  separator_count=$((separator_count + 1))
+done
+
+if [ "$separator_count" -ge 3 ]; then
+  prefix="${rel%/*/*}"          # everything before the last two segments
+  printf '…%s' "${rel#"$prefix"/}"
+else
+  printf '%s' "$rel"
+fi

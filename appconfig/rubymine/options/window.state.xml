@@ -1,0 +1,23 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.3024.1964@192dpi" x="912" y="264" />
+    <location key="find.popup.0.0.5120.1440" x="655" y="100" />
+    <size key="find.popup.0.0.3024.1964@192dpi" width="1806" height="1248" />
+    <size key="find.popup.0.0.5120.1440" width="3612" height="1177" />
+  </component>
+  <component name="WindowManager">
+    <frame x="48" y="33" width="1464" height="949" extendedState="6" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state width="749" height="121" key="ShowUsagesActions.dimensionServiceKey" timestamp="1780490842634">
+      <screen x="48" y="33" width="1464" height="949" />
+    </state>
+    <state width="722" height="143" key="ShowUsagesActions.dimensionServiceKey/0.-1410.5120.1410/64.30.5056.1410" timestamp="1775050476424" />
+    <state width="493" height="143" key="ShowUsagesActions.dimensionServiceKey/0.33.1512.949/-2497.30.2497.1570" timestamp="1772481955778" />
+    <state width="572" height="187" key="ShowUsagesActions.dimensionServiceKey/46.33.1466.949" timestamp="1778070170486" />
+    <state width="672" height="121" key="ShowUsagesActions.dimensionServiceKey/47.33.1465.949" timestamp="1778066315219" />
+    <state width="749" height="121" key="ShowUsagesActions.dimensionServiceKey/48.33.1464.949" timestamp="1780490842634" />
+    <state width="871" height="121" key="ShowUsagesActions.dimensionServiceKey/49.33.1463.949" timestamp="1776111909047" />
+    <state width="638" height="121" key="ShowUsagesActions.dimensionServiceKey/61.30.5059.1410/0.-1410.5120.1410" timestamp="1773239179916" />
+  </component>
+</application>

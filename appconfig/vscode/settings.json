@@ -1,0 +1,94 @@
+// VSCode user settings — ported from Wil's RubyMine 2026.1 setup.
+// Managed in ~/.dotfiles/appconfig/vscode/ and symlinked by install.sh.
+{
+  // ── Theme & appearance ────────────────────────────────────────────────
+  // Custom theme generated from the "Catppuccin Frappe PrideCat" .icls
+  // (see theme-extension/ + generate-theme.py).
+  "workbench.colorTheme": "Catppuccin Frappe PrideCat",
+  // RubyMine used the Catppuccin Icons plugin.
+  "workbench.iconTheme": "catppuccin-frappe",
+  "workbench.productIconTheme": "default",
+  // ── Font ──────────────────────────────────────────────────────────────
+  // RubyMine: Comic Mono Relaxed, size 15, ligatures on, line spacing 1.2.
+  "editor.fontFamily": "'Comic Mono Relaxed', 'Comic Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.2,
+  // ── Editor behavior (mirrors RubyMine) ────────────────────────────────
+  // Soft wraps were on for the main editor (all file types), indent 2.
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  // SHOW_METHOD_SEPARATORS — closest native equivalent.
+  "editor.renderLineHighlight": "all",
+  // Inlay/type/parameter-name hints were all disabled in RubyMine.
+  "editor.inlayHints.enabled": "off",
+  // Code Vision (references/usages/etc.) was disabled.
+  "editor.codeLens": false,
+  // Catppuccin scheme had rainbow brackets — VSCode native equivalent.
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.scrollBeyondLastLine": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.renderWhitespace": "all",
+  // ── Workbench / UI (COMPACT density, tree guides, tab limits) ─────────
+  "workbench.tree.indent": 12,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 100,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.openPositioning": "last",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.list.openMode": "singleClick",
+  "breadcrumbs.enabled": true,
+  "window.title": "${rootName}${separator}${activeEditorMedium}",
+  "explorer.autoReveal": true,
+  // File nesting — ported from RubyMine's project view nesting rules.
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js, ${capture}.d.ts, ${capture}.d.ts.map, ${capture}.js.map, ${capture}.test.ts, ${capture}.spec.ts, ${capture}.config.ts",
+    "*.tsx": "${capture}.ts, ${capture}.js, ${capture}.jsx, ${capture}.d.ts, ${capture}.test.tsx, ${capture}.spec.tsx, ${capture}.stories.tsx",
+    "*.jsx": "${capture}.js, ${capture}.js.map",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}-compiled.js, ${capture}.d.ts",
+    "*.css": "${capture}.css.map, ${capture}.min.css",
+    "*.scss": "${capture}.css, ${capture}.css.map",
+    "*.sass": "${capture}.css, ${capture}.css.map",
+    "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock, .npmrc, pnpm-workspace.yaml, .nvmrc",
+    "Gemfile": "Gemfile.lock, .ruby-version, .ruby-gemset",
+    "tsconfig.json": "tsconfig.*.json",
+    ".env": ".env.*"
+  },
+  // ── Git (RubyMine showed inline blame / in-place annotations) ─────────
+  "git.blame.editorDecoration.enabled": true,
+  "git.autofetch": true,
+  "scm.diffDecorations": "all",
+  // ── Terminal (Comic Mono Relaxed, ligatures, line spacing) ────────────
+  "terminal.integrated.fontFamily": "'Comic Mono Relaxed', 'Comic Mono', Menlo, monospace",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.cursorBlinking": true,
+  // ── Files ─────────────────────────────────────────────────────────────
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  // ── Existing settings (preserved from prior VSCode config) ────────────
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://biomejs.dev": true
+  },
+  "editor.largeFileOptimizations": false,
+  "editor.defaultFormatter": "ms-vscode.cpptools",
+  "editor.formatOnSave": true
+}

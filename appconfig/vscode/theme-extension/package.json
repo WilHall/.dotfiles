@@ -1,0 +1,23 @@
+{
+  "name": "catppuccin-frappe-pridecat",
+  "displayName": "Catppuccin Frappe PrideCat",
+  "description": "Personal VSCode port of Wil's RubyMine 'Catppuccin Frappe PrideCat' editor scheme. Generated from the .icls — see ../generate-theme.py.",
+  "version": "1.0.0",
+  "publisher": "wilhall",
+  "private": true,
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Catppuccin Frappe PrideCat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/catppuccin-frappe-pridecat-color-theme.json"
+      }
+    ]
+  }
+}

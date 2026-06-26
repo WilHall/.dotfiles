@@ -43,3 +43,86 @@ Core workflow:
 2. `agent-browser snapshot -i` - Get interactive elements with refs (@e1, @e2)
 3. `agent-browser click @e1` / `fill @e2 "text"` - Interact using refs
 4. Re-snapshot after page changes
+
+## Reviewing Markdown with me
+
+When you've created or substantially edited one or more `.md` files and want my
+review or sign-off before continuing, route it through Roughdraft. Do not paste
+file contents into chat for review, and don't ask me to "take a look" without
+opening it. (Skip this for trivial one-line edits — it's for substantive review.)
+
+**To request a review:**
+
+1. Briefly say what changed and which files need eyes.
+2. Give me the exact command to run — do NOT run it yourself. `mdreview` is a
+   function in my interactive shell, not your environment:
+   - A few files: `mdreview path/to/file.md path/to/other.md`
+   - A tree: `mdreview 'corpus/**/*.md'`  (quote the glob so my shell doesn't pre-expand it)
+3. Remind me to leave feedback as CriticMarkup, then save:
+   - `{>> note <<}` — an editorial instruction ("tighten", "wrong term", "cite this")
+   - `{++ add ++}` / `{-- cut --}` / `{~~ old ~> new ~~}` — an exact change
+4. STOP. Do not continue, assume approval, or edit further until I say I'm done.
+
+**When I say I'm done — for each reviewed file:**
+
+1. Re-read the file from disk.
+2. Treat every `{>> ... <<}` as an instruction: make the edit it asks for, then
+   delete the comment marker.
+3. Apply `{++ ++}` / `{-- --}` / `{~~ ~> ~~}` literally and remove their markup.
+4. Leave NO CriticMarkup behind — the saved file must be clean, publishable Markdown.
+5. Ignore any CriticMarkup inside inline code or fenced code blocks; it's literal text.
+6. Edit against a clean git working tree so the result is a reviewable diff.
+7. Report a short per-comment summary of what you changed, so I can confirm nothing
+   was dropped or misread.
+
+## Plugins — when to reach for each
+
+Most of these auto-activate (skills, hooks, LSPs). This section is for choosing
+between plugins whose scope overlaps, and for reaching for command-driven ones
+deliberately. Where a Superpowers skill conflicts with anything in this file,
+this file wins.
+
+### Building something new (features, components, behavior changes)
+Default to the **Superpowers** workflow: brainstorm → plan → execute, with true
+red/green TDD and root-cause-first debugging. Let its skills auto-trigger, or
+drive them conversationally ("use superpowers to brainstorm this") or via the
+`/superpowers:*` commands. Do not start writing implementation before a plan exists.
+- Use **feature-dev** (`/feature-dev`) *instead* only when you specifically want
+  its parallel multi-agent passes — code-explorer agents to map an unfamiliar
+  area, code-architect agents to weigh designs — on a large or unfamiliar
+  codebase. Never run feature-dev and the Superpowers workflow on the same task;
+  pick one planning frame.
+
+### Reviewing code
+- Continuous quality during implementation is already covered by Superpowers' review skills.
+- For a dedicated review gate on a diff or PR, use the **code-review** plugin
+  (multi-agent, confidence-scored to suppress false positives). Run it on the
+  final diff, not mid-implementation.
+
+### Committing and PRs
+Use **commit-commands** for commit messages from staged diffs, pushes, and PR
+creation. Reach for it at the end of a change.
+
+### Frontend / UI work
+**frontend-design** auto-invokes for UI *implementation* (typography, layout,
+motion, visual detail). It belongs at implementation time — after
+brainstorming/planning, not during it.
+
+### Editing code — prefer the language server over grep/guessing
+For navigation, diagnostics, references, and rename:
+- Ruby / Rails → **ruby-lsp**
+- TypeScript / React (Inertia front end) → **typescript-lsp**
+- Swift sources only → **swift-lsp**
+
+### Security-sensitive work
+**security-guidance** flags risky patterns (auth, secrets, input handling, crypto).
+Treat its warnings as blocking until addressed; don't suppress them to move faster.
+
+### Cloudflare platform work
+Use the **cloudflare** plugin when the task targets Cloudflare's platform —
+Workers, D1, R2, KV, Durable Objects, Hyperdrive, Wrangler deploys — and to look
+up current Cloudflare docs and binding patterns instead of relying on memory.
+
+### Authoring Claude Code plugins/skills
+Use **plugin-dev** only when building or modifying a plugin, skill, hook, or
+marketplace entry.

@@ -1,0 +1,12 @@
+<application>
+  <component name="ProfilerRunConfigurations">
+    <profilerRunConfigurations>
+      <item configurationTypeId="RbSpyProfilerConfigurationType">
+        <RbSpyProfilerConfigurationState name="RbSpy profiler" SAMPLING_FREQUENCY="97" PROFILE_SUBPROCESS="true" />
+      </item>
+    </profilerRunConfigurations>
+    <knownConfigurationTypes>
+      <id>RbSpyProfilerConfigurationType</id>
+    </knownConfigurationTypes>
+  </component>
+</application>

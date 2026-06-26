@@ -1,0 +1,18 @@
+<code_scheme name="Default" version="173">
+  <JSCodeStyleSettings version="0">
+    <option name="JSX_ATTRIBUTE_VALUE" value="None" />
+    <option name="SPACES_WITHIN_IMPORTS" value="true" />
+  </JSCodeStyleSettings>
+  <TypeScriptCodeStyleSettings version="0">
+    <option name="SPACES_WITHIN_IMPORTS" value="true" />
+    <option name="IMPORT_SORT_MEMBERS" value="false" />
+    <option name="BLACKLIST_IMPORTS" value="node_modules/**,@mantine/*" />
+  </TypeScriptCodeStyleSettings>
+  <codeStyleSettings language="TypeScript">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="2" />
+      <option name="CONTINUATION_INDENT_SIZE" value="2" />
+      <option name="TAB_SIZE" value="2" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>

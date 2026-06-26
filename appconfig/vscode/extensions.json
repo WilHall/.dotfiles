@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "anthropic.claude-code",
+    "catppuccin.catppuccin-vsc-icons",
+    "Shopify.ruby-lsp",
+    "biomejs.biome",
+    "svelte.svelte-vscode",
+    "bradlc.vscode-tailwindcss",
+    "graphql.vscode-graphql",
+    "graphql.vscode-graphql-syntax",
+    "unifiedjs.vscode-mdx",
+    "hashicorp.terraform",
+    "tamasfe.even-better-toml",
+    "ms-vscode.makefile-tools",
+    "mikestead.dotenv",
+    "mechatroner.rainbow-csv",
+    "codezombiech.gitignore",
+    "ziyasal.vscode-open-in-github",
+    "jasonnutter.vscode-codeowners",
+    "marclipovsky.string-manipulation",
+    "idleberg.applescript"
+  ]
+}

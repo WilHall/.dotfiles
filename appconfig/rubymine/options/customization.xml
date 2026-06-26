@@ -1,0 +1,84 @@
+<application>
+  <component name="com.intellij.ide.ui.customization.CustomActionsSchema">
+    <group value="$SearchWeb" is_action="true" action_type="-1" position="18">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+    </group>
+    <group seperator="true" action_type="-1" position="17">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+    </group>
+    <group value="ShowAppliedStylesAction" is_action="true" action_type="-1" position="13">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+      <path value="Editor Popup Menu Actions (2)" />
+    </group>
+    <group value="EmmetUpdateTag" is_action="true" action_type="-1" position="12">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+      <path value="Editor Popup Menu Actions (2)" />
+    </group>
+    <group value="ExternalToolsGroup" is_group="true" forse_popup="false" action_type="-1" position="11">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+      <path value="Editor Popup Menu Actions (2)" />
+    </group>
+    <group value="EditorToggleColumnMode" is_action="true" action_type="-1" position="8">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+    </group>
+    <group value="$Paste" is_action="true" action_type="-1" position="5">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+    </group>
+    <group value="CopyAsRichText" is_action="true" action_type="-1" position="4">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+    </group>
+    <group value="$Copy" is_action="true" action_type="-1" position="3">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+    </group>
+    <group value="$Cut" is_action="true" action_type="-1" position="2">
+      <path value="root" />
+      <path value="Editor Popup Menu" />
+    </group>
+    <group value="MainToolbarVCSGroup" is_group="true" forse_popup="false" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Left" />
+    </group>
+    <group value="NewUiRunWidget" is_action="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Right" />
+    </group>
+    <group seperator="true" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Left" />
+      <path value="General Actions" />
+    </group>
+    <group value="ExecutionTargetsToolbarGroup" is_group="true" forse_popup="false" action_type="-1" position="0">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Right" />
+    </group>
+    <group value="JS.TypeScript.Compile" is_action="true" action_type="1" position="0">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Left" />
+      <path value="General Actions" />
+    </group>
+    <group value="main.toolbar.git.Branches" is_action="true" action_type="1" position="1">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Left" />
+    </group>
+    <action id="PsiViewerForContext" icon="jar:file:/Applications/WebStorm.app/Contents/lib/app-client.jar!/expui/toolbar/unknown.svg" />
+    <action id="ShowProcessWindow" icon="jar:file:/Applications/WebStorm.app/Contents/lib/app-client.jar!/expui/toolbar/unknown.svg" />
+    <action id="GotoAction" icon="jar:file:/Applications/WebStorm.app/Contents/lib/app-client.jar!/expui/toolbar/unknown.svg" />
+    <action id="ViewRecentActions" icon="Vcs.ShowMessageHistory" />
+    <action id="StatusTextModeAction" icon="jar:file:/Applications/WebStorm.app/Contents/lib/app-client.jar!/expui/toolbar/unknown.svg" />
+  </component>
+</application>

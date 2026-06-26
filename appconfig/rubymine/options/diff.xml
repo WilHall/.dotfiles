@@ -1,0 +1,57 @@
+<application>
+  <component name="ExternalDiffSettings">
+    <option name="EXTERNAL_TOOLS">
+      <map>
+        <entry key="DIFF_TOOL">
+          <value>
+            <list>
+              <ExternalTool>
+                <option name="argumentPattern" value="--no-stdin %1 %2 %3"></option>
+                <option name="name" value="Ksdiff"></option>
+                <option name="programPath" value="/usr/local/bin/ksdiff"></option>
+              </ExternalTool>
+            </list>
+          </value>
+        </entry>
+        <entry key="MERGE_TOOL">
+          <value>
+            <list>
+              <ExternalTool>
+                <option name="argumentPattern" value="--no-stdin --merge --output %4 --base %3 %1 %2"></option>
+                <option name="groupName" value="MERGE_TOOL"></option>
+                <option name="mergeTrustExitCode" value="true"></option>
+                <option name="name" value="Ksdiff"></option>
+                <option name="programPath" value="/usr/local/bin/ksdiff"></option>
+              </ExternalTool>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="EXTERNAL_TOOLS_ENABLED" value="true"></option>
+    <option name="MIGRATE_OLD_SETTINGS" value="true"></option>
+  </component>
+  <component name="TextDiffSettings">
+    <option name="PLACES_MAP">
+      <entry key="ActivityView">
+        <PlaceSettings>
+          <option name="BREADCRUMBS_PLACEMENT" value="TOP"></option>
+          <option name="SHOW_INDENT_LINES" value="true"></option>
+          <option name="SHOW_WHITESPACES" value="true"></option>
+        </PlaceSettings>
+      </entry>
+      <entry key="Default">
+        <PlaceSettings>
+          <option name="BREADCRUMBS_PLACEMENT" value="TOP"></option>
+          <option name="SHOW_INDENT_LINES" value="true"></option>
+          <option name="SHOW_WHITESPACES" value="true"></option>
+        </PlaceSettings>
+      </entry>
+    </option>
+    <option name="SHARED_SETTINGS">
+      <SharedSettings>
+        <option name="ENABLE_ALIGNING_CHANGES_MODE" value="true"></option>
+      </SharedSettings>
+    </option>
+  </component>
+</application>

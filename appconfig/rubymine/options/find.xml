@@ -1,0 +1,18 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="Project Files Excluding Git-ignored" />
+    <option name="defaultScopeName" value="Project Files Excluding Git-ignored" />
+    <option name="SEARCH_SCOPE" value="Project Files Excluding Git-ignored" />
+    <mask>*.css</mask>
+    <mask>*.html</mask>
+    <mask>*.xml</mask>
+    <mask>*.rake</mask>
+    <mask>*.thor</mask>
+    <mask>*.jbuilder</mask>
+    <mask>*.gemspec</mask>
+    <mask>*.rbw</mask>
+    <mask>*.ru</mask>
+    <mask>*.rbi</mask>
+    <mask>*.rb</mask>
+  </component>
+</application>

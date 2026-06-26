@@ -1,0 +1,26 @@
+AppleScript Support
+Catppuccin Icons
+Catppuccin Theme
+claude-code-jetbrains-plugin
+CodeGlancePro
+dotenv
+ej
+Git Codeowners
+GitLink
+graphql
+ignore
+intellij-biome
+intellij-csv-validator
+javascript-debugger
+keymap-vscode
+line-num
+lsp4ij
+makefile
+mdx
+ml-llm
+performanceTesting
+StringManipulation
+svelte
+Tailwind Smart Completions
+terraform
+toml

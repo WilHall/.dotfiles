@@ -1,0 +1,20 @@
+<scheme name="_@user_Catppuccin Frappe" version="142" parent_scheme="Darcula">
+  <metaInfo>
+    <property name="ide">WebStorm</property>
+    <property name="ideVersion">2024.3.1.1.0.0</property>
+    <property name="originalScheme">Catppuccin Frappe</property>
+    <property name="partialSave">true</property>
+    <property name="pluginId">com.github.catppuccin.jetbrains</property>
+  </metaInfo>
+  <colors>
+    <option name="STICKY_LINES_BACKGROUND" value="444466" />
+  </colors>
+  <attributes>
+    <option name="INLAY_DEFAULT">
+      <value>
+        <option name="FOREGROUND" value="494e5f" />
+        <option name="BACKGROUND" value="303446" />
+      </value>
+    </option>
+  </attributes>
+</scheme>

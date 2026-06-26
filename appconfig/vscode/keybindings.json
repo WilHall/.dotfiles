@@ -1,0 +1,47 @@
+// VSCode keybindings — ported from Wil's RubyMine "VSCode (macOS) copy" keymap.
+// Only the personal overrides that don't clobber important VSCode defaults are
+// ported; next/prev-error already map to F8 / shift+F8 in stock VSCode.
+[
+  // ── Command palette ───────────────────────────────────────────────────
+  // Cmd+Shift+P is claimed by a global (system) shortcut, so move the
+  // command palette to Cmd+Shift+A — mirrors JetBrains "Find Action".
+  { "key": "cmd+shift+a", "command": "workbench.action.showCommands" },
+  { "key": "cmd+shift+p", "command": "-workbench.action.showCommands" },
+
+  // ── Context actions / quick fix (JetBrains Alt+Enter muscle memory) ────
+  // Cmd+. remains the VSCode default; Alt+Enter is added.
+  {
+    "key": "alt+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+
+  // ── Recent files (RubyMine RecentFiles → Cmd+R) ───────────────────────
+  { "key": "cmd+r", "command": "workbench.action.showAllEditorsByMostRecentlyUsed" },
+
+  // ── Sort lines (RubyMine EditorSortLines → Shift+Cmd+Alt+S) ────────────
+  {
+    "key": "shift+cmd+alt+s",
+    "command": "editor.action.sortLinesAscending",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // ── Split terminal (RubyMine Terminal.SplitVertically → Ctrl+Shift+5) ──
+  {
+    "key": "ctrl+shift+5",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+
+  // ── Cycle inline (AI) completions (RubyMine Copilot cycle inlays) ──────
+  {
+    "key": "ctrl+.",
+    "command": "editor.action.inlineSuggest.showNext",
+    "when": "inlineSuggestionVisible"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "editor.action.inlineSuggest.showPrevious",
+    "when": "inlineSuggestionVisible"
+  }
+]

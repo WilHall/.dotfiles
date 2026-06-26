@@ -1,0 +1,95 @@
+#!/usr/bin/env bash
+# Wrapper around real mprocs that ensures every proc has a `stop:` config that
+# routes a literal Ctrl-C through the PTY. Compensates for mprocs 0.9.x's
+# rewritten signal delivery, which no longer reaches grandchild processes
+# (e.g. `next dev` running under `pnpm run dev-standalone`).
+#
+# Behaviour:
+#   - If user passes positional commands, --npm, --procfile, or --just,
+#     no config file is involved → exec real mprocs unchanged.
+#   - Otherwise: locate the config file (default ./mprocs.yaml or whatever
+#     -c/--config points to), transform a temp copy adding the stop config
+#     for any proc that doesn't already specify one, exec real mprocs with -c.
+#
+# Procs already declaring `stop:` are left untouched.
+
+set -euo pipefail
+
+REAL_MPROCS="/opt/homebrew/bin/mprocs"
+
+if [[ ! -x "$REAL_MPROCS" ]]; then
+  echo "mprocs-wrapper: real mprocs not found at $REAL_MPROCS — install with 'brew install mprocs'" >&2
+  exit 1
+fi
+
+if ! command -v yq >/dev/null 2>&1; then
+  # Without yq we can't safely transform the config; fall back to passthrough.
+  exec "$REAL_MPROCS" "$@"
+fi
+
+config_path="./mprocs.yaml"
+bypass=false
+has_positional=false
+skip_next=false
+
+# Parse args to extract -c/--config and detect bypass modes.
+for arg in "$@"; do
+  if $skip_next; then
+    config_path="$arg"
+    skip_next=false
+    continue
+  fi
+  case "$arg" in
+    --npm|--procfile|--just|--procfile=*|--npm=*)
+      bypass=true
+      ;;
+    -h|--help|-V|--version)
+      exec "$REAL_MPROCS" "$@"
+      ;;
+    -c|--config)
+      skip_next=true
+      ;;
+    --config=*)
+      config_path="${arg#--config=}"
+      ;;
+    -*)
+      ;;
+    *)
+      has_positional=true
+      ;;
+  esac
+done
+
+if $bypass || $has_positional || [[ ! -f "$config_path" ]]; then
+  exec "$REAL_MPROCS" "$@"
+fi
+
+patched=$(mktemp -t mprocs-wrapper.XXXXXX)
+trap 'rm -f "$patched"' EXIT
+
+yq '
+  (.procs[] | select(tag == "!!str")) |= {"shell": ., "stop": {"send-keys": ["<C-c>"]}} |
+  (.procs[] | select(tag == "!!map" and (has("stop") | not))) |= . + {"stop": {"send-keys": ["<C-c>"]}}
+' "$config_path" > "$patched"
+
+# Strip any existing -c/--config from args and append our patched config.
+forwarded_args=()
+skip_next=false
+for arg in "$@"; do
+  if $skip_next; then
+    skip_next=false
+    continue
+  fi
+  case "$arg" in
+    -c|--config)
+      skip_next=true
+      ;;
+    --config=*)
+      ;;
+    *)
+      forwarded_args+=("$arg")
+      ;;
+  esac
+done
+
+exec "$REAL_MPROCS" -c "$patched" "${forwarded_args[@]}"

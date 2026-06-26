@@ -76,6 +76,19 @@ source <(fzf --zsh)
 # instead of atuin-up-search / atuin-search — binding the new names then yields "No such widget".
 if (( $+commands[atuin] )); then
   eval "$(atuin init zsh)"
+  # Atuin (like HISTCONTROL=ignorespace) silently drops any command whose buffer
+  # starts with whitespace — so pasted/indented multiline invocations never get
+  # recorded. Wrap its preexec hook to strip the leading indent before recording.
+  # Trade-off: this also disables "prefix a space to hide a command"; secrets are
+  # still covered by history_filter + secrets_filter in ~/.config/atuin/config.toml.
+  if (( ${+functions[_atuin_preexec]} )); then
+    functions[_atuin_orig_preexec]=$functions[_atuin_preexec]
+    _atuin_preexec() {
+      emulate -L zsh
+      setopt extended_glob
+      _atuin_orig_preexec "${1##[[:space:]]#}"
+    }
+  fi
   # Up-arrow: both VT100 (^[[A) and application-cursor (^[OA); Windows terminals vary.
   if (( ${+widgets[atuin-up-search]} )); then
     bindkey '^[[A' atuin-up-search

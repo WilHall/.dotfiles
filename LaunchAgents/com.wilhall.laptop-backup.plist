@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.wilhall.laptop-backup</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/wilhall/.dotfiles/LaunchAgents/laptop-backup/backup.sh</string>
+  </array>
+  <!-- Scheduled (not KeepAlive) — twice daily. launchd runs a missed slot on the
+       next wake if the laptop was asleep at the scheduled time. -->
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Hour</key><integer>2</integer>
+      <key>Minute</key><integer>0</integer>
+    </dict>
+    <dict>
+      <key>Hour</key><integer>14</integer>
+      <key>Minute</key><integer>0</integer>
+    </dict>
+  </array>
+  <key>RunAtLoad</key>
+  <false/>
+  <!-- Be polite: low CPU/IO priority so a backup never starves foreground work. -->
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>LowPriorityIO</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/wilhall/Library/Logs/com.wilhall.laptop-backup.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/wilhall/Library/Logs/com.wilhall.laptop-backup.error.log</string>
+</dict>
+</plist>

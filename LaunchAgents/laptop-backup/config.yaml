@@ -1,0 +1,24 @@
+repository: "s3:https://9148bf47f63b1f1a4ca11171e9c7c2a1.r2.cloudflarestorage.com/laptop-backups"
+paths:
+  - ~/.dotfiles
+  - ~/Pictures
+  - ~/Downloads
+excludes:
+  - "**/.DS_Store"
+  - "**/node_modules"
+  - "**/.venv"
+  - "**/__pycache__"
+  - "**/*.lock"
+  - "**/*.log"
+  - "**/Caches"
+  - "**/.cache"
+  - "**/*.lrlibrary"
+  - "**/*.photoslibrary"
+  - "**/Screenshots"
+  - "**/.git"
+  - "**/zus"
+  - ".gnupg"
+retention:
+  daily: 7
+  weekly: 4
+  monthly: 6

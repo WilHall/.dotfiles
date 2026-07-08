@@ -33,6 +33,8 @@ Cargo.lock
 *-lock.yaml
 *.lock.json
 *.lock.yaml
+# ...except nvim's plugin lockfile, which we do want versioned
+!_config/nvim/lazy-lock.json
 
 *.class
 *.o

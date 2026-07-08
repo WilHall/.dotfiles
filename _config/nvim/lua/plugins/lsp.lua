@@ -24,7 +24,21 @@ return {
       local copilot_cmp = require("copilot_cmp")
       local asdf = "/opt/homebrew/bin/asdf"
 
+      -- Copilot's LSP needs a recent Node (>= 22.13) regardless of whatever
+      -- version the current project's .tool-versions pins, so bypass the asdf
+      -- shim and run the newest Node installed under asdf directly.
+      local newest_asdf_node = (function()
+        local nodes = vim.fn.glob("~/.asdf/installs/nodejs/*/bin/node", true, true)
+        table.sort(nodes, function(a, b)
+          local version_a = vim.version.parse(a:match("nodejs/([%d%.]+)/") or "0.0.0")
+          local version_b = vim.version.parse(b:match("nodejs/([%d%.]+)/") or "0.0.0")
+          return version_a < version_b
+        end)
+        return nodes[#nodes] or "node"
+      end)()
+
       copilot.setup({
+        copilot_node_command = newest_asdf_node,
         suggestion = { enabled = false },
         panel = { enabled = false },
         server_opts_overrides = {
@@ -45,6 +59,19 @@ return {
           preview = require("copilot_cmp.format").deindent,
         },
       })
+
+      -- copilot-cmp is unmaintained and its is_available uses the deprecated
+      -- client.is_stopped() field call (warns on every startup); source
+      -- instances __index this module table, so overriding here covers them.
+      require("copilot_cmp.source").is_available = function(self)
+        return self.client ~= nil
+          and not self.client:is_stopped()
+          and self.client.name == "copilot"
+          and next(vim.lsp.get_clients({
+            bufnr = vim.api.nvim_get_current_buf(),
+            id = self.client.id,
+          })) ~= nil
+      end
 
       lspkind.init({
         symbol_map = {
@@ -282,7 +309,16 @@ return {
 
       -- Diagnostics, code actions, and organize-imports from the repo-local
       -- Biome; only starts in projects with a biome.json (workspace_required).
-      setup("biome")
+      -- Biome prefers utf-8 position encoding when offered; advertise only
+      -- utf-16 so it matches every other client and buffers never end up
+      -- with mixed offset encodings.
+      setup("biome", {
+        capabilities = {
+          general = {
+            positionEncodings = { "utf-16" },
+          },
+        },
+      })
 
       -- Needs a graphql.config.* at the project root; CTW documents live in
       -- plain .ts files too, so extend the default filetypes.

@@ -26,11 +26,8 @@ vim.cmd [[
     " shortcut to edit file in the same directory as the current file
     nnoremap <leader>e :e <c-r>=expand('%:p:h') . '/'<cr>
 
-    " navigate splits
-    nmap <silent> <c-k> :wincmd k<CR>
-    nmap <silent> <c-j> :wincmd j<CR>
-    nmap <silent> <c-h> :wincmd h<CR>
-    nmap <silent> <c-l> :wincmd l<CR>
+    " split navigation (<c-h/j/k/l>) is owned by vim-tmux-navigator, which
+    " moves seamlessly across nvim splits and tmux panes
 
     " resize splits
     nnoremap <silent> <c-y> :exe "vertical resize -1"<cr>

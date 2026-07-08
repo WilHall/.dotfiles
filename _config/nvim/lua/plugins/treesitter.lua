@@ -15,6 +15,9 @@ return {
         ensure_installed = {
           "scss",
           "markdown",
+          "markdown_inline",
+          "graphql",
+          "regex",
           "html",
           "bash",
           "diff",

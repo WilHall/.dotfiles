@@ -22,7 +22,6 @@ return {
         end,
         integrations = {
             cmp = true,
-            coc_nvim = true,
             gitsigns = true,
             nvimtree = true,
             telescope = true,

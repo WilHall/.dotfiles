@@ -22,7 +22,7 @@ return {
           end
           return {
             timeout_ms = 1200,
-            lsp_format = "last",
+            lsp_format = "fallback",
           }
         end,
         format_after_save = function(bufnr)
@@ -34,27 +34,24 @@ return {
         end,
         notify_on_error = true,
         formatters_by_ft = {
-          javascript = { "biome_check_write_unsafe" },
-          javascriptreact = { "biome_check_write_unsafe" },
-          typescript = { "biome_check_write_unsafe" },
-          typescriptreact = { "biome_check_write_unsafe" },
-          json = { "biome_check_write_unsafe" },
-          svelte = { "biome_check_write_unsafe" },
+          -- biome-check = `biome check --write` over stdin: format + safe
+          -- fixes + organize imports, using the repo-local biome binary.
+          javascript = { "biome-check" },
+          javascriptreact = { "biome-check" },
+          typescript = { "biome-check" },
+          typescriptreact = { "biome-check" },
+          json = { "biome-check" },
+          jsonc = { "biome-check" },
+          css = { "biome-check" },
+          svelte = { "biome-check" },
 
           ruby = {},
           eruby = { "erb_format" },
           erb = { "erb_format" },
-          html = { "biome_check_write_unsafe" },
-          ["html.erb"] = { "biome_check_write_unsafe" },
+          html = { "biome-check" },
+          ["html.erb"] = { "biome-check" },
         },
         formatters = {
-          biome_check_write_unsafe = {
-            command = "biome",
-            args = { "check", "--write", "--unsafe", "$FILENAME" },
-            stdin = false,
-            cwd = util.root_file({ "biome.jsonc", "biome.json", ".git" }),
-            require_cwd = true,
-          },
           standardrb_fix = {
             command = asdf,
             args = { "exec", "standardrb", "--fix", "--config", ".standard.yml", "$FILENAME" },

@@ -7,20 +7,13 @@ return {
       local asdf = "/opt/homebrew/bin/asdf"
       local sev = vim.diagnostic.severity
 
+      -- JS/TS/JSON diagnostics come from the Biome LSP now; nvim-lint only
+      -- covers Ruby, where standardrb has no LSP diagnostics.
       lint.linters_by_ft = {
-        javascript = { "biomejs" },
-        javascriptreact = { "biomejs" },
-        typescript = { "biomejs" },
-        typescriptreact = { "biomejs" },
-        json = { "biomejs" },
-
         ruby = { "standardrb" },
         eruby = {},
         erb = {},
       }
-
-      -- "Live linting" for IDE-like feedback (Biome + standardrb).
-      -- LSP diagnostics remain handled by your existing LSP setup.
       local grp = vim.api.nvim_create_augroup("NvimLintOnSaveAndEdit", { clear = true })
 
       -- `standardrb` and Biome return exit code 1 when issues are found, which
@@ -64,22 +57,6 @@ return {
           return diagnostics
         end
       end
-      if lint.linters and lint.linters.biomejs then
-        lint.linters.biomejs.ignore_exitcode = true
-      end
-
-      vim.api.nvim_create_autocmd({ "InsertLeave" }, {
-        group = grp,
-        callback = function()
-          local ft = vim.bo.filetype
-          if ft == "ruby" then
-            -- Run Ruby lint only on save to keep edit/leave insert responsive.
-            return
-          end
-          lint.try_lint()
-        end,
-      })
-
       vim.api.nvim_create_autocmd("BufWritePost", {
         group = grp,
         pattern = "*.rb",

@@ -12,7 +12,8 @@ return {
       "zbirenbaum/copilot.lua",
       "zbirenbaum/copilot-cmp",
       "nvim-tree/nvim-web-devicons",
-      "onsails/lspkind.nvim"
+      "onsails/lspkind.nvim",
+      "b0o/schemastore.nvim",
     },
     config = function()
       local luasnip = require('luasnip')
@@ -47,7 +48,7 @@ return {
 
       lspkind.init({
         symbol_map = {
-          Copilot = ""
+          Copilot = ""
         }
       })
 
@@ -143,13 +144,7 @@ return {
         { "│", "FloatBorder" },
       }
 
-      -- LSP settings (for overriding per client)
-      local handlers = {
-        ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
-        ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
-      }
-
-      -- To instead override globally
+      -- Round the border on every LSP floating window (hover, signature help, etc.)
       local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
       function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
         opts = opts or {}
@@ -167,102 +162,162 @@ return {
       end, opts)
       vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, opts)
       vim.keymap.set('n', ']e', function()
-        vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR })
+        vim.diagnostic.jump({ count = 1, severity = vim.diagnostic.severity.ERROR })
       end, opts)
       vim.keymap.set('n', '[e', function()
-        vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.ERROR })
+        vim.diagnostic.jump({ count = -1, severity = vim.diagnostic.severity.ERROR })
       end, opts)
-      vim.keymap.set('n', '[g', vim.diagnostic.goto_prev, opts)
-      vim.keymap.set('n', ']g', vim.diagnostic.goto_next, opts)
+      vim.keymap.set('n', '[g', function() vim.diagnostic.jump({ count = -1 }) end, opts)
+      vim.keymap.set('n', ']g', function() vim.diagnostic.jump({ count = 1 }) end, opts)
       vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
 
-      -- Use an on_attach function to only map the following keys
-      -- after the language server attaches to the current buffer
-      local on_attach = function(client, bufnr)
-        -- Mappings.
-        -- See `:help vim.lsp.*` for documentation on any of the below functions
-        local bufopts = { noremap = true, silent = true, buffer = bufnr }
-        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
-        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-        vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-        vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
-        vim.keymap.set('n', '<C-k>', vim.lsp.buf.hover, bufopts)
-        vim.keymap.set('n', '<leader>gt', vim.lsp.buf.type_definition, bufopts)
-        vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
-        vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
-        vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-        vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format { async = true } end, bufopts)
+      -- Buffer-local mappings + per-client tweaks, bound whenever ANY client
+      -- attaches (LspAttach fires for every client, unlike a per-server
+      -- on_attach, so keys like `gi` can never fall through to their Vim
+      -- built-ins in an LSP buffer).
+      vim.api.nvim_create_autocmd("LspAttach", {
+        group = vim.api.nvim_create_augroup("UserLspAttach", { clear = true }),
+        callback = function(args)
+          local client = vim.lsp.get_client_by_id(args.data.client_id)
+          local bufnr = args.buf
 
-      end
+          -- Biome (via conform) owns formatting for frontend filetypes;
+          -- keep tsserver/stylelint from competing over it.
+          if client and (client.name == "vtsls" or client.name == "stylelint_lsp") then
+            client.server_capabilities.documentFormattingProvider = false
+            client.server_capabilities.documentRangeFormattingProvider = false
+          end
+
+          -- See `:help vim.lsp.*` for documentation on any of the below functions
+          local bufopts = { noremap = true, silent = true, buffer = bufnr }
+          vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
+          vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
+          vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+          vim.keymap.set('n', 'gK', vim.lsp.buf.signature_help, bufopts)
+          vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
+          vim.keymap.set('n', '<leader>gt', vim.lsp.buf.type_definition, bufopts)
+          vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
+          vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
+          vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+          vim.keymap.set('n', '<leader>f', function()
+            require('conform').format({ async = true, lsp_format = 'fallback' })
+          end, bufopts)
+        end,
+      })
 
       local lsp_flags = {
         debounce_text_changes = 150,
       }
 
-      local capabilities = vim.lsp.protocol.make_client_capabilities()
-      capabilities.textDocument.completion.completionItem.snippetSupport = true
+      -- Every server gets nvim-cmp's capabilities (snippets, resolve, etc.)
+      -- and the shared flags.
+      vim.lsp.config('*', {
+        capabilities = require('cmp_nvim_lsp').default_capabilities(),
+        flags = lsp_flags,
+      })
 
       local function setup(server, config)
-        vim.lsp.config(server, config)
+        vim.lsp.config(server, config or {})
         vim.lsp.enable(server)
       end
 
       setup("jsonls", {
-        capabilities = capabilities,
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers,
+        settings = {
+          json = {
+            schemas = require('schemastore').json.schemas(),
+            validate = { enable = true },
+          },
+        },
       })
 
+      -- CTW mandates tw`...` / twx(...) for class names; teach the Tailwind
+      -- server to complete inside them (classFunctions covers calls and
+      -- tagged templates on v0.14.4+).
       setup("tailwindcss", {
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers,
+        settings = {
+          tailwindCSS = {
+            classFunctions = { "tw", "twx" },
+          },
+        },
       })
+
+      -- vtsls wraps the VS Code TypeScript extension; autoUseWorkspaceTsdk
+      -- makes it pick up each repo's own TypeScript from node_modules.
+      setup("vtsls", {
+        settings = {
+          vtsls = {
+            autoUseWorkspaceTsdk = true,
+          },
+          typescript = {
+            updateImportsOnFileMove = { enabled = "always" },
+          },
+        },
+      })
+
+      setup("html")
+
+      -- The css server flags Tailwind at-rules (@tailwind/@apply/@screen) as
+      -- unknown; teach it about them via the repo's custom-data file when one
+      -- exists, and silence the lint either way.
+      local tailwind_custom_data = vim.fs.find('.vscode/tailwind.json', {
+        upward = true,
+        path = vim.fn.getcwd(),
+        type = 'file',
+      })[1]
+      setup("cssls", {
+        settings = {
+          css = {
+            validate = true,
+            customData = tailwind_custom_data and { tailwind_custom_data } or nil,
+            lint = { unknownAtRules = "ignore" },
+          },
+          scss = {
+            validate = true,
+            customData = tailwind_custom_data and { tailwind_custom_data } or nil,
+            lint = { unknownAtRules = "ignore" },
+          },
+          less = { validate = true },
+        },
+      })
+
+      -- Diagnostics, code actions, and organize-imports from the repo-local
+      -- Biome; only starts in projects with a biome.json (workspace_required).
+      setup("biome")
+
+      -- Needs a graphql.config.* at the project root; CTW documents live in
+      -- plain .ts files too, so extend the default filetypes.
+      setup("graphql", {
+        filetypes = { "graphql", "typescript", "typescriptreact", "javascriptreact" },
+      })
+
+      -- Surfaces sgconfig.yml rules (e.g. CTW's require-tw-for-classname)
+      -- inline; prefer the project's own ast-grep binary.
+      setup("ast_grep", {
+        cmd = function(dispatchers, config)
+          local cmd = "ast-grep"
+          local root_dir = (config or {}).root_dir
+          if root_dir then
+            local local_cmd = vim.fs.joinpath(root_dir, "node_modules/.bin/ast-grep")
+            if vim.fn.executable(local_cmd) == 1 then
+              cmd = local_cmd
+            end
+          end
+          return vim.lsp.rpc.start({ cmd, "lsp" }, dispatchers, { cwd = root_dir })
+        end,
+      })
+
       setup("ruby_lsp", {
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers,
         filetypes = { "ruby" },
         cmd = { asdf, "exec", "ruby-lsp" },
         root_markers = { "Gemfile", ".git" },
         single_file_support = false,
       })
-      setup("marksman", {
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers,
-      })
-      setup("stylelint_lsp", {
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers,
-      })
-      setup("ts_ls", {
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers,
-        filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
-      })
-      setup("svelte", {
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers,
-      })
-      setup("rust_analyzer", {
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers,
-      })
-      setup("pylsp", {
-        on_attach = on_attach,
-        flags = lsp_flags,
-        handlers = handlers
-      })
+      setup("marksman")
+      setup("stylelint_lsp")
+      setup("svelte")
+      setup("rust_analyzer")
+      setup("pylsp")
       setup("lua_ls", {
-        flags = lsp_flags,
-        on_attach = on_attach,
-        handlers = handlers,
         settings = {
           Lua = {
             runtime = {
@@ -282,10 +337,10 @@ return {
       })
 
       local diag_sign_text = {
-        [vim.diagnostic.severity.ERROR] = " ",
-        [vim.diagnostic.severity.WARN] = " ",
-        [vim.diagnostic.severity.INFO] = " ",
-        [vim.diagnostic.severity.HINT] = " ",
+        [vim.diagnostic.severity.ERROR] = " ",
+        [vim.diagnostic.severity.WARN] = " ",
+        [vim.diagnostic.severity.INFO] = " ",
+        [vim.diagnostic.severity.HINT] = " ",
       }
 
       vim.diagnostic.config({

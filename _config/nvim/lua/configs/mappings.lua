@@ -46,7 +46,12 @@ vim.cmd [[
 -- Open diagnostics float (global lua mappings avoid vimscript map edge-cases).
 local open_diagnostics_float = function()
   local current_line = vim.api.nvim_win_get_cursor(0)[1] - 1
-  local line_diags = vim.diagnostic.get(0, { lnum = current_line })
+  -- Match the displayed-severity floor (INFO/HINT are omitted from the UI);
+  -- info-only lines fall through to the hover fallback below.
+  local line_diags = vim.diagnostic.get(0, {
+    lnum = current_line,
+    severity = { min = vim.diagnostic.severity.WARN },
+  })
   if #line_diags > 0 then
     vim.diagnostic.open_float(nil, {
       focusable = true,

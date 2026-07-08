@@ -379,16 +379,23 @@ return {
         [vim.diagnostic.severity.HINT] = " ",
       }
 
+      -- INFO/HINT diagnostics (e.g. Biome's info-severity nudges like
+      -- noForEach) stay out of the UI; they remain reachable via the
+      -- loclist (<leader>q), and CI still reports them.
+      local displayed_severity = { min = vim.diagnostic.severity.WARN }
+
       vim.diagnostic.config({
-        signs = { text = diag_sign_text },
-        underline = true,
+        signs = { text = diag_sign_text, severity = displayed_severity },
+        underline = { severity = displayed_severity },
         update_in_insert = false,
         severity_sort = true,
         virtual_text = false,
         float = {
           source = "always",
+          severity = displayed_severity,
         },
         jump = {
+          severity = displayed_severity,
           -- vim.diagnostic.jump() moves the cursor but doesn't show the
           -- message on its own; open the float after every jump
           -- (]g/[g/]e/[e and the built-in ]d/[d).

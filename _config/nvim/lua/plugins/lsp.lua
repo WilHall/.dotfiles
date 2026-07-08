@@ -388,6 +388,14 @@ return {
         float = {
           source = "always",
         },
+        jump = {
+          -- vim.diagnostic.jump() moves the cursor but doesn't show the
+          -- message on its own; open the float after every jump
+          -- (]g/[g/]e/[e and the built-in ]d/[d).
+          on_jump = function(_, bufnr)
+            vim.diagnostic.open_float({ bufnr = bufnr, scope = "cursor", focus = false })
+          end,
+        },
       })
 
       vim.api.nvim_set_hl(0, 'NormalFloat', { bg = "None", fg = "None" })

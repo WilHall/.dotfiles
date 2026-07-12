@@ -57,6 +57,28 @@ lbackup snapshots --host <hostname>
 lbackup restore latest --host <hostname> --target /tmp/restore --include ~/some/path
 ```
 
+## Deleting files from backups
+
+Snapshots are immutable, so "deleting a file from the backups" means **rewriting**
+the affected snapshots to exclude a pattern, then pruning to reclaim the space.
+`lbackup delete-path` wraps that: it previews as a dry run, asks to confirm, then
+runs `restic rewrite --forget` followed by `restic prune`.
+
+```sh
+# remove every PDF from every machine's snapshots
+lbackup delete-path "*.pdf"
+# scope to one machine
+lbackup delete-path --host <hostname> "**/secrets/**"
+# skip the confirmation prompt (e.g. in a script)
+lbackup delete-path --yes "/Users/wilhall/Downloads/**"
+```
+
+Patterns use **restic's exclude syntax**, not shell globbing — quote them so the
+shell doesn't expand them first. A bare-name pattern like `*.pdf` matches in every
+directory; anchor with a leading path (`/Users/wilhall/Pictures/**`) to scope it.
+This rewrites snapshot history across the chosen hosts and runs a repo-wide prune,
+so it's deliberately interactive — there's no undo once pruned.
+
 ## Browsing snapshots
 
 All of these use the same `lbackup` wrapper (see [Restore](#restore)) — it's a

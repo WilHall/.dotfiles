@@ -16,6 +16,7 @@ excludes:
   - "**/*.photoslibrary"
   - "**/Screenshots"
   - "**/.git"
+  - "**/__local"
   - "**/zus"
   - ".gnupg"
 retention:

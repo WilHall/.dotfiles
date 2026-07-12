@@ -25,6 +25,8 @@ fi
 export EDITOR=vim
 export GPG_TTY=$(tty)
 
+export REVDIFF_VIM_MOTION=true
+
 unsetopt auto_cd
 setopt IGNORE_EOF
 setopt extended_glob

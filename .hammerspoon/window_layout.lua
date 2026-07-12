@@ -57,6 +57,7 @@ local regions = {
   -- By workspace priority
   modalPrimary = { x = 0, y = 0, w = 0.30, h = 1 },
   modalSecondary = { x = 0.30, y = 0, w = 0.50, h = 1 },
+  widePrimary = { x = 0.28, y = 0, w = 0.52, h = 1 },
   focalPrimary = { x = 0.28, y = 0, w = 0.32, h = 1 },
   focalSecondary = { x = 0, y = 0, w = 0.28, h = 1 },
   peripheralPrimary = { x = 0.60, y = 0, w = 0.20, h = 1 },
@@ -225,6 +226,8 @@ function dockedWithDualVerticalUlrawideLayout()
       { "Music", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
       { "Pocket Casts", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
       { "Mail", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
+    { "iTerm2", nil, externalPrimaryScreen, regions.widePrimary, nil, nil },
+    { "Ghostty", nil, externalPrimaryScreen, regions.widePrimary, nil, nil },
     { "WebStorm", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
     { "RubyMine", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
     { "PyCharm", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
@@ -233,8 +236,6 @@ function dockedWithDualVerticalUlrawideLayout()
     { "Cursor", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
       { "Fork", nil, externalPrimaryScreen, regions.modalSecondary, nil, nil },
       { "Kaleidoscope", nil, externalPrimaryScreen, regions.modalSecondary, nil, nil },
-      { "iTerm2", nil, externalPrimaryScreen, regions.peripheralPrimary, nil, nil },
-      { "Ghostty", nil, externalPrimaryScreen, regions.peripheralPrimary, nil, nil },
       { "Slack", nil, externalPrimaryScreen, regions.peripheralSecondary, nil, nil },
     { "Messages", nil, externalPrimaryScreen, regions.peripheralTertiary, nil, nil },
 

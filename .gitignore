@@ -15,6 +15,7 @@ scratch/
 .npmrc
 .yarnrc
 .elixir_ls/
+.shared/
 
 # Lock files — dotfiles repo shouldn't carry any app-level locks
 *.lock

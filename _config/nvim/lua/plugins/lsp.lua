@@ -198,6 +198,31 @@ return {
       vim.keymap.set('n', ']g', function() vim.diagnostic.jump({ count = 1 }) end, opts)
       vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
 
+      -- Go-to pickers: modal Telescope list with preview (styled to match the
+      -- <c-f>/<c-d> dropdown) instead of the quickfix list. Telescope's LSP
+      -- pickers jump straight to the target when there's only one result.
+      local go_to_picker_options = {
+        results_title = false,
+        path_display = { "smart" },
+        scroll_strategy = "limit",
+        layout_strategy = "vertical",
+        layout_config = {
+          width = 200,
+          height = 0.99,
+          prompt_position = "top",
+          mirror = true,
+          preview_cutoff = 1,
+          preview_height = 0.65,
+        },
+      }
+
+      local function go_to_picker(picker_name)
+        return function()
+          local picker = require('telescope.builtin')[picker_name]
+          picker(require('telescope.themes').get_dropdown(go_to_picker_options))
+        end
+      end
+
       -- Buffer-local mappings + per-client tweaks, bound whenever ANY client
       -- attaches (LspAttach fires for every client, unlike a per-server
       -- on_attach, so keys like `gi` can never fall through to their Vim
@@ -218,14 +243,14 @@ return {
           -- See `:help vim.lsp.*` for documentation on any of the below functions
           local bufopts = { noremap = true, silent = true, buffer = bufnr }
           vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
-          vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
+          vim.keymap.set('n', 'gd', go_to_picker('lsp_definitions'), bufopts)
           vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
           vim.keymap.set('n', 'gK', vim.lsp.buf.signature_help, bufopts)
-          vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
-          vim.keymap.set('n', '<leader>gt', vim.lsp.buf.type_definition, bufopts)
+          vim.keymap.set('n', 'gi', go_to_picker('lsp_implementations'), bufopts)
+          vim.keymap.set('n', '<leader>gt', go_to_picker('lsp_type_definitions'), bufopts)
           vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
           vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
-          vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+          vim.keymap.set('n', 'gr', go_to_picker('lsp_references'), bufopts)
           vim.keymap.set('n', '<leader>f', function()
             require('conform').format({ async = true, lsp_format = 'fallback' })
           end, bufopts)

@@ -214,6 +214,32 @@ function undockedTriScreen()
   }
 end
 
+-- Macbook Pro docked with a single ultrawide screen 
+function dockerWithSingularUltrawideLayout()
+  local externalPrimaryScreen = findExternalPrimaryScreen()
+
+  return {
+    -- Ultrawide Lower
+    { "Chrome", nil, externalPrimaryScreen, regions.focalSecondary, nil, nil },
+    { "Vivaldi", nil, externalPrimaryScreen, regions.focalSecondary, nil, nil },
+      { "Music", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
+      { "Pocket Casts", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
+      { "Mail", nil, externalPrimaryScreen, regions.modalPrimary, nil, nil },
+    { "iTerm2", nil, externalPrimaryScreen, regions.widePrimary, nil, nil },
+    { "Ghostty", nil, externalPrimaryScreen, regions.widePrimary, nil, nil },
+    { "WebStorm", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
+    { "RubyMine", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
+    { "PyCharm", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
+    { "Rider", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
+    { "Code", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
+    { "Cursor", nil, externalPrimaryScreen, regions.focalPrimary, nil, nil },
+      { "Fork", nil, externalPrimaryScreen, regions.modalSecondary, nil, nil },
+      { "Kaleidoscope", nil, externalPrimaryScreen, regions.modalSecondary, nil, nil },
+      { "Slack", nil, externalPrimaryScreen, regions.peripheralSecondary, nil, nil },
+    { "Messages", nil, externalPrimaryScreen, regions.peripheralTertiary, nil, nil },
+  }
+end
+
 -- Macbook Pro docked with two external ultrawide screens stacked vertically
 function dockedWithDualVerticalUlrawideLayout()
   local externalPrimaryScreen = findExternalPrimaryScreen()
@@ -253,8 +279,13 @@ function applyLayout()
   local screens = hs.screen.allScreens()
 
   if numScreens == 1 then
-    hs.alert.show("⇝ Layout: Undocked")
-    layout = undockedLayout()
+    if findExternalPrimaryScreen() then
+      hs.alert.show("⇝ Layout: Docked Singular Ultrawide")
+      layout = dockerWithSingularUltrawideLayout()
+    else
+      hs.alert.show("⇝ Layout: Undocked")
+      layout = undockedLayout()
+    end
   elseif numScreens == 2 then
     local undocked = find(hs.screen.allScreens(), function(screen) return (screen:name() == laptopScreenName) end)
 

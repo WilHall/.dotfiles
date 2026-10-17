@@ -53,7 +53,7 @@ zinit light Aloxaf/fzf-tab
 zinit light zdharma-continuum/fast-syntax-highlighting
 
 # Theme colors for fast-syntax-highlighting (must follow the plugin)
-source ~/.zsh/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+source ~/.zsh/themes/catppuccin_macchiato-fast-syntax-highlighting.zsh
 
 # Apply completions once after everything is loaded
 autoload -Uz compinit && compinit
@@ -130,9 +130,9 @@ export _ZO_DOCTOR=0
 # Initialize zoxide (must be at the end)
 eval "$(zoxide init zsh)"
 
-# Auto-start tmux when opening a new terminal (e.g. Ghostty)
+# Auto-start tmux only in Ghostty, outside existing tmux sessions and herdr panes.
 # Use new-session -A so we never exec a failing attach-only client (that would exit
 # the terminal with no shell left to run `|| exec tmux new-session`).
-if [[ -o interactive ]] && [[ -z "$TMUX" ]] && (( $+commands[tmux] )); then
+if [[ -o interactive ]] && [[ "$TERM_PROGRAM" == ghostty ]] && [[ -z "$TMUX" ]] && [[ -z "$HERDR_PANE_ID" ]] && (( $+commands[tmux] )); then
   exec tmux new-session -A -s main
 fi

@@ -15,16 +15,19 @@
 
 set -euo pipefail
 
-REAL_MPROCS="/opt/homebrew/bin/mprocs"
+# mprocs 0.10+ ships as dekit, which serves the legacy CLI as `dekit mprocs`.
+DEKIT="/opt/homebrew/bin/dekit"
 
-if [[ ! -x "$REAL_MPROCS" ]]; then
-  echo "mprocs-wrapper: real mprocs not found at $REAL_MPROCS — install with 'brew install mprocs'" >&2
+if [[ ! -x "$DEKIT" ]]; then
+  echo "mprocs-wrapper: dekit not found at $DEKIT — install with 'brew install mprocs'" >&2
   exit 1
 fi
 
+REAL_MPROCS=("$DEKIT" mprocs)
+
 if ! command -v yq >/dev/null 2>&1; then
   # Without yq we can't safely transform the config; fall back to passthrough.
-  exec "$REAL_MPROCS" "$@"
+  exec "${REAL_MPROCS[@]}" "$@"
 fi
 
 config_path="./mprocs.yaml"
@@ -44,7 +47,7 @@ for arg in "$@"; do
       bypass=true
       ;;
     -h|--help|-V|--version)
-      exec "$REAL_MPROCS" "$@"
+      exec "${REAL_MPROCS[@]}" "$@"
       ;;
     -c|--config)
       skip_next=true
@@ -61,11 +64,12 @@ for arg in "$@"; do
 done
 
 if $bypass || $has_positional || [[ ! -f "$config_path" ]]; then
-  exec "$REAL_MPROCS" "$@"
+  exec "${REAL_MPROCS[@]}" "$@"
 fi
 
-patched=$(mktemp -t mprocs-wrapper.XXXXXX)
-trap 'rm -f "$patched"' EXIT
+patched_directory=$(mktemp -d -t mprocs-wrapper.XXXXXX)
+patched="$patched_directory/mprocs.yaml"
+trap 'rm -rf "$patched_directory"' EXIT
 
 yq '
   (.procs[] | select(tag == "!!str")) |= {"shell": ., "stop": {"send-keys": ["<C-c>"]}} |
@@ -92,4 +96,4 @@ for arg in "$@"; do
   esac
 done
 
-exec "$REAL_MPROCS" -c "$patched" "${forwarded_args[@]}"
+exec "${REAL_MPROCS[@]}" -c "$patched" ${forwarded_args[@]+"${forwarded_args[@]}"}

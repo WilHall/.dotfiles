@@ -170,6 +170,38 @@ vivaldi version: v7.9+
     background-color:var(--colorAccentBg);
 }
 
+/* Compact tab-stack style: taller indicator segments, offset upward so they clear the tab label */
+.stacks-dotted:is(.tabs-left, .tabs-right) .tab-group-indicator{
+    top:-9px;
+}
+.stacks-dotted:is(.tabs-left, .tabs-right) .tab-wrapper.group{
+    margin-top:9px;
+}
+.stacks-dotted:is(.tabs-left, .tabs-right) .tab-group-indicator .tab-indicator{
+    height:16px;
+}
+.stacks-dotted:is(.tabs-left, .tabs-right) .tab-group-indicator .tab-indicator.active{
+    height:12px;
+}
+.stacks-dotted:is(.tabs-left, .tabs-right) .tab:not(.tab-accordion, .tab-in-accordion):has(+ .tab-group-indicator){
+    max-height:calc(var(--Height) - 9px - max(var(--densityGap), 1px));
+}
+
+/* The inactive segments are the theme foreground mixed toward transparent, so they sit into the tab bar. The active one is a blend of the theme's two purples (highlight and accent), kept opaque so it doesn't pick up the tab bar's colour */
+.stacks-dotted.color-behind-tabs-on:is(.tabs-left, .tabs-right) .tab-group-indicator .tab-indicator{
+    background-color:color-mix(in srgb, var(--colorFg) 15%, transparent);
+}
+.stacks-dotted.color-behind-tabs-on:is(.tabs-left, .tabs-right) .tab-group-indicator .tab-indicator.active,
+.stacks-dotted.color-behind-tabs-on:is(.tabs-left, .tabs-right) .tab.active + .tab-group-indicator .tab-indicator.active{
+    background-color:color-mix(in srgb, var(--colorHighlightBg) 50%, var(--colorAccentBg));
+}
+
+/* Round the segment tops to match the tab's own radius; the vertical value is padded by the border-top spacer's width so the curve lands on the painted content box, not the invisible border */
+.stacks-dotted:is(.tabs-left, .tabs-right) .tab-group-indicator .tab-indicator{
+    border-top-left-radius:var(--currentRadius) calc(var(--currentRadius) + 3px);
+    border-top-right-radius:var(--currentRadius) calc(var(--currentRadius) + 3px);
+}
+
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off :is(#tabs-subcontainer.left, #tabs-subcontainer.right){
     box-shadow:none;
 }

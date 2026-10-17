@@ -32,6 +32,11 @@ setopt IGNORE_EOF
 setopt extended_glob
 
 fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+
+[[ -d /opt/homebrew/share/zsh/functions ]] && fpath+=(/opt/homebrew/share/zsh/functions)
+fpath=($^fpath(N-/))
+typeset -U fpath
+
 autoload -Uz compinit && compinit
 
 if [[ "$PLATFORM" == "macos" ]]; then

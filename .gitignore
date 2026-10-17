@@ -101,7 +101,6 @@ appconfig/Trailer/Trailer Settings.trailerSettings
 **/.claude/downloads/
 **/.claude/ide/
 **/.claude/plugins/
-**/.claude/skills/
 **/.claude/telemetry/
 **/.claude/history.jsonl
 **/.claude/mcp-needs-auth-cache.json

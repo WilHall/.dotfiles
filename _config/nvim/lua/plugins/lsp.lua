@@ -223,10 +223,59 @@ return {
         end
       end
 
+      local function go_to(method, handler, fallback_keys)
+        return function()
+          if vim.tbl_isempty(vim.lsp.get_clients({ bufnr = 0, method = method })) then
+            if fallback_keys then
+              vim.api.nvim_feedkeys(fallback_keys, 'n', false)
+            else
+              vim.notify('No attached client provides ' .. method, vim.log.levels.INFO)
+            end
+            return
+          end
+          handler()
+        end
+      end
+
+      -- Prefers vtsls' source-definition command over the plain implementation
+      -- picker, falling back to it when unavailable or empty.
+      local function go_to_implementation()
+        local vtsls_client = vim.lsp.get_clients({ bufnr = 0, name = 'vtsls' })[1]
+        if not vtsls_client then
+          if vim.tbl_isempty(vim.lsp.get_clients({ bufnr = 0, method = 'textDocument/implementation' })) then
+            vim.notify('No attached client provides textDocument/implementation', vim.log.levels.INFO)
+            return
+          end
+          go_to_picker('lsp_implementations')()
+          return
+        end
+
+        local implementation_picker = go_to_picker('lsp_implementations')
+        local position_params = vim.lsp.util.make_position_params(0, vtsls_client.offset_encoding)
+        vtsls_client:exec_cmd({
+          command = 'typescript.goToSourceDefinition',
+          arguments = { position_params.textDocument.uri, position_params.position },
+        }, { bufnr = 0 }, function(err, result)
+          if err or vim.tbl_isempty(result or {}) then
+            implementation_picker()
+            return
+          end
+          vim.lsp.util.show_document(result[1], vtsls_client.offset_encoding, { focus = true })
+        end)
+      end
+
+      local go_to_keymaps = {
+        { keys = { 'gd', '<leader>gd' }, handler = go_to('textDocument/definition', go_to_picker('lsp_definitions'), 'gd') },
+        { keys = { 'gD', '<leader>gD' }, handler = go_to('textDocument/declaration', vim.lsp.buf.declaration, 'gD') },
+        { keys = { 'gi', '<leader>gi' }, handler = go_to_implementation },
+        { keys = { 'gr', '<leader>gr' }, handler = go_to('textDocument/references', go_to_picker('lsp_references')) },
+        { keys = { '<leader>gt' }, handler = go_to('textDocument/typeDefinition', go_to_picker('lsp_type_definitions')) },
+      }
+
       -- Buffer-local mappings + per-client tweaks, bound whenever ANY client
       -- attaches (LspAttach fires for every client, unlike a per-server
-      -- on_attach, so keys like `gi` can never fall through to their Vim
-      -- built-ins in an LSP buffer).
+      -- on_attach, so a mapping is never missed because one server attached
+      -- late).
       vim.api.nvim_create_autocmd("LspAttach", {
         group = vim.api.nvim_create_augroup("UserLspAttach", { clear = true }),
         callback = function(args)
@@ -242,15 +291,15 @@ return {
 
           -- See `:help vim.lsp.*` for documentation on any of the below functions
           local bufopts = { noremap = true, silent = true, buffer = bufnr }
-          vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
-          vim.keymap.set('n', 'gd', go_to_picker('lsp_definitions'), bufopts)
+          for _, mapping in ipairs(go_to_keymaps) do
+            for _, keys in ipairs(mapping.keys) do
+              vim.keymap.set('n', keys, mapping.handler, bufopts)
+            end
+          end
           vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
           vim.keymap.set('n', 'gK', vim.lsp.buf.signature_help, bufopts)
-          vim.keymap.set('n', 'gi', go_to_picker('lsp_implementations'), bufopts)
-          vim.keymap.set('n', '<leader>gt', go_to_picker('lsp_type_definitions'), bufopts)
           vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
           vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
-          vim.keymap.set('n', 'gr', go_to_picker('lsp_references'), bufopts)
           vim.keymap.set('n', '<leader>f', function()
             require('conform').format({ async = true, lsp_format = 'fallback' })
           end, bufopts)

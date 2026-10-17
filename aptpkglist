@@ -47,8 +47,6 @@ tmux
 atuin
 silversearcher-ag
 watchman
-zsh-syntax-highlighting
-zsh-antigen
 gpa
 seahorse
 pinentry-tty

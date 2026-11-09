@@ -24,21 +24,24 @@ return {
       local copilot_cmp = require("copilot_cmp")
       local asdf = "/opt/homebrew/bin/asdf"
 
-      -- Copilot's LSP needs a recent Node (>= 22.13) regardless of whatever
-      -- version the current project's .tool-versions pins, so bypass the asdf
-      -- shim and run the newest Node installed under asdf directly.
-      local newest_asdf_node = (function()
-        local nodes = vim.fn.glob("~/.asdf/installs/nodejs/*/bin/node", true, true)
-        table.sort(nodes, function(a, b)
+      -- Editor tooling that runs on Node (Copilot, the npm language servers)
+      -- shouldn't depend on whatever version the current project's
+      -- .tool-versions pins, so bypass the asdf shim and run the newest Node
+      -- installed under asdf directly.
+      local newest_asdf_node_bin_directory = (function()
+        local bin_directories = vim.fn.glob("~/.asdf/installs/nodejs/*/bin", true, true)
+        table.sort(bin_directories, function(a, b)
           local version_a = vim.version.parse(a:match("nodejs/([%d%.]+)/") or "0.0.0")
           local version_b = vim.version.parse(b:match("nodejs/([%d%.]+)/") or "0.0.0")
           return version_a < version_b
         end)
-        return nodes[#nodes] or "node"
+        return bin_directories[#bin_directories]
       end)()
 
       copilot.setup({
-        copilot_node_command = newest_asdf_node,
+        copilot_node_command = newest_asdf_node_bin_directory
+          and vim.fs.joinpath(newest_asdf_node_bin_directory, "node")
+          or "node",
         suggestion = { enabled = false },
         panel = { enabled = false },
         server_opts_overrides = {
@@ -317,8 +320,43 @@ return {
         flags = lsp_flags,
       })
 
+      -- Language servers from .default-npm-packages, installed globally under
+      -- the newest asdf Node.
+      local node_language_server_commands = {
+        cssls = { "vscode-css-language-server", "--stdio" },
+        graphql = { "graphql-lsp", "server", "-m", "stream" },
+        html = { "vscode-html-language-server", "--stdio" },
+        jsonls = { "vscode-json-language-server", "--stdio" },
+        svelte = { "svelteserver", "--stdio" },
+        tailwindcss = { "tailwindcss-language-server", "--stdio" },
+        vtsls = { "vtsls", "--stdio" },
+      }
+
+      -- Mirrors nvim-lspconfig's launchers (a project's node_modules/.bin
+      -- copy wins over the global one), but runs either on the newest asdf
+      -- Node; PATH puts it first for their `#!/usr/bin/env node` shebangs.
+      local function newest_asdf_node_launcher(command)
+        return function(dispatchers, config)
+          local executable = vim.fs.joinpath(newest_asdf_node_bin_directory, command[1])
+          local root_dir = (config or {}).root_dir
+          if root_dir then
+            local local_executable = vim.fs.joinpath(root_dir, "node_modules/.bin", command[1])
+            if vim.fn.executable(local_executable) == 1 then
+              executable = local_executable
+            end
+          end
+          return vim.lsp.rpc.start(vim.list_extend({ executable }, vim.list_slice(command, 2)), dispatchers, {
+            env = { PATH = newest_asdf_node_bin_directory .. ":" .. vim.env.PATH },
+          })
+        end
+      end
+
       local function setup(server, config)
         vim.lsp.config(server, config or {})
+        local node_command = node_language_server_commands[server]
+        if node_command and newest_asdf_node_bin_directory then
+          vim.lsp.config(server, { cmd = newest_asdf_node_launcher(node_command) })
+        end
         vim.lsp.enable(server)
       end
 

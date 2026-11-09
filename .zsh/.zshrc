@@ -126,6 +126,9 @@ if [[ "$PLATFORM" != "macos" ]]; then
 fi
 (gpg-agent --daemon 2>/dev/null)
 
+# herdr panes inherit NO_COLOR=1, which strips color from Claude Code and other CLIs
+unset NO_COLOR
+
 export _ZO_DOCTOR=0
 # Initialize zoxide (must be at the end)
 eval "$(zoxide init zsh)"

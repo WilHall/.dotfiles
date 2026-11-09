@@ -5,7 +5,7 @@ vscode-langservers-extracted
 @tailwindcss/language-server
 typescript
 typescript-language-server
-vtsls
+@vtsls/language-server
 graphql-language-service-cli
 stylelint-lsp
 @fsouza/prettierd

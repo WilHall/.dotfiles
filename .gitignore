@@ -65,6 +65,7 @@ Cargo.lock
 .vscode/extensions/**/*
 .vscode/argv.json
 .vscode/cli/
+.vscode/agent-plugins/
 plug.vim
 .vim/bundle/
 .vim/undo/
@@ -77,6 +78,7 @@ cache.json
 .zsh_history
 .zcompdump*
 .zsh_sessions
+.zsh/.z*.aikido*
 appconfig/Alfred/preferences/Alfred.alfredpreferences/snippets
 appconfig/Alfred/preferences/Alfred.alfredpreferences/workflows
 appconfig/Alfred/preferences/Alfred.alfredpreferences/remote

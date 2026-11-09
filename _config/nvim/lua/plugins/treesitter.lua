@@ -1,6 +1,9 @@
 return {
   {
+    -- `main` is a rewrite: this plugin only installs parsers/queries; highlighting
+    -- and indentation are enabled per-buffer below. Requires `tree-sitter-cli`.
     "nvim-treesitter/nvim-treesitter",
+    branch = "main",
     lazy = false,
     build = ":TSUpdate",
     dependencies = {
@@ -8,69 +11,68 @@ return {
       "nvim-treesitter/nvim-treesitter-context"
     },
     config = function()
-      require'nvim-treesitter.configs'.setup({
-        highlight = { enable = true },
-        indent = { enable = true },
-        auto_install = true,
-        ensure_installed = {
-          "scss",
-          "markdown",
-          "markdown_inline",
-          "graphql",
-          "regex",
-          "html",
-          "bash",
-          "diff",
-          "css",
-          "ruby",
-          "lua",
-          "javascript",
-          "tsx",
-          "typescript",
-          "embedded_template",
-          "json",
-          "svelte",
-          "vim",
-        }
+      local treesitter = require("nvim-treesitter")
+
+      treesitter.install({
+        "scss",
+        "markdown",
+        "markdown_inline",
+        "graphql",
+        "regex",
+        "html",
+        "bash",
+        "diff",
+        "css",
+        "ruby",
+        "lua",
+        "javascript",
+        "tsx",
+        "typescript",
+        "embedded_template",
+        "json",
+        "svelte",
+        "vim",
       })
 
-      -- Ensure TS/JS highlighting is started immediately, including restored buffers.
-      local ts_group = vim.api.nvim_create_augroup("TreesitterTsImmediateHighlight", { clear = true })
+      local enable_treesitter = function(bufnr, language)
+        if not pcall(vim.treesitter.start, bufnr, language) then
+          return false
+        end
+        vim.bo[bufnr].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        return true
+      end
+
+      -- Start treesitter for a buffer, installing its parser on first use
+      -- (replaces the `auto_install` option from the old `master` branch).
+      local attach = function(bufnr)
+        local language = vim.treesitter.language.get_lang(vim.bo[bufnr].filetype)
+        if not language or enable_treesitter(bufnr, language) then
+          return
+        end
+        if vim.tbl_contains(treesitter.get_available(), language) then
+          treesitter.install(language):await(function()
+            vim.schedule(function()
+              if vim.api.nvim_buf_is_valid(bufnr) then
+                enable_treesitter(bufnr, language)
+              end
+            end)
+          end)
+        end
+      end
+
       vim.api.nvim_create_autocmd("FileType", {
-        group = ts_group,
-        pattern = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
+        group = vim.api.nvim_create_augroup("TreesitterAttach", { clear = true }),
         callback = function(args)
-          pcall(vim.treesitter.start, args.buf)
+          attach(args.buf)
         end,
       })
-      vim.api.nvim_create_autocmd({ "BufEnter", "VimEnter" }, {
-        group = ts_group,
-        callback = function(args)
-          local bufnr = vim.api.nvim_get_current_buf()
-          if type(args) == "table" and type(args.buf) == "number" and vim.api.nvim_buf_is_valid(args.buf) then
-            bufnr = args.buf
-          end
-          if not vim.api.nvim_buf_is_valid(bufnr) then
-            return
-          end
-          local ft = vim.bo[bufnr].filetype
-          if ft == "" then
-            local name = vim.api.nvim_buf_get_name(bufnr)
-            if name:match("%.tsx$") then
-              ft = "typescriptreact"
-            elseif name:match("%.ts$") then
-              ft = "typescript"
-            elseif name:match("%.jsx$") then
-              ft = "javascriptreact"
-            elseif name:match("%.js$") then
-              ft = "javascript"
-            end
-          end
-          if ft == "typescript" or ft == "typescriptreact" or ft == "javascript" or ft == "javascriptreact" then
-            pcall(vim.treesitter.start, bufnr)
-          end
-        end,
-      })
+
+      -- Cover buffers that already had a filetype before this ran (e.g. restored sessions).
+      for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
+        if vim.api.nvim_buf_is_loaded(bufnr) and vim.bo[bufnr].filetype ~= "" then
+          attach(bufnr)
+        end
+      end
     end
   },
 }
